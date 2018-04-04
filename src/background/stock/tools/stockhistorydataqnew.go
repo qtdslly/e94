@@ -5,7 +5,6 @@ import (
 	"background/common/logger"
 	"background/stock/config"
 
-	"fmt"
 	"flag"
 	"io/ioutil"
 
