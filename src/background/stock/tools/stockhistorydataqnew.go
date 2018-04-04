@@ -7,10 +7,13 @@ import (
 
 	"fmt"
 	"flag"
+	"io/ioutil"
+	"os"
+	"strconv"
 
+	"github.com/Luxurioust/excelize"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
-	"io/ioutil"
 )
 
 func main(){
@@ -41,7 +44,27 @@ func main(){
 		return
 	}
 	for _, f := range files {
-		fmt.Println(f.Name())
+		GetHistoryDataQNewFromExcel(f)
+		return 
+	}
+}
+
+
+func GetHistoryDataQNewFromExcel(fileName string){
+	xlsx, err := excelize.OpenFile(fileName)
+	if err != nil {
+		logger.Error(err)
+		return
+	}
+	rows := xlsx.GetRows("Sheet1")
+	for i, row := range rows {
+		if i == 0{
+			continue
+		}
+		for _, value := range row {
+			fmt.Print(value, "\t")
+		}
+		fmt.Println()
 	}
 }
 
