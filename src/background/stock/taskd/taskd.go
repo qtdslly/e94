@@ -60,19 +60,6 @@ func main() {
 	}()
 
 	//task.GetLargeFallStockInfo(db)
-	//go func() {
-	//	for {
-	//		var p = time.Now()
-	//		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1200"{
-	//			task.SyncAllRealTimeStockInfo(db)
-	//			//task.SyncHoldStockRealTimeInfo()
-	//			break
-	//		}
-	//
-	//	}
-	//}()
-
-
 
 	for {
 		time.Sleep(time.Minute * 5)
