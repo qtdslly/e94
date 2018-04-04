@@ -14,6 +14,14 @@ import (
 )
 
 func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
+	for{
+		GetPageUrl(provider,db)
+		time.Sleep(time.Second * 10)
+	}
+
+}
+
+func GetPageUrl(provider model.Provider,db *gorm.DB){
 	var err error
 	var pageUrls []model.PageUrl
 
@@ -76,6 +84,4 @@ func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
 			}
 		})
 	}
-
-	GetPageUrlByProvider(provider,db)
 }
