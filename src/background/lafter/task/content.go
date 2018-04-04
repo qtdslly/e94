@@ -6,26 +6,25 @@ import (
 	"background/common/logger"
 
 	"time"
-	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
+func GetContentByProvider(provider model.Provider,db *gorm.DB){
 	for{
-		GetPageUrl(provider,db)
+		GetContent(provider,db)
 		time.Sleep(time.Second * 10)
 	}
 
 }
 
-func GetPageUrl(provider model.Provider,db *gorm.DB){
+func GetContent(provider model.Provider,db *gorm.DB){
 	var err error
 	var pageUrls []model.PageUrl
 
-	if err = db.Where("provider_id = ? and page_status = 0",provider.Id).Find(&pageUrls).Error ; err != nil{
+	if err = db.Where("provider_id = ? and url_status = 0",provider.Id).Find(&pageUrls).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
@@ -55,34 +54,11 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 			return
 		}
 
-		bd := query.Find("a")
-		bd.Each(func(i int, s *goquery.Selection) {
-			url,_ := s.Attr("href")
-			if !strings.Contains(url,"http") && !strings.Contains(url,"https"){
-				if url[0:1] != "/"{
-					url = "/" + url
-				}
-				url = provider.Url + url
-			}
+		if p.ProviderId == 1{
+			GetXiaoHuaJiContent(p,query)
+		}
 
-			var pageUrl model.PageUrl
-			if err = db.Where("url = ?",url).First(&pageUrl).Error ; err != nil{
-				if err != gorm.ErrRecordNotFound{
-					logger.Error(err)
-					return
-				}
 
-				pageUrl.PageStatus = 0
-				pageUrl.ProviderId = provider.Id
-				pageUrl.Url = url
-				pageUrl.CreatedAt = time.Now()
-				pageUrl.UpdatedAt = time.Now()
-				if err = db.Save(&pageUrl).Error ; err != nil{
-					logger.Error(err)
-					return
-				}
-			}
-		})
 
 		p.PageStatus = 1
 		if err = db.Save(&p).Error ; err != nil{
@@ -90,4 +66,14 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 			return
 		}
 	}
+}
+
+func GetXiaoHuaJiContent(pageUrl model.PageUrl,document *goquery.Document){
+	//des := document.Find("#text110").Text()
+	//title := document.Find(".main").Find("h1").
+	//if len(des) != 0{
+	//	var content model.Content
+	//	content.Title = ""
+	//	content.Content = des
+	//}
 }
