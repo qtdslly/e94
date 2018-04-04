@@ -84,10 +84,10 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 			}
 		})
 
-		p.UrlStatus = 1
+		p.PageStatus = 1
 		if err = db.Save(&p).Error ; err != nil{
 			logger.Error(err)
-			return 
+			return
 		}
 	}
 }
