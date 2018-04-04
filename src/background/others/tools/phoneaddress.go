@@ -4,8 +4,7 @@ import (
 
 	"background/others/config"
 	"background/common/logger"
-	omodel "background/others/model"
-	cmodel "background/common/model"
+	"background/others/model"
 
 	"flag"
 	"log"
@@ -40,7 +39,7 @@ func main(){
 
 	db.LogMode(true)
 
-	omodel.InitModel(db)
+	model.InitModel(db)
 
 	SyncPhoneAddress(db)
 }
@@ -61,7 +60,7 @@ func GetPhoneAddress(phone string)(string){
 	return string(result)
 }
 func SyncPhoneAddress(db *gorm.DB){
-	var statusConfig cmodel.StatusConfig
+	var statusConfig model.StatusConfig
 
 	if err := db.Where("`key` = 'phone_address_key'").First(&statusConfig).Error ; err != nil{
 		logger.Error("query status_config error:",err)
@@ -105,7 +104,7 @@ func SyncPhoneAddress(db *gorm.DB){
 				fmt.Println("手机号码" + phoneNum + "不存在")
 			}else{
 				fmt.Println(phoneInfo)
-				var phoneAddress omodel.PhoneAddress
+				var phoneAddress model.PhoneAddress
 				phoneAddress = GetPhoneModel(phoneInfo)
 				log.Println(phoneAddress.Mts)
 				log.Println(phoneAddress.Province)
@@ -126,7 +125,7 @@ func SyncPhoneAddress(db *gorm.DB){
 }
 
 
-func GetPhoneModel(phoneInfo string)(phoneAddress omodel.PhoneAddress){
+func GetPhoneModel(phoneInfo string)(phoneAddress model.PhoneAddress){
 	phoneInfo = phoneInfo[strings.Index(phoneInfo,"{") + 1 : len(phoneInfo) - 2 ]
 	infos := strings.Split(phoneInfo,",")
 	phoneAddress.Mts = infos[0][10:len(infos[0]) - 1]
