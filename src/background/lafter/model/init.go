@@ -8,15 +8,15 @@ import (
 func InitModel(db *gorm.DB) error {
 	var err error
 
-	err = initStatusConfig(db)
+	err = initPageUrl(db)
 	if err != nil {
-		logger.Fatal("Init db status_config failed, ", err)
+		logger.Fatal("Init db page_url failed, ", err)
 		return err
 	}
 
-	err = initPhoneAddress(db)
+	err = initProvider(db)
 	if err != nil {
-		logger.Fatal("Init db phone_address failed, ", err)
+		logger.Fatal("Init db provider failed, ", err)
 		return err
 	}
 	return err
@@ -24,7 +24,7 @@ func InitModel(db *gorm.DB) error {
 
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
-	dropPhoneAddress(db)
-	dropStatusConfig(db)
+	dropPageUrl(db)
+	dropProvider(db)
 	InitModel(db)
 }
