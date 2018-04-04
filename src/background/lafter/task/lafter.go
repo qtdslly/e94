@@ -58,7 +58,7 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 		bd := query.Find("a")
 		bd.Each(func(i int, s *goquery.Selection) {
 			url,found := s.Attr("href")
-			if found{
+			if found && len(url) > 0{
 				if !strings.Contains(url,"http") && !strings.Contains(url,"https"){
 					if url[0:1] != "/"{
 						url = "/" + url
