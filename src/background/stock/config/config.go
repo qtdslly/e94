@@ -22,7 +22,7 @@ var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/seaguest/Downloads/storage/"
+	c.StorageRoot = "/home/lyric/data/stock/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
 	c.DBSource = "root:hahawap@tcp(localhost:3306)/lyric?charset=utf8&parseTime=True&loc=Local"
