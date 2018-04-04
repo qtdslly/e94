@@ -31,7 +31,7 @@ func main(){
 
 	var stock model.StockList
 	if err = db.Where("name = ?",stockName).First(&stock).Error ; err != nil{
-		logger.Error(err)
+		logger.Error("stock name:",stockName , " error:",err)
 		return
 	}
 	jysCode := util.GetJysCodeByStockCode(stock.Code)
@@ -41,5 +41,5 @@ func main(){
 		return
 	}
 
-	logger.Printf("Now price : " + fmt.Sprintf(realTimeStock.NowPrice))
+	logger.Printf("Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00) + "%")
 }

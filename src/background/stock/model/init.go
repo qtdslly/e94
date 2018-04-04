@@ -26,11 +26,11 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
-	//err = initStockList(db)
-	//if err != nil {
-	//	logger.Fatal("Init db stock_list failed, ", err)
-	//	return err
-	//}
+	err = initStockList(db)
+	if err != nil {
+		logger.Fatal("Init db stock_list failed, ", err)
+		return err
+	}
 
 	err = initTransPrompt(db)
 	if err != nil {
@@ -63,7 +63,7 @@ func rebuildModel(db *gorm.DB) {
 	dropRealTimeStock(db)
 	dropHoldStockInfo(db)
 	dropStockHistoryDataQ(db)
-	//dropStockList(db)
+	dropStockList(db)
 	dropTransPrompt(db)
 	dropTransStockInfo(db)
 	dropDeepFallStock(db)
