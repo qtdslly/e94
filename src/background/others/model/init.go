@@ -8,6 +8,12 @@ import (
 func InitModel(db *gorm.DB) error {
 	var err error
 
+	err = initStatusConfig(db)
+	if err != nil {
+		logger.Fatal("Init db simulation failed, ", err)
+		return err
+	}
+
 	err = initPhoneAddress(db)
 	if err != nil {
 		logger.Fatal("Init db simulation failed, ", err)
@@ -19,6 +25,6 @@ func InitModel(db *gorm.DB) error {
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
 	dropPhoneAddress(db)
-
+	dropStatusConfig(db)
 	InitModel(db)
 }
