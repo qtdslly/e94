@@ -17,14 +17,17 @@ func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
 	var err error
 	var pageUrls []model.PageUrl
 
-	err = db.Where("provider_id = ? and page_status = 0",provider.Id).Find(&pageUrls).Error
-
-	if err == gorm.ErrRecordNotFound{
+	if err = db.Where("provider_id = ? and page_status = 0",provider.Id).Find(&pageUrls).Error ; err != nil{
 		logger.Error(err)
+		return
+	}
 
-		logger.Debug("========================")
-
+	if len(pageUrls) == 0{
 		var pageUrl model.PageUrl
+		if err = db.Where("url = ?",provider.Url).First(&pageUrl).Error ; err == nil{
+			logger.Debug(err)
+			return
+		}
 		pageUrl.PageStatus = 0
 		pageUrl.ProviderId = provider.Id
 		pageUrl.Url = provider.Url
@@ -35,10 +38,6 @@ func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
 			return
 		}
 		return
-	}else{
-		logger.Error(err)
-		logger.Debug("----------------------")
-		time.Sleep(time.Minute)
 	}
 
 	for _ , p := range pageUrls{
