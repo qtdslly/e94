@@ -8,8 +8,6 @@ import (
 	"fmt"
 	"flag"
 	"io/ioutil"
-	"os"
-	"strconv"
 
 	"github.com/Luxurioust/excelize"
 	_ "github.com/go-sql-driver/mysql"
@@ -45,7 +43,7 @@ func main(){
 	}
 	for _, f := range files {
 		GetHistoryDataQNewFromExcel(f)
-		return 
+		return
 	}
 }
 
