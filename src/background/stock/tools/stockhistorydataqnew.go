@@ -42,7 +42,7 @@ func main(){
 		return
 	}
 	for _, f := range files {
-		GetHistoryDataQNewFromExcel(f)
+		GetHistoryDataQNewFromExcel(f.Name())
 		return
 	}
 }
