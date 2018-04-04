@@ -1,7 +1,7 @@
 {
     "product":"chinatv",
     "production_env": false,
-    "storage_root": "F:/lehoo/Downloads/storage/",
+    "storage_root": "/home/lyric/data/stock/",
     "db_name": "mysql",
     "db_source": "root:hahawap@tcp(127.0.0.1:3306)/fun?charset=utf8&parseTime=True&loc=Local",
     "logger_level": 0,

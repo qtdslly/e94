@@ -38,7 +38,7 @@ func main(){
 	files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
 	if err != nil {
 		logger.Error(err)
-		return 
+		return
 	}
 	for _, f := range files {
 		fmt.Println(f.Name())
