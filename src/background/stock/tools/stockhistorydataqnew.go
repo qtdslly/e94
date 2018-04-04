@@ -72,7 +72,7 @@ func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB){
 			logger.Error("记录集错误:", err)
 			return
 		}
-		sql := "insert into stock_history_data_q_new(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "',"
+		sql := "insert into stock_history_data_q_new(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "','"
 		for i := 0; i < len(record); i++ {
 			sql = sql + record[i] + "','"
 		}
