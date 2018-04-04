@@ -57,29 +57,31 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 
 		bd := query.Find("a")
 		bd.Each(func(i int, s *goquery.Selection) {
-			url,_ := s.Attr("href")
-			if !strings.Contains(url,"http") && !strings.Contains(url,"https"){
-				if url[0:1] != "/"{
-					url = "/" + url
-				}
-				url = provider.Url + url
-			}
-
-			var pageUrl model.PageUrl
-			if err = db.Where("url = ?",url).First(&pageUrl).Error ; err != nil{
-				if err != gorm.ErrRecordNotFound{
-					logger.Error(err)
-					return
+			url,found := s.Attr("href")
+			if found{
+				if !strings.Contains(url,"http") && !strings.Contains(url,"https"){
+					if url[0:1] != "/"{
+						url = "/" + url
+					}
+					url = provider.Url + url
 				}
 
-				pageUrl.PageStatus = 0
-				pageUrl.ProviderId = provider.Id
-				pageUrl.Url = url
-				pageUrl.CreatedAt = time.Now()
-				pageUrl.UpdatedAt = time.Now()
-				if err = db.Save(&pageUrl).Error ; err != nil{
-					logger.Error(err)
-					return
+				var pageUrl model.PageUrl
+				if err = db.Where("url = ?",url).First(&pageUrl).Error ; err != nil{
+					if err != gorm.ErrRecordNotFound{
+						logger.Error(err)
+						return
+					}
+
+					pageUrl.PageStatus = 0
+					pageUrl.ProviderId = provider.Id
+					pageUrl.Url = url
+					pageUrl.CreatedAt = time.Now()
+					pageUrl.UpdatedAt = time.Now()
+					if err = db.Save(&pageUrl).Error ; err != nil{
+						logger.Error(err)
+						return
+					}
 				}
 			}
 		})
