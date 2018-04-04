@@ -5,8 +5,10 @@ import (
 	"background/stock/service"
 	"background/stock/tools/util"
 	"background/common/logger"
+
 	"time"
 	"fmt"
+
 	"github.com/jinzhu/gorm"
 )
 /*
@@ -22,6 +24,7 @@ func TransPromptAll(db *gorm.DB){
 
 	for _ , transPrompt := range transPrompts{
 		go TransPromptByPromptInfo(transPrompt)
+		go RosePrompt(transPrompt,db)
 	}
 
 	for{
@@ -70,6 +73,45 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt){
 		}else{
 			//logger.Debug("未到交易价格，暂不交易!!!!")
 		}
+		time.Sleep(time.Second)
+	}
+
+}
+
+
+
+func RosePrompt(transPrompt model.TransPrompt,db *gorm.DB){
+	var err error
+	var jysCode string
+	jysCode = util.GetJysCodeByStockCode(transPrompt.StockCode)
+	if jysCode == ""{
+		logger.Error("获取交易所代码错误，程序退出!!!")
+		return
+	}
+	var realTimeStockInfo *model.RealTimeStock
+	var havePrompt bool = false
+	for{
+		if havePrompt{
+			time.Sleep(time.Minute * 30)
+		}
+		if err,realTimeStockInfo = service.GetRealTimeStockInfoByStockCode(jysCode,transPrompt.StockCode) ; err != nil{
+			logger.Error("获取股票实时信息失败，程序退出!!!")
+			return
+		}
+		if realTimeStockInfo.NowPrice == 0.00{
+			break
+		}
+
+		if ( realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice ) / realTimeStockInfo.YestdayClosePrice > 0.03 ||
+			( realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice ) / realTimeStockInfo.YestdayClosePrice < -0.03{
+			util.SendEmail("股票涨跌幅提示",
+				"<div'><h2>股票代码:" + transPrompt.StockCode + "</h2></br>" +
+					"<h2>股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "</h2></br>" +
+					"<h4>当前股票价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
+					"</div>")
+			havePrompt = true
+		}
+
 		time.Sleep(time.Second)
 	}
 
