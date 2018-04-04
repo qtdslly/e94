@@ -54,24 +54,26 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt){
 			break
 		}
 
+		var result bool
 		if(realTimeStockInfo.NowPrice <= transPrompt.PromptBuyPrice){
-			util.SendEmail("股票交易提示",
+			result = util.SendEmail("股票交易提示",
 				"<div><h2>股票代码:" + transPrompt.StockCode + "到达买入价格</h2></br>" +
 					"<h4>设定买入价格为:" + fmt.Sprint(transPrompt.PromptBuyPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptBuyCount) + "</h4></br>" +
 					"<h1>请尽快交易!!!</h1></div>")
-			havePrompt = true
 		}else if(realTimeStockInfo.NowPrice >= transPrompt.PromptSellPrice){
-			util.SendEmail("股票交易提示",
+			result = util.SendEmail("股票交易提示",
 				"<div'><h2>股票代码:" + transPrompt.StockCode + "到达卖出价格</h2></br>" +
 					"<h4>设定卖出价格为:" + fmt.Sprint(transPrompt.PromptSellPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptSellCount) + "</h4></br>" +
 					"<h1>请尽快交易!!!</h1></div>")
-			havePrompt = true
 		}else{
 			//logger.Debug("未到交易价格，暂不交易!!!!")
+		}
+		if result{
+			havePrompt = true
 		}
 		time.Sleep(time.Second)
 	}
