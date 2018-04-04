@@ -39,13 +39,21 @@ func main() {
 	
 	model.InitModel(db)
 
-	go task.TransPromptAll(db)
+	go func(){
+		for{
+			var p = time.Now()
+			if  fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) >= "0930" && fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) <= "1500"{
+				go task.TransPromptAll(db)
+			}
+			time.Sleep(time.Hour * 24)
+		}
+	}()
 
 	go func(){
 		for{
 			var p = time.Now()
 			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
-				task.SyncAllRealTimeStockInfo(db)
+				go task.SyncAllRealTimeStockInfo(db)
 				//task.SyncHoldStockRealTimeInfo()
 			}
 			time.Sleep(time.Hour * 24)

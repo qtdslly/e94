@@ -29,6 +29,10 @@ func TransPromptAll(db *gorm.DB){
 
 	for{
 		time.Sleep(time.Minute)
+		var p = time.Now()
+		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
+			break
+		}
 	}
 }
 
