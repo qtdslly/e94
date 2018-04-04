@@ -52,19 +52,16 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt){
 		}
 
 		if(realTimeStockInfo.NowPrice <= transPrompt.PromptBuyPrice){
-			logger.Print("============================================================")
 			util.SendEmail("股票交易提示",
-				"<div style='color:#F00;background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521732917614&di=0f4226d53420474a7630a4b49b2c26f4&imgtype=0&src=http%3A%2F%2Fb.zol-img.com.cn%2Fsjbizhi%2Fimages%2F2%2F320x510%2F1354095141925.jpg) no-repeat 0px 0px;'><h2>股票代码:" + transPrompt.StockCode + "到达买入价格</h2></br>" +
+				"<div><h2>股票代码:" + transPrompt.StockCode + "到达买入价格</h2></br>" +
 					"<h4>设定买入价格为:" + fmt.Sprint(transPrompt.PromptBuyPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptBuyCount) + "</h4></br>" +
 					"<h1>请尽快交易!!!</h1></div>")
 			havePrompt = true
 		}else if(realTimeStockInfo.NowPrice >= transPrompt.PromptSellPrice){
-			logger.Print("============================================================")
-
 			util.SendEmail("股票交易提示",
-				"<div style='color:#F00;background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521732917614&di=0f4226d53420474a7630a4b49b2c26f4&imgtype=0&src=http%3A%2F%2Fb.zol-img.com.cn%2Fsjbizhi%2Fimages%2F2%2F320x510%2F1354095141925.jpg) no-repeat 0px 0px;'><h2>股票代码:" + transPrompt.StockCode + "到达卖出价格</h2></br>" +
+				"<div'><h2>股票代码:" + transPrompt.StockCode + "到达卖出价格</h2></br>" +
 					"<h4>设定卖出价格为:" + fmt.Sprint(transPrompt.PromptSellPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptSellCount) + "</h4></br>" +
