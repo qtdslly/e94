@@ -42,7 +42,7 @@ func main(){
 		return
 	}
 	for _, f := range files {
-		GetHistoryDataQNewFromExcel(f.Name())
+		GetHistoryDataQNewFromExcel(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name())
 		return
 	}
 }
