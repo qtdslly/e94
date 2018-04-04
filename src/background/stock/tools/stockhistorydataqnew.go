@@ -37,28 +37,34 @@ func main(){
 
 	db.LogMode(true)
 
-
 	files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
 	if err != nil {
 		logger.Error(err)
 		return
 	}
 	for _, f := range files {
-		GetHistoryDataQNewFromExcel(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name())
+		GetHistoryDataQNewFromExcel(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name(),db)
 		return
 	}
 }
 
 
-func GetHistoryDataQNewFromExcel(fileName string){
+func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB){
 	file, err := os.Open(fileName)
 	if err != nil {
 		logger.Error("File Name : ",fileName, " error : ", err)
 		return
 	}
 	defer file.Close()
+
+	stockCode := fileName[0:6]
 	reader := csv.NewReader(file)
+	k := 0
 	for {
+		k++
+		if k == 1{
+			continue
+		}
 		record, err := reader.Read()
 		if err == io.EOF {
 			break
@@ -66,10 +72,14 @@ func GetHistoryDataQNewFromExcel(fileName string){
 			logger.Error("记录集错误:", err)
 			return
 		}
+		sql := "insert into stock_history_data_q_new(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "',"
 		for i := 0; i < len(record); i++ {
-			fmt.Print(record[i] + " ")
+			sql = sql + record[i] + "','"
 		}
-		fmt.Print("\n")
+		sql = sql[0:len(sql) - 1]
+		sql = sql + " from dual where not exists (select 1 from stock_history_data_q_new where `code` = '" + stockCode + "' and `date` = '" + record[0] + "');"
+
+		fmt.Println(sql)
 	}
 }
 
