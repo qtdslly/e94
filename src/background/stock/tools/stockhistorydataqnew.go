@@ -51,7 +51,7 @@ func main(){
 func GetHistoryDataQNewFromExcel(fileName string){
 	xlsx, err := excelize.OpenFile(fileName)
 	if err != nil {
-		logger.Error(err)
+		logger.Error("File Name : ",fileName , " error : " ,err)
 		return
 	}
 	rows := xlsx.GetRows("Sheet1")
