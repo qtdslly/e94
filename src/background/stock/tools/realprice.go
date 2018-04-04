@@ -29,17 +29,41 @@ func main(){
 	db.LogMode(false)
 	model.InitModel(db)
 
+	if stockName == "all"{
+		var transPrompts []model.TransPrompt
+		if err = db.Find(&transPrompts).Error; err != nil{
+			logger.Error(err)
+			return
+		}
+		for _ , transPrompt := range transPrompts{
+			var stock model.StockList
+			if err = db.Where("name = ?",stockName).First(&stock).Error ; err != nil{
+				logger.Error("stock name:",stockName , " error:",err)
+				return
+			}
+			GetNowStockInfo(transPrompt.StockCode,db)
+		}
+		return
+	}
+
 	var stock model.StockList
 	if err = db.Where("name = ?",stockName).First(&stock).Error ; err != nil{
 		logger.Error("stock name:",stockName , " error:",err)
 		return
 	}
-	jysCode := util.GetJysCodeByStockCode(stock.Code)
+	GetNowStockInfo(stock.Code,db)
+}
+
+func GetNowStockInfo(code string,db *gorm.DB){
+	var err error
+
+	jysCode := util.GetJysCodeByStockCode(code)
 	var realTimeStock *model.RealTimeStock
-	if err, realTimeStock = service.GetRealTimeStockInfoByStockCode(jysCode,stock.Code) ; err != nil{
+	if err, realTimeStock = service.GetRealTimeStockInfoByStockCode(jysCode,code) ; err != nil{
 		logger.Error(err)
 		return
 	}
 
 	logger.Printf("Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00) + "%")
+
 }

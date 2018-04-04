@@ -49,7 +49,7 @@ func main() {
 			time.Sleep(time.Hour * 24)
 		}
 	}()
-	
+
 	go task.TransPromptAll(db)
 	//task.GetLargeFallStockInfo(db)
 	//go func() {
