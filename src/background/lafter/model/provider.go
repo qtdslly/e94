@@ -9,7 +9,7 @@ import (
 )
 
 type Provider struct {
-	Id          uint32     `gorm:"primary_key" json:"id"`
+	Id          uint8     `gorm:"primary_key" json:"id"`
 	Name        string     `gorm:"name" json:"name"`
 	Url         string     `gorm:"url" json:"url"`
 	Status      string     `gorm:"status" json:"status"`  // 0不爬取 1爬取
