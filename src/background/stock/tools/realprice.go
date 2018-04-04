@@ -61,6 +61,6 @@ func GetNowStockInfo(code string,db *gorm.DB){
 
 	name := util.GetNameByCode(code,db)
 
-	logger.Printf(name + " Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00) + "%")
+	logger.Printf(name + " Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00))
 
 }
