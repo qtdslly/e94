@@ -43,14 +43,14 @@ func main(){
 		return
 	}
 	for _, f := range files {
-		GetHistoryDataQNewFromExcel(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name(),db)
+		GetHistoryDataQNewFromExcel(f.Name(),db)
 		return
 	}
 }
 
 
 func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB){
-	file, err := os.Open(fileName)
+	file, err := os.Open(config.GetStorageRoot() + "TransData/HistoryDataNew/" + fileName)
 	if err != nil {
 		logger.Error("File Name : ",fileName, " error : ", err)
 		return
@@ -76,7 +76,7 @@ func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB){
 		for i := 0; i < len(record); i++ {
 			sql = sql + record[i] + "','"
 		}
-		sql = sql[0:len(sql) - 1]
+		sql = sql[0:len(sql) - 2]
 		sql = sql + " from dual where not exists (select 1 from stock_history_data_q_new where `code` = '" + stockCode + "' and `date` = '" + record[0] + "');"
 
 		fmt.Println(sql)
