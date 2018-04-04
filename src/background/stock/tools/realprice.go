@@ -29,7 +29,7 @@ func main(){
 	db.LogMode(false)
 	model.InitModel(db)
 
-	if stockName == "all"{
+	if *stockName == "all"{
 		var transPrompts []model.TransPrompt
 		if err = db.Find(&transPrompts).Error; err != nil{
 			logger.Error(err)
