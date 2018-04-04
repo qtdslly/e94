@@ -39,6 +39,8 @@ func main() {
 	
 	model.InitModel(db)
 
+	go task.TransPromptAll(db)
+
 	go func(){
 		for{
 			var p = time.Now()
@@ -50,7 +52,6 @@ func main() {
 		}
 	}()
 
-	go task.TransPromptAll(db)
 	//task.GetLargeFallStockInfo(db)
 	//go func() {
 	//	for {

@@ -73,6 +73,7 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt){
 			//logger.Debug("未到交易价格，暂不交易!!!!")
 		}
 		if result{
+			logger.Debug("邮件发送成功!!!")
 			havePrompt = true
 		}
 		time.Sleep(time.Second)
