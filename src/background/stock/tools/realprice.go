@@ -36,19 +36,14 @@ func main(){
 			return
 		}
 		for _ , transPrompt := range transPrompts{
-			var stock model.StockList
-			if err = db.Where("name = ?",stockName).First(&stock).Error ; err != nil{
-				logger.Error("stock name:",stockName , " error:",err)
-				return
-			}
 			GetNowStockInfo(transPrompt.StockCode,db)
 		}
 		return
 	}
 
 	var stock model.StockList
-	if err = db.Where("name = ?",stockName).First(&stock).Error ; err != nil{
-		logger.Error("stock name:",stockName , " error:",err)
+	if err = db.Where("name = ?",*stockName).First(&stock).Error ; err != nil{
+		logger.Error("stock name:",*stockName , " error:",err)
 		return
 	}
 	GetNowStockInfo(stock.Code,db)
@@ -64,6 +59,8 @@ func GetNowStockInfo(code string,db *gorm.DB){
 		return
 	}
 
-	logger.Printf("Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00) + "%")
+	name := util.GetNameByCode(code,db)
+
+	logger.Printf(name + " Now price : " + fmt.Sprint(realTimeStock.NowPrice) + " Rose : " + fmt.Sprintf("%.2f",(realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) / realTimeStock.YestdayClosePrice * 100.00) + "%")
 
 }
