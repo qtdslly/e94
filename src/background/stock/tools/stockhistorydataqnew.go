@@ -9,9 +9,11 @@ import (
 	"flag"
 	"io/ioutil"
 
-	"github.com/Luxurioust/excelize"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"encoding/csv"
+	"io"
+	"os"
 )
 
 func main(){
@@ -49,20 +51,25 @@ func main(){
 
 
 func GetHistoryDataQNewFromExcel(fileName string){
-	xlsx, err := excelize.OpenFile(fileName)
+	file, err := os.Open(fileName)
 	if err != nil {
-		logger.Error("File Name : ",fileName , " error : " ,err)
+		logger.Error("File Name : ",fileName, " error : ", err)
 		return
 	}
-	rows := xlsx.GetRows("Sheet1")
-	for i, row := range rows {
-		if i == 0{
-			continue
+	defer file.Close()
+	reader := csv.NewReader(file)
+	for {
+		record, err := reader.Read()
+		if err == io.EOF {
+			break
+		} else if err != nil {
+			logger.Error("记录集错误:", err)
+			return
 		}
-		for _, value := range row {
-			fmt.Print(value, "\t")
+		for i := 0; i < len(record); i++ {
+			fmt.Print(record[i] + " ")
 		}
-		fmt.Println()
+		fmt.Print("\n")
 	}
 }
 
