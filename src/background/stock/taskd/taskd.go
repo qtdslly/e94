@@ -54,7 +54,6 @@ func main() {
 			var p = time.Now()
 			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
 				go task.SyncAllRealTimeStockInfo(db)
-				//task.SyncHoldStockRealTimeInfo()
 			}
 			time.Sleep(time.Hour * 24)
 		}
