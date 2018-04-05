@@ -52,6 +52,14 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 		query, err := goquery.NewDocument(p.Url)
 		if err != nil {
 			logger.Error(err)
+
+			p.PageStatus = 2
+			p.UpdatedAt = time.Now()
+			if err = db.Save(&p).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
+
 			return
 		}
 
