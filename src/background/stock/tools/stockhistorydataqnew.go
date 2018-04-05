@@ -62,16 +62,17 @@ func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB)(error){
 	reader := csv.NewReader(file)
 	k := 0
 	for {
-		k++
-		if k == 1{
-			continue
-		}
+
 		record, err := reader.Read()
 		if err == io.EOF {
 			break
 		} else if err != nil {
 			logger.Error("记录集错误:", err)
 			return err
+		}
+		k++
+		if k == 1{
+			continue
 		}
 		sql := "insert into stock_history_data_q_new(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "','"
 		for i := 0; i < len(record); i++ {
