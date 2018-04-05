@@ -12,7 +12,7 @@ import (
 	"background/stock/model"
 	"background/stock/config"
 	"background/common/constant"
-	ccms "background/stock/controller/cms"
+	cc "background/stock/controller"
 
 	_ "github.com/go-sql-driver/mysql"
 	"background/common/middleware"
@@ -53,7 +53,6 @@ func main(){
 
 	model.InitModel(db)
 
-
 	r := gin.New()
 
 	gin.SetMode(gin.DebugMode)
@@ -64,11 +63,14 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
+	r.LoadHTMLGlob("tmpl/*")
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-		cms.GET("/stock/list", ccms.StockListHandler)
-		cms.GET("/stock/html", ccms.StockHtmlHandler)
+
+		cms.GET("/stock/index", cc.StockHtmlHandler)
+		cms.GET("/stock/list", cc.StockListHandler)
+		cms.GET("/stock/html", cc.StockHtmlHandler)
 	}
 
 	r.Run(":16882")
