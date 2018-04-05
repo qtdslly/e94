@@ -12,15 +12,15 @@ type StockList struct {
 	Pe                     string     `gorm:"pe" json:"pe"`                                //市盈率
 	Outstanding            string     `gorm:"outstanding" json:"outstanding"`              //流通股本(亿)
 	Totals                 string     `gorm:"totals" json:"totals"`                        //总股本(亿)
-	TotalAssets            string     `gorm:"totalAssets" json:"totalAssets"`              //总资产(万)
-	LiquidAssets           string     `gorm:"liquidAssets" json:"liquidAssets"`            //流动资产
-	FixedAssets            string     `gorm:"fixedAssets" json:"fixedAssets"`              //固定资产
+	TotalAssets            string     `gorm:"total_assets" json:"total_assets"`              //总资产(万)
+	LiquidAssets           string     `gorm:"liquid_assets" json:"liquid_assets"`            //流动资产
+	FixedAssets            string     `gorm:"fixed_assets" json:"fixed_assets"`              //固定资产
 	Reserved               string     `gorm:"reserved" json:"reserved"`                    //公积金
-	ReservedPerShare       string     `gorm:"reservedPerShare" json:"reservedPerShare"`    //每股公积金
+	ReservedPerShare       string     `gorm:"reserved_per_share" json:"reserved_per_share"`    //每股公积金
 	Esp                    string     `gorm:"esp" json:"esp"`                              //每股收益
 	Bvps                   string     `gorm:"bvps" json:"bvps"`                            //每股净资
 	Pb                     string     `gorm:"pb" json:"pb"`                                //市净率
-	TimeToMarket           string     `gorm:"timeToMarket" json:"timeToMarket"`            //上市日期
+	TimeToMarket           string     `gorm:"time_to_market" json:"time_to_market"`            //上市日期
 	Undp                   string     `gorm:"undp" json:"undp"`                            //未分利润
 	Perundp                string     `gorm:"perundp" json:"perundp"`                      //每股未分配
 	Rev                    string     `gorm:"rev" json:"rev"`                              //收入同比(%)
