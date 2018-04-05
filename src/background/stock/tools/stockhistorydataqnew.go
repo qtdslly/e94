@@ -44,7 +44,7 @@ func main(){
 	for _, f := range files {
 		if err = GetHistoryDataQNewFromExcel(f.Name(),db) ; err != nil{
 			logger.Error(err)
-			return 
+			return
 		}
 	}
 }
