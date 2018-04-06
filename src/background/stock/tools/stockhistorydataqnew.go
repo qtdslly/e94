@@ -13,6 +13,8 @@ import (
 	"encoding/csv"
 	"io"
 	"os"
+	"sync"
+	"time"
 )
 
 func main(){
@@ -41,11 +43,37 @@ func main(){
 		logger.Error(err)
 		return
 	}
+
+	var process *sync.Mutex
+	process = new(sync.Mutex)
+	var Count int = 0
+
 	for _, f := range files {
-		if err = GetHistoryDataQNewFromExcel(f.Name(),db) ; err != nil{
-			logger.Error(err)
-			return
+		for{
+			if Count > 5{
+				time.Sleep(time.Millisecond * 100)
+			}else{
+				break
+			}
 		}
+		go func(){
+			process.Lock()
+			Count++
+			process.Unlock()
+			if err = GetHistoryDataQNewFromExcel(f.Name(),db) ; err != nil{
+				logger.Error(err)
+				return
+			}
+			process.Lock()
+			Count--
+			process.Unlock()
+		}()
+		time.Sleep(time.Millisecond * 100)
+	}
+
+	for{
+		time.Sleep(time.Second * 60)
+
 	}
 }
 
