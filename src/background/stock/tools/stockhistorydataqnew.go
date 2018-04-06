@@ -39,7 +39,9 @@ func main(){
 	db.LogMode(true)
 
 
+	times := 0
 	for{
+		times++
 		files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
 		if err != nil {
 			logger.Error(err)
@@ -53,7 +55,7 @@ func main(){
 		k := 0
 		for _, f := range files {
 			for{
-				if Count > 15{
+				if Count > 20{
 					time.Sleep(time.Millisecond * 100)
 				}else{
 					break
@@ -76,22 +78,17 @@ func main(){
 			time.Sleep(time.Millisecond * 100)
 		}
 
-		time.Sleep(time.Minute * 10)
-		if Count == 0 && k == len(files){
-			continue
-		}else{
-			for{
-				time.Sleep(time.Second * 60)
+		for{
+			if Count == 0 && k == len(files){
+				break
+			}else{
+				time.Sleep(time.Second * 10)
 			}
 		}
 
-	}
-
-
-
-	for{
-		time.Sleep(time.Second * 60)
-
+		if times == 100{
+			break
+		}
 	}
 }
 
