@@ -38,38 +38,56 @@ func main(){
 
 	db.LogMode(true)
 
-	files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
-	if err != nil {
-		logger.Error(err)
-		return
-	}
 
-	var process *sync.Mutex
-	process = new(sync.Mutex)
-	var Count int = 0
+	for{
+		files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
+		if err != nil {
+			logger.Error(err)
+			return
+		}
 
-	for _, f := range files {
-		for{
-			if Count > 5{
-				time.Sleep(time.Millisecond * 100)
-			}else{
-				break
+		var process *sync.Mutex
+		process = new(sync.Mutex)
+		var Count int = 0
+
+		k := 0
+		for _, f := range files {
+			for{
+				if Count > 15{
+					time.Sleep(time.Millisecond * 100)
+				}else{
+					break
+				}
+			}
+			go func(){
+				process.Lock()
+				Count++
+				process.Unlock()
+				if err = GetHistoryDataQNewFromExcel(f.Name(),db) ; err != nil{
+					logger.Error(err)
+					return
+				}
+				process.Lock()
+				Count--
+				process.Unlock()
+			}()
+
+			k++
+			time.Sleep(time.Millisecond * 100)
+		}
+
+		time.Sleep(time.Minute * 10)
+		if Count == 0 && k == len(files){
+			continue
+		}else{
+			for{
+				time.Sleep(time.Second * 60)
 			}
 		}
-		go func(){
-			process.Lock()
-			Count++
-			process.Unlock()
-			if err = GetHistoryDataQNewFromExcel(f.Name(),db) ; err != nil{
-				logger.Error(err)
-				return
-			}
-			process.Lock()
-			Count--
-			process.Unlock()
-		}()
-		time.Sleep(time.Millisecond * 100)
+
 	}
+
+
 
 	for{
 		time.Sleep(time.Second * 60)
