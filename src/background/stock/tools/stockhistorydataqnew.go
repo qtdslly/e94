@@ -54,7 +54,7 @@ func main(){
 		for _, f := range files {
 			k++
 			if IsHaveDone(f.Name(),db) {
-				return
+				continue
 			}
 			for{
 				if Count > 20{
