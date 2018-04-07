@@ -111,6 +111,7 @@ func IsHaveDone(name string,db *gorm.DB) (bool){
 		logger.Debug("Count:",Count)
 		return false
 	}
+	logger.Debug("Count:",Count)
 	return true
 }
 
