@@ -1,21 +1,20 @@
 package main
 
 import (
-	//"background/stock/model"
 	"background/common/logger"
 	"background/stock/config"
 
-	"flag"
-	"io/ioutil"
-
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/jinzhu/gorm"
-	"encoding/csv"
 	"io"
 	"os"
 	"sync"
 	"time"
-	"strconv"
+	"flag"
+	"io/ioutil"
+	"encoding/csv"
+
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/jinzhu/gorm"
+
 )
 
 func main(){
