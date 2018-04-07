@@ -54,11 +54,11 @@ func main(){
 
 		k := 0
 		for _, f := range files {
-
+			k++
 			if IsHaveDone(f.Name(),db) {
 				continue
 			}
-			k++
+
 			for{
 				if Count > 20{
 					time.Sleep(time.Millisecond * 100)
@@ -108,6 +108,7 @@ func IsHaveDone(name string,db *gorm.DB) (bool){
 	}
 
 	if Count == 0{
+		logger.Debug("Count:",Count)
 		return false
 	}
 	return true
