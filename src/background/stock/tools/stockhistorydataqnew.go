@@ -54,6 +54,11 @@ func main(){
 
 		k := 0
 		for _, f := range files {
+
+			if IsHaveDone(f.Name(),db) {
+				continue
+			}
+			k++
 			for{
 				if Count > 20{
 					time.Sleep(time.Millisecond * 100)
@@ -74,7 +79,7 @@ func main(){
 				process.Unlock()
 			}()
 
-			k++
+
 			time.Sleep(time.Millisecond * 100)
 		}
 
@@ -90,6 +95,22 @@ func main(){
 			break
 		}
 	}
+}
+
+func IsHaveDone(name string,db *gorm.DB) (bool){
+	code := name[0:6]
+	year := name[7:11]
+
+	var Count int
+	if err := db.Where("code = ? and date like '?%'",code,year).Count(&Count).Error ; err !=nil{
+		logger.Error(err)
+		return false
+	}
+
+	if Count == 0{
+		return false
+	}
+	return true
 }
 
 
