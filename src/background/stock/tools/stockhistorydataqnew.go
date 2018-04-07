@@ -102,7 +102,7 @@ func IsHaveDone(name string,db *gorm.DB) (bool){
 	year := name[7:11]
 
 	var Count int
-	if err := db.Where("code = ? and date like '?%'",code,year).Count(&Count).Error ; err !=nil{
+	if err := db.Where("code = ? and date like '?%'",code,year).Table("stock_history_data_q_new").Count(&Count).Error ; err !=nil{
 		logger.Error(err)
 		return false
 	}
