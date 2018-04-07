@@ -14,7 +14,6 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
-
 )
 
 func main(){
@@ -38,7 +37,6 @@ func main(){
 
 	db.LogMode(true)
 
-
 	times := 0
 	for{
 		times++
@@ -55,8 +53,9 @@ func main(){
 		k := 0
 		for _, f := range files {
 			k++
-
-
+			if IsHaveDone(f.Name(),db) {
+				return
+			}
 			for{
 				if Count > 20{
 					time.Sleep(time.Millisecond * 100)
@@ -65,9 +64,7 @@ func main(){
 				}
 			}
 			go func(){
-				if IsHaveDone(f.Name(),db) {
-					return 
-				}
+
 				process.Lock()
 				Count++
 				process.Unlock()
@@ -79,7 +76,6 @@ func main(){
 				Count--
 				process.Unlock()
 			}()
-
 
 			time.Sleep(time.Millisecond * 100)
 		}
