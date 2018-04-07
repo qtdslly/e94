@@ -15,6 +15,7 @@ import (
 	"os"
 	"sync"
 	"time"
+	"strconv"
 )
 
 func main(){
@@ -99,7 +100,7 @@ func main(){
 
 func IsHaveDone(name string,db *gorm.DB) (bool){
 	code := name[0:6]
-	year := name[7:11]
+	year,_ := strconv.Atoi(name[7:11])
 
 	var Count int
 	if err := db.Where("code = ? and date like '?%'",code,year).Table("stock_history_data_q_new").Count(&Count).Error ; err !=nil{
