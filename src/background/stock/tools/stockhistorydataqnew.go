@@ -55,9 +55,7 @@ func main(){
 		k := 0
 		for _, f := range files {
 			k++
-			if IsHaveDone(f.Name(),db) {
-				continue
-			}
+
 
 			for{
 				if Count > 20{
@@ -67,6 +65,9 @@ func main(){
 				}
 			}
 			go func(){
+				if IsHaveDone(f.Name(),db) {
+					return 
+				}
 				process.Lock()
 				Count++
 				process.Unlock()
