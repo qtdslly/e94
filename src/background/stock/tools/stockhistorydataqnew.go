@@ -53,6 +53,11 @@ func main(){
 		k := 0
 		for _, f := range files {
 			k++
+
+			if k < 2000{
+				continue
+			}
+			logger.Debug("================================================k:",k)
 			if IsHaveDone(f.Name(),db) {
 				continue
 			}
