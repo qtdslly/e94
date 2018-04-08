@@ -13,8 +13,9 @@ import (
 )
 
 func GetContentByProvider(provider model.Provider,db *gorm.DB){
+	GetContent(provider,db)
 	for{
-		GetContent(provider,db)
+
 		time.Sleep(time.Second * 10)
 	}
 
@@ -63,8 +64,10 @@ func GetContent(provider model.Provider,db *gorm.DB){
 			return
 		}
 
-		if p.ProviderId == 1{
-			GetXiaoHuaJiContent(p,query,db)
+		if p.ProviderId == 4{
+			GetWaiJiContent(p,query,db)
+		}else{
+			continue
 		}
 
 		p.PageStatus = 1
@@ -75,7 +78,7 @@ func GetContent(provider model.Provider,db *gorm.DB){
 	}
 }
 
-func GetXiaoHuaJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.DB){
+func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.DB){
 
 	desSec := document.Find("#content-2").Find(".c")
 	if desSec == nil{

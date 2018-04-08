@@ -45,7 +45,7 @@ func main() {
 	}
 
 	for _,provider := range providers{
-		go task.GetPageUrlByProvider(provider,db)
+		go task.GetContentByProvider(provider,db)
 	}
 
 	for{

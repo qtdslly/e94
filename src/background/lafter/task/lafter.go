@@ -14,8 +14,9 @@ import (
 )
 
 func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
+	GetPageUrl(provider,db)
+
 	for{
-		GetPageUrl(provider,db)
 		time.Sleep(time.Second * 10)
 	}
 
