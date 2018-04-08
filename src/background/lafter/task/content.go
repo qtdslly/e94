@@ -87,7 +87,7 @@ func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.D
 		contentId := "#content-" + fmt.Sprint(i)
 		doc := document.Find(contentId)
 		text := doc.Find(".c").Text()
-		title := doc.Find("#title")
+		title := doc.Find("#title").Text()
 		if len(text) != 0{
 			var content model.Content
 			content.Title = title
@@ -103,7 +103,7 @@ func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.D
 			pageUrl.UrlStatus = 1
 			if err := db.Save(&pageUrl).Error; err != nil{
 				logger.Error(err)
-				return 
+				return
 			}
 		}
 		if i == 10{
