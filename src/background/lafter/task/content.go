@@ -6,6 +6,7 @@ import (
 	"background/common/logger"
 
 	"time"
+	"fmt"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
@@ -80,33 +81,27 @@ func GetContent(provider model.Provider,db *gorm.DB){
 
 func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.DB){
 
-	desSec := document.Find("#content-2").Find(".c")
-	if desSec == nil{
-		desSec = document.Find("#content")
-	}
-
-	var title string
-	des := desSec.Text()
-	if len(des) > 0{
-		titleSec := document.Find("#title")
-		if titleSec == nil{
-			titleSec = document.Find(".xiaohua").Find(".xiaohua-data").Find("h1").Eq(0)
+	var i = 0
+	for {
+		i++
+		contentId := "#content-" + fmt.Sprint(i)
+		doc := document.Find(contentId)
+		text := doc.Find(".c").Text()
+		title := doc.Find("#title")
+		if len(text) != 0{
+			var content model.Content
+			content.Title = title
+			content.Content = text
+			content.PageId = pageUrl.Id
+			content.CreatedAt = time.Now()
+			content.UpdatedAt = time.Now()
+			if err := db.Save(&content).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
 		}
-		if titleSec != nil{
-			title = titleSec.Text()
-		}
-	}
-
-	if len(des) != 0{
-		var content model.Content
-		content.Title = title
-		content.Content = des
-		content.PageId = pageUrl.Id
-		content.CreatedAt = time.Now()
-		content.UpdatedAt = time.Now()
-		if err := db.Save(&content).Error ; err != nil{
-			logger.Error(err)
-			return
+		if i == 10{
+			break
 		}
 	}
 }
