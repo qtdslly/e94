@@ -64,7 +64,7 @@ func GetContent(provider model.Provider,db *gorm.DB){
 		}
 
 		if p.ProviderId == 4{
-			GetWaiJiContent(p,query,db)
+			GetWaiJiContent(&p,query,db)
 		}else{
 			continue
 		}
@@ -77,7 +77,7 @@ func GetContent(provider model.Provider,db *gorm.DB){
 	}
 }
 
-func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.DB){
+func GetWaiJiContent(pageUrl *model.PageUrl,document *goquery.Document,db *gorm.DB){
 
 	var i = 0
 	for {
@@ -104,7 +104,7 @@ func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.D
 			logger.Error(err)
 			return
 		}
-		
+
 		if i == 10{
 			break
 		}
