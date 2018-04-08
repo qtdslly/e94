@@ -19,6 +19,12 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db provider failed, ", err)
 		return err
 	}
+
+	err = initContent(db)
+	if err != nil {
+		logger.Fatal("Init db content failed, ", err)
+		return err
+	}
 	return err
 }
 
@@ -26,5 +32,6 @@ func InitModel(db *gorm.DB) error {
 func rebuildModel(db *gorm.DB) {
 	dropPageUrl(db)
 	dropProvider(db)
+	dropContent(db)
 	InitModel(db)
 }
