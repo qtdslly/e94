@@ -99,6 +99,12 @@ func GetWaiJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.D
 				logger.Error(err)
 				return
 			}
+
+			pageUrl.UrlStatus = 1
+			if err := db.Save(&pageUrl).Error; err != nil{
+				logger.Error(err)
+				return 
+			}
 		}
 		if i == 10{
 			break
