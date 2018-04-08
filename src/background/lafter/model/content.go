@@ -11,8 +11,8 @@ import (
 type Content struct {
 	Id              uint32     `gorm:"primary_key" json:"id"`
 	PageId          uint32     `gorm:"page_id" json:"page_id"`
-	Title           string     `gorm:"type:title" json:"title"`
-	Content         string     `gorm:"type:content" json:"content"`
+	Title           string     `gorm:"title" json:"title"`
+	Content         string     `gorm:"type:longtext" json:"content"`
 	CreatedAt       time.Time  `json:"created_at"`
 	UpdatedAt       time.Time  `json:"updated_at"`
 }
