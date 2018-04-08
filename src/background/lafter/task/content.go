@@ -64,7 +64,7 @@ func GetContent(provider model.Provider,db *gorm.DB){
 		}
 
 		if p.ProviderId == 1{
-			GetXiaoHuaJiContent(p,query)
+			GetXiaoHuaJiContent(p,query,db)
 		}
 
 		p.PageStatus = 1
@@ -75,12 +75,35 @@ func GetContent(provider model.Provider,db *gorm.DB){
 	}
 }
 
-func GetXiaoHuaJiContent(pageUrl model.PageUrl,document *goquery.Document){
-	//des := document.Find("#text110").Text()
-	//title := document.Find(".main").Find("h1").
-	//if len(des) != 0{
-	//	var content model.Content
-	//	content.Title = ""
-	//	content.Content = des
-	//}
+func GetXiaoHuaJiContent(pageUrl model.PageUrl,document *goquery.Document,db *gorm.DB){
+
+	desSec := document.Find("#content-2").Find(".c")
+	if desSec == nil{
+		desSec = document.Find("#content")
+	}
+
+	var title string
+	des := desSec.Text()
+	if len(des) > 0{
+		titleSec := document.Find("#title")
+		if titleSec == nil{
+			titleSec = document.Find(".xiaohua").Find(".xiaohua-data").Find("h1").Eq(0)
+		}
+		if titleSec != nil{
+			title = titleSec.Text()
+		}
+	}
+
+	if len(des) != 0{
+		var content model.Content
+		content.Title = title
+		content.Content = des
+		content.PageId = pageUrl.Id
+		content.CreatedAt = time.Now()
+		content.UpdatedAt = time.Now()
+		if err := db.Save(&content).Error ; err != nil{
+			logger.Error(err)
+			return
+		}
+	}
 }
