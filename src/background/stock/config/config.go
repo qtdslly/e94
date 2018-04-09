@@ -31,7 +31,7 @@ func init() {
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
-	c.TmplRoot = "/home/lyric/Git/e94/src/background/stock/html/"
+	c.TmplRoot = "f:/Git/e94/src/background/stock/tmpl/"
 	c.StaticRoot = "/home/lyric/Git/e94/src/background/stock/static/"
 }
 

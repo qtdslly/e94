@@ -16,6 +16,8 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"background/common/middleware"
+	"io/ioutil"
+	"strings"
 )
 
 func main(){
@@ -66,17 +68,35 @@ func main(){
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-		r.LoadHTMLGlob(config.GetTmplRoot() + "css/*")
+		//load(config.GetTmplRoot() ,r)
 		r.LoadHTMLGlob(config.GetTmplRoot() + "*.html")
 		cms.GET("/stock/index", cc.StockHtmlHandler)
 		cms.GET("/stock/list", cc.StockListHandler)
 		cms.GET("/stock/html", cc.StockHtmlHandler)
 	}
-
 	r.Run(":16882")
 
 }
 
-func load(){
+func load(path string,r *gin.Engine){
+	files, err := ioutil.ReadDir(path)
+	if err != nil {
+		logger.Error(err)
+		return
+	}
 
+	for _ ,file := range files{
+		if file.Name() == "feeds" || file.Name() == "pic" || file.Name() == "js"{
+			continue
+		}
+		if strings.Contains(file.Name(),".js"){
+			continue
+		}
+		if file.IsDir(){
+			load(path + "/" + file.Name(),r)
+		}else{
+			r.LoadHTMLGlob(path + "/" + file.Name())
+		}
+
+	}
 }
