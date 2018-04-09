@@ -16,6 +16,8 @@ type config struct {
 	LoggerLevel   uint8  `json:"logger_level"`
 	EnableOrmLog  bool   `json:"enable_orm_log"`
 	EnableHttpLog bool   `json:"enable_http_log"`
+	TmplRoot      string `json:"tmpl_root"`
+	StaticRoot    string `json:"static_root"`
 }
 
 var c config
@@ -25,10 +27,12 @@ func init() {
 	c.StorageRoot = "/home/lyric/data/stock/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "root:hahawap@tcp(localhost:3306)/lyric?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "imsuser:imspass@tcp(localhost:3306)/lyric?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
+	c.TmplRoot = "/home/lyric/Git/e94/src/background/stock/html/"
+	c.StaticRoot = "/home/lyric/Git/e94/src/background/stock/static/"
 }
 
 func LoadConfig(path string) error {
@@ -85,4 +89,12 @@ func GetStorageRoot() string {
 
 func GetStorageTmp() string {
 	return c.StorageTmp
+}
+
+func GetTmplRoot() string {
+	return c.TmplRoot
+}
+
+func GetStaticRoot() string {
+	return c.StaticRoot
 }

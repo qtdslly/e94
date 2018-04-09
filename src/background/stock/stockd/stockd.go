@@ -63,16 +63,20 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
-	r.LoadHTMLGlob("tmpl/*")
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-
+		r.LoadHTMLGlob(config.GetTmplRoot() + "css/*")
+		r.LoadHTMLGlob(config.GetTmplRoot() + "*.html")
 		cms.GET("/stock/index", cc.StockHtmlHandler)
 		cms.GET("/stock/list", cc.StockListHandler)
 		cms.GET("/stock/html", cc.StockHtmlHandler)
 	}
 
 	r.Run(":16882")
+
+}
+
+func load(){
 
 }

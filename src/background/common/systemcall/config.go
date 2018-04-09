@@ -15,8 +15,8 @@ func SetFileLimit() {
 		log.Fatal("get rlimit error: " + err.Error())
 		return
 	}
-	rlim.Cur = 65000
-	rlim.Max = 65000
+	rlim.Cur = 1024
+	rlim.Max = 1024
 	err = syscall.Setrlimit(syscall.RLIMIT_NOFILE, &rlim)
 	if err != nil {
 		log.Fatal("set rlimit error: " + err.Error())
