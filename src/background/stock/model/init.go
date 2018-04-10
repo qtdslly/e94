@@ -82,6 +82,6 @@ func rebuildModel(db *gorm.DB) {
 	dropDeepFallStock(db)
 	dropSimulation(db)
 	dropTonghuashunSuggestion(db)
-	dropTonghuashunMainForceControl()
+	dropTonghuashunMainForceControl(db)
 	InitModel(db)
 }
