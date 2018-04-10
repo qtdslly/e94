@@ -27,6 +27,9 @@ func main(){
 	db, err := gorm.Open(config.GetDBName(), config.GetDBSource())
 	if err != nil {
 		logger.Fatal("Open db Failed!!!!", err)
+		logger.Debug(config.GetDBName())
+		logger.Debug(config.GetDBSource())
+
 		return
 	}
 
