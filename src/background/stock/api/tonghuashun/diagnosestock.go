@@ -97,7 +97,7 @@ type ControlData struct {
 	FundAnalyse	   string	      `gorm:"fund_analyse" json:"fundAnalyse"`              //主力迹象
 	CurrentFund        string	      `gorm:"current_fund" json:"currentFund"`              //当前资金净流入
 	State              string	      `gorm:"state" json:"state"`                           //资金流入流出状态
-	Amount             float32	      `gorm:"amount" json:"amount"`                         //汇总金额
+	Amount             string	      `gorm:"amount" json:"amount"`                         //汇总金额
 	FundDataJson       []Capital	      `gorm:"fund_data_json" json:"fund_data_json"`         //资金数据
 	ControlValue       string	      `gorm:"control_value" json:"controlvalue"`            //控盘度
 }
@@ -109,7 +109,7 @@ type ControlInfo struct {
 
 }
 /*获取资金及控盘信息*/
-func GetControlInfo(code string,db *gorm.DB){
+func GetControlInfo(code string,db *gorm.DB)(error){
 	cur := time.Now()
 	timestamp := cur.UnixNano() / 1000000
 	url := "https://vaserviece.10jqka.com.cn/diagnosestock/index.php?op=getComboData&&dataType=currentFunds&&stockcode=" + code + "&_=" + fmt.Sprint(timestamp)
@@ -117,19 +117,20 @@ func GetControlInfo(code string,db *gorm.DB){
 	resp, err := req.Get(url)
 	if err != nil {
 		logger.Error(err)
-		return
+		return err
 	}
 
 	recv,err := ioutil.ReadAll(resp.Response().Body)
 	if err != nil{
 		logger.Error(err)
+		return err
 	}
 
 	logger.Print(string(recv))
 	var control ControlInfo
 	if err = json.Unmarshal(recv,&control) ; err != nil{
 		logger.Error(err)
-		return
+		return err
 	}
 
 	var mainForceControl model.TonghuashunMainForceControl
@@ -139,7 +140,7 @@ func GetControlInfo(code string,db *gorm.DB){
 	if err := db.Where("code = ? and date = ?",mainForceControl.Code,mainForceControl.Date).First(&mainForceControl).Error ; err != nil{
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
-			return
+			return err
 		}
 	}
 	enc := mahonia.NewEncoder("utf-8")
@@ -151,6 +152,7 @@ func GetControlInfo(code string,db *gorm.DB){
 	mainForceControl.Amount = control.Data.Amount
 	if err := db.Save(&mainForceControl).Error ; err != nil{
 		logger.Error(err)
-		return
+		return err
 	}
+	return  nil
 }

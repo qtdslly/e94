@@ -42,6 +42,8 @@ func main(){
 
 	for _,stock := range stocks{
 		//apiths.GetComprehensive(stock.Code,db)
-		apiths.GetControlInfo(stock.Code,db)
+		if apiths.GetControlInfo(stock.Code,db) != nil{
+			continue
+		}
 	}
 }
