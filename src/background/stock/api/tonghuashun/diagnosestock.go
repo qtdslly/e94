@@ -98,7 +98,7 @@ type ControlData struct {
 	CurrentFund        string	      `gorm:"current_fund" json:"currentFund"`              //当前资金净流入
 	State              string	      `gorm:"state" json:"state"`                           //资金流入流出状态
 	Amount             float32	      `gorm:"amount" json:"amount"`                         //汇总金额
-	FundDataJson       Capital	      `gorm:"fund_data_json" json:"funddatajson"`           //资金数据
+	FundDataJson       []Capital	      `gorm:"fund_data_json" json:"fund_data_json"`         //资金数据
 	ControlValue       string	      `gorm:"control_value" json:"controlvalue"`            //控盘度
 }
 
