@@ -12,6 +12,7 @@ import (
 	"github.com/imroc/req"
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/axgle/mahonia"
 )
 
 type TrackingGuidance struct {
@@ -27,7 +28,7 @@ type CompreData struct {
 	Suggestion	   string             `gorm:"suggestion" json:"suggestion"`                 //建议
 	TotalAnalyse	   string             `gorm:"total_analyse" json:"totalAnalyse"`            //综合分析
 	StockName	   string             `gorm:"stock_name" json:"stockname"`                  //股票名称
-	CompanyChartInfo   []TrackingGuidance `gorm:"company_chart_info" json:"companyChartInfo"`   //跟踪指导信息
+	CompanyChartInfo   []TrackingGuidance `gorm:"company_chart_info" json:"company_chart_info"`   //跟踪指导信息
 }
 type Comprehensive struct {
 	ErrorCode     string     `gorm:"error_code" json:"errorcode"`        //错误码
@@ -72,10 +73,13 @@ func GetComprehensive(code string,db *gorm.DB){
 			return
 		}
 	}
-	suggestion.TotalAnalyse = compre.Data.TotalAnalyse
-	suggestion.Suggestion = compre.Data.Suggestion
+	enc := mahonia.NewEncoder("utf8")
+
+	suggestion.TotalAnalyse = enc.ConvertString(compre.Data.TotalAnalyse)
+	suggestion.Suggestion = enc.ConvertString(compre.Data.Suggestion)
 	suggestion.ClassNumber = compre.Data.ClassNumber
-	suggestion.TotalAnalyseInfo = compre.Data.TotalAnalyseInfo
+	suggestion.TotalScore = compre.Data.TotalScore
+	suggestion.TotalAnalyseInfo = enc.ConvertString(compre.Data.TotalAnalyseInfo)
 	if err := db.Save(&suggestion).Error ; err != nil{
 		logger.Error(err)
 		return
