@@ -73,7 +73,7 @@ func GetComprehensive(code string,db *gorm.DB){
 			return
 		}
 	}
-	enc := mahonia.NewEncoder("utf8")
+	enc := mahonia.NewEncoder("GBK")
 
 	suggestion.TotalAnalyse = enc.ConvertString(compre.Data.TotalAnalyse)
 	suggestion.Suggestion = enc.ConvertString(compre.Data.Suggestion)
