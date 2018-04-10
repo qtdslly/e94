@@ -55,6 +55,13 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db simulation failed, ", err)
 		return err
 	}
+
+	err = initTonghuashunSuggestion(db)
+	if err != nil {
+		logger.Fatal("Init db tonghuashun_suggestion failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -68,5 +75,7 @@ func rebuildModel(db *gorm.DB) {
 	dropTransStockInfo(db)
 	dropDeepFallStock(db)
 	dropSimulation(db)
+	dropTonghuashunSuggestion(db)
+
 	InitModel(db)
 }
