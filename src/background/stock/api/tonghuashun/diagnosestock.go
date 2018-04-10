@@ -28,7 +28,7 @@ type CompreData struct {
 	Suggestion	   string             `gorm:"suggestion" json:"suggestion"`                 //建议
 	TotalAnalyse	   string             `gorm:"total_analyse" json:"totalAnalyse"`            //综合分析
 	StockName	   string             `gorm:"stock_name" json:"stockname"`                  //股票名称
-	CompanyChartInfo   []TrackingGuidance `gorm:"company_chart_info" json:"company_chart_info"`   //跟踪指导信息
+	CompanyChartInfo   []TrackingGuidance `gorm:"company_chart_info" json:"company_chart_info"` //跟踪指导信息
 }
 type Comprehensive struct {
 	ErrorCode     string     `gorm:"error_code" json:"errorcode"`        //错误码
@@ -81,6 +81,75 @@ func GetComprehensive(code string,db *gorm.DB){
 	suggestion.TotalScore = compre.Data.TotalScore
 	suggestion.TotalAnalyseInfo = enc.ConvertString(compre.Data.TotalAnalyseInfo)
 	if err := db.Save(&suggestion).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+}
+
+type Capital struct {
+	date	   string	      `gorm:"date" json:"date"`              //日期
+	state	   int32	      `gorm:"state" json:"state"`            //状态
+	amount	   float32	      `gorm:"amount" json:"amount"`          //金额
+
+}
+
+type ControlData struct {
+	FundAnalyse	   string	      `gorm:"fund_analyse" json:"fundAnalyse"`              //主力迹象
+	CurrentFund        string	      `gorm:"current_fund" json:"currentFund"`              //当前资金净流入
+	State              string	      `gorm:"state" json:"state"`                           //资金流入流出状态
+	Amount             float32	      `gorm:"amount" json:"amount"`                         //汇总金额
+	FundDataJson       Capital	      `gorm:"fund_data_json" json:"funddatajson"`           //资金数据
+	ControlValue       string	      `gorm:"control_value" json:"controlvalue"`            //控盘度
+}
+
+type ControlInfo struct {
+	ErrorCode     string      `gorm:"error_code" json:"errorcode"`        //错误码
+	Data          ControlData
+	Message       string      `gorm:"message" json:"message"`              //消息
+
+}
+/*获取资金及控盘信息*/
+func GetControlInfo(code string,db *gorm.DB){
+	cur := time.Now()
+	timestamp := cur.UnixNano() / 1000000
+	url := "https://vaserviece.10jqka.com.cn/diagnosestock/index.php?op=getComboData&&dataType=currentFunds&&stockcode=" + code + "&_=" + fmt.Sprint(timestamp)
+	logger.Print(url)
+	resp, err := req.Get(url)
+	if err != nil {
+		logger.Error(err)
+		return
+	}
+
+	recv,err := ioutil.ReadAll(resp.Response().Body)
+	if err != nil{
+		logger.Error(err)
+	}
+
+	logger.Print(string(recv))
+	var control ControlInfo
+	if err = json.Unmarshal(recv,&control) ; err != nil{
+		logger.Error(err)
+		return
+	}
+
+	var mainForceControl model.TonghuashunMainForceControl
+	mainForceControl.Code = code
+	p := time.Now()
+	mainForceControl.Date = fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
+	if err := db.Where("code = ? and date = ?",mainForceControl.Code,mainForceControl.Date).First(&mainForceControl).Error ; err != nil{
+		if err != gorm.ErrRecordNotFound{
+			logger.Error(err)
+			return
+		}
+	}
+	enc := mahonia.NewEncoder("utf-8")
+
+	mainForceControl.FundAnalyse = enc.ConvertString(control.Data.FundAnalyse)
+	mainForceControl.CurrentFund = enc.ConvertString(control.Data.CurrentFund)
+	mainForceControl.ControlValue = enc.ConvertString(control.Data.ControlValue)
+	mainForceControl.State = enc.ConvertString(control.Data.State)
+	mainForceControl.Amount = control.Data.Amount
+	if err := db.Save(&mainForceControl).Error ; err != nil{
 		logger.Error(err)
 		return
 	}

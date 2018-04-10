@@ -62,6 +62,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initTonghuashunMainForceControl(db)
+	if err != nil {
+		logger.Fatal("Init db tonghuashun_main_force_control failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -76,6 +82,6 @@ func rebuildModel(db *gorm.DB) {
 	dropDeepFallStock(db)
 	dropSimulation(db)
 	dropTonghuashunSuggestion(db)
-
+	dropTonghuashunMainForceControl()
 	InitModel(db)
 }
