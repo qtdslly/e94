@@ -13,6 +13,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/axgle/mahonia"
+	"strings"
 )
 
 type TrackingGuidance struct {
@@ -97,7 +98,7 @@ type ControlData struct {
 	FundAnalyse	   string	      `gorm:"fund_analyse" json:"fundAnalyse"`              //主力迹象
 	CurrentFund        string	      `gorm:"current_fund" json:"currentFund"`              //当前资金净流入
 	State              string	      `gorm:"state" json:"state"`                           //资金流入流出状态
-	Amount             string	      `gorm:"amount" json:"amount"`                         //汇总金额
+	Amount             float32	      `gorm:"amount" json:"amount"`                         //汇总金额
 	FundDataJson       []Capital	      `gorm:"fund_data_json" json:"fund_data_json"`         //资金数据
 	ControlValue       string	      `gorm:"control_value" json:"controlvalue"`            //控盘度
 }
@@ -127,6 +128,11 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 	}
 
 	logger.Print(string(recv))
+	recvTmp := string(recv)
+	recvTmp = strings.Replace(recvTmp,"<span style=\"color:green\">","",-1)
+	recvTmp = strings.Replace(recvTmp,"</span>","",-1)
+
+	recv = []byte(recvTmp)
 	var control ControlInfo
 	if err = json.Unmarshal(recv,&control) ; err != nil{
 		logger.Error(err)
