@@ -129,8 +129,8 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 
 	logger.Print(string(recv))
 	recvTmp := string(recv)
-	recvTmp = strings.Replace(recvTmp,"<span style=\\\"color:green\\\">","",-1)
-	recvTmp = strings.Replace(recvTmp,"</span>","",-1)
+	recvTmp = strings.Replace(recvTmp,"\"<span style=\\\"color:green\\\">","",-1)
+	recvTmp = strings.Replace(recvTmp,"<\\/span>\"","",-1)
 
 	recv = []byte(recvTmp)
 	var control ControlInfo
