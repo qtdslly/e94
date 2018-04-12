@@ -28,7 +28,7 @@ func GetFreqWaveStock(db *gorm.DB){
 
 		start := fmt.Sprintf("%04d-%02d-%02d",p.Year() - 2 ,p.Month(),p.Day())
 		end := fmt.Sprintf("%04d-%02d-%02d",p.Year() ,p.Month(),p.Day())
-		var stockHistoryDataQNews []*model.StockHistoryDataQNew
+		var stockHistoryDataQNews []*model.StockHistoryDataQ
 		if err , stockHistoryDataQNews = strategy.GetStockHistoryDataQByDate(stock.Code,start,end,db) ; err != nil{
 			logger.Error(err)
 			return
