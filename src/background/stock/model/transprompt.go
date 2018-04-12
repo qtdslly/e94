@@ -16,6 +16,7 @@ type TransPrompt struct {
 	PromptBuyCount         int64      `gorm:"prompt_buy_count" json:"prompt_buy_count"`
 	PromptSellPrice        float64    `gorm:"prompt_sell_price" json:"prompt_sell_price"`
 	PromptSellCount        int64      `gorm:"prompt_sell_count" json:"prompt_sell_count"`
+	Status                 int        `gorm:"status" json:"status"`
 }
 
 func (TransPrompt) TableName() string {

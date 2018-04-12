@@ -17,7 +17,7 @@ import (
 
 func TransPromptAll(db *gorm.DB){
 	var transPrompts []model.TransPrompt
-	if err := db.Find(&transPrompts).Error ; err != nil{
+	if err := db.Where("status = 1").Find(&transPrompts).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
