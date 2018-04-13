@@ -42,6 +42,8 @@ type Comprehensive struct {
 获取综合信息
 */
 func GetComprehensive(code string,db *gorm.DB){
+	var err error
+
 	cur := time.Now()
 	timestamp := cur.UnixNano() / 1000000
 	url := "https://vaserviece.10jqka.com.cn/diagnosestock/index.php?op=getComboData&dataType=index&stockcode=" + code + "&_=" + fmt.Sprint(timestamp)
@@ -68,11 +70,15 @@ func GetComprehensive(code string,db *gorm.DB){
 	suggestion.Code = code
 	p := time.Now()
 	suggestion.Date = fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
-	if err := db.Where("code = ? and date = ?",suggestion.Code,suggestion.Date).First(&suggestion).Error ; err != nil{
+	if err = db.Where("code = ? and date = ?",suggestion.Code,suggestion.Date).First(&suggestion).Error ; err != nil{
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			return
 		}
+	}
+
+	if err == nil{
+		return
 	}
 	enc := mahonia.NewEncoder("utf-8")
 
@@ -81,7 +87,7 @@ func GetComprehensive(code string,db *gorm.DB){
 	suggestion.ClassNumber = compre.Data.ClassNumber
 	suggestion.TotalScore = compre.Data.TotalScore
 	suggestion.TotalAnalyseInfo = enc.ConvertString(compre.Data.TotalAnalyseInfo)
-	if err := db.Save(&suggestion).Error ; err != nil{
+	if err := db.Create(&suggestion).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
@@ -111,6 +117,7 @@ type ControlInfo struct {
 }
 /*获取资金及控盘信息*/
 func GetControlInfo(code string,db *gorm.DB)(error){
+	var err error
 	cur := time.Now()
 	timestamp := cur.UnixNano() / 1000000
 	url := "https://vaserviece.10jqka.com.cn/diagnosestock/index.php?op=getComboData&&dataType=currentFunds&&stockcode=" + code + "&_=" + fmt.Sprint(timestamp)
@@ -143,12 +150,17 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 	mainForceControl.Code = code
 	p := time.Now()
 	mainForceControl.Date = fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
-	if err := db.Where("code = ? and date = ?",mainForceControl.Code,mainForceControl.Date).First(&mainForceControl).Error ; err != nil{
+	if err = db.Where("code = ? and date = ?",mainForceControl.Code,mainForceControl.Date).First(&mainForceControl).Error ; err != nil{
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			return err
 		}
 	}
+
+	if err == nil{
+		return nil
+	}
+
 	enc := mahonia.NewEncoder("utf-8")
 
 	mainForceControl.FundAnalyse = enc.ConvertString(control.Data.FundAnalyse)
@@ -156,7 +168,7 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 	mainForceControl.ControlValue = enc.ConvertString(control.Data.ControlValue)
 	mainForceControl.State = enc.ConvertString(control.Data.State)
 	mainForceControl.Amount = control.Data.Amount
-	if err := db.Save(&mainForceControl).Error ; err != nil{
+	if err = db.FirstOrCreate(&mainForceControl).Error ; err != nil{
 		logger.Error(err)
 		return err
 	}

@@ -46,7 +46,7 @@ func GetTonghuashun(db *gorm.DB){
 	dd, _ := time.ParseDuration("24h")
 	to := now.Add(dd)
 	tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
-	if err := db.Model(model.StockTask{}).Where("key = 'realtimestock'").Update("date", tomorry).Error; err != nil {
+	if err := db.Model(model.StockTask{}).Where("`key` = 'realtimestock'").Update("date", tomorry).Error; err != nil {
 		logger.Error(err)
 		return
 	}

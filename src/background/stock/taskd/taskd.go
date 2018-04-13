@@ -54,7 +54,7 @@ func main() {
 		for{
 			var p = time.Now()
 			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
-				go task.SyncAllRealTimeStockInfo(db)
+				//go task.SyncAllRealTimeStockInfo(db)
 
 				go task.GetTonghuashun(db)
 			}
