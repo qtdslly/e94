@@ -1,0 +1,248 @@
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:10][0m  [36;1m[36.53ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600000' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:10][0m  [36;1m[19.82ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600000' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[809.73ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600000' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[11.11ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600001' and deal_date = '2018-03-30')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.25ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600001' and date = '2018-03-30') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.30ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600001' and date = '2018-03-30') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[11.22ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600002' and deal_date = '2018-03-30')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.33ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600002' and date = '2018-03-30') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.29ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600002' and date = '2018-03-30') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[13.19ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600003' and deal_date = '2018-03-30')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.35ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600003' and date = '2018-03-30') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[0.29ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600003' and date = '2018-03-30') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[13.31ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600004' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:11][0m  [36;1m[17.49ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600004' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:12][0m  [36;1m[797.46ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600004' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:12][0m  [36;1m[11.09ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600005' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:12][0m  [36;1m[14.59ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600005' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:13][0m  [36;1m[804.39ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600005' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:13][0m  [36;1m[11.07ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600006' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:13][0m  [36;1m[15.07ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600006' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:14][0m  [36;1m[801.94ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600006' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:14][0m  [36;1m[11.26ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600007' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:14][0m  [36;1m[14.61ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600007' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:15][0m  [36;1m[801.76ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600007' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:15][0m  [36;1m[11.30ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600008' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:15][0m  [36;1m[15.10ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600008' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[801.42ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600008' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[11.26ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600009' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[14.42ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600009' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[798.54ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600009' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[11.20ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600010' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:16][0m  [36;1m[14.45ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600010' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:17][0m  [36;1m[798.25ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600010' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:17][0m  [36;1m[11.00ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600011' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:17][0m  [36;1m[14.45ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600011' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:18][0m  [36;1m[799.12ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600011' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:18][0m  [36;1m[11.13ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600012' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:18][0m  [36;1m[14.55ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600012' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:19][0m  [36;1m[798.35ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600012' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:19][0m  [36;1m[11.54ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600015' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:19][0m  [36;1m[14.82ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600015' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:20][0m  [36;1m[795.16ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600015' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:20][0m  [36;1m[11.52ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600016' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:20][0m  [36;1m[14.65ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600016' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[794.65ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600016' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:115)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[0.36ms][0m  INSERT INTO `stock_history_data_q_new` (`code`,`date`,`open`,`close`,`high`,`low`,`volume`,`amount`) VALUES ('600016','2018-04-12','8.09','8.07','8.1','8.03','436065.5','3.5177158e+08')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[11.44ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600017' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:73)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[0.41ms][0m  INSERT INTO `real_time_stock` (`jys_code`,`stock_code`,`today_open_price`,`yestday_close_price`,`now_price`,`today_high_price`,`today_low_price`,`buy_price`,`sell_price`,`deal_count`,`deal_money`,`buy_count1`,`buy_price1`,`buy_count2`,`buy_price2`,`buy_count3`,`buy_price3`,`buy_count4`,`buy_price4`,`buy_count5`,`buy_price5`,`sell_count1`,`sell_price1`,`sell_count2`,`sell_price2`,`sell_count3`,`sell_price3`,`sell_count4`,`sell_price4`,`sell_count5`,`sell_price5`,`deal_date`,`deal_time`) VALUES ('sh','600017','3.75','3.75','3.8','3.83','3.73','3.8','3.81','21922916','8.3232176e+07','173300','3.8','181800','3.79','197400','3.78','172800','3.77','350200','3.76','148900','3.81','618180','3.82','1059000','3.83','588100','3.84','663100','3.85','2018-04-12','15:00:00')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[16.37ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600017' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:93)[0m 
+[33m[2018-04-12 15:05:21][0m  [36;1m[0.36ms][0m  INSERT INTO `stock_history_data_q` (`date`,`open`,`close`,`high`,`low`,`volume`,`code`) VALUES ('2018-04-12','3.75','3.8','3.83','3.73','219229.16','600017')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[911.75ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600017' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:115)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[0.43ms][0m  INSERT INTO `stock_history_data_q_new` (`code`,`date`,`open`,`close`,`high`,`low`,`volume`,`amount`) VALUES ('600017','2018-04-12','3.75','3.8','3.83','3.73','219229.16','8.3232176e+07')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[11.20ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600018' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:73)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[0.31ms][0m  INSERT INTO `real_time_stock` (`jys_code`,`stock_code`,`today_open_price`,`yestday_close_price`,`now_price`,`today_high_price`,`today_low_price`,`buy_price`,`sell_price`,`deal_count`,`deal_money`,`buy_count1`,`buy_price1`,`buy_count2`,`buy_price2`,`buy_count3`,`buy_price3`,`buy_count4`,`buy_price4`,`buy_count5`,`buy_price5`,`sell_count1`,`sell_price1`,`sell_count2`,`sell_price2`,`sell_count3`,`sell_price3`,`sell_count4`,`sell_price4`,`sell_count5`,`sell_price5`,`deal_date`,`deal_time`) VALUES ('sh','600018','7.4','7.48','7.36','7.45','7.29','7.35','7.36','40235643','2.96199997e+08','82045','7.35','96100','7.34','168600','7.33','87400','7.32','96000','7.31','139000','7.36','75500','7.37','160408','7.38','231400','7.39','172500','7.4','2018-04-12','15:00:00')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[18.78ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600018' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:93)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[0.26ms][0m  INSERT INTO `stock_history_data_q` (`date`,`open`,`close`,`high`,`low`,`volume`,`code`) VALUES ('2018-04-12','7.4','7.36','7.45','7.29','402356.43','600018')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:101)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[891.41ms][0m  SELECT * FROM `stock_history_data_q_new`  WHERE (code = '600018' and date = '2018-04-12') ORDER BY `stock_history_data_q_new`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:115)[0m 
+[33m[2018-04-12 15:05:22][0m  [36;1m[0.32ms][0m  INSERT INTO `stock_history_data_q_new` (`code`,`date`,`open`,`close`,`high`,`low`,`volume`,`amount`) VALUES ('600018','2018-04-12','7.4','7.36','7.45','7.29','402356.43','2.96199997e+08')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:68)[0m 
+[33m[2018-04-12 15:05:23][0m  [36;1m[12.12ms][0m  SELECT count(*) FROM `real_time_stock`  WHERE (stock_code = '600019' and deal_date = '2018-04-12')  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:73)[0m 
+[33m[2018-04-12 15:05:23][0m  [36;1m[0.40ms][0m  INSERT INTO `real_time_stock` (`jys_code`,`stock_code`,`today_open_price`,`yestday_close_price`,`now_price`,`today_high_price`,`today_low_price`,`buy_price`,`sell_price`,`deal_count`,`deal_money`,`buy_count1`,`buy_price1`,`buy_count2`,`buy_price2`,`buy_count3`,`buy_price3`,`buy_count4`,`buy_price4`,`buy_count5`,`buy_price5`,`sell_count1`,`sell_price1`,`sell_count2`,`sell_price2`,`sell_count3`,`sell_price3`,`sell_count4`,`sell_price4`,`sell_count5`,`sell_price5`,`deal_date`,`deal_time`) VALUES ('sh','600019','8.81','8.78','8.72','8.81','8.69','8.71','8.72','37682851','3.28995477e+08','161096','8.71','534766','8.7','421248','8.69','251500','8.68','270000','8.67','51268','8.72','207156','8.73','118000','8.74','176212','8.75','291000','8.76','2018-04-12','15:00:00')  
+[36;31m[1 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:80)[0m 
+[33m[2018-04-12 15:05:23][0m  [36;1m[16.62ms][0m  SELECT * FROM `stock_history_data_q`  WHERE (code = '600019' and date = '2018-04-12') ORDER BY `stock_history_data_q`.`id` ASC LIMIT 1  
+[36;31m[0 rows affected or returned ][0m 
+
+[35m(/home/lyric/Git/e94/src/background/stock/task/realtimestock.go:93)[0m 
+[33m[2018-04-12 15:05:23][0m  [36;1m[0.23ms][0m  INSERT INTO `stock_history_data_q` (`date`,`open`,`close`,`high`,`low`,`volume`,`code`) VALUES ('2018-04-12','8.81','8.72','8.81','8.69','376828.51','600019')  
+[36;31m[1 rows affected or returned ][0m 

@@ -23,7 +23,7 @@ func TransPromptAll(db *gorm.DB){
 	}
 
 	for _ , transPrompt := range transPrompts{
-		go TransPromptByPromptInfo(transPrompt)
+		go TransPromptByPromptInfo(transPrompt,db)
 		go RosePrompt(transPrompt,db)
 	}
 
@@ -36,7 +36,7 @@ func TransPromptAll(db *gorm.DB){
 	}
 }
 
-func TransPromptByPromptInfo(transPrompt model.TransPrompt){
+func TransPromptByPromptInfo(transPrompt model.TransPrompt,db *gorm.DB){
 	var err error
 	var jysCode string
 	jysCode = util.GetJysCodeByStockCode(transPrompt.StockCode)
@@ -61,17 +61,19 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt){
 		var result bool
 		if(realTimeStockInfo.NowPrice <= transPrompt.PromptBuyPrice){
 			result = util.SendEmail("股票交易提示",
-				"<div><h2>股票代码:" + transPrompt.StockCode + "到达买入价格</h2></br>" +
+				"<div><h2>股票代码:" + transPrompt.StockCode + "  股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "到达买入价格</h2></br>" +
 					"<h4>设定买入价格为:" + fmt.Sprint(transPrompt.PromptBuyPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptBuyCount) + "</h4></br>" +
+					"<h4>当前涨幅为:" + fmt.Sprint((((realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice) / realTimeStockInfo.YestdayClosePrice) * 100.00)) + "%" + "</h4></br:>" +
 					"<h1>请尽快交易!!!</h1></div>")
 		}else if(realTimeStockInfo.NowPrice >= transPrompt.PromptSellPrice){
 			result = util.SendEmail("股票交易提示",
-				"<div'><h2>股票代码:" + transPrompt.StockCode + "到达卖出价格</h2></br>" +
+				"<div'><h2>股票代码:" + transPrompt.StockCode + "  股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "到达卖出价格</h2></br>" +
 					"<h4>设定卖出价格为:" + fmt.Sprint(transPrompt.PromptSellPrice) + "</h4></br>" +
 					"<h4>当前价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptSellCount) + "</h4></br>" +
+					"<h4>当前涨幅为:" + fmt.Sprint((((realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice) / realTimeStockInfo.YestdayClosePrice) * 100.00)) + "%" + "</h4></br:>" +
 					"<h1>请尽快交易!!!</h1></div>")
 		}else{
 			//logger.Debug("未到交易价格，暂不交易!!!!")
