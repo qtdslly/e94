@@ -97,7 +97,6 @@ type Capital struct {
 	date	   string	      `gorm:"date" json:"date"`              //日期
 	state	   int32	      `gorm:"state" json:"state"`            //状态
 	amount	   float32	      `gorm:"amount" json:"amount"`          //金额
-
 }
 
 type ControlData struct {
@@ -138,7 +137,11 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 	recvTmp := string(recv)
 	recvTmp = strings.Replace(recvTmp,"\"<span style=\\\"color:green\\\">","",-1)
 	recvTmp = strings.Replace(recvTmp,"<\\/span>\"","",-1)
-
+	errCode := strings.Split(recvTmp,"\"")[3]
+	if errCode != "0"{
+		logger.Debug("通花顺返回错误!!!")
+		return nil
+	}
 	recv = []byte(recvTmp)
 	var control ControlInfo
 	if err = json.Unmarshal(recv,&control) ; err != nil{

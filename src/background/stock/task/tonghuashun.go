@@ -28,25 +28,28 @@ func GetTonghuashun(db *gorm.DB){
 	}
 
 	var stocks []model.StockList
-	if err = db.Find(&stocks).Error ; err != nil{
+	if err = db.Order("code asc").Find(&stocks).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
-	for _,stock := range stocks{
-		apiths.GetComprehensive(stock.Code,db)
-	}
+	//for _,stock := range stocks{
+	//	apiths.GetComprehensive(stock.Code,db)
+	//}
 
 	for _,stock := range stocks{
 		if apiths.GetControlInfo(stock.Code,db) != nil{
-			continue
+			logger.Error(err)
+			return
 		}
 	}
+
+	time.Sleep(time.Second * 100)
 
 	now := time.Now()
 	dd, _ := time.ParseDuration("24h")
 	to := now.Add(dd)
 	tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
-	if err := db.Model(model.StockTask{}).Where("`key` = 'realtimestock'").Update("date", tomorry).Error; err != nil {
+	if err := db.Model(model.StockTask{}).Where("`key` = 'tonghuashun'").Update("date", tomorry).Error; err != nil {
 		logger.Error(err)
 		return
 	}
