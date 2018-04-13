@@ -54,7 +54,7 @@ func main(){
 		for _, f := range files {
 			k++
 
-			if k < 4000{
+			if k < 6000{
 				continue
 			}
 			logger.Debug("================================================k:",k)
