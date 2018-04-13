@@ -168,7 +168,7 @@ func GetControlInfo(code string,db *gorm.DB)(error){
 	mainForceControl.ControlValue = enc.ConvertString(control.Data.ControlValue)
 	mainForceControl.State = enc.ConvertString(control.Data.State)
 	mainForceControl.Amount = control.Data.Amount
-	if err = db.FirstOrCreate(&mainForceControl).Error ; err != nil{
+	if err = db.Create(&mainForceControl).Error ; err != nil{
 		logger.Error(err)
 		return err
 	}
