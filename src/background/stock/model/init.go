@@ -68,6 +68,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initStockTask(db)
+	if err != nil {
+		logger.Fatal("Init db stock_task failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -83,5 +89,7 @@ func rebuildModel(db *gorm.DB) {
 	dropSimulation(db)
 	dropTonghuashunSuggestion(db)
 	dropTonghuashunMainForceControl(db)
+	dropStockTask(db)
+
 	InitModel(db)
 }

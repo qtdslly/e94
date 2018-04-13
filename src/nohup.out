@@ -1,8 +1,0 @@
-INFO     [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - Error initialising WebP image reader: no webp-imageio in java.library.path
-WARNING  [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - No WebP image reader initialised, WebP image viewing will not be available
-INFO     [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - Error initialising WebP image reader: Could not initialize class com.luciad.imageio.webp.WebP
-WARNING  [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - No WebP image reader initialised, WebP image viewing will not be available
-INFO     [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - Error initialising WebP image reader: no webp-imageio in java.library.path
-WARNING  [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - No WebP image reader initialised, WebP image viewing will not be available
-INFO     [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - Error initialising WebP image reader: Could not initialize class com.luciad.imageio.webp.WebP
-WARNING  [com.xk72.charles.gui.transaction.viewers.gen.ImageBodyViewer] - No WebP image reader initialised, WebP image viewing will not be available

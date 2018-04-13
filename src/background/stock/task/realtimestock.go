@@ -6,10 +6,23 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"background/stock/service"
+	"time"
 )
 
 
 func SyncAllRealTimeStockInfo(db *gorm.DB){
+	var p = time.Now()
+	var task model.StockTask
+	if err := db.Where("`key` = 'realtimestock'").First(&task).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+
+	today := fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
+	if task.Date > today{
+		logger.Debug("今日数据已抓取")
+		return
+	}
 
 	//六位代码00、200、300开头的都是深圳的股票，00开头的是深圳A股，200开头的是深圳B股，
 	//300开头的是创业板(创业板都是在深市交易的)。六位代码60、900开头的是上海的股票，
@@ -124,5 +137,12 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 		}
 
 	}
-
+	now := time.Now()
+	dd, _ := time.ParseDuration("24h")
+	to := now.Add(dd)
+	tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
+	if err := db.Model(model.StockTask{}).Where("key = 'realtimestock'").Update("date", tomorry).Error; err != nil {
+		logger.Error(err)
+		return
+	}
 }
