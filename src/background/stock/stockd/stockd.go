@@ -70,9 +70,8 @@ func main(){
 	{
 		//load(config.GetTmplRoot() ,r)
 		r.LoadHTMLGlob(config.GetTmplRoot() + "*.html")
-		cms.GET("/stock/index", cc.StockHtmlHandler)
+		cms.GET("/stock/price", cc.StockPriceHandler)
 		cms.GET("/stock/list", cc.StockListHandler)
-		cms.GET("/stock/html", cc.StockHtmlHandler)
 	}
 	r.Run(":16882")
 
