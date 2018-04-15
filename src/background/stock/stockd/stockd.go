@@ -68,8 +68,6 @@ func main(){
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-		//load(config.GetTmplRoot() ,r)
-		r.LoadHTMLGlob(config.GetTmplRoot() + "*.html")
 		cms.GET("/stock/price", cc.StockPriceHandler)
 		cms.GET("/stock/list", cc.StockListHandler)
 	}
