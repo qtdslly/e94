@@ -46,6 +46,8 @@ func StockPriceHandler(c *gin.Context) {
 
 	if err = c.Bind(&p); err != nil {
 		logger.Error(err)
+		logger.Error(err)
+
 		return
 	}
 
