@@ -35,24 +35,26 @@ func StockListHandler(c *gin.Context) {
 }
 
 
+func StockPriceHandler(c *gin.Context) {
+	type param struct {
+		StockCode       uint32 `form:"stock_code" binding:"required"`
+		Start           string `form:"start" binding:"required"`
+		End             string `form:"end" binding:"required"`
+	}
+	var p param
+	var err error
 
-func StockHtmlHandler(c *gin.Context) {
-	//type param struct {
-	//	StockCode       uint32 `form:"stock_code" binding:"required"`
-	//}
-	//var p param
-	//var err error
-	//
-	//if err = c.Bind(&p); err != nil {
-	//	logger.Error(err)
-	//	return
-	//}
+	if err = c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
 
-	c.HTML(http.StatusOK, "index.html", gin.H{
-		"title": "GIN: 测试加载HTML模板",
-	})
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	var realStockInfos []model.RealTimeStock
+	if err = db.Where("stock_code = ? and deal_date between ? an ?" , p.StockCode,p.Start,p.End).Find(&realStockInfos).Error ; err != nil{
+		logger.Error("query realtime_stock err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
 
-
-
-	//c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data":fmt.Sprint(realStockInfo.NowPrice) })
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data":realStockInfos })
 }
