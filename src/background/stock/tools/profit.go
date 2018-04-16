@@ -52,7 +52,7 @@ func main(){
 			return
 		}
 
-		everyProfit = (realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) * holdStock.AllCount
+		everyProfit = (realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) * float64(holdStock.AllCount)
 		allProfit += everyProfit
 		stockName := util.GetNameByCode(holdStock.Code,db)
 		tishi += stockName + " " + fmt.Sprint(everyProfit) + "\t"
