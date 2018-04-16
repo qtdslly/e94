@@ -36,7 +36,7 @@ func main(){
 	db.LogMode(true)
 
 	var holdStocks []model.HoldStockInfo
-	if err = db.Where("SimulationId = 0").Find(&holdStocks).Error ; err != nil{
+	if err = db.Where("simulation_id = 0").Find(&holdStocks).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
