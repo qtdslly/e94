@@ -77,17 +77,19 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 				}
 			}
 
-			var count int
-			if err = db.Where("stock_code = ? and deal_date = ?",realTimeStock.StockCode,realTimeStock.DealDate).Table("real_time_stock").Count(&count).Error ; err != nil{
-				logger.Error(err)
-				return
-			}
-			if count == 0{
-				if err := db.Create(&realTimeStock).Error ; err != nil{
-					logger.Error("保存股票实时信息失败,",err)
+			var realTimeStockNew *model.RealTimeStock
+			if err = db.Where("stock_code = ? and deal_date = ?",realTimeStock.StockCode,realTimeStock.DealDate).First(&realTimeStockNew).Error ; err != nil{
+				if err != gorm.ErrRecordNotFound{
+					logger.Error(err)
 					return
+				}else{
+					if err = db.Create(&realTimeStock).Error ; err != nil{
+						logger.Error(err)
+						return
+					}
 				}
 			}
+
 
 			var stockHistoryDataQ model.StockHistoryDataQ
 			if err = db.Where("code = ? and date = ?",realTimeStock.StockCode,realTimeStock.DealDate).First(&stockHistoryDataQ).Error ; err != nil{

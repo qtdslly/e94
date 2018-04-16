@@ -55,7 +55,7 @@ func main(){
 			k++
 
 			if IsHaveDone(f.Name(),db) {
-				MoveFile(config.GetStorageRoot() + "TransData/HistoryDataNew" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
+				MoveFile(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
 				continue
 			}
 			for{
