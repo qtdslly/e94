@@ -83,7 +83,7 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 				return
 			}
 			if count == 0{
-				if err := db.Save(&realTimeStock).Error ; err != nil{
+				if err := db.Create(&realTimeStock).Error ; err != nil{
 					logger.Error("保存股票实时信息失败,",err)
 					return
 				}
@@ -103,7 +103,7 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 					stockHistoryDataQ.Open = realTimeStock.TodayOpenPrice
 					stockHistoryDataQ.Volume = float64(realTimeStock.DealCount) / 100.00
 
-					if err = db.Save(&stockHistoryDataQ).Error ; err != nil{
+					if err = db.Create(&stockHistoryDataQ).Error ; err != nil{
 						logger.Error(err)
 						return
 					}
@@ -125,7 +125,7 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 					stockHistoryDataQNew.Volume = float64(realTimeStock.DealCount) / 100.00
 					stockHistoryDataQNew.Amount = realTimeStock.DealMoney
 
-					if err = db.Save(&stockHistoryDataQNew).Error ; err != nil{
+					if err = db.Create(&stockHistoryDataQNew).Error ; err != nil{
 						logger.Error(err)
 						return
 					}
