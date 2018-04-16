@@ -74,6 +74,7 @@ func main(){
 					logger.Error(err)
 					return
 				}
+				MoveFile(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
 				process.Lock()
 				Count--
 				process.Unlock()
