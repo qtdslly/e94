@@ -5,6 +5,7 @@ import (
 	"background/stock/config"
 
 	"io"
+	"os/exec"
 	"os"
 	"sync"
 	"time"
@@ -49,16 +50,12 @@ func main(){
 		var process *sync.Mutex
 		process = new(sync.Mutex)
 		var Count int = 0
-
 		k := 0
 		for _, f := range files {
 			k++
 
-			if k < 7000{
-				continue
-			}
-			logger.Debug("================================================k:",k)
 			if IsHaveDone(f.Name(),db) {
+				MoveFile(config.GetStorageRoot() + "TransData/HistoryDataNew" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
 				continue
 			}
 			for{
@@ -98,6 +95,20 @@ func main(){
 		}
 	}
 }
+
+
+func MoveFile(srcFileName, destFileName string) {
+	cmdStr := "mv " + srcFileName + " " + destFileName
+	logger.Debug(cmdStr)
+	cmd := exec.Command("/bin/bash", "-c", cmdStr)
+	err := cmd.Run()
+	if err != nil {
+		logger.Error("Movfile Failed:srcFileName:"+srcFileName, " destFileName:", destFileName, err)
+	} else {
+		logger.Debug("Movfile Success:" + srcFileName)
+	}
+}
+
 
 func IsHaveDone(name string,db *gorm.DB) (bool){
 	code := name[0:6]
