@@ -33,7 +33,7 @@ func main(){
 		return
 	}
 
-	db.LogMode(true)
+	db.LogMode(false)
 
 	var holdStocks []model.HoldStockInfo
 	if err = db.Where("simulation_id = 0").Find(&holdStocks).Error ; err != nil{
@@ -55,10 +55,10 @@ func main(){
 		everyProfit = (realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) * float64(holdStock.AllCount)
 		allProfit += everyProfit
 		stockName := util.GetNameByCode(holdStock.Code,db)
-		tishi += stockName + " " + fmt.Sprint(everyProfit) + "\t"
+		tishi += stockName + " " + fmt.Sprint(everyProfit) + "\n"
 	}
 	tishi += "all:" + fmt.Sprint(allProfit)
 
-	fmt.Print(tishi)
+	logger.Printf(tishi)
 	return
 }
