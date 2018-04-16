@@ -55,9 +55,9 @@ func main(){
 		everyProfit = (realTimeStock.NowPrice - realTimeStock.YestdayClosePrice) * float64(holdStock.AllCount)
 		allProfit += everyProfit
 		stockName := util.GetNameByCode(holdStock.Code,db)
-		tishi += stockName + " " + fmt.Sprint(everyProfit) + "\n"
+		tishi += stockName + " " + fmt.Sprint("%.2f",everyProfit) + "\n"
 	}
-	tishi += "all:" + fmt.Sprint(allProfit)
+	tishi += "all:" + fmt.Sprint("%.2f",allProfit)
 
 	logger.Printf(tishi)
 	return
