@@ -77,13 +77,13 @@ func SyncAllRealTimeStockInfo(db *gorm.DB){
 				}
 			}
 
-			var realTimeStockNew *model.RealTimeStock
+			var realTimeStockNew model.RealTimeStock
 			if err = db.Where("stock_code = ? and deal_date = ?",realTimeStock.StockCode,realTimeStock.DealDate).First(&realTimeStockNew).Error ; err != nil{
 				if err != gorm.ErrRecordNotFound{
 					logger.Error(err)
 					return
 				}else{
-					if err = db.Create(&realTimeStock).Error ; err != nil{
+					if err = db.Create(realTimeStock).Error ; err != nil{
 						logger.Error(err)
 						return
 					}
