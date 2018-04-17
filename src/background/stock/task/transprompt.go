@@ -87,8 +87,6 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt,db *gorm.DB){
 
 }
 
-
-
 func RosePrompt(transPrompt model.TransPrompt,db *gorm.DB){
 	var err error
 	var jysCode string
@@ -101,7 +99,8 @@ func RosePrompt(transPrompt model.TransPrompt,db *gorm.DB){
 	var havePrompt bool = false
 	for{
 		if havePrompt{
-			time.Sleep(time.Minute * 30)
+			time.Sleep(time.Minute * 10)
+			havePrompt = false
 		}
 		if err,realTimeStockInfo = service.GetRealTimeStockInfoByStockCode(jysCode,transPrompt.StockCode) ; err != nil{
 			logger.Error("获取股票实时信息失败，程序退出!!!")
