@@ -11,15 +11,11 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
+	//"github.com/axgle/mahonia"
 )
 
 func GetPageUrlByProvider(provider model.Provider,db *gorm.DB){
 	GetPageUrl(provider,db)
-
-	for{
-		time.Sleep(time.Second * 10)
-	}
-
 }
 
 func GetPageUrl(provider model.Provider,db *gorm.DB){
@@ -74,6 +70,8 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 					}
 					url = provider.Url + url
 				}
+
+				url, _ = DecodeToGBK(url)
 
 				var pageUrl model.PageUrl
 				if err = db.Where("url = ?",url).First(&pageUrl).Error ; err != nil{

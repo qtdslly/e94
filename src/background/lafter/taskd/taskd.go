@@ -45,7 +45,23 @@ func main() {
 	}
 
 	for _,provider := range providers{
-		go task.GetContentByProvider(provider,db)
+		go func(){
+			for{
+				task.GetPageUrlByProvider(provider,db)
+				time.Sleep(time.Second * 3)
+			}
+		}()
+		time.Sleep(time.Second)
+	}
+
+	for _,provider := range providers{
+		go func(){
+			for{
+				task.GetContentByProvider(provider,db)
+				time.Sleep(time.Second * 3)
+			}
+		}()
+		time.Sleep(time.Second)
 	}
 
 	for{
