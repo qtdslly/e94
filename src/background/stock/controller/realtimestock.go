@@ -53,7 +53,7 @@ func StockPriceHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 	var realStockInfos []model.RealTimeStock
-	if err = db.Where("stock_code = ? and deal_date between ? an ?" , p.StockCode,p.Start,p.End).Find(&realStockInfos).Error ; err != nil{
+	if err = db.Where("stock_code = ? and deal_date between ? and ?" , p.StockCode,p.Start,p.End).Find(&realStockInfos).Error ; err != nil{
 		logger.Error("query realtime_stock err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}

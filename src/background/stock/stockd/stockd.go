@@ -65,7 +65,7 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
-	cms := r.Group("cms")
+	cms := r.Group("chart")
 	cms.Use(dbMiddleware)
 	{
 		cms.GET("/stock/price", cc.StockPriceHandler)
