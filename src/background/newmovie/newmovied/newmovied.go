@@ -10,8 +10,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"background/common/logger"
 	"log"
-	"background/stock/model"
-	"background/stock/config"
+	"background/newmovie/model"
+	"background/newmovie/config"
 	"background/common/constant"
 	cc "background/newmovie/controller"
 
