@@ -19,7 +19,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/mohae/deepcopy" afterPath="$PROJECT_DIR$/src/github.com/mohae/deepcopy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/mozillazg/go-pinyin" afterPath="$PROJECT_DIR$/src/github.com/mozillazg/go-pinyin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/patrickmn/go-cache" afterPath="$PROJECT_DIR$/src/github.com/patrickmn/go-cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" afterPath="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" afterPath="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newmovied.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newmovied.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+            <state relative-caret-position="351">
+              <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding>
                 <element signature="e#15#362#0" expanded="true" />
               </folding>
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newmovie.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newmovie.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+            <state relative-caret-position="170">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="e#13#176#0" expanded="true" />
               </folding>
@@ -216,10 +216,10 @@
         <option value="$PROJECT_DIR$/src/background/lafter/task/lafter.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/realtimestock.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/movie.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
+        <option value="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" />
       </list>
     </option>
   </component>
@@ -1161,22 +1161,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go">
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        <state relative-caret-position="170">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
-            <element signature="e#15#362#0" expanded="true" />
+            <element signature="e#13#176#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        <state relative-caret-position="351">
+          <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
           <folding>
-            <element signature="e#13#176#0" expanded="true" />
+            <element signature="e#15#362#0" expanded="true" />
           </folding>
         </state>
       </provider>

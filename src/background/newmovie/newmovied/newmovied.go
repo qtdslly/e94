@@ -64,10 +64,10 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
-	cms := r.Group("chart")
+	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-		cms.GET("/newmovie/list", cc.NewMovieListHandler)
+		cms.GET("/movie/list", cc.NewMovieListHandler)
 	}
 	r.Run(":16882")
 
