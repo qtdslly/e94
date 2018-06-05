@@ -14,7 +14,7 @@ func NewMovieListHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
-	var movies model.Movie
+	var movies []model.Movie
 	if err = db.Limit(3).Find(&movies).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)

@@ -19,7 +19,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/mohae/deepcopy" afterPath="$PROJECT_DIR$/src/github.com/mohae/deepcopy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/mozillazg/go-pinyin" afterPath="$PROJECT_DIR$/src/github.com/mozillazg/go-pinyin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/patrickmn/go-cache" afterPath="$PROJECT_DIR$/src/github.com/patrickmn/go-cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/model/movie.go" afterPath="$PROJECT_DIR$/src/background/newmovie/model/movie.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" afterPath="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +72,8 @@
       <file leaf-file-name="newmovied.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="69" column="55" lean-forward="true" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
+            <state relative-caret-position="282">
+              <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
               <folding>
                 <element signature="e#15#362#0" expanded="true" />
               </folding>
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newmovie.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newmovie.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="308">
+              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding>
                 <element signature="e#13#176#0" expanded="true" />
               </folding>
@@ -123,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="movie.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/movie.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -215,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/background/lafter/config/config.go" />
         <option value="$PROJECT_DIR$/src/background/lafter/task/lafter.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/realtimestock.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/config/config.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/movie.go" />
+        <option value="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
       </list>
     </option>
   </component>
@@ -1153,10 +1153,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/movie.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="69" column="55" lean-forward="true" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
+        <state relative-caret-position="282">
+          <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
           <folding>
             <element signature="e#15#362#0" expanded="true" />
           </folding>
@@ -1165,19 +1173,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="308">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
           <folding>
             <element signature="e#13#176#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/movie.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
