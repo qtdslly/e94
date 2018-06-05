@@ -7,7 +7,7 @@ import (
 type Movie struct {
 	Id                     uint32     `gorm:"primary_key" json:"id"`
 	Title                  string     `json:"title"`
-	Url                    string    `json:"price"`
+	Url                    string    `json:"url"`
 }
 
 func (Movie) TableName() string {
