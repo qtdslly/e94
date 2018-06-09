@@ -47,7 +47,7 @@ func NewMovieListHandler(c *gin.Context) {
 func NewMovieSearchHandler(c *gin.Context) {
 
 	type param struct {
-		Title       uint32 `form:"title" binding:"required"`
+		Title       string `form:"title" binding:"required"`
 	}
 
 	var p param
