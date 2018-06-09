@@ -43,3 +43,54 @@ func NewMovieListHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies,"count":count})
 }
 
+
+func NewMovieSearchHandler(c *gin.Context) {
+
+	type param struct {
+		Title       uint32 `form:"title" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var movies []model.Movie
+	if err = db.Order("publish_date desc").Where("title like ?","%" + p.Title + "%").Find(&movies).Error ; err != nil{
+		logger.Error("query movie err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies})
+}
+
+
+func NewMovieTopSearchHandler(c *gin.Context) {
+
+	type param struct {
+		Limit       uint32 `form:"limit" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var tops []model.TopSearch
+	if err = db.Order("publish_date desc").Limit(p.Limit).Find(&tops).Error ; err != nil{
+		logger.Error("query movie err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": tops})
+}

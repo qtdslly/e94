@@ -68,6 +68,9 @@ func main(){
 	cms.Use(dbMiddleware)
 	{
 		cms.GET("/movie/list", cc.NewMovieListHandler)
+		cms.GET("/movie/search", cc.NewMovieSearchHandler)
+		cms.GET("/movie/topsearch", cc.NewMovieTopSearchHandler)
+
 	}
 	r.Run(":16882")
 

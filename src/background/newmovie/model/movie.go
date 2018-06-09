@@ -11,7 +11,6 @@ type Movie struct {
 	Description string           `gorm:"type:longtext" json:"description" translated:"true"`
 	ThumbX      string           `gorm:"size:255;column:thumb_x" json:"thumb_x"`
 	ThumbY      string           `gorm:"size:255;column:thumb_y" json:"thumb_y"`
-
 	Url                    string    `json:"url"`
 	Directors		       string     `json:"directors"`
 	Actors		       string     `json:"actors"`
