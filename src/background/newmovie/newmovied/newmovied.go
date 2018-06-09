@@ -74,7 +74,7 @@ func main(){
 		cms.GET("/movie/search", aapi.NewMovieSearchHandler)
 		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
 
-		cms.GET("/admin/login", ccms.AdminLoginHandler)
+		cms.POST("/admin/login", ccms.AdminLoginHandler)
 
 	}
 
