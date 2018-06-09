@@ -1,6 +1,5 @@
 package main
 
-
 import (
 	"os"
 	"fmt"
@@ -13,10 +12,12 @@ import (
 	"background/newmovie/model"
 	"background/newmovie/config"
 	"background/common/constant"
-	cc "background/newmovie/controller"
+	aapi "background/newmovie/controller/api"
+	ccms "background/newmovie/controller/cms"
+
+	"background/common/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
-	"background/common/middleware"
 )
 
 func main(){
@@ -67,9 +68,11 @@ func main(){
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
-		cms.GET("/movie/list", cc.NewMovieListHandler)
-		cms.GET("/movie/search", cc.NewMovieSearchHandler)
-		cms.GET("/movie/topsearch", cc.NewMovieTopSearchHandler)
+		cms.GET("/movie/list", aapi.NewMovieListHandler)
+		cms.GET("/movie/search", aapi.NewMovieSearchHandler)
+		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
+
+		cms.GET("/admin/login", ccms.AdminLoginHandler)
 
 	}
 	r.Run(":16882")

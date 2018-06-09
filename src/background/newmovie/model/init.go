@@ -19,6 +19,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initAdmin(db)
+	if err != nil {
+		logger.Fatal("Init db admin failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -26,6 +32,7 @@ func InitModel(db *gorm.DB) error {
 func rebuildModel(db *gorm.DB) {
 	dropMovie(db)
 	dropTopSearch(db)
+	dropAdmin(db)
 
 	InitModel(db)
 }
