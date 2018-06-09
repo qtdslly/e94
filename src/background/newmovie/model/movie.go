@@ -7,11 +7,12 @@ import (
 
 type Movie struct {
 	Id                     uint32     `gorm:"primary_key" json:"id"`
-	Title                  string     `json:"title"`
-	Description                  string     `json:"description"`
+	Title       string           `gorm:"size:255" json:"title" translated:"true"`
+	Description string           `gorm:"type:longtext" json:"description" translated:"true"`
+	ThumbX      string           `gorm:"size:255;column:thumb_x" json:"thumb_x"`
+	ThumbY      string           `gorm:"size:255;column:thumb_y" json:"thumb_y"`
+
 	Url                    string    `json:"url"`
-	ThumbX		       string     `json:"thumb_x"`
-	ThumbY		       string     `json:"thumb_y"`
 	Directors		       string     `json:"directors"`
 	Actors		       string     `json:"actors"`
 	Score		       string     `json:"score"`
