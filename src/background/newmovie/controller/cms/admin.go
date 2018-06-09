@@ -19,8 +19,8 @@ import (
 */
 func AdminLoginHandler(c *gin.Context) {
 	type param struct {
-		Account  string `json:"account" binding:"required"`  //username 或 mobile 或 email
-		Password string `json:"password" binding:"required"` //登录密码, password, smscode至少需要一项有值
+		Account  string `form:"account"  json:"account" binding:"required"`  //username 或 mobile 或 email
+		Password string `form:"password" json:"password" binding:"required"` //登录密码, password, smscode至少需要一项有值
 	}
 	type adminInfo struct {
 		Id       uint32 `json:"id"`
