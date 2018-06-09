@@ -87,7 +87,7 @@ func NewMovieTopSearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var tops []model.TopSearch
-	if err = db.Order("publish_date desc").Limit(p.Limit).Find(&tops).Error ; err != nil{
+	if err = db.Limit(p.Limit).Find(&tops).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}

@@ -77,8 +77,8 @@
       <file leaf-file-name="newmovie.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state relative-caret-position="489">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#13#176#0" expanded="true" />
               </folding>
@@ -819,12 +819,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522745877010</updated>
       <workItem from="1528519149113" duration="3175000" />
-      <workItem from="1528537163156" duration="3157000" />
+      <workItem from="1528537163156" duration="3781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6332000" />
+    <option name="totallyTimeSpent" value="6956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -1224,8 +1224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="489">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#13#176#0" expanded="true" />
           </folding>
