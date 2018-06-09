@@ -4,6 +4,7 @@ import (
 	"os"
 	"fmt"
 	"flag"
+	"html/template"
 	"background/common/systemcall"
 	"github.com/jinzhu/gorm"
 	"github.com/gin-gonic/gin"
@@ -18,6 +19,7 @@ import (
 	"background/common/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
+	"net/http"
 )
 
 func main(){
@@ -75,6 +77,36 @@ func main(){
 		cms.GET("/admin/login", ccms.AdminLoginHandler)
 
 	}
+
+	h := http.FileServer(http.Dir("static"))
+	http.Handle("/static/", http.StripPrefix("/static/", h)) // 启动静态文件服务
+	//Header().Set("Expires", time.Now().Format("MON, 02 Jan 2006 15:04:05 GMT"))
+	http.HandleFunc("/", load)
+
 	r.Run(":16882")
 
 }
+
+
+func load(w http.ResponseWriter, r *http.Request) {
+	if r.Method == "GET" {
+		t, err := template.ParseFiles("*.html")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		data := struct {
+			Title string
+		}{
+			Title: "品牌街-上天猫，就够了",
+		}
+
+		err = t.Execute(w, data)
+		if err != nil {
+			log.Fatal(err)
+		}
+	} else {
+
+	}
+}
+
