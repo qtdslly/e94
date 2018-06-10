@@ -34,6 +34,11 @@ func NewMovieListHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
+	var hasMore bool = true
+	if len(movies) != p.Limit{
+		hasMore = false
+	}
+
 	var count uint32
 	if err = db.Model(&model.Movie{}).Count(&count).Error; err != nil {
 		logger.Error(err)
@@ -51,7 +56,7 @@ func NewMovieListHandler(c *gin.Context) {
 		logger.Debug(movie.Url)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count,"has_more":hasMore})
 }
 
 
