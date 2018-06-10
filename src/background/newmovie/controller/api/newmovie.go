@@ -47,6 +47,8 @@ func NewMovieListHandler(c *gin.Context) {
 		if movie.Url != ""{
 			apiMovies = append(apiMovies,&movie)
 		}
+
+		logger.Debug(movie.Url)
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count})
