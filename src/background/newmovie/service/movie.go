@@ -211,14 +211,12 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 		}
 
 		b, _ := json.Marshal(reqParam)
-		logger.Debug(string(b))
 
 		vm := otto.New()
 		vm.Run(jsCode)
 		data ,_ := vm.Call("GetRealPlayUrl",nil,string(b))
 
 		result = data.String()
-		logger.Debug(result)
 
 		if err = json.Unmarshal([]byte(result), &resParam); err != nil {
 			logger.Error(err)
