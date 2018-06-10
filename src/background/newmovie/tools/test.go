@@ -11,6 +11,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 
 	"background/newmovie/model"
+	"time"
 )
 
 func main(){
@@ -38,6 +39,8 @@ func main(){
 		return
 	}
 	set.Value = jsCode
+	now := time.Now()
+	set.UpdatedAt = now
 	if err = db.Save(&set).Error ; err != nil{
 		logger.Error(err)
 		return
