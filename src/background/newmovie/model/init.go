@@ -46,6 +46,6 @@ func rebuildModel(db *gorm.DB) {
 	dropTopSearch(db)
 	dropAdmin(db)
 	dropInstallation(db)
-	
+
 	InitModel(db)
 }

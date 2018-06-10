@@ -1,4 +1,4 @@
-package ams
+package cms
 
 import (
 	"github.com/jinzhu/gorm"
