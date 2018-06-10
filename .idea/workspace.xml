@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go" afterPath="$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/model/init.go" afterPath="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,6 +70,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="init.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/init.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="639">
+              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="movie.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/movie.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="installation.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="installation.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            <state relative-caret-position="443">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding>
                 <element signature="e#13#209#0" expanded="true" />
               </folding>
@@ -181,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/background/newmovie/config/config.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/topsearch.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/newmovie.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/model/admin.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/cms/admin.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/cms/movie.go" />
@@ -191,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/background/newmovie/newmovied/newmovied.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/newmovie.go" />
         <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go" />
+        <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
       </list>
     </option>
   </component>
@@ -871,12 +881,12 @@
       <workItem from="1528537163156" duration="4613000" />
       <workItem from="1528546859309" duration="5561000" />
       <workItem from="1528555795213" duration="934000" />
-      <workItem from="1528594917014" duration="5127000" />
+      <workItem from="1528594917014" duration="5610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19410000" />
+    <option name="totallyTimeSpent" value="19893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1182,16 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/background/common/constant/errcode.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1285,11 +1285,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        <state relative-caret-position="443">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
             <element signature="e#13#209#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

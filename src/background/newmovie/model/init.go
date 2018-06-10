@@ -25,6 +25,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initInstallation(db)
+	if err != nil {
+		logger.Fatal("Init db installation failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -33,6 +39,7 @@ func rebuildModel(db *gorm.DB) {
 	dropMovie(db)
 	dropTopSearch(db)
 	dropAdmin(db)
-
+	dropInstallation(db)
+	
 	InitModel(db)
 }
