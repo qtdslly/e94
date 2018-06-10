@@ -79,7 +79,7 @@ func main(){
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
 
 		cms.POST("/movie/save", ccms.MovieSaveHandler)
-		cms.POST("/srcipt/save", ccms.ScriptSettingSaveHandler)
+		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
 
 	}
 
