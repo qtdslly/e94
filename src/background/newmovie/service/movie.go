@@ -1,7 +1,6 @@
 package service
 
 import (
-	"github.com/jinzhu/gorm"
 	"background/common/logger"
 	"fmt"
 	"encoding/json"
