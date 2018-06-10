@@ -61,6 +61,9 @@ func NewMovieListHandler(c *gin.Context) {
 		logger.Debug(movie.Url)
 	}
 
+	if apiMovies == nil{
+		c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": "[]" ,"count":count,"has_more":hasMore})
+	}
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count,"has_more":hasMore})
 }
 
