@@ -20,7 +20,7 @@ import (
 func ScriptSettingSaveHandler(c *gin.Context) {
 
 	type ScriptSetting struct {
-		Script       string `json:"script"`
+		Script       string `form:"script"`
 	}
 
 	var p ScriptSetting
