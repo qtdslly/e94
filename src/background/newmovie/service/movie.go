@@ -20,13 +20,11 @@ type OtherPlayUrl struct{
 	Times        uint32
 }
 
-func GetRealUrl(provider, url string,db *gorm.DB)(string){
+func GetRealUrl(provider, url string,jsCode string)(string){
 
 	if provider != "youku"{
 		return url
 	}
-
-	jsCode := GetJsCode()
 
 	var playUrl OtherPlayUrl
 	if provider == "youku"{

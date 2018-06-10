@@ -43,7 +43,7 @@ func NewMovieListHandler(c *gin.Context) {
 
 	var apiMovies []model.Movie
 	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,db)
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,service.GetJsCode())
 		if movie.Url != ""{
 			apiMovies = append(apiMovies,movie)
 		}
@@ -77,7 +77,7 @@ func NewMovieSearchHandler(c *gin.Context) {
 
 	var apiMovies []model.Movie
 	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,db)
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,service.GetJsCode())
 		if movie.Url != ""{
 			apiMovies = append(apiMovies,movie)
 		}
