@@ -205,7 +205,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 				if err != nil{
 					logger.Error(err)
 				}
-				//logger.Debug(string(recv))
+				logger.Debug(string(recv))
 				reqParam.HtmlData = string(recv)
 
 				//logger.Debug("html_data:",reqParam.HtmlData)
@@ -219,14 +219,13 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 		data ,_ := vm.Call("GetRealPlayUrl",nil,string(b))
 
 		result = data.String()
-
+		logger.Debug(result)
 		if err = json.Unmarshal([]byte(result), &resParam); err != nil {
 			logger.Error(err)
 			return ""
 		}
 
 		reqParam.CallBackData = resParam.CallBackData
-		//logger.Debug(reqParam.CallBackData)
 		first = false
 	}
 
