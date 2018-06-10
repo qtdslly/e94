@@ -45,7 +45,7 @@ func NewMovieListHandler(c *gin.Context) {
 	for _,movie := range movies{
 		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,service.GetJsCode())
 		if movie.Url != ""{
-			apiMovies = append(apiMovies,&movie)
+			apiMovies = append(apiMovies,movie)
 		}
 
 		logger.Debug(movie.Url)
