@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"io/ioutil"
 	"github.com/robertkrimen/otto"
+	"fmt"
 )
 type OtherPlayUrl struct{
 	Provider     uint32
@@ -36,12 +37,12 @@ func GetRealUrl(provider, url string,jsCode string)(string){
 	playUrl.TvType = ""
 	playUrl.Times = 0
 	playUrl.ContentType = 2
+	logger.Debug(playUrl.Url)
 	realUrl := GetStreamSourceUrl(playUrl,jsCode)
 
 	logger.Debug(realUrl)
 	return realUrl
 }
-
 
 
 func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
@@ -214,12 +215,14 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 		}
 
 		b, _ := json.Marshal(reqParam)
+		logger.Debug(string(b))
 
 		vm := otto.New()
 		vm.Run(jsCode)
 		data ,_ := vm.Call("GetRealPlayUrl",nil,string(b))
 
 		result = data.String()
+		logger.Debug(result)
 
 		if err = json.Unmarshal([]byte(result), &resParam); err != nil {
 			logger.Error(err)
@@ -231,14 +234,17 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 		first = false
 	}
 
+	var realUrl string
 	if len(resParam.Urls) > 0{
-		return resParam.Urls[0]
+		for _,v := range resParam.Urls{
+			fmt.Println(v)
+
+		}
+		realUrl = resParam.Urls[0]
 	}
 
-	return ""
+	return realUrl
 }
-
-
 
 
 func GetJsCode()(string){
@@ -1527,3 +1533,4 @@ func GetJsCode()(string){
 
 	return jsCode
 }
+
