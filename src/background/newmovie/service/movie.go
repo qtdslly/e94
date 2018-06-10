@@ -22,6 +22,8 @@ type OtherPlayUrl struct{
 func GetRealUrl(provider, url string,jsCode string)(string){
 
 	if provider != "youku"{
+		logger.Debug(url)
+
 		return url
 	}
 
@@ -36,6 +38,8 @@ func GetRealUrl(provider, url string,jsCode string)(string){
 	playUrl.Times = 0
 	playUrl.ContentType = 2
 	realUrl := GetStreamSourceUrl(playUrl,jsCode)
+
+	logger.Debug(realUrl)
 	return realUrl
 }
 
