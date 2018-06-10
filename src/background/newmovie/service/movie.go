@@ -233,10 +233,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 	}
 
 	if len(resParam.Urls) > 0{
-		for _,v := range resParam.Urls{
-			fmt.Println(v)
-
-		}
+		return resParam.Urls[0]
 	}
 
 	return ""

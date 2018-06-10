@@ -29,7 +29,7 @@ func main(){
 
 	var playUrl OtherPlayUrl
 	playUrl.Provider = 4
-	playUrl.Url = "http://v.youku.com/v_show/id_XMzE3MDgzMzgxNg==.html"
+	playUrl.Url = "http://v.youku.com/v_show/id_XMzM0NTI4NDcxNg==.html"
 	playUrl.Channel = ""
 	playUrl.Quality = 3
 	playUrl.TvType = ""
@@ -232,14 +232,16 @@ func GetStreamSourceUrl(v OtherPlayUrl)(string){
 		first = false
 	}
 
+	var realUrl string
 	if len(resParam.Urls) > 0{
 		for _,v := range resParam.Urls{
 			fmt.Println(v)
 
 		}
+		realUrl = resParam.Urls[0]
 	}
 
-	return ""
+	return realUrl
 }
 
 
