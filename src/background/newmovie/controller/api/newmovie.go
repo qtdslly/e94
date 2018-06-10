@@ -45,22 +45,23 @@ func NewMovieListHandler(c *gin.Context) {
 		return
 	}
 
-	var set model.KvStore
-	if err := db.Where("`key` = 'script_setting_key'").First(&set).Error ; err != nil{
-		logger.Error(err)
-		return
+	type ApiMovie struct {
+		Id	int `json:"id"`
+		Title	int `json:"title"`
+		Score	int `json:"score"`
+		ThumbY	int `json:"thumb_y"`
 	}
 
-	var apiMovies []*model.Movie
+	var apiMovies []*ApiMovie
 	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,set.Value)
-		if movie.Url != ""{
-			apiMovies = append(apiMovies,movie)
-		}
-
-		logger.Debug(movie.Url)
+		var apiMovie ApiMovie
+		apiMovie.Id = movie.Id
+		apiMovie.Title = movie.Title
+		apiMovie.Score = movie.Score
+		apiMovie.ThumbY = movie.ThumbY
+		apiMovies = append(apiMovies,apiMovie)
 	}
-	
+
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count,"has_more":hasMore})
 }
 
