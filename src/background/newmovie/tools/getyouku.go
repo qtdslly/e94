@@ -103,7 +103,7 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		movie.CreatedAt = now
 		movie.UpdatedAt = now
 		if err := db.Where("title = ? and year = ?",movie.Title,movie.Year).First(&movie).Error ; err == gorm.ErrRecordNotFound{
-			db.Create(movie)
+			db.Create(&movie)
 		}
 	})
 }
