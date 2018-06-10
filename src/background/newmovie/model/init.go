@@ -31,6 +31,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initKvStore(db)
+	if err != nil {
+		logger.Fatal("Init db kv_store failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -40,6 +46,6 @@ func rebuildModel(db *gorm.DB) {
 	dropTopSearch(db)
 	dropAdmin(db)
 	dropInstallation(db)
-
+	
 	InitModel(db)
 }
