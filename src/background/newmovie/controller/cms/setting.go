@@ -43,11 +43,11 @@ func ScriptSettingSaveHandler(c *gin.Context) {
 		kv.Key = constant.ScriptSettingKey
 		kv.Value = p.Script
 		if err := db.Create(&kv).Error; err != nil {
-			return err
+			c.JSON(http.StatusOK, gin.H{"err_code": constant.ContextError})
 		}
 	} else {
 		if err := db.Table(model.KvStore{}.TableName()).Where("`key`= ? and app_id = ? and version_id = ?", constant.ScriptSettingKey, 0, 0).Update("value", p.Script).Error; err != nil {
-			return err
+			c.JSON(http.StatusOK, gin.H{"err_code": constant.ContextError})
 		}
 	}
 
