@@ -237,7 +237,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 	var realUrl string
 	if len(resParam.Urls) > 0{
 		for _,v := range resParam.Urls{
-			fmt.Println(v)
+			logger.Debug(v)
 
 		}
 		realUrl = resParam.Urls[0]
