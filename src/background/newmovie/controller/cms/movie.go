@@ -18,7 +18,7 @@ import (
 */
 func MovieSaveHandler(c *gin.Context) {
 	type param struct {
-		Title  string `form:"account"  json:"account" binding:"required"`  //username 或 mobile 或 email
+		Title  string `form:"title"  json:"title" binding:"required"`  //username 或 mobile 或 email
 		Description string `form:"description" json:"description" binding:"required"` //登录密码, password, smscode至少需要一项有值
 		Score string `form:"score" json:"score" ` //登录密码, password, smscode至少需要一项有值
 		Actors string `form:"actors" json:"actors" ` //登录密码, password, smscode至少需要一项有值
