@@ -29,7 +29,7 @@ func main(){
 
 	var playUrl OtherPlayUrl
 	playUrl.Provider = 4
-	playUrl.Url = "https://v.youku.com/v_show/id_XNzA4ODY0NzQ0.html?spm=a2h1n.8251845.0.0"
+	playUrl.Url = "http://v.youku.com/v_show/id_XMzE3MDgzMzgxNg==.html"
 	playUrl.Channel = ""
 	playUrl.Quality = 3
 	playUrl.TvType = ""
