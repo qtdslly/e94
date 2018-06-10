@@ -13,7 +13,6 @@ import (
 func NewMovieListHandler(c *gin.Context) {
 
 	type param struct {
-
 		Limit       int `form:"limit" binding:"required"`
 		Offset      int `form:"offset" binding:"exists"`
 	}
@@ -46,9 +45,15 @@ func NewMovieListHandler(c *gin.Context) {
 		return
 	}
 
+	var set model.KvStore
+	if err := db.Where("`key` = 'script_setting_key'").First(&set).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+
 	var apiMovies []*model.Movie
 	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,service.GetJsCode())
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,set.Value)
 		if movie.Url != ""{
 			apiMovies = append(apiMovies,movie)
 		}
@@ -57,6 +62,41 @@ func NewMovieListHandler(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count,"has_more":hasMore})
+}
+
+
+
+func NewMovieHandler(c *gin.Context) {
+
+	type param struct {
+		Id       int `form:"id" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var movie model.Movie
+	if err = db.Where("id = ?",p.Id).Find(&movie).Error ; err != nil{
+		logger.Error("query movie err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	var set model.KvStore
+	if err := db.Where("`key` = 'script_setting_key'").First(&set).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+
+	movie.Url = service.GetRealUrl(movie.Provider,movie.Url,set.Value)
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movie})
 }
 
 
@@ -82,9 +122,15 @@ func NewMovieSearchHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
+	var set model.KvStore
+	if err := db.Where("`key` = 'script_setting_key'").First(&set).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+
 	var apiMovies []model.Movie
 	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,service.GetJsCode())
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,set.Value)
 		if movie.Url != ""{
 			apiMovies = append(apiMovies,movie)
 		}

@@ -73,6 +73,7 @@ func main(){
 		cms.POST("/install",aapi.InstallationHandler)
 
 		cms.GET("/movie/list", aapi.NewMovieListHandler)
+		cms.GET("/movie", aapi.NewMovieHandler)
 		cms.GET("/movie/search", aapi.NewMovieSearchHandler)
 		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
 
