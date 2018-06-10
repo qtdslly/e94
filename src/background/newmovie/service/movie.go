@@ -2,7 +2,6 @@ package service
 
 import (
 	"background/common/logger"
-	"fmt"
 	"encoding/json"
 	"bytes"
 	"net/http"
