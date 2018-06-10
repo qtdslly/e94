@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"io/ioutil"
 	"github.com/robertkrimen/otto"
-	"fmt"
 )
 type OtherPlayUrl struct{
 	Provider     uint32
