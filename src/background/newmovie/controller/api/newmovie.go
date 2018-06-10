@@ -45,24 +45,24 @@ func NewMovieListHandler(c *gin.Context) {
 		return
 	}
 
-	type ApiMovie struct {
-		Id	int `json:"id"`
-		Title	int `json:"title"`
-		Score	int `json:"score"`
-		ThumbY	int `json:"thumb_y"`
-	}
+	//type ApiMovie struct {
+	//	Id	int `json:"id"`
+	//	Title	string `json:"title"`
+	//	Score	string `json:"score"`
+	//	ThumbY	string `json:"thumb_y"`
+	//}
 
-	var apiMovies []*ApiMovie
-	for _,movie := range movies{
-		var apiMovie ApiMovie
-		apiMovie.Id = movie.Id
-		apiMovie.Title = movie.Title
-		apiMovie.Score = movie.Score
-		apiMovie.ThumbY = movie.ThumbY
-		apiMovies = append(apiMovies,apiMovie)
-	}
+	//var apiMovies []*ApiMovie
+	//for _,movie := range movies{
+	//	var apiMovie ApiMovie
+	//	apiMovie.Id = movie.Id
+	//	apiMovie.Title = movie.Title
+	//	apiMovie.Score = movie.Score
+	//	apiMovie.ThumbY = movie.ThumbY
+	//	apiMovies = append(apiMovies,apiMovie)
+	//}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count,"has_more":hasMore})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies,"count":count,"has_more":hasMore})
 }
 
 
