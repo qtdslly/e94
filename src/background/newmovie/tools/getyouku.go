@@ -11,6 +11,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"flag"
 	"time"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main(){
