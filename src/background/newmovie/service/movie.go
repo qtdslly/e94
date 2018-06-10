@@ -6,6 +6,8 @@ import (
 	"github.com/jinzhu/gorm"
 	"background/common/logger"
 	"fmt"
+	"encoding/json"
+	"bytes"
 	"net/http"
 	"io/ioutil"
 	"github.com/robertkrimen/otto"
