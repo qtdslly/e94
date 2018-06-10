@@ -14,8 +14,8 @@ func NewMovieListHandler(c *gin.Context) {
 
 	type param struct {
 
-		Limit       uint32 `form:"limit" binding:"required"`
-		Offset      uint32 `form:"offset" binding:"exists"`
+		Limit       int `form:"limit" binding:"required"`
+		Offset      int `form:"offset" binding:"exists"`
 	}
 
 	var p param
