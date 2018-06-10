@@ -114,6 +114,9 @@ func GetYoukMovieOtherInfo(url string)(string,string,string,string,string,string
 	//publish_date := query.Find("#bpmodule-playpage-lefttitle").First(".player-title").First(".title-wrap").First(".desc").First(".video-status").First(".bold").First("span").Text()
 	//description := query.Find("#module_basic_intro").First(".mod").First(".c").First(".tab-c").First(".summary-wrap").First(".summary").Text()
 
+	if newUrl == ""{
+		return "","","","","","",""
+	}
 	if !strings.Contains(newUrl,"http"){
 		newUrl = "http:" + newUrl
 	}
