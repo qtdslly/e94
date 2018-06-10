@@ -77,7 +77,7 @@ func main(){
 		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
 
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
-		
+
 		cms.POST("/movie/save", ccms.MovieSaveHandler)
 	}
 

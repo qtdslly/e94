@@ -1,4 +1,4 @@
-package cms
+package api
 
 import (
 	"net/http"
