@@ -191,9 +191,9 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 					requ.Header.Add("Content-Type", resParam.FetchUrlNew.Header.ContentType)
 				}
 
-				//logger.Debug(resParam.FetchUrlNew.Url)
-				//logger.Debug(resParam.FetchUrlNew.Header.UserAgent)
-				//logger.Debug(resParam.FetchUrlNew.Header.Referer)
+				logger.Debug(resParam.FetchUrlNew.Url)
+				logger.Debug(resParam.FetchUrlNew.Header.UserAgent)
+				logger.Debug(resParam.FetchUrlNew.Header.Referer)
 
 				resp, err := http.DefaultClient.Do(requ)
 				if err != nil {
