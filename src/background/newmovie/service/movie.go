@@ -35,7 +35,7 @@ func GetRealUrl(provider, url string,db *gorm.DB)(string){
 
 	var playUrl OtherPlayUrl
 	if provider == "youku"{
-		playUrl.Provider = constant.ContentProviderYouKu
+		playUrl.Provider = 4
 	}
 	playUrl.Url = url
 	playUrl.Channel = ""
