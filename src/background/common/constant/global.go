@@ -102,4 +102,8 @@ const (
 
 	SmsProviderYunPian    = 1
 	SmsProviderYunTongXin = 2
+
+	ScriptSettingKey = "script_setting_key"
+
+	ContentProviderYouKu = 1
 )

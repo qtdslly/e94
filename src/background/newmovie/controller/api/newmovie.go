@@ -7,6 +7,7 @@ import (
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
+	"background/newmovie/service"
 )
 
 func NewMovieListHandler(c *gin.Context) {
@@ -40,7 +41,15 @@ func NewMovieListHandler(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies,"count":count})
+	var apiMovies []model.Movie
+	for _,movie := range movies{
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,db)
+		if movie.Url != ""{
+			apiMovies = append(apiMovies,movie)
+		}
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies,"count":count})
 }
 
 
@@ -66,7 +75,15 @@ func NewMovieSearchHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies})
+	var apiMovies []model.Movie
+	for _,movie := range movies{
+		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,db)
+		if movie.Url != ""{
+			apiMovies = append(apiMovies,movie)
+		}
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies})
 }
 
 
