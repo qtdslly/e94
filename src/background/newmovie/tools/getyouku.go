@@ -109,6 +109,10 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 }
 
 func GetYoukMovieOtherInfo(url string)(string,string,string,string,string,string,string){
+	if url == ""{
+		return "","","","","","",""
+	}
+
 	query := GetYouKuPageInfo(url)
 	newUrl,_ := query.Find("#bpmodule-playpage-righttitle-code").Find(".tvinfo").Eq(0).Find("h2").Eq(0).Find("a").Eq(0).Attr("href")
 	//publish_date := query.Find("#bpmodule-playpage-lefttitle").First(".player-title").First(".title-wrap").First(".desc").First(".video-status").First(".bold").First("span").Text()
