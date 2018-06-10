@@ -17,6 +17,9 @@ type Movie struct {
 	Score		       string     `json:"score"`
 	PublishDate            string     `json:"publish_date"`
 
+	Tags            string     `json:"tags"`
+
+
 	CreatedAt       time.Time  `json:"created_at"`
 	UpdatedAt       time.Time  `json:"updated_at"`
 }

@@ -70,14 +70,15 @@ func main(){
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
+		cms.POST("/install",aapi.InstallationHandler)
+
 		cms.GET("/movie/list", aapi.NewMovieListHandler)
 		cms.GET("/movie/search", aapi.NewMovieSearchHandler)
 		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
 
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
-
+		
 		cms.POST("/movie/save", ccms.MovieSaveHandler)
-
 	}
 
 	h := http.FileServer(http.Dir("static"))
