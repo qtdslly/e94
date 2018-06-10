@@ -28,7 +28,7 @@ func main(){
 		return
 	}
 
-	i := 1
+	i := 14
 	for {
 		url := "http://list.youku.com/category/show/c_96_pt_1_s_1_d_1_p_" + fmt.Sprint(i) +  ".html?spm=a2h1n.8251845.0.0"
 		GetYouKuMovie(url,db)
