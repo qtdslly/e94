@@ -23,7 +23,7 @@ type OtherPlayUrl struct{
 func GetRealUrl(provider, url string,jsCode string)(string){
 
 	logger.Debug("====="+provider+"==========")
-	if provider != "youku"{
+	if provider != "youku" && provider != "iqiyi"{
 		logger.Debug(url)
 		return url
 	}
