@@ -3,16 +3,11 @@ package main
 import (
 	"background/newmovie/config"
 	"background/common/logger"
-	"fmt"
 	"github.com/robertkrimen/otto"
 	"encoding/json"
 	"net/http"
 	"bytes"
-	"os/exec"
-	"syscall"
-
 	"io/ioutil"
-	"time"
 )
 
 type OtherPlayUrl struct{
@@ -32,7 +27,7 @@ func main(){
 	var playUrl OtherPlayUrl
 	playUrl.Provider = 3
 	//playUrl.Url = "http://v.youku.com/v_show/id_XMzU0ODk0MzQ0MA==.html"
-	playUrl.Url = "http://www.iqiyi.com/v_19rrjes2lk.html#vfrm=2-4-0-1"
+	playUrl.Url = "http://www.iqiyi.com/v_19rrifvgg6.html"
 	playUrl.Channel = playUrl.Url
 	playUrl.Quality = 4
 	playUrl.TvType = "卫视"
@@ -1601,28 +1596,4 @@ func GetJsCode1()(string){
 		"}\n"
 
 	return jsCode
-}
-
-
-func ScreenShot(name,url string)(int){
-	cmdStr := fmt.Sprintf("/home/lyric/soft/ffmpeg/bin/ffmpeg -i %s -y -s 320x240 -vframes 1 %s.jpg -s 480x320 -vframes 1 %s_ott.jpg", url, "/home/lyric/lly/pic/" + name, "/home/lyric/lly/pic/" + name)
-	cmd := exec.Command("bash", "-c", cmdStr)
-
-	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
-
-	go func() {
-		time.Sleep(time.Second * 10)
-		logger.Infof("kill name %s url %s", name, url)
-		pgid, err := syscall.Getpgid(cmd.Process.Pid)
-		if err == nil {
-			syscall.Kill(-pgid, syscall.SIGKILL) // note the minus sign
-		}
-	}()
-
-	if err := cmd.Run(); err == nil {
-		return 0
-	} else {
-		return -1
-	}
-	return 0
 }
