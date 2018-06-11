@@ -1,0 +1,10 @@
+{
+    "product":"chinatv",
+    "production_env": false,
+    "storage_root": "/home/lyric/data/storage/",
+    "db_name": "mysql",
+    "db_source": "imsuser:imspass@tcp(127.0.0.1:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local",
+    "logger_level": 0,
+    "enable_orm_log": true,
+    "enable_http_log": true
+}
