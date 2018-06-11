@@ -1,8 +1,7 @@
 package model
 
 import (
-	"common/logger"
-	"component/kv"
+	"background/common/logger"
 
 	"github.com/jinzhu/gorm"
 )
@@ -10,9 +9,7 @@ import (
 func InitModel(db *gorm.DB) error {
 	var err error
 
-
-
-	err = kv.InitKv(db)
+	err = InitThirdVideo(db)
 	if err != nil {
 		logger.Fatal("Init db kv failed, ", err)
 		return err
@@ -23,6 +20,6 @@ func InitModel(db *gorm.DB) error {
 
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
-	kv.DropKvStore(db)
+	dropTag(db)
 	InitModel(db)
 }
