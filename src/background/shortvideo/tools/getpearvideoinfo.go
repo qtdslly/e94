@@ -166,8 +166,6 @@ func GetPearCategory(apiurl string,db *gorm.DB)bool{
 		return false
 	}
 
-	logger.Debug(string(recv))
-
 	var categorys PearCategoryInfo
 	if err = json.Unmarshal(recv, &categorys); err != nil {
 		logger.Error(err)
@@ -209,8 +207,6 @@ func GetPearCategory(apiurl string,db *gorm.DB)bool{
 				logger.Error(err)
 				return false
 			}
-
-			logger.Debug(string(recv))
 
 			var localChannels PearLocalChannelInfo
 			if err = json.Unmarshal(recv, &localChannels); err != nil {
@@ -262,8 +258,6 @@ func GetPearVideoPageContent(category,method ,apiurl string, db *gorm.DB) bool {
 		logger.Error(err)
 		return false
 	}
-
-	logger.Debug(string(recv))
 
 	var pear Pear
 	if err = json.Unmarshal(recv, &pear); err != nil {
@@ -405,6 +399,5 @@ func PearDownloadFile(requrl string, filename string) (int64, error) {
 		return 0, err
 	}
 
-	logger.Debug(tmpPath)
 	return bytes, nil
 }
