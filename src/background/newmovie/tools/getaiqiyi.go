@@ -31,12 +31,12 @@ func main(){
 		return
 	}
 
-	i := 14
+	i := 1
 	for {
 		url := "http://list.iqiyi.com/www/1/----------0---11-" + fmt.Sprint(i) +  "-1-iqiyi--.html"
 		GetAiQiYiMovie(url,db)
 		i = i + 1
-		if i == 31{
+		if i == 14{
 			break
 		}
 	}
