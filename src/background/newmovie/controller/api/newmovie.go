@@ -28,7 +28,7 @@ func NewMovieListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var movies []*model.Movie
-	if err = db.Order("publish_date desc").Offset(p.Offset).Limit(p.Limit).Find(&movies).Error ; err != nil{
+	if err = db.Order("publish_date desc").Offset(p.Offset).Where("provider <> 'youku'").Limit(p.Limit).Find(&movies).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -39,7 +39,7 @@ func NewMovieListHandler(c *gin.Context) {
 	}
 
 	var count uint32
-	if err = db.Model(&model.Movie{}).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Movie{}).Where("provider <> 'youku'").Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -84,7 +84,7 @@ func NewMovieHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var movie model.Movie
-	if err = db.Where("id = ?",p.Id).Find(&movie).Error ; err != nil{
+	if err = db.Where("id = ? and provider <> 'youku'",p.Id).Find(&movie).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -118,7 +118,7 @@ func NewMovieSearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var movies []model.Movie
-	if err = db.Order("publish_date desc").Where("title like ?","%" + p.Title + "%").Find(&movies).Error ; err != nil{
+	if err = db.Order("publish_date desc").Where("title like ? and provider <> 'youku'","%" + p.Title + "%").Find(&movies).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}

@@ -25,7 +25,6 @@ func GetRealUrl(provider, url string,jsCode string)(string){
 	logger.Debug("====="+provider+"==========")
 	if provider != "youku"{
 		logger.Debug(url)
-
 		return url
 	}
 
@@ -37,7 +36,11 @@ func GetRealUrl(provider, url string,jsCode string)(string){
 	playUrl.Times = 0
 	playUrl.ContentType = 2
 	logger.Debug(playUrl.Url)
-	playUrl.Provider = 4
+	if provider == "youku"{
+		playUrl.Provider = 4
+	}else if provider == "iqiyi"{
+		playUrl.Provider = 3
+	}
 	realUrl := GetStreamSourceUrl(playUrl,jsCode)
 
 	logger.Debug(realUrl)
