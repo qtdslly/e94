@@ -436,6 +436,15 @@ func GetDouYinPageContent(db *gorm.DB) bool {
 			video.District = aweme.PoiInfo.AddressInfo.District
 			video.Address = aweme.PoiInfo.AddressInfo.Address
 
+			video.ThirdAuthorId = aweme.Author.Uid
+			video.NickName = aweme.Author.NickName
+			if len(aweme.Author.AvatarThumb.UrlList) > 0{
+				video.AuthorThumb = aweme.Author.AvatarThumb.UrlList[0]
+			}
+			video.Birthday = aweme.Author.Birthday
+			video.IsVerticalScreen = true
+			video.HasWaterMark = aweme.Video.HasWatermark
+
 			if err = tx.Create(&video).Error; err != nil {
 				logger.Error(err)
 				return

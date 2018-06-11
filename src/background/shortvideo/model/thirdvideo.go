@@ -27,6 +27,7 @@ type ThirdVideo struct {
 	Duration           string  `json:"duration"` //时长
 	ThirdId            string  `json:"third_id"`
 	Playurl            string  `json:"play_url"`
+	SourceUrl          string  `json:"source_url"`
 	FileName           string  `json:"file_name"`
 	Location           string  `json:"location"`
 	AuthorThumb        string  `json:"author_thumb"`
@@ -44,6 +45,7 @@ type ThirdVideo struct {
 	Latitude           float64 `json:"latitude"`
 	Tag                string  `json:"tag"`
 	IsVerticalScreen   bool    `json:"is_vertical_screen"`
+	Category           string  `json:"category"`
 
 	ThirdCreatedAt string    `json:"third_created_at"`
 	CreatedAt      time.Time `json:"created_at"` // 创建时间，utc格式

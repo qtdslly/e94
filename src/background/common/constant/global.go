@@ -106,4 +106,7 @@ const (
 	ScriptSettingKey = "script_setting_key"
 
 	ContentProviderYouKu = 1
+	ContentProviderDouYin = 1
+	ContentProviderPear  = 2
+
 )
