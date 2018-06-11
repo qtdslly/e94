@@ -52,6 +52,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 	if v.Provider == 0 {
 		return v.Url
 	}
+	logger.Debug(v.Provider)
 	var err error
 
 	type CallBackDatas struct{
