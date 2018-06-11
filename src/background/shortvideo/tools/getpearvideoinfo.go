@@ -336,7 +336,6 @@ func GetPearVideoPageContent(category,method ,apiurl string, db *gorm.DB) bool {
 			thirdVideo.Category = category
 
 			if err := db.Where("provider = ? and third_video_id = ?", thirdVideo.Provider, thirdVideo.ThirdVideoId).First(&thirdVideo).Error; err == nil {
-				db.Save(&thirdVideo)
 				continue
 			}
 
