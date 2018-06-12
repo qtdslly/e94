@@ -19,6 +19,7 @@ type Movie struct {
 	PublishDate            string     `json:"publish_date"`
 	Year            string     `json:"year"`
 	Country            string     `json:"country"`
+	Duration            string     `json:"duration"`
 
 	Tags            string     `json:"tags"`
 
