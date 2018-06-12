@@ -31,6 +31,7 @@ func main(){
 		return
 	}
 
+	model.InitModel(db)
 	i := 1
 	for {
 		url := "https://list.mgtv.com/3/a4-a3-------a7-1-" + fmt.Sprint(i) +  "--b1-.html?channelId=3"
