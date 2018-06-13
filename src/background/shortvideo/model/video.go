@@ -31,9 +31,7 @@ type Video struct {
 	Longitude   float64          `json:"longitude"`
 	Latitude    float64          `json:"latitude"`
 	Vertical    bool             `json:"vertical"` // 表示是否是竖屏
-	Cdns        []*Cdn           `gorm:"-" json:"cdns"`
 	Tags        []*Tag           `gorm:"many2many:video_tag" json:"tags"`
-	Param       *ResourceParam   `gorm:"-" json:"param"`
 	PersonId    uint32           `json:"person_id"`
 	Author      *Person          `gorm:"-" json:"author"`
 	ReleasedAt  *time.Time       `json:"released_at"` // 发布时间，utc格式

@@ -1,8 +1,8 @@
 package setting
 
 import (
-	"common/constant"
-	"common/logger"
+	"background/common/constant"
+	"background/common/logger"
 	"component/kv"
 	"encoding/json"
 
