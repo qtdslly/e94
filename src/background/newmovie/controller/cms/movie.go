@@ -21,7 +21,7 @@ func MovieSaveHandler(c *gin.Context) {
 	type param struct {
 		Title  string `form:"title"  json:"title" binding:"required"`  //username 或 mobile 或 email
 		Description string `form:"description" json:"description" binding:"required"` //登录密码, password, smscode至少需要一项有值
-		Score string `form:"score" json:"score" ` //登录密码, password, smscode至少需要一项有值
+		Score float64 `form:"score" json:"score" ` //登录密码, password, smscode至少需要一项有值
 		Actors string `form:"actors" json:"actors" ` //登录密码, password, smscode至少需要一项有值
 		Directors string `form:"directors" json:"directors" ` //登录密码, password, smscode至少需要一项有值
 		ThumbY string `form:"thumb_y" json:"thumb_y" ` //登录密码, password, smscode至少需要一项有值
@@ -32,7 +32,7 @@ func MovieSaveHandler(c *gin.Context) {
 		Tags string `form:"tags" json:"tags" ` //登录密码, password, smscode至少需要一项有值
 		Language string `form:"language" json:"language" ` //登录密码, password, smscode至少需要一项有值
 		Country string `form:"country" json:"country" ` //登录密码, password, smscode至少需要一项有值
-		Duration string `form:"duration" json:"duration" ` //登录密码, password, smscode至少需要一项有值
+		Duration uint32 `form:"duration" json:"duration" ` //登录密码, password, smscode至少需要一项有值
 
 	}
 	var p param
@@ -58,7 +58,6 @@ func MovieSaveHandler(c *gin.Context) {
 	video.Pinyin = util.TitleToPinyin(video.Title)
 	video.Year = p.Year
 	video.TotalEpisode = 1
-	video.Episodes = 1
 	video.Status = constant.MediaStatusReleased
 
 	now := time.Now()
@@ -83,7 +82,7 @@ func MovieSaveHandler(c *gin.Context) {
 	episode.Pinyin = video.Pinyin
 	episode.Score = video.Score
 	episode.Duration = p.Duration * 60
-	episode.Description = p.Duration
+	episode.Description = p.Description
 	episode.Title = p.Title
 	episode.ThumbY = p.ThumbY
 	episode.PublishDate = p.PublishDate
