@@ -1,11 +1,11 @@
 package main
 
 import (
-	"cms/config"
-	"cms/model"
-	"cms/setting"
-	"common/constant"
-	"common/logger"
+	"background/shortvideo/config"
+	"background/shortvideo/model"
+	"background/shortvideo/setting"
+	"background/common/constant"
+	"background/common/logger"
 
 	"encoding/json"
 	"errors"

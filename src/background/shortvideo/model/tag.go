@@ -8,8 +8,9 @@ import (
 
 type Tag struct {
 	Id         uint32    `gorm:"primary_key" json:"id"`
-	Name       string    `gorm:"size:128;unique_index:idx_tag" json:"name" valid:"Str" name:"name" len:"1,128"`
+	ParentId   uint32    `json:"parent_id"`
 	PropertyId uint32    `gorm:"unique_index:idx_tag" json:"property_id"`
+	Name       string    `gorm:"size:128;unique_index:idx_tag" json:"name" valid:"Str" name:"name" len:"1,128"`
 	Sort       uint32    `json:"sort"`
 	CreatedAt  time.Time `json:"created_at"`
 	UpdatedAt  time.Time `json:"updated_at"`
