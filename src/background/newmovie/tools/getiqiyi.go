@@ -102,7 +102,7 @@ func FilterAiQiYiMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		video.Title = title
 		video.Description = description
 		video.Directors = directors
-		video.Lanuage = language
+		video.Language = language
 		video.PublishDate = publishDate
 		video.Actors = actors
 		video.ThumbY = thumb_y

@@ -23,11 +23,11 @@ type Video struct {
 	Category       string           `json:"category"`
 	Status         uint32           `json:"status"`
 	Year           uint32           `json:"year"`
+	Language        string          `gorm:"size:60" json:"language"`
 	Country        string           `gorm:"size:20" json:"country"`
 	Directors      string           `gorm:"size:255" json:"directors"`
 	Actors         string           `gorm:"size:255" json:"actors"`
 	Tags           string           `gorm:"size:255" json:"tags"`
-	Lanuage        string           `gorm:"size:60" json:"language"`
 
 	CreatedAt      time.Time        `json:"created_at"`       // 创建时间，utc格式
 	UpdatedAt      time.Time        `json:"updated_at"`       // 更新时间，utc格式
