@@ -54,7 +54,7 @@ func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 	}
 
 	var playUrls []model.PlayUrl
-	if err := db.Where("content_type = ? and content_id = ?",constant.MediaTypeEpisode,episode.Id).First(&playUrls).Error ; err != nil{
+	if err := db.Where("content_type = ? and content_id = ?",constant.MediaTypeEpisode,episode.Id).Find(&playUrls).Error ; err != nil{
 		logger.Error(err)
 		return nil
 	}
