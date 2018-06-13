@@ -17,17 +17,17 @@ type PlayUrl struct {
 type Video struct {
 	Id       uint32  `json:"id"`
 	Title    string  `json:"title"`
-	Description    uint32  `json:"descriptiono"`
-	Score    uint32  `json:"score"`
+	Description    string  `json:"descriptiono"`
+	Score    float64  `json:"score"`
 	ThumbX      string  `json:"thumb_x"`
-	ThumbY uint32  `json:"thumb_y"`
+	ThumbY string  `json:"thumb_y"`
 	PublishDate    string  `json:"publish_date"`
-	Year bool    `json:"year"`
-	Language bool    `json:"language"`
-	Country bool    `json:"country"`
-	Directors bool    `json:"directors"`
-	Actors bool    `json:"actors"`
-	Tags bool    `json:"tags"`
+	Year uint32    `json:"year"`
+	Language string    `json:"language"`
+	Country string    `json:"country"`
+	Directors string    `json:"directors"`
+	Actors string    `json:"actors"`
+	Tags string    `json:"tags"`
 	Urls     []*PlayUrl `json:"urls"`
 }
 

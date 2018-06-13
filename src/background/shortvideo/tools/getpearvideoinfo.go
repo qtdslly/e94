@@ -266,8 +266,6 @@ func GetPearCategory(resAdrr string, propertyId uint32, apiurl string, db *gorm.
 				return false
 			}
 
-			logger.Debug(string(recv))
-
 			var localChannels PearLocalChannelInfo
 			if err = json.Unmarshal(recv, &localChannels); err != nil {
 				logger.Error(err)
@@ -318,8 +316,6 @@ func GetPearVideoPageContent(resAdrr string, propertyId uint32, category, method
 		logger.Error(err)
 		return false
 	}
-
-	logger.Debug(string(recv))
 
 	if category == "精选" || category == "兴趣" {
 		var pear PearJinXuan
@@ -394,8 +390,6 @@ func GetPearVideoPageContent(resAdrr string, propertyId uint32, category, method
 				logger.Error(err)
 				return false
 			}
-
-			logger.Debug(string(recv))
 
 			var pear PearOtherContentSecond
 			if err = json.Unmarshal(recv, &pear); err != nil {
