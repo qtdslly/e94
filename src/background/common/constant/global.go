@@ -105,6 +105,7 @@ const (
 
 	ScriptSettingKey = "script_setting_key"
 
+	ContentProviderSystem   = 0
 	ContentProviderYouKu    = 1
 	ContentProviderMgtv     = 2
 	ContentProviderIqiyi    = 3
