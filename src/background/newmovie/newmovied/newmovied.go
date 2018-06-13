@@ -72,14 +72,14 @@ func main(){
 	{
 		cms.POST("/install",aapi.InstallationHandler)
 
-		cms.GET("/movie/list", aapi.NewMovieListHandler)
-		cms.GET("/movie", aapi.NewMovieHandler)
-		cms.GET("/movie/search", aapi.NewMovieSearchHandler)
-		cms.GET("/movie/topsearch", aapi.NewMovieTopSearchHandler)
+		cms.GET("/video/list", aapi.VideoListHandler)
+		cms.GET("/video", aapi.VideoDetailHandler)
+		cms.GET("/video/search", aapi.VideoSearchHandler)
+		cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
 
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
 
-		cms.POST("/movie/save", ccms.MovieSaveHandler)
+		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
 
 	}

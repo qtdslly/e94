@@ -7,10 +7,10 @@ import (
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"background/newmovie/service"
+	apimodel "background/newmovie/controller/api/model"
 )
 
-func NewMovieListHandler(c *gin.Context) {
+func VideoListHandler(c *gin.Context) {
 
 	type param struct {
 		Limit       int `form:"limit" binding:"required"`
@@ -27,47 +27,47 @@ func NewMovieListHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
-	var movies []*model.Movie
-	if err = db.Order("publish_date desc").Offset(p.Offset).Where("provider <> 'youku'").Limit(p.Limit).Find(&movies).Error ; err != nil{
+	var videos []*model.Video
+	if err = db.Order("publish_date desc").Offset(p.Offset).Where("status = ?",constant.MediaStatusReleased).Limit(p.Limit).Find(&videos).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
 	var hasMore bool = true
-	if len(movies) != p.Limit{
+	if len(videos) != p.Limit{
 		hasMore = false
 	}
 
 	var count uint32
-	if err = db.Model(&model.Movie{}).Where("provider <> 'youku'").Count(&count).Error; err != nil {
+	if err = db.Model(&model.Video{}).Where("status = ?",constant.MediaStatusReleased).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
-	//type ApiMovie struct {
-	//	Id	int `json:"id"`
-	//	Title	string `json:"title"`
-	//	Score	string `json:"score"`
-	//	ThumbY	string `json:"thumb_y"`
-	//}
+	type ApiVideo struct {
+		Id	int `json:"id"`
+		Title	string `json:"title"`
+		Score	string `json:"score"`
+		ThumbY	string `json:"thumb_y"`
+	}
 
-	//var apiMovies []*ApiMovie
-	//for _,movie := range movies{
-	//	var apiMovie ApiMovie
-	//	apiMovie.Id = movie.Id
-	//	apiMovie.Title = movie.Title
-	//	apiMovie.Score = movie.Score
-	//	apiMovie.ThumbY = movie.ThumbY
-	//	apiMovies = append(apiMovies,apiMovie)
-	//}
+	var apiVideos []*ApiVideo
+	for _,video := range videos{
+		var apiVideo ApiVideo
+		apiVideo.Id = video.Id
+		apiVideo.Title = video.Title
+		apiVideo.Score = video.Score
+		apiVideo.ThumbY = video.ThumbY
+		apiVideos = append(apiVideos,&apiVideo)
+	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movies,"count":count,"has_more":hasMore})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos,"count":count,"has_more":hasMore})
 }
 
 
 
-func NewMovieHandler(c *gin.Context) {
+func VideoDetailHandler(c *gin.Context) {
 
 	type param struct {
 		Id       int `form:"id" binding:"required"`
@@ -83,9 +83,9 @@ func NewMovieHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
-	var movie model.Movie
-	if err = db.Where("id = ? and provider <> 'youku'",p.Id).Find(&movie).Error ; err != nil{
-		logger.Error("query movie err!!!,",err)
+	var video model.Video
+	if err = db.Where("id = ? and status = ?",p.Id,constant.MediaStatusReleased).Find(&video).Error ; err != nil{
+		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
@@ -97,14 +97,14 @@ func NewMovieHandler(c *gin.Context) {
 
 	jsCode := GetJsCode()
 
+	var apiVideo *apimodel.Video
+	apiVideo = apimodel.VideoFromDb(jsCode,video,db)
 
-	movie.Url = service.GetRealUrl(movie.Provider,movie.Url,jsCode)
-
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movie})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideo})
 }
 
 
-func NewMovieSearchHandler(c *gin.Context) {
+func VideoSearchHandler(c *gin.Context) {
 
 	type param struct {
 		Title       string `form:"title" binding:"required"`
@@ -120,9 +120,9 @@ func NewMovieSearchHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
-	var movies []model.Movie
-	if err = db.Order("publish_date desc").Where("title like ? and provider <> 'youku'","%" + p.Title + "%").Find(&movies).Error ; err != nil{
-		logger.Error("query movie err!!!,",err)
+	var videos []model.Video
+	if err = db.Order("publish_date desc").Where("title like ? and status = ?","%" + p.Title + "%",constant.MediaStatusReleased).Find(&videos).Error ; err != nil{
+		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
@@ -134,19 +134,18 @@ func NewMovieSearchHandler(c *gin.Context) {
 
 	jsCode := GetJsCode()
 
-	var apiMovies []model.Movie
-	for _,movie := range movies{
-		movie.Url = service.GetRealUrl(movie.Provider,movie.Url,jsCode)
-		if movie.Url != ""{
-			apiMovies = append(apiMovies,movie)
-		}
+	var apiVideos []*apimodel.Video
+	for _,video := range videos{
+		var apiVideo apimodel.Video
+		apiVideo = apimodel.VideoFromDb(jsCode,video,db)
+		apiVideos = append(apiVideos,&apiVideo)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiMovies})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos})
 }
 
 
-func NewMovieTopSearchHandler(c *gin.Context) {
+func VideoTopSearchHandler(c *gin.Context) {
 
 	type param struct {
 		Limit       uint32 `form:"limit" binding:"required"`
@@ -164,7 +163,7 @@ func NewMovieTopSearchHandler(c *gin.Context) {
 
 	var tops []model.TopSearch
 	if err = db.Limit(p.Limit).Find(&tops).Error ; err != nil{
-		logger.Error("query movie err!!!,",err)
+		logger.Error("query top_search err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 

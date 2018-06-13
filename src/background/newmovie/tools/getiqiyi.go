@@ -109,6 +109,8 @@ func FilterAiQiYiMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		score1,_ := strconv.ParseFloat(score,10)
 		video.Score = score1
 		video.Pinyin = util.TitleToPinyin(video.Title)
+		video.Status = constant.MediaStatusReleased
+
 		now := time.Now()
 		video.CreatedAt = now
 		video.UpdatedAt = now
