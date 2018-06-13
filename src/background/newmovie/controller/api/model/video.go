@@ -64,7 +64,11 @@ func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 		pUrl.Id = playUrl.Id
 		pUrl.Provider = playUrl.Provider
 		pUrl.IsPlay = true
-		pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url,jsCode)
+		if playUrl.Disabled{
+			pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url,jsCode)
+		}else{
+			pUrl.Url = playUrl.Url
+		}
 		if pUrl.Url == ""{
 			pUrl.Url = playUrl.Url
 			pUrl.IsPlay = false

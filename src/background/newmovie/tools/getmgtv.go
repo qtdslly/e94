@@ -188,7 +188,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 				updateMap["directors"] = directors
 			}
 			if len(publishDate) > 0{
-				updateMap["publishDate"] = directors
+				updateMap["publish_date"] = publishDate
 			}
 			if len(score) > 0{
 				updateMap["score"] = score1
@@ -237,7 +237,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		playUrl.ContentId = episode.Id
 		playUrl.Provider = constant.ContentProviderMgtv
 		playUrl.Url = url
-		playUrl.Disabled = true
+		playUrl.Disabled = false
 
 		playUrl.CreatedAt = now
 		playUrl.UpdatedAt = now

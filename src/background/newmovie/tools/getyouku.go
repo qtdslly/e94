@@ -2,7 +2,8 @@ package main
 
 import (
 	"background/newmovie/config"
-
+	"background/common/constant"
+	"background/common/util"
 	"github.com/PuerkitoBio/goquery"
 	"background/common/logger"
 	"strings"
@@ -12,6 +13,7 @@ import (
 	"flag"
 	"time"
 	_ "github.com/go-sql-driver/mysql"
+	"strconv"
 )
 
 func main(){
@@ -86,31 +88,114 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		logger.Debug(description)
 		logger.Debug(tags)
 
-		var movie  model.Movie
-		movie.Provider = "youku"
-		movie.Actors = actors
-		movie.Title = title
-		movie.Description = description
-		movie.Directors = directors
-		movie.Url = url
-		movie.PublishDate = publish_date
-		movie.Score = score
-		movie.ThumbY = thumb_y
-		movie.Year = year
-		movie.Country = country
-		movie.Tags = tags
+		var video  model.Video
+		video.Actors = actors
+		video.Title = title
+		video.Description = description
+		video.Directors = directors
+		video.PublishDate = publish_date
+		score1,_ := strconv.ParseFloat(score,10)
+
+		video.Score = score1
+		video.ThumbY = thumb_y
+		video.Year = year
+		video.Country = country
+		video.Tags = tags
+		video.TotalEpisode = 1
+		video.Status = constant.MediaStatusReleased
 		now := time.Now()
-		movie.CreatedAt = now
-		movie.UpdatedAt = now
-		if err := db.Where("title = ? and year = ?",movie.Title,movie.Year).First(&movie).Error ; err == gorm.ErrRecordNotFound{
-			db.Create(&movie)
+		video.CreatedAt = now
+		video.UpdatedAt = now
+
+		if err := db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&video)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(thumb_y) > 0{
+				updateMap["thumb_y"] = thumb_y
+			}
+
+			if len(actors) > 0{
+				updateMap["actors"] = actors
+			}
+			if len(tags) > 0{
+				updateMap["tags"] = tags
+			}
+			if len(directors) > 0{
+				updateMap["directors"] = directors
+			}
+			if len(publish_date) > 0{
+				updateMap["publish_date"] = publish_date
+			}
+			if len(score) > 0{
+				updateMap["score"] = score
+			}
+
+			if err = db.Model(model.Video{}).Where("id=?", video.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
 		}
+
+		var episode model.Episode
+		episode.Title = title
+		episode.VideoId = video.Id
+		episode.Description = description
+		episode.Score = score1
+		episode.Pinyin = util.TitleToPinyin(video.Title)
+
+		episode.CreatedAt = now
+		episode.UpdatedAt = now
+		if err := db.Where("video_id = ?",video.Id).First(&episode).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&episode)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(score) > 0{
+				updateMap["score"] = score1
+			}
+
+			if err = db.Model(model.Episode{}).Where("id = ?", episode.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
+
+		var playUrl model.PlayUrl
+		playUrl.Title = episode.Title
+		playUrl.ContentType = constant.MediaTypeEpisode
+		playUrl.ContentId = episode.Id
+		playUrl.Provider = constant.ContentProviderIqiyi
+		playUrl.Url = url
+		playUrl.Disabled = false
+
+		playUrl.CreatedAt = now
+		playUrl.UpdatedAt = now
+		if err := db.Where("content_id = ? and content_type = ? and provider = ?",episode.Id,playUrl.ContentType,playUrl.Provider).First(&playUrl).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&playUrl)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["url"] = url
+			}
+
+			if err = db.Model(model.PlayUrl{}).Where("id = ?", playUrl.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
+
 	})
 }
 
-func GetYoukMovieOtherInfo(url string)(string,string,string,string,string,string,string){
+func GetYoukMovieOtherInfo(url string)(uint32,string,string,string,string,string,string){
 	if url == ""{
-		return "","","","","","",""
+		return 0,"","","","","",""
 	}
 
 	query := GetYouKuPageInfo(url)
@@ -119,7 +204,7 @@ func GetYoukMovieOtherInfo(url string)(string,string,string,string,string,string
 	//description := query.Find("#module_basic_intro").First(".mod").First(".c").First(".tab-c").First(".summary-wrap").First(".summary").Text()
 
 	if newUrl == ""{
-		return "","","","","","",""
+		return 0,"","","","","",""
 	}
 	if !strings.Contains(newUrl,"http"){
 		newUrl = "http:" + newUrl
@@ -148,8 +233,13 @@ func GetYoukMovieOtherInfo(url string)(string,string,string,string,string,string
 
 	publish_date = strings.Replace(publish_date,"上映：","",-1)
 	description = strings.Replace(description,"简介：","",-1)
-
-	return year,publish_date,score,directors,country,description,tags
+	var year1 int
+	if year != ""{
+		year1,_ = strconv.Atoi(year)
+	}else{
+		year1 = 0
+	}
+	return uint32(year1),publish_date,score,directors,country,description,tags
 }
 func GetYouKuPageInfo(url string)( *goquery.Document){
 	logger.Debug(url)

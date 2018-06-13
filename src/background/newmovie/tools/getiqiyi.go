@@ -137,7 +137,7 @@ func FilterAiQiYiMovieInfo(document *goquery.Document,db *gorm.DB)(){
 				updateMap["directors"] = directors
 			}
 			if len(publishDate) > 0{
-				updateMap["publishDate"] = directors
+				updateMap["publish_date"] = publishDate
 			}
 			if len(score) > 0{
 				updateMap["score"] = score1
