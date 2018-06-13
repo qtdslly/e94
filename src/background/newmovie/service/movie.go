@@ -206,7 +206,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 				if err != nil{
 					logger.Error(err)
 				}
-				logger.Debug(string(recv))
+				//logger.Debug(string(recv))
 				reqParam.HtmlData = string(recv)
 
 				//logger.Debug("html_data:",reqParam.HtmlData)
