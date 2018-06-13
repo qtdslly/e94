@@ -128,8 +128,6 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 			return
 		}
 
-		//jQuery18204076358277541021_1528805935312({"code":200,"data":{"info":{"area":"|内地,49|","duration":"20分钟","img":"https://3img.hitv.com/preview/internettv/sp_images/ott/2017/dianying/319142/20171024182204232-new.jpg_220x308.jpg","isvip":"0","kind":"|武侠,2831480|爱情,1275381|","lang":"普通话","playcnt":"954.1万","release":"2017-10-29","title":"忘忧镇","type":"0","url":"/b/319142/4159520.html","video_id":"4159520"},"list":[{"playcnt":"163.6万","title":"微电影《忘忧镇》互动版 陪赵丽颖林更新闯荡江湖","url":"/b/319142/4159520.html","video_id":"4159520"},{"playcnt":"147.7万","title":"微电影《忘忧镇》剧情版 赵丽颖林更新再续前缘","url":"/b/319142/4159632.html","video_id":"4159632"},{"playcnt":"23.3万","title":"微电影《忘忧镇》赵丽颖版 揭开神秘女侠的离奇身世","url":"/b/319142/4159880.html","video_id":"4159880"},{"playcnt":"394.5万","title":"微电影《忘忧镇》林更新版 林愈旧被追杀遇侠士相救","url":"/b/319142/4159960.html","video_id":"4159960"}],"series":[],"related":null,"short":[{"attr":"2","clip_id":"319142","img":"https://1img.hitv.com/preview/sp_images/2017/dianying/319142/4159519/20171103162504274.jpg_220x125.jpg","isnew":"0","playcnt":"36.6万","t1":"赵丽颖林更新命运归往何处？","t2":"00:55","t3":"微电影《忘忧镇》首发先导片 赵丽颖林更新命运归往何处？","url":"/b/319142/4159519.html","video_id":"4159519"},{"attr":"4","clip_id":"319142","img":"https://1img.hitv.com/preview/sp_images/2017/dianying/319142/4153244/20171030153935694.jpg_220x125.jpg","isnew":"0","playcnt":"35.2万","t1":"赵丽颖林更新出场配一脸","t2":"01:37","t3":"微电影《忘忧镇》首映礼 赵丽颖林更新出场配一脸","url":"/b/319142/4153244.html","video_id":"4153244"},{"attr":"4","clip_id":"319142","img":"https://1img.hitv.com/preview/sp_images/2017/dianying/319142/4153243/20171030153812978.jpg_220x125.jpg","isnew":"0","playcnt":"22.4万","t1":"赵丽颖林更新互动甜蜜飞","t2":"01:30","t3":"微电影《忘忧镇》首映礼 赵丽颖林更新互动甜蜜飞","url":"/b/319142/4153243.html","video_id":"4153243"},{"attr":"4","clip_id":"319142","img":"https://3img.hitv.com/preview/sp_images/2017/dianying/319142/4153242/20171030153701119.jpg_220x125.jpg","isnew":"0","playcnt":"18.5万","t1":"赵丽颖林更新热聊爆笑不止","t2":"00:45","t3":"微电影《忘忧镇》首映礼 赵丽颖林更新热聊爆笑不止","url":"/b/319142/4153242.html","video_id":"4153242"},{"attr":"2","clip_id":"319142","img":"https://3img.hitv.com/preview/sp_images/2017/dianying/319142/4153241/20171030153439856.jpg_220x125.jpg","isnew":"0","playcnt":"37.1万","t1":"白衣女侠仗义走江湖","t2":"03:58","t3":"微电影《忘忧镇》赵丽颖片花 白衣女侠仗义走江湖","url":"/b/319142/4153241.html","video_id":"4153241"},{"attr":"2","clip_id":"319142","img":"https://1img.hitv.com/preview/sp_images/2017/dianying/319142/4153240/20171030153132893.jpg_220x125.jpg","isnew":"0","playcnt":"17.5万","t1":"文弱书生的剑侠情缘","t2":"03:55","t3":"微电影《忘忧镇》林更新片花 文弱书生的剑侠情缘","url":"/b/319142/4153240.html","video_id":"4153240"},{"attr":"4","clip_id":"319142","img":"https://1img.hitv.com/preview/sp_images/2017/dianying/319142/4146469/20171024193130510.jpg_220x125.jpg","isnew":"0","playcnt":"20.9万","t1":"蒙面女侠赵丽颖的卖萌日记","t2":"00:58","t3":"微电影《忘忧镇》赵丽颖花絮 蒙面女侠的卖萌日记","url":"/b/319142/4146469.html","video_id":"4146469"},{"attr":"4","clip_id":"319142","img":"https://2img.hitv.com/preview/sp_images/2017/dianying/319142/4146468/20171024192411181.jpg_220x125.jpg","isnew":"0","playcnt":"20.4万","t1":"林大侠片场迷之日常","t2":"01:31","t3":"微电影《忘忧镇》林更新花絮 林大侠片场迷之日常","url":"/b/319142/4146468.html","video_id":"4146468"},{"attr":"3","clip_id":"319142","img":"https://0img.hitv.com/preview/sp_images/2017/dianying/319142/4146465/20171024193217572.jpg_220x125.jpg","isnew":"0","playcnt":"18.1万","t1":"林更新赵丽颖再续虐恋","t2":"00:16","t3":"微电影《忘忧镇》预告片 林更新赵丽颖再续虐恋","url":"/b/319142/4146465.html","video_id":"4146465"}]},"msg":"","seqid":"963835484c8a476eb6081db795136c75"})
-
 		data = strings.Replace(data,"jQuery18205330103375947974_1528805597948(","",-1)
 		data = data[0:len(data) - 1]
 
@@ -157,21 +155,71 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		video.Actors = actors
 		video.Tags = tags
 		video.Directors = directors
+		video.PublishDate = publishDate
 
 		now := time.Now()
 		video.CreatedAt = now
 		video.UpdatedAt = now
 		if err := db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
 			db.Create(&video)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(thumb_y) > 0{
+				updateMap["thumb_y"] = thumb_y
+			}
+			if len(country) > 0{
+				updateMap["country"] = country
+			}
+			if len(actors) > 0{
+				updateMap["actors"] = actors
+			}
+			if len(tags) > 0{
+				updateMap["tags"] = tags
+			}
+			if len(directors) > 0{
+				updateMap["directors"] = directors
+			}
+			if len(publishDate) > 0{
+				updateMap["publishDate"] = directors
+			}
+
+			if err = db.Model(model.Video{}).Where("id=?", video.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
 		}
 
 		var episode model.Episode
 		episode.Title = title
 		episode.VideoId = video.Id
 		episode.Description = description
-		episode.PublishDate = publishDate
 		episode.Score = score
-		episode.Duration = duration
+		episode.Duration = duration * 60
+
+		episode.CreatedAt = now
+		episode.UpdatedAt = now
+		if err := db.Where("video_id ?",video.Id).First(&episode).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&episode)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(score) > 0{
+				updateMap["score"] = score
+			}
+			if len(country) > 0{
+				updateMap["duration"] = duration
+			}
+
+			if err = db.Model(model.Episode{}).Where("id = ?", episode.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
 
 		var playUrl model.PlayUrl
 		playUrl.Title = episode.Title
@@ -180,6 +228,22 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		playUrl.Provider = constant.ContentProviderMgtv
 		playUrl.Url = url
 		playUrl.Disabled = true
+
+		playUrl.CreatedAt = now
+		playUrl.UpdatedAt = now
+		if err := db.Where("content_id = ? and content_type = ? and provider = ?",episode.Id,playUrl.ContentType,playUrl.Provider).First(&playUrl).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&playUrl)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["url"] = url
+			}
+
+			if err = db.Model(model.PlayUrl{}).Where("id = ?", playUrl.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
 	})
 }
 

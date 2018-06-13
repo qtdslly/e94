@@ -20,9 +20,8 @@ type Video struct {
 	Score          float32          `gorm:"type:float(3,1)" json:"score"`
 	ThumbX         string           `gorm:"size:255;column:thumb_x" json:"thumb_x" valid:"Str" name:"thumb_x" len:"0,255"`
 	ThumbY         string           `gorm:"size:255;column:thumb_y" json:"thumb_y" valid:"Str" name:"thumb_y" len:"0,255"`
-	ThumbOttX      string           `gorm:"size:255;column:thumb_ott_x" json:"thumb_ott_x" valid:"Str" name:"thumb_ott_x" len:"0,255"`
-	ThumbOttY      string           `gorm:"size:255;column:thumb_ott_y" json:"thumb_ott_y" valid:"Str" name:"thumb_ott_y" len:"0,255"`
-	CategoryId     uint32           `json:"category_id"`
+	PublishDate    string           `json:"publish_date"`
+	Category       string           `json:"category"`
 	Status         uint32           `json:"status"`
 	Year           uint32           `json:"year"`
 	Country        string           `gorm:"size:20" json:"country"`

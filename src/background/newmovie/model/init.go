@@ -37,6 +37,24 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initVideo(db)
+	if err != nil {
+		logger.Fatal("Init db video failed, ", err)
+		return err
+	}
+
+	err = initEpisode(db)
+	if err != nil {
+		logger.Fatal("Init db episode failed, ", err)
+		return err
+	}
+
+	err = initPlayUrl(db)
+	if err != nil {
+		logger.Fatal("Init db play_url failed, ", err)
+		return err
+	}
+
 	return err
 }
 
