@@ -12,7 +12,7 @@ type PlayUrl struct {
 	Id             uint32  `json:"id"`
 	Provider       uint32  `json:"provider"`
 	Url            string  `json:"url"`
-
+	IsPlay         bool    `json:"is_play"`
 }
 type Video struct {
 	Id       uint32  `json:"id"`
@@ -63,10 +63,13 @@ func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 		var pUrl PlayUrl
 		pUrl.Id = playUrl.Id
 		pUrl.Provider = playUrl.Provider
+		pUrl.IsPlay = true
 		pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url,jsCode)
-		if pUrl.Url != ""{
-			dst.Urls = append(dst.Urls,&pUrl)
+		if pUrl.Url == ""{
+			pUrl.Url = playUrl.Url
+			pUrl.IsPlay = false
 		}
+		dst.Urls = append(dst.Urls,&pUrl)
 	}
 	return &dst
 }
