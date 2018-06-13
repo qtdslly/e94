@@ -15,7 +15,7 @@ type Episode struct {
 	Description  string         `gorm:"type:longtext" json:"description" translated:"true"`
 	Sort         uint32         `json:"sort"`
 	Number       string         `gorm:"size:64" json:"number"`
-	Score        float32        `gorm:"type:float(3,1)" json:"score"`
+	Score        float64        `gorm:"type:float(3,1)" json:"score"`
 	ThumbX       string         `gorm:"size:255;column:thumb_x" json:"thumb_x" valid:"Str" name:"thumb_x" len:"0,255"`
 	ThumbY       string         `gorm:"size:255;column:thumb_y" json:"thumb_y" valid:"Str" name:"thumb_y" len:"0,255"`
 	ThumbOttX    string         `gorm:"size:255;column:thumb_ott_x" json:"thumb_ott_x" valid:"Str" name:"thumb_ott_x" len:"0,255"`

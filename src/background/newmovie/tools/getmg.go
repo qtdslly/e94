@@ -200,7 +200,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		score1,_ := strconv.ParseFloat(score,10)
 		episode.Score = score1
 		dur,_ := strconv.Atoi(duration)
-		episode.Duration = dur * 60
+		episode.Duration = uint32(dur) * 60
 
 		episode.CreatedAt = now
 		episode.UpdatedAt = now
