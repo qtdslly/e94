@@ -16,6 +16,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"flag"
 	"background/common/constant"
+	"strconv"
 )
 
 func main(){
@@ -196,8 +197,10 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		episode.Title = title
 		episode.VideoId = video.Id
 		episode.Description = description
-		episode.Score = score
-		episode.Duration = duration * 60
+		score1,_ := strconv.ParseFloat(score,10)
+		episode.Score = score1
+		dur,_ := strconv.Atoi(duration)
+		episode.Duration = dur * 60
 
 		episode.CreatedAt = now
 		episode.UpdatedAt = now
