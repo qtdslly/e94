@@ -46,7 +46,7 @@ func VideoListHandler(c *gin.Context) {
 	}
 
 	type ApiVideo struct {
-		Id	int `json:"id"`
+		Id	uint32 `json:"id"`
 		Title	string `json:"title"`
 		Score	string `json:"score"`
 		ThumbY	string `json:"thumb_y"`
@@ -70,7 +70,7 @@ func VideoListHandler(c *gin.Context) {
 func VideoDetailHandler(c *gin.Context) {
 
 	type param struct {
-		Id       int `form:"id" binding:"required"`
+		Id       uint32 `form:"id" binding:"required"`
 	}
 
 	var p param
