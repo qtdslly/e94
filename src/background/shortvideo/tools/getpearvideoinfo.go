@@ -50,11 +50,12 @@ func main() {
 		return
 	}
 
-	resAdrr, err := setting.GetResBindAddr(db)
-	if err != nil {
-		logger.Error(err)
-		return
-	}
+	//resAdrr, err := setting.GetResBindAddr(db)
+	//if err != nil {
+	//	logger.Error(err)
+	//	return
+	//}
+	resAdrr := ""
 
 	apiurl := "http://app.pearvideo.com/clt/jsp/v4/getChannels.jsp"
 	GetPearCategory(resAdrr, property.Id, apiurl, db)
