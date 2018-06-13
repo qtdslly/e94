@@ -15,7 +15,7 @@ type Video struct {
 	TotalEpisode   uint32           `json:"total_episode"`
 	CurrentEpisode uint32           `json:"current_episode"` // 当前播放最新的集数
 	OnlineEpisode  uint32           `gorm:"-" json:"online_episode"`
-	Episodes       []*Episode       `json:"episodes"`
+	Episodes       []*Episode       `gorm:"-" json:"episodes"`
 	Score          float32          `gorm:"type:float(3,1)" json:"score"`
 	ThumbX         string           `gorm:"size:255;column:thumb_x" json:"thumb_x" valid:"Str" name:"thumb_x" len:"0,255"`
 	ThumbY         string           `gorm:"size:255;column:thumb_y" json:"thumb_y" valid:"Str" name:"thumb_y" len:"0,255"`

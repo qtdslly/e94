@@ -21,7 +21,7 @@ type Episode struct {
 	ThumbOttY    string         `gorm:"size:255;column:thumb_ott_y" json:"thumb_ott_y" valid:"Str" name:"thumb_ott_y" len:"0,255"`
 	Duration     uint32         `json:"duration"`
 	PublishDate  string         `gorm:"size:20" json:"publish_date"`
-	PlayUrls     []*PlayUrl     `json:"play_urls"`
+	PlayUrls     []*PlayUrl     `gorm:"-" json:"play_urls"`
 	CreatedAt    time.Time      `json:"created_at"`       // 创建时间，utc格式
 	UpdatedAt    time.Time      `json:"updated_at"`       // 更新时间，utc格式
 }

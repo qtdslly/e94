@@ -206,7 +206,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 
 		episode.CreatedAt = now
 		episode.UpdatedAt = now
-		if err := db.Where("video_id ?",video.Id).First(&episode).Error ; err == gorm.ErrRecordNotFound{
+		if err := db.Where("video_id = ?",video.Id).First(&episode).Error ; err == gorm.ErrRecordNotFound{
 			db.Create(&episode)
 		}else{
 			updateMap := make(map[string]interface{})
