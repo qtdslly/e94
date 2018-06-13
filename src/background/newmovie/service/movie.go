@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"github.com/robertkrimen/otto"
 	"fmt"
+	"background/common/constant"
 )
 type OtherPlayUrl struct{
 	Provider     uint32
@@ -20,7 +21,7 @@ type OtherPlayUrl struct{
 	Times        uint32
 }
 
-func GetRealUrl(provider, url string,jsCode string)(string){
+func GetRealUrl(provider uint32, url string,jsCode string)(string){
 
 	if provider == "system"{
 		logger.Debug(url)
@@ -35,11 +36,11 @@ func GetRealUrl(provider, url string,jsCode string)(string){
 	playUrl.Times = 0
 	playUrl.ContentType = 2
 	logger.Debug(playUrl.Url)
-	if provider == "youku"{
+	if provider == constant.ContentProviderYouKu{
 		playUrl.Provider = 4
-	}else if provider == "iqiyi"{
+	}else if provider == constant.ContentProviderIqiyi{
 		playUrl.Provider = 3
-	}else if provider == "mgtv"{
+	}else if provider == constant.ContentProviderMgtv{
 		playUrl.Provider = 5
 	}
 	realUrl := GetStreamSourceUrl(playUrl,jsCode)
