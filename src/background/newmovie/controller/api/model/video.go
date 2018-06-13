@@ -31,7 +31,7 @@ type Video struct {
 	Urls     []*PlayUrl `json:"urls"`
 }
 
-func VideoFromDb(jsCode string,src *model.Video,db *gorm.DB) *Video {
+func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 	dst := Video{}
 	dst.Id = src.Id
 	dst.Title = src.Title

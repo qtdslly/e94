@@ -48,7 +48,7 @@ func VideoListHandler(c *gin.Context) {
 	type ApiVideo struct {
 		Id	uint32 `json:"id"`
 		Title	string `json:"title"`
-		Score	string `json:"score"`
+		Score	float64 `json:"score"`
 		ThumbY	string `json:"thumb_y"`
 	}
 
@@ -136,9 +136,9 @@ func VideoSearchHandler(c *gin.Context) {
 
 	var apiVideos []*apimodel.Video
 	for _,video := range videos{
-		var apiVideo apimodel.Video
+		var apiVideo *apimodel.Video
 		apiVideo = apimodel.VideoFromDb(jsCode,video,db)
-		apiVideos = append(apiVideos,&apiVideo)
+		apiVideos = append(apiVideos,apiVideo)
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos})
