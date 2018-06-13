@@ -34,7 +34,6 @@ func GetRealUrl(provider uint32, url string,jsCode string)(string){
 	playUrl.TvType = ""
 	playUrl.Times = 0
 	playUrl.ContentType = 2
-	logger.Debug(playUrl.Url)
 	if provider == constant.ContentProviderYouKu{
 		playUrl.Provider = 4
 	}else if provider == constant.ContentProviderIqiyi{
@@ -53,7 +52,6 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 	if v.Provider == 0 {
 		return v.Url
 	}
-	logger.Debug(v.Provider)
 	var err error
 
 	type CallBackDatas struct{
@@ -198,10 +196,6 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 					requ.Header.Add("Content-Type", resParam.FetchUrlNew.Header.ContentType)
 				}
 
-				logger.Debug(resParam.FetchUrlNew.Url)
-				logger.Debug(resParam.FetchUrlNew.Header.UserAgent)
-				logger.Debug(resParam.FetchUrlNew.Header.Referer)
-
 				resp, err := http.DefaultClient.Do(requ)
 				if err != nil {
 					logger.Debug("Proxy failed!")
@@ -226,7 +220,7 @@ func GetStreamSourceUrl(v OtherPlayUrl,jsCode string)(string){
 		data ,_ := vm.Call("GetRealPlayUrl",nil,string(b))
 
 		result = data.String()
-		logger.Debug(result)
+		//logger.Debug(result)
 		if err = json.Unmarshal([]byte(result), &resParam); err != nil {
 			logger.Error(err)
 			return ""

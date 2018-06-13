@@ -17,7 +17,7 @@ type PlayUrl struct {
 type Video struct {
 	Id       uint32  `json:"id"`
 	Title    string  `json:"title"`
-	Description    string  `json:"descriptiono"`
+	Description    string  `json:"description"`
 	Score    float64  `json:"score"`
 	ThumbX      string  `json:"thumb_x"`
 	ThumbY string  `json:"thumb_y"`

@@ -6,6 +6,7 @@ import (
 	"background/common/logger"
 	"background/common/constant"
 	"background/newmovie/model"
+	"background/common/util"
 	"net/http"
 	"time"
 )
@@ -27,6 +28,12 @@ func MovieSaveHandler(c *gin.Context) {
 		ThumbX string `form:"thumb_x" json:"thumb_x" ` //登录密码, password, smscode至少需要一项有值
 		Url string `form:"url" json:"url" ` //登录密码, password, smscode至少需要一项有值
 		PublishDate string `form:"publish_date" json:"publish_date" ` //登录密码, password, smscode至少需要一项有值
+		Year uint32 `form:"year" json:"year" ` //登录密码, password, smscode至少需要一项有值
+		Tags string `form:"tags" json:"tags" ` //登录密码, password, smscode至少需要一项有值
+		Language string `form:"language" json:"language" ` //登录密码, password, smscode至少需要一项有值
+		Country string `form:"country" json:"country" ` //登录密码, password, smscode至少需要一项有值
+		Duration string `form:"duration" json:"duration" ` //登录密码, password, smscode至少需要一项有值
+
 	}
 	var p param
 	var err error
@@ -36,20 +43,27 @@ func MovieSaveHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
-	var movie model.Movie
-	movie.Url = p.Url
-	movie.Title = p.Title
-	movie.Description = p.Description
-	movie.Actors = p.Actors
-	movie.Directors = p.Directors
-	movie.PublishDate = p.PublishDate
-	movie.Score = p.Score
-	movie.ThumbX = p.ThumbX
-	movie.ThumbY = p.ThumbY
+	var video model.Video
+	video.Title = p.Title
+	video.Description = p.Description
+	video.Actors = p.Actors
+	video.Directors = p.Directors
+	video.PublishDate = p.PublishDate
+	video.Score = p.Score
+	video.ThumbX = p.ThumbX
+	video.ThumbY = p.ThumbY
+	video.Country = p.Country
+	video.Language = p.Language
+	video.Tags = p.Tags
+	video.Pinyin = util.TitleToPinyin(video.Title)
+	video.Year = p.Year
+	video.TotalEpisode = 1
+	video.Episodes = 1
+	video.Status = constant.MediaStatusReleased
 
 	now := time.Now()
-	movie.CreatedAt = now
-	movie.UpdatedAt = now
+	video.CreatedAt = now
+	video.UpdatedAt = now
 
 	// add operation log when handler return
 	defer func() {
@@ -59,10 +73,35 @@ func MovieSaveHandler(c *gin.Context) {
 		}
 	}()
 
-	if err := db.Save(&movie).Error ; err != nil{
+	if err := db.Save(&video).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": movie})
+	var episode model.Episode
+	episode.VideoId = video.Id
+	episode.Pinyin = video.Pinyin
+	episode.Score = video.Score
+	episode.Duration = p.Duration * 60
+	episode.Description = p.Duration
+	episode.Title = p.Title
+	episode.ThumbY = p.ThumbY
+	episode.PublishDate = p.PublishDate
+	episode.CreatedAt = now
+	episode.UpdatedAt = now
+
+	if err := db.Save(&video).Error ; err != nil{
+		logger.Error(err)
+		return
+	}
+
+	var playUrl model.PlayUrl
+	playUrl.ContentType = constant.MediaTypeEpisode
+	playUrl.ContentId = episode.Id
+	playUrl.Url = p.Url
+	playUrl.Provider = constant.ContentProviderSystem
+	playUrl.Disabled = true
+	playUrl.Title = p.Title
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": video})
 }
