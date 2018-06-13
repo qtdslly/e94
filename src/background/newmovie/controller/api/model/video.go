@@ -64,7 +64,9 @@ func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 		pUrl.Id = playUrl.Id
 		pUrl.Provider = playUrl.Provider
 		pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url,jsCode)
-		dst.Urls = append(dst.Urls,&pUrl)
+		if pUrl.Url != ""{
+			dst.Urls = append(dst.Urls,&pUrl)
+		}
 	}
 	return &dst
 }
