@@ -6,7 +6,6 @@ import (
 	"cms/setting"
 	"common/constant"
 	"common/logger"
-	"common/util"
 
 	"encoding/json"
 	"errors"
@@ -45,12 +44,6 @@ func main() {
 
 	logger.SetLevel(config.GetLoggerLevel())
 
-	var app model.App
-	if err := db.Where("name = '泡泡短视频'").First(&app).Error; err != nil {
-		logger.Error(err)
-		return
-	}
-
 	var property model.Property
 	if err := db.Where("name = '类型'").First(&property).Error; err != nil {
 		logger.Error(err)
@@ -64,7 +57,7 @@ func main() {
 	}
 
 	apiurl := "http://app.pearvideo.com/clt/jsp/v4/getChannels.jsp"
-	GetPearCategory(resAdrr, app.Id, property.Id, apiurl, db)
+	GetPearCategory(resAdrr, property.Id, apiurl, db)
 }
 
 type PearTag struct {
@@ -211,7 +204,7 @@ type PearOtherContentSecond struct {
 	Content    PearContent `json:"content"`
 }
 
-func GetPearCategory(resAdrr string, appId, propertyId uint32, apiurl string, db *gorm.DB) bool {
+func GetPearCategory(resAdrr string, propertyId uint32, apiurl string, db *gorm.DB) bool {
 
 	requ, err := http.NewRequest("GET", apiurl, nil)
 	requ.Header.Add("Host", "app.pearvideo.com")
@@ -288,7 +281,7 @@ func GetPearCategory(resAdrr string, appId, propertyId uint32, apiurl string, db
 
 			for _, channel := range localChannels.ChannelList {
 				apiurl = "http://app.pearvideo.com/clt/jsp/v4/localChannelConts.jsp?channelCode=" + channel.ChannelCode + "&hotPageidx=1"
-				GetPearVideoPageContent(resAdrr, appId, propertyId, "当地|"+channel.Name, method, apiurl, db)
+				GetPearVideoPageContent(resAdrr, propertyId, "当地|"+channel.Name, method, apiurl, db)
 			}
 			//根据地方列表获取视频信息
 		} else if category.Name == "兴趣" {
@@ -299,14 +292,14 @@ func GetPearCategory(resAdrr string, appId, propertyId uint32, apiurl string, db
 			apiurl = "http://app.pearvideo.com/clt/jsp/v4/getCategoryConts.jsp?categoryId=" + category.CategoryId + "&hotPageidx=1"
 		}
 		if category.Name != "当地" {
-			GetPearVideoPageContent(resAdrr, appId, propertyId, category.Name, method, apiurl, db)
+			GetPearVideoPageContent(resAdrr, propertyId, category.Name, method, apiurl, db)
 		}
 	}
 
 	return true
 }
 
-func GetPearVideoPageContent(resAdrr string, appId, propertyId uint32, category, method, apiurl string, db *gorm.DB) bool {
+func GetPearVideoPageContent(resAdrr string, propertyId uint32, category, method, apiurl string, db *gorm.DB) bool {
 
 	requ, err := http.NewRequest(method, apiurl, nil)
 	requ.Header.Add("Host", "app.pearvideo.com")
@@ -342,12 +335,12 @@ func GetPearVideoPageContent(resAdrr string, appId, propertyId uint32, category,
 
 		for _, data := range pear.DataList {
 			for _, content := range data.ContList {
-				SavePearInfo(resAdrr, appId, propertyId, content, db)
+				SavePearInfo(resAdrr, propertyId, content, db)
 			}
 
 		}
 		if len(pear.NextUrl) > 0 {
-			GetPearVideoPageContent(resAdrr, appId, propertyId, category, method, pear.NextUrl, db)
+			GetPearVideoPageContent(resAdrr, propertyId, category, method, pear.NextUrl, db)
 		}
 	} else if strings.Contains(category, "当地|") {
 		category = strings.Replace(category, "当地|", "", -1)
@@ -363,11 +356,11 @@ func GetPearVideoPageContent(resAdrr string, appId, propertyId uint32, category,
 		}
 
 		for _, content := range pear.ContList {
-			SavePearInfo(resAdrr, appId, propertyId, content, db)
+			SavePearInfo(resAdrr, propertyId, content, db)
 		}
 
 		if len(pear.NextUrl) > 0 {
-			GetPearVideoPageContent(resAdrr, appId, propertyId, category, method, pear.NextUrl, db)
+			GetPearVideoPageContent(resAdrr, propertyId, category, method, pear.NextUrl, db)
 		}
 	} else {
 		var pear PearOthers
@@ -415,18 +408,18 @@ func GetPearVideoPageContent(resAdrr string, appId, propertyId uint32, category,
 				return false
 			}
 
-			SavePearInfo(resAdrr, appId, propertyId, pear.Content, db)
+			SavePearInfo(resAdrr, propertyId, pear.Content, db)
 		}
 
 		if len(pear.NextUrl) > 0 {
-			GetPearVideoPageContent(resAdrr, appId, propertyId, category, method, pear.NextUrl, db)
+			GetPearVideoPageContent(resAdrr, propertyId, category, method, pear.NextUrl, db)
 		}
 	}
 
 	return true
 }
 
-func SavePearInfo(resAdrr string, appId, propertyId uint32, content PearContent, db *gorm.DB) {
+func SavePearInfo(resAdrr string, propertyId uint32, content PearContent, db *gorm.DB) {
 	var err error
 	var shortVideo model.Video
 	shortVideo.Provider = constant.ContentProviderPear
@@ -505,25 +498,6 @@ func SavePearInfo(resAdrr string, appId, propertyId uint32, content PearContent,
 		logger.Error(err)
 		tx.Rollback()
 		return
-	}
-
-	var param model.ResourceParam
-	param.ContentType = constant.MediaTypeShortVideo
-	param.ContentId = shortVideo.Id
-	param.AppId = appId
-
-	if err = db.Where("content_type = ? and content_id = ? and app_id = ?", param.ContentType, param.ContentId, param.AppId).First(&param).Error; err == gorm.ErrRecordNotFound {
-		param.EnableHls = true
-		param.Online = true
-		param.CreatedAt = now
-		param.UpdatedAt = now
-		param.ExpiredAt = &now
-		param.ReleasedAt = &now
-		if err = tx.Create(&param).Error; err != nil {
-			logger.Error(err)
-			tx.Rollback()
-			return
-		}
 	}
 
 	for _, t := range content.Tag {
