@@ -8,7 +8,6 @@ import (
 
 type Video struct {
 	Id             uint32           `gorm:"primary_key" json:"id"`
-	SourceId       string           `gorm:"index;size:64" json:"source_id"`
 	Title          string           `gorm:"size:255" json:"title" valid:"Str" name:"title" len:"1,255" translated:"true"`
 	Pinyin         string           `gorm:"size:32;index" json:"pinyin"`
 	Description    string           `gorm:"type:longtext" json:"description" translated:"true"`
@@ -43,9 +42,6 @@ func initVideo(db *gorm.DB) error {
 		err = db.AutoMigrate(&Video{}).Error
 	} else {
 		err = db.CreateTable(&Video{}).Error
-		if err == nil {
-			err = db.Exec("alter table video add unique (provider_id, source_id) ;").Error
-		}
 	}
 	return err
 }
