@@ -25,9 +25,9 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	var playUrl OtherPlayUrl
-	playUrl.Provider = 3
+	playUrl.Provider = 5
 	//playUrl.Url = "http://v.youku.com/v_show/id_XMzU0ODk0MzQ0MA==.html"
-	playUrl.Url = "http://www.iqiyi.com/v_19rrifvgg6.html"
+	playUrl.Url = "http://www.mgtv.com/b/319142/4159960.html"
 	playUrl.Channel = playUrl.Url
 	playUrl.Quality = 4
 	playUrl.TvType = "卫视"

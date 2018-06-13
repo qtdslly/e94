@@ -2,41 +2,45 @@ package main
 
 import (
 	"background/newmovie/config"
-
-	"github.com/PuerkitoBio/goquery"
+	"background/newmovie/model"
 	"background/common/logger"
+	"background/common/constant"
+	"background/common/util"
+
 	"strings"
 	"fmt"
-	"background/newmovie/model"
 	"time"
 	"encoding/json"
-	_ "github.com/go-sql-driver/mysql"
 	"net/http"
 	"io/ioutil"
-	//"github.com/jinzhu/gorm"
-	//"flag"
+	"flag"
+	"strconv"
+
+	"github.com/jinzhu/gorm"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/PuerkitoBio/goquery"
 )
 
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
-	//configPath := flag.String("conf", "../config/config.json", "Config file path")
-	//err := config.LoadConfig(*configPath)
-	//if err != nil {
-	//	return
-	//}
-	//
-	//db, err := gorm.Open(config.GetDBName(), config.GetDBSource())
-	//if err != nil {
-	//	logger.Fatal("Open db Failed!!!!", err)
-	//	return
-	//}
+	configPath := flag.String("conf", "../config/config.json", "Config file path")
+	err := config.LoadConfig(*configPath)
+	if err != nil {
+		return
+	}
+
+	db, err := gorm.Open(config.GetDBName(), config.GetDBSource())
+	if err != nil {
+		logger.Fatal("Open db Failed!!!!", err)
+		return
+	}
 
 	i := 1
 	for {
 		url := "http://list.iqiyi.com/www/1/----------0---11-" + fmt.Sprint(i) +  "-1-iqiyi--.html"
-		GetAiQiYiMovie(url)
+		GetAiQiYiMovie(url,db)
 		i = i + 1
-		if i == 14{
+		if i == 31{
 			break
 		}
 	}
@@ -45,16 +49,16 @@ func main(){
 }
 
 
-func GetAiQiYiMovie(url string){
+func GetAiQiYiMovie(url string,db *gorm.DB){
 	query := GetAiQiYiPageInfo(url)
 
 	if query != nil{
-		FilterAiQiYiMovieInfo(query)
+		FilterAiQiYiMovieInfo(query,db)
 	}
 }
 
 
-func FilterAiQiYiMovieInfo(document *goquery.Document)(){
+func FilterAiQiYiMovieInfo(document *goquery.Document,db *gorm.DB)(){
 	movieDoc := document.Find("body").Find(".page-list").Find(".wrapper-content").Find(".site-main").Find(".wrapper-cols").Find(".wrapper-piclist").Find("ul").Find("li")
 
 	movieDoc.Each(func(i int, s *goquery.Selection) {
@@ -93,25 +97,105 @@ func FilterAiQiYiMovieInfo(document *goquery.Document)(){
 		logger.Debug(description)
 		logger.Debug(tags)
 
-		var movie  model.Movie
-		movie.Provider = "iqiyi"
-		movie.Actors = actors
-		movie.Title = title
-		//movie.Description = description
-		//movie.Directors = directors
-		movie.Url = url
-		//movie.PublishDate = publishDate
-		movie.Score = fmt.Sprint(score)
-		movie.ThumbY = thumb_y
-		//movie.Year = year
-		//movie.Country = country
-		//movie.Tags = tags
+		var video  model.Video
+		video.Actors = actors
+		video.Title = title
+		video.Description = description
+		video.Directors = directors
+		video.Lanuage = language
+		video.PublishDate = publishDate
+		video.Actors = actors
+		video.ThumbY = thumb_y
+		score1,_ := strconv.ParseFloat(score,10)
+		video.Score = score1
+		video.Pinyin = util.TitleToPinyin(video.Title)
 		now := time.Now()
-		movie.CreatedAt = now
-		movie.UpdatedAt = now
-		//if err := db.Where("title = ? and provider = ?",movie.Title,movie.Provider).First(&movie).Error ; err == gorm.ErrRecordNotFound{
-		//	db.Create(&movie)
-		//}
+		video.CreatedAt = now
+		video.UpdatedAt = now
+		if err := db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&video)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(thumb_y) > 0{
+				updateMap["thumb_y"] = thumb_y
+			}
+			if len(language) > 0{
+				updateMap["language"] = language
+			}
+			if len(actors) > 0{
+				updateMap["actors"] = actors
+			}
+			if len(tags) > 0{
+				updateMap["tags"] = tags
+			}
+			if len(directors) > 0{
+				updateMap["directors"] = directors
+			}
+			if len(publishDate) > 0{
+				updateMap["publishDate"] = directors
+			}
+			if len(score) > 0{
+				updateMap["score"] = score1
+			}
+
+			if err = db.Model(model.Video{}).Where("id=?", video.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
+
+		var episode model.Episode
+		episode.Title = title
+		episode.VideoId = video.Id
+		episode.Description = description
+		episode.Score = score1
+		episode.Pinyin = util.TitleToPinyin(video.Title)
+
+		episode.CreatedAt = now
+		episode.UpdatedAt = now
+		if err := db.Where("video_id = ?",video.Id).First(&episode).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&episode)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["description"] = description
+			}
+			if len(score) > 0{
+				updateMap["score"] = score
+			}
+
+			if err = db.Model(model.Episode{}).Where("id = ?", episode.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
+
+		var playUrl model.PlayUrl
+		playUrl.Title = episode.Title
+		playUrl.ContentType = constant.MediaTypeEpisode
+		playUrl.ContentId = episode.Id
+		playUrl.Provider = constant.ContentProviderIqiyi
+		playUrl.Url = url
+		playUrl.Disabled = true
+
+		playUrl.CreatedAt = now
+		playUrl.UpdatedAt = now
+		if err := db.Where("content_id = ? and content_type = ? and provider = ?",episode.Id,playUrl.ContentType,playUrl.Provider).First(&playUrl).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&playUrl)
+		}else{
+			updateMap := make(map[string]interface{})
+			if len(description) > 0{
+				updateMap["url"] = url
+			}
+
+			if err = db.Model(model.PlayUrl{}).Where("id = ?", playUrl.Id).Update(updateMap).Error; err != nil {
+				logger.Error(err)
+				return
+			}
+		}
 	})
 }
 

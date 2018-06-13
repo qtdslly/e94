@@ -157,6 +157,8 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		video.Tags = tags
 		video.Directors = directors
 		video.PublishDate = publishDate
+		score1,_ := strconv.ParseFloat(score,10)
+		video.Score = score1
 		video.Pinyin = util.TitleToPinyin(video.Title)
 
 
@@ -188,6 +190,9 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 			if len(publishDate) > 0{
 				updateMap["publishDate"] = directors
 			}
+			if len(score) > 0{
+				updateMap["score"] = score1
+			}
 
 			if err = db.Model(model.Video{}).Where("id=?", video.Id).Update(updateMap).Error; err != nil {
 				logger.Error(err)
@@ -199,10 +204,10 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		episode.Title = title
 		episode.VideoId = video.Id
 		episode.Description = description
-		score1,_ := strconv.ParseFloat(score,10)
 		episode.Score = score1
 		dur,_ := strconv.Atoi(duration)
 		episode.Duration = uint32(dur) * 60
+		episode.Pinyin = util.TitleToPinyin(video.Title)
 
 		episode.CreatedAt = now
 		episode.UpdatedAt = now

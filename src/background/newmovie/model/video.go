@@ -16,7 +16,7 @@ type Video struct {
 	CurrentEpisode uint32           `json:"current_episode"` // 当前播放最新的集数
 	OnlineEpisode  uint32           `gorm:"-" json:"online_episode"`
 	Episodes       []*Episode       `gorm:"-" json:"episodes"`
-	Score          float32          `gorm:"type:float(3,1)" json:"score"`
+	Score          float64          `gorm:"type:float(3,1)" json:"score"`
 	ThumbX         string           `gorm:"size:255;column:thumb_x" json:"thumb_x" valid:"Str" name:"thumb_x" len:"0,255"`
 	ThumbY         string           `gorm:"size:255;column:thumb_y" json:"thumb_y" valid:"Str" name:"thumb_y" len:"0,255"`
 	PublishDate    string           `json:"publish_date"`
@@ -27,6 +27,7 @@ type Video struct {
 	Directors      string           `gorm:"size:255" json:"directors"`
 	Actors         string           `gorm:"size:255" json:"actors"`
 	Tags           string           `gorm:"size:255" json:"tags"`
+	Lanuage        string           `gorm:"size:60" json:"language"`
 
 	CreatedAt      time.Time        `json:"created_at"`       // 创建时间，utc格式
 	UpdatedAt      time.Time        `json:"updated_at"`       // 更新时间，utc格式
