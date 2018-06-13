@@ -8,7 +8,6 @@ import (
 
 type Episode struct {
 	Id           uint32         `gorm:"primary_key" json:"id"`
-	SourceId     string         `gorm:"index;size:64" json:"source_id"`
 	VideoId      uint32         `gorm:"index" json:"video_id"`
 	Title        string         `gorm:"size:255" json:"title" valid:"Str" name:"title" len:"1,255" translated:"true"`
 	Pinyin       string         `gorm:"size:32;index" json:"pinyin"`
@@ -37,9 +36,6 @@ func initEpisode(db *gorm.DB) error {
 		err = db.AutoMigrate(&Episode{}).Error
 	} else {
 		err = db.CreateTable(&Episode{}).Error
-		if err == nil {
-			err = db.Exec("alter table episode add unique (provider_id, source_id) ;").Error
-		}
 	}
 	return err
 }

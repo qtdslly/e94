@@ -2,7 +2,7 @@ package main
 
 import (
 	"background/newmovie/config"
-
+	"background/common/util"
 	"github.com/PuerkitoBio/goquery"
 	"background/common/logger"
 	"strings"
@@ -157,6 +157,8 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		video.Tags = tags
 		video.Directors = directors
 		video.PublishDate = publishDate
+		video.Pinyin = util.TitleToPinyin(video.Title)
+
 
 		now := time.Now()
 		video.CreatedAt = now
