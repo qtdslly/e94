@@ -1,9 +1,9 @@
 package setting
 
 import (
-	"common/constant"
-	"common/logger"
-	"component/kv"
+	"background/common/constant"
+	"background/common/logger"
+	"background/component/kv"
 	"encoding/json"
 
 	"github.com/jinzhu/gorm"
@@ -37,7 +37,7 @@ type LibraryTag struct {
 
 // 获取所有的设置
 func GetLibrarySetting(appId, versionId uint32, db *gorm.DB) ([]*LibrarySetting, error) {
-	value, err := kv.GetValueForKey(appId, versionId, constant.LibrarySettingKey, false, db)
+	value, err := kv.GetValueForKey(appId, versionId, constant.LibrarySettingKey, db)
 	if err != nil {
 		return nil, err
 	}

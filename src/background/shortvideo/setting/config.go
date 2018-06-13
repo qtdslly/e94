@@ -3,7 +3,7 @@ package setting
 import (
 	"background/common/constant"
 	"background/common/logger"
-	"component/kv"
+	"background/component/kv"
 	"encoding/json"
 
 	"github.com/jinzhu/gorm"
@@ -17,7 +17,7 @@ type ConfigSetting struct {
 }
 
 func GetConfigSetting(db *gorm.DB) (*ConfigSetting, error) {
-	value, err := kv.GetValueForKey(0, 0, constant.ConfigSettingKey, false, db)
+	value, err := kv.GetValueForKey(0, 0, constant.ConfigSettingKey, db)
 	if err != nil {
 		return nil, err
 	}
