@@ -3,7 +3,6 @@ package main
 import (
 	"background/shortvideo/config"
 	"background/shortvideo/model"
-	"background/shortvideo/setting"
 	"background/common/constant"
 	"background/common/logger"
 
