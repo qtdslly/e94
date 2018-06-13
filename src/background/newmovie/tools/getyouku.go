@@ -170,7 +170,7 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		playUrl.Title = episode.Title
 		playUrl.ContentType = constant.MediaTypeEpisode
 		playUrl.ContentId = episode.Id
-		playUrl.Provider = constant.ContentProviderIqiyi
+		playUrl.Provider = constant.ContentProviderYouKu
 		playUrl.Url = url
 		playUrl.Disabled = false
 
