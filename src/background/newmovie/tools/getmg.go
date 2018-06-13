@@ -15,6 +15,7 @@ import (
 	"io/ioutil"
 	"github.com/jinzhu/gorm"
 	"flag"
+	"background/common/constant"
 )
 
 func main(){
@@ -37,12 +38,11 @@ func main(){
 		url := "https://list.mgtv.com/3/a4-a3-------a7-1-" + fmt.Sprint(i) +  "--b1-.html?channelId=3"
 		GetMgMovie(url,db)
 		i = i + 1
-		if i == 14{
+		if i == 42{
 			break
 		}
 	}
 }
-
 
 func GetMgMovie(url string,db *gorm.DB){
 	query := GetMgPageInfo(url)
@@ -148,26 +148,38 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		logger.Debug(publishDate)
 		logger.Debug(duration)
 
-		var movie  model.Movie
-		movie.Provider = "mgtv"
-		movie.Actors = actors
-		movie.Title = title
-		movie.Description = description
-		movie.Directors = directors
-		movie.Url = url
-		movie.PublishDate = publishDate
-		movie.Score = score
-		movie.ThumbY = thumb_y
+		var video  model.Video
+		video.Title = title
+		video.Description = description
+		video.ThumbY = thumb_y
 		//movie.Year = year
-		movie.Country = country
-		movie.Duration = duration
-		movie.Tags = tags
+		video.Country = country
+		video.Actors = actors
+		video.Tags = tags
+		video.Directors = directors
+
 		now := time.Now()
-		movie.CreatedAt = now
-		movie.UpdatedAt = now
-		if err := db.Where("title = ? and provider = ?",movie.Title,movie.Provider).First(&movie).Error ; err == gorm.ErrRecordNotFound{
-			db.Create(&movie)
+		video.CreatedAt = now
+		video.UpdatedAt = now
+		if err := db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
+			db.Create(&video)
 		}
+
+		var episode model.Episode
+		episode.Title = title
+		episode.VideoId = video.Id
+		episode.Description = description
+		episode.PublishDate = publishDate
+		episode.Score = score
+		episode.Duration = duration
+
+		var playUrl model.PlayUrl
+		playUrl.Title = episode.Title
+		playUrl.ContentType = constant.MediaTypeEpisode
+		playUrl.ContentId = episode.Id
+		playUrl.Provider = constant.ContentProviderMgtv
+		playUrl.Url = url
+		playUrl.Disabled = true
 	})
 }
 
