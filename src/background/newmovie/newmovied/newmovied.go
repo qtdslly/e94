@@ -76,6 +76,8 @@ func main(){
 		cms.GET("/video", aapi.VideoDetailHandler)
 		cms.GET("/video/search", aapi.VideoSearchHandler)
 		cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
+		
+		cms.GET("/recommend", aapi.RecommendHandler)
 
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
 

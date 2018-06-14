@@ -55,6 +55,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initRecommend(db)
+	if err != nil {
+		logger.Fatal("Init db recommend failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -64,6 +70,10 @@ func rebuildModel(db *gorm.DB) {
 	dropTopSearch(db)
 	dropAdmin(db)
 	dropInstallation(db)
+	dropVideo(db)
+	dropEpisode(db)
+	dropPlayUrl(db)
+	dropRecommend(db)
 
 	InitModel(db)
 }

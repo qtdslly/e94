@@ -10,6 +10,51 @@ import (
 	apimodel "background/newmovie/controller/api/model"
 )
 
+
+func RecommendHandler(c *gin.Context) {
+
+	type param struct {
+		Limit       int `form:"limit" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var recommends []*model.Recommend
+	if err = db.Order("created_at desc").Limit(p.Limit).Where("status = ?",constant.MediaStatusReleased).Find(&recommends).Error ; err != nil{
+		logger.Error("query recommend err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	type ApiRecommend struct {
+		Id              uint32     `gorm:"primary_key" json:"id"`
+		ContentType     uint32     `json:"content_type"`
+		ContentId       uint32     `json:"content_id"`
+		Title           string     `gorm:"size:60" json:"title"`
+		Focus           string     `gorm:"size:60" json:"focus"`
+		Thumb           string     `gorm:"size:60" json:"thumb"`
+	}
+
+	var apiRecommends []*ApiRecommend
+	for _,ar := range recommends{
+		var apiRecommend ApiRecommend
+		apiRecommend.Id = ar.Id
+		apiRecommend.Title = ar.Title
+		apiRecommend.ContentType = ar.ContentType
+		apiRecommend.Thumb = ar.ThumbX
+		apiRecommends = append(apiRecommends,&apiRecommend)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiRecommends})
+}
+
 func VideoListHandler(c *gin.Context) {
 
 	type param struct {
