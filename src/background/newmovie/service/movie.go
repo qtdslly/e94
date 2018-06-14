@@ -23,7 +23,7 @@ type OtherPlayUrl struct{
 
 func GetRealUrl(provider uint32, url string,jsCode string)(string){
 
-	if provider == constant.ContentProviderSystem{
+	if provider == constant.ContentProviderSystem || provider == constant.ContentProviderSystem1 || provider == constant.ContentProviderSystem2{
 		return url
 	}
 

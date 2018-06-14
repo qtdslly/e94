@@ -111,6 +111,9 @@ const (
 	ContentProviderIqiyi    = 3
 	ContentProviderTencent  = 4
 	ContentProviderSohu     = 5
+	ContentProviderSystem1  = 10
+	ContentProviderSystem2  = 20
+
 
 	ContentProviderDouYin   = 6
 	ContentProviderPear     = 7
