@@ -42,70 +42,68 @@ func MovieSaveHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
+	now := time.Now()
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 	var video model.Video
 	video.Title = p.Title
-	video.Description = p.Description
-	video.Actors = p.Actors
-	video.Directors = p.Directors
-	video.PublishDate = p.PublishDate
-	video.Score = p.Score
-	video.ThumbX = p.ThumbX
-	video.ThumbY = p.ThumbY
-	video.Country = p.Country
-	video.Language = p.Language
-	video.Tags = p.Tags
-	video.Pinyin = util.TitleToPinyin(video.Title)
-	video.Year = p.Year
-	video.TotalEpisode = 1
-	video.Status = constant.MediaStatusReleased
+	if err := db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
+		video.Description = p.Description
+		video.Actors = p.Actors
+		video.Directors = p.Directors
+		video.PublishDate = p.PublishDate
+		video.Score = p.Score
+		video.ThumbX = p.ThumbX
+		video.ThumbY = p.ThumbY
+		video.Country = p.Country
+		video.Language = p.Language
+		video.Tags = p.Tags
+		video.Pinyin = util.TitleToPinyin(video.Title)
+		video.Year = p.Year
+		video.TotalEpisode = 1
+		video.Status = constant.MediaStatusReleased
 
-	now := time.Now()
-	video.CreatedAt = now
-	video.UpdatedAt = now
+		video.CreatedAt = now
+		video.UpdatedAt = now
 
-	// add operation log when handler return
-	defer func() {
-		// not log the password
-		if err != nil {
+		if err := db.Create(&video).Error ; err != nil{
 			c.AbortWithStatus(http.StatusInternalServerError)
+			return
 		}
-	}()
-
-	if err := db.Save(&video).Error ; err != nil{
-		logger.Error(err)
-		return
 	}
 
 	var episode model.Episode
-	episode.VideoId = video.Id
-	episode.Pinyin = video.Pinyin
-	episode.Score = video.Score
-	episode.Duration = p.Duration * 60
-	episode.Description = p.Description
 	episode.Title = p.Title
-	episode.ThumbY = p.ThumbY
-	episode.PublishDate = p.PublishDate
-	episode.CreatedAt = now
-	episode.UpdatedAt = now
+	if err := db.Where("title = ?",episode.Title).First(&episode).Error ; err == gorm.ErrRecordNotFound {
+		episode.VideoId = video.Id
+		episode.Pinyin = video.Pinyin
+		episode.Score = video.Score
+		episode.Duration = p.Duration * 60
+		episode.Description = p.Description
+		episode.ThumbY = p.ThumbY
+		episode.PublishDate = p.PublishDate
+		episode.CreatedAt = now
+		episode.UpdatedAt = now
 
-	if err := db.Save(&video).Error ; err != nil{
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
+		if err := db.Create(&episode).Error; err != nil {
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
 	}
 
 	var playUrl model.PlayUrl
 	playUrl.ContentType = constant.MediaTypeEpisode
 	playUrl.ContentId = episode.Id
-	playUrl.Url = p.Url
 	playUrl.Provider = constant.ContentProviderSystem
-	playUrl.Disabled = true
-	playUrl.Title = p.Title
 
-	if err := db.Save(&playUrl).Error ; err != nil{
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
+	if err := db.Where("content_type = ? and content_id = ? and provider = ?",playUrl.ContentType,playUrl.ContentId,playUrl.Provider).First(&playUrl).Error ; err == gorm.ErrRecordNotFound {
+		playUrl.Url = p.Url
+		playUrl.Disabled = true
+		playUrl.Title = p.Title
+		if err := db.Save(&playUrl).Error; err != nil {
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": video})
