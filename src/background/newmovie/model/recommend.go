@@ -11,8 +11,8 @@ type Recommend struct {
 	ContentId       uint32     `json:"content_id"`
 	Title           string     `gorm:"size:60" json:"title"`
 	Focus           string     `gorm:"size:60" json:"focus"`
-	ThumbX          string     `gorm:"size:60" json:"thumb_x"`
-	ThumbY          string     `gorm:"size:60" json:"thumb_y"`
+	ThumbX          string     `gorm:"size:255" json:"thumb_x"`
+	ThumbY          string     `gorm:"size:255" json:"thumb_y"`
 	Status          uint32     `json:"status"`
 	CreatedAt       time.Time  `json:"created_at"`
 	UpdatedAt       time.Time  `json:"updated_at"`

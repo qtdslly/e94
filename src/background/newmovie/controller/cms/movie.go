@@ -39,6 +39,7 @@ func MovieSaveHandler(c *gin.Context) {
 	var err error
 	if err = c.Bind(&p); err != nil {
 		logger.Debug("Invalid request param ", err)
+		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
@@ -68,7 +69,7 @@ func MovieSaveHandler(c *gin.Context) {
 	defer func() {
 		// not log the password
 		if err != nil {
-			c.Set(constant.ContextError, err.Error())
+			c.AbortWithStatus(http.StatusInternalServerError)
 		}
 	}()
 
@@ -90,7 +91,7 @@ func MovieSaveHandler(c *gin.Context) {
 	episode.UpdatedAt = now
 
 	if err := db.Save(&video).Error ; err != nil{
-		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
@@ -101,6 +102,11 @@ func MovieSaveHandler(c *gin.Context) {
 	playUrl.Provider = constant.ContentProviderSystem
 	playUrl.Disabled = true
 	playUrl.Title = p.Title
+
+	if err := db.Save(&playUrl).Error ; err != nil{
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": video})
 }
