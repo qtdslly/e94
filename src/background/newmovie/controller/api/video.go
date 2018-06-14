@@ -34,12 +34,12 @@ func RecommendHandler(c *gin.Context) {
 	}
 
 	type ApiRecommend struct {
-		Id              uint32     `gorm:"primary_key" json:"id"`
+		Id              uint32     `json:"id"`
 		ContentType     uint32     `json:"content_type"`
 		ContentId       uint32     `json:"content_id"`
-		Title           string     `gorm:"size:60" json:"title"`
-		Focus           string     `gorm:"size:60" json:"focus"`
-		Thumb           string     `gorm:"size:60" json:"thumb"`
+		Title           string     `json:"title"`
+		Focus           string     `json:"focus"`
+		Thumb           string     `json:"thumb"`
 	}
 
 	var apiRecommends []*ApiRecommend
