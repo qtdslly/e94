@@ -48,6 +48,7 @@ func RecommendHandler(c *gin.Context) {
 		apiRecommend.Id = ar.Id
 		apiRecommend.Title = ar.Title
 		apiRecommend.ContentType = ar.ContentType
+		apiRecommend.ContentId = ar.ContentId
 		apiRecommend.Thumb = ar.ThumbX
 		apiRecommends = append(apiRecommends,&apiRecommend)
 	}
