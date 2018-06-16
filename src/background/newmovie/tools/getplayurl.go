@@ -29,9 +29,9 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	var playUrl OtherPlayUrl
-	playUrl.Provider = 5
-	playUrl.Url = "https://www.mgtv.com/b/315779/4105849.html"
-	playUrl.Channel = ""
+	playUrl.Provider = 8
+	playUrl.Url = "c44bcfa5d1024e98b798fa7a7729d05d"
+	playUrl.Channel = playUrl.Url
 	playUrl.Quality = 3
 	playUrl.TvType = ""
 	playUrl.Times = 0
@@ -158,6 +158,7 @@ func GetStreamSourceUrl(v OtherPlayUrl)(string){
 					"\t</body>\n" +
 					"</message>"
 
+				logger.Debug(huaShuSrc)
 				requ, err := http.NewRequest("POST", resParam.FetchUrlNew.Url, bytes.NewBuffer([]byte(huaShuSrc)))
 				requ.Header.Add("Content-Type", "application/xml")
 
