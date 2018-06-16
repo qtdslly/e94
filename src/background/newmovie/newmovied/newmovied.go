@@ -70,6 +70,8 @@ func main(){
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
+		r.LoadHTMLFiles(config.GetCmsRoot()+"html/login.html")
+
 		cms.POST("/install",aapi.InstallationHandler)
 
 		cms.GET("/video/list", aapi.VideoListHandler)

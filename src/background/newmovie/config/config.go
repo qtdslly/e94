@@ -18,6 +18,8 @@ type config struct {
 	EnableHttpLog bool   `json:"enable_http_log"`
 	TmplRoot      string `json:"tmpl_root"`
 	StaticRoot    string `json:"static_root"`
+	CmsRoot       string `json:"cms_root"`
+
 }
 
 var c config
@@ -31,8 +33,9 @@ func init() {
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
-	c.TmplRoot = "f:/Git/e94/src/background/stock/tmpl/"
-	c.StaticRoot = "/home/lyric/Git/e94/src/background/stock/static/"
+	c.CmsRoot = "/root/Git/e94/src/background/newmovie/"
+	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
+	c.StaticRoot = "/root/Git/e94/src/background/newmovie/static/"
 }
 
 func LoadConfig(path string) error {
@@ -97,4 +100,8 @@ func GetTmplRoot() string {
 
 func GetStaticRoot() string {
 	return c.StaticRoot
+}
+
+func GetCmsRoot() string {
+	return c.CmsRoot
 }
