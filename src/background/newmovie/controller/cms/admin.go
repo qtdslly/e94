@@ -26,6 +26,11 @@ func AdminLoginHandler(c *gin.Context) {
 		Id       uint32 `json:"id"`
 		Username string `json:"username"`
 	}
+
+	if c.Params == nil{
+		c.HTML(http.StatusOK, "login.html", gin.H{
+		})
+	}
 	var p param
 	var err error
 	if err = c.Bind(&p); err != nil {

@@ -20,6 +20,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"net/http"
+	"background/stock/controller"
 )
 
 func main(){
@@ -67,10 +68,15 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
+	r.Use()
+	{
+		r.GET("/login", ccms.AdminLoginHandler)
+	}
 	cms := r.Group("cms")
 	cms.Use(dbMiddleware)
 	{
 		r.LoadHTMLFiles(config.GetCmsRoot()+"html/login.html")
+
 
 		cms.POST("/install",aapi.InstallationHandler)
 
