@@ -117,5 +117,6 @@ const (
 
 	ContentProviderDouYin   = 6
 	ContentProviderPear     = 7
+	ContentProviderKuai     = 8
 
 )

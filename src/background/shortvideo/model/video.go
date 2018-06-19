@@ -33,6 +33,7 @@ type Video struct {
 	Vertical    bool             `json:"vertical"` // 表示是否是竖屏
 	Tags        []*Tag           `gorm:"many2many:video_tag" json:"tags"`
 	PersonId    uint32           `json:"person_id"`
+	CategoryId  uint32           `json:"category_id"`
 	Author      *Person          `gorm:"-" json:"author"`
 	ReleasedAt  *time.Time       `json:"released_at"` // 发布时间，utc格式
 	SyncedAt    *time.Time       `json:"created_at"`  // 创建时间，utc格式

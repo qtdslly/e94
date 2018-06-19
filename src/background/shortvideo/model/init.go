@@ -39,11 +39,22 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initCategory(db)
+	if err != nil {
+		logger.Fatal("Init db category failed, ", err)
+		return err
+	}
+
 	return err
 }
 
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
 	dropTag(db)
+	dropCategory(db)
+	dropVideo(db)
+	dropPerson(db)
+	dropProperty(db)
+	dropThirdVideo(db)
 	InitModel(db)
 }

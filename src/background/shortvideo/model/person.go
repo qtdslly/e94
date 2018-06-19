@@ -8,7 +8,8 @@ import (
 
 type Person struct {
 	Id           uint32         `gorm:"primary_key" json:"id"`
-	ProviderId   uint32         `json:"provider_id"`
+	Provider     uint32         `json:"provider"`
+	SourceId     string         `gorm:"size:64" json:"source_id"`
 	Name         string         `gorm:"size:64" json:"name"`
 	LocalName    string         `gorm:"size:64" json:"local_name"`
 	Nickname     string         `gorm:"size:128" json:"nickname"`
