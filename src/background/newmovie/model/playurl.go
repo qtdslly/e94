@@ -17,7 +17,7 @@ type PlayUrl struct {
 	Height      uint32         `json:"height"`
 	Bitrate     uint32         `json:"bitrate"`
 	Url         string         `gorm:"size:255" json:"url"`
-	Disabled    bool           `json:"disabled"` // 链接播放不了，临时禁止
+	OnLine      bool           `json:"on_line"` // 链接播放不了，临时禁止
 	Quality     uint8          `json:"quality"`
 	Sort        uint32         `json:"sort"`
 	CreatedAt   time.Time      `json:"created_at"` // 创建时间，utc格式
