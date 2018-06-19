@@ -4,7 +4,7 @@ import (
 	"background/shortvideo/config"
 	"background/common/logger"
 	"background/common/constant"
-
+	"background/common/util"
 	"background/shortvideo/model"
 	"encoding/json"
 	"errors"
@@ -17,24 +17,21 @@ import (
 	"strings"
 	"time"
 	"strconv"
+	"fmt"
+	"path/filepath"
+	"os"
+	"io"
 )
 
 func main() {
 	logger.SetLevel(config.GetLoggerLevel())
 
-	configPath := flag.String("conf", "../config/config.json", "Config file path")
 
 	flag.Parse()
 
 	logger.SetLevel(config.GetLoggerLevel())
 
-	err := config.LoadConfig(*configPath)
-	if err != nil {
-		logger.Error("Config Failed!!!!", err)
-		return
-	}
-
-	db, err := gorm.Open(config.GetDBName(), config.GetDBSource())
+	db, err := gorm.Open("mysql", "root:hahawap@tcp(localhost:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		logger.Fatal("Open db Failed!!!!", err)
 		return
@@ -46,9 +43,14 @@ func main() {
 
 	url := "https://k-rec.360kan.com/hotrizon2/list?appid=hotrizon2&cdn_url=1&ch=AppStore&channel_id=0&ckw=0&columns=0&detection=2&direction=down&ios=11.3.1&kw=0&m2=2ae77ceb514c987b47e137895f3ebf4b&os_type=ios&sign=297E2BE4F0C4EE86A81CB04039C2CCCA&svc=3&time=1529390761906&vc=10225"
 	for {
-		if !GetKuaiVideoPageContent(url,db){
+		//if !GetKuaiVideoPageContent(url,db){
+		//	break
+		//}
+		var p = time.Now()
+		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) == "0301"{
 			break
 		}
+		GetKuaiVideoPageContent(url,db)
 	}
 }
 
@@ -241,6 +243,16 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 		video.Filesize = video.Filesize / 1024 / 1024
 
 		video.Url = v.Resources.Wifi.CdnUrl
+
+		code := util.RandString(6)
+		fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Minute(),now.Hour(),now.Minute(),now.Second()) + code + ".mp4"
+		video.FileName = "G:/data/shortvideo/kuai/" + fileName
+		_, err := DouKuaiDownloadFile(video.Url,fileName)
+		if err != nil{
+			logger.Error(err)
+			tx.Rollback()
+			return false
+		}
 		video.Status = constant.MediaStatusReleased
 		video.CreatedAt = now
 		video.UpdatedAt = now
@@ -255,4 +267,51 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 	}
 
 	return true
+}
+
+
+
+
+func DouKuaiDownloadFile(requrl string, filename string) (int64, error) {
+	//no timeout
+	client := http.Client{}
+
+	resp, err := client.Get(requrl)
+	if err != nil {
+		logger.Error(err)
+		return 0, err
+	}
+
+	// close body read before return
+	defer resp.Body.Close()
+
+	// should not save html content as file
+	if strings.Contains(resp.Header.Get("Content-Type"), "text/html") {
+		err = errors.New("invalid response content type")
+		logger.Error(err)
+		return 0, err
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		err = errors.New(fmt.Sprintf("Fail to download: [%s]", requrl))
+		logger.Error(err)
+		return 0, err
+	}
+
+	tmpPath := filepath.Join("G:/data/shortvideo/kuai", filename)
+	tmpFile, err := os.Create(tmpPath)
+	if err != nil {
+		logger.Error(err)
+		return 0, err
+	}
+
+	bytes, err := io.Copy(tmpFile, resp.Body)
+	tmpFile.Close()
+	if err != nil {
+		logger.Error(err)
+		return 0, err
+	}
+
+	logger.Debug(tmpPath)
+	return bytes, nil
 }

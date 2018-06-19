@@ -21,6 +21,7 @@ type Video struct {
 	Width       uint32           `json:"width"`
 	Duration    uint32           `json:"duration"` //时长
 	Url         string           `gorm:"size:255" json:"url"`
+	FileName    string           `gorm:"size:255" json:"file_name"`
 	Status      uint32           `json:"status"`
 	Watermark   bool             `json:"watermark"`
 	Country     string           `gorm:"size:255" json:"country"`
