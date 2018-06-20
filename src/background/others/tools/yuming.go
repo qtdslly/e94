@@ -14,37 +14,38 @@ func main(){
 
 	GetStatus("ezhantao.com")
 }
-//
-//type Prop struct {
-//	ReturnCode        string    `xml:"returncode"`
-//	key               string    `xml:"key"`
-//	Original          string    `xml:"original"`
-//}
-//
-//type Result struct {
-//	Property Prop `xml:"property"`
-//}
 
 
-type DominData struct {
-	XMLName           xml.Name `xml:"property"`
-	Version     string   `xml:"version,attr"`
-	Prop         Property `xml:"property"`
-	Description string   `xml:",innerxml"`
+
+//{"domainNames":[{"label":"ezhantao","tld":"com"}]}
+
+type Domain struct {
+	Label        string    `json:"label"`
+	Tld	     string    `json:"tld"`
+}
+type DomainReq struct {
+	DomainNames []Domain  `json:domainNames`
 }
 
-type Property struct {
-	XMLName    xml.Name `xml:"property"`
-	ReturnCode        string    `xml:"returncode"`
-	key               string    `xml:"key"`
-	Original          string    `xml:"original"`
-}
 
 func GetStatus(url string){
 
-	apiUrl := "http://panda.www.net.cn/cgi-bin/check.cgi?area_domain=" + url
-	requ, err := http.NewRequest("GET", apiUrl, nil)
+	apiUrl := "https://cloud.baidu.com/api/bcd/search/status" + url
+	requ, err := http.NewRequest("POST", apiUrl, nil)
+	requ.Header.Add("Host", "cloud.baidu.com")
+	requ.Header.Add("Referer", "https://cloud.baidu.com/product/bcd/search.html?keyword=ezhantao")
+	requ.Header.Add("Host", "cloud.baidu.com")
+	requ.Header.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3278.0 Safari/537.36")
 
+	req, err := http.NewRequest("POST", apiUrl, strings.NewReader("name=cjb"))
+	if err != nil {
+		// handle error
+	}
+
+	var dom Domain
+	dom.Label = "ezhantao"
+	dom.Tld = "com"
+	domr := DomainReq{dom}
 	resp, err := http.DefaultClient.Do(requ)
 	if err != nil {
 		logger.Debug("Proxy failed!")
