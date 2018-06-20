@@ -29,8 +29,8 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	var playUrl OtherPlayUrl
-	playUrl.Provider = 8
-	playUrl.Url = "c44bcfa5d1024e98b798fa7a7729d05d"
+	playUrl.Provider = 7
+	playUrl.Url = "http://m.miguvideo.com/wap/resource/migu/detail/Detail_live.jsp?cid=630291593"
 	playUrl.Channel = playUrl.Url
 	playUrl.Quality = 3
 	playUrl.TvType = ""
