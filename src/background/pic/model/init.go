@@ -20,6 +20,17 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initTag(db)
+	if err != nil {
+		logger.Fatal("Init db tag failed, ", err)
+		return err
+	}
+
+	err = initCategory(db)
+	if err != nil {
+		logger.Fatal("Init db category failed, ", err)
+		return err
+	}
 
 	return err
 }
@@ -28,5 +39,7 @@ func InitModel(db *gorm.DB) error {
 func rebuildModel(db *gorm.DB) {
 	dropPicture(db)
 	dropMove(db)
+	dropTag(db)
+	dropCategory(db)
 	InitModel(db)
 }

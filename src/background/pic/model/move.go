@@ -15,12 +15,12 @@ type Move struct {
 	Sort           uint32           `json:"sort"`
 	CategoryId     uint32           `json:"category_id"`
 	OnLine         bool             `json:"on_line"`
-	Thumb          string           `gorm:"size:255" json:"thumb_image"`
-	MoveFile       string           `gorm:"size:255" json:"move_file"`
+	Url            string           `gorm:"size:255" json:"url"`
+	SourceUrl      string           `gorm:"size:255" json:"source_url"`
 	Filesize       uint32           `json:"filesize"`
 	Height         uint32           `json:"height"`
 	Width          uint32           `json:"width"`
-	IsMove         bool             `json:"is_move"`
+	Duration       float64          `json:"duration"`
 	WaterMark      bool             `json:"water_mark"`
 	Vertical       bool             `json:"vertical"` // 表示是否是竖屏
 	Like           uint32           `json:"like"`

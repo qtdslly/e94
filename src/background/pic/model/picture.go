@@ -9,21 +9,21 @@ import (
 type Picture struct {
 	Id             uint32           `gorm:"primary_key" json:"id"`
 	Provider       uint32           `json:"provider"`
+	SourceId       string           `gorm:"size:60" json:"source_id"`
 	Title          string           `gorm:"size:255" json:"title"`
 	Pinyin         string           `gorm:"size:32;index" json:"pinyin"`
 	Description    string           `gorm:"type:longtext" json:"description" translated:"true"`
 	Sort           uint32           `json:"sort"`
 	CategoryId     uint32           `json:"category_id"`
 	OnLine         bool             `json:"on_line"`
-	Thumb          string           `gorm:"size:255" json:"thumb_image"`
-	MoveFile       string           `gorm:"size:255" json:"move_file"`
+	Url            string           `gorm:"size:255" json:"url"`
+	SourceUrl      string           `gorm:"size:255" json:"source_url"`
 	Filesize       uint32           `json:"filesize"`
 	Height         uint32           `json:"height"`
 	Width          uint32           `json:"width"`
 	IsMove         bool             `json:"is_move"`
 	WaterMark      bool             `json:"water_mark"`
 	Vertical       bool             `json:"vertical"` // 表示是否是竖屏
-	Duration       float32          `json:"duration"`
 	Like           uint32           `json:"like"`
 	Click          uint32           `json:"click"`
 	Show           uint32           `json:"show"`

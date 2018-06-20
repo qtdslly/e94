@@ -119,4 +119,6 @@ const (
 	ContentProviderPear     = 7
 	ContentProviderKuai     = 8
 
+	PictureProivderBiZhiJinXuan = 1
+
 )

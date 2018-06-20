@@ -26,7 +26,7 @@ var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/lyric/data/stock/"
+	c.StorageRoot = "/home/lyric/data/pic/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
 	c.DBSource = "imsuser:imspass@tcp(localhost:3306)/pic?charset=utf8&parseTime=True&loc=Local"
