@@ -12,8 +12,8 @@ import (
 )
 
 func main(){
-	url := "http://video.jiagew762.com:8091/20180515/B1WE78vo/index.m3u8"
-	fileName := "a1.mp4"
+	url := "http://vd3.bdstatic.com/mda-ifiya6jn5rz6fxtm/sc/mda-ifiya6jn5rz6fxtm.mp4"
+	fileName := "镰仓物语.mp4"
 
 	DownloadFile(url,fileName)
 }

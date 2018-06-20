@@ -31,7 +31,7 @@ func main() {
 
 	logger.SetLevel(config.GetLoggerLevel())
 
-	db, err := gorm.Open("mysql", "root:hahawap@tcp(localhost:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:hahawap@tcp(localhost:3306)/shortvideo?charset=utf8mb4&parseTime=True&loc=Local")
 	if err != nil {
 		logger.Fatal("Open db Failed!!!!", err)
 		return
@@ -47,7 +47,7 @@ func main() {
 		//	break
 		//}
 		var p = time.Now()
-		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) == "0301"{
+		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) == "1101"{
 			break
 		}
 		GetKuaiVideoPageContent(url,db)
@@ -58,7 +58,7 @@ type KuaiUrl struct {
 	//Bitrate  uint32 `json:"bitrate"`
 	CdnUrl   string `json:"cdn_url"`
 	Height   interface{} `json:"height"`
-	Size     interface{} `json:"size"`
+	Size     uint32 `json:"size"`
 	Width    interface{} `json:"width"`
 }
 type KuaiUrlList struct {
@@ -183,20 +183,17 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 		video.CategoryId = category.Id
 
 		video.PersonId = person.Id
-		switch d := v.Resources.Wifi.Width.(type) {
-		case string:
-			width , _ := strconv.Atoi(d)
+		var value string
+		value = GetValue(v.Resources.Wifi.Width)
+		if value != ""{
+			width,_ := strconv.Atoi(value)
 			video.Width = uint32(width)
-		case int:
-			video.Width = uint32(d)
 		}
 
-		switch d := v.Resources.Wifi.Height.(type) {
-		case string:
-			height , _ := strconv.Atoi(d)
+		value = GetValue(v.Resources.Wifi.Height)
+		if value != ""{
+			height,_ := strconv.Atoi(value)
 			video.Height = uint32(height)
-		case int:
-			video.Height = uint32(d)
 		}
 
 		if video.Width > video.Height{
@@ -208,39 +205,25 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 		}
 		video.Title = v.Title
 		video.Description = v.DescriptionStr
-		switch v.Duration.(type) {
-		case string:
-			duration , _ := strconv.Atoi(v.Duration.(string))
+		value = GetValue(v.Duration)
+		if value != ""{
+			duration,_ := strconv.Atoi(value)
 			video.Duration = uint32(duration)
-		case int:
-			video.Duration = uint32(v.Duration.(int))
 		}
 
-		switch d := v.Cnts.ZanCnt.(type) {
-		case string:
-			diggs , _ := strconv.Atoi(d)
+		value = GetValue(v.Cnts.ZanCnt)
+		if value != ""{
+			diggs,_ := strconv.Atoi(value)
 			video.Diggs = uint32(diggs)
-		case int:
-			video.Diggs = uint32(d)
 		}
 
-		switch d := v.PlayCnt.(type) {
-		case string:
-			plays , _ := strconv.Atoi(d)
+		value = GetValue(v.PlayCnt)
+		if value != ""{
+			plays,_ := strconv.Atoi(value)
 			video.Plays = uint32(plays)
-		case int:
-			video.Plays = uint32(d)
 		}
 
-		switch d := v.Resources.Wifi.Size.(type) {
-		case string:
-			size , _ := strconv.Atoi(d)
-			video.Filesize = uint32(size)
-		case int:
-			video.Filesize = uint32(d)
-		}
-
-		video.Filesize = video.Filesize / 1024 / 1024
+		video.Filesize = v.Resources.Wifi.Size
 
 		video.Url = v.Resources.Wifi.CdnUrl
 
@@ -314,4 +297,44 @@ func DouKuaiDownloadFile(requrl string, filename string) (int64, error) {
 
 	logger.Debug(tmpPath)
 	return bytes, nil
+}
+
+func GetValue(general interface{})(string) {
+	switch general.(type) {
+	case uint32:
+		newInt, ok := general.(uint32)
+		if ok == false{
+			return ""
+		}
+		return fmt.Sprint(newInt)
+	case uint64:
+		newInt, ok := general.(uint64)
+		if ok == false{
+			return ""
+		}
+		return fmt.Sprint(newInt)
+	case int :
+		newInt, ok := general.(int)
+		if ok == false{
+			return ""
+		}
+		return fmt.Sprint(newInt)
+	case float32:
+		newFloat32, ok := general.(float32)
+		if ok == false{
+			return ""
+		}
+		return fmt.Sprint(newFloat32)
+
+	case float64:
+		newFloat64, ok := general.(float64)
+		if ok == false{
+			return ""
+		}
+		return fmt.Sprint(newFloat64)
+
+	default:
+		return ""
+	}
+	return ""
 }
