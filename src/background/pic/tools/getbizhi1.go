@@ -46,8 +46,15 @@ func main(){
 	model.InitModel(db)
 	logger.SetLevel(config.GetLoggerLevel())
 
-	url := "https://page.appdao.com/forward?link=16195339&style=160105&item=883716&page=1&limit=25&after=57210369&screen_w=1242&screen_h=2208&ir=0&app=1P_ElfWallpapers&v=1.4&lang=zh-Hans-CN&it=1529458959.610182&ots=3&jb=0&as=0&mobclix=0&deviceid=replaceudid&macaddr=&idv=4ADB9AA0-A063-492D-8FD6-632E835F7AF4&idvs=&ida=F7835587-9CBD-4B92-8C6E-2813811E7B5F&phonetype=iphone&model=iphone8%2C2&osn=iOS&osv=11.3.1&tz=8"
-	GetBizhi(url,db)
+
+
+	page := 1
+
+	for{
+		url := "https://page.appdao.com/forward?link=16195339&style=160105&item=883716&page=" + fmt.Sprint(page) + "&limit=25&after=26928385&screen_w=1242&screen_h=2208&ir=0&app=1P_ElfWallpapers&v=1.4&lang=zh-Hans-CN&it=1529458959.610182&ots=3&jb=0&as=0&mobclix=0&deviceid=replaceudid&macaddr=&idv=4ADB9AA0-A063-492D-8FD6-632E835F7AF4&idvs=&ida=F7835587-9CBD-4B92-8C6E-2813811E7B5F&phonetype=iphone&model=iphone8%2C2&osn=iOS&osv=11.3.1&tz=8"
+		GetBizhi(url,db)
+		page++
+	}
 
 }
 
@@ -55,7 +62,7 @@ func GetBizhi(url string,db *gorm.DB)bool{
 	requ, err := http.NewRequest("GET", url, nil)
 	requ.Header.Add("Host", "page.appdao.com")
 	requ.Header.Add("User-Agent", "LiVideoIOS/4.3.6 (iPhone; iOS 11.3.1; Scale/3.00)")
-
+	logger.Debug(url)
 	resp, err := http.DefaultClient.Do(requ)
 	if err != nil {
 		logger.Debug("Proxy failed!")
@@ -71,7 +78,10 @@ func GetBizhi(url string,db *gorm.DB)bool{
 	logger.Debug(string(recv))
 
 	data := gjson.Get(string(recv), "data")
-
+	after := gjson.Get(string(recv),"after").Int()
+	if after == -1{
+		return false
+	}
 	if data.Exists() {
 		re := data.Array()
 		for _, v := range re {
@@ -82,7 +92,8 @@ func GetBizhi(url string,db *gorm.DB)bool{
 				var picture model.Picture
 				picture.SourceId = fmt.Sprint(v1.Get("link_id").Uint())
 				picture.Provider = constant.PictureProivderBiZhiJinXuan
-				if err = db.Where("provider = ? and source_id = ?",picture.Provider,picture.SourceId).First(&picture).Error ; err == nil {
+				picture.SourceUrl = v1.Get("thumb_image").String()
+				if err = db.Where("provider = ? and source_url = ?",picture.Provider,picture.SourceUrl).First(&picture).Error ; err == nil {
 					continue
 				}
 
@@ -100,14 +111,16 @@ func GetBizhi(url string,db *gorm.DB)bool{
 						logger.Debug(end)
 						logger.Debug(icon)
 
-						icon = icon[start:end]
+						icon = icon[start:end + 4]
+						logger.Debug(icon)
 
-						fileName := util.TitleToPinyin(category.Name) + ".jpg"
-						category.Icon,err = DownloadFile(category.SourceIcon,config.GetStorageRoot(),fileName)
+						code := util.RandString(8)
+						fileName := code + ".jpg"
+						category.Icon,err = DownloadFile(icon,config.GetStorageRoot(),fileName)
 						if err != nil{
 							logger.Error(err)
 							tx.Rollback()
-							return false
+							continue
 						}
 					}
 
@@ -151,7 +164,7 @@ func GetBizhi(url string,db *gorm.DB)bool{
 						if err != nil{
 							logger.Error(err)
 							tx.Rollback()
-							return false
+							continue
 						}
 
 						if move.Width > move.Height{
@@ -176,9 +189,8 @@ func GetBizhi(url string,db *gorm.DB)bool{
 					moveId = move.Id
 				}
 
-				if err = tx.Where("provider = ? and source_id = ?",picture.Provider,picture.SourceId).First(&picture).Error ; err == gorm.ErrRecordNotFound {
+				if err = tx.Where("provider = ? and source_url = ?",picture.Provider,picture.SourceUrl).First(&picture).Error ; err == gorm.ErrRecordNotFound {
 					picture.Title = v1.Get("title").String()
-					picture.SourceUrl = v1.Get("thumb_image").String()
 					code := util.RandString(8)
 
 					fileName := code + ".jpg"
@@ -186,7 +198,7 @@ func GetBizhi(url string,db *gorm.DB)bool{
 					if err != nil{
 						logger.Error(err)
 						tx.Rollback()
-						return false
+						continue
 					}
 
 					picture.Sort = 0
@@ -247,8 +259,8 @@ func GetBizhi(url string,db *gorm.DB)bool{
 
 					if err := tx.Exec("insert into picture_tag(picture_id,tag_id) values(?,?)", picture.Id, tag.Id).Error; err != nil {
 						logger.Error(err)
-						tx.Rollback()
-						return false
+						//tx.Rollback()
+						//return false
 					}
 
 				}
@@ -257,7 +269,8 @@ func GetBizhi(url string,db *gorm.DB)bool{
 		}
 	}
 
-	return true
+	url = "https://page.appdao.com/forward?link=16195339&style=160105&item=883716&page=1&limit=25&after=" + fmt.Sprint(after) + "&screen_w=1242&screen_h=2208&ir=0&app=1P_ElfWallpapers&v=1.4&lang=zh-Hans-CN&it=1529458959.610182&ots=3&jb=0&as=0&mobclix=0&deviceid=replaceudid&macaddr=&idv=4ADB9AA0-A063-492D-8FD6-632E835F7AF4&idvs=&ida=F7835587-9CBD-4B92-8C6E-2813811E7B5F&phonetype=iphone&model=iphone8%2C2&osn=iOS&osv=11.3.1&tz=8"
+	return GetBizhi(url,db)
 }
 
 
@@ -278,11 +291,11 @@ func DownloadFile(requrl string,rootPath , filename string) (string, error) {
 	defer resp.Body.Close()
 
 	// should not save html content as file
-	if strings.Contains(resp.Header.Get("Content-Type"), "text/html") {
-		err = errors.New("invalid response content type")
-		logger.Error(err)
-		return "", err
-	}
+	//if strings.Contains(resp.Header.Get("Content-Type"), "text/html") {
+	//	err = errors.New("invalid response content type")
+	//	logger.Error(err)
+	//	return "", err
+	//}
 
 	if resp.StatusCode != http.StatusOK {
 		err = errors.New(fmt.Sprintf("Fail to download: [%s]", requrl))

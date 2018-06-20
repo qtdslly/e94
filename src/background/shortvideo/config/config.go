@@ -24,7 +24,7 @@ var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/lyric/data/storage/"
+	c.StorageRoot = "G:/data/shortvideo/kuai/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
 	c.DBSource = "root:hahawap@tcp(localhost:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local"

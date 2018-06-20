@@ -26,10 +26,10 @@ var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/lyric/data/pic/"
+	c.StorageRoot = "D:/data/pic/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "imsuser:imspass@tcp(localhost:3306)/pic?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "root:hahawap@tcp(localhost:3306)/pic?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true

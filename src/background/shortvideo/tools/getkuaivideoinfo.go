@@ -164,6 +164,7 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 		person.Provider = constant.ContentProviderKuai
 		person.SourceId = v.AuthorInfo.Qid
 		if err := tx.Where("provider = ? and source_id = ?",person.Provider,person.SourceId).First(&person).Error ; err == nil{
+			tx.Rollback()
 			continue
 		}
 		if !strings.Contains(v.AuthorInfo.Description , "这个家伙很懒，什么也没有留下"){
@@ -228,9 +229,8 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 		video.Url = v.Resources.Wifi.CdnUrl
 
 		code := util.RandString(6)
-		fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Minute(),now.Hour(),now.Minute(),now.Second()) + code + ".mp4"
-		video.FileName = "G:/data/shortvideo/kuai/" + fileName
-		_, err := DouKuaiDownloadFile(video.Url,fileName)
+		fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".mp4"
+		video.FileName, err = DownloadFile(video.Url,config.GetStorageRoot(),fileName)
 		if err != nil{
 			logger.Error(err)
 			tx.Rollback()
@@ -255,49 +255,63 @@ func GetKuaiVideoPageContent(apiurl string,db *gorm.DB) bool {
 
 
 
-func DouKuaiDownloadFile(requrl string, filename string) (int64, error) {
+
+func DownloadFile(requrl string,rootPath , filename string) (string, error) {
+
 	//no timeout
 	client := http.Client{}
 
 	resp, err := client.Get(requrl)
 	if err != nil {
 		logger.Error(err)
-		return 0, err
+		return "", err
 	}
 
 	// close body read before return
 	defer resp.Body.Close()
 
 	// should not save html content as file
-	if strings.Contains(resp.Header.Get("Content-Type"), "text/html") {
-		err = errors.New("invalid response content type")
-		logger.Error(err)
-		return 0, err
-	}
+	//if strings.Contains(resp.Header.Get("Content-Type"), "text/html") {
+	//	err = errors.New("invalid response content type")
+	//	logger.Error(err)
+	//	return "", err
+	//}
 
 	if resp.StatusCode != http.StatusOK {
 		err = errors.New(fmt.Sprintf("Fail to download: [%s]", requrl))
 		logger.Error(err)
-		return 0, err
+		return "", err
 	}
 
-	tmpPath := filepath.Join("G:/data/shortvideo/kuai", filename)
+	//now := time.Now()
+	//middlePath := fmt.Sprint(now.Year()) + "/" + fmt.Sprint(now.Month()) + "/" + fmt.Sprint(now.Day()) + "/" + fmt.Sprint(now.Hour()) + "/" + fmt.Sprint(now.Minute())
+
+	relDir := time.Now().Format("/2006/01/02/15/04")
+	relPath := filepath.Join(relDir, filename)
+
+	if err := os.MkdirAll(filepath.Join(rootPath, relDir), 0755); err != nil {
+		logger.Error(err)
+		return "", err
+	}
+
+	tmpPath := filepath.Join(rootPath,relPath)
 	tmpFile, err := os.Create(tmpPath)
 	if err != nil {
 		logger.Error(err)
-		return 0, err
+		return "", err
 	}
 
-	bytes, err := io.Copy(tmpFile, resp.Body)
+	_ ,err = io.Copy(tmpFile, resp.Body)
 	tmpFile.Close()
 	if err != nil {
 		logger.Error(err)
-		return 0, err
+		return "", err
 	}
 
 	logger.Debug(tmpPath)
-	return bytes, nil
+	return tmpPath, nil
 }
+
 
 func GetValue(general interface{})(string) {
 	switch general.(type) {

@@ -19,6 +19,12 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db phone_address failed, ", err)
 		return err
 	}
+
+	err = initDomain(db)
+	if err != nil {
+		logger.Fatal("Init db domain failed, ", err)
+		return err
+	}
 	return err
 }
 
@@ -26,5 +32,6 @@ func InitModel(db *gorm.DB) error {
 func rebuildModel(db *gorm.DB) {
 	dropPhoneAddress(db)
 	dropStatusConfig(db)
+	dropDomain(db)
 	InitModel(db)
 }
