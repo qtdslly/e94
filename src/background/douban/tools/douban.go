@@ -37,14 +37,17 @@ func main(){
 	model.InitModel(db)
 	logger.SetLevel(config.GetLoggerLevel())
 
-	for{
+	go func(){
 		if !GetDoubanMovieUrls(db){
-			break
+			return
 		}
+	}()
+
+	go func(){
 		if !GetDoubanMovieInfos(db){
-			break
+			return
 		}
-	}
+	}()
 }
 
 func GetDoubanMovieInfos(db *gorm.DB)bool{
