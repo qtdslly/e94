@@ -144,6 +144,7 @@ func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
 		logger.Error(err)
 		return false
 	}
+	time.Sleep(time.Second * 15)
 	return true
 }
 func getStatus(url string)(int){
@@ -315,7 +316,7 @@ func getBaiDuDomainApiInfo(apiType int,url string)(string){
 	logger.Debug(string(recv))
 
 	if strings.Contains(string(recv),"查询过于频繁，请稍后再试"){
-		time.Sleep(time.Minute * 30)
+		time.Sleep(time.Minute * 15)
 	}
 	return string(recv)
 }
