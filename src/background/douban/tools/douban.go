@@ -199,7 +199,7 @@ func GetDoubanMovieUrls(db *gorm.DB)(bool){
 			page.PageStatus = constant.DouBanCrawlStatusError
 			if err = db.Save(&page).Error ; err != nil{
 				logger.Error(err)
-				return
+				return false
 			}
 			return false
 		}
