@@ -18,6 +18,7 @@ type Domain struct {
 	RegistrarUrl       string     `gorm:"size:255" json:"registrar_url"`
 	Email              string     `gorm:"size:100" json:"email"`
 	Phone              string     `gorm:"size:100" json:"phone"`
+	Chinese            string     `gorm:"size:100" json:"chinese"`
 
 	CreatedAt          time.Time  `json:"created_at"`
 	UpdatedAt          time.Time  `json:"updated_at"`

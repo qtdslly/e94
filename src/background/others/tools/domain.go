@@ -5,15 +5,21 @@ import (
 	"background/common/logger"
 	"background/others/config"
 	"background/common/constant"
+	"background/common/util"
 	"io/ioutil"
 	"strings"
 	"errors"
 	"github.com/tidwall/gjson"
 	"background/others/model"
 	"flag"
+	"golang.org/x/text/encoding/simplifiedchinese"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"os"
+	"bufio"
+	"io"
+	"time"
 )
 
 func main(){
@@ -43,13 +49,67 @@ func main(){
 	model.InitModel(db)
 	logger.SetLevel(config.GetLoggerLevel())
 
-	url := "ezhantao.com"
-	status := GetStatus(url)
+
+	f, err := os.Open("/home/lyric/Git/e94/src/background/others/tools/words.txt")
+	if err != nil {
+		logger.Error(err)
+		return
+	}
+	defer f.Close()
+
+	rd := bufio.NewReader(f)
+	for {
+		line, err := rd.ReadString('\n')
+		if err != nil || io.EOF == err {
+			break
+		}
+
+		line1,err := DecodeToGBK(line)
+		if err != nil{
+			continue
+		}
+		line1 = strings.Replace(line1, "\n", "", -1)
+
+		words := strings.Split(line1, "\t")
+		for _ , word := range words{
+			pin := util.TitleToPinyin(word)
+			logger.Debug(word,pin)
+			if !getDominByPinYin(word,pin,db){
+				continue
+			}
+
+			fullpin := util.TitleToFullPinyin(word)
+			logger.Debug(word,fullpin)
+
+			if !getDominByPinYin(word,fullpin,db){
+				continue
+			}
+		}
+	}
+
+}
+
+func getDominByPinYin(word,pinyin string,db *gorm.DB)(bool){
+	if !getBaiDuDomin(word,pinyin + ".com",db){return false}
+	if !getBaiDuDomin(word,pinyin + ".cn",db){return false}
+	if !getBaiDuDomin(word,pinyin + ".net",db){return false}
+	if !getBaiDuDomin(word,pinyin + ".cc",db){return false}
+	return true
+}
+
+
+func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
+	var domain model.Domain
+	domain.Url = url
+	if err := db.Where("url = ?",domain.Url).First(&domain).Error ; err == nil{
+
+	}
+	status := getStatus(url)
 
 	err,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone := getDomainDetail(url)
 	if err != nil{
 		logger.Error(err)
-		return
+		return false
 	}
 
 	logger.Debug(registerDate)
@@ -61,8 +121,6 @@ func main(){
 	logger.Debug(email)
 	logger.Debug(phone)
 
-	var domain model.Domain
-	domain.Url = url
 	domain.Status = uint32(status)
 	domain.ExpirationDate = expirationDate
 	domain.RegisterDate = registerDate
@@ -72,18 +130,15 @@ func main(){
 	domain.Reseller = reseller
 	domain.Email = email
 	domain.Phone = phone
+	domain.Chinese = word
 	logger.Debug(domain.RegistrantCity)
-	if err := db.Create(&domain).Error ; err != nil{
+	if err := db.Save(&domain).Error ; err != nil{
 		logger.Error(err)
-		return
+		return false
 	}
-
-	logger.Debug(domain.RegistrantCity)
-	logger.Debug(domain.RegistrantProvince)
-
+	return true
 }
-
-func GetStatus(url string)(int){
+func getStatus(url string)(int){
 
 	recv := getBaiDuDomainApiInfo(1,url)
 	if recv == ""{
@@ -174,7 +229,6 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 		}
 	}
 
-	logger.Debug("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
 	registerDate = strings.Replace(registerDate,"年","-",-1)
 	registerDate = strings.Replace(registerDate,"月","-",-1)
 	registerDate = strings.Replace(registerDate,"日","",-1)
@@ -183,22 +237,12 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 	expirationDate = strings.Replace(expirationDate,"月","-",-1)
 	expirationDate = strings.Replace(expirationDate,"日","",-1)
 
-
-
-	//registrarUrl = strings.Replace(registrarUrl,"\\r","",-1)
-	//reseller = strings.Replace(reseller,"\\r","",-1)
-	//registrantCity = strings.Replace(registrantCity,"\\r","",-1)
-	//registrantProvince = strings.Replace(registrantProvince,"\\r","",-1)
-	//email = strings.Replace(email,"\\r","",-1)
-	//phone = strings.Replace(phone,"\\r","",-1)
-
 	registrarUrl = strings.Trim(registrarUrl," ")
 	reseller = strings.Trim(reseller," ")
 	registrantCity = strings.Trim(registrantCity," ")
 	registrantProvince = strings.Trim(registrantProvince," ")
 	email = strings.Trim(email," ")
 	phone = strings.Trim(phone," ")
-
 
 	return nil,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone
 }
@@ -240,9 +284,27 @@ func getBaiDuDomainApiInfo(apiType int,url string)(string){
 	}
 
 	logger.Debug(string(recv))
+
+	if strings.Contains(string(recv),"查询过于频繁，请稍后再试"){
+		time.Sleep(time.Minute * 30)
+	}
 	return string(recv)
 }
 
+
+
+
+func DecodeToGBK(text string) (string, error) {
+
+	dst := make([]byte, len(text)*2)
+	tr := simplifiedchinese.GB18030.NewDecoder()
+	nDst, _, err := tr.Transform(dst, []byte(text), true)
+	if err != nil {
+		return text, err
+	}
+
+	return string(dst[:nDst]), nil
+}
 
 /*
 status info

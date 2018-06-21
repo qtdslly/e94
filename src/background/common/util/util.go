@@ -236,3 +236,21 @@ func TitleToPinyin(title string) string {
 
 	return str
 }
+
+
+func TitleToFullPinyin(title string) string {
+	str := ""
+	r := []rune(title)
+	for i := 0; i < len(r); i++ {
+		if match, _ := regexp.MatchString("[0-9A-Za-z]", string(r[i])); match {
+			str += string(r[i])
+		} else {
+			p := pinyin.Pinyin(string(r[i]), pinyin.NewArgs())
+			for _, v := range p {
+				str += v[0]
+			}
+		}
+	}
+
+	return str
+}
