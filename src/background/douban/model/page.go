@@ -8,7 +8,7 @@ import (
 
 type Page struct {
 	Id          uint32     `gorm:"primary_key" json:"id"`
-	Url         string     `gorm:"size:255;unique" json:"name"`
+	Url         string     `gorm:"size:255" json:"url"`
 	PageStatus  uint32     `json:"page_status"`
 	UrlStatus   uint32     `json:"url_status"`
 	CreatedAt   time.Time  `json:"created_at"`

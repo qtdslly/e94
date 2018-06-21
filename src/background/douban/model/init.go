@@ -10,13 +10,13 @@ func InitModel(db *gorm.DB) error {
 
 	err = initPage(db)
 	if err != nil {
-		logger.Fatal("Init db page_url failed, ", err)
+		logger.Fatal("Init db page failed, ", err)
 		return err
 	}
 
-	err = initUrl(db)
+	err = initMovie(db)
 	if err != nil {
-		logger.Fatal("Init db content failed, ", err)
+		logger.Fatal("Init db movie failed, ", err)
 		return err
 	}
 	return err
@@ -24,8 +24,7 @@ func InitModel(db *gorm.DB) error {
 
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
-	dropPageUrl(db)
-	dropProvider(db)
-	dropContent(db)
+	dropMovie(db)
+	dropPage(db)
 	InitModel(db)
 }

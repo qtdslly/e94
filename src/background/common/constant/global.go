@@ -125,4 +125,9 @@ const (
 	DomainStatusUnknown      = 0
 	DomainStatusRegistered   = 1
 	DomainStatusUnRegistered = 2
+
+	DouBanCrawlStatusSuccess = 0
+	DouBanCrawlStatusError   = 1
+	DouBanCrawlStatusReady   = 2
+
 )
