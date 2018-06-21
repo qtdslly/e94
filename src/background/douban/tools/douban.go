@@ -12,6 +12,7 @@ import (
 	"strings"
 	"github.com/PuerkitoBio/goquery"
 	"strconv"
+	"time"
 )
 
 func main(){
@@ -37,9 +38,12 @@ func main(){
 	model.InitModel(db)
 	logger.SetLevel(config.GetLoggerLevel())
 
+	found1 := false
+	found2 := false
 	go func(){
 		for{
 			if !GetDoubanMovieUrls(db){
+				found1 = true
 				return
 			}
 		}
@@ -49,11 +53,19 @@ func main(){
 	go func(){
 		for{
 			if !GetDoubanMovieInfos(db){
+				found2 = true
 				return
 			}
 		}
 
 	}()
+
+	for{
+		if found1 && found2{
+			break
+		}
+		time.Sleep(time.Minute)
+	}
 }
 
 func GetDoubanMovieInfos(db *gorm.DB)bool{
