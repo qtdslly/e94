@@ -13,11 +13,16 @@ type Domain struct {
 	ExpirationDate     string     `gorm:"size:10" json:"expiration_ate"`
 	RegisterDate       string     `gorm:"size:10" json:"register_ate"`
 	Reseller           string     `gorm:"size:255" json:"reseller"`
-	RegistrantCity     string     `gorm:"size:255" json:"registrant_city"`
+	RegistrantName     string     `gorm:"size:255" json:"registrant_name"`
+	Sponsoring         string     `gorm:"size:255" json:"sponsoring"`
+	RegistrantCountry  string     `gorm:"size:255" json:"registrant_country"`
 	RegistrantProvince string     `gorm:"size:255" json:"registrant_province"`
+	RegistrantCity     string     `gorm:"size:255" json:"registrant_city"`
+	RegistrantStreet   string     `gorm:"size:255" json:"registrant_street"`
+	RegistrantEmail    string     `gorm:"size:100" json:"registrant_email"`
+	RegistrantPhone    string     `gorm:"size:100" json:"registrant_phone"`
 	RegistrarUrl       string     `gorm:"size:255" json:"registrar_url"`
-	Email              string     `gorm:"size:100" json:"email"`
-	Phone              string     `gorm:"size:100" json:"phone"`
+
 	Chinese            string     `gorm:"size:100" json:"chinese"`
 
 	CreatedAt          time.Time  `json:"created_at"`

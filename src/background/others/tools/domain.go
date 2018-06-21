@@ -102,11 +102,11 @@ func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
 	var domain model.Domain
 	domain.Url = url
 	if err := db.Where("url = ?",domain.Url).First(&domain).Error ; err == nil{
-
+		return true
 	}
 	status := getStatus(url)
 
-	err,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone := getDomainDetail(url)
+	err,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone,registrant,sponsoring,country,street := getDomainDetail(url)
 	if err != nil{
 		logger.Error(err)
 		return false
@@ -120,6 +120,10 @@ func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
 	logger.Debug(registrantProvince)
 	logger.Debug(email)
 	logger.Debug(phone)
+	logger.Debug(registrant)
+	logger.Debug(sponsoring)
+	logger.Debug(country)
+	logger.Debug(street)
 
 	domain.Status = uint32(status)
 	domain.ExpirationDate = expirationDate
@@ -128,9 +132,13 @@ func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
 	domain.RegistrantProvince = registrantProvince
 	domain.RegistrarUrl = registrarUrl
 	domain.Reseller = reseller
-	domain.Email = email
-	domain.Phone = phone
+	domain.RegistrantEmail = email
+	domain.RegistrantPhone = phone
 	domain.Chinese = word
+	domain.Sponsoring = sponsoring
+	domain.RegistrantName = registrant
+	domain.RegistrantCountry = country
+	domain.RegistrantStreet = street
 	logger.Debug(domain.RegistrantCity)
 	if err := db.Save(&domain).Error ; err != nil{
 		logger.Error(err)
@@ -172,10 +180,10 @@ func getStatus(url string)(int){
 	return constant.DomainStatusUnknown
 }
 
-func getDomainDetail(url string)(error,string,string,string,string,string,string,string,string){
+func getDomainDetail(url string)(error,string,string,string,string,string,string,string,string,string,string,string,string){
 	recv := getBaiDuDomainApiInfo(2,url)
 	if recv == ""{
-		return errors.New("调用百度云接口失败!"),"","","","","","","",""
+		return errors.New("调用百度云接口失败!"),"","","","","","","","","","","",""
 	}
 
 	recv = strings.Replace(recv,"\\r","",-1)
@@ -183,14 +191,14 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 	status := gjson.Get(recv, "status").Int()
 
 	if !success && status != 200{
-		return errors.New("百度云返回失败!"),"","","","","","","",""
+		return errors.New("百度云返回失败!"),"","","","","","","","","","","",""
 	}
 
 	registerDate := gjson.Get(recv, "result.data.registrationDate").String()
 	expirationDate := gjson.Get(recv, "result.data.expirationDate").String()
 	rawData := gjson.Get(recv, "result.data.rawData")
 
-	var registrarUrl,reseller,registrantCity,registrantProvince,email,phone string
+	var registrarUrl,reseller,registrantCity,registrantProvince,email,phone,registrant,sponsoring,country,street string
 	if rawData.Exists() {
 		re := rawData.Array()
 		for _, v := range re {
@@ -205,27 +213,45 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 				reseller = strings.Replace(reseller,"Reseller:","",-1)
 			}
 
+			if strings.Contains(v.String(),"Registrant Name"){
+				registrant = v.String()
+				registrant = strings.Replace(registrant,"Registrant Name:","",-1)
+			}
+
+			if strings.Contains(v.String(),"Sponsoring Registrar"){
+				sponsoring = v.String()
+				sponsoring = strings.Replace(sponsoring,"Sponsoring Registrar:","",-1)
+			}
+
+			if strings.Contains(v.String(),"Registrant Country"){
+				country = v.String()
+				country = strings.Replace(country,"Registrant Country:","",-1)
+			}
+
+			if strings.Contains(v.String(),"Registrant Street"){
+				street = v.String()
+				street = strings.Replace(street,"Registrant Street:","",-1)
+			}
+
 			if strings.Contains(v.String(),"Registrant City"){
 				registrantCity = v.String()
 				registrantCity = strings.Replace(registrantCity,"Registrant City:","",-1)
 			}
-
 
 			if strings.Contains(v.String(),"Registrant State/Province"){
 				registrantProvince = v.String()
 				registrantProvince = strings.Replace(registrantProvince,"Registrant State/Province:","",-1)
 			}
 
-			if strings.Contains(v.String(),"egistrar Abuse Contact Email"){
+			if strings.Contains(v.String(),"Registrant Email"){
 				email = v.String()
-				email = strings.Replace(email,"Registrar Abuse Contact Email:","",-1)
+				email = strings.Replace(email,"Registrant Email:","",-1)
 			}
 
-			if strings.Contains(v.String(),"Registrar Abuse Contact Phone"){
+			if strings.Contains(v.String(),"Registrant Phone:"){
 				phone = v.String()
-				phone = strings.Replace(phone,"Registrar Abuse Contact Phone:","",-1)
+				phone = strings.Replace(phone,"Registrant Phone:","",-1)
 			}
-
 		}
 	}
 
@@ -243,8 +269,11 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 	registrantProvince = strings.Trim(registrantProvince," ")
 	email = strings.Trim(email," ")
 	phone = strings.Trim(phone," ")
+	registrant = strings.Trim(registrant," ")
+	country = strings.Trim(country," ")
+	street = strings.Trim(street," ")
 
-	return nil,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone
+	return nil,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone,registrant,sponsoring,country,street
 }
 func getBaiDuDomainApiInfo(apiType int,url string)(string){
 	var apiUrl string
