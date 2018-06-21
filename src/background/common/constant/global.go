@@ -121,4 +121,8 @@ const (
 
 	PictureProivderBiZhiJinXuan = 1
 
+
+	DomainStatusUnknown      = 0
+	DomainStatusRegistered   = 1
+	DomainStatusUnRegistered = 2
 )
