@@ -38,15 +38,21 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	go func(){
-		if !GetDoubanMovieUrls(db){
-			return
+		for{
+			if !GetDoubanMovieUrls(db){
+				return
+			}
 		}
+
 	}()
 
 	go func(){
-		if !GetDoubanMovieInfos(db){
-			return
+		for{
+			if !GetDoubanMovieInfos(db){
+				return
+			}
 		}
+
 	}()
 }
 
