@@ -50,7 +50,7 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 
-	f, err := os.Open("/home/lyric/Git/e94/src/background/others/tools/words.txt")
+	f, err := os.Open("/root/Git/e94/src/background/others/tools/words.txt")
 	if err != nil {
 		logger.Error(err)
 		return
