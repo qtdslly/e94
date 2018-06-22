@@ -51,152 +51,160 @@ func main(){
 
 	//fileName := "/root/Git/e94/src/background/others/tools/words.txt"
 	//GetDominByFileWord(fileName,db)
-	zuis := []string{".com",".cn",".net",".cc"}
-	charTypes := []string{"A","AA","AAA","AAAA","AAAAA","AAAAAA","AAAAAAA","AB","ABC","ABCD","A"}
+	GetDominByRule(db)
 }
 
-func GetDominByCharType(charType string,zuis []string,db *gorm.DB){
+func GetDominByRule(db *gorm.DB){
+	zuis := []string{".com",".cn",".net",".cc"}
+	charTypes := []string{"A","AA","AAA","AAAA","AAAAA","AAAAAA","AAAAAAA","AB","ABC","ABCD","AAAAB","AAABB","AABBB","ABBBB","ABABA","ABABB","ABAAA","ABBBB","AAAAB","AAABBB","ABABAB"}
+
+	for _,zui := range zuis{
+		for _,charType := range charTypes{
+			GetDominByCharType(charType,zui,db)
+		}
+	}
+}
+
+func GetDominByCharType(charType string,zui string,db *gorm.DB){
 	chars := "a b c d e f g h i j k l m n o p q r s t u v w x y z"
 	cs := strings.Split(chars," ")
-	for _ , zui := range zuis{
-		if charType == "A"{
-			for _, ss := range cs{
-				url := ss + zui
+	if charType == "A"{
+		for _, ss := range cs{
+			url := ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AA"{
+		for _,ss := range cs{
+			url := ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AAA"{
+		for _,ss := range cs{
+			url := ss + ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AAAA"{
+		for _,ss := range cs{
+			url := ss + ss + ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AAAAA"{
+		for _,ss := range cs{
+			url := ss + ss + ss + ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AAAAAA"{
+		for _,ss := range cs{
+			url := ss + ss + ss + ss + ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AAAAAAA"{
+		for _,ss := range cs{
+			url := ss + ss + ss + ss + ss + ss + ss + zui
+			getBaiDuDomin("",url,db)
+		}
+	}else if charType == "AB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + zui
 				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AA"{
-			for _,ss := range cs{
-				url := ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AAA"{
-			for _,ss := range cs{
-				url := ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AAAA"{
-			for _,ss := range cs{
-				url := ss + ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AAAAA"{
-			for _,ss := range cs{
-				url := ss + ss + ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AAAAAA"{
-			for _,ss := range cs{
-				url := ss + ss + ss + ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AAAAAAA"{
-			for _,ss := range cs{
-				url := ss + ss + ss + ss + ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
-			}
-		}else if charType == "AB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + zui
+		}
+	}else if charType == "ABC"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				for _,nn := range cs{
+					url := ss + mm + nn + zui
 					getBaiDuDomin("",url,db)
 				}
 			}
-		}else if charType == "ABC"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					for nn := range cs{
-						url := ss + mm + nn + zui
+		}
+	}else if charType == "ABCD"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				for _,nn := range cs{
+					for _, kk := range cs{
+						url := ss + mm + nn + kk + zui
 						getBaiDuDomin("",url,db)
 					}
 				}
 			}
-		}else if charType == "ABCD"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					for nn := range cs{
-						for _, kk := range cs{
-							url := ss + mm + nn + kk + zui
-							getBaiDuDomin("",url,db)
-						}
-					}
-				}
+		}
+	}else if charType == "AAAAB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + ss + ss + ss + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AAAAB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + ss + ss + ss + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "AAABB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + ss + ss + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AAABB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + ss + ss + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "AABBB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + ss + mm + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AABBB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + ss + mm + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABBBB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + mm + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "ABBBB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + mm + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABABA"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + ss + mm + ss + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "ABABA"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + ss + mm + ss + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABABB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + ss + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "ABABB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + ss + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABAAA"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + ss + ss + ss + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "ABAAA"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + ss + ss + ss + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABBBB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + mm + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "ABBBB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + mm + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "AAAAB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + ss + ss + ss + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AAAAB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + ss + ss + ss + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "AAABBB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + ss + ss + mm + mm + mm + zui
+				getBaiDuDomin("",url,db)
 			}
-		}else if charType == "AAABBB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + ss + ss + mm + mm + mm + zui
-					getBaiDuDomin("",url,db)
-				}
-			}
-		}else if charType == "ABABAB"{
-			for _,ss := range cs{
-				for _,mm := range cs{
-					url := ss + mm + ss + mm + ss + mm + zui
-					getBaiDuDomin("",url,db)
-				}
+		}
+	}else if charType == "ABABAB"{
+		for _,ss := range cs{
+			for _,mm := range cs{
+				url := ss + mm + ss + mm + ss + mm + zui
+				getBaiDuDomin("",url,db)
 			}
 		}
 	}
