@@ -175,6 +175,10 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 	description = strings.Replace(description," ","",-1)
 	title = strings.Replace(title," ","",-1)
 
+	if title == "" && description == "" && directors == "" && actors == ""{
+		return true
+	}
+
 	var movie model.Movie
 	movie.Title = title
 	num,_ := strconv.Atoi(year)
