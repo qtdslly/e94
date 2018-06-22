@@ -77,6 +77,7 @@ func GetDoubanMovieInfos(db *gorm.DB)bool{
 	}
 
 	for _ , page := range pages {
+		time.Sleep(time.Second * 30)
 		query, err := goquery.NewDocument(page.Url)
 		if err != nil {
 			page.PageStatus = constant.DouBanCrawlStatusError
@@ -215,6 +216,7 @@ func GetDoubanMovieUrls(db *gorm.DB)(bool){
 	}
 
 	for _ , page := range pages{
+		time.Sleep(time.Second * 25)
 		query , err := goquery.NewDocument(page.Url)
 		if err != nil{
 			page.PageStatus = constant.DouBanCrawlStatusError
