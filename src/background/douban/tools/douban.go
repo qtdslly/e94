@@ -73,8 +73,9 @@ func GetDoubanMovieInfos(db *gorm.DB)bool{
 	var err error
 	if err = db.Where("url_status = ? and url like '%subject%/' and length(url) < 45",constant.DouBanCrawlStatusReady).First(&pages).Error ; err != nil{
 		logger.Error(err)
+		time.Sleep(time.Second * 60)
+
 		if err == gorm.ErrRecordNotFound{
-			time.Sleep(time.Second * 60)
 			return true
 		}
 		return false

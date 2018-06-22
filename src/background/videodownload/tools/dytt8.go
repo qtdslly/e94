@@ -106,7 +106,12 @@ func GetDytt8MovieInfos(db *gorm.DB)bool{
 
 func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 
-	baseInfo := query.Find(".co_content8").Text()
+	baseInfo1 := query.Find(".co_content8")
+	if baseInfo1 == nil{
+		return false
+	}
+
+	baseInfo := baseInfo1.Text()
 
 	info,err := DecodeToGBK(baseInfo)
 	if err != nil{
