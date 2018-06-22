@@ -13,6 +13,7 @@ type Movie struct {
 	Description string     `gorm:"type:longtext" json:"description"`
 	Score       float64    `json:"score"`
 	Year        uint32     `json:"year"`
+	Actors      string     `gorm:"size:255" json:"actors"`
 	Directors   string     `gorm:"size:255" json:"directors"`
 	Writer      string     `gorm:"size:255" json:"writer"`
 	Types       string     `gorm:"size:100" json:"types"`

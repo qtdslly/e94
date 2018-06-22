@@ -193,9 +193,10 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 	}
 	movie.Description = description
 	movie.Alias = alias
-	num,_ = strconv.Atoi(year)
+	num,_ = strconv.Atoi(comments)
 	movie.Comments = uint32(num)
 	movie.Country = country
+	movie.Actors = actors
 	movie.Directors = directors
 	num,_ = strconv.Atoi(duration)
 	movie.Duration = uint32(num)
