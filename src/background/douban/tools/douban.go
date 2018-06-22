@@ -13,6 +13,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"strconv"
 	"time"
+	"reflect"
 )
 
 func main(){
@@ -73,6 +74,10 @@ func GetDoubanMovieInfos(db *gorm.DB)bool{
 	var err error
 	if err = db.Where("url_status = ? and url like '%subject%'",constant.DouBanCrawlStatusReady).Find(&pages).Error ; err != nil{
 		logger.Error(err)
+		if err == gorm.ErrRecordNotFound{
+			time.Sleep(time.Second * 60)
+			return true
+		}
 		return false
 	}
 
