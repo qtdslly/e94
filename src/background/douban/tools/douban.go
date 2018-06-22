@@ -13,7 +13,6 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"strconv"
 	"time"
-	"reflect"
 )
 
 func main(){
@@ -72,7 +71,7 @@ func main(){
 func GetDoubanMovieInfos(db *gorm.DB)bool{
 	var pages []model.Page
 	var err error
-	if err = db.Where("url_status = ? and url like '%subject%'",constant.DouBanCrawlStatusReady).Find(&pages).Error ; err != nil{
+	if err = db.Where("url_status = ? and url like '%subject%/' and length(url) < 45",constant.DouBanCrawlStatusReady).First(&pages).Error ; err != nil{
 		logger.Error(err)
 		if err == gorm.ErrRecordNotFound{
 			time.Sleep(time.Second * 60)
@@ -110,13 +109,13 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 	year = strings.Replace(year,"(","",-1)
 	year = strings.Replace(year,")","",-1)
 
-	baseInfo := document.Find("#info").Find("span")
-	var actors,directors,writer,types,officialUrl,country,language,releaseDate,duration,alias,imdb string
-
-	baseInfo.Each(func(i int, s *goquery.Selection) {
-		value := s.Text()
+	baseInfo := document.Find("#info")
+	infos := baseInfo.Text()
+	movieInfo := strings.Split(infos,"\n")
+	var actors,directors,writer,types,officialUrl,country,language,releaseDate,duration,alias,imdb,totalEpisode string
+	for _, value := range movieInfo{
 		if strings.Contains(value,"导演"){
-			actors = strings.Replace(value,"导演:","",-1)
+			directors = strings.Replace(value,"导演:","",-1)
 		}
 		if strings.Contains(value,"编剧"){
 			writer = strings.Replace(value,"编剧:","",-1)
@@ -138,29 +137,43 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 		}
 		if strings.Contains(value,"上映日期"){
 			releaseDate = strings.Replace(value,"上映日期:","",-1)
+		}else if strings.Contains(value,"首播"){
+			releaseDate = strings.Replace(value,"首播:","",-1)
 		}
-		if strings.Contains(value,"片长"){
-			duration = strings.Replace(value,"片长:","",-1)
-			duration = strings.Replace(duration,"分钟","",-1)
+		if strings.Contains(value,"片长") || strings.Contains(value,"单集片长"){
+			duration1 := TrimNoNumber(value)
+			if strings.Contains(duration1,"/"){
+				duration = strings.Split(duration1,"/")[0]
+			}else {
+				duration = duration1
+			}
 		}
+
 		if strings.Contains(value,"又名"){
 			alias = strings.Replace(value,"又名:","",-1)
 		}
 		if strings.Contains(value,"IMDb链接"){
 			imdb = strings.Replace(value,"IMDb链接:","",-1)
 		}
-	})
+		if strings.Contains(value,"集数"){
+			totalEpisode = strings.Replace(value,"集数:","",-1)
+		}
+
+	}
 
 	score := document.Find("strong[property='v:average']").Eq(0).Text()
-	comments := document.Find("strong[property='v:votes']").Eq(0).Text()
+	comments := document.Find("span[property='v:votes']").Eq(0).Text()
 	description := document.Find("span[property='v:summary']").Eq(0).Text()
 	title := document.Find("title").Eq(0).Text()
 	title = strings.Replace(title,"(豆瓣)","",-1)
 
-	subjectId,_ := document.Find("input[name='target-id']").Eq(0).Attr("value")
+	subjectId,_ := document.Find("#interest_sect_level").Find("a").Eq(0).Attr("name")
+	subjectId = strings.Replace(subjectId,"pbtn-","",-1)
+	subjectId = strings.Replace(subjectId,"-wish","",-1)
 
+	logger.Debug(subjectId)
 	thumb_y,_ := document.Find("#mainpic").Find("img").Eq(0).Attr("src")
-	if strings.Contains(thumb_y,"https"){
+	if !strings.Contains(thumb_y,"https"){
 		thumb_y = "https:" + thumb_y
 	}
 
@@ -179,43 +192,78 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 	comments = strings.Replace(comments," ","",-1)
 	description = strings.Replace(description," ","",-1)
 	title = strings.Replace(title," ","",-1)
+	totalEpisode = strings.Replace(totalEpisode," ","",-1)
 
+	description = TrimStr(description)
+	title = TrimStr(title)
 	if title == "" && description == "" && directors == "" && actors == ""{
 		return true
 	}
 
-	var movie model.Movie
-	movie.Title = title
+	var video model.Video
+	video.Title = title
 	num,_ := strconv.Atoi(year)
-	movie.Year = uint32(num)
-	if err := db.Where("title = ? and year = ?",movie.Title,movie.Year).First(&movie).Error ; err == nil{
+	video.Year = uint32(num)
+	if err := db.Where("title = ? and year = ?",video.Title,video.Year).First(&video).Error ; err == nil{
 		return true
 	}
-	movie.Description = description
-	movie.Alias = alias
+	video.Description = description
+	video.Alias = alias
 	num,_ = strconv.Atoi(comments)
-	movie.Comments = uint32(num)
-	movie.Country = country
-	movie.Actors = actors
-	movie.Directors = directors
+	video.Comments = uint32(num)
+	video.Country = country
+	video.Actors = actors
+	video.Directors = directors
+	video.Writer = writer
 	num,_ = strconv.Atoi(duration)
-	movie.Duration = uint32(num)
-	movie.Imdb = imdb
-	movie.Language = language
-	movie.OfficialUrl = officialUrl
-	movie.ReleaseDate = releaseDate
+	video.Duration = uint32(num)
+	video.Imdb = imdb
+	video.Language = language
+	video.OfficialUrl = officialUrl
+	video.ReleaseDate = releaseDate
 	sc,_ := strconv.ParseFloat(score,10)
-	movie.Score = sc
+	video.Score = sc
+	video.Types = types
 	num,_ = strconv.Atoi(subjectId)
-	movie.SubjectId = uint32(num)
-	if thumb_y != "https:"{
-		movie.ThumbY = thumb_y
+	video.SubjectId = uint32(num)
+	num,_ = strconv.Atoi(totalEpisode)
+	video.TotalEpisode = uint32(num)
+	if video.TotalEpisode == 0{
+		video.TotalEpisode = 1
 	}
-	if err := db.Create(&movie).Error ; err != nil{
+	if video.TotalEpisode > 1{
+		video.ContentType = constant.MediaTypeEpisode
+	}else{
+		video.ContentType = constant.MediaTypeVideo
+	}
+	if thumb_y != "https:"{
+		video.ThumbY = thumb_y
+	}
+	if err := db.Create(&video).Error ; err != nil{
 		logger.Error(err)
 		return false
 	}
 	return true
+}
+
+func TrimNoNumber(str string)string{//只保留0-9和斜杠(/)
+	rTitle := ([]rune)(str)
+	result := ""
+	for _, m := range rTitle {
+		if m >= 47 && m <= 57{
+			result += string(m)
+		}
+	}
+	return result
+}
+
+func TrimStr(str string)string{
+	str = strings.TrimLeft(str,"\n")
+	str = strings.TrimLeft(str,"\r")
+	str = strings.TrimRight(str,"\n")
+	str = strings.TrimRight(str,"\r")
+	str = strings.Replace(str,"\n\n","\n",-1)
+	return str
 }
 func GetDoubanMovieUrls(db *gorm.DB)(bool){
 	var pages []model.Page
@@ -226,7 +274,6 @@ func GetDoubanMovieUrls(db *gorm.DB)(bool){
 	}
 
 	for _ , page := range pages{
-		time.Sleep(time.Second * 25)
 		query , err := goquery.NewDocument(page.Url)
 		if err != nil{
 			page.PageStatus = constant.DouBanCrawlStatusError
@@ -246,6 +293,7 @@ func GetDoubanMovieUrls(db *gorm.DB)(bool){
 			logger.Error(err)
 			return false
 		}
+		time.Sleep(time.Second * 25)
 	}
 	return true
 }

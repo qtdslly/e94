@@ -14,7 +14,7 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
-	err = initMovie(db)
+	err = initVideo(db)
 	if err != nil {
 		logger.Fatal("Init db movie failed, ", err)
 		return err
@@ -24,7 +24,7 @@ func InitModel(db *gorm.DB) error {
 
 // Do not call this method!!!!
 func rebuildModel(db *gorm.DB) {
-	dropMovie(db)
+	dropVideo(db)
 	dropPage(db)
 	InitModel(db)
 }
