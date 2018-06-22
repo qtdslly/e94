@@ -303,7 +303,7 @@ func SaveUrls(document *goquery.Document,db *gorm.DB)(bool){
 	query.Each(func(i int, s *goquery.Selection) {
 		url, found := s.Attr("href")
 		if found{
-			if (strings.Contains(url,"http") && strings.Contains(url,"douban.com")) && !strings.Contains(url,".css") && !strings.Contains(url,".js") && !strings.Contains(url,".jpg") && !strings.Contains(url,".jpeg")&& !strings.Contains(url,".gif")&& !strings.Contains(url,".webp") {
+			if (strings.Contains(url,"http") && strings.Contains(url,"douban.com")) ||( !strings.Contains(url,".css") && !strings.Contains(url,".js") && !strings.Contains(url,".jpg") && !strings.Contains(url,".jpeg")&& !strings.Contains(url,".gif")&& !strings.Contains(url,".webp")) {
 				if !strings.Contains(url,"http") && !strings.Contains(url,"movie.douban.com"){
 					url = "https://movie.douban.com" + url
 				}else if !strings.Contains(url,"https:") && strings.Contains(url,"movie.douban.com"){

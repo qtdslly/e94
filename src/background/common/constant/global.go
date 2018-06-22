@@ -130,4 +130,7 @@ const (
 	DouBanCrawlStatusError   = 1
 	DouBanCrawlStatusReady   = 2
 
+
+	DownloadUrlProviderDytt8 = 1
+
 )
