@@ -198,7 +198,7 @@ func SaveMovieInfo(document *goquery.Document,db *gorm.DB)(bool){
 
 	description = TrimStr(description)
 	title = TrimStr(title)
-	if title == "" && description == "" && directors == "" && actors == ""{
+	if directors == "" && actors == ""{
 		return true
 	}
 

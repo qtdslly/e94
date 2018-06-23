@@ -13,6 +13,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"time"
 	"golang.org/x/text/encoding/simplifiedchinese"
+	"regexp"
 )
 
 func main(){
@@ -71,7 +72,7 @@ func main(){
 func GetDytt8MovieInfos(db *gorm.DB)bool{
 	var pages []model.Page
 	var err error
-	if err = db.Where("url_status = ?",constant.DouBanCrawlStatusReady).First(&pages).Error ; err != nil{
+	if err = db.Where("url_status = ?",constant.DouBanCrawlStatusReady).Find(&pages).Error ; err != nil{
 		logger.Error(err)
 		if err == gorm.ErrRecordNotFound{
 			time.Sleep(time.Second * 60)
@@ -81,7 +82,7 @@ func GetDytt8MovieInfos(db *gorm.DB)bool{
 	}
 
 	for _ , page := range pages {
-		time.Sleep(time.Second * 30)
+		time.Sleep(time.Second * 5)
 		query, err := goquery.NewDocument(page.Url)
 		if err != nil {
 			page.PageStatus = constant.DouBanCrawlStatusError
@@ -106,6 +107,9 @@ func GetDytt8MovieInfos(db *gorm.DB)bool{
 
 func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 
+	if query == nil{
+		return false
+	}
 	baseInfo1 := query.Find(".co_content8")
 	if baseInfo1 == nil{
 		return false
@@ -172,18 +176,19 @@ func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 
 	var sort int = 0
 	table.Each(func(i int, ss *goquery.Selection) {
-		if i != 0{
+		if i != 0 && i != table.Length() - 1{
 			s := ss.Find("a").Eq(0)
 			downloadUrl,found := s.Attr("href")
 			if found{
 				urlTitle := s.Text()
-				downloadUrl,err := DecodeToGBK(urlTitle)
+				downloadUrl,err := DecodeToGBK(downloadUrl)
 				if err == nil{
 					sort++
 					downloadUrl = strings.Replace(downloadUrl," ","",-1)
 					downloadUrl = strings.Replace(downloadUrl,"\n","",-1)
 					downloadUrls = append(downloadUrls,downloadUrl)
 					sorts = append(sorts,uint32(sort))
+					urlTitle,_ := DecodeToGBK(urlTitle)
 					urlTitles = append(urlTitles,urlTitle)
 					logger.Debug(downloadUrl)
 
@@ -193,8 +198,13 @@ func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 			}
 		}
 	})
-	if err != nil{
+	if len(downloadUrls) == 0{
 		logger.Error(err)
+		return false
+	}
+
+
+	if !strings.HasPrefix(downloadUrls[0],"ftp") && !strings.HasPrefix(urlTitles[0],"ftp") && !strings.HasPrefix(downloadUrls[0],"magnet")&& !strings.HasPrefix(urlTitles[0],"magnet"){
 		return false
 	}
 
@@ -237,14 +247,20 @@ func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 	var video model.Video
 	video.Title = title
 	video.Year = year
+	video.EnglishTitle = entitle
+	video.Country = country
+
+	if !strings.Contains(video.Country,"中国") && !strings.Contains(video.Country,"大陆") && !strings.Contains(video.Country,"内地") && !strings.Contains(video.Country,"香港") && !strings.Contains(video.Country,"台湾") && !strings.Contains(video.Country,"澳门"){
+		tmp := video.Title
+		video.Title = video.EnglishTitle
+		video.EnglishTitle = tmp
+	}
 	if err := db.Where("title = ?",video.Title).First(&video).Error ; err == nil{
 		return true
 	}
 
-	video.EnglishTitle = entitle
 	video.SubTitle = subTitle
 	video.Description = description
-	video.Country = country
 	video.FileFormat = fileFormat
 	video.Ratio = ratio
 	video.Actors = actors
@@ -264,13 +280,18 @@ func SaveMovieInfo(query *goquery.Document,db *gorm.DB)(bool){
 		return false
 	}
 	for k, down := range downloadUrls{
-		if k == len(downloadUrls) - 1{
-			break
-		}
+		//if len(downloadUrls) > 1 && k == len(downloadUrls) - 1{
+		//	break
+		//}
 		var download model.DownloadUrl
-		download.Title = urlTitles[k]
-		download.Sort = sorts[k]
 		download.Url = down
+		download.Title = urlTitles[k]
+		if strings.Trim(download.Title," ") == "磁力链下载点击这里"{
+			download.Title = video.Title
+		}else if (strings.HasPrefix(download.Url,"ftp") || strings.HasPrefix(download.Url,"magnet")){
+			download.Title = video.Title
+		}
+		download.Sort = sorts[k]
 		download.VideoId = video.Id
 		download.Provider = constant.DownloadUrlProviderDytt8
 		if err = tx.Create(&download).Error ; err != nil{
@@ -330,7 +351,7 @@ func GetDytt8MovieUrls(db *gorm.DB)(bool){
 			logger.Error(err)
 			return false
 		}
-		time.Sleep(time.Second * 25)
+		time.Sleep(time.Second * 5)
 	}
 	return true
 }
@@ -347,13 +368,15 @@ func SaveUrls(document *goquery.Document,db *gorm.DB)(bool){
 					url = "http:" + url
 				}
 
-				var page model.Page
-				page.Url = url
-				if err := db.Where("url = ?",page.Url).First(&page).Error ; err == gorm.ErrRecordNotFound{
-					page.PageStatus = constant.DouBanCrawlStatusReady
-					page.UrlStatus = constant.DouBanCrawlStatusReady
-					if err := db.Create(&page).Error ; err != nil{
-						logger.Error(err)
+				if strings.HasPrefix(url,"http"){
+					var page model.Page
+					page.Url = url
+					if err := db.Where("url = ?",page.Url).First(&page).Error ; err == gorm.ErrRecordNotFound{
+						page.PageStatus = constant.DouBanCrawlStatusReady
+						page.UrlStatus = constant.DouBanCrawlStatusReady
+						if err := db.Create(&page).Error ; err != nil{
+							logger.Error(err)
+						}
 					}
 				}
 			}
@@ -372,4 +395,9 @@ func DecodeToGBK(text string) (string, error) {
 	}
 
 	return string(dst[:nDst]), nil
+}
+
+func isHasChinese(str string)bool{
+	var hzRegexp = regexp.MustCompile("^[\u4e00-\u9fa5]$")
+	return hzRegexp.MatchString(str)
 }

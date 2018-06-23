@@ -12,8 +12,8 @@ import (
 )
 
 func main(){
-	url := "http://pcvideogs.titan.mgtv.com/c1/2017/10/25_0/13DC5998B3400F05936BF120622D468F_20171025_1_1_1246.mp4?arange=0&scid=25012&pm=cRfgigekCgR9hEt8DSF68gd6d8EFscG7p3lwkZoWX91KGL2NQKD9zLsfHcImHMjVa7D1cKkGawGjlGjI4hOndMwUGS31FA~knEzBAy9SiWFQMU73WgpFgxZTbyLicHUwBxBkkRjd347marqzXi~cxLcn2xfYCrM0WgvgiOmwBt84N8e0aQgfWAtmBlI3MjSK0_PeXIq68VZspW7~3G2FW6~jcDSJCePNjb5XTEpis02B8MohyOHK2VnRua2WVHRSpj6jrKGYAVvpLk8CUZjYnZRmg~WfV3zTRd3sDolr_BoKiPbdWmqCE9727oY3OTQGrR5V2ubynOUYLiCrweR8n4FMr8_RKS2si8Z2bQcYmMJAomsdwBqN~DqAlwFqg7Oo3q~zNWQhmg~_ycjHsvYfOmk7j4c-&vcdn=0"
-	fileName := "侏罗纪世界.mp4"
+	url := "ftp://ygdy8:ygdy8@yg45.dydytt.net:8195/阳光电影www.ygdy8.com.我们诞生在中国.BD.720p.国英双语双字.mkv"
+	fileName := "我们诞生在中国.mp4"
 
 	DownloadFile(url,fileName)
 }

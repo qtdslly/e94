@@ -14,7 +14,7 @@ func main(){
 
 	logger.SetLevel(config.GetLoggerLevel())
 
-	url := "http://www.dytt8.net/html/tv/hytv/20180602/56938.html"
+	url := "http://www.dytt8.net/html/gndy/dyzz/20180620/57020.html"
 	getDytt8Info(url)
 }
 
@@ -27,7 +27,7 @@ func getDytt8Info(url string)(bool){
 
 	baseInfo := query.Find(".co_content8").Text()
 
-	info,err := DecodeToGBK(baseInfo)
+	info,err := DecodeToGBK1(baseInfo)
 	if err != nil{
 		logger.Error(err)
 		return false
@@ -86,18 +86,18 @@ func getDytt8Info(url string)(bool){
 
 	var sort int = 0
 	table.Each(func(i int, ss *goquery.Selection) {
-		if i != 0{
+		if i != 0 && i != table.Length() - 1{
 			s := ss.Find("a").Eq(0)
 			downloadUrl,found := s.Attr("href")
 			if found{
-				urlTitle := s.Text()
-				downloadUrl,err := DecodeToGBK(urlTitle)
+				downloadUrl,err := DecodeToGBK1(downloadUrl)
 				if err == nil{
 					sort++
 					downloadUrl = strings.Replace(downloadUrl," ","",-1)
 					downloadUrl = strings.Replace(downloadUrl,"\n","",-1)
 					downloadUrls = append(downloadUrls,downloadUrl)
 					sorts = append(sorts,fmt.Sprint(sort))
+					urlTitle := s.Text()
 					urlTitles = append(urlTitles,urlTitle)
 					logger.Debug(downloadUrl)
 
@@ -157,3 +157,15 @@ func getDytt8Info(url string)(bool){
 }
 
 
+
+func DecodeToGBK1(text string) (string, error) {
+
+	dst := make([]byte, len(text)*2)
+	tr := simplifiedchinese.GB18030.NewDecoder()
+	nDst, _, err := tr.Transform(dst, []byte(text), true)
+	if err != nil {
+		return text, err
+	}
+
+	return string(dst[:nDst]), nil
+}
