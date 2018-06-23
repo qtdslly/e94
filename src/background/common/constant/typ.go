@@ -48,8 +48,8 @@ const (
 )
 
 const (
-	MediaStatusOnLine  = 1 // 上线
-	MediaStatusNotOnLine = 0 // 下线
+	MediaStatusOnLine  = true // 上线
+	MediaStatusNotOnLine = false // 下线
 )
 
 const (
