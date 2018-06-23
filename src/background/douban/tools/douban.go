@@ -71,6 +71,8 @@ func main(){
 func GetDoubanMovieInfos(db *gorm.DB)bool{
 	var pages []model.Page
 	var err error
+	time.Sleep(time.Second * 10)
+
 	if err = db.Where("url_status = ? and url like '%subject%/' and length(url) < 45",constant.DouBanCrawlStatusReady).Find(&pages).Error ; err != nil{
 		logger.Error(err)
 		time.Sleep(time.Second * 60)
@@ -80,9 +82,8 @@ func GetDoubanMovieInfos(db *gorm.DB)bool{
 		}
 		return false
 	}
-
 	for _ , page := range pages {
-		time.Sleep(time.Second * 30)
+		time.Sleep(time.Second * 15)
 		query, err := goquery.NewDocument(page.Url)
 		if err != nil {
 			page.PageStatus = constant.DouBanCrawlStatusError
