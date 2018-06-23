@@ -60,7 +60,11 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db recommend failed, ", err)
 		return err
 	}
-
+	err = initResourceGroup(db)
+	if err != nil {
+		logger.Fatal("Init db resource_group failed, ", err)
+		return err
+	}
 	return err
 }
 
@@ -74,6 +78,6 @@ func rebuildModel(db *gorm.DB) {
 	dropEpisode(db)
 	dropPlayUrl(db)
 	dropRecommend(db)
-
+	dropResourceGroup(db)
 	InitModel(db)
 }
