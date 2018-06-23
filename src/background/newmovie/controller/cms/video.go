@@ -61,7 +61,7 @@ func MovieSaveHandler(c *gin.Context) {
 		video.Pinyin = util.TitleToPinyin(video.Title)
 		video.Year = p.Year
 		video.TotalEpisode = 1
-		video.Status = constant.MediaStatusOnLine
+		video.OnLine = constant.MediaStatusOnLine
 
 		video.CreatedAt = now
 		video.UpdatedAt = now
