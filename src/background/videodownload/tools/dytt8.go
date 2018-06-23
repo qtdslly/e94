@@ -72,6 +72,7 @@ func main(){
 func GetDytt8MovieInfos(db *gorm.DB)bool{
 	var pages []model.Page
 	var err error
+	time.Sleep(time.Second)
 	if err = db.Where("url_status = ?",constant.DouBanCrawlStatusReady).Find(&pages).Error ; err != nil{
 		logger.Error(err)
 		if err == gorm.ErrRecordNotFound{
@@ -332,17 +333,8 @@ func GetDytt8MovieUrls(db *gorm.DB)(bool){
 	}
 
 	for _ , page := range pages{
-		query , err := goquery.NewDocument(page.Url)
-		if err != nil{
-			page.PageStatus = constant.DouBanCrawlStatusError
-			if err = db.Save(&page).Error ; err != nil{
-				logger.Error(err)
-				return false
-			}
-			return false
-		}
 
-		if !SaveUrls(query, db ){
+		if !SaveUrls(page.Url, db ){
 			page.PageStatus = constant.DouBanCrawlStatusError
 		}else{
 			page.PageStatus = constant.DouBanCrawlStatusSuccess
@@ -356,17 +348,42 @@ func GetDytt8MovieUrls(db *gorm.DB)(bool){
 	return true
 }
 
-func SaveUrls(document *goquery.Document,db *gorm.DB)(bool){
+func SaveUrls(pageUrl string,db *gorm.DB)(bool){
+	document , err := goquery.NewDocument(pageUrl)
+	if err != nil{
+		logger.Error(err)
+		return false
+	}
 	query := document.Find("a")
 	query.Each(func(i int, s *goquery.Selection) {
 		url, found := s.Attr("href")
+		logger.Debug("===================" + url)
 		if found{
 			if (strings.Contains(url,"http") && strings.Contains(url,"www.dytt8.net")) || (!strings.Contains(url,".css") && !strings.Contains(url,".js") && !strings.Contains(url,".jpg") && !strings.Contains(url,".jpeg")&& !strings.Contains(url,".gif")&& !strings.Contains(url,".webp") && !strings.Contains(url,"ftp")){
-				if !strings.Contains(url,"http") && !strings.Contains(url,"dytt8.net"){
+				//if !strings.Contains(url,"http") && !strings.Contains(url,"dytt8.net"){
+				//	pageUrl = pageUrl[0:strings.LastIndex(pageUrl,"/")] + url
+				//	//url = "http://www.dytt8.net" + url
+				//}else if !strings.Contains(url,"http:") && strings.Contains(url,"dytt8.net"){
+				//	url = "http:" + url
+				//}
+
+				if strings.HasPrefix(url,"/html"){
 					url = "http://www.dytt8.net" + url
-				}else if !strings.Contains(url,"http:") && strings.Contains(url,"dytt8.net"){
-					url = "http:" + url
+				}else if(strings.HasPrefix(url,"list")){
+					url = pageUrl[0:strings.LastIndex(pageUrl,"/")] + url
+				}else if strings.HasPrefix(url,"http") {
+					url = url
+				}else{
+					logger.Debug("=============================================================================")
+					logger.Debug(pageUrl)
+					logger.Debug(url)
+					logger.Debug("=============================================================================")
+					url = "http://www.dytt8.net/" + url
+					//time.Sleep(time.Hour)
 				}
+
+				url = strings.Replace(url,"//","/",-1)
+				url = strings.Replace(url,"http:/","http://",-1)
 
 				if strings.HasPrefix(url,"http"){
 					var page model.Page

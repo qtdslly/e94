@@ -439,7 +439,7 @@ func getDomainDetail(url string)(error,string,string,string,string,string,string
 func getBaiDuDomainApiInfo(apiType int,url string)(string){
 	var apiUrl string
 	var postString string
-
+	time.Sleep(time.Second * 15)
 	values := strings.Split(url,".")
 	dom := values[0]
 	zui := values[1]

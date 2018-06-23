@@ -21,9 +21,9 @@ type Video struct {
 	ThumbY         string           `gorm:"size:255;column:thumb_y" json:"thumb_y" valid:"Str" name:"thumb_y" len:"0,255"`
 	PublishDate    string           `json:"publish_date"`
 	Category       string           `json:"category"`
-	Status         uint32           `json:"status"`
+	OnLine         bool             `json:"on_line"`
 	Year           uint32           `json:"year"`
-	Language        string          `gorm:"size:60" json:"language"`
+	Language       string           `gorm:"size:60" json:"language"`
 	Country        string           `gorm:"size:20" json:"country"`
 	Directors      string           `gorm:"size:255" json:"directors"`
 	Actors         string           `gorm:"size:255" json:"actors"`

@@ -28,7 +28,7 @@ func RecommendHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var recommends []*model.Recommend
-	if err = db.Order("created_at desc").Limit(p.Limit).Where("status = ?",constant.MediaStatusReleased).Find(&recommends).Error ; err != nil{
+	if err = db.Order("created_at desc").Limit(p.Limit).Where("online = ?",constant.MediaStatusOnLine).Find(&recommends).Error ; err != nil{
 		logger.Error("query recommend err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -74,7 +74,7 @@ func VideoListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var videos []*model.Video
-	if err = db.Order("publish_date desc").Offset(p.Offset).Where("status = ?",constant.MediaStatusReleased).Limit(p.Limit).Find(&videos).Error ; err != nil{
+	if err = db.Order("publish_date desc").Offset(p.Offset).Where("online = ?",constant.MediaStatusOnLine).Limit(p.Limit).Find(&videos).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -85,7 +85,7 @@ func VideoListHandler(c *gin.Context) {
 	}
 
 	var count uint32
-	if err = db.Model(&model.Video{}).Where("status = ?",constant.MediaStatusReleased).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Video{}).Where("online = ?",constant.MediaStatusOnLine).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -130,7 +130,7 @@ func VideoDetailHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var video model.Video
-	if err = db.Where("id = ? and status = ?",p.Id,constant.MediaStatusReleased).Find(&video).Error ; err != nil{
+	if err = db.Where("id = ? and online = ?",p.Id,constant.MediaStatusOnLine).Find(&video).Error ; err != nil{
 		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -167,7 +167,7 @@ func VideoSearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var videos []model.Video
-	if err = db.Order("publish_date desc").Where("title like ? and status = ?","%" + p.Title + "%",constant.MediaStatusReleased).Find(&videos).Error ; err != nil{
+	if err = db.Order("publish_date desc").Where("title like ? and online = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Find(&videos).Error ; err != nil{
 		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}

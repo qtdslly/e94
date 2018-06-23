@@ -48,11 +48,8 @@ const (
 )
 
 const (
-	MediaStatusUnknown   = 0 // 未知状态
-	MediaStatusDraft     = 1 // 草稿
-	MediaStatusReleased  = 2 // 已发布
-	MediaStatusWithdrawn = 3 // 取消发布
-	MediaStatusDeleted   = 4 // 已删除
+	MediaStatusOnLine  = 1 // 上线
+	MediaStatusNotOnLine = 0 // 下线
 )
 
 const (

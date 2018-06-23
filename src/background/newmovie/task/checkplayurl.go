@@ -22,7 +22,6 @@ func CheckOtherPlayUrl(db *gorm.DB){
 	CheckOthersPlayUrlByProvider(constant.ContentProviderYouKu,db)
 	CheckOthersPlayUrlByProvider(constant.ContentProviderIqiyi,db)
 	CheckOthersPlayUrlByProvider(constant.ContentProviderMgtv,db)
-
 }
 
 func CheckOthersPlayUrlByProvider(provider uint32,db *gorm.DB){

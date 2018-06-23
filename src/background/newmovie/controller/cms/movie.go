@@ -61,7 +61,7 @@ func MovieSaveHandler(c *gin.Context) {
 		video.Pinyin = util.TitleToPinyin(video.Title)
 		video.Year = p.Year
 		video.TotalEpisode = 1
-		video.Status = constant.MediaStatusReleased
+		video.Status = constant.MediaStatusOnLine
 
 		video.CreatedAt = now
 		video.UpdatedAt = now
@@ -98,7 +98,7 @@ func MovieSaveHandler(c *gin.Context) {
 
 	if err := db.Where("content_type = ? and content_id = ? and provider = ?",playUrl.ContentType,playUrl.ContentId,playUrl.Provider).First(&playUrl).Error ; err == gorm.ErrRecordNotFound {
 		playUrl.Url = p.Url
-		playUrl.Disabled = true
+		playUrl.OnLine = true
 		playUrl.Title = p.Title
 		if err := db.Save(&playUrl).Error; err != nil {
 			c.AbortWithStatus(http.StatusInternalServerError)
