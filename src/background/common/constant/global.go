@@ -113,6 +113,11 @@ const (
 	ContentProviderSohu     = 5
 	ContentProviderSystem1  = 10
 	ContentProviderSystem2  = 20
+	ContentProviderSystem3  = 30
+	ContentProviderSystem4  = 40
+	ContentProviderSystem5  = 50
+	ContentProviderSystem6  = 60
+	ContentProviderSystem7  = 70
 
 
 	ContentProviderDouYin   = 6
