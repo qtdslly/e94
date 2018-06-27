@@ -164,11 +164,21 @@ func VideoSearchHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
+	type ApiVideo struct {
+		Id	uint32 `json:"id"`
+		Title	string `json:"title"`
+		Score	float64 `json:"score"`
+		ThumbY	string `json:"thumb_y"`
+	}
+
 	var apiVideos []*apimodel.Video
 	for _,video := range videos{
-		var apiVideo *apimodel.Video
-		apiVideo = apimodel.VideoFromDb(video,db)
-		apiVideos = append(apiVideos,apiVideo)
+		var apiVideo ApiVideo
+		apiVideo.Id = video.Id
+		apiVideo.Title = video.Title
+		apiVideo.Score = video.Score
+		apiVideo.ThumbY = video.ThumbY
+		apiVideos = append(apiVideos,&apiVideo)
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos})
