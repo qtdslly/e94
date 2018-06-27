@@ -56,12 +56,13 @@ func GetMiguMovie(url string,db *gorm.DB){
 	resp, err := http.DefaultClient.Do(requ)
 	if err != nil {
 		logger.Debug("err")
-		return ""
+		return
 	}
 
 	recv,err := ioutil.ReadAll(resp.Body)
 	if err != nil{
 		logger.Error(err)
+		return
 	}
 
 	data := string(recv)
@@ -131,7 +132,7 @@ func GetMiguMovie(url string,db *gorm.DB){
 			episode.Description = video.Description
 			num,_ = strconv.Atoi(v.Get("timelength").String())
 			episode.Duration = uint32(num)
-			episode.Number = uint32(1)
+			episode.Number = "1"
 			episode.Sort = uint32(1)
 			episode.Score = video.Score
 			episode.ThumbOttX = video.ThumbX

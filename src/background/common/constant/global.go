@@ -56,9 +56,8 @@ const (
 	DisabledTypeTrue  = 1 //禁用
 	DisabledTypeFalse = 2 //可用
 
-	OnlineTypeAll   = 0 //全部
-	OnlineTypeTrue  = 1 //已上线
-	OnlineTypeFalse = 2 //未上线
+	OnlineTypeTrue  = true //已上线
+	OnlineTypeFalse = false //未上线
 
 	DownloadableTypeAll   = 0 //全部
 	DownloadableTypeTrue  = 1 //可下载
