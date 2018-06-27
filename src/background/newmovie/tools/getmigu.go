@@ -97,9 +97,6 @@ func GetMiguMovie(url string,db *gorm.DB){
 					break
 				}
 			}
-			if len(video.Actors) > 120{
-				video
-			}
 			video.Country = v.Get("dq").String()
 			video.CurrentEpisode = uint32(1)
 			video.TotalEpisode = uint32(1)
