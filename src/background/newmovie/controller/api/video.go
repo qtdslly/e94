@@ -173,7 +173,7 @@ func VideoSearchHandler(c *gin.Context) {
 
 	var apiVideos []*apimodel.Video
 	for _,video := range videos{
-		var apiVideo ApiVideo
+		var apiVideo *ApiVideo
 		apiVideo.Id = video.Id
 		apiVideo.Title = video.Title
 		apiVideo.Score = video.Score
