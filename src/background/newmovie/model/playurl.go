@@ -34,9 +34,6 @@ func initPlayUrl(db *gorm.DB) error {
 		err = db.AutoMigrate(&PlayUrl{}).Error
 	} else {
 		err = db.CreateTable(&PlayUrl{}).Error
-		if err == nil {
-			err = db.Exec("alter table play_url add unique (provider, Url) ;").Error
-		}
 	}
 	return err
 }

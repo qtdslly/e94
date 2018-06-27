@@ -23,10 +23,6 @@ import (
 )
 
 func main(){
-	logger.SetLevel(config.GetLoggerLevel())
-
-	logger.SetLevel(config.GetLoggerLevel())
-
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 
 	flag.Parse()

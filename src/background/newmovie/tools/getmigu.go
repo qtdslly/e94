@@ -19,7 +19,7 @@ import (
 )
 
 func main(){
-	logger.SetLevel(config.GetLoggerLevel())
+	logger.SetLevel(0)
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	err := config.LoadConfig(*configPath)
 	if err != nil {
@@ -31,6 +31,7 @@ func main(){
 		logger.Fatal("Open db Failed!!!!", err)
 		return
 	}
+	db.LogMode(true)
 
 	model.InitModel(db)
 	i := 1
@@ -66,7 +67,7 @@ func GetMiguMovie(url string,db *gorm.DB){
 	}
 
 	data := string(recv)
-
+	//logger.Debug(data)
 	content := gjson.Get(data, "content")
 
 	if content.Exists() {

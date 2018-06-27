@@ -1,6 +1,7 @@
 package model
 
 import (
+	"background/common/logger"
 	"background/common/util"
 	"time"
 
@@ -35,6 +36,7 @@ func initAdmin(db *gorm.DB) error {
 	var admin Admin
 	admin.Username = "superadmin"
 	if err = db.Where("username=?", admin.Username).First(&admin).Error; err != nil {
+		logger.Debug(err)
 		admin.Password = util.SHA512("stars@admin")
 		db.Create(&admin)
 	}
