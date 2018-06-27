@@ -171,9 +171,9 @@ func VideoSearchHandler(c *gin.Context) {
 		ThumbY	string `json:"thumb_y"`
 	}
 
-	var apiVideos []*apimodel.Video
+	var apiVideos []*ApiVideo
 	for _,video := range videos{
-		var apiVideo *ApiVideo
+		var apiVideo ApiVideo
 		apiVideo.Id = video.Id
 		apiVideo.Title = video.Title
 		apiVideo.Score = video.Score
