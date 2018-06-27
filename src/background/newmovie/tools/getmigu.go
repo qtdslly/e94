@@ -113,7 +113,7 @@ func GetMiguMovie(url string,db *gorm.DB){
 				video.Language = "英语"
 			}
 
-			if err = db.Where("title = ? and year = ?",video.Title,video.Year).First(&video).Error ; err == gorm.ErrRecordNotFound{
+			if err = db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
 				if err = db.Create(&video).Error ; err != nil{
 					logger.Error(err)
 					tx.Rollback()
