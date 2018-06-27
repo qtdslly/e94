@@ -111,21 +111,12 @@ const (
 	ContentProviderIqiyi    = 3
 	ContentProviderTencent  = 4
 	ContentProviderSohu     = 5
-	ContentProviderSystem1  = 10
-	ContentProviderSystem2  = 20
-	ContentProviderSystem3  = 30
-	ContentProviderSystem4  = 40
-	ContentProviderSystem5  = 50
-	ContentProviderSystem6  = 60
-	ContentProviderSystem7  = 70
-
-
 	ContentProviderDouYin   = 6
 	ContentProviderPear     = 7
 	ContentProviderKuai     = 8
+	ContentProviderMigu     = 9
 
 	PictureProivderBiZhiJinXuan = 1
-
 
 	DomainStatusUnknown      = 0
 	DomainStatusRegistered   = 1
@@ -134,7 +125,6 @@ const (
 	DouBanCrawlStatusSuccess = 0
 	DouBanCrawlStatusError   = 1
 	DouBanCrawlStatusReady   = 2
-
 
 	DownloadUrlProviderDytt8 = 1
 

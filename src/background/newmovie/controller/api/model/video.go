@@ -31,7 +31,7 @@ type Video struct {
 	Urls     []*PlayUrl `json:"urls"`
 }
 
-func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
+func VideoFromDb(src model.Video,db *gorm.DB) *Video {
 	dst := Video{}
 	dst.Id = src.Id
 	dst.Title = src.Title
@@ -65,7 +65,7 @@ func VideoFromDb(jsCode string,src model.Video,db *gorm.DB) *Video {
 		pUrl.Provider = playUrl.Provider
 		pUrl.IsPlay = true
 		if playUrl.OnLine{
-			pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url,jsCode)
+			pUrl.Url = service.GetRealUrl(playUrl.Provider,playUrl.Url)
 		}else{
 			pUrl.Url = playUrl.Url
 			pUrl.IsPlay = false

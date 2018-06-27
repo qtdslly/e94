@@ -10,6 +10,7 @@ import (
 	"github.com/robertkrimen/otto"
 	"fmt"
 	"background/common/constant"
+	"background/newmovie/service/script"
 )
 type OtherPlayUrl struct{
 	Provider     uint32
@@ -21,27 +22,18 @@ type OtherPlayUrl struct{
 	Times        uint32
 }
 
-func GetRealUrl(provider uint32, url string,jsCode string)(string){
+func GetRealUrl(provider uint32, url string)(string){
 
-	if provider == constant.ContentProviderSystem || provider == constant.ContentProviderSystem1 || provider == constant.ContentProviderSystem3|| provider == constant.ContentProviderSystem4|| provider == constant.ContentProviderSystem5|| provider == constant.ContentProviderSystem6|| provider == constant.ContentProviderSystem7{
+	if provider == constant.ContentProviderSystem || provider == constant.ContentProviderYouKu || provider == constant.ContentProviderMgtv{
 		return url
 	}
 
-	var playUrl OtherPlayUrl
-	playUrl.Url = url
-	playUrl.Channel = ""
-	playUrl.Quality = 3
-	playUrl.TvType = ""
-	playUrl.Times = 0
-	playUrl.ContentType = 2
-	if provider == constant.ContentProviderYouKu{
-		playUrl.Provider = 4
-	}else if provider == constant.ContentProviderIqiyi{
-		playUrl.Provider = 3
-	}else if provider == constant.ContentProviderMgtv{
-		playUrl.Provider = 5
+	var realUrl string
+	if provider == constant.ContentProviderIqiyi{
+		realUrl = script.GetIqiyiRealPlayUrl(url)
+	}else if provider == constant.ContentProviderMigu{
+		realUrl = script.GetMiguRealPlayUrl(url)
 	}
-	realUrl := GetStreamSourceUrl(playUrl,jsCode)
 
 	logger.Debug(realUrl)
 	return realUrl
