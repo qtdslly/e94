@@ -67,7 +67,7 @@ func GetMiguMovie(url string,db *gorm.DB){
 	}
 
 	data := string(recv)
-	//logger.Debug(data)
+	logger.Debug(data)
 	content := gjson.Get(data, "content")
 
 	if content.Exists() {
