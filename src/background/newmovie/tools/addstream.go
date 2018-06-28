@@ -20,7 +20,7 @@ func main(){
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	title := flag.String("title", "", "stream title")
 	url := flag.String("url", "", "stream play url")
-	provider := flag.Int("provider", "100", "provider")
+	provider := flag.Int("provider", 100, "provider")
 
 	if len(*title) == 0 || len(*url) == 0 || *provider == 100{
 		logger.Debug("useage: ./addstream -provider 8 -title 北京卫视 -url http://www.abc.m3u8")
@@ -42,7 +42,7 @@ func main(){
 	stream.Title = *title
 	stream.Title = strings.Replace(stream.Title,"高清","",-1)
 	stream.Title = strings.Replace(stream.Title,"-","",-1)
-	stream.Title = TrimChinese(stream.Title)
+	stream.Title = trimChinese(stream.Title)
 	stream.Pinyin = util.TitleToPinyin(stream.Title)
 	stream.Title = strings.Trim(stream.Title," ")
 	logger.Debug(stream.Title)
@@ -71,7 +71,7 @@ func main(){
 	play.Url = *url
 	play.Provider = uint32(*provider)
 	if err := tx.Where("provider = ? and url = ?",play.Provider,play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
-		play.Title = title
+		play.Title = *title
 		play.OnLine = constant.MediaStatusOnLine
 		play.Sort = 0
 		play.ContentType = uint8(constant.MediaTypeStream)
@@ -84,4 +84,20 @@ func main(){
 			return
 		}
 	}
+}
+
+
+func trimChinese(title string)(string){
+	if !strings.Contains(title,"CCTV"){
+		return title
+	}
+	//48-57 45 43 65-90 97-122
+	rTitle := ([]rune)(title)
+	result := ""
+	for _, m := range rTitle {
+		if m == 43 || m == 45 || (m >= 48 && m <= 57) || (m >= 65 && m <=90) || (m >= 97 && m <= 122){
+			result += string(m)
+		}
+	}
+	return result
 }
