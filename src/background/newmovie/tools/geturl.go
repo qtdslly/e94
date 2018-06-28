@@ -9,6 +9,6 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
-	realUrl := script.GetIqiyiRealPlayUrl("http://www.iqiyi.com/v_19rrhc74rc.html")
+	realUrl := script.GetMiguRealPlayUrl(2,"http://www.miguvideo.com/wap/resource/pc/detail/miguplay.jsp?cid=617379229")
 	logger.Debug(realUrl)
 }

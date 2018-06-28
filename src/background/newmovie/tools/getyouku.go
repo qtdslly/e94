@@ -30,6 +30,8 @@ func main(){
 		return
 	}
 
+	db.LogMode(true)
+
 	i := 14
 	for {
 		url := "http://list.youku.com/category/show/c_96_pt_1_s_1_d_1_p_" + fmt.Sprint(i) +  ".html?spm=a2h1n.8251845.0.0"
@@ -102,7 +104,7 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		video.Country = country
 		video.Tags = tags
 		video.TotalEpisode = 1
-		video.Status = constant.MediaStatusReleased
+		video.OnLine = constant.OnlineTypeTrue
 		now := time.Now()
 		video.CreatedAt = now
 		video.UpdatedAt = now
@@ -172,7 +174,7 @@ func FilterYouKuMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		playUrl.ContentId = episode.Id
 		playUrl.Provider = constant.ContentProviderYouKu
 		playUrl.Url = url
-		playUrl.Disabled = false
+		playUrl.OnLine = constant.OnlineTypeTrue
 
 		playUrl.CreatedAt = now
 		playUrl.UpdatedAt = now

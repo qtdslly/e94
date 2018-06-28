@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 )
-func GetMiguRealPlayUrl(url string)(string){
+func GetMiguRealPlayUrl(content_type uint32,url string)(string){
 	jsCode := GetMiguJsCode()
 
 	type CallBackDatas struct{
@@ -58,7 +58,7 @@ func GetMiguRealPlayUrl(url string)(string){
 		times = times + 1
 		reqParam.Times = times
 		reqParam.Quality = 3
-		reqParam.ContentType = 2
+		reqParam.ContentType = content_type
 		reqParam.Url = url
 
 		if len(resParam.FetchUrl.Url) > 0{
@@ -132,6 +132,7 @@ func GetMiguRealPlayUrl(url string)(string){
 }
 
 func GetMiguJsCode()(string){
+
 	jsCode := "!function (a) {\n" +
 		"    \"use strict\";\n" +
 		"\n" +
@@ -1344,108 +1345,183 @@ func GetMiguJsCode()(string){
 		"    var result;\n" +
 		"    var begin = 0;\n" +
 		"\n" +
-		"    var agent = \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\";\n" +
-		"    var referer = \"http://www.miguvideo.com/wap/resource/pc/list/filmLibrary.jsp?typeName=电影\";\n" +
-		"    var content_type = \"application/json;charset=UTF-8\";\n" +
-		"    fetch_url = {method: \"get\", header: {user_agent: agent,\n" +
-		"            referer: referer,\n" +
-		"            content_type: content_type}, body: \"\", url: \"\"};\n" +
 		"    json_data = JSON.parse(request);\n" +
+		"\n" +
+		"    var agent = \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\";\n" +
+		"   \n" +
+		"    //http://m.miguvideo.com/wap/resource/migu/live/live.jsp\n" +
+		"    fetch_url = {method: \"get\", header: {user_agent: agent}, body: \"\", url: \"\"};\n" +
+		"\n" +
 		"    result = {done: false, fetch_url: fetch_url, urls: [], call_back_data: {}};\n" +
 		"\n" +
-		"    if (json_data.times === 1) {\n" +
-		"        try {\n" +
-		"            begin = json_data.url.indexOf(\"cid=\");\n" +
-		"            var cid = json_data.url.slice(begin + 4);\n" +
-		"            fetch_url.url = \"http://www.miguvideo.com/wap/resource/pc/data/miguData.jsp?cid=\" + cid;\n" +
-		"            result.done = false;\n" +
-		"        } catch (e) {\n" +
-		"            result.error = e.toString();\n" +
-		"            fetch_url.url = \"\";\n" +
-		"            result.done = true;\n" +
-		"            result.urls.splice(0, result.urls.length);\n" +
-		"            return JSON.stringify(result);\n" +
-		"        }\n" +
-		"    } else if (json_data.times === 2) {\n" +
-		"        var response = json_data.html_data;\n" +
-		"        var data = JSON.parse(response);\n" +
-		"        var isPingBi = data[0].isPingBi;\n" +
-		"        var cmId = data[0].cmId;\n" +
-		"        var mId = data[0].mId;\n" +
-		"        var contId = data[0].contId;\n" +
-		"        var prdpackId = data[0].prdpackId;\n" +
-		"        var vId = data[0].vId;\n" +
-		"        var totalTime = data[0].timeLong;\n" +
-		"        var nodeId = data[0].nodeid;\n" +
-		"        var isV = data[0].isV;\n" +
-		"        var isOrd = data[0].isOrd;\n" +
-		"        var isDongao = data[0].isDongao;\n" +
-		"        var isVip = data[0].isVip;\n" +
-		"        var playId = data[0].playId;\n" +
-		"        var cmId = data[0].cmId;\n" +
-		"\n" +
-		"        if (mId != '5101073462' && mId != '5101094523' && mId != '5101049700' && isDongao != '1' && isPingBi != '1') {\n" +
-		"            fetch_url.url = \"http://www.miguvideo.com/playurl/v1/play/playurlh5?contId=\" + playId + \"&rateType=1,2,3\";\n" +
-		"            result.fetch_url.header = {user_agent: agent,referer: referer,content_type: content_type,\n" +
-		"                \"userId\": \"\",\"userToken\": \"\",\"SDKCEId\": \"79acd784-cbbb-4cae-8778-8723e001164b\",\"clientId\": \"12345678\"};\n" +
-		"            result.done = false;\n" +
-		"            result.call_back_data.vid = vId;\n" +
-		"            //result.urls.splice(0, result.urls.length);\n" +
-		"            return JSON.stringify(result);\n" +
-		"        }\n" +
-		"\n" +
-		"        if (mId == '5101073462' || mId == '5101094523' || mId == '5101049700' || isDongao == '1' || isPingBi == '1') {\n" +
-		"            result.error = \"因版权方要求，请至咪咕视频APP观看\";\n" +
-		"            fetch_url.url = \"\";\n" +
-		"            result.done = true;\n" +
-		"            result.call_back_data.vid = vId;\n" +
-		"            result.urls.splice(0, result.urls.length);\n" +
-		"            return JSON.stringify(result);\n" +
-		"        }\n" +
-		"\n" +
-		"        var cidList = data[0].SubSerial_IDS;\n" +
-		"        var contIds = cidList.split(\",\");\n" +
-		"        for (var i = 0; i < contIds.length; i++) {\n" +
-		"            if (contIds[i] != \"\" && contIds[i] != null) {\n" +
-		"                contId.push(contIds[i]);\n" +
+		"    if(json_data.content_type == 2){\n" +
+		"        if (json_data.times === 1) {\n" +
+		"            try {\n" +
+		"                begin = json_data.url.indexOf(\"cid=\");\n" +
+		"                var cid = json_data.url.slice(begin + 4);\n" +
+		"                fetch_url.url = \"http://www.miguvideo.com/wap/resource/pc/data/miguData.jsp?cid=\" + cid;\n" +
+		"                result.done = false;\n" +
+		"            } catch (e) {\n" +
+		"                result.error = e.toString();\n" +
+		"                fetch_url.url = \"\";\n" +
+		"                result.done = true;\n" +
+		"                result.urls.splice(0, result.urls.length);\n" +
+		"                return JSON.stringify(result);\n" +
 		"            }\n" +
-		"        }\n" +
+		"        } else if (json_data.times === 2) {\n" +
+		"            var response = json_data.html_data;\n" +
+		"            var data = JSON.parse(response);\n" +
+		"            var isPingBi = data[0].isPingBi;\n" +
+		"            var cmId = data[0].cmId;\n" +
+		"            var mId = data[0].mId;\n" +
+		"            var contId = data[0].contId;\n" +
+		"            var prdpackId = data[0].prdpackId;\n" +
+		"            var vId = data[0].vId;\n" +
+		"            var totalTime = data[0].timeLong;\n" +
+		"            var nodeId = data[0].nodeid;\n" +
+		"            var isV = data[0].isV;\n" +
+		"            var isOrd = data[0].isOrd;\n" +
+		"            var isDongao = data[0].isDongao;\n" +
+		"            var isVip = data[0].isVip;\n" +
+		"            var playId = data[0].playId;\n" +
+		"            var cmId = data[0].cmId;\n" +
 		"\n" +
-		"        fetch_url.url = \"\";\n" +
-		"        result.done = true;\n" +
-		"        eval(response[0].func);\n" +
-		"        var playUrl = _mv_addr(response[0].play);\n" +
-		"        playUrl = decodeURIComponent(playUrl);\n" +
-		"        result.urls.push(playUrl);\n" +
-		"    }else if(json_data.times == 3) {\n" +
-		"        if (json_data.call_back_data.vId != \"\") {\n" +
-		"            fetch_url.url = \"http://www.miguvideo.com/vod2/v1/query_spotviurl_cdn?vid=\" + json_data.call_back_data.vId;\n" +
-		"            result.done = false;\n" +
-		"            result.urls.splice(0, result.urls.length);\n" +
+		"            if (mId != '5101073462' && mId != '5101094523' && mId != '5101049700' && isDongao != '1' && isPingBi != '1') {\n" +
+		"                fetch_url.url = \"http://www.miguvideo.com/playurl/v1/play/playurlh5?contId=\" + playId + \"&rateType=1,2,3\";\n" +
+		"                result.fetch_url.header = {user_agent: agent,\n" +
+		"                    \"userId\": \"\",\"userToken\": \"\",\"SDKCEId\": \"79acd784-cbbb-4cae-8778-8723e001164b\",\"clientId\": \"12345678\"};\n" +
+		"                result.done = false;\n" +
+		"                result.call_back_data.vid = vId;\n" +
+		"                //result.urls.splice(0, result.urls.length);\n" +
+		"                return JSON.stringify(result);\n" +
+		"            }\n" +
+		"\n" +
+		"            if (mId == '5101073462' || mId == '5101094523' || mId == '5101049700' || isDongao == '1' || isPingBi == '1') {\n" +
+		"                result.error = \"因版权方要求，请至咪咕视频APP观看\";\n" +
+		"                fetch_url.url = \"\";\n" +
+		"                result.done = true;\n" +
+		"                result.call_back_data.vid = vId;\n" +
+		"                result.urls.splice(0, result.urls.length);\n" +
+		"                return JSON.stringify(result);\n" +
+		"            }\n" +
+		"\n" +
+		"            var cidList = data[0].SubSerial_IDS;\n" +
+		"            var contIds = cidList.split(\",\");\n" +
+		"            for (var i = 0; i < contIds.length; i++) {\n" +
+		"                if (contIds[i] != \"\" && contIds[i] != null) {\n" +
+		"                    contId.push(contIds[i]);\n" +
+		"                }\n" +
+		"            }\n" +
+		"\n" +
+		"            fetch_url.url = \"\";\n" +
+		"            result.done = true;\n" +
+		"            eval(response[0].func);\n" +
+		"            var playUrl = _mv_addr(response[0].play);\n" +
+		"            playUrl = decodeURIComponent(playUrl);\n" +
+		"            result.urls.push(playUrl);\n" +
+		"        }else if(json_data.times == 3) {\n" +
+		"            if (json_data.call_back_data.vId != \"\") {\n" +
+		"                fetch_url.url = \"http://www.miguvideo.com/vod2/v1/query_spotviurl_cdn?vid=\" + json_data.call_back_data.vId;\n" +
+		"                result.done = false;\n" +
+		"                result.urls.splice(0, result.urls.length);\n" +
+		"                return JSON.stringify(result);\n" +
+		"            }\n" +
+		"            var response = json_data.html_data;\n" +
+		"            var data = JSON.parse(response);\n" +
+		"            var playUrl = data.body.urlInfo.url;\n" +
+		"            // result.urls.bq.push(encodeURIComponent(playUrls[0].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            // result.urls.gq.push(encodeURIComponent(playUrls[1].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            // result.urls.cq.push(encodeURIComponent(playUrls[2].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            result.done = true;\n" +
+		"            result.urls.push(playUrl);\n" +
+		"            return JSON.stringify(result);\n" +
+		"\n" +
+		"        }else if(json_data.times == 4){\n" +
+		"            var response = json_data.html_data;\n" +
+		"            var data = JSON.parse(response);\n" +
+		"            var playUrls = data.result.list;\n" +
+		"            // result.urls.bq.push(encodeURIComponent(playUrls[0].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            // result.urls.gq.push(encodeURIComponent(playUrls[1].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            // result.urls.cq.push(encodeURIComponent(playUrls[2].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
+		"            result.done = true;\n" +
 		"            return JSON.stringify(result);\n" +
 		"        }\n" +
-		"        var response = json_data.html_data;\n" +
-		"        var data = JSON.parse(response);\n" +
-		"        var playUrl = data.body.urlInfo.url;\n" +
-		"        // result.urls.bq.push(encodeURIComponent(playUrls[0].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        // result.urls.gq.push(encodeURIComponent(playUrls[1].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        // result.urls.cq.push(encodeURIComponent(playUrls[2].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        result.done = true;\n" +
-		"        result.urls.push(playUrl);\n" +
-		"        return JSON.stringify(result);\n" +
+		"    }else if(json_data.content_type == 4){\n" +
+		"        if(json_data.times === 1){\n" +
+		"                try{\n" +
+		"                    begin = json_data.url.indexOf(\"cid=\");\n" +
+		"                    var cid = json_data.url.slice(begin + 4);\n" +
+		"                    fetch_url.url = \"http://h5spdegrade.miguvideo.com/wap/resource/migu/detail/detail_Live_data.jsp?cid=\" + cid + \"&range=0\";\n" +
+		"                    result.done = false;\n" +
+		"                }catch (e){\n" +
+		"                    result.error = e.toString();\n" +
+		"                    fetch_url.url = \"\";\n" +
+		"                    result.done = true;\n" +
+		"                    result.urls.splice(0,result.urls.length);\n" +
+		"                    return JSON.stringify(result);\n" +
+		"                }\n" +
+		"            }else if(json_data.times === 2){\n" +
+		"                try{\n" +
+		"                    var data = json_data.html_data;\n" +
+		"                    var response = JSON.parse(data);\n" +
 		"\n" +
-		"    }else if(json_data.times == 4){\n" +
-		"        var response = json_data.html_data;\n" +
-		"        var data = JSON.parse(response);\n" +
-		"        var playUrls = data.result.list;\n" +
-		"        // result.urls.bq.push(encodeURIComponent(playUrls[0].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        // result.urls.gq.push(encodeURIComponent(playUrls[1].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        // result.urls.cq.push(encodeURIComponent(playUrls[2].url.replace(/gslbmgspvod.miguvideo.com/g, \"vod.hcs.cmvideo.cn:8088\") ));\n" +
-		"        result.done = true;\n" +
-		"        return JSON.stringify(result);\n" +
+		"                    var t = new Date(json_data.start_time);\n" +
+		"                    var start_time = getTime(t);\n" +
+		"\n" +
+		"                    for(i = 0 ; i < response.length ; i ++) {\n" +
+		"                        if (response[i].billtime === response[i].nowtime) {\n" +
+		"                            //1 流畅 2 标清 3 高清 4 720P 5 1080P\n" +
+		"                            //idx: 1 标清 2 高清 3 超清\n" +
+		"                            var indx = 1;\n" +
+		"                            if (quality === 4) {\n" +
+		"                                indx = 3;\n" +
+		"                            } else if (quality === 3) {\n" +
+		"                                indx = 2;\n" +
+		"                            } else if (quality === 2) {\n" +
+		"                                indx = 1;\n" +
+		"                            } else {\n" +
+		"                                fetch_url.url = \"\";\n" +
+		"                                result.done = true;\n" +
+		"                                result.urls.splice(0, result.urls.length);\n" +
+		"                                return JSON.stringify(result);\n" +
+		"                            }\n" +
+		"\n" +
+		"                            fetch_url.url = \"http://h5spdegrade.miguvideo.com/wap/resource/migu/detail/detail_LiveBackSee_data.jsp?playbillId=\" + response[i].playbillId + \"&indx=\" + indx;\n" +
+		"                            result.done = false;\n" +
+		"\n" +
+		"                            break;\n" +
+		"                        }\n" +
+		"                    }\n" +
+		"                }catch (e){\n" +
+		"                    result.error = e.toString();\n" +
+		"                    fetch_url.url = \"\";\n" +
+		"                    result.done = true;\n" +
+		"                    result.urls.splice(0,result.urls.length);\n" +
+		"                    return JSON.stringify(result);\n" +
+		"                }\n" +
+		"\n" +
+		"            }else if(json_data.times === 3){\n" +
+		"                try{\n" +
+		"                    data = json_data.html_data;\n" +
+		"                    response = JSON.parse(data);\n" +
+		"\n" +
+		"                    fetch_url.url = \"\";\n" +
+		"                    result.done = true;\n" +
+		"                    eval(response.deEncrptJsFunc);\n" +
+		"                    result.urls.push(_mv_addr(response.liveBackPlayUrl));\n" +
+		"                }catch (e){\n" +
+		"                    result.error = e.toString();\n" +
+		"                    fetch_url.url = \"\";\n" +
+		"                    result.done = true;\n" +
+		"                    result.urls.splice(0,result.urls.length);\n" +
+		"                    return JSON.stringify(result);\n" +
+		"                }\n" +
+		"            }\n" +
 		"    }\n" +
+		"\n" +
 		"    return JSON.stringify(result);\n" +
 		"}\n" +
 		"\n"
+
 	return jsCode
 }

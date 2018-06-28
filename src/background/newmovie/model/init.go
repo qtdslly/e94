@@ -71,6 +71,12 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db notification failed, ", err)
 		return err
 	}
+
+	err = initStream(db)
+	if err != nil {
+		logger.Fatal("Init db stream failed, ", err)
+		return err
+	}
 	return err
 }
 

@@ -160,7 +160,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		score1,_ := strconv.ParseFloat(score,10)
 		video.Score = score1
 		video.Pinyin = util.TitleToPinyin(video.Title)
-		video.Status = constant.MediaStatusReleased
+		video.OnLine = constant.OnlineTypeTrue
 
 		now := time.Now()
 		video.CreatedAt = now
@@ -237,7 +237,7 @@ func FilterMgMovieInfo(document *goquery.Document,db *gorm.DB)(){
 		playUrl.ContentId = episode.Id
 		playUrl.Provider = constant.ContentProviderMgtv
 		playUrl.Url = url
-		playUrl.Disabled = false
+		playUrl.OnLine = constant.OnlineTypeTrue
 
 		playUrl.CreatedAt = now
 		playUrl.UpdatedAt = now

@@ -115,6 +115,12 @@ const (
 	ContentProviderKuai     = 8
 	ContentProviderMigu     = 9
 
+	ContentProviderCntv     = 30
+	ContentProviderHuashu   = 31
+	ContentProviderIvibupt  = 32   //北京邮电大学
+
+
+
 	PictureProivderBiZhiJinXuan = 1
 
 	DomainStatusUnknown      = 0
