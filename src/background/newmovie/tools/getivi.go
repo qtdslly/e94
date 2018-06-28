@@ -107,6 +107,7 @@ func getIviChannelList(db *gorm.DB){
 						return
 					}
 				}
+				tx.Commit()
 			})
 		}
 	})
