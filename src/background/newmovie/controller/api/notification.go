@@ -56,6 +56,7 @@ func NotifcationHandler(c *gin.Context) {
 		apiNoti.Title = ar.Title
 		apiNoti.ContentType = ar.ContentType
 		apiNoti.ContentId = ar.ContentId
+		apiNoti.Description = ar.Description
 		apiNoti.Thumb = ar.Thumb
 		apiNotis = append(apiNotis,&apiNoti)
 	}
