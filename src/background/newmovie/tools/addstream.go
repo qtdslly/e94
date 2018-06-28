@@ -21,6 +21,8 @@ func main(){
 	title := flag.String("title", "", "stream title")
 	url := flag.String("url", "", "stream play url")
 	provider := flag.Int("provider", 100, "provider")
+	flag.Parse()
+
 
 	if len(*title) == 0 || len(*url) == 0 || *provider == 100{
 		logger.Debug("useage: ./addstream -provider 8 -title 北京卫视 -url http://www.abc.m3u8")

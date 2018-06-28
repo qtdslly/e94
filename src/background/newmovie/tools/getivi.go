@@ -19,6 +19,8 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
+	flag.Parse()
+
 	err := config.LoadConfig(*configPath)
 	if err != nil {
 		return
