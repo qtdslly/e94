@@ -25,11 +25,11 @@ func InstallationHandler(c *gin.Context) {
 		DeviceId       string  `json:"device_id" binding:"required"`
 		MacAddress     string  `json:"mac_address" binding:"required"`
 		Imei           string  `json:"imei"`
-		OsVersion     string  `json:"os_version"`
-		Product   string  `json:"product"` //产品名称
-		Model   string  `json:"model"` //设备型号
-		Brand   string  `json:"brand"` //设备品牌
-		Carrier   uint8  `json:"carrier"` //电话类型
+		OsVersion      string  `json:"os_version"`
+		Product        string  `json:"product"` //产品名称
+		Model          string  `json:"model"` //设备型号
+		Brand          string  `json:"brand"` //设备品牌
+		Carrier        uint8  `json:"carrier"` //电话类型
 
 	//	CarrierTypeUnknown      = 0 // 未知类型
 	//CarrierTypeChinaMobile  = 1 // 中国移动

@@ -65,6 +65,12 @@ func InitModel(db *gorm.DB) error {
 		logger.Fatal("Init db resource_group failed, ", err)
 		return err
 	}
+
+	err = initNotification(db)
+	if err != nil {
+		logger.Fatal("Init db notification failed, ", err)
+		return err
+	}
 	return err
 }
 
@@ -79,5 +85,6 @@ func rebuildModel(db *gorm.DB) {
 	dropPlayUrl(db)
 	dropRecommend(db)
 	dropResourceGroup(db)
+	dropNotification(db)
 	InitModel(db)
 }
