@@ -84,6 +84,7 @@ func main(){
 			return
 		}
 	}
+	tx.Commit()
 }
 
 
