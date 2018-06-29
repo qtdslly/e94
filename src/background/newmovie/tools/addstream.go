@@ -44,7 +44,7 @@ func main(){
 	stream.Title = *title
 	stream.Title = strings.Replace(stream.Title,"高清","",-1)
 	stream.Title = strings.Replace(stream.Title,"-","",-1)
-	stream.Title = trimChinese(stream.Title)
+	stream.Title = util.TrimChinese(stream.Title)
 	stream.Pinyin = util.TitleToPinyin(stream.Title)
 	stream.Title = strings.Trim(stream.Title," ")
 	logger.Debug(stream.Title)
@@ -90,17 +90,3 @@ func main(){
 }
 
 
-func trimChinese(title string)(string){
-	if !strings.Contains(title,"CCTV"){
-		return title
-	}
-	//48-57 45 43 65-90 97-122
-	rTitle := ([]rune)(title)
-	result := ""
-	for _, m := range rTitle {
-		if m == 43 || m == 45 || (m >= 48 && m <= 57) || (m >= 65 && m <=90) || (m >= 97 && m <= 122){
-			result += string(m)
-		}
-	}
-	return result
-}
