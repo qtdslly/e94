@@ -16,7 +16,7 @@ type PlayUrl struct {
 	Width       uint32         `json:"width"`
 	Height      uint32         `json:"height"`
 	Bitrate     uint32         `json:"bitrate"`
-	Url         string         `gorm:"size:255" json:"url"`
+	Url         string         `gorm:"size:1024" json:"url"`
 	OnLine      bool           `json:"on_line"` // 链接播放不了，临时禁止
 	Quality     uint8          `json:"quality"`
 	Sort        uint32         `json:"sort"`

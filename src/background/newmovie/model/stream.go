@@ -8,7 +8,7 @@ import (
 
 type Stream struct {
 	Id             uint32           `gorm:"primary_key" json:"id"`
-	Title          string           `gorm:"size:255" json:"title" valid:"Str" name:"title" len:"1,255"`
+	Title          string           `gorm:"size:60" json:"title" valid:"Str" name:"title" len:"1,255"`
 	Area           string           `gorm:"size:16" json:"area"`
 	Pinyin         string           `gorm:"size:32;index" json:"pinyin"`
 	Description    string           `gorm:"type:longtext" json:"description"`
