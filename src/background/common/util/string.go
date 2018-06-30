@@ -5,6 +5,7 @@ import (
 	"time"
 	"fmt"
 	"os/exec"
+	"background/common/logger"
 )
 
 
@@ -29,7 +30,7 @@ func TrimChinese(title string)(string){
 
 func CheckStreamUrl(url string)bool{
 	c2 := make(chan string, 1)
-	ffmpegAddr := "/home/lyric/soft/ffmpeg1/ffmpeg-4.0-32bit-static/ffmpeg"
+	ffmpegAddr := "f:/ffmpeg/bin/ffmpeg"
 	go func() {
 		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 aaa.jpg", ffmpegAddr, url)
 		fmt.Println(cmdStr)
@@ -38,6 +39,7 @@ func CheckStreamUrl(url string)bool{
 		if err := cmd.Run(); err == nil {
 			c2 <- "success"
 		}else{
+			logger.Error(err)
 			c2 <- "error"
 		}
 	}()

@@ -20,7 +20,7 @@ Euronews, http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/969/index.m3u8
 Deutsche Welle EN ,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/1021/index.m3u8
 Русскоекино,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/101/index.m3u8
 Ностальгия,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/102/index.m3u8
-ТСLove ,http:// d2ce261d。 ottv.biz/iptv/FB6ABTVVGZQY4R/103/index.m3u8
+ТСLove ,http:// d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/103/index.m3u8
 Euronews ,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/969/index.m3u8
 Deutsche Welle EN ,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/1021/index.m3u8
 Русскоекино,http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/101/index.m3u8
@@ -40,7 +40,6 @@ s,http://getsapp.ru/IPTV/02.2018_18.m3u8
 ,http://tglchuh-i.akamaihd.net/hls/live/566554/ctv/02.m3u8
 ,http://218.60.94.32:1935/live/cs18.stream/playlist.m3u8
 ,http://live.italkdd.com/ts027/channel_034.m3u8
-CCTV-8,http://223.110.245.167/ott.js.ch ... 21227204/index.m3u8
 CCTV-14,http://183.207.249.15/PLTV/2/224/3221226023/index.m3u8
 CCTV-7军事农业,http://223.110.243.136/PLTV/2510088/224/3221227142/1.m3u8
 CCTV-12社会与法,http://116.77.76.2:5003/nn_live.ts?id=CCTV12HD5M
