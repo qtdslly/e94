@@ -111,3 +111,72 @@ func StreamDetailHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideo})
 }
 
+
+
+
+func StreamSearchHandler(c *gin.Context) {
+
+	type param struct {
+		Title       string `form:"title" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var streams []model.Stream
+	if err = db.Order("sort asc").Where("title like ? and on_line = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Find(&streams).Error ; err != nil{
+		logger.Error("query video err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	type ApiVideo struct {
+		Id	uint32 `json:"id"`
+		Title	string `json:"title"`
+		Score	float64 `json:"score"`
+		ThumbY	string `json:"thumb_y"`
+	}
+
+	var apiVideos []*ApiVideo
+	for _,stream := range streams{
+		var apiVideo ApiVideo
+		apiVideo.Id = stream.Id
+		apiVideo.Title = stream.Title
+		apiVideo.ThumbY = "http://www.ezhantao.com/thumb/stream/" + fmt.Sprint(stream.Id) + ".jpg"
+		apiVideos = append(apiVideos,&apiVideo)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos})
+}
+
+
+func StreamTopSearchHandler(c *gin.Context) {
+
+	type param struct {
+		Limit       uint32 `form:"limit" binding:"required"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var tops []model.TopSearch
+	if err = db.Where("content_type = 4").Limit(p.Limit).Find(&tops).Error ; err != nil{
+		logger.Error("query top_search err!!!,",err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": tops})
+}

@@ -77,14 +77,15 @@ func main(){
 
 		//cms.GET("/video/list", aapi.VideoListHandler)
 		//cms.GET("/video", aapi.VideoDetailHandler)
-		cms.GET("/video/search", aapi.VideoSearchHandler)
-		cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
+		//cms.GET("/video/search", aapi.VideoSearchHandler)
+		//cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
 
 		cms.GET("/recommend", aapi.RecommendHandler)
 
 		cms.GET("/video/list", aapi.StreamListHandler)
 		cms.GET("/video", aapi.StreamDetailHandler)
-
+		cms.GET("/video/search", aapi.StreamSearchHandler)
+		cms.GET("/video/topsearch", aapi.StreamTopSearchHandler)
 
 		cms.GET("/notification", aapi.NotifcationHandler)
 
