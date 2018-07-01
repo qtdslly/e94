@@ -14,7 +14,7 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 	var err error
-	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/f.txt")
+	f, err := os.Open("/root/Git/e94/src/background/newmovie/tools")
 	if err != nil {
 		logger.Error(err)
 	}
@@ -32,7 +32,7 @@ func main(){
 
 		var title string
 		var url string
-		fields := strings.Split(line, ",")
+		fields := strings.Split(line, "|")
 		if len(fields) == 2{
 			title = fields[0]
 			url = fields[1]

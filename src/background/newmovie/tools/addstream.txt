@@ -13,6 +13,11 @@
 
 ./addstream -t '泰国国家电视台' -u 'http://live.nationtv.tv/hls/ntv_th.m3u8' -c '泰国'
 
+./addstream -t '加拿大国家电视台中文频道' -u 'https://wowzaprodhd84-lh.akamaihd.net/i/4ae6355d_1@505999/master.m3u8' -c '加拿大'
+
+./addstream -t '澳大利亚天和电视台' -u 'http://rtvcdn.com.au:8082/TV_GG.m3u8' -c '澳大利亚'
+
+
 
 
 
