@@ -38,8 +38,8 @@ func main(){
 		logger.Error(err)
 		return
 	}
-	flag := false
 	for _ , stream := range streams{
+		flag := false
 		var playUrls []model.PlayUrl
 		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 			logger.Error(err)
