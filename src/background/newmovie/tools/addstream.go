@@ -49,6 +49,11 @@ func main(){
 	stream.Pinyin = util.TitleToPinyin(stream.Title)
 	stream.Title = strings.Trim(stream.Title," ")
 	logger.Debug(stream.Title)
+	start := strings.Index(url,"m3u8")
+	m3u8 := ""
+	if start >= 0{
+		m3u8 = url[start:start+4]
+	}
 
 	tx := db.Begin()
 	if err := tx.Where("title = ?",stream.Title).First(&stream).Error ; err == gorm.ErrRecordNotFound{
@@ -61,8 +66,12 @@ func main(){
 		}
 		stream.Category = *category
 		stream.OnLine = constant.MediaStatusOnLine
-		stream.Sort = 0
-
+		if m3u8 == "m3u8"{
+			stream.Sort = 1
+		}else{
+			stream.Sort = 10
+		}
+		
 		if err = tx.Create(&stream).Error ; err != nil{
 			tx.Rollback()
 			logger.Error(err)
@@ -76,11 +85,7 @@ func main(){
 	if err := tx.Where("provider = ? and url = ?",play.Provider,play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
 		play.Title = *title
 		play.OnLine = constant.MediaStatusOnLine
-		start := strings.Index(url,"m3u8")
-		m3u8 := ""
-		if start >= 0{
-			m3u8 = url[start:start+4]
-		}
+
 		if m3u8 == "m3u8"{
 			play.Sort = 1
 		}else{
