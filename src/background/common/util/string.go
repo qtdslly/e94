@@ -30,7 +30,7 @@ func TrimChinese(title string)(string){
 
 func CheckStreamUrl(url string)bool{
 	c2 := make(chan string, 1)
-	ffmpegAddr := "f:/ffmpeg/bin/ffmpeg"
+	ffmpegAddr := "/usr/bin/ffmpeg"
 	go func() {
 		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 aaa.jpg", ffmpegAddr, url)
 		fmt.Println(cmdStr)
