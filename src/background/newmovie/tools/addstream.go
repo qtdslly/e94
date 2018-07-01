@@ -18,14 +18,15 @@ func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
-	title := flag.String("title", "", "stream title")
-	url := flag.String("url", "", "stream play url")
-	provider := flag.Int("provider", 100, "provider")
+	title := flag.String("t", "", "stream title")
+	url := flag.String("u", "", "stream play url")
+	category := flag.Int("c", "", "provider")
+
 	flag.Parse()
 
 
-	if len(*title) == 0 || len(*url) == 0 || *provider == 100{
-		logger.Debug("useage: ./addstream -provider 8 -title 北京卫视 -url http://www.abc.m3u8")
+	if len(*title) == 0 || len(*url) == 0{
+		logger.Debug("useage: ./addstream -p 8 -t 北京卫视 -u http://www.abc.m3u8 -c 美国")
 		return
 	}
 	err := config.LoadConfig(*configPath)
@@ -58,7 +59,7 @@ func main(){
 		}else{
 			stream.Category = "地方"
 		}
-
+		stream.Category = *category
 		stream.OnLine = constant.MediaStatusOnLine
 		stream.Sort = 0
 
@@ -71,11 +72,20 @@ func main(){
 
 	var play model.PlayUrl
 	play.Url = *url
-	play.Provider = uint32(*provider)
+	play.Provider = uint32(0)
 	if err := tx.Where("provider = ? and url = ?",play.Provider,play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
 		play.Title = *title
 		play.OnLine = constant.MediaStatusOnLine
-		play.Sort = 0
+		start := strings.Index(url,"m3u8")
+		m3u8 := ""
+		if start >= 0{
+			m3u8 = url[start:start+4]
+		}
+		if m3u8 == "m3u8"{
+			play.Sort = 1
+		}else{
+			play.Sort = 10
+		}
 		play.ContentType = uint8(constant.MediaTypeStream)
 		play.ContentId = stream.Id
 		play.Quality = uint8(constant.VideoQuality720p)
