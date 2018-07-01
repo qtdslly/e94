@@ -79,6 +79,7 @@ func main(){
 
 		stream.Sort = sort
 		stream.Title = sTitle
+		stream.Category = *category
 		stream.Pinyin = util.TitleToPinyin(stream.Title)
 		logger.Debug(stream.Title)
 		if err = tx.Save(&stream).Error ; err != nil{
@@ -107,11 +108,7 @@ func main(){
 			stream.Pinyin = util.TitleToPinyin(stream.Title)
 
 			stream.OnLine = constant.MediaStatusOnLine
-			if m3u8 == "m3u8"{
-				stream.Sort = sort
-			}else{
-				stream.Sort = sort
-			}
+			stream.Sort = sort
 
 			if err = tx.Create(&stream).Error ; err != nil{
 				tx.Rollback()

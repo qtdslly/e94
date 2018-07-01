@@ -27,12 +27,22 @@
 ./addstream -t 'CGTN-西语' -u 'http://live.cgtn.com/cctv-e.m3u8' -c '央视'
 ./addstream -t 'CGTN-阿语' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
 
-./addstream -t '美国HBO中文' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '美国'
+./addstream -t '美国HBO中文' -u 'http://iss06.ott.net.tw:8086/live/coship_DCTV2291445940028640_1200.m3u8' -c '美国'
 
 
+./addstream -t '成都新闻综合' -u 'http://web-play.pptv.com/web-m3u8-300356.m3u8' -c '四川'
+./addstream -t '成都影视文艺' -u 'http://web-play.pptv.com/web-m3u8-300474.m3u8' -c '四川'
+./addstream -t '成都少儿频道' -u 'http://web-play.pptv.com/web-m3u8-300476.m3u8' -c '四川'
+./addstream -t '韩国中央台' -u 'http://122.202.129.136:1935/live/ch5/playlist.m3u8' -c '韩国'
+./addstream -t '邮轮旅游' -u 'http://web-play.pptv.com/web-m3u8-300425.m3u8' -c '广东'
+./addstream -t '香港卫视4' -u 'http://web-play.pptv.com/web-m3u8-300366.m3u8' -c '香港'
 
-
-
+成都新闻综合(备用2)	http://web-play.pptv.com/web-m3u8-300356.m3u8
+SUCCESS成都影视文艺(备用)	http://web-play.pptv.com/web-m3u8-300474.m3u8
+SUCCESS成都少儿频道(备用2)	http://web-play.pptv.com/web-m3u8-300476.m3u8
+韩国中央台	http://122.202.129.136:1935/live/ch5/playlist.m3u8
+邮轮旅游	http://web-play.pptv.com/web-m3u8-300425.m3u8
+香港卫视4	http://web-play.pptv.com/web-m3u8-300366.m3u8
 
 
 
