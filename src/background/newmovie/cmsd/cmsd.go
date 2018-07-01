@@ -75,12 +75,16 @@ func main(){
 	{
 		cms.POST("/install",aapi.InstallationHandler)
 
-		cms.GET("/video/list", aapi.VideoListHandler)
-		cms.GET("/video", aapi.VideoDetailHandler)
+		//cms.GET("/video/list", aapi.VideoListHandler)
+		//cms.GET("/video", aapi.VideoDetailHandler)
 		cms.GET("/video/search", aapi.VideoSearchHandler)
 		cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
 
 		cms.GET("/recommend", aapi.RecommendHandler)
+
+		cms.GET("/video/list", aapi.StreamListHandler)
+		cms.GET("/video", aapi.StreamDetailHandler)
+
 
 		cms.GET("/notification", aapi.NotifcationHandler)
 

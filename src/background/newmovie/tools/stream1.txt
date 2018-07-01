@@ -128,5 +128,49 @@ fashion tv发型及化妆,http://fash1043.cloudycdn.services/slive/_definst_/ftv
 fashion tv时尚新娘,http://fash1043.cloudycdn.services/slive/_definst_/ftv_bridal_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
 fashion tv巴西,http://fash1043.cloudycdn.services/slive/_definst_/ftv_hevc_test.smil/chunklist_b20000000_t64MjE2MHA=.m3u8
 fashion tv纽约,http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist_b680000_t64MzYwcA==.m3u8
-- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-238362-1-1.html
 
+
+1,http://61.216.177.73/sta/ch1865020.m3u8
+东森购物5,http://61.216.177.73/sta/ch1865021.m3u8
+富立HD,http://61.216.177.73/sta/ch1865022.m3u8
+芭利大舞台,http://61.216.177.73/sta/ch1865023.m3u8
+客家电视台,http://61.216.177.73/sta/ch1865024.m3u8
+美好1台,http://61.216.177.73/sta/ch1865029.m3u8
+澳亚卫视,http://61.216.177.73/sta/ch1865030.m3u8
+TITV,http://61.216.177.73/sta/ch1865031.m3u8
+MO1台,http://61.216.177.73/sta/ch1865032.m3u8
+MO2台,http://61.216.177.73/sta/ch1865033.m3u8
+群老,http://61.216.177.73/sta/ch1865034.m3u8
+中国实验台,http://61.216.177.73/sta/ch1865035.m3u8
+台湾电影,http://61.216.177.73/sta/ch1865036.m3u8
+中方音乐台,http://61.216.177.73/sta/ch1865037.m3u8
+韩国教育台,http://61.216.177.73/sta/ch1865038.m3u8
+韩国美女台,http://61.216.177.73/sta/ch1865039.m3u8
+韩国实验台,http://61.216.177.73/sta/ch1865040.m3u8
+国会频道2,http://61.216.177.73/sta/ch1865042.m3u8
+国会频道3,http://61.216.177.73/sta/ch1864043.m3u8
+
+亲爱的活祖宗第01集|https://v8.yongjiu8.com/20180614/8WM1BQQK/index.m3u8
+亲爱的活祖宗第02集|https://v8.yongjiu8.com/20180614/k3Ew1Dzn/index.m3u8
+亲爱的活祖宗第03集|https://v8.yongjiu8.com/20180614/e695QyQt/index.m3u8
+亲爱的活祖宗第04集|https://v8.yongjiu8.com/20180614/tZxyhzIe/index.m3u8
+亲爱的活祖宗第05集|https://v8.yongjiu8.com/20180614/wtzmRYUq/index.m3u8
+亲爱的活祖宗第06集|https://v8.yongjiu8.com/20180614/tjD7FEjC/index.m3u8
+亲爱的活祖宗第07集|https://v8.yongjiu8.com/20180614/5PvFlYDy/index.m3u8
+亲爱的活祖宗第08集|https://v8.yongjiu8.com/20180614/PMKPsfB9/index.m3u8
+亲爱的活祖宗第09集|https://v8.yongjiu8.com/20180614/bMoGrRXl/index.m3u8
+亲爱的活祖宗第10集|https://v8.yongjiu8.com/20180614/ZHulkbiy/index.m3u8
+亲爱的活祖宗第11集|https://v8.yongjiu8.com/20180614/wCEVdiaY/index.m3u8
+亲爱的活祖宗第12集|https://v8.yongjiu8.com/20180614/qVm7bFWt/index.m3u8
+亲爱的活祖宗第13集|https://v8.yongjiu8.com/20180629/LkIuZN5k/index.m3u8
+亲爱的活祖宗第14集|https://v8.yongjiu8.com/20180629/IOKlShOf/index.m3u8
+亲爱的活祖宗第15集|https://v8.yongjiu8.com/20180629/ShxiOltr/index.m3u8
+亲爱的活祖宗第16集|https://v8.yongjiu8.com/20180629/3fMpLHmI/index.m3u8
+亲爱的活祖宗第17集|https://v8.yongjiu8.com/20180629/MLzLcHeG/index.m3u8
+亲爱的活祖宗第18集|https://v8.yongjiu8.com/20180629/h5NDHDJj/index.m3u8
+亲爱的活祖宗第19集|https://v8.yongjiu8.com/20180629/8iaA2ADS/index.m3u8
+亲爱的活祖宗第20集|https://v8.yongjiu8.com/20180629/bysWqZCP/index.m3u8
+亲爱的活祖宗第21集|https://v8.yongjiu8.com/20180629/ivuVAt98/index.m3u8
+亲爱的活祖宗第22集|https://v8.yongjiu8.com/20180629/VLhmHGO9/index.m3u8
+亲爱的活祖宗第23集|https://v8.yongjiu8.com/20180629/vbRosnPH/index.m3u8
+亲爱的活祖宗第24集|https://v8.yongjiu8.com/20180629/XJqmYdCr/index.m3u8
