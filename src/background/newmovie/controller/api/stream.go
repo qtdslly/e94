@@ -98,7 +98,16 @@ func StreamDetailHandler(c *gin.Context) {
 		logger.Error("query play_url err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
-	apiVideo.Urls = playUrls
+
+	for _,playUrl := range playUrls{
+		var pUrl apimodel.PlayUrl
+		pUrl.Id = playUrl.Id
+		pUrl.Provider = playUrl.Provider
+		pUrl.IsPlay = true
+		pUrl.Url = playUrl.Url
+		apiVideo.Urls = append(apiVideo.Urls,&pUrl)
+	}
+
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideo})
 }
 
