@@ -81,7 +81,7 @@ func main(){
 		stream.Title = sTitle
 		stream.Pinyin = util.TitleToPinyin(stream.Title)
 		logger.Debug(stream.Title)
-		if err = tx.Update(&stream).Error ; err != nil{
+		if err = tx.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			tx.Rollback()
 			return
