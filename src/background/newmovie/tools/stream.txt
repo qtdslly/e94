@@ -3867,7 +3867,8 @@ CCTV8HD|http://58.252.186.17:9009/live/chid=715
 深圳|http://58.252.186.17:9009/live/chid=703
 深圳DV生活|http://58.252.186.17:9009/live/chid=226
 浙江|http://58.252.186.17:9009/live/chid=702
-CCTV 世界地理|http://58.252.186.17:9009/live/chid=100CCTV1HD|http://58.252.186.17:9009/live/chid=705
+CCTV 世界地理|http://58.252.186.17:9009/live/chid=100
+CCTV1HD|http://58.252.186.17:9009/live/chid=705
 CCTV第一剧场|http://58.252.186.17:9009/live/chid=219
 CCTV电视指南|http://58.252.186.17:9009/live/chid=211
 CCTV发现之旅|http://58.252.186.17:9009/live/chid=116

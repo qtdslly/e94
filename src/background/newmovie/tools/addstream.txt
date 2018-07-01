@@ -18,6 +18,16 @@
 ./addstream -t '澳大利亚天和电视台' -u 'http://rtvcdn.com.au:8082/TV_GG.m3u8' -c '澳大利亚'
 
 
+./addstream -t '东森新闻' -u 'http://zqzxl.live.maxtv.cn/live/dsxwhd/playlist.m3u8' -c '台湾'
+
+./addstream -t 'CGTN-国际' -u 'http://live.cgtn.com/manifest.m3u8' -c '央视'
+./addstream -t 'CGTN-法语' -u 'http://live.cgtn.com/cctv-f.m3u8' -c '央视'
+./addstream -t 'CGTN-记录' -u 'http://live.cgtn.com/cctv-d.m3u8' -c '央视'
+./addstream -t 'CGTN-俄语' -u 'http://live.cgtn.com/cctv-r.m3u8' -c '央视'
+./addstream -t 'CGTN-西语' -u 'http://live.cgtn.com/cctv-e.m3u8' -c '央视'
+./addstream -t 'CGTN-阿语' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
+
+./addstream -t 'HBO中文' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
 
 
 

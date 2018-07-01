@@ -117,21 +117,17 @@ func main(){
 				logger.Error(err)
 				return
 			}
+		}
 
-			play.Url = *url
-			play.ContentId = stream.Id
-			play.Provider = uint32(0)
-			play.Title = *title
-			play.OnLine = constant.MediaStatusOnLine
-			play.Sort = sort
-			play.ContentType = uint8(constant.MediaTypeStream)
-			play.Quality = uint8(constant.VideoQuality720p)
-			if err = tx.Create(&play).Error ; err != nil{
-				tx.Rollback()
-				logger.Error(err)
-				return
-			}
-		}else if err == nil{
+		play.Url = *url
+		play.ContentId = stream.Id
+		play.Provider = uint32(0)
+		play.Title = *title
+		play.OnLine = constant.MediaStatusOnLine
+		play.Sort = sort
+		play.ContentType = uint8(constant.MediaTypeStream)
+		play.Quality = uint8(constant.VideoQuality720p)
+		if err = tx.Create(&play).Error ; err != nil{
 			tx.Rollback()
 			logger.Error(err)
 			return
