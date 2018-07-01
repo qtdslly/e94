@@ -84,7 +84,7 @@ func StreamDetailHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var stream model.Stream
-	if err = db.Where("id = ? and on_line = ?",p.Id,constant.MediaStatusOnLine).Find(&stream).Error ; err != nil{
+	if err = db.Where("id = ? and on_line = ?",p.Id,constant.MediaStatusOnLine).First(&stream).Error ; err != nil{
 		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
