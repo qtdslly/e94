@@ -11,6 +11,7 @@
 
 
 
+./addstream -t '泰国国家电视台' -u 'http://live.nationtv.tv/hls/ntv_th.m3u8' -c '泰国'
 
 
 

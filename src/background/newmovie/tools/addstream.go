@@ -65,19 +65,20 @@ func main(){
 	}
 
 	var stream model.Stream
+	stream.Title = *title
+	stream.Title = strings.Replace(stream.Title,"高清","",-1)
+	stream.Title = strings.Replace(stream.Title,"-","",-1)
+	stream.Title = util.TrimChinese(stream.Title)
+	stream.Pinyin = util.TitleToPinyin(stream.Title)
+	stream.Title = strings.Trim(stream.Title," ")
+	logger.Debug(stream.Title)
 	if urlFound {
 		if err := tx.Where("id = ?", play.ContentId).First(&stream).Error; err != nil {
 			tx.Rollback()
 			logger.Error(err)
 			return
 		}
-		stream.Title = *title
-		stream.Title = strings.Replace(stream.Title,"高清","",-1)
-		stream.Title = strings.Replace(stream.Title,"-","",-1)
-		stream.Title = util.TrimChinese(stream.Title)
-		stream.Pinyin = util.TitleToPinyin(stream.Title)
-		stream.Title = strings.Trim(stream.Title," ")
-		logger.Debug(stream.Title)
+
 		stream.Sort = sort
 		if err = tx.Save(&stream).Error ; err != nil{
 			logger.Error(err)
