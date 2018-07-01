@@ -64,14 +64,12 @@ func main(){
 		urlFound = true
 	}
 
+	sTitle := *title
+	sTitle = strings.Replace(sTitle,"高清","",-1)
+	sTitle = strings.Replace(sTitle,"-","",-1)
+	sTitle = util.TrimChinese(sTitle)
+	sTitle = strings.Trim(sTitle," ")
 	var stream model.Stream
-	stream.Title = *title
-	stream.Title = strings.Replace(stream.Title,"高清","",-1)
-	stream.Title = strings.Replace(stream.Title,"-","",-1)
-	stream.Title = util.TrimChinese(stream.Title)
-	stream.Title = strings.Trim(stream.Title," ")
-	stream.Pinyin = util.TitleToPinyin(stream.Title)
-	logger.Debug(stream.Title)
 	if urlFound {
 		if err := tx.Where("id = ?", play.ContentId).First(&stream).Error; err != nil {
 			tx.Rollback()
@@ -80,6 +78,9 @@ func main(){
 		}
 
 		stream.Sort = sort
+		stream.Title = sTitle
+		stream.Pinyin = util.TitleToPinyin(stream.Title)
+		logger.Debug(stream.Title)
 		if err = tx.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			tx.Rollback()
@@ -93,6 +94,7 @@ func main(){
 			return
 		}
 	}else{
+		stream.Title = sTitle
 		if err := tx.Where("title = ?",stream.Title).First(&stream).Error ; err == gorm.ErrRecordNotFound{
 			if strings.Contains(stream.Title,"CCTV"){
 				stream.Category = "央视"
@@ -101,6 +103,7 @@ func main(){
 			}else{
 				stream.Category = *category
 			}
+			stream.Pinyin = util.TitleToPinyin(stream.Title)
 
 			stream.OnLine = constant.MediaStatusOnLine
 			if m3u8 == "m3u8"{
