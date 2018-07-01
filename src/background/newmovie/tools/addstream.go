@@ -20,7 +20,7 @@ func main(){
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	title := flag.String("t", "", "stream title")
 	url := flag.String("u", "", "stream play url")
-	category := flag.Int("c", "", "provider")
+	category := flag.String("c", "", "provider")
 
 	flag.Parse()
 
@@ -62,16 +62,16 @@ func main(){
 		}else if strings.Contains(stream.Title,"卫视"){
 			stream.Category = "卫视"
 		}else{
-			stream.Category = "地方"
+			stream.Category = *category
 		}
-		stream.Category = *category
+
 		stream.OnLine = constant.MediaStatusOnLine
 		if m3u8 == "m3u8"{
 			stream.Sort = 1
 		}else{
 			stream.Sort = 10
 		}
-		
+
 		if err = tx.Create(&stream).Error ; err != nil{
 			tx.Rollback()
 			logger.Error(err)
