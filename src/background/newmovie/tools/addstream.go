@@ -49,10 +49,10 @@ func main(){
 	stream.Pinyin = util.TitleToPinyin(stream.Title)
 	stream.Title = strings.Trim(stream.Title," ")
 	logger.Debug(stream.Title)
-	start := strings.Index(url,"m3u8")
+	start := strings.Index(*url,"m3u8")
 	m3u8 := ""
 	if start >= 0{
-		m3u8 = url[start:start+4]
+		m3u8 = *url[start:start+4]
 	}
 
 	tx := db.Begin()
