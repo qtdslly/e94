@@ -37,15 +37,37 @@
 ./addstream -t '邮轮旅游' -u 'http://web-play.pptv.com/web-m3u8-300425.m3u8' -c '广东'
 ./addstream -t '香港卫视4' -u 'http://web-play.pptv.com/web-m3u8-300366.m3u8' -c '香港'
 
-成都新闻综合(备用2)	http://web-play.pptv.com/web-m3u8-300356.m3u8
-SUCCESS成都影视文艺(备用)	http://web-play.pptv.com/web-m3u8-300474.m3u8
-SUCCESS成都少儿频道(备用2)	http://web-play.pptv.com/web-m3u8-300476.m3u8
-韩国中央台	http://122.202.129.136:1935/live/ch5/playlist.m3u8
-邮轮旅游	http://web-play.pptv.com/web-m3u8-300425.m3u8
-香港卫视4	http://web-play.pptv.com/web-m3u8-300366.m3u8
+./addstream -t '凤凰卫视资讯台' -u 'http://223.110.243.142/PLTV/2510088/224/3221227163/1.m3u8' -c '香港'
+./addstream -t '皇家马德里fc足球台' -u 'http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hweben_1@300662/index_3_av-b.m3u8' -c '西班牙'
+
+./addstream -t '中华卫视神州台' -u 'http://pull.kapad.cn/live/livechtv/playlist.m3u8' -c '香港'
 
 
 
+./addstream -t 'CCTV风云剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227343/1.m3u8' -c '央视'
+
+./addstream -t 'CCTV电视指南' -u 'http://223.110.243.142/PLTV/2510088/224/3221227337/1.m3u8' -c '央视'
+./addstream -t 'CCTV怀旧剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227346/1.m3u8' -c '央视'
+./addstream -t 'CCTV高尔夫网球' -u 'http://223.110.243.142/PLTV/2510088/224/3221227347/1.m3u8' -c '央视'
+./addstream -t 'CCTV第一剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227340/1.m3u8' -c '央视'
+./addstream -t 'CCTV风云足球' -u 'http://223.110.243.142/PLTV/2510088/224/3221227344/1.m3u8' -c '央视'
+
+./addstream -t '索尼台2' -u 'http://cshms3.airtel.tv/PLTV/88888888/224/3221225932/01.m3u8' -c '日本'
+
+./addstream -t '中国气象频道' -u 'http://223.99.186.132:6410/shandong_cabletv.live.zte.com/223.99.189.25:8089/00/SNM/CHANNEL00000609/index.m3u8' -c '央视'
+./addstream -t '中国气象频道' -u 'http://hls.weathertv.cn/tslslive/qCFIfHB/hls/live_sd.m3u8' -c '央视'
+./addstream -t '中国气象频道' -u 'http://223.110.245.157/ott.js.chinamobile.com/PLTV/3/224/3221227438/index.m3u8' -c '央视'
+./addstream -t 'CCTV5' -u 'http://cctv5.txty.5213.liveplay.myqcloud.com/live/cctv5_txty.m3u8' -c '央视'
+
+./addstream -t '卡塔尔半岛电视台' -u 'http://aljazeera-doc-apple-live.adaptive.level3.net/apple/aljazeera/hq-doc/800kStream.m3u8' -c '卡塔尔'
+./addstream -t '欧洲新闻' -u 'http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/969/index.m3u8' -c '欧洲'
+
+./addstream -t '海南藏语' -u 'http://live.hnzzzzzdst.com/channel1/sd/live.m3u8' -c '海南'
+./addstream -t '邵武综合' -u 'http://r.gslb.lecloud.com/live/hls/201606033000003fc13/desc.m3u8' -c '福建'
+./addstream -t '韩国-CBS' -u 'http://cbs-live.gscdn.com/cbs-live/cbs-live.stream/playlist.m3u8' -c '韩国'
+
+./addstream -t '江油新闻' -u 'http://vod.scjygd.com:1935/live/smil:xwzh_copy.smil/playlist.m3u8' -c '四川'
 
 
-
+江油新闻	http://vod.scjygd.com:1935/live/smil:xwzh_copy.smil/playlist.m3u8
+福建安溪   http://r.gslb.lecloud.com/live/hls/2018010830000007213/desc.m3u8

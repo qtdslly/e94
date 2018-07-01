@@ -38,16 +38,34 @@ func main(){
 		logger.Error(err)
 		return
 	}
+	flag := false
 	for _ , stream := range streams{
 		var playUrls []model.PlayUrl
-		if err = db.Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
+		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 			logger.Error(err)
 			return
 		}
 		for _,playUrl := range playUrls{
 			if CheckStreamUrl(stream.Id,playUrl.Url){
+				flag = true
+				playUrl.OnLine = true
+				if err = db.Save(&playUrl).Error ; err != nil{
+					logger.Error(err)
+					return
+				}
 				break
+			}else{
+				playUrl.OnLine = false
+				if err = db.Save(&playUrl).Error ; err != nil{
+					logger.Error(err)
+					return
+				}
 			}
+		}
+		stream.OnLine = flag
+		if err = db.Save(&stream).Error ; err != nil{
+			logger.Error(err)
+			return
 		}
 	}
 }

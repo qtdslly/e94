@@ -112,10 +112,21 @@ ELTA体育3,http://nscreenn-chtmod.cdn.hinet.net/live/FOOTBALL/04.m3u8
 
 
 意大利葡萄酒,rtmp://212.43.97.35/winechannel/winechannel
-- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-238177-1-1.html
 
 
 
 
-
+fashion tv原创,http://fash1043.cloudycdn.services/slive/_definst_/ftv_pg16_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv巴黎,http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist_b680000_t64MzYwcA==.m3u8
+fashion tv男性,http://fash1043.cloudycdn.services:80/slive/_definst_/ftv_fmen_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv顶级模特,http://fash1043.cloudycdn.services/slive/_definst_/ftv_top_models_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv型号的健身,http://fash1043.cloudycdn.services/slive/_definst_/ftv_fashion_fitness_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv时装周,http://fash1043.cloudycdn.services/slive/_definst_/ftv_fashion_weeks_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv时尚电影,http://fash1043.cloudycdn.services/slive/_definst_/ftv_fashion_weeks_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv照片拍摄,http://fash1043.cloudycdn.services/slive/_definst_/ftv_photoshoots_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv发型及化妆,http://fash1043.cloudycdn.services/slive/_definst_/ftv_hair_and_makeup_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv时尚新娘,http://fash1043.cloudycdn.services/slive/_definst_/ftv_bridal_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
+fashion tv巴西,http://fash1043.cloudycdn.services/slive/_definst_/ftv_hevc_test.smil/chunklist_b20000000_t64MjE2MHA=.m3u8
+fashion tv纽约,http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist_b680000_t64MzYwcA==.m3u8
+- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-238362-1-1.html
 
