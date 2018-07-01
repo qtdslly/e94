@@ -89,7 +89,7 @@ func StreamDetailHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
-	var apiVideo *apimodel.Video
+	var apiVideo apimodel.Video
 	apiVideo.Id = stream.Id
 	apiVideo.ThumbX = "http://www.ezhantao.com/thumb/stream/" + fmt.Sprint(stream.Id) + ".jpg"
 	apiVideo.Title = stream.Title
