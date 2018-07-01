@@ -69,8 +69,8 @@ func main(){
 	sTitle = strings.Replace(sTitle,"-","",-1)
 	sTitle = util.TrimChinese(sTitle)
 	sTitle = strings.Trim(sTitle," ")
-	var stream model.Stream
 	if urlFound {
+		var stream model.Stream
 		if err := tx.Where("id = ?", play.ContentId).First(&stream).Error; err != nil {
 			tx.Rollback()
 			logger.Error(err)
@@ -94,6 +94,7 @@ func main(){
 			return
 		}
 	}else{
+		var stream model.Stream
 		stream.Title = sTitle
 		if err := tx.Where("title = ?",stream.Title).First(&stream).Error ; err == gorm.ErrRecordNotFound{
 			if strings.Contains(stream.Title,"CCTV"){

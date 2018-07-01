@@ -27,7 +27,7 @@
 ./addstream -t 'CGTN-西语' -u 'http://live.cgtn.com/cctv-e.m3u8' -c '央视'
 ./addstream -t 'CGTN-阿语' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
 
-./addstream -t 'HBO中文' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
+./addstream -t '美国HBO中文' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '美国'
 
 
 
