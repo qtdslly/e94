@@ -41,14 +41,7 @@ func main(){
 	}
 	db.LogMode(true)
 
-	var stream model.Stream
-	stream.Title = *title
-	stream.Title = strings.Replace(stream.Title,"高清","",-1)
-	stream.Title = strings.Replace(stream.Title,"-","",-1)
-	stream.Title = util.TrimChinese(stream.Title)
-	stream.Pinyin = util.TitleToPinyin(stream.Title)
-	stream.Title = strings.Trim(stream.Title," ")
-	logger.Debug(stream.Title)
+	tx := db.Begin()
 
 	u := *url
 	start := strings.Index(u,"m3u8")
@@ -56,53 +49,91 @@ func main(){
 	if start >= 0{
 		m3u8 = u[start:start+4]
 	}
-
-	tx := db.Begin()
-	if err := tx.Where("title = ?",stream.Title).First(&stream).Error ; err == gorm.ErrRecordNotFound{
-		if strings.Contains(stream.Title,"CCTV"){
-			stream.Category = "央视"
-		}else if strings.Contains(stream.Title,"卫视"){
-			stream.Category = "卫视"
-		}else{
-			stream.Category = *category
-		}
-
-		stream.OnLine = constant.MediaStatusOnLine
-		if m3u8 == "m3u8"{
-			stream.Sort = 1
-		}else{
-			stream.Sort = 10
-		}
-
-		if err = tx.Create(&stream).Error ; err != nil{
-			tx.Rollback()
-			logger.Error(err)
-			return
-		}
+	var sort uint32
+	if m3u8 == "m3u8"{
+		sort = uint32(1)
+	}else{
+		sort = uint32(10)
 	}
 
+	urlFound := false
 	var play model.PlayUrl
 	play.Url = *url
-	play.Provider = uint32(0)
-	if err := tx.Where("provider = ? and url = ?",play.Provider,play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
-		play.Title = *title
-		play.OnLine = constant.MediaStatusOnLine
+	if err := tx.Where("content_type = 4 and url = ?",play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
+	}else if err == nil{
+		urlFound = true
+	}
 
-		if m3u8 == "m3u8"{
-			play.Sort = 1
-		}else{
-			play.Sort = 10
+	var stream model.Stream
+	if urlFound {
+		if err := tx.Where("id = ?", play.ContentId).First(&stream).Error; err != nil {
+			tx.Rollback()
+			logger.Error(err)
+			return
 		}
-		play.ContentType = uint8(constant.MediaTypeStream)
-		play.ContentId = stream.Id
-		play.Quality = uint8(constant.VideoQuality720p)
+		stream.Title = *title
+		stream.Title = strings.Replace(stream.Title,"高清","",-1)
+		stream.Title = strings.Replace(stream.Title,"-","",-1)
+		stream.Title = util.TrimChinese(stream.Title)
+		stream.Pinyin = util.TitleToPinyin(stream.Title)
+		stream.Title = strings.Trim(stream.Title," ")
+		logger.Debug(stream.Title)
+		stream.Sort = sort
+		if err = tx.Save(&stream).Error ; err != nil{
+			logger.Error(err)
+			tx.Rollback()
+			return
+		}
+		play.Sort = sort
+		play.Title = *title
+		if err = tx.Save(&play).Error ; err != nil{
+			logger.Error(err)
+			tx.Rollback()
+			return
+		}
+	}else{
+		if err := tx.Where("title = ?",stream.Title).First(&stream).Error ; err == gorm.ErrRecordNotFound{
+			if strings.Contains(stream.Title,"CCTV"){
+				stream.Category = "央视"
+			}else if strings.Contains(stream.Title,"卫视"){
+				stream.Category = "卫视"
+			}else{
+				stream.Category = *category
+			}
 
-		if err = tx.Create(&play).Error ; err != nil{
+			stream.OnLine = constant.MediaStatusOnLine
+			if m3u8 == "m3u8"{
+				stream.Sort = sort
+			}else{
+				stream.Sort = sort
+			}
+
+			if err = tx.Create(&stream).Error ; err != nil{
+				tx.Rollback()
+				logger.Error(err)
+				return
+			}
+
+			play.Url = *url
+			play.ContentId = stream.Id
+			play.Provider = uint32(0)
+			play.Title = *title
+			play.OnLine = constant.MediaStatusOnLine
+			play.Sort = sort
+			play.ContentType = uint8(constant.MediaTypeStream)
+			play.Quality = uint8(constant.VideoQuality720p)
+			if err = tx.Create(&play).Error ; err != nil{
+				tx.Rollback()
+				logger.Error(err)
+				return
+			}
+		}else if err == nil{
 			tx.Rollback()
 			logger.Error(err)
 			return
 		}
 	}
+
 	tx.Commit()
 }
 

@@ -3380,13 +3380,15 @@ CHING连续剧 M-tv,rtmp://edge1.everyon.tv/etv1sb/phd783?country=CN&quality=0&c
 新加坡Toggle LIVE2,http://tgllive2-lh.akamaihd.net/i/toggle_live2@342560/master.m3u8
 泰国东盟卫视,http://103.40.138.89:1935/live/mgtv/playlist.m3u8
 欧洲膳食好美味,http://182.92.189.193:1935/live/h_food_1/playlist.m3u8
-美国中文台,http://media3.sinovision.net:1935/live/livestream/playlist.m3u8
-美国中文台,rtmp://media3.sinovision.net:1935/live/livestream
-美國中文台,http://ec.sinovision.net/video/ts/lv.m3u8
-泰国中文台,rtmp://110.164.48.237:1935/tcctv_ch002/tcctv02.stream_live1#http://110.164.48.237:1935:1935/tcctv_ch002/tcctv02.stream_live1/chunklist.m3u8
-新唐人电视,rtmp://123.108.164.71/etv2/phd1058#http://123.108.164.71/etv2/phd1058/playlist.m3u8
+美国中文电视,http://media3.sinovision.net:1935/live/livestream/playlist.m3u8
+美国中文电视,rtmp://media3.sinovision.net:1935/live/livestream
+美国中文电视,http://ec.sinovision.net/video/ts/lv.m3u8
+泰国中文台,rtmp://110.164.48.237:1935/tcctv_ch002/tcctv02.stream_live1
+泰国中文台,http://110.164.48.237:1935:1935/tcctv_ch002/tcctv02.stream_live1/chunklist.m3u8
+新唐人电视,rtmp://123.108.164.71/etv2/phd1058
+新唐人电视,http://123.108.164.71/etv2/phd1058/playlist.m3u8
 新唐人亚太,rtmp://123.108.164.71/etv2/phd926
-[WORLD]新唐人電視台,http://174.127.67.246/live400/playlist.m3u8
+新唐人电视,http://174.127.67.246/live400/playlist.m3u8
 美东频道,http://174.127.67.246/live330/playlist.m3u8
 CGNTV中文台,http://cgntv-glive.ofsdelivery.net/live/_definst_/cgntv_ch/playlist.m3u8
 英国天空新闻台,http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8
@@ -3402,7 +3404,6 @@ CGNTV中文台,http://cgntv-glive.ofsdelivery.net/live/_definst_/cgntv_ch/playli
 美国WGN,http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/index_700_av-p.m3u8?sd=10&rebase=on
 美国航天NASA,http://nasatv-lh.akamaihd.net/i/NASA_101@319270/index_1000_av-p.m3u8
 俄罗斯MTV,http://85.132.78.6:1935/live/muztv.stream/lihattv.m3u8
-MTV,http://149.255.152.110/mtvhits/index.m3u8
 西班牙LA,http://a3live-lh.akamaihd.net/i/lasexta_1@35272/master.m3u8
 卡塔尔半岛台,http://aljazeera-doc-apple-live.adaptive.level3.net/apple/aljazeera/hq-doc/800kStream.m3u8
 半岛纪录 ,rtmp://aljazeeraflashlivefs.fplive.net:1935/aljazeeraflashlive-live/aljazeera_doc_high

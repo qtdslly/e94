@@ -3,6 +3,19 @@
 ./addstream -t '美国中文电视' -u 'http://ec.sinovision.net/video/ts/lv.m3u8' -c '美国'
 
 
+./addstream -t '俄罗斯MTV' -u 'http://85.132.78.6:1935/live/muztv.stream/lihattv.m3u8' -c '俄罗斯'
+
+./addstream -t '马来西亚BERNAMA' -u 'http://stream2.1malaysiaiptv.com/mylive/smil:bernama2_all.smil/playlist.m3u8' -c '马来西亚'
+
+./addstream -t '英国天空新闻台' -u 'http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8' -c '英国'
+
+
+
+
+
+
+
+
 
 
 
