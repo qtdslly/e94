@@ -37,25 +37,25 @@ func main(){
 	}
 
 	for _,stream := range streams{
-		if strings.Contains(stream.Title,"CCTV1"){
+		if stream.Title =="CCTV1"{
 			stream.Sort = 1
-		}else if strings.Contains(stream.Title,"CCTV2"){
+		}else if stream.Title == "CCTV2"{
 			stream.Sort = 2
-		}else if strings.Contains(stream.Title,"CCTV3"){
+		}else if stream.Title == "CCTV3"{
 			stream.Sort = 3
-		}else if strings.Contains(stream.Title,"CCTV4"){
+		}else if stream.Title == "CCTV4"{
 			stream.Sort = 4
-		}else if strings.Contains(stream.Title,"CCTV5"){
+		}else if stream.Title == "CCTV5"{
 			stream.Sort = 5
-		}else if strings.Contains(stream.Title,"CCTV6"){
+		}else if stream.Title == "CCTV6"{
 			stream.Sort = 6
-		}else if strings.Contains(stream.Title,"CCTV7"){
+		}else if stream.Title == "CCTV7"{
 			stream.Sort = 7
-		}else if strings.Contains(stream.Title,"CCTV8"){
+		}else if stream.Title,"CCTV8"){
 			stream.Sort = 8
-		}else if strings.Contains(stream.Title,"CCTV9"){
+		}else if stream.Title == "CCTV9"{
 			stream.Sort = 9
-		}else if strings.Contains(stream.Title,"CCTV10"){
+		}else if stream.Title == "CCTV10"{
 			stream.Sort = 10
 		}else if strings.Contains(stream.Title,"CCTV11"){
 			stream.Sort = 11
@@ -71,8 +71,10 @@ func main(){
 			stream.Sort = 16
 		}else if strings.Contains(stream.Title,"中国教育"){
 			stream.Sort = 17
-		}else if strings.Contains(stream.Title,"NewTV") {
+		}else if strings.Contains(stream.Title,"CGNT") {
 			stream.Sort = 18
+		}else if strings.Contains(stream.Title,"NewTV") {
+			stream.Sort = 19
 		}else if strings.Contains(stream.Title,"中国黄河") || strings.Contains(stream.Title,"中国气象"){
 			stream.Sort = 20
 		}else if strings.Contains(stream.Title,"湖南卫视"){
