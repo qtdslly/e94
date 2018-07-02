@@ -11,6 +11,7 @@ import (
 	"github.com/jinzhu/gorm"
 
 	"flag"
+	"strings"
 )
 
 func main(){
@@ -38,13 +39,19 @@ func main(){
 	}
 
 	for _, stream := range streams{
-		var playUrls []model.PlayUrl
-		if err = db.Where("content_id = ? and content_type = 4",stream.Id).Find(&playUrls).Error ; err != nil{
+		var playUrls []model.StreamSource
+		if err = db.Where("stream_id = ? ",stream.Id).Find(&playUrls).Error ; err != nil{
 			logger.Error(err)
 			continue
 		}
 
 		for _ , playUrl := range playUrls{
+			if strings.Contains(playUrl.Url,"migu") || strings.Contains(playUrl.Url,"starschinalive"){
+				continue
+			}
+			if !strings.Contains(playUrl.Url,"m3u8") && !strings.Contains(playUrl.Url,"rtmp"){
+				continue
+			}
 			if util.CheckStreamUrl(playUrl.Url){
 				fmt.Println("SUCCESS" + stream.Title + "\t" + playUrl.Url)
 			}
