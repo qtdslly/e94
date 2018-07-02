@@ -71,7 +71,7 @@ func main(){
 			stream.Sort = 16
 		}else if strings.Contains(stream.Title,"中国教育"){
 			stream.Sort = 17
-		}else if strings.Contains(stream.Title,"CGNT") {
+		}else if strings.Contains(stream.Title,"CGTN") {
 			stream.Sort = 18
 		}else if strings.Contains(stream.Title,"NewTV") {
 			stream.Sort = 19
