@@ -14,6 +14,7 @@ type ResourceGroup struct {
 	Sort            uint32           `json:"sort"`
 	Count           uint32           `json:"count"`
 	Videos          []*Video         `gorm:"many2many:video_group" json:"videos"`
+	Streams         []*Stream        `gorm:"many2many:stream_group" json:"streams"`
 	CreatedAt       time.Time        `json:"created_at"`
 	UpdatedAt       time.Time        `json:"updated_at"`
 }
