@@ -4,17 +4,11 @@ import (
 	"background/newmovie/config"
 	"background/common/logger"
 	"background/newmovie/model"
-	"background/common/util"
-
 	"strings"
-	"background/common/constant"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
 	"flag"
-	"os"
-	"bufio"
-	"io"
 )
 
 func main(){
