@@ -143,6 +143,8 @@ func main(){
 			stream.Sort = 76
 		}else if strings.Contains(stream.Category,"西藏"){
 			stream.Sort = 77
+		}else if strings.Contains(stream.Category,"特色") {
+			stream.Sort = 80
 		}else if strings.Contains(stream.Category,"风景"){
 			stream.Sort = 81
 		}else if strings.Contains(stream.Category,"香港"){
