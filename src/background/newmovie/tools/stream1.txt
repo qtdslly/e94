@@ -98,24 +98,13 @@ CCTV体育,http://116.199.5.51:8114/LIVES/index.m3u8?Fsv_otype=1&FvSeid=&Pconten
 98,http://116.199.5.51:8114/LIVES/index.m3u8?Fsv_otype=1&FvSeid=&Pcontent_id=&Provider_id=&Fsv_chan_hls_se_idx=98
 99,http://116.199.5.51:8114/LIVES/index.m3u8?Fsv_otype=1&FvSeid=&Pcontent_id=&Provider_id=&Fsv_chan_hls_se_idx=99
 100,http://116.199.5.51:8114/LIVES/index.m3u8?Fsv_otype=1&FvSeid=&Pcontent_id=&Provider_id=&Fsv_chan_hls_se_idx=100
-
-
 凤凰香港|http://live.fengshows.com/live/PHK_500k/index.m3u8?ts=1526841084049&token=d754aa8774f70c578ffe9ed09aba6e41
 凤凰中文|http://live.fengshows.com/live/PCC_500k/index.m3u8?ts=1526841084049&token=d754aa8774f70c578ffe9ed09aba6e41
 凤凰资讯|http://live.fengshows.com/live/PIN_500k/index.m3u8?ts=1526841084049&token=d754aa8774f70c578ffe9ed09aba6e41
-
-
 RTE2,http://77.226.204.228:25461/live/test/test/51.ts
 ELTA体育3,http://nscreenn-chtmod.cdn.hinet.net/live/FOOTBALL/04.m3u8
-
 东森新闻|http://zqzxl.live.maxtv.cn/live/dsxwhd/playlist.m3u8
-
-
 意大利葡萄酒,rtmp://212.43.97.35/winechannel/winechannel
-
-
-
-
 fashion tv原创,http://fash1043.cloudycdn.services/slive/_definst_/ftv_pg16_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
 fashion tv巴黎,http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist_b680000_t64MzYwcA==.m3u8
 fashion tv男性,http://fash1043.cloudycdn.services:80/slive/_definst_/ftv_fmen_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
@@ -128,8 +117,6 @@ fashion tv发型及化妆,http://fash1043.cloudycdn.services/slive/_definst_/ftv
 fashion tv时尚新娘,http://fash1043.cloudycdn.services/slive/_definst_/ftv_bridal_adaptive.smil/chunklist_b900000_t64MzYwcA==.m3u8
 fashion tv巴西,http://fash1043.cloudycdn.services/slive/_definst_/ftv_hevc_test.smil/chunklist_b20000000_t64MjE2MHA=.m3u8
 fashion tv纽约,http://fash1043.cloudycdn.services/slive/_definst_/ftv_paris_adaptive.smil/chunklist_b680000_t64MzYwcA==.m3u8
-
-
 1,http://61.216.177.73/sta/ch1865020.m3u8
 东森购物5,http://61.216.177.73/sta/ch1865021.m3u8
 富立HD,http://61.216.177.73/sta/ch1865022.m3u8
@@ -149,28 +136,3 @@ MO2台,http://61.216.177.73/sta/ch1865033.m3u8
 韩国实验台,http://61.216.177.73/sta/ch1865040.m3u8
 国会频道2,http://61.216.177.73/sta/ch1865042.m3u8
 国会频道3,http://61.216.177.73/sta/ch1864043.m3u8
-
-亲爱的活祖宗第01集|https://v8.yongjiu8.com/20180614/8WM1BQQK/index.m3u8
-亲爱的活祖宗第02集|https://v8.yongjiu8.com/20180614/k3Ew1Dzn/index.m3u8
-亲爱的活祖宗第03集|https://v8.yongjiu8.com/20180614/e695QyQt/index.m3u8
-亲爱的活祖宗第04集|https://v8.yongjiu8.com/20180614/tZxyhzIe/index.m3u8
-亲爱的活祖宗第05集|https://v8.yongjiu8.com/20180614/wtzmRYUq/index.m3u8
-亲爱的活祖宗第06集|https://v8.yongjiu8.com/20180614/tjD7FEjC/index.m3u8
-亲爱的活祖宗第07集|https://v8.yongjiu8.com/20180614/5PvFlYDy/index.m3u8
-亲爱的活祖宗第08集|https://v8.yongjiu8.com/20180614/PMKPsfB9/index.m3u8
-亲爱的活祖宗第09集|https://v8.yongjiu8.com/20180614/bMoGrRXl/index.m3u8
-亲爱的活祖宗第10集|https://v8.yongjiu8.com/20180614/ZHulkbiy/index.m3u8
-亲爱的活祖宗第11集|https://v8.yongjiu8.com/20180614/wCEVdiaY/index.m3u8
-亲爱的活祖宗第12集|https://v8.yongjiu8.com/20180614/qVm7bFWt/index.m3u8
-亲爱的活祖宗第13集|https://v8.yongjiu8.com/20180629/LkIuZN5k/index.m3u8
-亲爱的活祖宗第14集|https://v8.yongjiu8.com/20180629/IOKlShOf/index.m3u8
-亲爱的活祖宗第15集|https://v8.yongjiu8.com/20180629/ShxiOltr/index.m3u8
-亲爱的活祖宗第16集|https://v8.yongjiu8.com/20180629/3fMpLHmI/index.m3u8
-亲爱的活祖宗第17集|https://v8.yongjiu8.com/20180629/MLzLcHeG/index.m3u8
-亲爱的活祖宗第18集|https://v8.yongjiu8.com/20180629/h5NDHDJj/index.m3u8
-亲爱的活祖宗第19集|https://v8.yongjiu8.com/20180629/8iaA2ADS/index.m3u8
-亲爱的活祖宗第20集|https://v8.yongjiu8.com/20180629/bysWqZCP/index.m3u8
-亲爱的活祖宗第21集|https://v8.yongjiu8.com/20180629/ivuVAt98/index.m3u8
-亲爱的活祖宗第22集|https://v8.yongjiu8.com/20180629/VLhmHGO9/index.m3u8
-亲爱的活祖宗第23集|https://v8.yongjiu8.com/20180629/vbRosnPH/index.m3u8
-亲爱的活祖宗第24集|https://v8.yongjiu8.com/20180629/XJqmYdCr/index.m3u8
