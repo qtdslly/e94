@@ -107,46 +107,52 @@ func main(){
 			stream.Sort = 58
 		}else if strings.Contains(stream.Category,"湖南"){
 			stream.Sort = 59
-		}else if strings.Contains(stream.Category,"广东"){
+		}else if strings.Contains(stream.Category,"河南"){
 			stream.Sort = 60
-		}else if strings.Contains(stream.Category,"安徽"){
+		}else if strings.Contains(stream.Category,"广东"){
 			stream.Sort = 61
-		}else if strings.Contains(stream.Category,"福建"){
+		}else if strings.Contains(stream.Category,"安徽"){
 			stream.Sort = 62
-		}else if strings.Contains(stream.Category,"河北"){
+		}else if strings.Contains(stream.Category,"福建"){
 			stream.Sort = 63
-		}else if strings.Contains(stream.Category,"山东"){
+		}else if strings.Contains(stream.Category,"河北"){
 			stream.Sort = 64
-		}else if strings.Contains(stream.Category,"山西"){
+		}else if strings.Contains(stream.Category,"湖南"){
 			stream.Sort = 65
-		}else if strings.Contains(stream.Category,"陕西"){
+		}else if strings.Contains(stream.Category,"山东"){
 			stream.Sort = 66
-		}else if strings.Contains(stream.Category,"新疆"){
+		}else if strings.Contains(stream.Category,"重庆"){
 			stream.Sort = 67
-		}else if strings.Contains(stream.Category,"内蒙古"){
+		}else if strings.Contains(stream.Category,"陕西"){
 			stream.Sort = 68
-		}else if strings.Contains(stream.Category,"辽宁"){
+		}else if strings.Contains(stream.Category,"新疆"){
 			stream.Sort = 69
-		}else if strings.Contains(stream.Category,"吉林"){
+		}else if strings.Contains(stream.Category,"内蒙古"){
 			stream.Sort = 70
-		}else if strings.Contains(stream.Category,"黑龙江"){
+		}else if strings.Contains(stream.Category,"辽宁"){
 			stream.Sort = 71
-		}else if strings.Contains(stream.Category,"甘肃"){
+		}else if strings.Contains(stream.Category,"吉林"){
 			stream.Sort = 72
-		}else if strings.Contains(stream.Category,"宁夏"){
+		}else if strings.Contains(stream.Category,"黑龙江"){
 			stream.Sort = 73
-		}else if strings.Contains(stream.Category,"贵州"){
+		}else if strings.Contains(stream.Category,"甘肃"){
 			stream.Sort = 74
-		}else if strings.Contains(stream.Category,"云南"){
+		}else if strings.Contains(stream.Category,"宁夏"){
 			stream.Sort = 75
-		}else if strings.Contains(stream.Category,"广西"){
+		}else if strings.Contains(stream.Category,"贵州"){
 			stream.Sort = 76
-		}else if strings.Contains(stream.Category,"西藏"){
+		}else if strings.Contains(stream.Category,"云南"){
 			stream.Sort = 77
-		}else if strings.Contains(stream.Category,"特色") {
+		}else if strings.Contains(stream.Category,"广西"){
+			stream.Sort = 78
+		}else if strings.Contains(stream.Category,"海南"){
+			stream.Sort = 79
+		}else if strings.Contains(stream.Category,"西藏"){
 			stream.Sort = 80
+		}else if strings.Contains(stream.Category,"特色") {
+			stream.Sort = 85
 		}else if strings.Contains(stream.Category,"风景"){
-			stream.Sort = 81
+			stream.Sort = 86
 		}else if strings.Contains(stream.Category,"香港"){
 			stream.Sort = 91
 		}else if strings.Contains(stream.Category,"澳门"){
