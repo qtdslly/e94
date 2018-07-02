@@ -51,7 +51,7 @@ func main(){
 			stream.Sort = 6
 		}else if stream.Title == "CCTV7"{
 			stream.Sort = 7
-		}else if stream.Title,"CCTV8"){
+		}else if stream.Title == "CCTV8"{
 			stream.Sort = 8
 		}else if stream.Title == "CCTV9"{
 			stream.Sort = 9
