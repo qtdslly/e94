@@ -87,7 +87,7 @@ func main(){
 			stream.Sort = 34
 		}else if strings.Contains(stream.Title,"北京卫视"){
 			stream.Sort = 35
-		}else if strings.Contains(stream.Title,"卫视"){
+		}else if strings.Contains(stream.Title,"卫视") && !strings.Contains(stream.Category,"香港")&& !strings.Contains(stream.Category,"澳门")&& !strings.Contains(stream.Category,"台湾"){
 			stream.Sort = 41
 		}else if strings.Contains(stream.Category,"北京"){
 			stream.Sort = 51
