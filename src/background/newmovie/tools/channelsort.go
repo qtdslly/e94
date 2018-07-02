@@ -141,14 +141,16 @@ func main(){
 			stream.Sort = 75
 		}else if strings.Contains(stream.Category,"贵州"){
 			stream.Sort = 76
-		}else if strings.Contains(stream.Category,"云南"){
+		}else if strings.Contains(stream.Category,"青海"){
 			stream.Sort = 77
-		}else if strings.Contains(stream.Category,"广西"){
+		}else if strings.Contains(stream.Category,"云南"){
 			stream.Sort = 78
-		}else if strings.Contains(stream.Category,"海南"){
+		}else if strings.Contains(stream.Category,"广西"){
 			stream.Sort = 79
-		}else if strings.Contains(stream.Category,"西藏"){
+		}else if strings.Contains(stream.Category,"海南"){
 			stream.Sort = 80
+		}else if strings.Contains(stream.Category,"西藏"){
+			stream.Sort = 81
 		}else if strings.Contains(stream.Category,"特色") {
 			stream.Sort = 85
 		}else if strings.Contains(stream.Category,"风景"){
@@ -193,6 +195,9 @@ func main(){
 			stream.Sort = 851
 		}else if strings.Contains(stream.Category,"其他外国频道"){
 			stream.Sort = 1001
+		}else{
+			logger.Debug("=================================",stream.Title)
+			stream.Sort = 0
 		}
 		if err := db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
