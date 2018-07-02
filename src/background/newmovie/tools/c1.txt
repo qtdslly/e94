@@ -1,0 +1,1988 @@
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227001/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:30.454 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227002/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:30.588 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227003/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:30.72 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227004/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:30.857 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227005/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:30.966 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227006/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.057 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227007/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.163 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227008/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.289 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227009/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.422 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227010/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.539 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227011/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.669 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227012/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.769 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227013/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:31.867 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227014/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.016 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227015/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.139 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227016/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.251 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227017/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.4 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227018/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.532 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227019/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.668 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227020/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.791 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227021/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:32.935 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227022/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.034 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227023/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.169 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227024/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.325 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227025/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.458 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227026/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.588 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227027/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.729 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227028/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.86 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227029/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:33.962 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227030/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.108 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227031/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.222 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227032/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.369 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227033/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.499 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227034/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.635 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227035/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.724 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227036/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.845 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227037/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:34.979 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227038/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.073 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227039/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.207 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227040/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.357 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227041/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.465 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227042/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.582 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227043/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.709 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227044/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.819 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227045/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:35.91 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227046/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.055 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227047/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.187 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227048/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.291 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227049/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.375 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227050/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.471 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227051/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.593 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227052/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.694 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227053/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.777 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227054/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.888 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227055/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:36.975 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227056/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.085 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227057/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.193 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227058/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.288 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227059/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.354 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227060/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.453 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227061/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.566 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227062/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.675 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227063/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.801 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227064/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:37.912 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227065/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.019 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227066/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.119 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227067/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.219 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227068/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.336 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227069/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.44 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227070/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.538 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227071/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.658 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227072/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.785 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227073/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.9 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227074/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:38.996 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227075/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.107 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227076/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.224 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227077/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.331 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227078/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.421 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227079/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.526 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227080/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.616 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227081/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.7 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227082/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.809 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227083/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:39.933 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227084/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.015 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227085/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.121 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227086/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.202 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227087/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.334 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227088/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.431 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227089/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.537 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227090/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.673 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227091/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.806 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227092/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:40.908 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227093/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.032 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227094/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.112 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227095/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.234 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227096/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.383 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227097/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.459 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227098/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.583 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227099/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.712 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227100/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.824 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227101/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:41.931 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227102/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.002 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227103/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.107 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227104/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.211 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227105/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.299 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227106/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.42 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227107/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.51 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227108/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.619 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227109/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.725 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227110/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.833 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227111/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:42.945 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227112/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.038 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227113/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.137 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227114/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.255 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227115/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.356 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227116/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.484 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227117/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:43.588 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227118/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227118/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227119/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:45.797 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227120/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:45.922 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227121/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227121/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227122/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:46.33 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227123/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:08:46.443 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227124/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227124/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227125/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227125/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227126/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227127/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227127/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227128/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227129/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227129/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227130/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:11.359 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227131/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227132/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227132/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227133/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227133/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227134/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227135/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227135/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227136/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227136/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227137/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227137/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227138/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227138/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227139/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:37.987 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227140/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227140/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227141/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:39.062 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227142/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227142/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227143/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227143/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227144/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227144/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227145/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227145/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227146/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227146/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227147/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227147/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227148/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:42.197 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227149/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227149/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227150/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227150/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227151/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227151/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227152/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227153/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227153/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227154/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:55.26 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227155/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227155/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227156/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227156/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227157/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:56.672 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227158/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:56.792 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227159/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:09:56.893 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227160/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227160/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227161/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227161/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227162/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227162/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227163/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227163/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227164/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227164/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227165/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227165/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227166/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:05.586 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227167/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:05.696 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227168/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227168/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227169/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:06.27 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227170/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:06.345 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227171/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227171/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227172/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:06.723 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227173/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:06.818 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227174/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227174/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227175/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:07.211 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227176/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:07.327 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227177/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227177/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227178/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.192 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227179/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.308 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227180/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.408 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227181/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.515 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227182/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.613 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227183/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227183/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227184/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:08.998 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227185/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:09.132 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227186/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227186/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227187/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:09.501 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227188/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:09.62 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227189/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:09.709 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227190/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227190/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227191/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.106 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227192/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.223 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227193/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227193/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227194/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.676 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227195/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.768 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227196/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.86 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227197/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:10.936 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227198/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:11.041 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227199/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227199/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227200/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227200/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227201/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:11.78 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227202/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227202/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227203/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.317 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227204/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.437 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227205/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.548 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227206/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.652 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227207/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.783 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227208/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.895 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227209/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:12.998 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227210/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.104 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227211/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.205 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227212/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.319 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227213/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.434 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227214/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.565 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227215/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.696 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227216/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.788 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227217/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:13.931 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227218/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.007 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227219/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.108 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227220/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.235 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227221/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.351 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227222/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.445 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227223/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.557 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227224/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.655 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227225/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.748 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227226/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.835 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227227/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:14.918 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227228/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.033 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227229/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.138 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227230/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.222 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227231/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.313 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227232/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.402 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227233/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.511 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227234/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.612 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227235/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.727 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227236/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.87 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227237/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:15.972 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227238/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:16.047 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227239/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:16.154 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227240/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227240/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227241/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:16.933 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227242/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:17.032 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227243/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:17.146 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227244/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:17.234 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227245/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:17.329 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227246/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:17.455 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227247/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227247/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227248/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227248/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227249/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:19.533 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227250/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:19.637 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227251/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:19.752 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227252/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:19.899 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227253/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:19.993 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227254/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:20.105 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227255/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:20.228 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227256/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:20.325 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227257/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:20.432 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227258/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:20.533 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227259/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227259/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227260/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227260/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227261/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:22.039 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227262/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227262/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227263/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227263/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227264/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:23.501 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227265/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:23.599 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227266/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227266/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227267/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:25.042 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227268/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:25.159 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227269/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227269/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227270/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:28.771 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227271/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:28.889 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227272/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227272/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227273/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:32.291 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227274/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:32.37 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227275/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227276/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227276/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227277/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227277/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227278/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227279/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.021 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227280/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.14 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227281/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.261 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227282/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.357 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227283/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.49 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227284/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:54.608 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227285/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227285/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227286/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.222 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227287/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.329 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227288/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.448 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227289/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.584 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227290/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.675 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227291/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.772 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227292/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:55.907 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227293/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:56.01 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227294/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227294/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227295/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:56.498 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227296/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227296/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227297/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:57.663 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227298/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:57.809 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227299/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:57.91 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227300/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.009 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227301/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.137 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227302/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227302/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227303/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.563 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227304/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.692 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227305/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.796 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227306/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:58.919 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227307/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:59.062 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227308/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:10:59.14 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227309/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227310/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.248 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227311/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.382 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227312/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.483 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227313/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.598 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227314/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.69 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227315/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.791 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227316/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:09.902 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227317/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:10.016 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227318/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227318/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227319/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:11.805 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227320/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:11.943 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227321/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227321/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227322/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:12.852 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227323/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:12.973 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227324/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227324/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227325/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:13.524 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227326/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:13.619 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227327/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227327/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227328/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:14.519 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227329/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:14.622 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227330/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:14.716 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227331/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:14.824 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227332/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:14.916 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227333/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227333/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227334/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:15.599 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227335/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:15.714 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227336/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:15.819 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227337/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227337/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227338/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:16.268 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227339/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:16.362 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227340/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227340/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227341/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227341/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227342/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:18.661 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227343/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227343/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227344/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227344/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227345/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:20.211 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227346/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227346/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227347/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227347/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227348/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.267 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227349/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.376 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227350/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.476 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227351/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.577 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227352/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.666 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227353/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.8 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227354/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:23.902 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227355/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.021 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227356/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.131 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227357/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.209 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227358/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.361 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227359/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.495 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227360/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227360/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227361/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:24.97 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227362/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:25.112 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227363/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227363/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227364/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:25.645 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227365/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:25.768 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227366/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:25.862 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227367/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:25.974 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227368/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:26.055 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227369/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:26.153 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227370/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:26.289 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227371/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227371/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227372/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:30.509 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227373/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:30.588 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227374/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227374/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227375/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.41 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227376/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.528 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227377/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.649 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227378/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.77 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227379/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.86 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227380/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:33.989 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227381/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.159 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227382/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.298 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227383/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.387 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227384/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.527 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227385/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.637 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227386/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.765 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227387/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.897 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227388/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:34.996 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227389/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:35.115 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227390/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:35.252 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227391/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESShttp://223.110.243.142/PLTV/2510088/224/3221227391/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227392/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.263 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227393/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.416 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227394/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.514 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227395/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.633 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227396/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.767 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227397/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.863 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227398/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:37.999 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227399/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.143 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227400/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.288 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227401/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.425 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227402/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.557 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227403/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.69 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227404/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.794 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227405/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.872 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227406/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:38.992 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227407/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.138 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227408/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.211 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227409/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.339 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227410/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.478 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227411/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.59 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227412/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.702 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227413/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.82 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227414/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:39.9 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227415/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.021 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227416/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.137 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227417/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.246 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227418/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.358 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227419/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.484 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227420/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.618 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227421/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.761 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227422/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:40.904 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227423/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.012 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227424/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.155 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227425/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.284 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227426/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.367 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227427/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.497 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227428/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.599 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227429/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.735 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227430/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:41.885 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227431/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.014 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227432/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.169 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227433/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.291 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227434/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.412 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227435/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.553 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227436/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.688 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227437/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.84 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227438/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:42.971 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227439/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.087 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227440/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.192 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227441/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.316 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227442/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.442 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227443/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.563 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227444/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.669 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227445/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.791 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227446/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:43.909 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227447/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.041 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227448/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.195 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227449/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.269 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227450/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.398 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227451/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.518 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227452/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:44.627 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227453/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:45.761 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227454/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:45.889 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227455/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:45.985 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227456/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.101 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227457/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.213 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227458/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.31 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227459/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.423 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227460/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.574 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227461/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.672 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227462/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.816 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227463/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:46.932 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227464/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.06 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227465/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.236 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227466/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.364 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227467/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.435 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227468/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.592 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227469/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.731 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227470/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.837 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227471/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:47.976 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227472/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.065 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227473/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.162 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227474/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.293 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227475/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.367 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227476/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.47 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227477/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.599 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227478/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.702 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227479/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.793 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227480/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:48.963 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227481/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.087 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227482/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.182 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227483/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.301 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227484/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.379 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227485/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.488 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227486/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.63 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227487/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.745 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227488/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.857 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227489/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:49.992 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227490/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.091 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227491/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.195 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227492/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.291 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227493/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.376 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227494/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.486 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227495/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.6 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227496/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.722 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227497/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.828 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227498/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:50.945 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227499/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.037 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227500/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.136 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227501/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.239 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227502/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.35 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227503/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.467 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227504/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.585 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227505/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.697 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227506/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.794 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227507/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:51.907 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227508/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.011 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227509/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.132 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227510/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.279 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227511/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.364 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227512/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.485 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227513/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.617 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227514/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.732 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227515/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.841 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227516/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:52.923 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227517/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:53.025 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227518/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:53.132 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227519/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:53.232 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227520/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.333 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227521/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.439 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227522/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.544 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227523/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.64 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227524/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.741 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227525/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.856 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227526/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:56.968 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227527/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.081 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227528/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.186 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227529/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.314 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227530/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.409 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227531/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.487 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227532/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.611 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227533/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.713 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227534/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.803 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227535/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.892 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227536/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:57.988 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227537/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.085 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227538/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.201 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227539/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.303 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227540/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.373 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227541/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.461 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227542/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.57 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227543/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.665 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227544/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.784 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227545/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:58.882 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227546/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.006 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227547/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.092 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227548/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.178 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227549/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.283 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227550/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.377 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227551/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.489 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227552/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.593 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227553/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.713 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227554/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.786 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227555/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.878 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227556/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:11:59.992 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227557/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.071 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227558/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.169 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227559/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.269 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227560/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.371 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227561/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.469 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227562/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.567 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227563/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.666 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227564/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.769 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227565/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:00.893 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227566/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.011 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227567/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.099 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227568/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.206 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227569/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.323 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227570/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.442 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227571/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.541 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227572/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.646 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227573/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.757 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227574/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.865 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227575/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:01.972 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227576/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.086 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227577/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.195 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227578/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.31 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227579/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.385 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227580/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.481 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227581/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.59 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227582/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.699 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227583/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.795 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227584/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.866 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227585/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:02.982 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227586/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.073 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227587/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.181 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227588/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.288 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227589/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.403 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227590/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.518 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227591/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.638 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227592/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.74 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227593/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.833 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227594/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:03.955 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227595/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.041 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227596/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.138 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227597/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.237 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227598/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.331 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227599/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.437 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227600/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.536 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227601/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.627 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227602/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.737 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227603/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.83 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227604/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:04.951 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227605/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.076 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227606/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.174 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227607/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.281 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227608/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.392 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227609/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.51 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227610/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.621 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227611/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.723 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227612/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.839 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227613/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:05.938 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227614/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.028 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227615/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.117 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227616/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.217 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227617/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.29 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227618/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.4 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227619/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.51 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227620/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.601 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227621/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.717 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227622/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.809 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227623/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:06.915 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227624/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.005 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227625/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.085 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227626/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.212 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227627/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.317 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227628/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.423 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227629/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.537 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227630/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.646 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227631/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.762 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227632/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.866 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227633/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:07.969 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227634/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.07 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227635/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.179 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227636/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.293 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227637/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.38 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227638/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.463 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227639/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.571 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227640/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.668 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227641/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.774 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227642/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.874 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227643/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:08.973 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227644/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.081 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227645/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.197 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227646/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.303 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227647/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.382 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227648/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.47 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227649/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.576 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227650/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.665 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227651/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.764 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227652/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.877 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227653/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:09.978 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227654/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.088 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227655/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.205 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227656/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.308 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227657/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.403 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227658/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.51 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227659/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.612 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227660/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.719 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227661/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.817 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227662/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:10.915 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227663/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.014 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227664/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.106 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227665/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.207 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227666/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.303 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227667/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.388 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227668/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.515 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227669/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.611 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227670/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.717 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227671/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.82 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227672/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:11.93 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227673/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.025 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227674/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.131 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227675/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.233 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227676/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.336 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227677/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.455 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227678/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.551 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227679/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.663 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227680/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.786 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227681/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.891 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227682/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:12.997 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227683/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:13.112 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227684/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:13.19 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227685/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.301 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227686/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.409 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227687/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.508 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227688/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.635 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227689/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.738 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227690/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.837 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227691/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:16.929 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227692/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.045 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227693/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.145 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227694/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.238 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227695/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.341 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227696/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.443 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227697/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.531 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227698/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.636 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227699/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.729 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227700/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.842 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227701/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:17.961 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227702/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.071 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227703/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.184 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227704/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.295 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227705/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.388 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227706/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.494 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227707/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.594 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227708/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.694 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227709/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.789 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227710/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.897 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227711/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:18.977 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227712/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.089 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227713/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.153 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227714/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.255 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227715/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.349 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227716/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.456 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227717/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.55 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227718/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.665 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227719/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.75 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227720/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.868 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227721/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:19.966 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227722/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.063 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227723/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.155 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227724/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.267 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227725/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.369 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227726/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.481 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227727/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.594 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227728/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.706 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227729/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.804 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227730/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:20.917 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227731/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:21.014 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227732/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.134 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227733/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.229 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227734/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.337 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227735/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.446 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227736/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.554 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227737/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.666 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227738/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.78 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227739/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.88 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227740/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:22.966 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227741/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.049 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227742/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.148 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227743/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.253 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227744/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.329 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227745/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.426 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227746/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.526 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227747/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.651 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227748/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.777 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227749/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.877 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227750/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:23.994 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227751/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.074 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227752/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.168 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227753/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.264 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227754/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.374 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227755/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.458 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227756/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.549 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227757/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.662 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227758/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.776 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227759/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:24.876 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227760/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.003 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227761/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.099 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227762/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.185 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227763/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.286 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227764/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.377 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227765/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.48 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227766/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.607 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227767/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.708 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227768/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.794 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227769/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:25.891 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227770/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:26.014 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227771/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:26.105 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227772/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:26.194 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227773/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:26.295 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227774/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:26.389 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227775/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.51 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227776/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.601 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227777/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.688 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227778/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.806 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227779/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.901 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227780/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:27.996 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227781/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.093 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227782/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.178 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227783/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.293 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227784/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.39 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227785/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.489 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227786/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:28.602 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227787/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:31.701 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227788/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:31.797 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227789/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:31.896 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227790/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.001 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227791/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.103 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227792/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.206 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227793/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.313 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227794/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.405 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227795/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.486 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227796/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.594 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227797/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.689 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227798/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.798 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227799/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:32.91 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227800/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.009 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227801/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.106 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227802/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.207 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227803/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.302 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227804/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.4 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227805/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.5 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227806/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.569 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227807/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.659 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227808/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.766 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227809/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.88 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227810/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:33.981 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227811/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.076 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227812/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.191 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227813/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.265 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227814/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.499 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227815/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.57 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227816/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.83 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227817/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:34.932 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227818/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227819/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.1 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227820/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.2 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227821/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.303 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227822/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.394 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227823/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.5 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227824/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.63 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227825/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.79 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227826/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:35.917 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227827/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:36.041 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227828/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:36.148 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227829/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:36.265 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227830/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:36.36 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227831/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:36.473 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227832/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:37.59 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227833/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:37.691 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227834/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:37.793 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227835/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:37.888 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227836/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:37.971 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227837/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.083 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227838/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.165 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227839/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.255 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227840/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.36 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227841/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.457 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227842/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.561 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227843/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.661 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227844/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.741 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227845/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.832 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227846/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:38.937 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227847/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.034 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227848/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.141 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227849/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.25 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227850/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.35 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227851/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.459 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227852/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.562 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227853/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.676 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227854/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.767 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227855/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.862 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227856/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:39.98 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227857/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.1 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227858/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.209 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227859/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.3 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227860/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.414 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227861/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.53 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227862/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.617 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227863/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.71 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227864/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.822 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227865/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:40.919 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227866/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.021 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227867/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.095 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227868/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.221 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227869/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.325 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227870/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.41 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227871/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.512 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227872/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.61 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227873/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.714 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227874/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.807 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227875/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:41.926 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227876/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.018 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227877/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.129 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227878/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.248 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227879/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.349 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227880/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.458 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227881/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.578 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227882/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.684 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227883/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.805 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227884/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:42.915 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227885/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.025 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227886/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.095 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227887/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.181 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227888/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.269 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227889/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.358 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227890/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.446 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227891/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.548 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227892/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.666 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227893/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.762 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227894/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.879 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227895/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:43.985 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227896/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.085 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227897/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.204 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227898/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.308 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227899/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.391 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227900/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.485 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227901/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.594 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227902/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.702 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227903/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.82 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227904/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.92 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227905/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:44.999 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227906/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.105 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227907/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.222 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227908/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.311 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227909/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.422 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227910/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.5 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227911/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.596 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227912/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.69 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227913/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.76 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227914/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.859 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227915/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:45.973 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227916/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.089 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227917/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.191 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227918/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.324 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227919/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.408 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227920/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.515 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227921/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.63 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227922/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.726 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227923/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.85 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227924/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:46.973 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227925/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.102 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227926/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.219 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227927/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.311 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227928/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.403 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227929/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.527 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227930/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.63 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227931/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.741 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227932/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.852 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227933/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:47.924 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227934/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.047 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227935/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.115 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227936/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.206 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227937/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.308 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227938/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.377 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227939/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.496 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227940/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.588 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227941/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.691 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227942/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.789 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227943/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.887 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227944/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:48.99 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227945/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.089 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227946/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.175 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227947/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.26 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227948/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.345 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227949/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.463 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227950/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.569 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227951/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.637 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227952/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.735 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227953/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.862 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227954/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:49.982 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227955/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.102 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227956/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.221 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227957/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.323 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227958/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.425 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227959/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.513 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227960/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.603 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227961/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.722 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227962/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.829 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227963/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:50.928 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227964/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.044 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227965/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.148 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227966/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.215 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227967/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.31 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227968/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.419 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227969/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.517 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227970/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.62 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227971/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.707 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227972/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.823 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227973/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:51.911 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227974/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.026 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227975/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.118 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227976/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.23 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227977/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.334 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227978/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.432 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227979/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.527 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227980/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.648 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227981/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.745 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227982/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.857 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227983/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:52.946 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227984/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.044 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227985/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.151 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227986/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.256 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227987/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.36 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227988/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.468 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227989/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.579 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227990/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.673 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227991/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.78 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227992/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.865 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227993/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:53.978 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227994/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:54.081 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227995/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:54.174 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227996/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:54.247 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227997/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:54.357 ERROR:28278:util/string.go:42: exit status 1
+/usr/bin/ffmpeg -i 'http://223.110.243.142/PLTV/2510088/224/3221227998/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-02 16:12:54.445 ERROR:28278:util/string.go:42: exit status 1

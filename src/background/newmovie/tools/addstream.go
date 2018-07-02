@@ -20,13 +20,12 @@ func main(){
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	title := flag.String("t", "", "stream title")
 	url := flag.String("u", "", "stream play url")
-	category := flag.String("c", "", "provider")
 
 	flag.Parse()
 
 
 	if len(*title) == 0 || len(*url) == 0{
-		logger.Debug("useage: ./addstream -p 8 -t 北京卫视 -u http://www.abc.m3u8 -c 美国")
+		logger.Debug("useage: ./addstream -p 8 -t 北京卫视 -u http://www.abc.m3u8")
 		return
 	}
 	err := config.LoadConfig(*configPath)
@@ -79,7 +78,6 @@ func main(){
 
 		stream.Sort = sort
 		stream.Title = sTitle
-		stream.Category = *category
 		stream.Pinyin = util.TitleToPinyin(stream.Title)
 		logger.Debug(stream.Title)
 		if err = tx.Save(&stream).Error ; err != nil{
@@ -103,7 +101,7 @@ func main(){
 			}else if strings.Contains(stream.Title,"卫视"){
 				stream.Category = "卫视"
 			}else{
-				stream.Category = *category
+				stream.Category = "地方"
 			}
 			stream.Pinyin = util.TitleToPinyin(stream.Title)
 
