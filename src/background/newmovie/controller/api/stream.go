@@ -29,7 +29,7 @@ func StreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []*model.Stream
-	if err = db.Order("sort asc").Offset(p.Offset).Where("on_line = ?",constant.MediaStatusOnLine).Limit(p.Limit).Find(&streams).Error ; err != nil{
+	if err = db.Order("sort,title asc").Offset(p.Offset).Where("on_line = ?",constant.MediaStatusOnLine).Limit(p.Limit).Find(&streams).Error ; err != nil{
 		logger.Error("query movie err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
