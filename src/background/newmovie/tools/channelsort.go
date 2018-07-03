@@ -73,10 +73,12 @@ func main(){
 			stream.Sort = 20
 		}else if strings.Contains(stream.Title,"CGTN") {
 			stream.Sort = 30
-		}else if strings.Contains(stream.Title,"NewTV") {
+		}else if strings.Contains(stream.Title,"NewTV") || strings.Contains(stream.Title,"NEWTV") {
 			stream.Sort = 50
 		}else if strings.Contains(stream.Title,"中国黄河") || strings.Contains(stream.Title,"中国气象"){
 			stream.Sort = 80
+		}else if strings.Contains(stream.Category,"央视") {
+			stream.Sort = 90
 		}else if strings.Contains(stream.Title,"湖南卫视"){
 			stream.Sort = 151
 		}else if strings.Contains(stream.Title,"浙江卫视"){
@@ -171,6 +173,8 @@ func main(){
 			stream.Sort = 16000
 		}else if strings.Contains(stream.Category,"新加坡"){
 			stream.Sort = 17000
+		}else if strings.Contains(stream.Category,"越南"){
+			stream.Sort = 17500
 		}else if strings.Contains(stream.Category,"泰国"){
 			stream.Sort = 18000
 		}else if strings.Contains(stream.Category,"马来西亚"){
@@ -179,6 +183,8 @@ func main(){
 			stream.Sort = 20000
 		}else if strings.Contains(stream.Category,"德国") {
 			stream.Sort = 21000
+		}else if strings.Contains(stream.Category,"法国"){
+			stream.Sort = 21500
 		}else if strings.Contains(stream.Category,"加拿大"){
 			stream.Sort = 22000
 		}else if strings.Contains(stream.Category,"俄罗斯"){
@@ -205,6 +211,7 @@ func main(){
 			logger.Debug("=================================",stream.Title)
 			stream.Sort = 0
 		}
+	}
 		if err := db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			return
