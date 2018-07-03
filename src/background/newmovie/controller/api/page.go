@@ -16,7 +16,7 @@ func PageHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var resourceGroups []*model.ResourceGroup
-	if err = db.Order("sort asc").Where("on_line = ? and content_type = ?",constant.MediaStatusOnLine,constant.MediaTypeStream).Find(&resourceGroups).Error ; err != nil{
+	if err = db.Order("sort asc").Where("on_line = ? and type = ?",constant.MediaStatusOnLine,constant.MediaTypeStream).Find(&resourceGroups).Error ; err != nil{
 		logger.Error("query resource_group err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
