@@ -8,12 +8,6 @@ import (
 	"background/newmovie/service"
 )
 
-type PlayUrl struct {
-	Id             uint32  `json:"id"`
-	Provider       uint32  `json:"provider"`
-	Url            string  `json:"url"`
-	IsPlay         bool    `json:"is_play"`
-}
 type Video struct {
 	Id       uint32  `json:"id"`
 	Title    string  `json:"title"`
