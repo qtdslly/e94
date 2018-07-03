@@ -14,8 +14,9 @@ import (
 func StreamListHandler(c *gin.Context) {
 
 	type param struct {
-		Limit       int `form:"limit" binding:"required"`
-		Offset      int `form:"offset" binding:"exists"`
+		ResourceGroupId  uint32    `form:"resource_group_id"`
+		Limit            int       `form:"limit" binding:"required"`
+		Offset           int       `form:"offset" binding:"exists"`
 	}
 
 	var p param
@@ -29,40 +30,40 @@ func StreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []*model.Stream
-	if err = db.Order("sort,title asc").Offset(p.Offset).Where("on_line = ?",constant.MediaStatusOnLine).Limit(p.Limit).Find(&streams).Error ; err != nil{
-		logger.Error("query movie err!!!,",err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-	}
-
-	var hasMore bool = true
-	if len(streams) != p.Limit{
-		hasMore = false
-	}
-
-	var count uint32
-	if err = db.Model(&model.Stream{}).Where("on_line = ?",constant.MediaStatusOnLine).Count(&count).Error; err != nil {
+	if err = db.Order("sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",p.ResourceGroupId).Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
-	type ApiVideo struct {
+	var count uint32
+	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",p.ResourceGroupId).Count(&count).Error; err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	type ApiStream struct {
 		Id	uint32 `json:"id"`
 		Title	string `json:"title"`
-		Score	float64 `json:"score"`
-		ThumbY	string `json:"thumb_y"`
+		Thumb	string `json:"thumb"`
 	}
 
-	var apiVideos []*ApiVideo
-	for _,stream := range streams{
-		var apiVideo ApiVideo
-		apiVideo.Id = stream.Id
-		apiVideo.Title = stream.Title
-		apiVideo.ThumbY = "http://www.ezhantao.com/thumb/stream/" + fmt.Sprint(stream.Id) + ".jpg"
-		apiVideos = append(apiVideos,&apiVideo)
+	var apiStreams []*ApiStream
+	for _ , stream := range streams{
+		var apiStream ApiStream
+		apiStream.Id = stream.Id
+		apiStream.Title = stream.Title
+		apiStream.Thumb = stream.Thumb
+		apiStreams = append(apiStreams,&apiStream)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos,"count":count,"has_more":hasMore})
+	var hasMore bool = true
+	if len(apiStreams) < p.Limit{
+		hasMore = false
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"count":count,"has_more":hasMore})
 }
 
 
@@ -89,29 +90,33 @@ func StreamDetailHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
-	var apiVideo apimodel.Video
-	apiVideo.Id = stream.Id
-	apiVideo.ThumbX = "http://www.ezhantao.com/thumb/stream/" + fmt.Sprint(stream.Id) + ".jpg"
-	apiVideo.Title = stream.Title
-	var playUrls []*model.PlayUrl
+	type ApiStream struct {
+		Id	   uint32                `json:"id"`
+		Title	   string                `json:"title"`
+		Thumb      string                `json:"thumb"`
+		PlayUrl    []*apimodel.PlayUrl   `json:"play_url"`
+	}
+
+	var apiStream ApiStream
+	apiStream.Id = stream.Id
+	apiStream.Thumb = stream.Thumb
+	apiStream.Title = stream.Title
+	var playUrls []model.PlayUrl
 	if err := db.Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 		logger.Error("query play_url err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
 	for _,playUrl := range playUrls{
-		var pUrl apimodel.PlayUrl
-		pUrl.Id = playUrl.Id
-		pUrl.Provider = playUrl.Provider
-		pUrl.IsPlay = true
-		pUrl.Url = playUrl.Url
-		apiVideo.Urls = append(apiVideo.Urls,&pUrl)
+		var pUrl *apimodel.PlayUrl
+		pUrl = apimodel.PlayUrlFromDb(playUrl)
+		if pUrl.IsPlay{
+			apiStream.PlayUrl = append(apiStream.PlayUrl,pUrl)
+		}
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideo})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStream})
 }
-
-
 
 
 func StreamSearchHandler(c *gin.Context) {
@@ -136,23 +141,38 @@ func StreamSearchHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
-	type ApiVideo struct {
-		Id	uint32 `json:"id"`
-		Title	string `json:"title"`
-		Score	float64 `json:"score"`
-		ThumbY	string `json:"thumb_y"`
+	type ApiStream struct {
+		Id	   uint32                `json:"id"`
+		Title	   string                `json:"title"`
+		Thumb      string                `json:"thumb"`
+		PlayUrl    []*apimodel.PlayUrl   `json:"play_url"`
 	}
 
-	var apiVideos []*ApiVideo
-	for _,stream := range streams{
-		var apiVideo ApiVideo
-		apiVideo.Id = stream.Id
-		apiVideo.Title = stream.Title
-		apiVideo.ThumbY = "http://www.ezhantao.com/thumb/stream/" + fmt.Sprint(stream.Id) + ".jpg"
-		apiVideos = append(apiVideos,&apiVideo)
+	var apiStreams []*ApiStream
+	for _ , stream := range streams{
+		var apiStream ApiStream
+		apiStream.Id = stream.Id
+		apiStream.Thumb = stream.Thumb
+		apiStream.Title = stream.Title
+		var playUrls []model.PlayUrl
+		if err := db.Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
+			logger.Error("query play_url err!!!,",err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+		}
+
+		for _,playUrl := range playUrls{
+			var pUrl *apimodel.PlayUrl
+			pUrl = apimodel.PlayUrlFromDb(playUrl)
+			if pUrl.IsPlay{
+				apiStream.PlayUrl = append(apiStream.PlayUrl,pUrl)
+			}
+		}
+
+		apiStreams = append(apiStreams,&apiStream)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos})
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams})
 }
 
 

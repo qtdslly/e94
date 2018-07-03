@@ -4,7 +4,7 @@ import (
 	"background/newmovie/config"
 	"background/common/logger"
 	"background/newmovie/model"
-
+	"background/common/util"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"os/exec"
 	"time"
+	"os"
 )
 
 func main(){
@@ -33,6 +34,15 @@ func main(){
 	db.LogMode(true)
 	model.InitModel(db)
 
+	for{
+		StreamThumb(db)
+		time.Sleep(time.Minute * 5)
+	}
+}
+
+
+func StreamThumb(db *gorm.DB){
+	var err error
 	var streams []model.Stream
 	if err = db.Order("id desc").Find(&streams).Error ; err != nil{
 		logger.Error(err)
@@ -45,8 +55,10 @@ func main(){
 			logger.Error(err)
 			return
 		}
+		thumb := ""
 		for _,playUrl := range playUrls{
-			if CheckStreamUrl(stream.Id,playUrl.Url){
+			thumb = CheckStreamUrl(stream.Thumb,playUrl.Url)
+			if thumb != ""{
 				flag = true
 				playUrl.OnLine = true
 				if err = db.Save(&playUrl).Error ; err != nil{
@@ -62,6 +74,9 @@ func main(){
 				}
 			}
 		}
+		if thumb != ""{
+			stream.Thumb = thumb
+		}
 		stream.OnLine = flag
 		if err = db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
@@ -69,13 +84,15 @@ func main(){
 		}
 	}
 }
-
-
-func CheckStreamUrl(streamId uint32,url string)bool{
+func CheckStreamUrl(sourceFileName,url string)string{
 	c2 := make(chan string, 1)
 	ffmpegAddr := "/usr/bin/ffmpeg"
+	code := util.RandString(6)
+	now := time.Now()
+	fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
+
 	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /data/www/dreamvideo/public/thumb/stream/%d.jpg", ffmpegAddr, url,streamId)
+		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /data/www/dreamvideo/public/thumb/stream/%s", ffmpegAddr, url,fileName)
 		fmt.Println(cmdStr)
 		cmd := exec.Command("bash", "-c", cmdStr)
 
@@ -89,15 +106,20 @@ func CheckStreamUrl(streamId uint32,url string)bool{
 	select {
 	case res := <-c2:
 		if res == "success"{
-			return true
+			err := os.Remove("/data/www/dreamvideo/public" + sourceFileName)
+			if err != nil {
+				logger.Error("file remove Error!",err)
+				return ""
+			}
+			return "/thumb/stream/" + fileName
 		}else{
-			return false
+			return ""
 		}
 	case <-time.After(time.Second * 10):
-		return false
+		return ""
 	}
 
-	return false
+	return ""
 }
 
 

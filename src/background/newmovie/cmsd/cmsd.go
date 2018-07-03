@@ -82,10 +82,13 @@ func main(){
 
 		cms.GET("/recommend", aapi.RecommendHandler)
 
-		cms.GET("/video/list", aapi.StreamListHandler)
-		cms.GET("/video", aapi.StreamDetailHandler)
-		cms.GET("/video/search", aapi.StreamSearchHandler)
-		cms.GET("/video/topsearch", aapi.StreamTopSearchHandler)
+		cms.GET("/page", aapi.PageHandler)
+
+
+		cms.GET("/stream/list", aapi.StreamListHandler)
+		cms.GET("/stream", aapi.StreamDetailHandler)
+		cms.GET("/stream/search", aapi.StreamSearchHandler)
+		cms.GET("/stream/topsearch", aapi.StreamTopSearchHandler)
 
 		cms.GET("/notification", aapi.NotifcationHandler)
 

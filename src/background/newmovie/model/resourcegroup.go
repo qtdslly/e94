@@ -13,6 +13,7 @@ type ResourceGroup struct {
 	Icon            string           `gorm:"size:255" json:"icon" valid:"Str" name:"icon" len:"0,255"`
 	Sort            uint32           `json:"sort"`
 	Count           uint32           `json:"count"`
+	OnLine          bool             `json:"on_line"`
 	Videos          []*Video         `gorm:"many2many:video_group" json:"videos"`
 	Streams         []*Stream        `gorm:"many2many:stream_group" json:"streams"`
 	CreatedAt       time.Time        `json:"created_at"`
