@@ -169,7 +169,7 @@ func StreamSearchHandler(c *gin.Context) {
 		hasMore = false
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"has_more":hasMore})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"has_more":hasMore,"count":count})
 }
 
 
