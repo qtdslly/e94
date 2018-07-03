@@ -73,8 +73,12 @@ func main(){
 			stream.Sort = 20
 		}else if strings.Contains(stream.Title,"CGTN") {
 			stream.Sort = 30
-		}else if strings.Contains(stream.Title,"NewTV") || strings.Contains(stream.Title,"NEWTV") {
+		}else if strings.Contains(stream.Title,"CHC") {
+			stream.Sort = 40
+		}else if strings.Contains(stream.Title,"CIBN") {
 			stream.Sort = 50
+		}else if strings.Contains(stream.Title,"NewTV") || strings.Contains(stream.Title,"NEWTV") {
+			stream.Sort = 60
 		}else if strings.Contains(stream.Title,"中国黄河") || strings.Contains(stream.Title,"中国气象"){
 			stream.Sort = 80
 		}else if strings.Contains(stream.Category,"央视") {
