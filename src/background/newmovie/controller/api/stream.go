@@ -29,14 +29,14 @@ func StreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []*model.Stream
-	if err = db.Order("sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",p.ResourceGroupId).Find(&streams).Error ; err != nil{
+	if err = db.Order("sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",p.ResourceGroupId).Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
 	var count uint32
-	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",p.ResourceGroupId).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",p.ResourceGroupId).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return

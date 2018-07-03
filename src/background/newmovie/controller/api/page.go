@@ -19,17 +19,18 @@ func PageHandler(c *gin.Context) {
 	if err = db.Order("sort asc").Where("on_line = ? and type = ?",constant.MediaStatusOnLine,constant.MediaTypeStream).Find(&resourceGroups).Error ; err != nil{
 		logger.Error("query resource_group err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
+		return
 	}
 
 	var streams []*model.Stream
-	if err = db.Limit(15).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
+	if err = db.Limit(15).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
 	var count uint32
-	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and resource_group.id = ?",resourceGroups[0].Id).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
