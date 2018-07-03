@@ -13,7 +13,7 @@ import (
 func StreamListHandler(c *gin.Context) {
 
 	type param struct {
-		ResourceGroupId  uint32    `form:"resource_group_id"`
+		ResourceGroupId  uint32    `form:"id"`
 		Limit            int       `form:"limit" binding:"required"`
 		Offset           int       `form:"offset" binding:"exists"`
 	}
@@ -121,7 +121,9 @@ func StreamDetailHandler(c *gin.Context) {
 func StreamSearchHandler(c *gin.Context) {
 
 	type param struct {
-		Title       string `form:"title" binding:"required"`
+		Title       string    `form:"title" binding:"required"`
+		Limit       int       `form:"limit" binding:"required"`
+		Offset      int       `form:"offset" binding:"exists"`
 	}
 
 	var p param
@@ -135,7 +137,7 @@ func StreamSearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []model.Stream
-	if err = db.Order("sort asc").Where("title like ? and on_line = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Find(&streams).Error ; err != nil{
+	if err = db.Offset(p.Offset).Limit(p.Limit).Order("sort asc").Where("title like ? and on_line = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Find(&streams).Error ; err != nil{
 		logger.Error("query video err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -144,7 +146,6 @@ func StreamSearchHandler(c *gin.Context) {
 		Id	   uint32                `json:"id"`
 		Title	   string                `json:"title"`
 		Thumb      string                `json:"thumb"`
-		PlayUrl    []*apimodel.PlayUrl   `json:"play_url"`
 	}
 
 	var apiStreams []*ApiStream
@@ -153,25 +154,22 @@ func StreamSearchHandler(c *gin.Context) {
 		apiStream.Id = stream.Id
 		apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 		apiStream.Title = stream.Title
-		var playUrls []model.PlayUrl
-		if err := db.Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
-			logger.Error("query play_url err!!!,",err)
-			c.AbortWithStatus(http.StatusInternalServerError)
-		}
-
-		for _,playUrl := range playUrls{
-			var pUrl *apimodel.PlayUrl
-			pUrl = apimodel.PlayUrlFromDb(playUrl)
-			if pUrl.IsPlay{
-				apiStream.PlayUrl = append(apiStream.PlayUrl,pUrl)
-			}
-		}
-
 		apiStreams = append(apiStreams,&apiStream)
 	}
 
+	var count uint32
+	if err = db.Model(&model.Stream{}).Where("title like ? and on_line = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Count(&count).Error; err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams})
+	var hasMore bool = true
+	if len(apiStreams) < p.Limit{
+		hasMore = false
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"has_more":hasMore})
 }
 
 
