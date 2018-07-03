@@ -8,7 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	apimodel "background/newmovie/controller/api/model"
-	"fmt"
 )
 
 func StreamListHandler(c *gin.Context) {
