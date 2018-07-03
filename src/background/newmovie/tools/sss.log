@@ -1,0 +1,1106 @@
+2018-07-03 10:20:24.011 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫|http://221.181.100.24:8088/wd_r3/peoplecn/cibndmpd/600/index.m3u8
+/usr/bin/ffmpeg -i 'http://221.181.100.24:8088/wd_r3/peoplecn/cibndmpd/600/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:29.134 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:29.134 DEBUG:12458:tools/checkurl1.go:33: NewTV金牌综艺高清|http://183.207.249.7/PLTV/3/224/3221225559/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225559/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV金牌综艺高清	http://183.207.249.7/PLTV/3/224/3221225559/index.m3u8
+2018-07-03 10:20:34.247 DEBUG:12458:tools/checkurl1.go:33: NewTV惊悚悬疑高清|http://183.207.249.7/PLTV/3/224/3221225561/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225561/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV惊悚悬疑高清	http://183.207.249.7/PLTV/3/224/3221225561/index.m3u8
+2018-07-03 10:20:37.165 DEBUG:12458:tools/checkurl1.go:33: NewTV精品电影高清|http://183.207.249.7/PLTV/3/224/3221225567/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225567/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品电影高清	http://183.207.249.7/PLTV/3/224/3221225567/index.m3u8
+2018-07-03 10:20:37.832 DEBUG:12458:tools/checkurl1.go:33: NewTV海外剧场高清|http://183.207.249.7/PLTV/3/224/3221225547/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225547/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV海外剧场高清	http://183.207.249.7/PLTV/3/224/3221225547/index.m3u8
+2018-07-03 10:20:42.401 DEBUG:12458:tools/checkurl1.go:33: NewTV家庭剧场高清|http://183.207.249.7/PLTV/3/224/3221225549/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225549/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV家庭剧场高清	http://183.207.249.7/PLTV/3/224/3221225549/index.m3u8
+2018-07-03 10:20:47.368 DEBUG:12458:tools/checkurl1.go:33: NewTV爱情喜剧高清|http://183.207.249.7/PLTV/3/224/3221225525/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225525/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:47.426 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:47.426 DEBUG:12458:tools/checkurl1.go:33: NewTV古装剧场高清|http://183.207.249.7/PLTV/3/224/3221225527/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225527/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV古装剧场高清	http://183.207.249.7/PLTV/3/224/3221225527/index.m3u8
+2018-07-03 10:20:48.03 DEBUG:12458:tools/checkurl1.go:33: NewTV动作电影高清|http://183.207.249.7/PLTV/3/224/3221225529/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225529/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:48.104 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:48.104 DEBUG:12458:tools/checkurl1.go:33: NewTV军旅剧场高清|http://183.207.249.7/PLTV/3/224/3221225531/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225531/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV军旅剧场高清	http://183.207.249.7/PLTV/3/224/3221225531/index.m3u8
+2018-07-03 10:20:53.624 DEBUG:12458:tools/checkurl1.go:33: NewTV军事评论高清|http://183.207.249.7/PLTV/3/224/3221225533/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225533/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:53.701 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:53.701 DEBUG:12458:tools/checkurl1.go:33: NewTV明星大片高清|http://183.207.249.7/PLTV/3/224/3221225535/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225535/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:53.775 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:53.775 DEBUG:12458:tools/checkurl1.go:33: NewTV农业致富高清|http://183.207.249.7/PLTV/3/224/3221225537/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225537/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV农业致富高清	http://183.207.249.7/PLTV/3/224/3221225537/index.m3u8
+2018-07-03 10:20:54.52 DEBUG:12458:tools/checkurl1.go:33: NewTV精品体育高清|http://183.207.249.7/PLTV/3/224/3221225543/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225543/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品体育高清	http://183.207.249.7/PLTV/3/224/3221225543/index.m3u8
+2018-07-03 10:20:55.032 DEBUG:12458:tools/checkurl1.go:33: NewTV精品记录高清|http://183.207.249.7/PLTV/3/224/3221225557/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225557/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:55.095 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:55.095 DEBUG:12458:tools/checkurl1.go:33: NewTV健康有约高清|http://183.207.249.7/PLTV/3/224/3221225545/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225545/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:55.154 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:55.154 DEBUG:12458:tools/checkurl1.go:33: NewTV动画王国高清|http://183.207.249.7/PLTV/3/224/3221225555/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225555/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV动画王国高清	http://183.207.249.7/PLTV/3/224/3221225555/index.m3u8
+2018-07-03 10:20:56.438 DEBUG:12458:tools/checkurl1.go:33: NewTV完美游戏高清|http://183.207.249.7/PLTV/3/224/3221225539/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.207.249.7/PLTV/3/224/3221225539/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV完美游戏高清	http://183.207.249.7/PLTV/3/224/3221225539/index.m3u8
+2018-07-03 10:20:56.858 DEBUG:12458:tools/checkurl1.go:33: CIBN电影导视|http://cibn.peoplevideo.cn/hls/vCIBNDYDS/800/vCIBNDYDS.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNDYDS/800/vCIBNDYDS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:56.898 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:56.898 DEBUG:12458:tools/checkurl1.go:33: CIBN电影频道|http://cibn.peoplevideo.cn/hls/vCIBNDYPD/800/vCIBNDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNDYPD/800/vCIBNDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:56.935 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:56.935 DEBUG:12458:tools/checkurl1.go:33: CIBN热播剧场|http://cibn.peoplevideo.cn/hls/vCIBNRBJC/800/vCIBNRBJC.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNRBJC/800/vCIBNRBJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:20:56.99 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:20:56.99 DEBUG:12458:tools/checkurl1.go:33: CIBN华视院线|http://cibn.peoplevideo.cn/hls/vCIBNHSYX/800/vCIBNHSYX.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNHSYX/800/vCIBNHSYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:06.99 DEBUG:12458:tools/checkurl1.go:33: CIBN经典剧场|http://cibn.peoplevideo.cn/hls/vCIBNJDJC/800/vCIBNJDJC.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNJDJC/800/vCIBNJDJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.404 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.404 DEBUG:12458:tools/checkurl1.go:33: CIBN抗战剧场|http://cibn.peoplevideo.cn/hls/vCIBNDSJC/800/vCIBNDSJC.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNDSJC/800/vCIBNDSJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.446 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.446 DEBUG:12458:tools/checkurl1.go:33: CIBN综艺频道|http://cibn.peoplevideo.cn/hls/vCIBNZYPD/800/vCIBNZYPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNZYPD/800/vCIBNZYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.56 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.56 DEBUG:12458:tools/checkurl1.go:33: CIBN纪录频道|http://cibn.peoplevideo.cn/hls/vCIBNJLPD/800/vCIBNJLPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNJLPD/800/vCIBNJLPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.627 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.627 DEBUG:12458:tools/checkurl1.go:33: CIBN戏剧频道|http://cibn.bbs.cnsat.net/hls/vCNSATNET/800/vCIBNFSPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.bbs.cnsat.net/hls/vCNSATNET/800/vCIBNFSPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.674 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.674 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫频道|http://cibn.peoplevideo.cn/hls/vCIBNDMPD/800/vCIBNDMPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNDMPD/800/vCIBNDMPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.726 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.726 DEBUG:12458:tools/checkurl1.go:33: CIBN音乐频道|http://cibn.peoplevideo.cn/hls/vCIBNYYPD/800/vCIBNYYPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNYYPD/800/vCIBNYYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.856 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.856 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://cibn.peoplevideo.cn/hls/vCIBNWDYPD/800/vCIBNWDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNWDYPD/800/vCIBNWDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.922 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.922 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://cibn.peoplevideo.cn/hls/vCIBNCWHPD/800/vCIBNCWHPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNCWHPD/800/vCIBNCWHPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:10.967 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:10.967 DEBUG:12458:tools/checkurl1.go:33: CIBN游戏频道|http://cibn.peoplevideo.cn/hls/vCIBNYXPD/800/vCIBNYXPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNYXPD/800/vCIBNYXPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:11.083 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:11.084 DEBUG:12458:tools/checkurl1.go:33: CIBN环球购物|http://cibn.peoplevideo.cn/hls/vCIBNHQGW/800/vCIBNHQGW.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNHQGW/800/vCIBNHQGW.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:11.132 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:11.132 DEBUG:12458:tools/checkurl1.go:33: CIBN财经频道|http://cibn.peoplevideo.cn/hls/vCIBNCJPD/800/vCIBNCJPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNCJPD/800/vCIBNCJPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:11.161 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:11.161 DEBUG:12458:tools/checkurl1.go:33: CIBN风尚频道|http://cibn.peoplevideo.cn/hls/vCIBNFSPD/800/vCIBNFSPD.m3u8
+/usr/bin/ffmpeg -i 'http://cibn.peoplevideo.cn/hls/vCIBNFSPD/800/vCIBNFSPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:11.275 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:11.275 DEBUG:12458:tools/checkurl1.go:33: CIBN综合|http://lbhls02.live.cibn.cc/hls/vCIBNXQDPD/1800/vCIBNXQDPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNXQDPD/1800/vCIBNXQDPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.395 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.395 DEBUG:12458:tools/checkurl1.go:33: CIBN嗨播|http://lbhls01.live.cibn.cc/hls/vCIBNDYDYYPD/1800/vCIBNYYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYDYYPD/1800/vCIBNYYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.51 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.51 DEBUG:12458:tools/checkurl1.go:33: CIBN真人秀|http://lbhls02.live.cibn.cc/hls/vCIBNZRSW/1800/vCIBNZRSW.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNZRSW/1800/vCIBNZRSW.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.621 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.621 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫|http://lbhls01.live.cibn.cc/hls/vCIBNDMPD/1800/vCIBNDMPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDMPD/1800/vCIBNDMPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.906 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.906 DEBUG:12458:tools/checkurl1.go:33: CIBN电影导视|http://lbhls01.live.cibn.cc/hls/vCIBNDYDS/1800/vCIBNDYDS.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYDS/1800/vCIBNDYDS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.957 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.957 DEBUG:12458:tools/checkurl1.go:33: CIBN电影|http://lbhls01.live.cibn.cc/hls/vCIBNDYPD/1800/vCIBNDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYPD/1800/vCIBNDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:12.99 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:12.991 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://lbhls01.live.cibn.cc/hls/vCIBNWDYPD/1800/vCIBNWDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNWDYPD/1800/vCIBNWDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:13.097 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:13.097 DEBUG:12458:tools/checkurl1.go:33: CIBN动作影院|http://lbhls02.live.cibn.cc/hls/vCIBNDZYY/1800/vCIBNDZYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNDZYY/1800/vCIBNDZYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:13.126 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:13.126 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://lbhls01.live.cibn.cc/hls/vCIBNHSYX/1800/vCIBNHSYX.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNHSYX/1800/vCIBNHSYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:13.149 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:13.149 DEBUG:12458:tools/checkurl1.go:33: CIBN精品影院|http://lbhls01.live.cibn.cc/hls/vCIBNJPYY/1800/vCIBNJPYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJPYY/1800/vCIBNJPYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:13.254 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:13.254 DEBUG:12458:tools/checkurl1.go:33: CIBN情感影院|http://lbhls01.live.cibn.cc/hls/vCIBNQGYY/1800/vCIBNQGYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNQGYY/1800/vCIBNQGYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:13.364 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:13.364 DEBUG:12458:tools/checkurl1.go:33: CIBN流金岁月|http://lbhls02.live.cibn.cc/hls/vCIBNSCPD/1800/vCIBNSCPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNSCPD/1800/vCIBNSCPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:14.484 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:14.484 DEBUG:12458:tools/checkurl1.go:33: CIBN骄阳剧场|http://lbhls01.live.cibn.cc/hls/vCIBNJDJC/1800/vCIBNJDJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJDJC/1800/vCIBNJDJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:18.576 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:18.576 DEBUG:12458:tools/checkurl1.go:33: CIBN热播剧场|http://lbhls01.live.cibn.cc/hls/vCIBNRBJC/1800/vCIBNRBJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNRBJC/1800/vCIBNRBJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:18.689 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:18.689 DEBUG:12458:tools/checkurl1.go:33: CIBN经典剧场|http://lbhls02.live.cibn.cc/hls/vCIBNJCJD/1800/vCIBNJCJD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNJCJD/1800/vCIBNJCJD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:18.8 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:18.8 DEBUG:12458:tools/checkurl1.go:33: CIBN沙发院线|http://lbhls02.live.cibn.cc/hls/vCIBNSFYX/1800/vCIBNSFYX.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNSFYX/1800/vCIBNSFYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:19.994 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:19.994 DEBUG:12458:tools/checkurl1.go:33: CIBN院线大片|http://lbhls02.live.cibn.cc/hls/vCIBNHYPD/1800/vCIBNHYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNHYPD/1800/vCIBNHYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:20.103 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:20.103 DEBUG:12458:tools/checkurl1.go:33: CIBN好莱坞|http://lbhls02.live.cibn.cc/hls/vCIBNHLWPD/1800/vCIBNHLWPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNHLWPD/1800/vCIBNHLWPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:20.222 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:20.222 DEBUG:12458:tools/checkurl1.go:33: CIBN军事|http://lbhls01.live.cibn.cc/hls/vCIBNGZJC/1800/vCIBNGZJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNGZJC/1800/vCIBNGZJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:20.331 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:20.331 DEBUG:12458:tools/checkurl1.go:33: CIBN财经|http://lbhls01.live.cibn.cc/hls/vCIBNCJPD/1800/vCIBNCJPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCJPD/1800/vCIBNCJPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:20.379 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:20.379 DEBUG:12458:tools/checkurl1.go:33: CIBN旅游|http://lbhls02.live.cibn.cc/hls/vCIBNLYPD/1800/vCIBNLYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNLYPD/1800/vCIBNLYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:20.491 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:20.492 DEBUG:12458:tools/checkurl1.go:33: CIBN钓鱼|http://lbhls01.live.cibn.cc/hls/vCIBNGWPDHWXF/1800/vCIBNHWXF.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNGWPDHWXF/1800/vCIBNHWXF.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.1 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.1 DEBUG:12458:tools/checkurl1.go:33: CIBN生活|http://lbhls02.live.cibn.cc/hls/vCIBNGWPD/1800/vCIBNGWPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNGWPD/1800/vCIBNGWPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.125 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.125 DEBUG:12458:tools/checkurl1.go:33: CIBN汉学院|http://lbhls01.live.cibn.cc/hls/vCIBNHXYPD/1800/vCIBNHXYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNHXYPD/1800/vCIBNHXYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.236 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.236 DEBUG:12458:tools/checkurl1.go:33: CIBN今古珍藏|http://lbhls01.live.cibn.cc/hls/vCIBNZYPD/1800/vCIBNZYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNZYPD/1800/vCIBNZYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.378 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.378 DEBUG:12458:tools/checkurl1.go:33: CIBN第一赛场|http://lbhls02.live.cibn.cc/hls/vCIBNDSJC/1800/vCIBNDSJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNDSJC/1800/vCIBNDSJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.431 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.432 DEBUG:12458:tools/checkurl1.go:33: CIBN纪录片|http://lbhls01.live.cibn.cc/hls/vCIBNJLPD/1800/vCIBNJLPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJLPD/1800/vCIBNJLPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.464 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.465 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://lbhls01.live.cibn.cc/hls/vCIBNCWHPD/1800/vCIBNCWHPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCWHPD/1800/vCIBNCWHPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.503 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.503 DEBUG:12458:tools/checkurl1.go:33: CIBN健康|http://lbhls02.live.cibn.cc/hls/vCIBNJKPD/1800/vCIBNJKPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNJKPD/1800/vCIBNJKPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.618 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.618 DEBUG:12458:tools/checkurl1.go:33: CIBN教育|http://lbhls01.live.cibn.cc/hls/vCIBNJYPD/1800/vCIBNJYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJYPD/1800/vCIBNJYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.669 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.669 DEBUG:12458:tools/checkurl1.go:33: CANTV|http://lbhls01.live.cibn.cc/hls/vCIBNCHNTV/1800/vCIBNCHNTV.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCHNTV/1800/vCIBNCHNTV.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.701 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.701 DEBUG:12458:tools/checkurl1.go:33: CIBN综合|http://lbhls02.live.cibn.cc/hls/vCIBNXQDPD/1800/vCIBNXQDPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNXQDPD/1800/vCIBNXQDPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.727 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.727 DEBUG:12458:tools/checkurl1.go:33: CIBN嗨播|http://lbhls01.live.cibn.cc/hls/vCIBNDYDYYPD/1800/vCIBNYYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYDYYPD/1800/vCIBNYYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:21.842 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:21.843 DEBUG:12458:tools/checkurl1.go:33: CIBN真人秀|http://lbhls02.live.cibn.cc/hls/vCIBNZRSW/1800/vCIBNZRSW.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNZRSW/1800/vCIBNZRSW.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:31.843 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫|http://lbhls01.live.cibn.cc/hls/vCIBNDMPD/1800/vCIBNDMPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDMPD/1800/vCIBNDMPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:31.871 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:31.871 DEBUG:12458:tools/checkurl1.go:33: CIBN电影导视|http://lbhls01.live.cibn.cc/hls/vCIBNDYDS/1800/vCIBNDYDS.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYDS/1800/vCIBNDYDS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:31.896 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:31.896 DEBUG:12458:tools/checkurl1.go:33: CIBN电影|http://lbhls01.live.cibn.cc/hls/vCIBNDYPD/1800/vCIBNDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNDYPD/1800/vCIBNDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:31.918 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:31.918 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://lbhls01.live.cibn.cc/hls/vCIBNWDYPD/1800/vCIBNWDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNWDYPD/1800/vCIBNWDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:31.937 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:31.937 DEBUG:12458:tools/checkurl1.go:33: CIBN动作影院|http://lbhls02.live.cibn.cc/hls/vCIBNDZYY/1800/vCIBNDZYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNDZYY/1800/vCIBNDZYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:32.064 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:32.064 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://lbhls01.live.cibn.cc/hls/vCIBNHSYX/1800/vCIBNHSYX.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNHSYX/1800/vCIBNHSYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:32.116 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:32.116 DEBUG:12458:tools/checkurl1.go:33: CIBN精品影院|http://lbhls01.live.cibn.cc/hls/vCIBNJPYY/1800/vCIBNJPYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJPYY/1800/vCIBNJPYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:32.147 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:32.147 DEBUG:12458:tools/checkurl1.go:33: CIBN情感影院|http://lbhls01.live.cibn.cc/hls/vCIBNQGYY/1800/vCIBNQGYY.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNQGYY/1800/vCIBNQGYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:32.263 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:32.264 DEBUG:12458:tools/checkurl1.go:33: CIBN流金岁月|http://lbhls02.live.cibn.cc/hls/vCIBNSCPD/1800/vCIBNSCPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNSCPD/1800/vCIBNSCPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:42.264 DEBUG:12458:tools/checkurl1.go:33: CIBN骄阳剧场|http://lbhls01.live.cibn.cc/hls/vCIBNJDJC/1800/vCIBNJDJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJDJC/1800/vCIBNJDJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:42.293 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:42.293 DEBUG:12458:tools/checkurl1.go:33: CIBN热播剧场|http://lbhls01.live.cibn.cc/hls/vCIBNRBJC/1800/vCIBNRBJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNRBJC/1800/vCIBNRBJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:42.403 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:42.403 DEBUG:12458:tools/checkurl1.go:33: CIBN经典剧场|http://lbhls02.live.cibn.cc/hls/vCIBNJCJD/1800/vCIBNJCJD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNJCJD/1800/vCIBNJCJD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:42.431 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:42.431 DEBUG:12458:tools/checkurl1.go:33: CIBN沙发院线|http://lbhls02.live.cibn.cc/hls/vCIBNSFYX/1800/vCIBNSFYX.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNSFYX/1800/vCIBNSFYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:43.827 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:43.827 DEBUG:12458:tools/checkurl1.go:33: CIBN院线大片|http://lbhls02.live.cibn.cc/hls/vCIBNHYPD/1800/vCIBNHYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNHYPD/1800/vCIBNHYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:43.928 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:43.929 DEBUG:12458:tools/checkurl1.go:33: CIBN好莱坞|http://lbhls02.live.cibn.cc/hls/vCIBNHLWPD/1800/vCIBNHLWPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNHLWPD/1800/vCIBNHLWPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:43.976 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:43.976 DEBUG:12458:tools/checkurl1.go:33: CIBN军事|http://lbhls01.live.cibn.cc/hls/vCIBNGZJC/1800/vCIBNGZJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNGZJC/1800/vCIBNGZJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.101 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.101 DEBUG:12458:tools/checkurl1.go:33: CIBN财经|http://lbhls01.live.cibn.cc/hls/vCIBNCJPD/1800/vCIBNCJPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCJPD/1800/vCIBNCJPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.15 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.15 DEBUG:12458:tools/checkurl1.go:33: CIBN旅游|http://lbhls02.live.cibn.cc/hls/vCIBNLYPD/1800/vCIBNLYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNLYPD/1800/vCIBNLYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.28 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.28 DEBUG:12458:tools/checkurl1.go:33: CIBN钓鱼|http://lbhls01.live.cibn.cc/hls/vCIBNGWPDHWXF/1800/vCIBNHWXF.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNGWPDHWXF/1800/vCIBNHWXF.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.389 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.389 DEBUG:12458:tools/checkurl1.go:33: CIBN生活|http://lbhls02.live.cibn.cc/hls/vCIBNGWPD/1800/vCIBNGWPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNGWPD/1800/vCIBNGWPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.41 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.41 DEBUG:12458:tools/checkurl1.go:33: CIBN汉学院|http://lbhls01.live.cibn.cc/hls/vCIBNHXYPD/1800/vCIBNHXYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNHXYPD/1800/vCIBNHXYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.537 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.537 DEBUG:12458:tools/checkurl1.go:33: CIBN今古珍藏|http://lbhls01.live.cibn.cc/hls/vCIBNZYPD/1800/vCIBNZYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNZYPD/1800/vCIBNZYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.587 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.587 DEBUG:12458:tools/checkurl1.go:33: CIBN第一赛场|http://lbhls02.live.cibn.cc/hls/vCIBNDSJC/1800/vCIBNDSJC.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNDSJC/1800/vCIBNDSJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:45.703 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:45.703 DEBUG:12458:tools/checkurl1.go:33: CIBN纪录片|http://lbhls01.live.cibn.cc/hls/vCIBNJLPD/1800/vCIBNJLPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJLPD/1800/vCIBNJLPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:55.703 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://lbhls01.live.cibn.cc/hls/vCIBNCWHPD/1800/vCIBNCWHPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCWHPD/1800/vCIBNCWHPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:57.435 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:57.435 DEBUG:12458:tools/checkurl1.go:33: CIBN健康|http://lbhls02.live.cibn.cc/hls/vCIBNJKPD/1800/vCIBNJKPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls02.live.cibn.cc/hls/vCIBNJKPD/1800/vCIBNJKPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:57.547 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:57.547 DEBUG:12458:tools/checkurl1.go:33: CIBN教育|http://lbhls01.live.cibn.cc/hls/vCIBNJYPD/1800/vCIBNJYPD.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNJYPD/1800/vCIBNJYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:57.599 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:57.599 DEBUG:12458:tools/checkurl1.go:33: CANTV|http://lbhls01.live.cibn.cc/hls/vCIBNCHNTV/1800/vCIBNCHNTV.m3u8
+/usr/bin/ffmpeg -i 'http://lbhls01.live.cibn.cc/hls/vCIBNCHNTV/1800/vCIBNCHNTV.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:21:57.632 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:21:57.632 DEBUG:12458:tools/checkurl1.go:33: CIBN综艺频道|http://tv.uwp.ac.cn/migu.m3u8?id=fag7a0NY2RSg0N9F4z7pIw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=fag7a0NY2RSg0N9F4z7pIw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:00.104 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:02.994 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:02.994 DEBUG:12458:tools/checkurl1.go:33: CIBN真人秀|http://tv.uwp.ac.cn/migu.m3u8?id=G5OwxRzTIz57Eus4mMtOcw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=G5OwxRzTIz57Eus4mMtOcw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:04.727 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:08.401 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:08.401 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://tv.uwp.ac.cn/migu.m3u8?id=Di1gi5cMQydU1WHvB3J6cA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=Di1gi5cMQydU1WHvB3J6cA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:13.731 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:13.731 DEBUG:12458:tools/checkurl1.go:33: CIBN嗨播|http://tv.uwp.ac.cn/migu.m3u8?id=jvmB17uE5M4BDY87*QscAA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=jvmB17uE5M4BDY87*QscAA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:19.002 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:19.002 DEBUG:12458:tools/checkurl1.go:33: CIBN财经|http://tv.uwp.ac.cn/migu.m3u8?id=z7a4WAl86jt3WcIeMgEvpg
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=z7a4WAl86jt3WcIeMgEvpg' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:24.626 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:24.626 DEBUG:12458:tools/checkurl1.go:33: CIBN旅游|http://tv.uwp.ac.cn/migu.m3u8?id=8ap40Jit4QlkJUbu*kk4oQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=8ap40Jit4QlkJUbu*kk4oQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:29.939 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:29.939 DEBUG:12458:tools/checkurl1.go:33: CIBN收藏|http://tv.uwp.ac.cn/migu.m3u8?id=*7RSZtg3ZgHeajJTN6APPw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=*7RSZtg3ZgHeajJTN6APPw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:35.337 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:35.618 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:35.618 DEBUG:12458:tools/checkurl1.go:33: CIBN第一赛场|http://tv.uwp.ac.cn/migu.m3u8?id=0aYko0X*znm9AimhmgHxlA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=0aYko0X*znm9AimhmgHxlA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:40.95 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:40.95 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://tv.uwp.ac.cn/migu.m3u8?id=WGL9HwTDEsYq3UBCBcSlOQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=WGL9HwTDEsYq3UBCBcSlOQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:46.441 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:46.441 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://tv.uwp.ac.cn/migu.m3u8?id=XfDYQSw8Z9knpjhFFudtvw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=XfDYQSw8Z9knpjhFFudtvw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:48.804 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:51.751 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:51.751 DEBUG:12458:tools/checkurl1.go:33: CIBN热播剧场|http://tv.uwp.ac.cn/migu.m3u8?id=QREaP+B8UktPiK+OSgbJpQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=QREaP+B8UktPiK+OSgbJpQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:22:57.073 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:22:57.073 DEBUG:12458:tools/checkurl1.go:33: CIBNTEA电竞频道|http://tv.uwp.ac.cn/migu.m3u8?id=QREaP+B8Uks77YgWjd9m1w
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=QREaP+B8Uks77YgWjd9m1w' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:02.372 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:02.372 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫频道|http://tv.uwp.ac.cn/migu.m3u8?id=UuIEROdZB7cpNl7CvNaNKw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=UuIEROdZB7cpNl7CvNaNKw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:07.672 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:07.672 DEBUG:12458:tools/checkurl1.go:33: CIBN精品影院|http://tv.uwp.ac.cn/migu.m3u8?id=mqtsodwD2bcd9YPaA+WeLA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=mqtsodwD2bcd9YPaA+WeLA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:13.005 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:13.005 DEBUG:12458:tools/checkurl1.go:33: CIBN电影频道|http://tv.uwp.ac.cn/migu.m3u8?id=6Cfo*7R0qTTvuq27iEc7qw
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=6Cfo*7R0qTTvuq27iEc7qw' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:18.312 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:18.312 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://tv.uwp.ac.cn/migu.m3u8?id=Z7GwQA+DfBl17fRp6*WuBA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=Z7GwQA+DfBl17fRp6*WuBA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:23.825 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:23.825 DEBUG:12458:tools/checkurl1.go:33: CIBN沙发院线|http://tv.uwp.ac.cn/migu.m3u8?id=41GsBiTFogpeEBjnAoOAwA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=41GsBiTFogpeEBjnAoOAwA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:29.159 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:29.159 DEBUG:12458:tools/checkurl1.go:33: CIBN经典剧场|http://tv.uwp.ac.cn/migu.m3u8?id=6Cfo*7R0qTS2DWK31BacdA
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=6Cfo*7R0qTS2DWK31BacdA' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:34.817 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:34.817 DEBUG:12458:tools/checkurl1.go:33: CIBN骄阳剧场|http://tv.uwp.ac.cn/migu.m3u8?id=v5EYD4*W8IOa7kedSOR28A
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=v5EYD4*W8IOa7kedSOR28A' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:40.123 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:40.123 DEBUG:12458:tools/checkurl1.go:33: CHC动作电影直播|http://tv.uwp.ac.cn/migu.m3u8?id=6RSLwcgHHRsWdzeecccGZQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=6RSLwcgHHRsWdzeecccGZQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:46.281 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:46.281 DEBUG:12458:tools/checkurl1.go:33: CIBN新奇点|http://tv.uwp.ac.cn/migu.m3u8?id=jjbpocqsnwCK891GYnnE6A
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=jjbpocqsnwCK891GYnnE6A' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:51.585 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:51.585 DEBUG:12458:tools/checkurl1.go:33: CIBN欢乐购|http://tv.uwp.ac.cn/migu.m3u8?id=c9MgZlEDt3w*Jgx7jV4YfQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=c9MgZlEDt3w*Jgx7jV4YfQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:23:56.887 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:23:56.887 DEBUG:12458:tools/checkurl1.go:33: CIBN院线大片|http://tv.uwp.ac.cn/migu.m3u8?id=24Ibl97O5587j1tOQ31qdQ
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=24Ibl97O5587j1tOQ31qdQ' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:02.21 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:02.21 DEBUG:12458:tools/checkurl1.go:33: CIBN第一赛场|http://tv.uwp.ac.cn/migu.m3u8?id=LDEIOizgtr3NtphIM3eJ0A
+/usr/bin/ffmpeg -i 'http://tv.uwp.ac.cn/migu.m3u8?id=LDEIOizgtr3NtphIM3eJ0A' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.519 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.519 DEBUG:12458:tools/checkurl1.go:33: ﻿CIBN电影导视|http://uri.52itv.cn/vlive/cibntv/DYDS.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/DYDS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.546 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.546 DEBUG:12458:tools/checkurl1.go:33: CIBN电影频道|http://uri.52itv.cn/vlive/cibntv/DYPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/DYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.565 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.565 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://uri.52itv.cn/vlive/cibntv/HSYX.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/HSYX.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.588 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.588 DEBUG:12458:tools/checkurl1.go:33: CIBN热播剧场|http://uri.52itv.cn/vlive/cibntv/RBJC.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/RBJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.632 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.633 DEBUG:12458:tools/checkurl1.go:33: CIBN骄阳剧场|http://uri.52itv.cn/vlive/cibntv/JDJC.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/JDJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.735 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.736 DEBUG:12458:tools/checkurl1.go:33: CIBN综艺频道|http://uri.52itv.cn/vlive/cibntv/ZYPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/ZYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.872 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.872 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫频道|http://uri.52itv.cn/vlive/cibntv/DMPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/DMPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:07.922 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:07.922 DEBUG:12458:tools/checkurl1.go:33: CIBN教育频道|http://uri.52itv.cn/vlive/cibntv/JYPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/JYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.037 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.037 DEBUG:12458:tools/checkurl1.go:33: CIBN纪录片|http://uri.52itv.cn/vlive/cibntv/JLPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/JLPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.63 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.63 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://uri.52itv.cn/vlive/cibntv/WDYPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/WDYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.654 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.654 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://uri.52itv.cn/vlive/cibntv/CWHPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/CWHPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.766 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.766 DEBUG:12458:tools/checkurl1.go:33: CIBN音乐频道|http://uri.52itv.cn/vlive/cibntv/YYPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/YYPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.815 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.815 DEBUG:12458:tools/checkurl1.go:33: CIBN财经频道|http://uri.52itv.cn/vlive/cibntv/CJPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/CJPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:08.933 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:08.933 DEBUG:12458:tools/checkurl1.go:33: CIBN汽车频道|http://uri.52itv.cn/vlive/cibntv/QCPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/QCPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:18.933 DEBUG:12458:tools/checkurl1.go:33: CIBN环球购物|http://uri.52itv.cn/vlive/cibntv/HQGW.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/HQGW.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:18.953 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:18.953 DEBUG:12458:tools/checkurl1.go:33: CIBN精品影院|http://uri.52itv.cn/vlive/cibntv/JPYY.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/JPYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:18.975 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:18.975 DEBUG:12458:tools/checkurl1.go:33: CIBN情感影院|http://uri.52itv.cn/vlive/cibntv/QGYY.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/QGYY.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:18.997 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:18.997 DEBUG:12458:tools/checkurl1.go:33: CIBN古装剧场|http://uri.52itv.cn/vlive/cibntv/GZJC.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/GZJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.018 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.018 DEBUG:12458:tools/checkurl1.go:33: CIBNTEA电竞|http://uri.52itv.cn/vlive/cibntv/TEADJ.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/TEADJ.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.037 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.037 DEBUG:12458:tools/checkurl1.go:33: CIBN购物|http://uri.52itv.cn/vlive/cibntv/GWPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/GWPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.15 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.15 DEBUG:12458:tools/checkurl1.go:33: CIBN第一赛场|http://uri.52itv.cn/vlive/cibntv/DSJC.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/DSJC.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.298 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.298 DEBUG:12458:tools/checkurl1.go:33: CIBN风尚购物|http://uri.52itv.cn/vlive/cibntv/FSPD.m3u8
+/usr/bin/ffmpeg -i 'http://uri.52itv.cn/vlive/cibntv/FSPD.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.348 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.349 DEBUG:12458:tools/checkurl1.go:33: CIBN电影导视|http://shenhu.live.pptv.com/live/5/30/c3da95ff70ba407c8d0b5721fa53eeda.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/c3da95ff70ba407c8d0b5721fa53eeda.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.476 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.476 DEBUG:12458:tools/checkurl1.go:33: CIBN喜剧影院|http://shenhu.live.pptv.com/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.643 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.643 DEBUG:12458:tools/checkurl1.go:33: CIBN情感影院|http://shenhu.live.pptv.com/live/5/30/3e7261b6efba4636b9a42e13af75ba11.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/3e7261b6efba4636b9a42e13af75ba11.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.712 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.712 DEBUG:12458:tools/checkurl1.go:33: CIBN电影|http://shenhu.live.pptv.com/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.773 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.773 DEBUG:12458:tools/checkurl1.go:33: CIBN动漫|http://shenhu.live.pptv.com/live/5/30/d1732cbd2949479aa2d1d0ac0a733cc0.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/d1732cbd2949479aa2d1d0ac0a733cc0.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.862 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.862 DEBUG:12458:tools/checkurl1.go:33: CIBN纪录片|http://shenhu.live.pptv.com/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:19.965 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:19.965 DEBUG:12458:tools/checkurl1.go:33: CIBN禅文化|http://shenhu.live.pptv.com/live/5/30/dcebd8af6e464ca4978e47c48fbb8646.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/dcebd8af6e464ca4978e47c48fbb8646.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.054 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.054 DEBUG:12458:tools/checkurl1.go:33: CIBN财经|http://shenhu.live.pptv.com/live/5/30/9f711b022861484cb3951a80ea673dc9.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/9f711b022861484cb3951a80ea673dc9.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.144 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.144 DEBUG:12458:tools/checkurl1.go:33: CIBN电竞|http://shenhu.live.pptv.com/live/5/30/590be801d8fa416097c25f712cfdd796.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/590be801d8fa416097c25f712cfdd796.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.233 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.234 DEBUG:12458:tools/checkurl1.go:33: CIBN微电影|http://shenhu.live.pptv.com/live/5/30/c8e6df8a37ee4538baa162be489dbb1c.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/c8e6df8a37ee4538baa162be489dbb1c.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.326 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.326 DEBUG:12458:tools/checkurl1.go:33: CIBN军事|http://shenhu.live.pptv.com/live/5/30/22e78d6fbfbd4b72b07b8c98131f86f4.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://shenhu.live.pptv.com/live/5/30/22e78d6fbfbd4b72b07b8c98131f86f4.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.417 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.417 DEBUG:12458:tools/checkurl1.go:33: cibn好莱坞|http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay
+/usr/bin/ffmpeg -i 'http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:20.645 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:20.645 DEBUG:12458:tools/checkurl1.go:33: 35|http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS35	http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8
+2018-07-03 10:24:21.113 DEBUG:12458:tools/checkurl1.go:33: 75|http://223.110.243.155:80/PLTV/3/224/3221226975/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226975/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:24.188 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:24:31.113 DEBUG:12458:tools/checkurl1.go:33: 77|http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS77	http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8
+2018-07-03 10:24:31.524 DEBUG:12458:tools/checkurl1.go:33: 80|http://223.110.243.155:80/PLTV/3/224/3221226980/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226980/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:41.524 DEBUG:12458:tools/checkurl1.go:33: 82|http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS82	http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8
+2018-07-03 10:24:41.918 DEBUG:12458:tools/checkurl1.go:33: 83|http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS83	http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8
+2018-07-03 10:24:42.616 DEBUG:12458:tools/checkurl1.go:33: CCTV1综合|http://223.110.243.155:80/PLTV/3/224/3221225530/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225530/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:24:52.616 DEBUG:12458:tools/checkurl1.go:33: CCTV1综合|http://223.110.243.155:80/PLTV/3/224/3221226316/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226316/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:25:02.617 DEBUG:12458:tools/checkurl1.go:33: CCTV1综合|http://223.110.243.155:80/PLTV/3/224/3221226924/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226924/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV1综合	http://223.110.243.155:80/PLTV/3/224/3221226924/1.m3u8
+2018-07-03 10:25:06.437 DEBUG:12458:tools/checkurl1.go:33: CCTV1综合|http://223.110.243.155:80/PLTV/3/224/3221227400/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227400/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:25:16.438 DEBUG:12458:tools/checkurl1.go:33: CCTV2财经|http://223.110.243.155:80/PLTV/3/224/3221227207/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227207/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV2财经	http://223.110.243.155:80/PLTV/3/224/3221227207/1.m3u8
+2018-07-03 10:25:18.535 DEBUG:12458:tools/checkurl1.go:33: CCTV2财经|http://223.110.243.155:80/PLTV/3/224/3221227412/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227412/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:25:28.535 DEBUG:12458:tools/checkurl1.go:33: CCTV3综艺http://223.110.243.155:80/PLTV/3/224/3221225588/1.m3u8
+/usr/bin/ffmpeg -i 'CCTV3综艺http://223.110.243.155:80/PLTV/3/224/3221225588/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:25:28.577 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:25:28.577 DEBUG:12458:tools/checkurl1.go:33: CCTV3综艺|http://223.110.243.155:80/PLTV/3/224/3221227206/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227206/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV3综艺	http://223.110.243.155:80/PLTV/3/224/3221227206/1.m3u8
+2018-07-03 10:25:32.56 DEBUG:12458:tools/checkurl1.go:33: CCTV3综艺|http://223.110.243.155:80/PLTV/3/224/3221227415/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227415/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV3综艺	http://223.110.243.155:80/PLTV/3/224/3221227415/1.m3u8
+2018-07-03 10:25:39.795 DEBUG:12458:tools/checkurl1.go:33: CCTV4中文国际|http://223.110.243.155:80/PLTV/3/224/3221225534/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225534/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV4中文国际	http://223.110.243.155:80/PLTV/3/224/3221225534/1.m3u8
+2018-07-03 10:25:40.128 DEBUG:12458:tools/checkurl1.go:33: CCTV5体育|http://223.110.243.155:80/PLTV/3/224/3221226324/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226324/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV5体育	http://223.110.243.155:80/PLTV/3/224/3221226324/1.m3u8
+2018-07-03 10:25:42.154 DEBUG:12458:tools/checkurl1.go:33: CCTV5体育|http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV5体育	http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8
+2018-07-03 10:25:44.599 DEBUG:12458:tools/checkurl1.go:33: CCTV5体育|http://223.110.243.155:80/PLTV/3/224/3221227468/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227468/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:25:54.599 DEBUG:12458:tools/checkurl1.go:33: CCTV5+体育赛事|http://223.110.243.155:80/PLTV/3/224/3221227465/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227465/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV5+体育赛事	http://223.110.243.155:80/PLTV/3/224/3221227465/1.m3u8
+2018-07-03 10:25:59.24 DEBUG:12458:tools/checkurl1.go:33: CCTV5+体育赛事|http://223.110.243.155:80/PLTV/3/224/3221225604/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225604/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV5+体育赛事	http://223.110.243.155:80/PLTV/3/224/3221225604/1.m3u8
+2018-07-03 10:26:05.655 DEBUG:12458:tools/checkurl1.go:33: CCTV5+体育赛事|http://223.110.243.155:80/PLTV/3/224/3221226322/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226322/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV5+体育赛事	http://223.110.243.155:80/PLTV/3/224/3221226322/1.m3u8
+2018-07-03 10:26:08.337 DEBUG:12458:tools/checkurl1.go:33: CCTV6电影|http://223.110.243.155:80/PLTV/3/224/3221225548/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225548/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV6电影	http://223.110.243.155:80/PLTV/3/224/3221225548/1.m3u8
+2018-07-03 10:26:13.352 DEBUG:12458:tools/checkurl1.go:33: CCTV6电影|http://223.110.243.155:80/PLTV/3/224/3221227209/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227209/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV6电影	http://223.110.243.155:80/PLTV/3/224/3221227209/1.m3u8
+2018-07-03 10:26:15.634 DEBUG:12458:tools/checkurl1.go:33: CCTV7军事农业|http://223.110.243.155:80/PLTV/3/224/3221225546/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225546/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV7军事农业	http://223.110.243.155:80/PLTV/3/224/3221225546/1.m3u8
+2018-07-03 10:26:16.603 DEBUG:12458:tools/checkurl1.go:33: CCTV7军事农业|http://223.110.243.155:80/PLTV/3/224/3221227392/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227392/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:26:26.603 DEBUG:12458:tools/checkurl1.go:33: CCTV8电视剧|http://223.110.243.155:80/PLTV/3/224/3221227204/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227204/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV8电视剧	http://223.110.243.155:80/PLTV/3/224/3221227204/1.m3u8
+2018-07-03 10:26:28.762 DEBUG:12458:tools/checkurl1.go:33: CCTV8电视剧|http://223.110.243.155:80/PLTV/3/224/3221227205/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227205/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV8电视剧	http://223.110.243.155:80/PLTV/3/224/3221227205/1.m3u8
+2018-07-03 10:26:29.426 DEBUG:12458:tools/checkurl1.go:33: CCTV8电视剧|http://223.110.243.155:80/PLTV/3/224/3221227418/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227418/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:26:39.426 DEBUG:12458:tools/checkurl1.go:33: CCTV9纪录|http://223.110.243.155:80/PLTV/3/224/3221225532/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225532/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV9纪录	http://223.110.243.155:80/PLTV/3/224/3221225532/1.m3u8
+2018-07-03 10:26:41.851 DEBUG:12458:tools/checkurl1.go:33: CCTV9纪录|http://223.110.243.155:80/PLTV/3/224/3221227471/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227471/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV9纪录	http://223.110.243.155:80/PLTV/3/224/3221227471/1.m3u8
+2018-07-03 10:26:45.876 DEBUG:12458:tools/checkurl1.go:33: CCTV10科教|http://223.110.243.155:80/PLTV/3/224/3221225550/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225550/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV10科教	http://223.110.243.155:80/PLTV/3/224/3221225550/1.m3u8
+2018-07-03 10:26:50.91 DEBUG:12458:tools/checkurl1.go:33: CCTV10科教|http://223.110.243.155:80/PLTV/3/224/3221227403/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227403/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV10科教	http://223.110.243.155:80/PLTV/3/224/3221227403/1.m3u8
+2018-07-03 10:26:58.437 DEBUG:12458:tools/checkurl1.go:33: CCTV11戏曲(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225552/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225552/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV11戏曲(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225552/1.m3u8
+2018-07-03 10:26:58.731 DEBUG:12458:tools/checkurl1.go:33: CCTV12社会与法|http://223.110.243.155:80/PLTV/3/224/3221225556/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225556/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV12社会与法	http://223.110.243.155:80/PLTV/3/224/3221225556/1.m3u8
+2018-07-03 10:27:01.077 DEBUG:12458:tools/checkurl1.go:33: CCTV12社会与法|http://223.110.243.155:80/PLTV/3/224/3221227406/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227406/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV12社会与法	http://223.110.243.155:80/PLTV/3/224/3221227406/1.m3u8
+2018-07-03 10:27:06.466 DEBUG:12458:tools/checkurl1.go:33: CCTV13新闻(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225560/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225560/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV13新闻(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225560/1.m3u8
+2018-07-03 10:27:07.577 DEBUG:12458:tools/checkurl1.go:33: CCTV14少儿|http://223.110.243.155:80/PLTV/3/224/3221227201/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227201/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:27:17.577 DEBUG:12458:tools/checkurl1.go:33: CCTV14少儿|http://223.110.243.155:80/PLTV/3/224/3221227409/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227409/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV14少儿	http://223.110.243.155:80/PLTV/3/224/3221227409/1.m3u8
+2018-07-03 10:27:23.916 DEBUG:12458:tools/checkurl1.go:33: CCTV15音乐(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225568/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225568/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCCTV15音乐(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225568/1.m3u8
+2018-07-03 10:27:24.667 DEBUG:12458:tools/checkurl1.go:33: CETV-1(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225622/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225622/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCETV-1(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225622/1.m3u8
+2018-07-03 10:27:25.043 DEBUG:12458:tools/checkurl1.go:33: SDETV(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225614/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225614/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSSDETV(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225614/1.m3u8
+2018-07-03 10:27:26.031 DEBUG:12458:tools/checkurl1.go:33: CNC英文|http://223.110.243.155:80/PLTV/3/224/3221227441/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227441/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCNC英文	http://223.110.243.155:80/PLTV/3/224/3221227441/1.m3u8
+2018-07-03 10:27:26.552 DEBUG:12458:tools/checkurl1.go:33: CNC中文|http://223.110.243.155:80/PLTV/3/224/3221227444/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227444/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCNC中文	http://223.110.243.155:80/PLTV/3/224/3221227444/1.m3u8
+2018-07-03 10:27:30.162 DEBUG:12458:tools/checkurl1.go:33: CGTN中国国际(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225572/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225572/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSCGTN中国国际(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225572/1.m3u8
+2018-07-03 10:27:30.457 DEBUG:12458:tools/checkurl1.go:33: 新疆卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225523/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225523/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS新疆卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225523/1.m3u8
+2018-07-03 10:27:31.026 DEBUG:12458:tools/checkurl1.go:33: 江西卫视|http://223.110.243.155:80/PLTV/3/224/3221225536/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225536/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS江西卫视	http://223.110.243.155:80/PLTV/3/224/3221225536/1.m3u8
+2018-07-03 10:27:31.849 DEBUG:12458:tools/checkurl1.go:33: 贵州卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225540/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225540/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS贵州卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225540/1.m3u8
+2018-07-03 10:27:32.247 DEBUG:12458:tools/checkurl1.go:33: 浙江卫视|http://223.110.243.155:80/PLTV/3/224/3221225544/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225544/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS浙江卫视	http://223.110.243.155:80/PLTV/3/224/3221225544/1.m3u8
+2018-07-03 10:27:37.428 DEBUG:12458:tools/checkurl1.go:33: 广西卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225554/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225554/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS广西卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225554/1.m3u8
+2018-07-03 10:27:38.315 DEBUG:12458:tools/checkurl1.go:33: 东方卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225558/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225558/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS东方卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225558/1.m3u8
+2018-07-03 10:27:38.642 DEBUG:12458:tools/checkurl1.go:33: 天津卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225562/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225562/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS天津卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225562/1.m3u8
+2018-07-03 10:27:39.407 DEBUG:12458:tools/checkurl1.go:33: 辽宁卫视|http://223.110.243.155:80/PLTV/3/224/3221225566/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225566/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS辽宁卫视	http://223.110.243.155:80/PLTV/3/224/3221225566/1.m3u8
+2018-07-03 10:27:48.163 DEBUG:12458:tools/checkurl1.go:33: 四川卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225570/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225570/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS四川卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225570/1.m3u8
+2018-07-03 10:27:48.893 DEBUG:12458:tools/checkurl1.go:33: BTV北京卫视|http://223.110.243.155:80/PLTV/3/224/3221225574/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225574/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSBTV北京卫视	http://223.110.243.155:80/PLTV/3/224/3221225574/1.m3u8
+2018-07-03 10:27:50.641 DEBUG:12458:tools/checkurl1.go:33: 山西卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225576/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225576/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS山西卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225576/1.m3u8
+2018-07-03 10:27:53.337 DEBUG:12458:tools/checkurl1.go:33: 广东卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225578/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225578/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS广东卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225578/1.m3u8
+2018-07-03 10:27:58.962 DEBUG:12458:tools/checkurl1.go:33: 西藏卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225579/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225579/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS西藏卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225579/1.m3u8
+2018-07-03 10:28:04.103 DEBUG:12458:tools/checkurl1.go:33: 青海卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225580/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225580/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS青海卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225580/1.m3u8
+2018-07-03 10:28:04.383 DEBUG:12458:tools/checkurl1.go:33: 深圳卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225582/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225582/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS深圳卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225582/1.m3u8
+2018-07-03 10:28:07.775 DEBUG:12458:tools/checkurl1.go:33: 山东卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225586/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225586/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS山东卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225586/1.m3u8
+2018-07-03 10:28:08.052 DEBUG:12458:tools/checkurl1.go:33: 甘肃卫视|http://223.110.243.155:80/PLTV/3/224/3221225590/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225590/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:28:18.052 DEBUG:12458:tools/checkurl1.go:33: 云南卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225591/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225591/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:28:28.052 DEBUG:12458:tools/checkurl1.go:33: 广东卫视(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225592/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225592/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS广东卫视(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225592/1.m3u8
+2018-07-03 10:28:30.695 DEBUG:12458:tools/checkurl1.go:33: 重庆卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225594/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225594/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS重庆卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225594/1.m3u8
+2018-07-03 10:28:31.77 DEBUG:12458:tools/checkurl1.go:33: 东南卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225598/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225598/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS东南卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225598/1.m3u8
+2018-07-03 10:28:35.782 DEBUG:12458:tools/checkurl1.go:33: 河北卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225602/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225602/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:28:45.782 DEBUG:12458:tools/checkurl1.go:33: 内蒙古卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225624/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225624/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS内蒙古卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225624/1.m3u8
+2018-07-03 10:28:46.08 DEBUG:12458:tools/checkurl1.go:33: 陕西卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225626/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225626/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS陕西卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225626/1.m3u8
+2018-07-03 10:28:46.597 DEBUG:12458:tools/checkurl1.go:33: 宁夏卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225628/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225628/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS宁夏卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225628/1.m3u8
+2018-07-03 10:28:48.001 DEBUG:12458:tools/checkurl1.go:33: 湖北卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225630/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225630/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS湖北卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225630/1.m3u8
+2018-07-03 10:28:48.369 DEBUG:12458:tools/checkurl1.go:33: 河南卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225632/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225632/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS河南卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225632/1.m3u8
+2018-07-03 10:28:50.932 DEBUG:12458:tools/checkurl1.go:33: 安徽卫视|http://223.110.243.155:80/PLTV/3/224/3221225634/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225634/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS安徽卫视	http://223.110.243.155:80/PLTV/3/224/3221225634/1.m3u8
+2018-07-03 10:28:59.298 DEBUG:12458:tools/checkurl1.go:33: 江苏卫视|http://223.110.243.155:80/PLTV/3/224/3221227185/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227185/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:29:09.299 DEBUG:12458:tools/checkurl1.go:33: 优漫卡通(普清720)|http://223.110.243.155:80/PLTV/3/224/3221227188/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227188/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS优漫卡通(普清720)	http://223.110.243.155:80/PLTV/3/224/3221227188/1.m3u8
+2018-07-03 10:29:11.45 DEBUG:12458:tools/checkurl1.go:33: 湖南卫视|http://223.110.243.155:80/PLTV/3/224/3221227191/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227191/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS湖南卫视	http://223.110.243.155:80/PLTV/3/224/3221227191/1.m3u8
+2018-07-03 10:29:16.668 DEBUG:12458:tools/checkurl1.go:33: 东方卫视|http://223.110.243.155:80/PLTV/3/224/3221227208/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227208/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:29:26.668 DEBUG:12458:tools/checkurl1.go:33: 湖北卫视|http://223.110.243.155:80/PLTV/3/224/3221227211/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227211/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:29:36.669 DEBUG:12458:tools/checkurl1.go:33: 天津卫视|http://223.110.243.155:80/PLTV/3/224/3221227212/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227212/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS天津卫视	http://223.110.243.155:80/PLTV/3/224/3221227212/1.m3u8
+2018-07-03 10:29:41.874 DEBUG:12458:tools/checkurl1.go:33: 江西卫视|http://223.110.243.155:80/PLTV/3/224/3221227214/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227214/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:29:51.875 DEBUG:12458:tools/checkurl1.go:33: 浙江卫视|http://223.110.243.155:80/PLTV/3/224/3221227215/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227215/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:30:01.875 DEBUG:12458:tools/checkurl1.go:33: 深圳卫视|http://223.110.243.155:80/PLTV/3/224/3221227217/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227217/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:30:11.875 DEBUG:12458:tools/checkurl1.go:33: 湖南卫视|http://223.110.243.155:80/PLTV/3/224/3221227220/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227220/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:30:21.875 DEBUG:12458:tools/checkurl1.go:33: BTV北京卫视|http://223.110.243.155:80/PLTV/3/224/3221227246/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227246/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSBTV北京卫视	http://223.110.243.155:80/PLTV/3/224/3221227246/1.m3u8
+2018-07-03 10:30:26.093 DEBUG:12458:tools/checkurl1.go:33: 广东卫视|http://223.110.243.155:80/PLTV/3/224/3221227249/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227249/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:30:36.093 DEBUG:12458:tools/checkurl1.go:33: 黑龙江卫视|http://223.110.243.155:80/PLTV/3/224/3221227252/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227252/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS黑龙江卫视	http://223.110.243.155:80/PLTV/3/224/3221227252/1.m3u8
+2018-07-03 10:30:37.444 DEBUG:12458:tools/checkurl1.go:33: 江苏卫视|http://223.110.243.155:80/PLTV/3/224/3221227255/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227255/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:30:47.444 DEBUG:12458:tools/checkurl1.go:33: 山东卫视|http://223.110.243.155:80/PLTV/3/224/3221227258/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227258/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS山东卫视	http://223.110.243.155:80/PLTV/3/224/3221227258/1.m3u8
+2018-07-03 10:30:51.581 DEBUG:12458:tools/checkurl1.go:33: 重庆卫视|http://223.110.243.155:80/PLTV/3/224/3221227421/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227421/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS重庆卫视	http://223.110.243.155:80/PLTV/3/224/3221227421/1.m3u8
+2018-07-03 10:30:55.184 DEBUG:12458:tools/checkurl1.go:33: 安徽卫视|http://223.110.243.155:80/PLTV/3/224/3221227474/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227474/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS安徽卫视	http://223.110.243.155:80/PLTV/3/224/3221227474/1.m3u8
+2018-07-03 10:30:56.228 DEBUG:12458:tools/checkurl1.go:33: 黑龙江卫视|http://223.110.243.155:80/PLTV/3/224/3221227477/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227477/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:31:06.228 DEBUG:12458:tools/checkurl1.go:33: 上海纪实|http://223.110.243.155:80/PLTV/3/224/3221227395/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227395/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS上海纪实	http://223.110.243.155:80/PLTV/3/224/3221227395/1.m3u8
+2018-07-03 10:31:07.466 DEBUG:12458:tools/checkurl1.go:33: BTV纪实|http://223.110.243.155:80/PLTV/3/224/3221227397/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227397/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:31:17.467 DEBUG:12458:tools/checkurl1.go:33: 阳光卫视(普清720)|http://223.110.243.155:80/PLTV/3/224/3221226915/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226915/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS阳光卫视(普清720)	http://223.110.243.155:80/PLTV/3/224/3221226915/1.m3u8
+2018-07-03 10:31:17.936 DEBUG:12458:tools/checkurl1.go:33: NewTV爱情喜剧(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225525/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225525/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV爱情喜剧(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225525/1.m3u8
+2018-07-03 10:31:18.375 DEBUG:12458:tools/checkurl1.go:33: NewTV古装剧场(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225527/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225527/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV古装剧场(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225527/1.m3u8
+2018-07-03 10:31:18.757 DEBUG:12458:tools/checkurl1.go:33: NewTv动作电影|http://223.110.243.155:80/PLTV/3/224/3221225529/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225529/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTv动作电影	http://223.110.243.155:80/PLTV/3/224/3221225529/1.m3u8
+2018-07-03 10:31:19.911 DEBUG:12458:tools/checkurl1.go:33: NewTv军旅剧场|http://223.110.243.155:80/PLTV/3/224/3221225531/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225531/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTv军旅剧场	http://223.110.243.155:80/PLTV/3/224/3221225531/1.m3u8
+2018-07-03 10:31:20.211 DEBUG:12458:tools/checkurl1.go:33: NewTV军事评论|http://223.110.243.155:80/PLTV/3/224/3221225533/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225533/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV军事评论	http://223.110.243.155:80/PLTV/3/224/3221225533/1.m3u8
+2018-07-03 10:31:20.702 DEBUG:12458:tools/checkurl1.go:33: NewTv明星大片|http://223.110.243.155:80/PLTV/3/224/3221225535/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225535/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:31:30.702 DEBUG:12458:tools/checkurl1.go:33: NewTV农业致富(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225537/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225537/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:31:40.702 DEBUG:12458:tools/checkurl1.go:33: NewTV完美游戏(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225539/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225539/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:31:50.702 DEBUG:12458:tools/checkurl1.go:33: NewTV精品体育(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225543/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225543/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品体育(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225543/1.m3u8
+2018-07-03 10:31:51.106 DEBUG:12458:tools/checkurl1.go:33: NewTV健康有约(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225545/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225545/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV健康有约(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225545/1.m3u8
+2018-07-03 10:31:51.598 DEBUG:12458:tools/checkurl1.go:33: NewTV海外剧场(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225547/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225547/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:32:01.598 DEBUG:12458:tools/checkurl1.go:33: NewTV家庭剧场|http://223.110.243.155:80/PLTV/3/224/3221225549/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225549/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:32:11.599 DEBUG:12458:tools/checkurl1.go:33: NewTV动画王国|http://223.110.243.155:80/PLTV/3/224/3221225555/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225555/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV动画王国	http://223.110.243.155:80/PLTV/3/224/3221225555/1.m3u8
+2018-07-03 10:32:12.904 DEBUG:12458:tools/checkurl1.go:33: NewTV精品纪录|http://223.110.243.155:80/PLTV/3/224/3221225557/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225557/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:32:22.905 DEBUG:12458:tools/checkurl1.go:33: NewTV金牌综艺|http://223.110.243.155:80/PLTV/3/224/3221225559/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225559/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV金牌综艺	http://223.110.243.155:80/PLTV/3/224/3221225559/1.m3u8
+2018-07-03 10:32:26.439 DEBUG:12458:tools/checkurl1.go:33: NewTV精品悬疑|http://223.110.243.155:80/PLTV/3/224/3221225561/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225561/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品悬疑	http://223.110.243.155:80/PLTV/3/224/3221225561/1.m3u8
+2018-07-03 10:32:30.74 DEBUG:12458:tools/checkurl1.go:33: NewTV精品电影|http://223.110.243.155:80/PLTV/3/224/3221225567/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225567/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品电影	http://223.110.243.155:80/PLTV/3/224/3221225567/1.m3u8
+2018-07-03 10:32:31.675 DEBUG:12458:tools/checkurl1.go:33: NewTV精品大剧|http://223.110.243.155:80/PLTV/3/224/3221225569/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225569/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNewTV精品大剧	http://223.110.243.155:80/PLTV/3/224/3221225569/1.m3u8
+2018-07-03 10:32:32.225 DEBUG:12458:tools/checkurl1.go:33: NEWTV搏击(普清720)|http://223.110.243.155:80/PLTV/3/224/3221226656/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226656/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNEWTV搏击(普清720)	http://223.110.243.155:80/PLTV/3/224/3221226656/1.m3u8
+2018-07-03 10:32:32.838 DEBUG:12458:tools/checkurl1.go:33: NEWTV中国功夫(普清720)|http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNEWTV中国功夫(普清720)	http://223.110.243.155:80/PLTV/3/224/3221226935/1.m3u8
+2018-07-03 10:32:33.921 DEBUG:12458:tools/checkurl1.go:33: NEWTV潮妈辣婆(普清720)|http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSNEWTV潮妈辣婆(普清720)	http://223.110.243.155:80/PLTV/3/224/3221226983/1.m3u8
+2018-07-03 10:32:34.901 DEBUG:12458:tools/checkurl1.go:33: BTV卡酷少儿|http://223.110.243.155:80/PLTV/3/224/3221225616/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225616/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESSBTV卡酷少儿	http://223.110.243.155:80/PLTV/3/224/3221225616/1.m3u8
+2018-07-03 10:32:35.354 DEBUG:12458:tools/checkurl1.go:33: 金鹰卡通(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225620/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225620/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS金鹰卡通(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225620/1.m3u8
+2018-07-03 10:32:35.975 DEBUG:12458:tools/checkurl1.go:33: 炫动卡通(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225694/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225694/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS炫动卡通(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225694/1.m3u8
+2018-07-03 10:32:38.807 DEBUG:12458:tools/checkurl1.go:33: 优漫卡通(普清720)|http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS优漫卡通(普清720)	http://223.110.243.155:80/PLTV/3/224/3221226982/1.m3u8
+2018-07-03 10:32:40.497 DEBUG:12458:tools/checkurl1.go:33: 东海国学与家道|http://223.110.243.155:80/PLTV/3/224/3221226392/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226392/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS东海国学与家道	http://223.110.243.155:80/PLTV/3/224/3221226392/1.m3u8
+2018-07-03 10:32:40.935 DEBUG:12458:tools/checkurl1.go:33: 家有购物|http://223.110.243.155:80/PLTV/3/224/3221226593/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226593/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS家有购物	http://223.110.243.155:80/PLTV/3/224/3221226593/1.m3u8
+2018-07-03 10:32:42.028 DEBUG:12458:tools/checkurl1.go:33: 东海文娱频道|http://223.110.243.155:80/PLTV/3/224/3221226599/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226599/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS东海文娱频道	http://223.110.243.155:80/PLTV/3/224/3221226599/1.m3u8
+2018-07-03 10:32:42.434 DEBUG:12458:tools/checkurl1.go:33: 东海新闻频道|http://223.110.243.155:80/PLTV/3/224/3221226601/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226601/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:32:52.434 DEBUG:12458:tools/checkurl1.go:33: 徐州-1(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225945/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225945/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS徐州-1(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225945/1.m3u8
+2018-07-03 10:32:54.409 DEBUG:12458:tools/checkurl1.go:33: 徐州-2(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225947/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225947/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS徐州-2(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225947/1.m3u8
+2018-07-03 10:32:54.938 DEBUG:12458:tools/checkurl1.go:33: 徐州-3(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225949/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225949/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS徐州-3(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225949/1.m3u8
+2018-07-03 10:32:56.946 DEBUG:12458:tools/checkurl1.go:33: 徐州-4(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221225951/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225951/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS徐州-4(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221225951/1.m3u8
+2018-07-03 10:33:00.36 DEBUG:12458:tools/checkurl1.go:33: 风尚购物(普清720)|http://223.110.243.155:80/PLTV/3/224/3221225956/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221225956/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS风尚购物(普清720)	http://223.110.243.155:80/PLTV/3/224/3221225956/1.m3u8
+2018-07-03 10:33:02.61 DEBUG:12458:tools/checkurl1.go:33: 邳州综合|http://223.110.243.155:80/PLTV/3/224/3221227386/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227386/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS邳州综合	http://223.110.243.155:80/PLTV/3/224/3221227386/1.m3u8
+2018-07-03 10:33:04.553 DEBUG:12458:tools/checkurl1.go:33: 邳州综艺|http://223.110.243.155:80/PLTV/3/224/3221227388/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221227388/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS邳州综艺	http://223.110.243.155:80/PLTV/3/224/3221227388/1.m3u8
+2018-07-03 10:33:06.737 DEBUG:12458:tools/checkurl1.go:33: 凤凰卫视中文台(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221226922/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226922/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS凤凰卫视中文台(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221226922/1.m3u8
+2018-07-03 10:33:12.651 DEBUG:12458:tools/checkurl1.go:33: 凤凰卫视中文台(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS凤凰卫视中文台(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221226977/1.m3u8
+2018-07-03 10:33:13.025 DEBUG:12458:tools/checkurl1.go:33: 凤凰卫视资讯台(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221226923/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226923/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS凤凰卫视资讯台(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221226923/1.m3u8
+2018-07-03 10:33:18.107 DEBUG:12458:tools/checkurl1.go:33: 凤凰卫视资讯台(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221226980/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226980/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS凤凰卫视资讯台(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221226980/1.m3u8
+2018-07-03 10:33:22.002 DEBUG:12458:tools/checkurl1.go:33: 凤凰卫视香港台(HD1080)|http://223.110.243.155:80/PLTV/3/224/3221226975/1.m3u8
+/usr/bin/ffmpeg -i 'http://223.110.243.155:80/PLTV/3/224/3221226975/1.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS凤凰卫视香港台(HD1080)	http://223.110.243.155:80/PLTV/3/224/3221226975/1.m3u8
+2018-07-03 10:33:27.548 DEBUG:12458:tools/checkurl1.go:33: 七彩戏剧(普清720)|http://111.20.33.95/PLTV/88888888/224/3221225643/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.95/PLTV/88888888/224/3221225643/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:32.715 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:32.715 DEBUG:12458:tools/checkurl1.go:33: 兵团卫视(普清720)|http://111.20.33.95/PLTV/88888888/224/3221225627/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.95/PLTV/88888888/224/3221225627/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:37.888 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:37.888 DEBUG:12458:tools/checkurl1.go:33: Newtv惊悚嫌疑|http://111.20.33.72/PLTV/88888888/224/3221225503/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225503/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:43.017 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:43.018 DEBUG:12458:tools/checkurl1.go:33: Newtv金牌综艺|http://111.20.33.72/PLTV/88888888/224/3221225504/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225504/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:48.167 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:48.168 DEBUG:12458:tools/checkurl1.go:33: Newtv致富农业|http://111.20.33.72/PLTV/88888888/224/3221225505/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225505/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:53.316 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:53.316 DEBUG:12458:tools/checkurl1.go:33: Newtv军事评论|http://111.20.33.72/PLTV/88888888/224/3221225512/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225512/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:33:58.441 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:33:58.441 DEBUG:12458:tools/checkurl1.go:33: Newtv明星大片|http://111.20.33.72/PLTV/88888888/224/3221225513/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225513/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:03.568 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:03.568 DEBUG:12458:tools/checkurl1.go:33: Newtv精品纪录|http://111.20.33.72/PLTV/88888888/224/3221225514/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225514/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:08.699 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:08.699 DEBUG:12458:tools/checkurl1.go:33: Newtv家庭剧场|http://111.20.33.72/PLTV/88888888/224/3221225518/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225518/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:13.834 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:13.834 DEBUG:12458:tools/checkurl1.go:33: Newtv海外剧场|http://111.20.33.72/PLTV/88888888/224/3221225519/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225519/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:18.984 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:18.984 DEBUG:12458:tools/checkurl1.go:33: Newtv动作电影|http://111.20.33.72/PLTV/88888888/224/3221225523/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225523/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:24.134 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:24.134 DEBUG:12458:tools/checkurl1.go:33: Newtv爱情喜剧|http://111.20.33.72/PLTV/88888888/224/3221225524/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225524/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:29.265 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:29.265 DEBUG:12458:tools/checkurl1.go:33: Newtv完美游戏|http://111.20.33.72/PLTV/88888888/224/3221225525/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225525/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:34.415 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:34.415 DEBUG:12458:tools/checkurl1.go:33: Newtv军旅剧场|http://111.20.33.72/PLTV/88888888/224/3221225529/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225529/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:39.544 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:39.544 DEBUG:12458:tools/checkurl1.go:33: Newtv精品剧场|http://111.20.33.72/PLTV/88888888/224/3221225530/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225530/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:44.696 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:44.696 DEBUG:12458:tools/checkurl1.go:33: Newtv健康有约|http://111.20.33.72/PLTV/88888888/224/3221225531/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225531/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:49.847 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:49.847 DEBUG:12458:tools/checkurl1.go:33: Newtv精品大剧|http://111.20.33.72/PLTV/88888888/224/3221225533/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.20.33.72/PLTV/88888888/224/3221225533/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:34:54.974 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:34:54.974 DEBUG:12458:tools/checkurl1.go:33: Newtv精品体育|http://111.13.42.8/PLTV/88888888/224/3221225976/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.13.42.8/PLTV/88888888/224/3221225976/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:00.095 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:00.095 DEBUG:12458:tools/checkurl1.go:33: Newtv精品体育HD|http://183.251.61.207/PLTV/88888888/224/3221225886/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225886/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:05.229 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:05.229 DEBUG:12458:tools/checkurl1.go:33: Newtv精品电影|http://111.12.130.67/PLTV/88888888/224/3221225680/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225680/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:10.356 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:10.356 DEBUG:12458:tools/checkurl1.go:33: Newtv精品电影HD|http://183.251.61.207/PLTV/88888888/224/3221225891/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225891/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:15.503 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:15.503 DEBUG:12458:tools/checkurl1.go:33: Newtv精品大剧|http://111.12.130.67/PLTV/88888888/224/3221225681/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225681/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:20.632 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:20.632 DEBUG:12458:tools/checkurl1.go:33: Newtv精品大剧HD|http://183.251.61.207/PLTV/88888888/224/3221225889/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225889/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:25.761 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:25.761 DEBUG:12458:tools/checkurl1.go:33: Newtv精品纪录|http://111.12.130.67/PLTV/88888888/224/3221225724/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225724/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:30.887 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:30.887 DEBUG:12458:tools/checkurl1.go:33: Newtv精品记录HD|http://183.251.61.207/PLTV/88888888/224/3221225888/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225888/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:36.008 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:36.008 DEBUG:12458:tools/checkurl1.go:33: Newtv动画王国HD|http://183.251.61.207/PLTV/88888888/224/3221225878/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225878/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:41.13 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:41.13 DEBUG:12458:tools/checkurl1.go:33: Newtv爱情喜剧|http://111.12.130.67/PLTV/88888888/224/3221225733/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225733/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:46.281 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:46.281 DEBUG:12458:tools/checkurl1.go:33: Newtv古装剧场|http://111.12.130.67/PLTV/88888888/224/3221225728/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225728/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:51.425 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:51.425 DEBUG:12458:tools/checkurl1.go:33: Newtv家庭剧场|http://111.12.130.67/PLTV/88888888/224/3221225725/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225725/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:35:56.568 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:35:56.568 DEBUG:12458:tools/checkurl1.go:33: Newtv家庭剧场HD|http://183.251.61.207/PLTV/88888888/224/3221225882/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225882/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:01.717 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:01.717 DEBUG:12458:tools/checkurl1.go:33: Newtv军旅剧场|http://111.12.130.67/PLTV/88888888/224/3221225730/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225730/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:06.867 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:06.867 DEBUG:12458:tools/checkurl1.go:33: Newtv军事评论|http://111.12.130.67/PLTV/88888888/224/3221225722/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225722/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:12.016 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:12.016 DEBUG:12458:tools/checkurl1.go:33: Newtv海外剧场|http://111.12.130.67/PLTV/88888888/224/3221225731/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225731/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:17.138 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:17.138 DEBUG:12458:tools/checkurl1.go:33: Newtv动作电影|http://111.12.130.67/PLTV/88888888/224/3221225732/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225732/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:22.263 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:22.263 DEBUG:12458:tools/checkurl1.go:33: Newtv动作电影HD|http://183.251.61.207/PLTV/88888888/224/3221225879/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225879/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:27.412 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:27.412 DEBUG:12458:tools/checkurl1.go:33: Newtv惊悚悬疑HD|http://183.251.61.207/PLTV/88888888/224/3221225885/index.m3u8
+/usr/bin/ffmpeg -i 'http://183.251.61.207/PLTV/88888888/224/3221225885/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:32.541 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:32.541 DEBUG:12458:tools/checkurl1.go:33: NewTV明星大片-1080i|http://111.12.130.67/PLTV/88888888/224/3221225721/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225721/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:37.691 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:37.691 DEBUG:12458:tools/checkurl1.go:33: NewTV军事评论-576P|http://111.12.130.67/PLTV/88888888/224/3221225722/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225722/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:42.841 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:42.841 DEBUG:12458:tools/checkurl1.go:33: NewTV农业致富-576P|http://111.12.130.67/PLTV/88888888/224/3221225723/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225723/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:47.969 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:47.969 DEBUG:12458:tools/checkurl1.go:33: NewTV精品纪录-1080i|http://111.12.130.67/PLTV/88888888/224/3221225724/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225724/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:53.121 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:53.122 DEBUG:12458:tools/checkurl1.go:33: NewTV家庭剧场-1080i|http://111.12.130.67/PLTV/88888888/224/3221225725/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225725/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:36:58.25 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:36:58.251 DEBUG:12458:tools/checkurl1.go:33: NewTV金牌综艺-1080i|http://111.12.130.67/PLTV/88888888/224/3221225726/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225726/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:03.38 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:03.38 DEBUG:12458:tools/checkurl1.go:33: NewTV动画王国-1080i|http://111.12.130.67/PLTV/88888888/224/3221225727/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225727/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:08.528 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:08.529 DEBUG:12458:tools/checkurl1.go:33: NewTV古装剧场-576P|http://111.12.130.67/PLTV/88888888/224/3221225728/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225728/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:13.658 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:13.658 DEBUG:12458:tools/checkurl1.go:33: NewTV惊悚悬疑-1080i|http://111.12.130.67/PLTV/88888888/224/3221225729/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225729/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:18.787 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:18.787 DEBUG:12458:tools/checkurl1.go:33: NewTV军旅剧场-576P|http://111.12.130.67/PLTV/88888888/224/3221225730/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225730/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:23.936 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:23.936 DEBUG:12458:tools/checkurl1.go:33: NewTV海外剧场-576P|http://111.12.130.67/PLTV/88888888/224/3221225731/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225731/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:29.078 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:29.078 DEBUG:12458:tools/checkurl1.go:33: NewTV动作电影-1080i|http://111.12.130.67/PLTV/88888888/224/3221225732/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225732/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:34.23 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:34.23 DEBUG:12458:tools/checkurl1.go:33: NewTV爱情喜剧-576P|http://111.12.130.67/PLTV/88888888/224/3221225733/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225733/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:39.353 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:39.353 DEBUG:12458:tools/checkurl1.go:33: NewTV精品电影-1080i|http://111.12.130.67/PLTV/88888888/224/3221225680/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225680/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:44.5 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:44.5 DEBUG:12458:tools/checkurl1.go:33: NewTV精品大剧-1080i|http://111.12.130.67/PLTV/88888888/224/3221225681/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225681/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:49.653 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:49.653 DEBUG:12458:tools/checkurl1.go:33: NewTV健康有约-576P|http://111.12.130.67/PLTV/88888888/224/3221225682/index.m3u8
+/usr/bin/ffmpeg -i 'http://111.12.130.67/PLTV/88888888/224/3221225682/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:54.782 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:54.782 DEBUG:12458:tools/checkurl1.go:33: 万州综合|http://123.146.162.24:8013/tslslive/noEX9SG/hls/live_sd.m3u8
+/usr/bin/ffmpeg -i 'http://123.146.162.24:8013/tslslive/noEX9SG/hls/live_sd.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS万州综合	http://123.146.162.24:8013/tslslive/noEX9SG/hls/live_sd.m3u8
+2018-07-03 10:37:55.185 DEBUG:12458:tools/checkurl1.go:33: 万州三峡|http://123.146.162.24:8013/tslslive/PU2vzMI/hls/live_sd.m3u8
+/usr/bin/ffmpeg -i 'http://123.146.162.24:8013/tslslive/PU2vzMI/hls/live_sd.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS万州三峡	http://123.146.162.24:8013/tslslive/PU2vzMI/hls/live_sd.m3u8
+2018-07-03 10:37:55.514 DEBUG:12458:tools/checkurl1.go:33: 万州影视|http://123.146.162.24:8013/tslslive/vWlnEzU/hls/live_sd.m3u8
+/usr/bin/ffmpeg -i 'http://123.146.162.24:8013/tslslive/vWlnEzU/hls/live_sd.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS万州影视	http://123.146.162.24:8013/tslslive/vWlnEzU/hls/live_sd.m3u8
+2018-07-03 10:37:55.927 DEBUG:12458:tools/checkurl1.go:33: 万州科教|http://123.146.162.24:8017/Cz7WPb8/800/live.m3u8
+/usr/bin/ffmpeg -i 'http://123.146.162.24:8017/Cz7WPb8/800/live.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS万州科教	http://123.146.162.24:8017/Cz7WPb8/800/live.m3u8
+2018-07-03 10:37:56.137 DEBUG:12458:tools/checkurl1.go:33: 重庆新闻|http://sjlivecdn.cbg.cn/201710281005/f0a6941c458f9a41ee3092f89dab9b34/app_2/_definst_/ls_3.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281005/f0a6941c458f9a41ee3092f89dab9b34/app_2/_definst_/ls_3.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.19 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.19 DEBUG:12458:tools/checkurl1.go:33: 重庆影视|http://sjlivecdn.cbg.cn/201710281007/e5c53b4b8925cbe170078732e4d49cb7/app_2/_definst_/ls_6.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281007/e5c53b4b8925cbe170078732e4d49cb7/app_2/_definst_/ls_6.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.25 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.25 DEBUG:12458:tools/checkurl1.go:33: 重庆科教|http://sjlivecdn.cbg.cn/201710281007/2549d0a1be11ddcdbbe3ae9ecc0f498e/app_2/_definst_/ls_9.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281007/2549d0a1be11ddcdbbe3ae9ecc0f498e/app_2/_definst_/ls_9.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.3 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.301 DEBUG:12458:tools/checkurl1.go:33: 重庆都市|http://sjlivecdn.cbg.cn/201710281008/f92854bf405ec23cc450707e0e7d94a8/app_2/_definst_/ls_10.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281008/f92854bf405ec23cc450707e0e7d94a8/app_2/_definst_/ls_10.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.351 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.351 DEBUG:12458:tools/checkurl1.go:33: 重庆娱乐|http://sjlivecdn.cbg.cn/201710281008/8051cd766ea61647eae9a257f9d03037/app_2/_definst_/ls_11.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281008/8051cd766ea61647eae9a257f9d03037/app_2/_definst_/ls_11.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.396 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.397 DEBUG:12458:tools/checkurl1.go:33: 重庆资讯|http://sjlivecdn.cbg.cn/201710281009/6d5a63a94a8b5df936866d7b50320597/app_2/_definst_/ls_12.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281009/6d5a63a94a8b5df936866d7b50320597/app_2/_definst_/ls_12.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.458 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.458 DEBUG:12458:tools/checkurl1.go:33: 重庆农村|http://sjlivecdn.cbg.cn/201710281010/9276baddf52a0997718f145a7bf969fc/app_2/_definst_/ls_18.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201710281010/9276baddf52a0997718f145a7bf969fc/app_2/_definst_/ls_18.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.499 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.499 DEBUG:12458:tools/checkurl1.go:33: 重庆新闻|http://sjlivecdn.cbg.cn/201709302151/d3e806d0fe412fe79af3b054646eae88/app_2/_definst_/ls_3.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302151/d3e806d0fe412fe79af3b054646eae88/app_2/_definst_/ls_3.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.542 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.542 DEBUG:12458:tools/checkurl1.go:33: 重庆影视|http://sjlivecdn.cbg.cn/201709302152/d7985ef0d2d3e3a2c00f870197eaec5b/app_2/_definst_/ls_6.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302152/d7985ef0d2d3e3a2c00f870197eaec5b/app_2/_definst_/ls_6.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.601 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.601 DEBUG:12458:tools/checkurl1.go:33: 重庆都市|http://sjlivecdn.cbg.cn/201709302152/4125a891e16a456804a74745cf6406c8/app_2/_definst_/ls_10.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302152/4125a891e16a456804a74745cf6406c8/app_2/_definst_/ls_10.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.639 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.639 DEBUG:12458:tools/checkurl1.go:33: 重庆时尚|http://sjlivecdn.cbg.cn/201709302153/0506bb3fac807f28ae481f8206aa2fb3/app_2/_definst_/ls_17.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302153/0506bb3fac807f28ae481f8206aa2fb3/app_2/_definst_/ls_17.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.68 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.68 DEBUG:12458:tools/checkurl1.go:33: 重庆娱乐|http://sjlivecdn.cbg.cn/201709302153/7fa73b22bd774d85148a3c73d3280ecd/app_2/_definst_/ls_11.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302153/7fa73b22bd774d85148a3c73d3280ecd/app_2/_definst_/ls_11.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.741 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.741 DEBUG:12458:tools/checkurl1.go:33: 重庆公共|http://sjlivecdn.cbg.cn/201709302153/e480a7294f7fe5ea7453e82199efa1bb/app_2/_definst_/ls_18.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302153/e480a7294f7fe5ea7453e82199efa1bb/app_2/_definst_/ls_18.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.782 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.782 DEBUG:12458:tools/checkurl1.go:33: 重庆少儿|http://sjlivecdn.cbg.cn/201709302153/6fad24ce5ffdbec889671d8618003385/app_2/_definst_/ls_19.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302153/6fad24ce5ffdbec889671d8618003385/app_2/_definst_/ls_19.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.821 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.821 DEBUG:12458:tools/checkurl1.go:33: 重庆科教|http://sjlivecdn.cbg.cn/201709302154/6b35a2d174439718e382341959dc4cf8/app_2/_definst_/ls_9.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302154/6b35a2d174439718e382341959dc4cf8/app_2/_definst_/ls_9.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.875 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.875 DEBUG:12458:tools/checkurl1.go:33: 重庆生活|http://sjlivecdn.cbg.cn/201709302154/0d2dda7da1cf361a8fb0177a015a3a68/app_2/_definst_/ls_12.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302154/0d2dda7da1cf361a8fb0177a015a3a68/app_2/_definst_/ls_12.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.915 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.915 DEBUG:12458:tools/checkurl1.go:33: 重庆移动|http://sjlivecdn.cbg.cn/201709302154/b2f11f83e1da04584e96984409bf917e/app_2/_definst_/ls_16.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302154/b2f11f83e1da04584e96984409bf917e/app_2/_definst_/ls_16.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.954 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.955 DEBUG:12458:tools/checkurl1.go:33: 重庆手持电视|http://sjlivecdn.cbg.cn/201709302155/a1483ad776a73012da0cca2481ef909c/app_2/_definst_/ls_20.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302155/a1483ad776a73012da0cca2481ef909c/app_2/_definst_/ls_20.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:56.993 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:56.993 DEBUG:12458:tools/checkurl1.go:33: 重庆汽摩|http://sjlivecdn.cbg.cn/201709302155/4e59c91bd6db167b5ff0b1e87763fef7/app_2/_definst_/ls_5.stream/chunklist.m3u8
+/usr/bin/ffmpeg -i 'http://sjlivecdn.cbg.cn/201709302155/4e59c91bd6db167b5ff0b1e87763fef7/app_2/_definst_/ls_5.stream/chunklist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.031 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.031 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆新闻|http://219.153.252.34/PLTV/88888888/224/3221225531/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225531/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.157 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.157 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆影视|http://219.153.252.34/PLTV/88888888/224/3221225487/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225487/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.309 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.309 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆科教|http://219.153.252.34/PLTV/88888888/224/3221225497/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225497/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.464 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.464 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆都市|http://219.153.252.34/PLTV/88888888/224/3221225489/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225489/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.628 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.628 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆娱乐|http://219.153.252.34/PLTV/88888888/224/3221225496/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225496/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.782 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.782 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆生活|http://219.153.252.34/PLTV/88888888/224/3221225522/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225522/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:57.93 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:57.93 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆移动|http://219.153.252.34/PLTV/88888888/224/3221225491/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225491/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.075 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.075 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆时尚|http://219.153.252.34/PLTV/88888888/224/3221225490/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225490/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.242 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.242 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆公共|http://219.153.252.34/PLTV/88888888/224/3221225504/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225504/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.389 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.39 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆少儿|http://219.153.252.34/PLTV/88888888/224/3221225503/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225503/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.532 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.532 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆手持|http://219.153.252.34/PLTV/88888888/224/3221225502/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225502/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.68 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.68 DEBUG:12458:tools/checkurl1.go:33: 重庆重庆汽摩|http://219.153.252.34/PLTV/88888888/224/3221225482/index.m3u8
+/usr/bin/ffmpeg -i 'http://219.153.252.34/PLTV/88888888/224/3221225482/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:58.825 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:58.825 DEBUG:12458:tools/checkurl1.go:33: 重庆奉节综合|http://qxlmlive.cbg.cn:1935/app_2/_definst_/ls_37.stream/playlist.m3u8
+/usr/bin/ffmpeg -i 'http://qxlmlive.cbg.cn:1935/app_2/_definst_/ls_37.stream/playlist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:59.226 ERROR:12458:util/string.go:45: exit status 1
+2018-07-03 10:37:59.226 DEBUG:12458:tools/checkurl1.go:33: 重庆奉节文旅|http://qxlmlive.cbg.cn:1935/app_2/_definst_/ls_38.stream/playlist.m3u8
+/usr/bin/ffmpeg -i 'http://qxlmlive.cbg.cn:1935/app_2/_definst_/ls_38.stream/playlist.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 10:37:59.64 ERROR:12458:util/string.go:45: exit status 1
