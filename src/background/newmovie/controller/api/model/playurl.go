@@ -2,10 +2,6 @@ package apimodel
 
 import (
 	"background/newmovie/model"
-	"background/common/logger"
-	"github.com/jinzhu/gorm"
-	"background/common/constant"
-	"background/newmovie/service"
 )
 
 type PlayUrl struct {
