@@ -195,10 +195,12 @@ func main(){
 			stream.Sort = 28000
 		}else if strings.Contains(stream.Category,"西班牙"){
 			stream.Sort = 29000
-		}else if strings.Contains(stream.Category,"欧洲"){
+		}else if strings.Contains(stream.Category,"希腊"){
 			stream.Sort = 30000
+		}else if strings.Contains(stream.Category,"欧洲"){
+			stream.Sort = 31000
 		}else if strings.Contains(stream.Category,"其他外国频道"){
-			stream.Sort = 32000
+			stream.Sort = 33000
 		}else{
 			logger.Debug("=================================",stream.Title)
 			stream.Sort = 0

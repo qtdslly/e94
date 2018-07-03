@@ -30899,3 +30899,101 @@ SUCCESS甘肃卫视	http://web-play.pptv.com/web-m3u8-300148.m3u8?type=ipad
 2018-07-03 14:41:38.464 ERROR:5768:util/string.go:45: exit status 1
 2018-07-03 14:41:38.464 DEBUG:5768:tools/checkurl1.go:38: 嘉峪关综合|rtmp://61.178.152.174:1935/live/live3
 /usr/bin/ffmpeg -i 'rtmp://61.178.152.174:1935/live/live3' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:43.594 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:43.594 DEBUG:5768:tools/checkurl1.go:38: 嘉峪关公共|rtmp://61.178.152.174:1935/live/live1
+/usr/bin/ffmpeg -i 'rtmp://61.178.152.174:1935/live/live1' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:48.746 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:48.746 DEBUG:5768:tools/checkurl1.go:38: 嘉峪关指南|rtmp://61.178.152.174:1935/live/live2
+/usr/bin/ffmpeg -i 'rtmp://61.178.152.174:1935/live/live2' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:53.897 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:53.897 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://zb.v.qq.com:1863/?progid=974433428
+/usr/bin/ffmpeg -i 'http://zb.v.qq.com:1863/?progid=974433428' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:53.926 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:53.926 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://gslb.tv.sohu.com/live?cid=23&type=hls
+/usr/bin/ffmpeg -i 'http://gslb.tv.sohu.com/live?cid=23&type=hls' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:54.001 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:54.001 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://web-play.pptv.com/web-m3u8-300178.m3u8?type=ipad
+/usr/bin/ffmpeg -i 'http://web-play.pptv.com/web-m3u8-300178.m3u8?type=ipad' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS广西卫视	http://web-play.pptv.com/web-m3u8-300178.m3u8?type=ipad
+2018-07-03 14:41:54.148 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://vapptime.cntv.wscdns.com/cache/124_/seg0/index.m3u8
+/usr/bin/ffmpeg -i 'http://vapptime.cntv.wscdns.com/cache/124_/seg0/index.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:41:54.201 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:41:54.201 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://shiyi.gxtv.cn/live/nn_live1004.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1004.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:01.642 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:01.642 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|http://219.232.160.143:5080/hls/0547ce2bf066625d9bf1775a01b11c77.m3u8
+/usr/bin/ffmpeg -i 'http://219.232.160.143:5080/hls/0547ce2bf066625d9bf1775a01b11c77.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:01.796 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:01.796 DEBUG:5768:tools/checkurl1.go:38: 广西卫视|rtsp://rlive.tv189.cn/live/662
+/usr/bin/ffmpeg -i 'rtsp://rlive.tv189.cn/live/662' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:01.958 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:01.958 DEBUG:5768:tools/checkurl1.go:38: 广西综艺|http://fms.cntv.lxdns.com/live/flv/channel2.flv
+/usr/bin/ffmpeg -i 'http://fms.cntv.lxdns.com/live/flv/channel2.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:11.958 DEBUG:5768:tools/checkurl1.go:38: 广西综艺|http://gslb.tv.sohu.com/live?cid=90&type=hls
+/usr/bin/ffmpeg -i 'http://gslb.tv.sohu.com/live?cid=90&type=hls' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:12.039 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.039 DEBUG:5768:tools/checkurl1.go:38: 广西综艺|http://shiyi.gxtv.cn/live/nn_live1005.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1005.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:12.596 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.64 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.64 DEBUG:5768:tools/checkurl1.go:38: 广西综艺|http://web-play.pptv.com/web-m3u8-300573.m3u8?type=ipad
+/usr/bin/ffmpeg -i 'http://web-play.pptv.com/web-m3u8-300573.m3u8?type=ipad' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS广西综艺	http://web-play.pptv.com/web-m3u8-300573.m3u8?type=ipad
+2018-07-03 14:42:12.755 DEBUG:5768:tools/checkurl1.go:38: 广西都市|http://shiyi.gxtv.cn/live/nn_live1006.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1006.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:12.794 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.794 DEBUG:5768:tools/checkurl1.go:38: 广西新闻|http://shiyi.gxtv.cn/live/nn_live1007.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1007.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:12.83 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.83 DEBUG:5768:tools/checkurl1.go:38: 广西公共|http://shiyi.gxtv.cn/live/nn_live1000.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1000.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:12.875 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:12.875 DEBUG:5768:tools/checkurl1.go:38: 广西乐思购|http://shiyi.gxtv.cn/live/nn_live1002.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1002.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.02 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.02 DEBUG:5768:tools/checkurl1.go:38: 广西国际|http://shiyi.gxtv.cn/live/nn_live1003.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1003.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.07 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.07 DEBUG:5768:tools/checkurl1.go:38: 睛彩广西交通|http://shiyi.gxtv.cn/live/nn_live1008.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1008.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.096 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.096 DEBUG:5768:tools/checkurl1.go:38: 广西移动|http://shiyi.gxtv.cn/live/nn_live1001.flv
+/usr/bin/ffmpeg -i 'http://shiyi.gxtv.cn/live/nn_live1001.flv' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.124 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.124 DEBUG:5768:tools/checkurl1.go:38: 南宁新闻综合|http://hls.nntv.cn/hls/NNTV_XW.m3u8
+/usr/bin/ffmpeg -i 'http://hls.nntv.cn/hls/NNTV_XW.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.405 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.405 DEBUG:5768:tools/checkurl1.go:38: 南宁影视娱乐|http://hls.nntv.cn/hls/NNTV_YS.m3u8
+/usr/bin/ffmpeg -i 'http://hls.nntv.cn/hls/NNTV_YS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.6 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.6 DEBUG:5768:tools/checkurl1.go:38: 南宁都市生活|http://hls.nntv.cn/hls/NNTV_DS.m3u8
+/usr/bin/ffmpeg -i 'http://hls.nntv.cn/hls/NNTV_DS.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:13.867 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:13.867 DEBUG:5768:tools/checkurl1.go:38: 南宁公共|http://hls.nntv.cn/hls/NNTV_GG.m3u8
+/usr/bin/ffmpeg -i 'http://hls.nntv.cn/hls/NNTV_GG.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:14.118 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:14.118 DEBUG:5768:tools/checkurl1.go:38: 横县电视台|http://hls.nntv.cn/hls/HXTV.m3u8
+/usr/bin/ffmpeg -i 'http://hls.nntv.cn/hls/HXTV.m3u8' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:14.341 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:14.341 DEBUG:5768:tools/checkurl1.go:38: 柳州新闻综合|http://219.159.248.115:8088/flv800
+/usr/bin/ffmpeg -i 'http://219.159.248.115:8088/flv800' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:14.47 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:14.47 DEBUG:5768:tools/checkurl1.go:38: 柳州新闻综合|rtmp://219.159.248.118/livepkgr/xw
+/usr/bin/ffmpeg -i 'rtmp://219.159.248.118/livepkgr/xw' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS柳州新闻综合	rtmp://219.159.248.118/livepkgr/xw
+2018-07-03 14:42:16.959 DEBUG:5768:tools/checkurl1.go:38: 柳州科教|rtmp://219.159.248.118/livepkgr/kj
+/usr/bin/ffmpeg -i 'rtmp://219.159.248.118/livepkgr/kj' -y -s 320x240 -vframes 1 aaa.jpg
+SUCCESS柳州科教	rtmp://219.159.248.118/livepkgr/kj
+2018-07-03 14:42:19.314 DEBUG:5768:tools/checkurl1.go:38: 柳州公共|http://219.159.248.115:8088/flv1000
+/usr/bin/ffmpeg -i 'http://219.159.248.115:8088/flv1000' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:19.442 ERROR:5768:util/string.go:45: exit status 1
+2018-07-03 14:42:19.442 DEBUG:5768:tools/checkurl1.go:38: 梧州新闻综合|rtmp://vod.onlinexijiang.com/livepkgr/live1
+/usr/bin/ffmpeg -i 'rtmp://vod.onlinexijiang.com/livepkgr/live1' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:29.442 DEBUG:5768:tools/checkurl1.go:38: 梧州新闻综合|rtmp://202.103.212.146/livepkgr/live1
+/usr/bin/ffmpeg -i 'rtmp://202.103.212.146/livepkgr/live1' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:39.442 DEBUG:5768:tools/checkurl1.go:38: 梧州公共|rtmp://vod.onlinexijiang.com/livepkgr/live2
+/usr/bin/ffmpeg -i 'rtmp://vod.onlinexijiang.com/livepkgr/live2' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:49.442 DEBUG:5768:tools/checkurl1.go:38: 梧州公共|rtmp://202.103.212.146/livepkgr/live2
+/usr/bin/ffmpeg -i 'rtmp://202.103.212.146/livepkgr/live2' -y -s 320x240 -vframes 1 aaa.jpg
+2018-07-03 14:42:59.443 DEBUG:5768:tools/checkurl1.go:38: 玉林新闻综合|rtmp://222.217.240.177/livepkgr/livestream
+/usr/bin/ffmpeg -i 'rtmp://222.217.240.177/livepkgr/livestream' -y -s 320x240 -vframes 1 aaa.jpg
