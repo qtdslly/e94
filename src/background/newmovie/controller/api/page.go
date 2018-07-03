@@ -41,14 +41,21 @@ func PageHandler(c *gin.Context) {
 		Title	string `json:"title"`
 		Thumb	string `json:"thumb"`
 	}
+	type Page struct {
+		Id	uint32 `json:"id"`
+		Title	string `json:"title"`
+	}
 	type ApiPage struct {
-		PageName   []string      `json:"page_name"`
+		Page       []Page        `json:"page"`
 		FirstPage  []*ApiStream  `json:"first_page"`
 	}
 
 	var apiPage ApiPage
 	for _,resourceGroup := range resourceGroups{
-		apiPage.PageName = append(apiPage.PageName,resourceGroup.Name)
+		var page Page
+		page.Id = resourceGroup.Id
+		page.Title = resourceGroup.Name
+		apiPage.Page = append(apiPage.Page,page)
 	}
 
 	for _ , stream := range streams{
