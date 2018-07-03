@@ -23,7 +23,7 @@ func PageHandler(c *gin.Context) {
 	}
 
 	var streams []*model.Stream
-	if err = db.Limit(15).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
+	if err = db.Order("stream.sort asc").Limit(15).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
