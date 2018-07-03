@@ -55,7 +55,7 @@ func PageHandler(c *gin.Context) {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Title = stream.Title
-		apiStream.Thumb = stream.Thumb
+		apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 		apiPage.FirstPage = append(apiPage.FirstPage,&apiStream)
 	}
 
