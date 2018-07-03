@@ -211,7 +211,6 @@ func main(){
 			logger.Debug("=================================",stream.Title)
 			stream.Sort = 0
 		}
-	}
 		if err := db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			return
