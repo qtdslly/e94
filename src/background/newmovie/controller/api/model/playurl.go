@@ -11,7 +11,7 @@ type PlayUrl struct {
 	IsPlay         bool    `json:"is_play"`
 }
 
-func PlayUrlFromDb(src model.PlayUrl) *Video {
+func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 	dst := PlayUrl{}
 	dst.Id = src.Id
 	dst.Provider = src.Provider
