@@ -15,7 +15,7 @@ import (
 	This method allows call ffmpeg ffprobe command and return the json output.
 */
 func ffmpegProbeInfo(file string) ([]byte, error) {
-	cmdName := fmt.Sprintf("ffprobe -v quiet -print_format json -show_format -show_streams %s ", file)
+	cmdName := fmt.Sprintf("ffprobe -v quiet -print_format json -show_format -show_streams '%s' ", file)
 	logger.Debug(cmdName)
 	cmdArgs := strings.Fields(cmdName)
 	out, err := exec.Command(cmdArgs[0], cmdArgs[1:]...).Output()
