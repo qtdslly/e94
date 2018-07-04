@@ -40,7 +40,7 @@ func main(){
 
 	for _,playUrl := range playUrls{
 		width,height,ready,err := GetStreamRation(playUrl.Url)
-		if err != nil{
+		if err == nil{
 			playUrl.Width = width
 			playUrl.Height = height
 			playUrl.Ready = ready
