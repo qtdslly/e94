@@ -31,6 +31,7 @@ func main(){
 		return
 	}
 	db.LogMode(true)
+	model.InitModel(db)
 	var playUrls []model.PlayUrl
 	if err := db.Where("content_type = 4").Find(&playUrls).Error ; err != nil{
 		logger.Error(err)
@@ -52,14 +53,13 @@ func main(){
 }
 
 
-func GetStreamRation(url string)(uint32,uint32,float32,error){
+func GetStreamRation(url string)(uint32,uint32,int64,error){
 	var name,videoCodec, audioCodec string
 	var frameRate float32
 
 	var bitrate, videoBitrate, audioBitrate, duration, width, height uint32
 	var size uint64
 	var err error
-
 
 	t1 := time.Now()
 	c1 := make(chan string, 1)
@@ -94,7 +94,7 @@ func GetStreamRation(url string)(uint32,uint32,float32,error){
 		if res == "success"{
 			elapsed := time.Since(t1)
 			logger.Debug("耗时:",elapsed)
-			return width,height,elapsed,nil
+			return width,height,int64(elapsed),nil
 		}else{
 			return 0,0,0,errors.New("获取视频信息失败!!!")
 		}
