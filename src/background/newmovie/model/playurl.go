@@ -20,6 +20,8 @@ type PlayUrl struct {
 	OnLine      bool           `json:"on_line"` // 链接播放不了，临时禁止
 	Quality     uint8          `json:"quality"`
 	Sort        uint32         `json:"sort"`
+	Ready       float32        `json:"rdady"`   //起播时间
+
 	CreatedAt   time.Time      `json:"created_at"` // 创建时间，utc格式
 	UpdatedAt   time.Time      `json:"updated_at"` // 更新时间，utc格式
 }
