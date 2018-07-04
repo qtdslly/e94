@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"strconv"
 	"time"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
@@ -31,7 +32,7 @@ func InstallationHandler(c *gin.Context) {
 		Brand          string  `json:"brand"` //设备品牌
 		Carrier        uint8  `json:"carrier"` //电话类型
 
-	//	CarrierTypeUnknown      = 0 // 未知类型
+	//CarrierTypeUnknown      = 0 // 未知类型
 	//CarrierTypeChinaMobile  = 1 // 中国移动
 	//CarrierTypeChinaUnicom  = 2 // 中国联通
 	//CarrierTypeChinaTelecom = 3 // 中国电信
@@ -82,6 +83,34 @@ func InstallationHandler(c *gin.Context) {
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
 		}
+
+		var user model.User
+		if err = db.Where("installation_id = ?",dbInstall.Id).First(&user).Error ; err != nil{
+			logger.Error(err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
+		if user.Status == model.UserStatusUseBanned{
+			c.JSON(http.StatusOK, gin.H{"err_code": constant.AppAccessDenied,"err_msg":constant.TranslateErrCode(constant.AppAccessDenied), "data": dbInstall})
+			return
+		}
+		now := time.Now()
+
+		lastDay := fmt.Sprintf("%04d-%02d-%02d",user.LastUseAt.Year(),user.LastUseAt.Month(),user.LastUseAt.Day())
+
+		nowDay := fmt.Sprintf("%04d-%02d-%02d",now.Year(),now.Month(),now.Day())
+
+		if nowDay != lastDay{
+			user.Bean += 10
+		}
+		user.LastUseAt = now
+		user.LastUseIp = c.ClientIP()
+
+		if err = db.Save(&user).Error; err != nil {
+			logger.Error(err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
 	} else {
 		dbInstall.Id, _ = strconv.ParseUint(time.Now().Format("060102150405"), 10, 64)
 		dbInstall.Id = dbInstall.Id*100 + uint64(time.Now().Nanosecond()/1e7)
@@ -91,8 +120,29 @@ func InstallationHandler(c *gin.Context) {
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
 		}
+
+		var user model.User
+		user.Avatar = "http://www.ezhantao.com/thumb/avatar/avatar.png"
+		user.CheckinDays = 0
+		user.Laravel = model.UserOrdinary
+		user.Bean = 100
+		now := time.Now()
+		user.LastUseAt = now
+		user.LastUseIp = c.ClientIP()
+		user.Status = model.UserStatusWhiteList
+		user.InstallationId = dbInstall.Id
+		if err = db.Create(&user).Error; err != nil {
+			logger.Error(err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
+		//if err := db.Model(&comment).UpdateColumn("op_count", gorm.Expr("op_count + ?", 1)).Error; err != nil {
+		//	logger.Error(err)
+		//	c.AbortWithStatus(http.StatusInternalServerError)
+		//	return
+		//}
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": dbInstall})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.AppAccessDenied), "data": dbInstall})
 }
 
