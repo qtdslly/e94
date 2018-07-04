@@ -101,7 +101,7 @@ func StreamDetailHandler(c *gin.Context) {
 	apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 	apiStream.Title = stream.Title
 	var playUrls []model.PlayUrl
-	if err := db.Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
+	if err := db.Order("ready asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 		logger.Error("query play_url err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}

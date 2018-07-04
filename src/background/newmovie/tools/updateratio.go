@@ -44,6 +44,22 @@ func main(){
 			playUrl.Width = width
 			playUrl.Height = height
 			playUrl.Ready = ready
+			//update play_url set quality = 5 where content_type = 4 and width <= 1920;
+			//update play_url set quality = 4 where content_type = 4 and width <= 1280;
+			//update play_url set quality = 3 where content_type = 4 and width <= 720;
+			//update play_url set quality = 2 where content_type = 4 and width <= 640;
+			//update play_url set quality = 1 where content_type = 4 and width <= 480;
+			if width <= 480{
+				playUrl.Quality = 1
+			}else if width <= 640{
+				playUrl.Quality = 2
+			}else if width <= 720{
+				playUrl.Quality = 3
+			}else if width <= 1280{
+				playUrl.Quality = 4
+			}else{
+				playUrl.Quality = 5
+			}
 			if err = db.Save(&playUrl).Error ; err != nil{
 				logger.Error(err)
 				return
