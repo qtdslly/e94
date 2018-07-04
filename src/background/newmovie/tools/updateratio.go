@@ -33,7 +33,7 @@ func main(){
 	db.LogMode(true)
 	model.InitModel(db)
 	var playUrls []model.PlayUrl
-	if err := db.Where("content_type = 4").Find(&playUrls).Error ; err != nil{
+	if err := db.Where("content_type = 4 and ready = 0").Find(&playUrls).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
