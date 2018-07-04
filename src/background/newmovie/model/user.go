@@ -11,7 +11,7 @@ type User struct {
 	Nickname            string      `gorm:"size:30;index" json:"nickname"`
 	Avatar              string      `json:"avatar"`
 	Gender              uint8       `json:"gender"`
-	InstallationId      uint32      `json:"installation_id"`
+	InstallationId      uint64      `json:"installation_id"`
 	Bean                uint32      `json:"bean"`
 	Birthday            string      `grom:"size:10" json:"birthday"`
 	CheckinDays         uint32      `json:"checkin_days"` // 连续签到天数
