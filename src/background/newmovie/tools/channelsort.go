@@ -161,6 +161,8 @@ func main(){
 			stream.Sort = 9500
 		}else if strings.Contains(stream.Category,"特色") {
 			stream.Sort = 10000
+		}else if strings.Contains(stream.Category,"明星") {
+			stream.Sort = 10500
 		}else if strings.Contains(stream.Category,"风景"){
 			stream.Sort = 11000
 		}else if strings.Contains(stream.Category,"香港"){
