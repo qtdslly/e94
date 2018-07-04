@@ -43,8 +43,8 @@ const (
 	VideoQuality360p  = 1 // 480x360，流畅
 	VideoQuality480p  = 2 // 640x480，标清
 	VideoQuality576p  = 3 // 720x576，高清
-	VideoQuality720p  = 4 // 1280x720，高清
-	VideoQuality1080p = 5 // 1920x1080，超高清
+	VideoQuality720p  = 4 // 1280x720, 超高清
+	VideoQuality1080p = 5 // 1920x1080，蓝光
 )
 
 const (
