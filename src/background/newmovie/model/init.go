@@ -106,6 +106,6 @@ func rebuildModel(db *gorm.DB) {
 	dropResourceGroup(db)
 	dropNotification(db)
 	dropUser(db)
-	dropContentAction()
+	dropContentAction(db)
 	InitModel(db)
 }
