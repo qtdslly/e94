@@ -34,7 +34,7 @@ func DiggListHandler(c *gin.Context) {
 
 	type ApiDiggs struct {
 		Id	uint32 `json:"id"`
-		StreamId	uint32 `json:"stream"`
+		StreamId	uint32 `json:"stream_id"`
 		Title	string `json:"title"`
 		Thumb	string `json:"thumb"`
 	}
@@ -48,7 +48,7 @@ func DiggListHandler(c *gin.Context) {
 		apiDigg.Thumb = "http:/www.ezhantao.com" + content.Thumb
 		apiDiggs = append(apiDiggs,&apiDigg)
 	}
-	
+
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDiggs})
 }
