@@ -30,7 +30,7 @@ func InstallationHandler(c *gin.Context) {
 		Product        string  `json:"product"` //产品名称
 		Model          string  `json:"model"` //设备型号
 		Brand          string  `json:"brand"` //设备品牌
-		Carrier        uint8  `json:"carrier"` //电话类型
+		Carrier        uint8   `json:"carrier"` //电话类型
 
 	//CarrierTypeUnknown      = 0 // 未知类型
 	//CarrierTypeChinaMobile  = 1 // 中国移动
@@ -143,6 +143,6 @@ func InstallationHandler(c *gin.Context) {
 		//}
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.AppAccessDenied), "data": dbInstall})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall})
 }
 

@@ -109,7 +109,6 @@ func CheckStreamUrl(sourceFileName,url string)string{
 			err := os.Remove("/data/www/dreamvideo/public" + sourceFileName)
 			if err != nil {
 				logger.Error("file remove Error!",err)
-				return ""
 			}
 			return "/thumb/stream/" + fileName
 		}else{
