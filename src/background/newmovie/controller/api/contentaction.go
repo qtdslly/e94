@@ -32,6 +32,13 @@ func DiggListHandler(c *gin.Context) {
 		return
 	}
 
+	var count uint32
+	if err := db.Model(&model.ContentAction{}).Where("installation_id = ? AND content_type = ? AND action = 1", p.InstallationId, p.ContentType).Count(&count).Error; err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
 	type ApiDiggs struct {
 		Id	uint32 `json:"id"`
 		StreamId	uint32 `json:"stream_id"`
@@ -49,8 +56,12 @@ func DiggListHandler(c *gin.Context) {
 		apiDiggs = append(apiDiggs,&apiDigg)
 	}
 
+	var hasMore bool = true
+	if len(apiDiggs) < p.Limit{
+		hasMore = false
+	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDiggs})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDiggs,"count":count,"has_more":hasMore})
 }
 
 func DiggHandler(c *gin.Context) {
