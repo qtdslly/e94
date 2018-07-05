@@ -1,0 +1,8 @@
+./addstream -t '翡翠台粤语' -u 'http://qqpullhls.inke.cn/live/1530782215519520.m3u8' -c '香港'
+
+./addstream -t '沈阳新闻综合' -u 'http://lms.csytv.com/Live/122/live/livestream.m3u8' -c '辽宁'
+                                  http://lms.csytv.com/Live/123/live/livestream.m3u8
+                                  http://lms.csytv.com/Live/124/live/livestream.m3u8
+                                  http://211.161.151.153/live/lms.csytv.com/Live/124/live/livestream.m3u8
+                                  http://211.161.151.153/live/lms.csytv.com/Live/122/live/livestream.m3u8
+                                  http://lms.csytv.com/Live/122/live/livestream.m3u8

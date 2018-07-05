@@ -84,6 +84,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initContentAction(db)
+	if err != nil {
+		logger.Fatal("Init db digg failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -100,6 +106,6 @@ func rebuildModel(db *gorm.DB) {
 	dropResourceGroup(db)
 	dropNotification(db)
 	dropUser(db)
-
+	dropContentAction()
 	InitModel(db)
 }
