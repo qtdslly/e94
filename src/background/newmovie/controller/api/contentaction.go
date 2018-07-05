@@ -13,8 +13,8 @@ func DiggListHandler(c *gin.Context) {
 	type param struct {
 		InstallationId   uint64 `form:"installation_id" binding:"required"`
 		ContentType uint8  `form:"content_type" binding:"required"`
-		Limit       uint32 `form:"limit" binding:"required"`
-		Offset      uint32 `form:"offset" binding:"exists"`
+		Limit       int `form:"limit" binding:"required"`
+		Offset      int `form:"offset" binding:"exists"`
 	}
 
 	var p param
