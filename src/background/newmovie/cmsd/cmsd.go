@@ -84,8 +84,8 @@ func main(){
 
 		cms.GET("/page", aapi.PageHandler)
 
-		cms.GET("/digg", aapi.DiggHandler)
-		cms.GET("/digglist", aapi.DiggHandler)
+		cms.POST("/digg", aapi.DiggHandler)
+		cms.GET("/digglist", aapi.DiggListHandler)
 
 		cms.GET("/stream/list", aapi.StreamListHandler)
 		cms.GET("/stream", aapi.StreamDetailHandler)

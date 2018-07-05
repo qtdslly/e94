@@ -11,7 +11,7 @@ import (
 
 func DiggListHandler(c *gin.Context) {
 	type param struct {
-		InstallationId   uint64 `json:"content_id" binding:"required"`
+		InstallationId   uint64 `form:"content_id" binding:"required"`
 		ContentType uint8  `form:"content_type" binding:"required"`
 		Limit       uint32 `form:"limit" binding:"required"`
 		Offset      uint32 `form:"offset" binding:"exists"`
