@@ -25,8 +25,8 @@ func DiggListHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
-	var contents []*model.ContentAction
-	if err := db.Where("installation_id = ? AND content_type = ? AND action = 1", p.InstallationId, p.ContentType).Find(model.ContentAction{}).Error; err != nil {
+	var contents []model.ContentAction
+	if err := db.Where("installation_id = ? AND content_type = ? AND action = 1", p.InstallationId, p.ContentType).Find(contents).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
