@@ -51,7 +51,7 @@ func DiggHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
-	
+
 	var action model.ContentAction
 	action.InstallationId = p.InstallationId
 	action.ContentType = p.ContentType
@@ -80,17 +80,17 @@ func DiggHandler(c *gin.Context) {
 			}
 		}
 	} else {
-		if err := db.Where("installation_id = ? AND content_type = ? AND content_id = ? AND action = ?", action.InstallationId, action.ContentType, action.ContentId, action.Action).First(model.ContentAction{}).Error; err != nil {
+		if err := db.Where("installation_id = ? AND content_type = ? AND content_id = ? AND action = ?", action.InstallationId, action.ContentType, action.ContentId, action.Action).First(&action).Error; err != nil {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
-		}else{
-			if err := db.Where("installation_id = ? AND content_type = ? AND content_id = ? AND action = ?", action.InstallationId, action.ContentType, action.ContentId, action.Action).Delete(model.ContentAction{}).Error; err != nil {
-				logger.Error(err)
-				c.AbortWithStatus(http.StatusInternalServerError)
-				return
-			}
 		}
+		if err := db.Delete(&action).Error; err != nil {
+			logger.Error(err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+			return
+		}
+
 	}
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success})
 }
