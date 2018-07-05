@@ -65,7 +65,7 @@ func DiggHandler(c *gin.Context) {
 	}
 	action.Title = stream.Title
 	action.Thumb = stream.Thumb
-	if p.Disable {
+	if !p.Disable {
 		if err := db.Where("installation_id = ? AND content_type = ? AND content_id = ? AND action = ?", action.InstallationId, action.ContentType, action.ContentId, action.Action).First(model.ContentAction{}).Error; err != nil {
 			if err != gorm.ErrRecordNotFound {
 				logger.Error(err)
