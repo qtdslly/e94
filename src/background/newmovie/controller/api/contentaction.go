@@ -51,14 +51,7 @@ func DiggHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
-
-	var sVideo model.Video
-	if err := db.Where("id = ?", p.ContentId).First(&sVideo).Error; err != nil {
-		logger.Error(err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
-	}
-
+	
 	var action model.ContentAction
 	action.InstallationId = p.InstallationId
 	action.ContentType = p.ContentType
