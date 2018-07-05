@@ -32,7 +32,25 @@ func DiggListHandler(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": contents})
+	type ApiDiggs struct {
+		Id	uint32 `json:"id"`
+		StreamId	uint32 `json:"stream"`
+		Title	string `json:"title"`
+		Thumb	string `json:"thumb"`
+	}
+
+	var apiDiggs []*ApiDiggs
+	for _ , content := range contents{
+		var apiDigg ApiDiggs
+		apiDigg.Id = content.Id
+		apiDigg.StreamId = content.ContentId
+		apiDigg.Title = content.Title
+		apiDigg.Thumb = "http:/www.ezhantao.com" + content.Thumb
+		apiDiggs = append(apiDiggs,&apiDigg)
+	}
+	
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDiggs})
 }
 
 func DiggHandler(c *gin.Context) {
