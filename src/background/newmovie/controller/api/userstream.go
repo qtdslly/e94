@@ -15,7 +15,7 @@ import (
 func UserStreamAddHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId  uint64   `json:"title"`
+		InstallationId  uint64   `json:"installation_id"`
 		Title           string   `json:"title"`
 		Url             string   `json:"url"`
 	}
@@ -35,7 +35,7 @@ func UserStreamAddHandler(c *gin.Context) {
 	userStream.Title = p.Title
 	userStream.Url = p.Url
 	userStream.InstallationId = p.InstallationId
-	if err = db.Where("installation_id = ? and url = ?",userStream.InstallationId,userStream.Url).First(&userStream).First(&userStream).Error ; err ==nil{
+	if err = db.Where("installation_id = ? and url = ?",userStream.InstallationId,userStream.Url).First(&userStream).Error ; err ==nil{
 		c.JSON(http.StatusOK, gin.H{"err_code": constant.PlayurlExists, "err_msg": constant.TranslateErrCode(constant.PlayurlExists)})
 	}
 
