@@ -118,6 +118,8 @@ func UserStreamListHandler(c *gin.Context) {
 
 	type param struct {
 		InstallationId    uint64   `json:"installation_id"`
+		Limit             int      `form:"limit" binding:"required"`
+		Offset            int      `form:"offset" binding:"exists"`
 	}
 
 	var p param
@@ -130,12 +132,19 @@ func UserStreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var userStreams []model.UserStream
-	if err := db.Where("id = ?", p.InstallationId).Find(&userStreams).Error; err != nil {
+	if err := db.Where("installation_id = ?", p.InstallationId).Find(&userStreams).Error; err != nil {
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
 		}
+	}
+
+	var count uint32
+	if err := db.Model(&model.UserStream{}).Where("installation_id = ?", p.InstallationId).Count(&count).Error; err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
 	}
 
 	type ApiUserStream struct {
@@ -153,5 +162,10 @@ func UserStreamListHandler(c *gin.Context) {
 		apiUserStreams = append(apiUserStreams,&apiUserStream)
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"data":apiUserStreams})
+	var hasMore bool = true
+	if len(apiUserStreams) < p.Limit{
+		hasMore = false
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"data":apiUserStreams,"count":count,"has_more":hasMore})
 }
