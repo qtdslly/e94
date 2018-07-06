@@ -132,7 +132,7 @@ func UserStreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var userStreams []model.UserStream
-	if err := db.Where("installation_id = ?", p.InstallationId).Find(&userStreams).Error; err != nil {
+	if err := db.Offset(p.Offset).Limit(p.Limit).Where("installation_id = ?", p.InstallationId).Find(&userStreams).Error; err != nil {
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
