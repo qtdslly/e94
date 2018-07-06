@@ -117,7 +117,7 @@ func UserStreamDeleteHandler(c *gin.Context) {
 func UserStreamListHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId    uint64   `json:"installation_id"`
+		InstallationId    uint64   `form:"installation_id"`
 		Limit             int      `form:"limit" binding:"required"`
 		Offset            int      `form:"offset" binding:"exists"`
 	}
