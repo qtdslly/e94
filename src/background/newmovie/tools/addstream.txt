@@ -212,11 +212,51 @@
 ./addstream -t '贵阳5套' -u 'http://hls.qguiyang.com/GYBTV5/800/b5hGzB.m3u8' -c '贵州'
 
 
+./addstream -t '内江综合' -u 'http://njzb.scnj.tv:8091/live/njtv1.m3u8' -c '四川'
+./addstream -t '内江公共' -u 'http://njzb.scnj.tv:8091/live/njtv2.m3u8' -c '四川'
+
+./addstream -t '沧县1套' -u 'http://hebcx.chinashadt.com:2036/live/10001.stream/playlist.m3u8' -c '河北'
+./addstream -t '沧县2套' -u 'http://hebcx.chinashadt.com:2036/live/10002.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '冀州新闻综合' -u 'http://hbjz.chinashadt.com:1936/live/stream:jz1.stream/playlist.m3u8' -c '河北'
+./addstream -t '冀州电视台' -u 'http://hbjz.chinashadt.com:1936/live/stream:jz2.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '东光电视台1套' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgtv1.stream/playlist.m3u8' -c '河北'
+./addstream -t '东光电视台2套' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgtv2.stream/playlist.m3u8' -c '河北'
+./addstream -t '东光综艺频道' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgzy.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '无极新闻综合' -u 'http://hbwj.chinashadt.com:2235/live/di3.stream/playlist.m3u8' -c '河北'
+./addstream -t '无极生活教育' -u 'http://hbwj.chinashadt.com:2235/live/di2.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '滦南新闻综合' -u 'http://tv.lnshw.com.cn:3100/hls/pegdvlxq/index.m3u8' -c '河北'
+./addstream -t '滦南影视娱乐' -u 'http://tv.lnshw.com.cn:3100/hls/hebmnzbs/index.m3u8' -c '河北'
+
+
+./addstream -t '黄骅电视台1套' -u 'http://hbhh.chinashadt.com:2111/live/hhtv.stream/playlist.m3u8' -c '河北'
+./addstream -t '黄骅电视台2套' -u 'http://hbhh.chinashadt.com:2111/live/hhtv2.stream/playlist.m3u8' -c '河北'
+./addstream -t '黄骅渤海新区' -u 'http://hbhh.chinashadt.com:2111/live/bhtv.stream/playlist.m3u8' -c '河北'
+
+
+
+./addstream -t '桂阳新闻综合' -u 'http://bofang.live.guiyangtv.all-tv.cn/guiyang/guiyang1/playlist.m3u8' -c '湖南'
+./addstream -t '桂阳经视' -u 'http://bofang.live.guiyangtv.all-tv.cn/guiyang/guiyang3/playlist.m3u8' -c '湖南'
+./addstream -t '娄底综合' -u 'http://mms.ldntv.cn:1935/live/_definst_/zonghe/playlist.m3u8' -c '湖南'
+./addstream -t '娄底公共' -u 'http://mms.ldntv.cn:1935/live/_definst_/gonggong/playlist.m3u8' -c '湖南'
+
+
+./addstream -t '邵阳新闻综合' -u 'http://ums.sytv.net.cn//live/TVxw2_11742/tzwj_video.m3u8' -c '湖南'
+./addstream -t '邵阳公共频道' -u 'http://ums.sytv.net.cn//live/TVzf2_11743/tzwj_video.m3u8' -c '湖南'
+
+
+
 检查成都新闻综合周五是不是能播
 http://www.radio366.com/tv/
 成都新闻综合|http://cdn1.cditv.cn/cdtv1/CDTV1.flv?wsSecret=edc0236dba798aa74518f4b4f15ebb6c&wsTime=5b3dd6c3
-
-
+甘洛电视台|http://livecdn.lsiptv.cn/ganluo/ganluoLIVE.flv/playlist.m3u8?wsSecret=5d679625bec3253cfb22a9900cfaa834&wsTime=5b3decd9
 
 
 

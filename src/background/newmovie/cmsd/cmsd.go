@@ -87,6 +87,11 @@ func main(){
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
 
+		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)
+		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
+		cms.POST("/user/stream/delete", aapi.UserStreamDeleteHandler)
+		cms.GET("/user/stream/list", aapi.UserStreamListHandler)
+
 		cms.GET("/stream/list", aapi.StreamListHandler)
 		cms.GET("/stream", aapi.StreamDetailHandler)
 		cms.GET("/stream/search", aapi.StreamSearchHandler)
@@ -101,8 +106,8 @@ func main(){
 
 	}
 
-	h := http.FileServer(http.Dir("static"))
-	http.Handle("/static/", http.StripPrefix("/static/", h)) // 启动静态文件服务
+	h := http.FileServer(http.Dir("/root/data/storage/movie/"))
+	http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
 	//Header().Set("Expires", time.Now().Format("MON, 02 Jan 2006 15:04:05 GMT"))
 
 	r.Run(":16882")

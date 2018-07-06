@@ -20,6 +20,7 @@ func RecommendHandler(c *gin.Context) {
 	var p param
 	if err := c.Bind(&p); err != nil {
 		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 

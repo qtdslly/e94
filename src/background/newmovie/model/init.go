@@ -90,6 +90,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initUserStream(db)
+	if err != nil {
+		logger.Fatal("Init db user_stream failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -107,5 +113,6 @@ func rebuildModel(db *gorm.DB) {
 	dropNotification(db)
 	dropUser(db)
 	dropContentAction(db)
+	dropUserStream(db)
 	InitModel(db)
 }

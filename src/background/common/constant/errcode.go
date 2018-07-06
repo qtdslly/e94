@@ -61,7 +61,7 @@ const (
 	AppAccessDenied       = 20018
 	InvalidInput          = 21000
 	InvalidPlayurl        = 21001
-
+	PlayurlExists         = 21002
 	// common (both api + ims) error, starts with 3000-
 	WrongUsernamePassword = 30002
 )
@@ -169,6 +169,8 @@ func TranslateErrCode(code int, extra ...string) string {
 		msg = "Bundle Id不正确"
 	case InvalidPlayurl:
 		msg = "无效的播放链接"
+	case PlayurlExists:
+		msg = "链接已存在"
 	default:
 	}
 
