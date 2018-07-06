@@ -24,7 +24,7 @@ var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/lyric/data/stock/"
+	c.StorageRoot = "/root/data/storage/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
 	c.DBSource = "root:hahawap@tcp(localhost:3306)/lyric?charset=utf8&parseTime=True&loc=Local"
@@ -32,7 +32,7 @@ func init() {
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
 	c.TmplRoot = "f:/Git/e94/src/background/stock/tmpl/"
-	c.StaticRoot = "/home/lyric/Git/e94/src/background/stock/static/"
+	c.StaticRoot = "/root/data/storage/"
 }
 
 func LoadConfig(path string) error {

@@ -106,8 +106,10 @@ func main(){
 
 	}
 
-	h := http.FileServer(http.Dir("/root/data/storage/movie/"))
-	http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
+	cms.Static("pic", config.GetCmsRoot())
+
+	//h := http.FileServer(http.Dir("/root/data/storage/movie/"))
+	//http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
 	//Header().Set("Expires", time.Now().Format("MON, 02 Jan 2006 15:04:05 GMT"))
 
 	r.Run(":16882")
