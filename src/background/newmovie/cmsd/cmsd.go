@@ -105,7 +105,7 @@ func main(){
 
 	}
 
-	cms.Static("pic", config.GetCmsRoot())
+	cms.Static("/pic", config.GetStaticRoot())
 
 	//h := http.FileServer(http.Dir("/root/data/storage/movie/"))
 	//http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
