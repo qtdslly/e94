@@ -108,6 +108,7 @@ func main(){
 	}
 
 	r.Static("/res", config.GetStaticRoot())
+	r.Static("/doc", "/root/Git/e94/doc/newmovie/")
 
 	//h := http.FileServer(http.Dir("/root/data/storage/movie/"))
 	//http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
