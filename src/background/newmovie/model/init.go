@@ -86,13 +86,25 @@ func InitModel(db *gorm.DB) error {
 
 	err = initContentAction(db)
 	if err != nil {
-		logger.Fatal("Init db digg failed, ", err)
+		logger.Fatal("Init db content_action failed, ", err)
 		return err
 	}
 
 	err = initUserStream(db)
 	if err != nil {
 		logger.Fatal("Init db user_stream failed, ", err)
+		return err
+	}
+
+	err = initUserOpinion(db)
+	if err != nil {
+		logger.Fatal("Init db user_opinion failed, ", err)
+		return err
+	}
+
+	err = initFile(db)
+	if err != nil {
+		logger.Fatal("Init db file failed, ", err)
 		return err
 	}
 
@@ -114,5 +126,8 @@ func rebuildModel(db *gorm.DB) {
 	dropUser(db)
 	dropContentAction(db)
 	dropUserStream(db)
+	dropUserOpinion(db)
+	dropFile(db)
+
 	InitModel(db)
 }

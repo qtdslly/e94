@@ -83,6 +83,8 @@ func main(){
 
 		cms.GET("/page", aapi.PageHandler)
 
+		cms.GET("/opinion", aapi.OpinionHandler)
+
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
 
