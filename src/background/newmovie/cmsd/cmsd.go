@@ -18,7 +18,6 @@ import (
 	"background/common/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
-	"net/http"
 )
 
 func main(){
