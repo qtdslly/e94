@@ -143,9 +143,10 @@ func SearchHandler(c *gin.Context) {
 	}
 
 	type ApiStream struct {
-		Id	   uint32                `json:"id"`
-		Title	   string                `json:"title"`
-		Thumb      string                `json:"thumb"`
+		Id	    uint32                `json:"id"`
+		Title	    string                `json:"title"`
+		Thumb       string                `json:"thumb"`
+		ContentType uint8                 `json:"content_type"`
 	}
 
 	var apiModels []*ApiStream
@@ -154,6 +155,7 @@ func SearchHandler(c *gin.Context) {
 		apiStream.Id = stream.Id
 		apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 		apiStream.Title = stream.Title
+		apiStream.ContentType = 4
 		apiModels = append(apiModels,&apiStream)
 	}
 
@@ -176,6 +178,7 @@ func SearchHandler(c *gin.Context) {
 			apiStream.Id = video.Id
 			apiStream.Thumb = video.ThumbY
 			apiStream.Title = video.Title
+			apiStream.ContentType = 2
 			apiModels = append(apiModels,&apiStream)
 		}
 
