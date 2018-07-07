@@ -118,7 +118,7 @@ func StreamDetailHandler(c *gin.Context) {
 }
 
 
-func StreamSearchHandler(c *gin.Context) {
+func SearchHandler(c *gin.Context) {
 
 	type param struct {
 		Title       string    `form:"title" binding:"required"`
@@ -148,13 +148,13 @@ func StreamSearchHandler(c *gin.Context) {
 		Thumb      string                `json:"thumb"`
 	}
 
-	var apiStreams []*ApiStream
+	var apiModels []*ApiStream
 	for _ , stream := range streams{
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 		apiStream.Title = stream.Title
-		apiStreams = append(apiStreams,&apiStream)
+		apiModels = append(apiModels,&apiStream)
 	}
 
 	var count uint32
@@ -164,16 +164,33 @@ func StreamSearchHandler(c *gin.Context) {
 		return
 	}
 
+	if count == 0{
+		var videos []model.Video
+		if err = db.Offset(p.Offset).Limit(p.Limit).Order("sort asc").Where("title like ? and on_line = ?","%" + p.Title + "%",constant.MediaStatusOnLine).Find(&videos).Error ; err != nil{
+			logger.Error("query video err!!!,",err)
+			c.AbortWithStatus(http.StatusInternalServerError)
+		}
+
+		for _ , video := range videos{
+			var apiStream ApiStream
+			apiStream.Id = video.Id
+			apiStream.Thumb = video.ThumbY
+			apiStream.Title = video.Title
+			apiModels = append(apiModels,&apiStream)
+		}
+
+	}
+
 	var hasMore bool = true
-	if len(apiStreams) < p.Limit{
+	if len(apiModels) < p.Limit{
 		hasMore = false
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"has_more":hasMore,"count":count})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiModels,"has_more":hasMore,"count":count})
 }
 
 
-func StreamTopSearchHandler(c *gin.Context) {
+func TopSearchHandler(c *gin.Context) {
 
 	type param struct {
 		Limit       uint32 `form:"limit" binding:"required"`
@@ -190,10 +207,12 @@ func StreamTopSearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var tops []model.TopSearch
-	if err = db.Where("content_type = 4").Limit(p.Limit).Find(&tops).Error ; err != nil{
+	if err = db.Order("sort asc").Limit(p.Limit).Find(&tops).Error ; err != nil{
 		logger.Error("query top_search err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": tops})
 }
+
+

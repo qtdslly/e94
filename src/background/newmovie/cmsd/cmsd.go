@@ -95,8 +95,9 @@ func main(){
 
 		cms.GET("/stream/list", aapi.StreamListHandler)
 		cms.GET("/stream", aapi.StreamDetailHandler)
-		cms.GET("/stream/search", aapi.StreamSearchHandler)
-		cms.GET("/stream/topsearch", aapi.StreamTopSearchHandler)
+
+		cms.GET("/search", aapi.SearchHandler)
+		cms.GET("/topsearch", aapi.TopSearchHandler)
 
 		cms.GET("/notification", aapi.NotifcationHandler)
 

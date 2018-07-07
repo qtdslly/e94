@@ -6,11 +6,12 @@ import (
 )
 
 type TopSearch struct {
-	Id           uint32     `gorm:"primary_key" json:"id"`
-	Title       string           `gorm:"size:255" json:"title" translated:"true"`
-
-	CreatedAt       time.Time  `json:"created_at"`
-	UpdatedAt       time.Time  `json:"updated_at"`
+	Id              uint32           `gorm:"primary_key" json:"id"`
+	Title           string           `gorm:"size:255" json:"title" translated:"true"`
+	Sort            uint32           `json:"sort"`
+	ContentType     uint8            `json:"content_type"`
+	CreatedAt       time.Time        `json:"created_at"`
+	UpdatedAt       time.Time        `json:"updated_at"`
 }
 
 func (TopSearch) TableName() string {
