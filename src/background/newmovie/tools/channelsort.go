@@ -362,17 +362,35 @@ func main(){
 		}else if strings.Contains(stream.Category,"广西"){
 			if strings.Contains(stream.Title,"广西"){
 				stream.Sort = 8600
-			}else if strings.Contains(stream.Title,"昆明"){
-				stream.Sort = 8320
+			}else if strings.Contains(stream.Title,"南宁"){
+				stream.Sort = 8620
 			}else{
-				stream.Sort = 8400
+				stream.Sort = 8700
 			}
 		}else if strings.Contains(stream.Category,"海南"){
-			stream.Sort = 8900
+			if strings.Contains(stream.Title,"海南"){
+				stream.Sort = 8900
+			}else if strings.Contains(stream.Title,"海口"){
+				stream.Sort = 8920
+			}else{
+				stream.Sort = 9000
+			}
 		}else if strings.Contains(stream.Category,"山西"){
-			stream.Sort = 9200
+			if strings.Contains(stream.Title,"山西"){
+				stream.Sort = 9200
+			}else if strings.Contains(stream.Title,"太原"){
+				stream.Sort = 9220
+			}else{
+				stream.Sort = 9300
+			}
 		}else if strings.Contains(stream.Category,"西藏"){
-			stream.Sort = 9500
+			if strings.Contains(stream.Title,"西藏"){
+				stream.Sort = 9500
+			}else if strings.Contains(stream.Title,"拉萨"){
+				stream.Sort = 9520
+			}else{
+				stream.Sort = 9600
+			}
 		}else if strings.Contains(stream.Category,"特色") {
 			stream.Sort = 10000
 		}else if strings.Contains(stream.Category,"明星") {
@@ -423,8 +441,10 @@ func main(){
 			stream.Sort = 29000
 		}else if strings.Contains(stream.Category,"希腊"){
 			stream.Sort = 30000
-		}else if strings.Contains(stream.Category,"欧洲"){
+		}else if strings.Contains(stream.Category,"意大利"){
 			stream.Sort = 31000
+		}else if strings.Contains(stream.Category,"欧洲"){
+			stream.Sort = 32000
 		}else if strings.Contains(stream.Category,"其他外国频道"){
 			stream.Sort = 33000
 		}else{

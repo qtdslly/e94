@@ -261,6 +261,34 @@ http://www.radio366.com/tv/
 
 
 
+HD,http://file.kuangshanwajueji.anime-japan.net/playlist.m3u8
+①,http://i.cmcc.video/1009599.com?av=240min.1
+②,http://i.cmcc.video/1009599.com?av=240min.2
+③,http://i.cmcc.video/1009599.com?av=240min.3
+④,http://i.cmcc.video/1009599.com?av=240min.4
+⑤,http://i.cmcc.video/1009599.com?av=240min.5
+⑥,http://i.cmcc.video/1009599.com?av=240min.6
+⑦,http://i.cmcc.video/1009599.com?av=240min.7
+⑧,http://i.cmcc.video/1009599.com?av=240min.8
+⑨,http://ip.cmcc.video/1009599.com?av=240min.9
+⑩,http://ip.cmcc.video/1009599.com?av=240min.10
+⑪,http://ip.cmcc.video/1009599.com?av=240min.11
+⑫,http://ip.cmcc.video/1009599.com?av=240min.12
+⑬,http://ip.cmcc.video/1009599.com?av=240min.13
+⑭,http://ip.cmcc.video/1009599.com?av=240min.14
+⑮,http://ip.cmcc.video/1009599.com?av=240min.15
+⑯,http://ip.cmcc.video/1009599.com?av=240min.16
+⑰,http://ip.cmcc.video/1009599.com?av=240min.17
+⑱,http://ip.cmcc.video/1009599.com?av=240min.18
+⑲,http://video.my.cmcc.video/1009599.com?av=240min.19
+⑳,http://video.my.cmcc.video/1009599.com?av=240min.20
+
+loding image:
+
+http://file.kuangshanwajueji.anime-japan.net/20180707.1.kswjj
+http://file.kuangshanwajueji.anime-japan.net/20180707.2.kswjj
+http://file.kuangshanwajueji.anime-japan.net/20180707.3.kswjj
+- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-239088-1-1.html
 
 云南卫视|http://223.110.243.142/PLTV/2510088/224/3221227118/1.m3u8
 山东卫视|http://223.110.243.142/PLTV/2510088/224/3221227121/1.m3u8
