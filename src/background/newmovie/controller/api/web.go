@@ -34,14 +34,18 @@ func WebVideoHandler(c *gin.Context) {
 	if err != nil {
 		logger.Debug(apiUrl)
 		logger.Error(err)
-		return nil
+		c.AbortWithStatus(http.StatusInternalServerError)
+
+		return
 	}
 
 	base,exist := query.Find("iframe").Eq(0).Attr("src")
 	if !exist{
 		logger.Debug(apiUrl)
 		logger.Error(err)
-		return nil
+		c.AbortWithStatus(http.StatusInternalServerError)
+
+		return
 	}
 	url := base[strings.Index(base,"url=") + 4:]
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"url:",url})

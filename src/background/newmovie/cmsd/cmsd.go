@@ -97,7 +97,7 @@ func main(){
 		cms.GET("/stream", aapi.StreamDetailHandler)
 
 		cms.GET("/web", aapi.WebVideoHandler)
-		
+
 		cms.GET("/search", aapi.SearchHandler)
 		cms.GET("/topsearch", aapi.TopSearchHandler)
 
