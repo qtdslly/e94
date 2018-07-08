@@ -13,7 +13,7 @@ import (
 
 func WebVideoHandler(c *gin.Context) {
 	type param struct {
-		Url   string `json:"url"`
+		Url   string `form:"url"`
 	}
 
 	var p param
