@@ -13,7 +13,7 @@ import (
 
 func WebVideoHandler(c *gin.Context) {
 	type param struct {
-		Url   uint64 `json:"url"`
+		Url   string `json:"url"`
 	}
 
 	var p param
@@ -48,5 +48,5 @@ func WebVideoHandler(c *gin.Context) {
 		return
 	}
 	url := base[strings.Index(base,"url=") + 4:]
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"url:",url})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"url":url})
 }
