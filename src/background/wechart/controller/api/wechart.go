@@ -51,7 +51,7 @@ func WeChartHandler(c *gin.Context) {
 
 	c.XML(http.StatusOK,gin.H{
 		"ToUserName": p.FromUserName,
-		"FromUserName": "wx508e9e50a737c414",
+		"FromUserName": p.ToUserName,
 		"CreateTime": time.Now().Unix(),
 		"MsgType": "text",
 		"Content": "SUCCESS:" + p.Content,
