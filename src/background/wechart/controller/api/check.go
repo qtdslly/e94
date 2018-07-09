@@ -37,11 +37,18 @@ func CheckHandler(c *gin.Context) {
 
 	sortStr := tmpStr[0] + tmpStr[1] + tmpStr[2]
 
+	logger.Debug(tmpStr[0])
+	logger.Debug(tmpStr[1])
+	logger.Debug(tmpStr[2])
+
+	logger.Debug(sortStr)
 	hash := sha1.New()
 	result := hex.EncodeToString(hash.Sum([]byte(sortStr)))
 
 	if result != p.Signature{
 		logger.Debug("验证失败")
+		logger.Debug(p.Signature)
+		logger.Debug(result)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
