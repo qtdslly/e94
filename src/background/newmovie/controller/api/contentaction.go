@@ -68,8 +68,8 @@ func DiggHandler(c *gin.Context) {
 
 	type param struct {
 		InstallationId   uint64 `json:"installation_id" binding:"required"`
-		ContentType      uint8  `json:"content_type" binding:"required"`
-		ContentId        uint32 `json:"content_id" binding:"required"`
+		ContentType      uint8  `json:"content_type"`
+		ContentId        uint32 `json:"content_id"`
 		Disable          bool   `json:"disable"`
 	}
 
