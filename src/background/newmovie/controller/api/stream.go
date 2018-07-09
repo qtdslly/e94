@@ -219,6 +219,7 @@ func SearchHandler(c *gin.Context) {
 					iqiyiVideo.PageUrl = pageUrl
 					iqiyiVideo.Score = score
 					iqiyiVideo.Area = area
+					iqiyiVideo.PublishDate = publishDate
 					iqiyiVideo.Provider = constant.ContentProviderIqiyi
 					apiModels = append(apiModels, &iqiyiVideo)
 					count++
