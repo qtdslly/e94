@@ -71,7 +71,7 @@ func StreamListHandler(c *gin.Context) {
 func StreamDetailHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId uint64 `form:"installation_id" binding:"required"`
+		InstallationId uint64 `form:"installation_id"`
 		Id             uint32 `form:"id" binding:"required"`
 	}
 
@@ -109,11 +109,14 @@ func StreamDetailHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 	apiStream.IsDigg = false
-	var contentAction model.ContentAction
-	err  = db.Where("installation_id = ? and content_type = ? and content_id = ? and action = 1",p.InstallationId,constant.MediaTypeStream,p.Id).First(&contentAction).Error ;
-	if err == nil{
-		apiStream.IsDigg = true
+	if p.InstallationId != 0{
+		var contentAction model.ContentAction
+		err  = db.Where("installation_id = ? and content_type = ? and content_id = ? and action = 1",p.InstallationId,constant.MediaTypeStream,p.Id).First(&contentAction).Error ;
+		if err == nil{
+			apiStream.IsDigg = true
+		}
 	}
+
 	for _, playUrl := range playUrls {
 		var pUrl *apimodel.PlayUrl
 		pUrl = apimodel.PlayUrlFromDb(playUrl)

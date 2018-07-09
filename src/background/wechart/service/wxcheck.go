@@ -34,7 +34,7 @@ func AccessToken()string{
 	resp, err := http.DefaultClient.Do(requ)
 	if err != nil {
 		logger.Debug("Proxy failed!")
-		return
+		return ""
 	}
 
 	recv,err := ioutil.ReadAll(resp.Body)
