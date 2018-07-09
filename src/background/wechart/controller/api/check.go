@@ -2,12 +2,11 @@ package api
 
 import (
 	"background/common/logger"
+	"background/wechart/service"
+
 	"net/http"
+
 	"github.com/gin-gonic/gin"
-	"fmt"
-	"sort"
-	"crypto/sha1"
-	"encoding/hex"
 )
 
 func CheckHandler(c *gin.Context) {
@@ -31,30 +30,9 @@ func CheckHandler(c *gin.Context) {
 		return
 	}
 
-	token := "5a61efdc52411a670b9f7c9db0a5275b"
-	tmpStr := []string{fmt.Sprint(p.Timestamp),p.Nonce,token}
-	sort.Strings(tmpStr)
-
-	sortStr := tmpStr[0] + tmpStr[1] + tmpStr[2]
-
-	logger.Debug(tmpStr[0])
-	logger.Debug(tmpStr[1])
-	logger.Debug(tmpStr[2])
-
-	logger.Debug(sortStr)
-	//hash := sha1.New()
-	//
-	//r1 := hash.Sum([]byte(sortStr))
-	//logger.Debug(string(r1))
-	//result := hex.EncodeToString(r1)
-
-	r := sha1.Sum([]byte(sortStr))
-	result := hex.EncodeToString(r[:])
-
-	if result != p.Signature{
+	if !service.Check(p.Timestamp,p.Nonce,p.Signature){
 		logger.Debug("验证失败")
 		logger.Debug(p.Signature)
-		logger.Debug(result)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
