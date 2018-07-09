@@ -58,6 +58,6 @@ func WeChartHandler(c *gin.Context) {
 	//	"Content": "SUCCESS:" + p.Content,
 	//})
 
-	c.String(http.StatusOK,"<map><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></map>")
+	c.String(http.StatusOK,"<xml><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></xml>")
 
 }
