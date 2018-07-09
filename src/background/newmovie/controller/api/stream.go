@@ -1,6 +1,7 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
 	"background/newmovie/service"
 	"background/newmovie/model"
@@ -165,7 +166,7 @@ func SearchHandler(c *gin.Context) {
 		apiModels = append(apiModels, &apiStream)
 	}
 
-	var count uint32
+	var count int
 	if err = db.Model(&model.Stream{}).Where("title like ? and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
@@ -241,7 +242,7 @@ func SearchHandler(c *gin.Context) {
 			apiStream.Area = video.Country
 			apiStream.Directors = video.Directors
 			apiStream.PublishDate = video.PublishDate
-			apiStream.Score = video.Score
+			apiStream.Score = fmt.Sprint(video.Score)
 			apiStream.Description = video.Description
 			apiStream.Provider = constant.ContentProviderSystem
 			apiModels = append(apiModels, &apiStream)
