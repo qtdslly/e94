@@ -154,7 +154,7 @@ func SearchHandler(c *gin.Context) {
 		PublishDate string                `json:"publish_date"`
 		Score       string                `json:"score"`
 		Description string                `json:"description"`
-		Provider    uint8                 `json:"provider"`
+		Provider    uint32                `json:"provider"`
 	}
 
 	var apiModels []*ApiStream
@@ -268,7 +268,7 @@ func SearchHandler(c *gin.Context) {
 						return
 					}
 				}else{
-					
+
 				}
 				youkuVideo.Id = video.Id
 				apiModels = append(apiModels, &youkuVideo)
