@@ -6,7 +6,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"background/common/logger"
-	"1/github.com/pkg/errors"
+	"github.com/pkg/errors"
 )
 
 func GetIqiyiVideoInfoByTitle(word string)(error,string,string,string,string,string,string,string,string,string){
