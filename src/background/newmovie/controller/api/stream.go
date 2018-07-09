@@ -173,52 +173,54 @@ func SearchHandler(c *gin.Context) {
 	}
 
 	if count == 0{
-		err,title,description,actors,directors,thumb,pageUrl,publishDate := service.GetYoukuVideoInfoByTitle(p.Title)
-		if err == nil{
-			var youkuVideo ApiStream
-			youkuVideo.Title = title
-			youkuVideo.Description = description
-			youkuVideo.Actors = actors
-			youkuVideo.Directors = directors
-			youkuVideo.Thumb = thumb
-			youkuVideo.PageUrl = pageUrl
-			youkuVideo.PublishDate = publishDate
-			youkuVideo.Provider = constant.ContentProviderYouKu
-			apiModels = append(apiModels, &youkuVideo)
-			count++
-		}
+		if p.Offset == 0{
+			err,title,description,actors,directors,thumb,pageUrl,publishDate := service.GetYoukuVideoInfoByTitle(p.Title)
+			if err == nil{
+				var youkuVideo ApiStream
+				youkuVideo.Title = title
+				youkuVideo.Description = description
+				youkuVideo.Actors = actors
+				youkuVideo.Directors = directors
+				youkuVideo.Thumb = thumb
+				youkuVideo.PageUrl = pageUrl
+				youkuVideo.PublishDate = publishDate
+				youkuVideo.Provider = constant.ContentProviderYouKu
+				apiModels = append(apiModels, &youkuVideo)
+				count++
+			}
 
-		err,title,description,thumb,score,actors,directors,pageUrl := service.GetTencentVideoInfoByTitle(p.Title)
-		if err == nil{
-			var tenVideo ApiStream
-			tenVideo.Title = title
-			tenVideo.Description = description
-			tenVideo.Actors = actors
-			tenVideo.Directors = directors
-			tenVideo.Thumb = thumb
-			tenVideo.PageUrl = pageUrl
-			tenVideo.Score = score
-			tenVideo.Provider = constant.ContentProviderTencent
-			apiModels = append(apiModels, &tenVideo)
-			count++
-		}
+			err,title,description,thumb,score,actors,directors,pageUrl := service.GetTencentVideoInfoByTitle(p.Title)
+			if err == nil{
+				var tenVideo ApiStream
+				tenVideo.Title = title
+				tenVideo.Description = description
+				tenVideo.Actors = actors
+				tenVideo.Directors = directors
+				tenVideo.Thumb = thumb
+				tenVideo.PageUrl = pageUrl
+				tenVideo.Score = score
+				tenVideo.Provider = constant.ContentProviderTencent
+				apiModels = append(apiModels, &tenVideo)
+				count++
+			}
 
-		err,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := service.GetIqiyiVideoInfoByTitle(p.Title)
-		if err == nil{
-			var iqiyiVideo ApiStream
-			iqiyiVideo.Title = title
-			iqiyiVideo.Description = description
-			iqiyiVideo.Actors = actors
-			iqiyiVideo.Directors = directors
-			iqiyiVideo.Thumb = thumb
-			iqiyiVideo.PageUrl = pageUrl
-			iqiyiVideo.Score = score
-			iqiyiVideo.Area = area
-			iqiyiVideo.Provider = constant.ContentProviderIqiyi
-			apiModels = append(apiModels, &iqiyiVideo)
-			count++
+			err,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := service.GetIqiyiVideoInfoByTitle(p.Title)
+			if err == nil{
+				var iqiyiVideo ApiStream
+				iqiyiVideo.Title = title
+				iqiyiVideo.Description = description
+				iqiyiVideo.Actors = actors
+				iqiyiVideo.Directors = directors
+				iqiyiVideo.Thumb = thumb
+				iqiyiVideo.PageUrl = pageUrl
+				iqiyiVideo.Score = score
+				iqiyiVideo.Area = area
+				iqiyiVideo.Provider = constant.ContentProviderIqiyi
+				apiModels = append(apiModels, &iqiyiVideo)
+				count++
+			}
 		}
-
+		
 		var videos []model.Video
 		if err = db.Offset(p.Offset).Limit(p.Limit - count).Order("sort asc").Where("title like ? and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Find(&videos).Error; err != nil {
 			logger.Error("query video err!!!,", err)
