@@ -162,7 +162,7 @@ func SearchHandler(c *gin.Context) {
 		apiStream.Id = stream.Id
 		apiStream.Thumb = "http://www.ezhantao.com" + stream.Thumb
 		apiStream.Title = stream.Title
-		apiStream.ContentType = 4
+		apiStream.ContentType = constant.MediaTypeStream
 		apiModels = append(apiModels, &apiStream)
 	}
 
@@ -185,6 +185,7 @@ func SearchHandler(c *gin.Context) {
 				youkuVideo.Thumb = thumb
 				youkuVideo.PageUrl = pageUrl
 				youkuVideo.PublishDate = publishDate
+				youkuVideo.ContentType = constant.MediaTypeEpisode
 				youkuVideo.Provider = constant.ContentProviderYouKu
 				apiModels = append(apiModels, &youkuVideo)
 				count++
@@ -201,6 +202,7 @@ func SearchHandler(c *gin.Context) {
 					tenVideo.Thumb = thumb
 					tenVideo.PageUrl = pageUrl
 					tenVideo.Score = score
+					tenVideo.ContentType = constant.MediaTypeEpisode
 					tenVideo.Provider = constant.ContentProviderTencent
 					apiModels = append(apiModels, &tenVideo)
 					count++
@@ -219,6 +221,7 @@ func SearchHandler(c *gin.Context) {
 					iqiyiVideo.PageUrl = pageUrl
 					iqiyiVideo.Score = score
 					iqiyiVideo.Area = area
+					iqiyiVideo.ContentType = constant.MediaTypeEpisode
 					iqiyiVideo.PublishDate = publishDate
 					iqiyiVideo.Provider = constant.ContentProviderIqiyi
 					apiModels = append(apiModels, &iqiyiVideo)
@@ -238,7 +241,7 @@ func SearchHandler(c *gin.Context) {
 			apiStream.Id = video.Id
 			apiStream.Thumb = video.ThumbY
 			apiStream.Title = video.Title
-			apiStream.ContentType = 2
+			apiStream.ContentType = constant.MediaTypeEpisode
 			apiStream.Actors = video.Actors
 			apiStream.Area = video.Country
 			apiStream.Directors = video.Directors
