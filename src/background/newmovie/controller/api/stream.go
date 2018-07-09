@@ -10,6 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	apimodel "background/newmovie/controller/api/model"
+	"background/common/util"
 )
 
 func StreamListHandler(c *gin.Context) {
@@ -175,9 +176,10 @@ func SearchHandler(c *gin.Context) {
 
 	if count == 0{
 		if p.Offset == 0{
+			var youkuVideo ApiStream
+
 			err,title,description,actors,directors,thumb,pageUrl,publishDate := service.GetYoukuVideoInfoByTitle(p.Title)
 			if err == nil{
-				var youkuVideo ApiStream
 				youkuVideo.Title = title
 				youkuVideo.Description = description
 				youkuVideo.Actors = actors
@@ -187,24 +189,21 @@ func SearchHandler(c *gin.Context) {
 				youkuVideo.PublishDate = publishDate
 				youkuVideo.ContentType = constant.MediaTypeEpisode
 				youkuVideo.Provider = constant.ContentProviderYouKu
-				apiModels = append(apiModels, &youkuVideo)
 				count++
 			}
 
 			if count == 0{
 				err,title,description,thumb,score,actors,directors,pageUrl := service.GetTencentVideoInfoByTitle(p.Title)
 				if err == nil{
-					var tenVideo ApiStream
-					tenVideo.Title = title
-					tenVideo.Description = description
-					tenVideo.Actors = actors
-					tenVideo.Directors = directors
-					tenVideo.Thumb = thumb
-					tenVideo.PageUrl = pageUrl
-					tenVideo.Score = score
-					tenVideo.ContentType = constant.MediaTypeEpisode
-					tenVideo.Provider = constant.ContentProviderTencent
-					apiModels = append(apiModels, &tenVideo)
+					youkuVideo.Title = title
+					youkuVideo.Description = description
+					youkuVideo.Actors = actors
+					youkuVideo.Directors = directors
+					youkuVideo.Thumb = thumb
+					youkuVideo.PageUrl = pageUrl
+					youkuVideo.Score = score
+					youkuVideo.ContentType = constant.MediaTypeEpisode
+					youkuVideo.Provider = constant.ContentProviderTencent
 					count++
 				}
 			}
@@ -212,21 +211,67 @@ func SearchHandler(c *gin.Context) {
 			if count == 0{
 				err,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := service.GetIqiyiVideoInfoByTitle(p.Title)
 				if err == nil{
-					var iqiyiVideo ApiStream
-					iqiyiVideo.Title = title
-					iqiyiVideo.Description = description
-					iqiyiVideo.Actors = actors
-					iqiyiVideo.Directors = directors
-					iqiyiVideo.Thumb = thumb
-					iqiyiVideo.PageUrl = pageUrl
-					iqiyiVideo.Score = score
-					iqiyiVideo.Area = area
-					iqiyiVideo.ContentType = constant.MediaTypeEpisode
-					iqiyiVideo.PublishDate = publishDate
-					iqiyiVideo.Provider = constant.ContentProviderIqiyi
-					apiModels = append(apiModels, &iqiyiVideo)
+					youkuVideo.Title = title
+					youkuVideo.Description = description
+					youkuVideo.Actors = actors
+					youkuVideo.Directors = directors
+					youkuVideo.Thumb = thumb
+					youkuVideo.PageUrl = pageUrl
+					youkuVideo.Score = score
+					youkuVideo.Area = area
+					youkuVideo.ContentType = constant.MediaTypeEpisode
+					youkuVideo.PublishDate = publishDate
+					youkuVideo.Provider = constant.ContentProviderIqiyi
 					count++
 				}
+			}
+			if count > 0{
+				var video model.Video
+				video.Title = youkuVideo.Title
+				if err = db.Where("title = ?",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
+					video.Description = youkuVideo.Description
+					video.Actors = youkuVideo.Actors
+					video.Directors = youkuVideo.Directors
+					video.ThumbY = youkuVideo.Thumb
+					video.PublishDate = youkuVideo.PublishDate
+					video.Pinyin = util.TitleToPinyin(video.Title)
+					if err = db.Save(&video).Error ; err != nil{
+						logger.Error("query video err!!!,", err)
+						c.AbortWithStatus(http.StatusInternalServerError)
+						return
+					}
+
+					var episode model.Episode
+					episode.Score = video.Score
+					episode.PublishDate = video.PublishDate
+					episode.Description = video.Description
+					episode.ThumbY = video.ThumbY
+					episode.VideoId = video.Id
+					episode.Pinyin = util.TitleToPinyin(episode.Title)
+					if err = db.Save(&video).Error ; err != nil{
+						logger.Error("query video err!!!,", err)
+						c.AbortWithStatus(http.StatusInternalServerError)
+						return
+					}
+
+					var playUrl model.PlayUrl
+					playUrl.Title = episode.Title
+					playUrl.ContentType = constant.MediaTypeEpisode
+					playUrl.ContentId = episode.Id
+					playUrl.OnLine = true
+					playUrl.Provider = youkuVideo.Provider
+					playUrl.PageUrl = youkuVideo.PageUrl
+					episode.Pinyin = util.TitleToPinyin(episode.Title)
+					if err = db.Save(&video).Error ; err != nil{
+						logger.Error("query video err!!!,", err)
+						c.AbortWithStatus(http.StatusInternalServerError)
+						return
+					}
+				}else{
+					
+				}
+				youkuVideo.Id = video.Id
+				apiModels = append(apiModels, &youkuVideo)
 			}
 		}
 
