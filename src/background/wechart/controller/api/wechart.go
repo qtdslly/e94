@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
-	"fmt"
+	"encoding/xml"
 )
 
 func WeChartHandler(c *gin.Context) {
@@ -49,6 +49,14 @@ func WeChartHandler(c *gin.Context) {
 	Content	是	回复的消息内容（换行：在content中能够换行，微信客户端就支持换行显示）
 	*/
 
+	type WxMessage struct {
+		XMLName       xml.Name    `xml:"xml"`
+		ToUserName    string      `xml:"ToUserName"`
+		FromUserName  string      `xml:"FromUserName"`
+		CreateTime    int64       `xml:"CreateTime"`
+		MsgType       string      `xml:"MsgType"`
+		Content       string      `xml:"Content"`
+	}
 
 	//c.XML(http.StatusOK,gin.H{
 	//	"ToUserName": p.FromUserName,
@@ -58,6 +66,14 @@ func WeChartHandler(c *gin.Context) {
 	//	"Content": "SUCCESS:" + p.Content,
 	//})
 
-	c.String(http.StatusOK,"<xml><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></xml>")
+	var wm WxMessage
+	wm.ToUserName = p.FromUserName
+	wm.FromUserName = p.ToUserName
+	wm.CreateTime = time.Now().Unix()
+	wm.MsgType = "text"
+	wm.Content = "SUCCESS:" + p.Content
+	data, _ := xml.MarshalIndent(&wm, "", "  ")
+	c.String(http.StatusOK,string(data))
+	//c.String(http.StatusOK,"<xml><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></xml>")
 
 }
