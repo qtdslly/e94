@@ -5,6 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
+	"fmt"
 )
 
 func WeChartHandler(c *gin.Context) {
@@ -49,12 +50,14 @@ func WeChartHandler(c *gin.Context) {
 	*/
 
 
-	c.XML(http.StatusOK,gin.H{
-		"ToUserName": p.FromUserName,
-		"FromUserName": p.ToUserName,
-		"CreateTime": time.Now().Unix(),
-		"MsgType": "text",
-		"Content": "SUCCESS:" + p.Content,
-	})
+	//c.XML(http.StatusOK,gin.H{
+	//	"ToUserName": p.FromUserName,
+	//	"FromUserName": p.ToUserName,
+	//	"CreateTime": time.Now().Unix(),
+	//	"MsgType": "text",
+	//	"Content": "SUCCESS:" + p.Content,
+	//})
+
+	c.String(http.StatusOK,"<map><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></map>")
 
 }
