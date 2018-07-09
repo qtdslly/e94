@@ -42,11 +42,14 @@ func CheckHandler(c *gin.Context) {
 	logger.Debug(tmpStr[2])
 
 	logger.Debug(sortStr)
-	hash := sha1.New()
+	//hash := sha1.New()
+	//
+	//r1 := hash.Sum([]byte(sortStr))
+	//logger.Debug(string(r1))
+	//result := hex.EncodeToString(r1)
 
-	r1 := hash.Sum([]byte(sortStr))
-	logger.Debug(string(r1))
-	result := hex.EncodeToString(r1)
+	r := sha1.Sum([]byte(sortStr))
+	result := hex.EncodeToString(r[:])
 
 	if result != p.Signature{
 		logger.Debug("验证失败")
