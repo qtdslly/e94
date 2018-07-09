@@ -66,7 +66,7 @@ func main(){
 
 	r.Use()
 	{
-		r.GET("/check", aapi.CheckHandler)
+		r.GET("/wechart", aapi.CheckHandler)
 	}
 	cms := r.Group("cms")
 
