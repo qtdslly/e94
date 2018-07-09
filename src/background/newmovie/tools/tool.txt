@@ -89,3 +89,8 @@ http://api.visaok.net/?url=
 http://jx.618g.com/?url=
 接口24
 
+
+http://www.qmaile.com/
+http://www.inke.ren/
+http://www.v718.com/
+http://goudidiao.com/
