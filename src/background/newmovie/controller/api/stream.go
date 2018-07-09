@@ -112,7 +112,7 @@ func StreamDetailHandler(c *gin.Context) {
 	var contentAction model.ContentAction
 	err  = db.Where("installation_id = ? and content_type = ? and content_id = ?",p.InstallationId,constant.MediaTypeStream,p.Id).First(&contentAction).Error ;
 	if err == nil{
-		apiStream.IsDigg == true
+		apiStream.IsDigg = true
 	}
 	for _, playUrl := range playUrls {
 		var pUrl *apimodel.PlayUrl
