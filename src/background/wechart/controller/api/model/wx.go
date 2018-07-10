@@ -42,6 +42,6 @@ type NewsResMessage struct {
 	FromUserName  string      `xml:"FromUserName"`
 	CreateTime    int64       `xml:"CreateTime"`
 	MsgType       string      `xml:"MsgType"`
-	ArticleCount  string      `xml:"ArticleCount"`
+	ArticleCount  int         `xml:"ArticleCount"`
 	Articles      []Item      `xml:"Articles"`
 }

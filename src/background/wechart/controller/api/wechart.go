@@ -76,7 +76,7 @@ func WeChartHandler(c *gin.Context) {
 			data, _ = xml.MarshalIndent(news, "", "  ")
 		}
 	}
-	
+
 	c.String(http.StatusOK,string(data))
 
 }
