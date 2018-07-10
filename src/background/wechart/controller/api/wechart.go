@@ -68,7 +68,7 @@ func WeChartHandler(c *gin.Context) {
 	wm.Content = "SUCCESS:" + p.Content
 
 	if p.MsgType == "text"{
-		var video apimodel.Video
+		var video *apimodel.Video
 		video = service.SearchVideo(p.Content)
 		if video != nil{
 			wm.Content = apimodel.VideoToHtml(video)
