@@ -77,7 +77,7 @@ func main(){
 	{
 
 	}
-	r.Static("/player", "/root/Git/e94/src/background/wechart/html/")
+	r.Static("/video", "/root/Git/e94/src/background/wechart/html/")
 
 	r.Run(":80")
 
