@@ -1,6 +1,8 @@
 package api
 
 import (
+	apimodel "background/wechart/controller/api/model"
+	"background/wechart/service"
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -58,22 +60,22 @@ func WeChartHandler(c *gin.Context) {
 		Content       string      `xml:"Content"`
 	}
 
-	//c.XML(http.StatusOK,gin.H{
-	//	"ToUserName": p.FromUserName,
-	//	"FromUserName": p.ToUserName,
-	//	"CreateTime": time.Now().Unix(),
-	//	"MsgType": "text",
-	//	"Content": "SUCCESS:" + p.Content,
-	//})
-
 	var wm WxMessage
 	wm.ToUserName = p.FromUserName
 	wm.FromUserName = p.ToUserName
 	wm.CreateTime = time.Now().Unix()
 	wm.MsgType = "text"
 	wm.Content = "SUCCESS:" + p.Content
+
+	if p.MsgType == "text"{
+		var video apimodel.Video
+		video = service.SearchVideo(p.Content)
+		if video != nil{
+			wm.Content = apimodel.VideoToHtml(video)
+		}
+	}
+
 	data, _ := xml.MarshalIndent(&wm, "", "  ")
 	c.String(http.StatusOK,string(data))
-	//c.String(http.StatusOK,"<xml><CreateTime>" + fmt.Sprint(time.Now().Unix()) + "</CreateTime><MsgType>text</MsgType><Content>SUCCESS:123</Content><ToUserName>oDS1Hwqv1_7TPhCg81G9i0pToskY</ToUserName><FromUserName>gh_9e1a3e150384</FromUserName></xml>")
 
 }
