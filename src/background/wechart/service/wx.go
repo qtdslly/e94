@@ -30,7 +30,7 @@ func SearchVideo(title string)(*apimodel.Video){
 			logger.Debug(err)
 		}
 	}
-	
+
 	if count == 0{
 		err,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := GetIqiyiVideoInfoByTitle(title)
 		if err == nil {
