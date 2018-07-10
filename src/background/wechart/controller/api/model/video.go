@@ -1,7 +1,9 @@
 package apimodel
 
-import "time"
-
+import (
+	"time"
+	"encoding/xml"
+)
 type Video struct {
 	Title       string    `json:"title"`
 	Description string    `json:"description"`
@@ -65,4 +67,30 @@ func VideoToNews(toUserName,fromUserName string,src *Video) *NewsResMessage {
 	news.MsgType = "news"
 	news.Articles = append(news.Articles,item)
 	return &news
+}
+
+
+type WxMessage struct {
+	XMLName       xml.Name    `xml:"xml"`
+	ToUserName    string      `xml:"ToUserName"`
+	FromUserName  string      `xml:"FromUserName"`
+	CreateTime    int64       `xml:"CreateTime"`
+	MsgType       string      `xml:"MsgType"`
+	Content       string      `xml:"Content"`
+}
+
+
+
+func EventContent(eventType ,toUserName,fromUserName string) *WxMessage {
+	var wm WxMessage
+	wm.ToUserName = toUserName
+	wm.FromUserName = fromUserName
+	wm.CreateTime = time.Now().Unix()
+	wm.MsgType = "text"
+	if eventType == "subscribe"{
+		wm.Content = "欢迎关注云视视频，云视视频观看最新最全的视频信息,院线大片/VIP视频统统免费看！！！ 直接输入您想看的视频发送即可"
+	}else {
+		wm.Content = "谢谢你曾经的关注与支持，我们会继续努力做到更好，期待您的再次关注！！！"
+	}
+	return &wm
 }

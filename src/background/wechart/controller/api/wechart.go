@@ -27,6 +27,8 @@ func WeChartHandler(c *gin.Context) {
 		MsgType      string `xml:"MsgType"`
 		Content      string `xml:"Content"`
 		MsgId        int64 `xml:"MsgId"`
+		Event        string `xml:"Event"`
+
 	}
 
 	var p param
@@ -41,31 +43,8 @@ func WeChartHandler(c *gin.Context) {
 	logger.Debug(p.MsgType)
 	logger.Debug(p.Content)
 	logger.Debug(p.MsgId)
+	logger.Debug(p.Event)
 
-	/*
-	参数	是否必须	描述
-	ToUserName	是	接收方帐号（收到的OpenID）
-	FromUserName	是	开发者微信号
-	CreateTime	是	消息创建时间 （整型）
-	MsgType	是	text
-	Content	是	回复的消息内容（换行：在content中能够换行，微信客户端就支持换行显示）
-	*/
-
-	type WxMessage struct {
-		XMLName       xml.Name    `xml:"xml"`
-		ToUserName    string      `xml:"ToUserName"`
-		FromUserName  string      `xml:"FromUserName"`
-		CreateTime    int64       `xml:"CreateTime"`
-		MsgType       string      `xml:"MsgType"`
-		Content       string      `xml:"Content"`
-	}
-
-	var wm WxMessage
-	wm.ToUserName = p.FromUserName
-	wm.FromUserName = p.ToUserName
-	wm.CreateTime = time.Now().Unix()
-	wm.MsgType = "text"
-	wm.Content = "SUCCESS:" + p.Content
 
 	var data []byte
 	if p.MsgType == "text"{
@@ -75,6 +54,9 @@ func WeChartHandler(c *gin.Context) {
 			news := apimodel.VideoToNews(p.FromUserName,p.ToUserName,video)
 			data, _ = xml.MarshalIndent(news, "", "  ")
 		}
+	}else if p.MsgType == "event"{
+		wx := apimodel.EventContent(p.Event,p.FromUserName,p.ToUserName)
+		data, _ = xml.MarshalIndent(wx, "", "  ")
 	}
 
 	c.String(http.StatusOK,string(data))
