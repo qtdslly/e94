@@ -68,6 +68,7 @@ func main(){
 	{
 		r.GET("/wechart", aapi.CheckHandler)
 		r.POST("/wechart", aapi.WeChartHandler)
+		r.GET("/play", aapi.PlayHandler)
 
 	}
 	cms := r.Group("cms")

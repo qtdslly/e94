@@ -54,8 +54,8 @@ func VideoToNews(toUserName,fromUserName string,src *Video) *NewsResMessage {
 	var article Article
 	article.Title = src.Title
 	article.Description = src.Description
-	article.PicUrl = "http://image14.m1905.cn/uploadfile/2017/0731/thumb_1_147_100_20170731013311381963.jpg" //src.ThumbY
-	article.Url = "http://www.ezhantao.com:16882/web?url=" + src.PageUrl
+	article.PicUrl = src.ThumbY //"http://image14.m1905.cn/uploadfile/2017/0731/thumb_1_147_100_20170731013311381963.jpg" //src.ThumbY
+	article.Url = "http://www.ezhantao.com/play?url=" + src.PageUrl
 	var item Item
 	item.Art = article
 	news.CreateTime = time.Now().Unix()
