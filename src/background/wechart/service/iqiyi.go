@@ -105,7 +105,9 @@ func GetIqiyiVideoInfoByTitle(word string)(error,string,string,string,string,str
 
 	actors = strings.Replace(actors," ","/",-1)
 	directors = strings.Replace(directors," ","/",-1)
-	description = description[0:strings.LastIndex(description,"详细")]
+	if strings.Contains(description,"详细"){
+		description = description[0:strings.LastIndex(description,"详细")]
+	}
 	return nil,title,score,area,description,actors,directors,thumb,pageUrl,publishDate
 }
 

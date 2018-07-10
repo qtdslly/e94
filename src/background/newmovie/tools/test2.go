@@ -9,7 +9,7 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
-	word := "战狼2"
+	word := "我不是药神"
 	_,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := service.GetIqiyiVideoInfoByTitle(word)
 	logger.Debug("豆瓣评分:",score)
 	logger.Debug("截图:",thumb)
