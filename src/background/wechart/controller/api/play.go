@@ -49,6 +49,6 @@ func PlayHandler(c *gin.Context) {
 	url := base[strings.Index(base,"url=") + 4:]
 
 	logger.Debug("播放地址:",url)
-	//url = "http://www.ezhantao.com:8080/play?url=" + url
+	url = "http://www.ezhantao.com:8080/player.html?url=" + url
 	c.Redirect(http.StatusPermanentRedirect,url)
 }
