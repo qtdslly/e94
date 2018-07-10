@@ -18,7 +18,7 @@ type Video struct {
 	Provider    uint32    `json:"provider"`
 }
 
-func VideoToHtml(src Video) string {
+func VideoToHtml(src *Video) string {
 	result := "<div>"
 	result = result + "<img src='" + src.ThumbY + "' alt='" + src.Title + "' />"
 	result = result + "<h3>" + src.Title + "</h3>"
