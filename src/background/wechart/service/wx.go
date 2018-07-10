@@ -35,7 +35,7 @@ func SearchVideo(title string)(*apimodel.Video){
 
 	if count == 0{
 		err,title,description,actors,directors,thumb,pageUrl,publishDate := GetYoukuVideoInfoByTitle(title)
-		if err == nil && isValidVideo(){
+		if err == nil{
 			youkuVideo.Title = title
 			youkuVideo.Description = description
 			youkuVideo.Actors = actors
