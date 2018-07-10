@@ -48,6 +48,6 @@ func PlayHandler(c *gin.Context) {
 	}
 	url := base[strings.Index(base,"url=") + 4:]
 
-	url = "http://www.ezhantao.com:8080/play?url=" + url
+	//url = "http://www.ezhantao.com:8080/play?url=" + url
 	c.Redirect(http.StatusPermanentRedirect,url)
 }
