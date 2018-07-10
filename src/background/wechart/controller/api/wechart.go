@@ -67,15 +67,16 @@ func WeChartHandler(c *gin.Context) {
 	wm.MsgType = "text"
 	wm.Content = "SUCCESS:" + p.Content
 
+	var data []byte
 	if p.MsgType == "text"{
 		var video *apimodel.Video
 		video = service.SearchVideo(p.Content)
 		if video != nil{
-			wm.Content = apimodel.VideoToHtml(video)
+			news := apimodel.VideoToNews(p.FromUserName,p.ToUserName,video)
+			data, _ = xml.MarshalIndent(news, "", "  ")
 		}
 	}
-
-	data, _ := xml.MarshalIndent(&wm, "", "  ")
+	
 	c.String(http.StatusOK,string(data))
 
 }
