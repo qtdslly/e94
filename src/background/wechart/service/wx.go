@@ -4,6 +4,7 @@ import (
 	"background/common/constant"
 	"background/common/logger"
 	apimodel "background/wechart/controller/api/model"
+	"strings"
 )
 
 func SearchVideo(title string)(*apimodel.Video){
@@ -14,7 +15,7 @@ func SearchVideo(title string)(*apimodel.Video){
 
 	if count == 0{
 		err,title,score,area,description,actors,directors,thumb,pageUrl,publishDate := GetIqiyiVideoInfoByTitle(title)
-		if err == nil{
+		if err == nil {
 			youkuVideo.Title = title
 			youkuVideo.Description = description
 			youkuVideo.Actors = actors
@@ -34,7 +35,7 @@ func SearchVideo(title string)(*apimodel.Video){
 
 	if count == 0{
 		err,title,description,actors,directors,thumb,pageUrl,publishDate := GetYoukuVideoInfoByTitle(title)
-		if err == nil{
+		if err == nil && isValidVideo(){
 			youkuVideo.Title = title
 			youkuVideo.Description = description
 			youkuVideo.Actors = actors
@@ -68,8 +69,13 @@ func SearchVideo(title string)(*apimodel.Video){
 		}
 	}
 
-
-
-
 	return &youkuVideo
+}
+
+
+func isValidVideo(url string)bool{
+	if strings.Contains(url,"m3u8") || strings.Contains(url,"mp4") || strings.Contains(url,"flv"){
+		return true
+	}
+	return false
 }
