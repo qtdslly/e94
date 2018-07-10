@@ -6,7 +6,6 @@ import (
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"time"
 	"encoding/xml"
 )
 
