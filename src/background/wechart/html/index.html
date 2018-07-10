@@ -14,7 +14,7 @@
 	<div class="m">
 		<video id="my-video" class="video-js" controls preload="auto" width="740" height="400"
 		  poster="m.png" data-setup="{}">
-			<source id="video_url" src="" type="video/mp4">
+			<source id="video_url" src="http://vd3.bdstatic.com/mda-ig1g2t2gidi65nvk/mda-ig1g2t2gidi65nvk.mp4" type="video/mp4">
 			<p class="vjs-no-js">
 			  To view this video please enable JavaScript, and consider upgrading to a web browser that
 			  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -22,17 +22,18 @@
 		  </video>
 		  <script src="js/video.min.js"></script>	
 		  <script type="text/javascript">
-		  		var url = location.search;
-				var start = url.indexOf("url=") + 4;
-				url = url.slice(start,url.length);
-				alert(url);
-				var source = document.getElementById("video_url");
-				source.setAttribute("src",url);
+		  		var myPlayer = videojs('my-video');
+		  		myPlayer.enterFullScreen();
 
-				var myPlayer = videojs('my-video');
+		  		<!--var url = location.search;-->
+				<!--var start = url.indexOf("url=") + 4;-->
+				<!--url = url.slice(start,url.length);-->
+				<!--alert(url);-->
+				<!--var source = document.getElementById("video_url");-->
+				<!--source.setAttribute("src",url);-->
+
 				videojs("my-video").ready(function(){
 					var myPlayer = this;
-					myPlayer.enterFullScreen();
 					myPlayer.play();
 				});
 		</script>
