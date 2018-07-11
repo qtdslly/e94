@@ -300,10 +300,10 @@ func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
 		logger.Error(err)
 		return false
 	}
-	time.Sleep(time.Second * 15)
 	return true
 }
 func getStatus(url string)(int){
+	time.Sleep(time.Second * 15)
 
 	recv := getBaiDuDomainApiInfo(1,url)
 	if recv == ""{
@@ -338,6 +338,7 @@ func getStatus(url string)(int){
 }
 
 func getDomainDetail(url string)(error,string,string,string,string,string,string,string,string,string,string,string,string){
+	time.Sleep(time.Second * 15)
 	recv := getBaiDuDomainApiInfo(2,url)
 	if recv == ""{
 		return errors.New("调用百度云接口失败!"),"","","","","","","","","","","",""
