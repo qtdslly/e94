@@ -14,7 +14,7 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 	var err error
-	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/sss.txt")
+	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/2.txt")
 	//f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/stream1.txt")
 
 	if err != nil {
@@ -23,6 +23,7 @@ func main(){
 	defer f.Close()
 
 	rd := bufio.NewReader(f)
+	i := 0
 	for {
 		line, err := rd.ReadString('\n')
 		if err != nil || io.EOF == err {
@@ -41,9 +42,11 @@ func main(){
 		}else{
 			url = fields[0]
 		}
-		if util.CheckStreamUrl(url){
-			fmt.Println("SUCCESS" + title + "\t" + url)
+		if util.CheckStreamUrl(url,"/home/lyric/lly/red/" + fmt.Sprint(i) + ".jpg"){
+			fmt.Println(fmt.Sprint(i) + "|SUCCESS|" + title + "|" + url)
 		}
+		i++
 	}
 }
+
 

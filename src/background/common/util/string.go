@@ -31,11 +31,11 @@ func TrimChinese(title string)(string){
 
 
 
-func CheckStreamUrl(url string)bool{
+func CheckStreamUrl(url string,jpgName string)bool{
 	c2 := make(chan string, 1)
 	ffmpegAddr := "/usr/bin/ffmpeg"
 	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 aaa.jpg", ffmpegAddr, url)
+		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 %s", ffmpegAddr, url,jpgName)
 		fmt.Println(cmdStr)
 		cmd := exec.Command("bash", "-c", cmdStr)
 

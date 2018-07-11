@@ -94,3 +94,80 @@ http://www.qmaile.com/
 http://www.inke.ren/
 http://www.v718.com/
 http://goudidiao.com/
+
+
+
+​​使用方法：在=后面加上视频地址回车就可以解析VIP电影了。
+
+列：http://api.baiyug.cn/vip/index.php?url=http://www.iqiyi.com/v_19rr7mmyvw.html#vfrm=19-9-0-1
+
+我测试了一下这个接口问题。
+
+比如你用下面的第一个接口
+
+http://api.baiyug.cn/vip/index.php?url=
+
+然后，腾讯战狼VIP电影 《战狼2》
+
+链接如下
+
+https://v.qq.com/x/cover/wi8e2p5kirdaf3j.html
+
+合成的链接，就是
+
+http://api.baiyug.cn/vip/index.php?url=https://v.qq.com/x/cover/wi8e2p5kirdaf3j.html
+
+直接复制到流浪器，就能看了。是不是很66666
+
+借口列表。
+
+http://api.baiyug.cn/vip/index.php?url=超清
+http://jx.ejiafarm.com/dy.php?url=  超清
+http://www.vipjiexi.com/yun.php?url=     接口1
+http://api.1008net.com/v.php?url=     接口2
+http://api.nepian.com/ckparse/?url=     接口3
+http://player.jidiaose.com/supapi/iframe.php?v=     接口4
+http://api.pucms.com/index.php?url=     接口5
+http://api.wlzhan.com/sudu/?url=     接口6
+http://jiexi.yanjiaozhaopinwang.com/jx1/dy.php?url= 超清
+http://www.0335haibo.com/yun.php?url=     接口7
+http://yun.mt2t.com/yun?url=     接口8
+http://y.mt2t.com/lines?url=     接口9
+http://www.0335haibo.com/yun.php?url=     接口10
+http://www.sfsft.com/video.php?url=     接口11
+http://www.82190555.com/video.php?url= selected>接口12
+http://2.jx.72du.com/video.php?url= selected>接口13
+http://www.97panda.com/kkflv/index.php?url=     接口14
+http://jx.vgoodapi.com/jx.php?url=     接口15
+http://www.dgua.xyz/webcloud/?url=     接口16
+http://api.91exp.com/svip/?url=     接口17
+http://vip.jlsprh.com/index.php?url=     接口18
+http://api.xfsub.com/index.php?url=     接口19
+http://jiexi.071811.cc/jx.php?url=     接口20
+http://jiexi.92fz.cn/player/vip.php?url=     接口21
+http://api.baiyug.cn/vip/index.php?url=     接口22
+http://api.662820.com/xnflv/index.php?url=     接口23
+http://www.82190555.com/index/qqvod.php?url=     接口24
+http://yyygwz.com/index.php?url=     接口25
+http://www.97panda.com/kkflv/index.php?url=     接口26
+http://jx.api.163ren.com/vod.php?url=     接口27
+http://lookxw.com/yingzi/?url=     接口28
+http://www.0335haibo.com/tong.php?url=     接口29
+http://www.wmxz.wang/video.php?url=     接口30
+http://api.97kn.com/?url=     接口31
+https://aikanapi.duapp.com/odflv105/index.php?url=     接口32
+http://v.buy360.vip/wwcx/index.php?url=     接口33
+http://api.lequgirl.com/?url=     接口34
+https://jxapi.nepian.com/ckparse/?url=     接口35
+http://91k.co/play.php?url=     接口36
+http://www.52jiexi.com/yun.php?url=     接口37
+http://mt2t.com/yun?url=">接口38
+http://000o.cc/jx/ty.php?url=">接口39
+http://yyygwz.com/index.php?url=">接口40
+http://vipjiexi.com/vip.php?url=">接口41
+http://www.wmxz.wang/video.php?url=">接口42
+http://jx.ck921.com/?url=">接口43
+http://s1y2.com/?url=">接口44
+http://www.ou522.cn/t2/1.php?url=">接口45
+http://jx.xuanpianwang.com/parse?url=">接口47
+http://jiexi.92fz.cn/player/vip.php?url=">接口49接口可用性自行测试​​​​​
