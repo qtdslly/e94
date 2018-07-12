@@ -92,6 +92,7 @@ func main(){
 		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
 		cms.POST("/user/stream/delete", aapi.UserStreamDeleteHandler)
 		cms.GET("/user/stream/list", aapi.UserStreamListHandler)
+		cms.GET("/user/want", aapi.UserWantHandler)
 
 		cms.GET("/stream/list", aapi.StreamListHandler)
 		cms.GET("/stream", aapi.StreamDetailHandler)

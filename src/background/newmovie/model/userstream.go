@@ -9,7 +9,7 @@ import (
 
 type UserStream struct {
 	Id             uint32           `gorm:"primary_key" json:"id"`
-	InstallationId uint64           `json:"user_id"`
+	InstallationId uint64           `json:"installation_id"`
 	Title          string           `gorm:"size:60" json:"title" valid:"Str" name:"title" len:"1,255"`
 	Pinyin         string           `gorm:"size:32;index" json:"pinyin"`
 	Sort           uint32           `json:"sort"`
