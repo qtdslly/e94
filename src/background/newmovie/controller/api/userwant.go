@@ -13,10 +13,10 @@ import (
 func UserWantHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId    uint64   `form:"installation_id"`
-		Title             string   `form:"title"`
-		Description       string   `form:"description"`
-		Email             string   `form:"email"`
+		InstallationId    uint64   `json:"installation_id"`
+		Title             string   `json:"title"`
+		Description       string   `json:"description"`
+		Email             string   `json:"email"`
 	}
 
 	var p param

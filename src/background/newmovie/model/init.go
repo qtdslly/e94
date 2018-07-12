@@ -102,6 +102,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initUserWant(db)
+	if err != nil {
+		logger.Fatal("Init db user_want failed, ", err)
+		return err
+	}
+
 	err = initFile(db)
 	if err != nil {
 		logger.Fatal("Init db file failed, ", err)
@@ -128,6 +134,7 @@ func rebuildModel(db *gorm.DB) {
 	dropUserStream(db)
 	dropUserOpinion(db)
 	dropFile(db)
+	dropUserWant(db)
 
 	InitModel(db)
 }
