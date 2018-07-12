@@ -2,8 +2,6 @@ package script
 
 import (
 	"background/common/logger"
-	"github.com/robertkrimen/otto"
-	"encoding/json"
 	"io/ioutil"
 	"net/http"
 	"bytes"
