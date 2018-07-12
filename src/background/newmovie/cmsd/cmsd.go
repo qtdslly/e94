@@ -111,6 +111,7 @@ func main(){
 
 	}
 
+	r.Static("/index", "/root/Git/e94/doc/newmovie/html/")
 	r.Static("/res", config.GetStaticRoot())
 	r.Static("/doc", "/root/Git/e94/doc/newmovie/")
 
