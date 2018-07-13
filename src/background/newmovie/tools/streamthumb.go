@@ -112,7 +112,7 @@ func CheckStreamUrl(sourceFileName,url string)string{
 			if err != nil {
 				logger.Error("file remove Error!",err)
 			}
-			return "/thumb/stream/" + fileName
+			return "/res/stream/" + fileName
 		}else{
 			return ""
 		}
