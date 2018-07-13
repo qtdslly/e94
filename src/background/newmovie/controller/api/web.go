@@ -52,5 +52,5 @@ func WebVideoHandler(c *gin.Context) {
 	if !strings.Contains(url,".m3u8") && !strings.Contains(url,".mp4") && !strings.Contains(url,".flv"){
 		url = ""
 	}
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"url":url})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"data":url})
 }
