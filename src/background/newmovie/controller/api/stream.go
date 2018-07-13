@@ -158,7 +158,7 @@ func SearchHandler(c *gin.Context) {
 		Thumb       string                `json:"thumb"`
 		ContentType uint8                 `json:"content_type"`
 		Actors      string                `json:"actors"`
-		Area        string                `json:"area"`
+		Country     string                `json:"country"`
 		Directors   string                `json:"directors"`
 		PageUrl     string                `json:"pageUrl"`
 		PublishDate string                `json:"publish_date"`
@@ -228,7 +228,7 @@ func SearchHandler(c *gin.Context) {
 					youkuVideo.Thumb = thumb
 					youkuVideo.PageUrl = pageUrl
 					youkuVideo.Score = score
-					youkuVideo.Area = area
+					youkuVideo.Country = area
 					youkuVideo.ContentType = constant.MediaTypeEpisode
 					youkuVideo.PublishDate = publishDate
 					youkuVideo.Provider = constant.ContentProviderIqiyi
@@ -298,7 +298,7 @@ func SearchHandler(c *gin.Context) {
 			apiStream.Title = video.Title
 			apiStream.ContentType = constant.MediaTypeEpisode
 			apiStream.Actors = video.Actors
-			apiStream.Area = video.Country
+			apiStream.Country = video.Country
 			apiStream.Directors = video.Directors
 			apiStream.PublishDate = video.PublishDate
 			apiStream.Score = fmt.Sprint(video.Score)
