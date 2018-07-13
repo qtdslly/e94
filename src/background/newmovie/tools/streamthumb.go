@@ -107,7 +107,7 @@ func CheckStreamUrl(sourceFileName,url string)string{
 	select {
 	case res := <-c2:
 		if res == "success"{
-			sourceFileName = strings.Replace(sourceFileName,"/res/stream/","","")
+			sourceFileName = strings.Replace(sourceFileName,"/res/stream/","",-1)
 			err := os.Remove("/root/data/storage/stream/" + sourceFileName)
 			if err != nil {
 				logger.Error("file remove Error!",err)
