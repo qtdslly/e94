@@ -89,6 +89,9 @@ func main(){
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
 
+		cms.POST("/upload", aapi.Fileupload)
+
+
 		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)
 		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
 		cms.POST("/user/stream/delete", aapi.UserStreamDeleteHandler)
@@ -112,7 +115,7 @@ func main(){
 
 	}
 
-	r.Static("/index", "/root/Git/e94/src/background/newmovie/html/")
+	r.Static("/html", "/root/Git/e94/src/background/newmovie/html/")
 	r.Static("/res", config.GetStaticRoot())
 	r.Static("/doc", "/root/Git/e94/doc/newmovie/")
 
