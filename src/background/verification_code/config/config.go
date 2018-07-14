@@ -37,7 +37,7 @@ func init() {
 	c.CmsRoot = "/root/Git/e94/src/background/newmovie/"
 	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
 	c.StaticRoot = "/root/data/storage/"
-	c.FontsDir = "/f/Git/e94/src/background/verification_code/fonts"
+	c.FontsDir = "/root/Git/e94/src/background/verification_code/fonts"
 }
 
 func LoadConfig(path string) error {
