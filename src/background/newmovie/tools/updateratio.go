@@ -41,6 +41,7 @@ func main(){
 	for _,playUrl := range playUrls{
 		width,height,ready,err := GetStreamRation(playUrl.Url)
 		if err == nil{
+			playUrl.OnLine = true
 			playUrl.Width = width
 			playUrl.Height = height
 			playUrl.Ready = ready
@@ -60,6 +61,12 @@ func main(){
 			}else{
 				playUrl.Quality = 5
 			}
+			if err = db.Save(&playUrl).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
+		}else{
+			playUrl.OnLine = false
 			if err = db.Save(&playUrl).Error ; err != nil{
 				logger.Error(err)
 				return
