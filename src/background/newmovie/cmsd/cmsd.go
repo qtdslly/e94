@@ -89,7 +89,7 @@ func main(){
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
 
-		cms.POST("/upload", aapi.Fileupload)
+		cms.POST("/upload", aapi.FileUpload)
 
 
 		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)

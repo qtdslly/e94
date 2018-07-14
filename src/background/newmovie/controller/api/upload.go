@@ -2,17 +2,14 @@ package api
 
 import (
 	"net/http"
-	"background/common/constant"
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"os"
 	"io"
-	"time"
-	"path/filepath"
 	"background/stock/config"
 )
 
-func Fileupload(c *gin.Context){
+func FileUpload(c *gin.Context){
 	//得到上传的文件
 	file, header, err := c.Request.FormFile("file") //image这个是uplaodify参数定义中的   'fileObjName':'image'
 	if err != nil {
