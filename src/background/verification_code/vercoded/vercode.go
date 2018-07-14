@@ -31,7 +31,7 @@ func main() {
 
 	fontFils,err := ListDir(config.GetFontsDir(),".ttf");
 	if(err != nil){
-		fmt.Println(err);
+		logger.Error(err)
 		return ;
 	}
 
@@ -49,27 +49,21 @@ func main() {
 func Index(w http.ResponseWriter, r *http.Request) {
 	t, err := template.ParseFiles(config.GetIndexHtml())
 	if err != nil {
-		log.Fatal(err)
+		logger.Error(err)
 	}
 	t.Execute(w, nil)
 }
 func Get(w http.ResponseWriter, r *http.Request) {
-
 	captchaImage,err := captcha.NewCaptchaImage(dx,dy,captcha.RandLightColor());
-
-
 	captchaImage.DrawNoise(captcha.CaptchaComplexHigh);
-
 	captchaImage.DrawTextNoise(captcha.CaptchaComplexHigh);
-
 	captchaImage.DrawText(captcha.RandText(4));
 	//captchaImage.Drawline(3);
 	captchaImage.DrawBorder(captcha.ColorToRGB(0x17A7A7A));
 	captchaImage.DrawHollowLine();
 	if err != nil {
-		fmt.Println(err)
+		logger.Error(err)
 	}
-
 	captchaImage.SaveImage(w,captcha.ImageFormatJpeg);
 }
 
