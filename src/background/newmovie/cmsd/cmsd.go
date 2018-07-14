@@ -91,7 +91,6 @@ func main(){
 
 		cms.POST("/upload", aapi.FileUpload)
 
-
 		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)
 		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
 		cms.POST("/user/stream/delete", aapi.UserStreamDeleteHandler)

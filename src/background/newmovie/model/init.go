@@ -114,6 +114,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initUpgrade(db)
+	if err != nil {
+		logger.Fatal("Init db upgrade failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -135,6 +141,7 @@ func rebuildModel(db *gorm.DB) {
 	dropUserOpinion(db)
 	dropFile(db)
 	dropUserWant(db)
+	dropUpgrade(db)
 
 	InitModel(db)
 }
