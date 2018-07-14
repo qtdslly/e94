@@ -14,7 +14,7 @@ import (
 	"flag"
 )
 const (
-	dx = 60
+	dx = 80
 	dy = 30
 )
 
