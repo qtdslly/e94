@@ -47,7 +47,7 @@ func main() {
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("tpl/index.html")
+	t, err := template.ParseFiles(config.GetIndexHtml())
 	if err != nil {
 		log.Fatal(err)
 	}

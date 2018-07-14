@@ -20,6 +20,7 @@ type config struct {
 	StaticRoot    string `json:"static_root"`
 	CmsRoot       string `json:"cms_root"`
 	FontsDir      string `json:"fonts_dir"`
+	IndexHtml     string `json:"index_html"`
 
 }
 
@@ -38,6 +39,8 @@ func init() {
 	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
 	c.StaticRoot = "/root/data/storage/"
 	c.FontsDir = "/root/Git/e94/src/background/verification_code/fonts"
+	c.IndexHtml = "/root/Git/e94/src/background/verification_code/tpl/index.html"
+
 }
 
 func LoadConfig(path string) error {
@@ -110,4 +113,8 @@ func GetCmsRoot() string {
 
 func GetFontsDir() string {
 	return c.FontsDir
+}
+
+func GetIndexHtml() string {
+	return c.IndexHtml
 }
