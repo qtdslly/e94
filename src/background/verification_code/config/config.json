@@ -7,5 +7,7 @@
     "logger_level": 0,
     "enable_orm_log": true,
     "enable_http_log": true,
-    "cms_root":"/root/Git/e94/src/background/newmovie/"
+    "cms_root":"/root/Git/e94/src/background/newmovie/",
+    "fonts_dir":"/root/Git/e94/src/background/verification_code/fonts"
+
 }
