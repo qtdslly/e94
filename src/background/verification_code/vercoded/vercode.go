@@ -14,8 +14,8 @@ import (
 	"flag"
 )
 const (
-	dx = 150
-	dy = 50
+	dx = 60
+	dy = 30
 )
 
 func main() {
