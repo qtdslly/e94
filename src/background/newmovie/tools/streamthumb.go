@@ -51,6 +51,7 @@ func StreamThumb(db *gorm.DB){
 	}
 	for _ , stream := range streams{
 		flag := false
+		flag1 := false
 		var playUrls []model.PlayUrl
 		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 			logger.Error(err)
@@ -66,7 +67,7 @@ func StreamThumb(db *gorm.DB){
 					logger.Error(err)
 					return
 				}
-				break
+				flag1 = true
 			}else{
 				playUrl.OnLine = false
 				if err = db.Save(&playUrl).Error ; err != nil{
@@ -78,7 +79,7 @@ func StreamThumb(db *gorm.DB){
 		if thumb != ""{
 			stream.Thumb = thumb
 		}
-		stream.OnLine = flag
+		stream.OnLine = flag1
 		if err = db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			return
