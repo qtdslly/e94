@@ -42,7 +42,7 @@ func main() {
 	fmt.Println("服务已启动...");
 	err = http.ListenAndServe(":8000", nil)
 	if err != nil {
-		log.Fatal(err)
+		logger.Error(err)
 	}
 }
 
