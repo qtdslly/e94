@@ -115,7 +115,7 @@ func CheckStreamUrl(id uint32,url string)string{
 		}else{
 			return ""
 		}
-	case <-time.After(time.Second * 10):
+	case <-time.After(time.Second * 15):
 		return ""
 	}
 
