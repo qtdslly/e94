@@ -44,17 +44,17 @@ func main(){
 		group.Count = count
 		group.Sort = group.Count + 100
 		if group.Name == "央视"{
-			group.Sort = 0
+			group.Sort = 1000
 		}else if group.Name == "卫视"{
-			group.Sort = 1
+			group.Sort = 999
 		}else if group.Name == "NewTV"{
-			group.Sort = 2
+			group.Sort = 998
 		}else if group.Name == "台湾"{
-			group.Sort = 3
+			group.Sort = 997
 		}else if group.Name == "香港"{
-			group.Sort = 4
+			group.Sort = 996
 		}else if group.Name == "澳门"{
-			group.Sort = 5
+			group.Sort = 995
 		}
 		if group.Count == 0{
 			group.OnLine = false
