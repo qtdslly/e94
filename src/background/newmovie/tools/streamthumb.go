@@ -37,7 +37,6 @@ func main(){
 
 	for{
 		StreamThumb(db)
-		time.Sleep(time.Minute * 5)
 	}
 }
 
