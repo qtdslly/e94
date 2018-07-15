@@ -30,7 +30,7 @@ func main(){
 	model.InitModel(db)
 
 	var resourceGroups []model.ResourceGroup
-	if err := db.Where("content_type = 4").Find(&resourceGroups).Error ; err != nil{
+	if err := db.Where("type = 4").Find(&resourceGroups).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
