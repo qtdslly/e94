@@ -59,7 +59,7 @@ func main(){
 		if group.Count == 0{
 			group.OnLine = false
 		}
-		if err := db.Save(group).Error ; err != nil{
+		if err := db.Save(&group).Error ; err != nil{
 			logger.Error(err)
 			return
 		}
