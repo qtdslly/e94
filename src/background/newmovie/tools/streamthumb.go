@@ -4,7 +4,7 @@ import (
 	"background/newmovie/config"
 	"background/common/logger"
 	"background/newmovie/model"
-	"background/common/util"
+	//"background/common/util"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"os/exec"
 	"time"
-	"os"
-	"strings"
+	//"os"
+	//"strings"
 )
 
 func main(){
@@ -50,7 +50,6 @@ func StreamThumb(db *gorm.DB){
 		return
 	}
 	for _ , stream := range streams{
-		flag := false
 		flag1 := false
 		var playUrls []model.PlayUrl
 		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
@@ -59,9 +58,8 @@ func StreamThumb(db *gorm.DB){
 		}
 		thumb := ""
 		for _,playUrl := range playUrls{
-			thumb = CheckStreamUrl(stream.Thumb,playUrl.Url)
+			thumb = CheckStreamUrl(stream.Id,playUrl.Url)
 			if thumb != ""{
-				flag = true
 				playUrl.OnLine = true
 				if err = db.Save(&playUrl).Error ; err != nil{
 					logger.Error(err)
@@ -86,15 +84,15 @@ func StreamThumb(db *gorm.DB){
 		}
 	}
 }
-func CheckStreamUrl(sourceFileName,url string)string{
+func CheckStreamUrl(id uint32,url string)string{
 	c2 := make(chan string, 1)
 	ffmpegAddr := "/usr/bin/ffmpeg"
-	code := util.RandString(6)
-	now := time.Now()
-	fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
+	//code := util.RandString(6)
+	//now := time.Now()
+	//fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
 
 	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /root/data/storage/stream/%s", ffmpegAddr, url,fileName)
+		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /root/data/storage/stream/%s", ffmpegAddr, url,fmt.Sprint(id) + ".jpg")
 		fmt.Println(cmdStr)
 		cmd := exec.Command("bash", "-c", cmdStr)
 
@@ -108,12 +106,12 @@ func CheckStreamUrl(sourceFileName,url string)string{
 	select {
 	case res := <-c2:
 		if res == "success"{
-			sourceFileName = strings.Replace(sourceFileName,"/res/stream/","",-1)
-			err := os.Remove("/root/data/storage/stream/" + sourceFileName)
-			if err != nil {
-				logger.Error("file remove Error!",err)
-			}
-			return "/res/stream/" + fileName
+			//sourceFileName = strings.Replace(sourceFileName,"/res/stream/","",-1)
+			//err := os.Remove("/root/data/storage/stream/" + sourceFileName)
+			//if err != nil {
+			//	logger.Error("file remove Error!",err)
+			//}
+			return "/res/stream/" + fmt.Sprint(id) + ".jpg"
 		}else{
 			return ""
 		}
