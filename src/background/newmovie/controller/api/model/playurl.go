@@ -31,7 +31,7 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 	//
 	//dst.Url = strings.ToUpper(hex.EncodeToString(mac.Sum(nil)))
 
-	data,err := util.AesEncrypt(dst.Url,[]byte(secret))
+	data,err := util.AesEncrypt([]byte(dst.Url),[]byte(secret))
 	if err != nil{
 		return nil
 	}
