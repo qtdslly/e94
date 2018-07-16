@@ -39,13 +39,13 @@ func AppVerifyHandler(appType uint32) gin.HandlerFunc {
 		}
 
 		appKey, ok := params["app_key"]
-		if !ok {
+		if !ok || appKey == ""{
 			err = errors.New("app_key is not exists")
 			logger.Error(err)
 			return
 		}
 		appVersion, ok := params["app_version"]
-		if !ok {
+		if !ok || appVersion == ""{
 			err = errors.New("app_version is not exists")
 			logger.Error(err)
 			return
