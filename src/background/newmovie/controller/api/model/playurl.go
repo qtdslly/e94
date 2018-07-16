@@ -3,6 +3,7 @@ package apimodel
 import (
 	"background/newmovie/model"
 	"background/common/util"
+	"background/common/logger"
 	"encoding/hex"
 )
 
@@ -32,14 +33,16 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 	//
 	//dst.Url = strings.ToUpper(hex.EncodeToString(mac.Sum(nil)))
 
+
 	data,err := util.AesEncrypt([]byte(dst.Url),[]byte(secret))
 	if err != nil{
+		logger.Error(err)
 		return nil
 	}
 
 	var result []byte
 	hex.Encode(result,data)
-		
+	
 	dst.Url = string(result)
 	return &dst
 }
