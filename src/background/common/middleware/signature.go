@@ -211,6 +211,14 @@ func ParseParam(c *gin.Context) (map[string]interface{}, error) {
 		buff.Write(resp)
 		c.Request.Body = &buff
 		if err = json.Unmarshal(resp, &params); err == nil {
+			length := len(params)
+			for k, v := range c.Request.URL.Query() {
+				if len(v) == 1 {
+					params[length + k] = v[0]
+				} else {
+					params[length + k] = v
+				}
+			}
 			return params, err
 		} else {
 			logger.Error(err)
