@@ -2,10 +2,7 @@ package apimodel
 
 import (
 	"background/newmovie/model"
-	"crypto/hmac"
-	"crypto/sha1"
-	"strings"
-	"encoding/hex"
+	"background/common/util"
 )
 
 type PlayUrl struct {
@@ -29,10 +26,16 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 	}
 
 	secret := "5a61efdc52411a670b9f7c9db0a5275b"
-	mac := hmac.New(sha1.New, []byte(secret))
-	mac.Write([]byte(dst.Url))
+	//mac := hmac.New(sha1.New, []byte(secret))
+	//mac.Write([]byte(dst.Url))
+	//
+	//dst.Url = strings.ToUpper(hex.EncodeToString(mac.Sum(nil)))
 
-	dst.Url = strings.ToUpper(hex.EncodeToString(mac.Sum(nil)))
+	data,err := util.AesEncrypt(PlayUrl.Url,[]byte(secret))
+	if err != nil{
+		return nil
+	}
+	dst.Url = string(data)
 
 	return &dst
 }
