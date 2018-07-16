@@ -1,7 +1,7 @@
 package service
 
 import (
-	"common/cache"
+	"background/common/cache"
 	"fmt"
 )
 
