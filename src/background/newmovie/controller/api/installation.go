@@ -2,6 +2,8 @@ package api
 
 import (
 	"background/newmovie/model"
+	"background/newmovie/controller/api/cache"
+	apimodel "background/newmovie/controller/api/model"
 	"background/common/constant"
 	"background/common/logger"
 	"math/rand"
@@ -17,7 +19,7 @@ import (
 /*
 	POST /cms/v1.0/installation
 	配置App，获取App初始化参数
-	@Author: HYK
+	@Author: LLY
 	http://localhost:2000/#!./cms/api-config.md
 */
 func InstallationHandler(c *gin.Context) {
@@ -32,10 +34,10 @@ func InstallationHandler(c *gin.Context) {
 		Brand          string  `json:"brand"` //设备品牌
 		Carrier        uint8   `json:"carrier"` //电话类型
 
-	//CarrierTypeUnknown      = 0 // 未知类型
-	//CarrierTypeChinaMobile  = 1 // 中国移动
-	//CarrierTypeChinaUnicom  = 2 // 中国联通
-	//CarrierTypeChinaTelecom = 3 // 中国电信
+		//CarrierTypeUnknown      = 0 // 未知类型
+		//CarrierTypeChinaMobile  = 1 // 中国移动
+		//CarrierTypeChinaUnicom  = 2 // 中国联通
+		//CarrierTypeChinaTelecom = 3 // 中国电信
 
 	}
 	var p param
@@ -55,7 +57,7 @@ func InstallationHandler(c *gin.Context) {
 		db.Where("id=?", p.InstallationId).First(&dbInstall)
 	}
 	if dbInstall.Id == 0 {
-		if err = db.Where(" device_id = ? AND mac_address = ? AND imei = ?", p.DeviceId, p.MacAddress, p.Imei).First(&dbInstall).Error; err != nil && err != gorm.ErrRecordNotFound {
+		if err = db.Where("device_model = ? and device_id = ? AND mac_address = ?",p.Model, p.DeviceId, p.MacAddress).First(&dbInstall).Error; err != nil && err != gorm.ErrRecordNotFound {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
@@ -123,7 +125,7 @@ func InstallationHandler(c *gin.Context) {
 		}
 
 		var user model.User
-		user.Avatar = "http://www.ezhantao.com/thumb/avatar/avatar.png"
+		user.Avatar = "http://www.ezhantao.com:16882/res/avatar/avatar.png"
 		user.CheckinDays = 0
 		user.Laravel = model.UserOrdinary
 		user.Bean = 100
@@ -144,6 +146,47 @@ func InstallationHandler(c *gin.Context) {
 		//}
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall})
+	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
+
+	upgrade, err := LoadUpgrade(version, db)
+	if err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall,"upgrade":upgrade})
 }
 
+
+
+func LoadUpgrade(version *model.Version, db *gorm.DB) (*apimodel.AppConfigUpgrade, error) {
+	upgrades, err := cache.GetUpgrade(db)
+	if err != nil {
+		logger.Error(err)
+		return nil, err
+	}
+
+	var up *model.Upgrade
+	for _, v := range upgrades {
+		if v.UpgradeVersionId >= version.Id {
+			up = v
+			break
+		}
+	}
+	if up == nil {
+		return nil, nil
+	}
+
+	apiUpgrade := &apimodel.AppConfigUpgrade{}
+	apiUpgrade.TargetVersion = up.TargetVersion
+	apiUpgrade.UpgradeVersion = up.UpgradeVersion
+	apiUpgrade.ShowUpgrade = up.ShowUpgrade
+	apiUpgrade.ForceUpgrade = up.ForceUpgrade
+	apiUpgrade.CheckUpgrade = up.CheckUpgrade
+	apiUpgrade.UpgradeTip = up.UpgradeTip
+	apiUpgrade.UpgradeUrl = up.UpgradeUrl
+
+	return apiUpgrade, nil
+}

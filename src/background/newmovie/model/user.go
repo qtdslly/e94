@@ -8,6 +8,7 @@ import (
 
 type User struct {
 	Id                  uint32      `gorm:"primary_key" json:"id"`
+	AppId               uint32      `json:"app_id"`
 	Nickname            string      `gorm:"size:30;index" json:"nickname"`
 	Avatar              string      `json:"avatar"`
 	Gender              uint8       `json:"gender"`

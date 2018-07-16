@@ -53,7 +53,7 @@ func CheckStreamUrl(url string,jpgName string)bool{
 		}else{
 			return false
 		}
-	case <-time.After(time.Second * 10):
+	case <-time.After(time.Second * 30):
 		return false
 	}
 

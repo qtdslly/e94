@@ -14,10 +14,14 @@ import (
 	"background/common/constant"
 	aapi "background/newmovie/controller/api"
 	ccms "background/newmovie/controller/cms"
+	"background/common/cache"
+	"background/newmovie/service"
 
 	"background/common/middleware"
+	cmid "background/newmovie/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
+	"background/shortvideo/setting"
 )
 
 func main(){
@@ -59,18 +63,30 @@ func main(){
 
 	gin.SetMode(gin.DebugMode)
 
+	cacheRedisAddr, cacheRedisPwd, err := setting.GetCacheRedis(db)
+	if err != nil {
+		logger.Fatal(err)
+		return
+	}
+
+	if err := cache.RedisTest(cacheRedisAddr, cacheRedisPwd); err != nil {
+		logger.Fatal(err)
+		return
+	}
+
 	dbMiddleware := middleware.GetDbPrepareHandler(config.GetDBName(), config.GetDBSource(), config.IsOrmLogEnabled())
+	appVerifyMiddleware := cmid.AppVerifyHandler(model.AppTypeApp)
+	//signatureMiddleware := middleware.SignatureVerifyHandler(false) // config.IsProductionEnv())
+
+	service.InitCache(cacheRedisAddr, cacheRedisPwd)
+
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
-	r.Use()
-	{
-		r.GET("/login", ccms.AdminLoginHandler)
-	}
 	cms := r.Group("cms")
-	cms.Use(dbMiddleware)
+	cms.Use(dbMiddleware,appVerifyMiddleware)
 	{
 		cms.POST("/install",aapi.InstallationHandler)
 
@@ -103,14 +119,16 @@ func main(){
 		cms.GET("/topsearch", aapi.TopSearchHandler)
 
 		cms.GET("/notification", aapi.NotifcationHandler)
+	}
 
+	cms.Use(dbMiddleware)
+	{
+		r.GET("/login", ccms.AdminLoginHandler)
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
 
 		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
-
 	}
-
 	r.Static("/index", "/root/Git/e94/src/background/newmovie/html/")
 	r.Static("/res", config.GetStaticRoot())
 	r.Static("/doc", "/root/Git/e94/doc/newmovie/")

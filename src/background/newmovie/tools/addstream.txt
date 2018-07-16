@@ -259,6 +259,26 @@ http://www.radio366.com/tv/
 甘洛电视台|http://livecdn.lsiptv.cn/ganluo/ganluoLIVE.flv/playlist.m3u8?wsSecret=5d679625bec3253cfb22a9900cfaa834&wsTime=5b3decd9
 
 
+./addstream -t '环宇新闻频道' -u 'http://enlen.vip/live/faint.php?id=543f39dcbe8f33ec180fc541' -c '台湾'
+./addstream -t 'TVBS新闻频台' -u 'http://enlen.vip/live/faint.php?id=569f54e6981e0c7f0a061223' -c '台湾'
+./addstream -t '民视新闻' -u 'http://enlen.vip/live/faint.php?id=56a747f6981e0c7f0a06129a' -c '台湾'
+./addstream -t 'TVBS' -u 'http://enlen.vip/live/faint.php?id=569f555c981e0c7f0a061224' -c '台湾'
+./addstream -t '环宇财经' -u 'http://enlen.vip/live/faint.php?id=543f3e273d32fc7b0e332287' -c '台湾'
+./addstream -t '东森亚洲新闻' -u 'http://enlen.vip/live/faint.php?id=543f3e663d32fc7b0e332289' -c '台湾'
+
+
+./addstream -t 'UnKnow1' -u 'http://iptv2017.ddns.net:8100/live/hamdi/1234/790.ts' -c '其他外国频道'
+./addstream -t 'UnKnow2' -u 'http://202.80.222.4/mnt/tmpfs/hls/001/001/ch15051810235326945512/index.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow3' -u 'http://210.210.155.35/session/1f4b9814-7ed5-11e8-aa50-c81f66f89318/uq2663/h/h03/02.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow4' -u 'http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow5' -u 'http://202.80.222.4/mnt/tmpfs/hls/001/001/ch15051810235326945512/index.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow6' -u 'https://cdn-livetv2.metube.id/hls/rcti.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow7' -u 'https://cdn-livetv2.metube.id/hls/globaltv.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow8' -u 'https://cdn-livetv2.metube.id/hls/globaltv.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow9' -u 'http://new.indostreamingtv.com/live/tv1/index.m3u8' -c '其他外国频道'
+
+
+- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-239987-1-1.html
 
 
 HD,http://file.kuangshanwajueji.anime-japan.net/playlist.m3u8
@@ -358,3 +378,18 @@ CCTV世界地理|http://223.110.243.142/PLTV/2510088/224/3221227341/1.m3u8
 CCTV1|http://223.110.243.142/PLTV/2510088/224/3221227371/1.m3u8
 CCTV1|http://223.110.243.142/PLTV/2510088/224/3221227374/1.m3u8
 CCTV风云音乐|http://223.110.243.142/PLTV/2510088/224/3221227391/1.m3u8
+
+
+./addstream -t '越南VTV1' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv1.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV2' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv2.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV3' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv3.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV4' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv4.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV5' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv5.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV6' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv6.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV7' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv7.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV8' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv8.smil/chunklist_b2000000.m3u8' -c '越南'
+./addstream -t '越南VTV9' -u 'http://cdn-livestream-live.vtvgiaitri.vn/vtv9.smil/chunklist_b2000000.m3u8' -c '越南'
+
+
+
+

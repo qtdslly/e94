@@ -55,12 +55,10 @@ func SignatureVerifyHandler(c *gin.Context) {
 	}
 
 	appKey, _ := params["app_key"]
-	osType, _ := params["os_type"]
 	appVersion, _ := params["app_version"]
 	installationId, _ := params["installation_id"]
 
 	c.Set(constant.ContextAppKey, appKey)
-	c.Set(constant.ContextOsType, uint32(getInt(osType)))
 	c.Set(constant.ContextAppVersion, appVersion)
 	if c.Request.Method == "POST" {
 		c.Set(constant.ContextInstallationId, uint64(getInt64(installationId, "POST")))
@@ -193,9 +191,10 @@ func MakeSignature(params map[string]interface{}, timestamp int64) string {
 	source, _ = url.QueryUnescape(source)
 
 	// 计算出密钥并加密
-	t := uint64(timestamp)
-	n := t % 64
-	secret := fmt.Sprintf("%d", ((t<<n)&(0x7fffffffffffffff))|(t>>(64-n)))
+	//t := uint64(timestamp)
+	//n := t % 64
+	//secret := fmt.Sprintf("%d", ((t<<n)&(0x7fffffffffffffff))|(t>>(64-n)))
+	secret := "5a61efdc52411a670b9f7c9db0a5275b"
 	mac := hmac.New(sha1.New, []byte(secret))
 	mac.Write([]byte(source))
 	// logger.Debug("signature calculated: " + source + " | " + secret)
