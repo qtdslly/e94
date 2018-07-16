@@ -6,6 +6,7 @@ import (
 	apimodel "background/newmovie/controller/api/model"
 	"background/common/constant"
 	"background/common/logger"
+	apimodel "background/newmovie/controller/api/model"
 	"math/rand"
 	"net/http"
 	"strconv"
@@ -33,11 +34,20 @@ func InstallationHandler(c *gin.Context) {
 		Model          string  `json:"model"` //设备型号
 		Brand          string  `json:"brand"` //设备品牌
 		Carrier        uint8   `json:"carrier"` //电话类型
+		AppVersion     string  `json:"app_version"`
 
+<<<<<<< HEAD
 		//CarrierTypeUnknown      = 0 // 未知类型
 		//CarrierTypeChinaMobile  = 1 // 中国移动
 		//CarrierTypeChinaUnicom  = 2 // 中国联通
 		//CarrierTypeChinaTelecom = 3 // 中国电信
+=======
+
+							//CarrierTypeUnknown      = 0 // 未知类型
+	//CarrierTypeChinaMobile  = 1 // 中国移动
+	//CarrierTypeChinaUnicom  = 2 // 中国联通
+	//CarrierTypeChinaTelecom = 3 // 中国电信
+>>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
 
 	}
 	var p param
@@ -146,6 +156,7 @@ func InstallationHandler(c *gin.Context) {
 		//}
 	}
 
+<<<<<<< HEAD
 	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
 
 	upgrade, err := LoadUpgrade(version, db)
@@ -180,6 +191,27 @@ func LoadUpgrade(version *model.Version, db *gorm.DB) (*apimodel.AppConfigUpgrad
 	}
 
 	apiUpgrade := &apimodel.AppConfigUpgrade{}
+=======
+	//dbInstall.Upgrade, err = LoadUpgrade(p.AppVersion, db)
+	//if err != nil {
+	//	logger.Error(err)
+	//	c.AbortWithStatus(http.StatusInternalServerError)
+	//	return
+	//}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall})
+}
+
+func LoadUpgrade(version string,db *gorm.DB) (*apimodel.Upgrade, error) {
+	apiUpgrade := &apimodel.Upgrade{}
+
+	var up model.Upgrade
+	if err := db.Order("target_version desc").Where("target_version > ? and enable = ?",version,true).First(&up).Error ; err != nil{
+		logger.Error(err)
+		return apiUpgrade,err
+	}
+
+>>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
 	apiUpgrade.TargetVersion = up.TargetVersion
 	apiUpgrade.UpgradeVersion = up.UpgradeVersion
 	apiUpgrade.ShowUpgrade = up.ShowUpgrade

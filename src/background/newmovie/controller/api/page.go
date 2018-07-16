@@ -16,14 +16,14 @@ func PageHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var resourceGroups []*model.ResourceGroup
-	if err = db.Order("sort asc").Where("on_line = ? and type = ?",constant.MediaStatusOnLine,constant.MediaTypeStream).Find(&resourceGroups).Error ; err != nil{
+	if err = db.Order("sort desc").Where("on_line = ? and type = ?",constant.MediaStatusOnLine,constant.MediaTypeStream).Find(&resourceGroups).Error ; err != nil{
 		logger.Error("query resource_group err!!!,",err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
 	var streams []*model.Stream
-	if err = db.Order("stream.sort asc").Limit(15).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
+	if err = db.Order("stream.sort asc").Limit(12).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?",resourceGroups[0].Id).Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -67,7 +67,7 @@ func PageHandler(c *gin.Context) {
 	}
 
 	var hasMore bool = true
-	if len(apiPage.FirstPage) < 15{
+	if len(apiPage.FirstPage) < 12{
 		hasMore = false
 	}
 

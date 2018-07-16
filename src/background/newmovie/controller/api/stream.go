@@ -32,7 +32,7 @@ func StreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []*model.Stream
-	if err = db.Order("stream.sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?", p.ResourceGroupId).Find(&streams).Error; err != nil {
+	if err = db.Order("stream.sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ? and stream.on_line = 1", p.ResourceGroupId).Find(&streams).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -56,7 +56,7 @@ func StreamListHandler(c *gin.Context) {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Title = stream.Title
-		apiStream.Thumb = "http:/www.ezhantao.com:16882" + stream.Thumb
+		apiStream.Thumb = "http://www.ezhantao.com:16882" + stream.Thumb
 		apiStreams = append(apiStreams, &apiStream)
 	}
 
@@ -158,7 +158,7 @@ func SearchHandler(c *gin.Context) {
 		Thumb       string                `json:"thumb"`
 		ContentType uint8                 `json:"content_type"`
 		Actors      string                `json:"actors"`
-		Area        string                `json:"area"`
+		Country     string                `json:"country"`
 		Directors   string                `json:"directors"`
 		PageUrl     string                `json:"pageUrl"`
 		PublishDate string                `json:"publish_date"`
@@ -228,7 +228,7 @@ func SearchHandler(c *gin.Context) {
 					youkuVideo.Thumb = thumb
 					youkuVideo.PageUrl = pageUrl
 					youkuVideo.Score = score
-					youkuVideo.Area = area
+					youkuVideo.Country = area
 					youkuVideo.ContentType = constant.MediaTypeEpisode
 					youkuVideo.PublishDate = publishDate
 					youkuVideo.Provider = constant.ContentProviderIqiyi
@@ -298,7 +298,7 @@ func SearchHandler(c *gin.Context) {
 			apiStream.Title = video.Title
 			apiStream.ContentType = constant.MediaTypeEpisode
 			apiStream.Actors = video.Actors
-			apiStream.Area = video.Country
+			apiStream.Country = video.Country
 			apiStream.Directors = video.Directors
 			apiStream.PublishDate = video.PublishDate
 			apiStream.Score = fmt.Sprint(video.Score)

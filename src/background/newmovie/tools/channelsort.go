@@ -279,7 +279,31 @@ func main(){
 			}
 		}else if strings.Contains(stream.Category,"新疆"){
 			if strings.Contains(stream.Title,"新疆"){
-				stream.Sort = 5600
+				if stream.Title == "新疆1"{
+					stream.Sort = 5600
+				}else if stream.Title == "新疆2"{
+					stream.Sort = 5601
+				}else if stream.Title == "新疆3"{
+					stream.Sort = 5602
+				}else if stream.Title == "新疆4"{
+					stream.Sort = 5603
+				}else if  stream.Title == "新疆5"{
+					stream.Sort = 5604
+				}else if stream.Title == "新疆6"{
+					stream.Sort = 5605
+				}else if stream.Title == "新疆7"{
+					stream.Sort = 5606
+				}else if stream.Title == "新疆8"{
+					stream.Sort = 5607
+				}else if stream.Title == "新疆9"{
+					stream.Sort = 5608
+				}else if stream.Title == "新疆10"{
+					stream.Sort = 5609
+				}else if stream.Title == "新疆11"{
+					stream.Sort = 5610
+				}else if stream.Title == "新疆12"{
+					stream.Sort = 5611
+				}
 			}else if strings.Contains(stream.Title,"乌鲁木齐"){
 				stream.Sort = 5620
 			}else{

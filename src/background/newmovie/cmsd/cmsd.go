@@ -90,9 +90,10 @@ func main(){
 	{
 		cms.POST("/install",aapi.InstallationHandler)
 
-		//cms.GET("/video/list", aapi.VideoListHandler)
-		//cms.GET("/video", aapi.VideoDetailHandler)
+		cms.GET("/video/list", aapi.VideoListHandler)
+		cms.GET("/video", aapi.VideoDetailHandler)
 		//cms.GET("/video/search", aapi.VideoSearchHandler)
+
 		//cms.GET("/video/topsearch", aapi.VideoTopSearchHandler)
 
 		cms.GET("/recommend", aapi.RecommendHandler)
@@ -103,6 +104,8 @@ func main(){
 
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
+
+		cms.POST("/upload", aapi.FileUpload)
 
 		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)
 		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
@@ -129,7 +132,12 @@ func main(){
 		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
 	}
+<<<<<<< HEAD
 	r.Static("/index", "/root/Git/e94/src/background/newmovie/html/")
+=======
+
+	r.Static("/html", "/root/Git/e94/src/background/newmovie/html/")
+>>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
 	r.Static("/res", config.GetStaticRoot())
 	r.Static("/doc", "/root/Git/e94/doc/newmovie/")
 

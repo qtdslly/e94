@@ -4,7 +4,7 @@ import (
 	"background/newmovie/config"
 	"background/common/logger"
 	"background/newmovie/model"
-	"background/common/util"
+	//"background/common/util"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
@@ -12,7 +12,8 @@ import (
 	"fmt"
 	"os/exec"
 	"time"
-	"os"
+	//"os"
+	//"strings"
 )
 
 func main(){
@@ -36,7 +37,6 @@ func main(){
 
 	for{
 		StreamThumb(db)
-		time.Sleep(time.Minute * 5)
 	}
 }
 
@@ -44,12 +44,12 @@ func main(){
 func StreamThumb(db *gorm.DB){
 	var err error
 	var streams []model.Stream
-	if err = db.Order("id desc").Find(&streams).Error ; err != nil{
+	if err = db.Order("id asc").Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
 	for _ , stream := range streams{
-		flag := false
+		flag1 := false
 		var playUrls []model.PlayUrl
 		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
 			logger.Error(err)
@@ -57,15 +57,14 @@ func StreamThumb(db *gorm.DB){
 		}
 		thumb := ""
 		for _,playUrl := range playUrls{
-			thumb = CheckStreamUrl(stream.Thumb,playUrl.Url)
+			thumb = CheckStreamUrl(stream.Id,playUrl.Url)
 			if thumb != ""{
-				flag = true
 				playUrl.OnLine = true
 				if err = db.Save(&playUrl).Error ; err != nil{
 					logger.Error(err)
 					return
 				}
-				break
+				flag1 = true
 			}else{
 				playUrl.OnLine = false
 				if err = db.Save(&playUrl).Error ; err != nil{
@@ -77,22 +76,22 @@ func StreamThumb(db *gorm.DB){
 		if thumb != ""{
 			stream.Thumb = thumb
 		}
-		stream.OnLine = flag
+		stream.OnLine = flag1
 		if err = db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
 			return
 		}
 	}
 }
-func CheckStreamUrl(sourceFileName,url string)string{
+func CheckStreamUrl(id uint32,url string)string{
 	c2 := make(chan string, 1)
 	ffmpegAddr := "/usr/bin/ffmpeg"
-	code := util.RandString(6)
-	now := time.Now()
-	fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
+	//code := util.RandString(6)
+	//now := time.Now()
+	//fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
 
 	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /data/www/dreamvideo/public/thumb/stream/%s", ffmpegAddr, url,fileName)
+		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /root/data/storage/stream/%s", ffmpegAddr, url,fmt.Sprint(id) + ".jpg")
 		fmt.Println(cmdStr)
 		cmd := exec.Command("bash", "-c", cmdStr)
 
@@ -106,15 +105,16 @@ func CheckStreamUrl(sourceFileName,url string)string{
 	select {
 	case res := <-c2:
 		if res == "success"{
-			err := os.Remove("/data/www/dreamvideo/public" + sourceFileName)
-			if err != nil {
-				logger.Error("file remove Error!",err)
-			}
-			return "/thumb/stream/" + fileName
+			//sourceFileName = strings.Replace(sourceFileName,"/res/stream/","",-1)
+			//err := os.Remove("/root/data/storage/stream/" + sourceFileName)
+			//if err != nil {
+			//	logger.Error("file remove Error!",err)
+			//}
+			return "/res/stream/" + fmt.Sprint(id) + ".jpg"
 		}else{
 			return ""
 		}
-	case <-time.After(time.Second * 10):
+	case <-time.After(time.Second * 15):
 		return ""
 	}
 
