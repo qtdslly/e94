@@ -25,8 +25,8 @@ import (
 func InstallationHandler(c *gin.Context) {
 	type param struct {
 		InstallationId uint64  `json:"installation_id"`
-		DeviceId       string  `json:"device_id"`
-		MacAddress     string  `json:"mac_address"`
+		DeviceId       string  `json:"device_id" binding:"required"`
+		MacAddress     string  `json:"mac_address" binding:"required"`
 		Imei           string  `json:"imei"`
 		OsVersion      string  `json:"os_version"`
 		Product        string  `json:"product"` //产品名称
