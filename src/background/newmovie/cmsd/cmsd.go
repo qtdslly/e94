@@ -132,12 +132,8 @@ func main(){
 		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
 	}
-<<<<<<< HEAD
-	r.Static("/index", "/root/Git/e94/src/background/newmovie/html/")
-=======
 
 	r.Static("/html", "/root/Git/e94/src/background/newmovie/html/")
->>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
 	r.Static("/res", config.GetStaticRoot())
 	r.Static("/doc", "/root/Git/e94/doc/newmovie/")
 

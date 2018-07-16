@@ -9,16 +9,11 @@ import (
 type Upgrade struct {
 	Id               uint32    `gorm:"primary_key" json:"id"`
 	Title            string    `gorm:"size:128" json:"title" valid:"Str" name:"title" len:"1,128"`                 // 升级配置名称
-<<<<<<< HEAD
 	AppId            uint32    `gorm:"index" json:"app_id" binding:"required"`                                     // 基础app id
 	UpgradeVersion   string    `gorm:"size:32" json:"min_version" valid:"Str" name:"min_version" len:"0,32"`       // 升级版本号
 	UpgradeVersionId uint32    `json:"upgrade_version_id"`                                                         // 升级版本，此版本及以下版本升级，为空时升级所有
 	TargetVersion    string    `gorm:"size:32" json:"target_version" valid:"Str" name:"target_version" len:"0,32"` // 目标版本号
 	TargetVersionId  uint32    `json:"target_version_id"`                                                          // 目标版本
-=======
-	UpgradeVersion   string    `gorm:"size:32" json:"min_version" valid:"Str" name:"min_version" len:"0,32"`       // 升级版本号
-	TargetVersion    string    `gorm:"size:32" json:"target_version" valid:"Str" name:"target_version" len:"0,32"` // 目标版本号
->>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
 	Enable           bool      `json:"enable"`                                                                     // 是否启用
 	ShowUpgrade      bool      `json:"show_upgrade"`                                                               // 提示更新
 	ForceUpgrade     bool      `json:"force_upgrade"`                                                              // 强制更新
@@ -45,8 +40,4 @@ func initUpgrade(db *gorm.DB) error {
 
 func dropUpgrade(db *gorm.DB) {
 	db.DropTableIfExists(&Upgrade{})
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4c7ea1426bca1ef3e9e2bde22b4eb03806127bdb
