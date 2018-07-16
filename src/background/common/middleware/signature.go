@@ -205,19 +205,15 @@ func MakeSignature(params map[string]interface{}, timestamp int64) string {
 func ParseParam(c *gin.Context) (map[string]interface{}, error) {
 	var err error
 	params := map[string]interface{}{}
+	params["app_key"] = c.GetHeader("app_key")
+	params["app_version"] = c.GetHeader("app_version")
+	params["installation_id"] = c.GetHeader("installation_id")
 	if ctype := c.Request.Header.Get("Content-Type"); len(ctype) > 0 && strings.Contains(ctype, "application/json") {
 		resp, _ := ioutil.ReadAll(c.Request.Body)
 		buff := util.BuffReadWriter{}
 		buff.Write(resp)
 		c.Request.Body = &buff
 		if err = json.Unmarshal(resp, &params); err == nil {
-			for k, v := range c.Request.URL.Query() {
-				if len(v) == 1 {
-					params[k] = v[0]
-				} else {
-					params[k] = v
-				}
-			}
 			return params, err
 		} else {
 			logger.Error(err)
