@@ -14,8 +14,8 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 	var err error
-	//f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/2.txt")
-	f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/2.txt")
+	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/stream1.txt")
+	//f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/stream.txt")
 	//f, err := os.Open("f:/Git/e94/src/background/newmovie/tools/2.txt")
 
 	if err != nil {
@@ -43,7 +43,7 @@ func main(){
 		}else{
 			url = fields[0]
 		}
-		if util.CheckStreamUrl(url,"/root/pic/" + fmt.Sprint(i) + ".jpg"){
+		if util.CheckStreamUrl(url,"/home/lyric/lly/pic/" + fmt.Sprint(i) + ".jpg"){
 			fmt.Println(fmt.Sprint(i) + "|SUCCESS|" + title + "|" + url)
 		}
 		i++
