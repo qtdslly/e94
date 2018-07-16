@@ -39,10 +39,7 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 		logger.Error(err)
 		return nil
 	}
-
-	var result []byte
-	hex.Encode(result,data)
 	
-	dst.Url = string(result)
+	dst.Url = hex.EncodeToString(data)
 	return &dst
 }
