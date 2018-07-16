@@ -3,6 +3,7 @@ package apimodel
 import (
 	"background/newmovie/model"
 	"background/common/util"
+	"encoding/hex"
 )
 
 type PlayUrl struct {
@@ -35,7 +36,11 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 	if err != nil{
 		return nil
 	}
-	dst.Url = string(data)
 
+	var result []byte
+	if hex.Encode(result,data) == 0{
+		return nil
+	}
+	dst.Url = string(result)
 	return &dst
 }
