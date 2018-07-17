@@ -30,6 +30,15 @@ func TrimChinese(title string)(string){
 }
 
 
+func CheckStream(url string,jpgName string)bool{
+	for i := 0 ; i < 3 ; i++{
+		if CheckStreamUrl(url,jpgName){
+			return true
+		}
+	}
+	return false
+}
+
 
 func CheckStreamUrl(url string,jpgName string)bool{
 	c2 := make(chan string, 1)

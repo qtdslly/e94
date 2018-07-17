@@ -67,7 +67,7 @@ func main(){
 		if err = db.Where("url = ?",url).First(&playUrl).Error ; err == nil{
 			continue
 		}
-		if util.CheckStreamUrl(url,"/root/data/tmp/" + fmt.Sprint(i) + ".jpg"){
+		if util.CheckStream(url,"/root/data/tmp/" + fmt.Sprint(i) + ".jpg"){
 			fmt.Println(fmt.Sprint(i) + "|SUCCESS|" + title + "|" + url)
 		}
 		i++
