@@ -89,6 +89,7 @@ func main(){
 	cms.Use(dbMiddleware,appVerifyMiddleware)
 	{
 		cms.POST("/install",aapi.InstallationHandler)
+		cms.GET("/upgrade",aapi.UpgradeHandler)
 
 		cms.GET("/video/list", aapi.VideoListHandler)
 		cms.GET("/video", aapi.VideoDetailHandler)

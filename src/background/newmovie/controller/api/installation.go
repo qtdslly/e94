@@ -146,17 +146,7 @@ func InstallationHandler(c *gin.Context) {
 		//}
 	}
 
-	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
-
-	upgrade, err := LoadUpgrade(version, db)
-	if err != nil {
-		logger.Error(err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
-	}
-
-
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall,"upgrade":upgrade})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall})
 }
 
 
@@ -190,4 +180,18 @@ func LoadUpgrade(version *model.Version, db *gorm.DB) (*apimodel.AppConfigUpgrad
 
 	return apiUpgrade, nil
 
+}
+
+
+func UpgradeHandler(c *gin.Context) {
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
+	upgrade, err := LoadUpgrade(version, db)
+	if err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success),"upgrade":upgrade})
 }
