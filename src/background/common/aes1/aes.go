@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 )
 
-var key = []byte("5a61efdc52411a670b9f7c9db0a5275b")
+var key = []byte("5a61efdc52411a67")
 
 var iv = []byte("jo3d2je9je29japx")
 
