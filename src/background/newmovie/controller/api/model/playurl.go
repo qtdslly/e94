@@ -4,7 +4,6 @@ import (
 	"background/newmovie/model"
 	"background/common/aes1"
 	"background/common/logger"
-	"encoding/hex"
 )
 
 type PlayUrl struct {
