@@ -2,7 +2,7 @@ package apimodel
 
 import (
 	"background/newmovie/model"
-	"background/common/util"
+	"background/common/aes1"
 	"background/common/logger"
 	"encoding/hex"
 )
@@ -27,19 +27,18 @@ func PlayUrlFromDb(src model.PlayUrl) *PlayUrl {
 		dst.IsPlay = false
 	}
 
-	secret := "5a61efdc52411a670b9f7c9db0a5275b"
 	//mac := hmac.New(sha1.New, []byte(secret))
 	//mac.Write([]byte(dst.Url))
 	//
 	//dst.Url = strings.ToUpper(hex.EncodeToString(mac.Sum(nil)))
 
 
-	data,err := util.AesEncrypt([]byte(dst.Url),[]byte(secret))
+	data,err := aes1.Encrypt([]byte(dst.Url))
 	if err != nil{
 		logger.Error(err)
 		return nil
 	}
 
-	dst.Url = hex.EncodeToString(data)
+	dst.Url = hex.EncodeToString([]byte(data))
 	return &dst
 }
