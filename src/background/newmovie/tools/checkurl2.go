@@ -34,7 +34,7 @@ func main(){
 	db.LogMode(true)
 
 	//f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/2.txt")
-	f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/2.txt")
+	f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/t.txt")
 	//f, err := os.Open("f:/Git/e94/src/background/newmovie/tools/2.txt")
 
 	if err != nil {
