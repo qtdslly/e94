@@ -15,7 +15,6 @@ import (
 func OpinionHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId   uint64 `json:"installation_id" binding:"required"`
 		Category         uint8  `json:"category" binding:"required"`
 		Description      string `json:"description"`
 		Thumb            string `json:"thumb"`
@@ -29,9 +28,10 @@ func OpinionHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var opinion model.UserOpinion
-	opinion.InstallationId = p.InstallationId
+	opinion.InstallationId = installationId
 	opinion.Category = p.Category
 	opinion.Description = p.Description
 	opinion.Thumb = strings.Replace(p.Thumb,"http://www.ezhantao.com","",-1)

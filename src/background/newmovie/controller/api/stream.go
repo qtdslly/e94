@@ -71,7 +71,6 @@ func StreamListHandler(c *gin.Context) {
 func StreamDetailHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId uint64 `form:"installation_id"`
 		Id             uint32 `form:"id" binding:"required"`
 	}
 
@@ -84,6 +83,7 @@ func StreamDetailHandler(c *gin.Context) {
 	var err error
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var stream model.Stream
 	if err = db.Where("id = ? and on_line = ?", p.Id, constant.MediaStatusOnLine).First(&stream).Error; err != nil {
@@ -109,9 +109,9 @@ func StreamDetailHandler(c *gin.Context) {
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
 	apiStream.IsDigg = false
-	if p.InstallationId != 0{
+	if installationId != 0{
 		var contentAction model.ContentAction
-		err  = db.Where("installation_id = ? and content_type = ? and content_id = ? and action = 1",p.InstallationId,constant.MediaTypeStream,p.Id).First(&contentAction).Error ;
+		err  = db.Where("installation_id = ? and content_type = ? and content_id = ? and action = 1",installationId,constant.MediaTypeStream,p.Id).First(&contentAction).Error ;
 		if err == nil{
 			apiStream.IsDigg = true
 		}

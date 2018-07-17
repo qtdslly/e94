@@ -24,7 +24,6 @@ import (
 */
 func InstallationHandler(c *gin.Context) {
 	type param struct {
-		InstallationId uint64  `json:"installation_id"`
 		DeviceId       string  `json:"device_id" binding:"required"`
 		MacAddress     string  `json:"mac_address" binding:"required"`
 		Imei           string  `json:"imei"`
@@ -51,10 +50,11 @@ func InstallationHandler(c *gin.Context) {
 
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var dbInstall model.Installation
-	if p.InstallationId != 0 {
-		db.Where("id=?", p.InstallationId).First(&dbInstall)
+	if installationId != 0 {
+		db.Where("id=?", installationId).First(&dbInstall)
 	}
 	if dbInstall.Id == 0 {
 		if err = db.Where("device_model = ? and device_id = ? AND mac_address = ?",p.Model, p.DeviceId, p.MacAddress).First(&dbInstall).Error; err != nil && err != gorm.ErrRecordNotFound {

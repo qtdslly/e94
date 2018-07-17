@@ -83,6 +83,7 @@ func AppVerifyHandler(appType uint32) gin.HandlerFunc {
 			return
 		}
 
+		c.Set(constant.ContextInstallationId,installationId)
 		c.Set(constant.ContextAppVersion,version)
 		c.Set(constant.ContextAppId, version.AppId)
 		c.Set(constant.ContextVersionId, version.Id)
