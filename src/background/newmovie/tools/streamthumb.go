@@ -44,7 +44,7 @@ func main(){
 func StreamThumb(db *gorm.DB){
 	var err error
 	var streams []model.Stream
-	if err = db.Order("id asc").Find(&streams).Error ; err != nil{
+	if err = db.Order("category,title asc").Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		return
 	}

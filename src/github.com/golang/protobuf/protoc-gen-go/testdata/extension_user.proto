@@ -46,7 +46,7 @@ extend extension_base.BaseMessage {
   optional UserMessage user_message = 5;
 }
 
-// Extend with a foreign message
+// Extend with a foreign.txt message
 extend extension_base.BaseMessage {
   optional extension_extra.ExtraMessage extra_message = 9;
 }

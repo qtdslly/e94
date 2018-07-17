@@ -10,7 +10,7 @@ import (
 
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
-	apiUrl := "http://jx.618g.com/?url=" + "https://v.youku.com/v_show/id_XMzcyMDU4MjUzNg==.html"
+	apiUrl := "http://jx.618g.com/?url=" + "http://v.youku.com/v_show/id_XMzcxMjM4Mjg0MA==.html?s=2eaf9082aa3811e68fae"
 
 	query, err := goquery.NewDocument(apiUrl)
 	if err != nil {

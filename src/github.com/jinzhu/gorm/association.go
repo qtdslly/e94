@@ -51,9 +51,9 @@ func (association *Association) Replace(values ...interface{}) *Association {
 
 	// Belongs To
 	if relationship.Kind == "belongs_to" {
-		// Set foreign key to be null when clearing value (length equals 0)
+		// Set foreign.txt key to be null when clearing value (length equals 0)
 		if len(values) == 0 {
-			// Set foreign key to be nil
+			// Set foreign.txt key to be nil
 			var foreignKeyMap = map[string]interface{}{}
 			for _, foreignKey := range relationship.ForeignDBNames {
 				foreignKeyMap[foreignKey] = nil
@@ -70,7 +70,7 @@ func (association *Association) Replace(values ...interface{}) *Association {
 		if len(values) > 0 {
 			var associationForeignFieldNames, associationForeignDBNames []string
 			if relationship.Kind == "many_to_many" {
-				// if many to many relations, get association fields name from association foreign keys
+				// if many to many relations, get association fields name from association foreign.txt keys
 				associationScope := scope.New(reflect.New(field.Type()).Interface())
 				for idx, dbName := range relationship.AssociationForeignFieldNames {
 					if field, ok := associationScope.FieldByName(dbName); ok {
@@ -110,7 +110,7 @@ func (association *Association) Replace(values ...interface{}) *Association {
 				association.setErr(relationship.JoinTableHandler.Delete(relationship.JoinTableHandler, newDB, relationship))
 			}
 		} else if relationship.Kind == "has_one" || relationship.Kind == "has_many" {
-			// has_one or has_many relations, set foreign key to be nil (TODO or delete them?)
+			// has_one or has_many relations, set foreign.txt key to be nil (TODO or delete them?)
 			var foreignKeyMap = map[string]interface{}{}
 			for idx, foreignKey := range relationship.ForeignDBNames {
 				foreignKeyMap[foreignKey] = nil
@@ -152,14 +152,14 @@ func (association *Association) Delete(values ...interface{}) *Association {
 	deletingPrimaryKeys := scope.getColumnAsArray(deletingResourcePrimaryFieldNames, values...)
 
 	if relationship.Kind == "many_to_many" {
-		// source value's foreign keys
+		// source value's foreign.txt keys
 		for idx, foreignKey := range relationship.ForeignDBNames {
 			if field, ok := scope.FieldByName(relationship.ForeignFieldNames[idx]); ok {
 				newDB = newDB.Where(fmt.Sprintf("%v = ?", scope.Quote(foreignKey)), field.Field.Interface())
 			}
 		}
 
-		// get association's foreign fields name
+		// get association's foreign.txt fields name
 		var associationScope = scope.New(reflect.New(field.Type()).Interface())
 		var associationForeignFieldNames []string
 		for _, associationDBName := range relationship.AssociationForeignFieldNames {
@@ -168,7 +168,7 @@ func (association *Association) Delete(values ...interface{}) *Association {
 			}
 		}
 
-		// association value's foreign keys
+		// association value's foreign.txt keys
 		deletingPrimaryKeys := scope.getColumnAsArray(associationForeignFieldNames, values...)
 		sql := fmt.Sprintf("%v IN (%v)", toQueryCondition(scope, relationship.AssociationForeignDBNames), toQueryMarks(deletingPrimaryKeys))
 		newDB = newDB.Where(sql, toQueryValues(deletingPrimaryKeys)...)
@@ -181,14 +181,14 @@ func (association *Association) Delete(values ...interface{}) *Association {
 		}
 
 		if relationship.Kind == "belongs_to" {
-			// find with deleting relation's foreign keys
+			// find with deleting relation's foreign.txt keys
 			primaryKeys := scope.getColumnAsArray(relationship.AssociationForeignFieldNames, values...)
 			newDB = newDB.Where(
 				fmt.Sprintf("%v IN (%v)", toQueryCondition(scope, relationship.ForeignDBNames), toQueryMarks(primaryKeys)),
 				toQueryValues(primaryKeys)...,
 			)
 
-			// set foreign key to be null if there are some records affected
+			// set foreign.txt key to be null if there are some records affected
 			modelValue := reflect.New(scope.GetModelStruct().ModelType).Interface()
 			if results := newDB.Model(modelValue).UpdateColumn(foreignKeyMap); results.Error == nil {
 				if results.RowsAffected > 0 {
@@ -211,7 +211,7 @@ func (association *Association) Delete(values ...interface{}) *Association {
 				toQueryValues(deletingPrimaryKeys)...,
 			)
 
-			// set matched relation's foreign key to be null
+			// set matched relation's foreign.txt key to be null
 			fieldValue := reflect.New(association.field.Field.Type()).Interface()
 			association.setErr(newDB.Model(fieldValue).UpdateColumn(foreignKeyMap).Error)
 		}

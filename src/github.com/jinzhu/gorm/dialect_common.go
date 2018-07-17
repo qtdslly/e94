@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// DefaultForeignKeyNamer contains the default foreign key name generator method
+// DefaultForeignKeyNamer contains the default foreign.txt key name generator method
 type DefaultForeignKeyNamer struct {
 }
 

@@ -41,6 +41,7 @@ func GetYoukuVideoInfoByTitle(word string)(error,string,string,string,string,str
 
 	//title := query.Find("title").Eq(0).Text()
 	base := query.Find("script")
+	//logger.Debug(base.Html())
 	html := ""
 	base.Each(func(i int, s *goquery.Selection) {
 

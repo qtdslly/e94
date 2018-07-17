@@ -137,7 +137,7 @@ func TestOneToOneWithCustomizedColumn(t *testing.T) {
 	}
 
 	if invitation2.Person.Email != user.Email {
-		t.Errorf("Should preload one to one relation with customize foreign keys")
+		t.Errorf("Should preload one to one relation with customize foreign.txt keys")
 	}
 }
 

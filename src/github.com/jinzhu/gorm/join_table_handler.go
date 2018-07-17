@@ -19,19 +19,19 @@ type JoinTableHandlerInterface interface {
 	Delete(handler JoinTableHandlerInterface, db *DB, sources ...interface{}) error
 	// JoinWith query with `Join` conditions
 	JoinWith(handler JoinTableHandlerInterface, db *DB, source interface{}) *DB
-	// SourceForeignKeys return source foreign keys
+	// SourceForeignKeys return source foreign.txt keys
 	SourceForeignKeys() []JoinTableForeignKey
-	// DestinationForeignKeys return destination foreign keys
+	// DestinationForeignKeys return destination foreign.txt keys
 	DestinationForeignKeys() []JoinTableForeignKey
 }
 
-// JoinTableForeignKey join table foreign key struct
+// JoinTableForeignKey join table foreign.txt key struct
 type JoinTableForeignKey struct {
 	DBName            string
 	AssociationDBName string
 }
 
-// JoinTableSource is a struct that contains model type and foreign keys
+// JoinTableSource is a struct that contains model type and foreign.txt keys
 type JoinTableSource struct {
 	ModelType   reflect.Type
 	ForeignKeys []JoinTableForeignKey
@@ -44,12 +44,12 @@ type JoinTableHandler struct {
 	Destination JoinTableSource `sql:"-"`
 }
 
-// SourceForeignKeys return source foreign keys
+// SourceForeignKeys return source foreign.txt keys
 func (s *JoinTableHandler) SourceForeignKeys() []JoinTableForeignKey {
 	return s.Source.ForeignKeys
 }
 
-// DestinationForeignKeys return destination foreign keys
+// DestinationForeignKeys return destination foreign.txt keys
 func (s *JoinTableHandler) DestinationForeignKeys() []JoinTableForeignKey {
 	return s.Destination.ForeignKeys
 }

@@ -77,7 +77,7 @@ message GoTest {
   optional string Table = 2;
   optional int32 Param = 3;
 
-  // Required, repeated and optional foreign fields.
+  // Required, repeated and optional foreign.txt fields.
   required GoTestField RequiredField = 4;
   repeated GoTestField RepeatedField = 5;
   optional GoTestField OptionalField = 6;

@@ -59,7 +59,7 @@ func (t TokenType) String() string {
 }
 
 // An Attribute is an attribute namespace-key-value triple. Namespace is
-// non-empty for foreign attributes like xlink, Key is alphabetic (and hence
+// non-empty for foreign.txt attributes like xlink, Key is alphabetic (and hence
 // does not contain escapable characters like '&', '<' or '>'), and Val is
 // unescaped (it looks like "a<b" rather than "a&lt;b").
 //
@@ -176,10 +176,10 @@ type Tokenizer struct {
 // a bogus comment "<!-- [CDATA[foo]] -->" instead.
 //
 // Strictly speaking, an HTML5 compliant tokenizer should allow CDATA if and
-// only if tokenizing foreign content, such as MathML and SVG. However,
-// tracking foreign-contentness is difficult to do purely in the tokenizer,
+// only if tokenizing foreign.txt content, such as MathML and SVG. However,
+// tracking foreign.txt-contentness is difficult to do purely in the tokenizer,
 // as opposed to the parser, due to HTML integration points: an <svg> element
-// can contain a <foreignObject> that is foreign-to-SVG but not foreign-to-
+// can contain a <foreignObject> that is foreign.txt-to-SVG but not foreign.txt-to-
 // HTML. For strict compliance with the HTML5 tokenization algorithm, it is the
 // responsibility of the user of a tokenizer to call AllowCDATA as appropriate.
 // In practice, if using the tokenizer without caring whether MathML or SVG
@@ -199,7 +199,7 @@ func (z *Tokenizer) AllowCDATA(allowCDATA bool) {
 //
 // This tokenizer implementation will generally look for raw text at the right
 // times. Strictly speaking, an HTML5 compliant tokenizer should not look for
-// raw text if in foreign content: <title> generally needs raw text, but a
+// raw text if in foreign.txt content: <title> generally needs raw text, but a
 // <title> inside an <svg> does not. Another example is that a <textarea>
 // generally needs raw text, but a <textarea> is not allowed as an immediate
 // child of a <select>; in normal parsing, a <textarea> implies </select>, but

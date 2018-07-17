@@ -27,7 +27,7 @@ func TestBelongsTo(t *testing.T) {
 	}
 
 	if post.CategoryId.Int64 == 0 || post.MainCategoryId == 0 {
-		t.Errorf("post's foreign key should be updated")
+		t.Errorf("post's foreign.txt key should be updated")
 	}
 
 	// Query
@@ -196,7 +196,7 @@ func TestBelongsToOverrideForeignKey1(t *testing.T) {
 		if relation.Relationship.Kind != "belongs_to" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"ProfileRefer"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"ID"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -218,7 +218,7 @@ func TestBelongsToOverrideForeignKey2(t *testing.T) {
 		if relation.Relationship.Kind != "belongs_to" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"ProfileID"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"Refer"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -234,7 +234,7 @@ func TestHasOne(t *testing.T) {
 	}
 
 	if user.CreditCard.UserId.Int64 == 0 {
-		t.Errorf("CreditCard's foreign key should be updated")
+		t.Errorf("CreditCard's foreign.txt key should be updated")
 	}
 
 	// Query
@@ -385,7 +385,7 @@ func TestHasOneOverrideForeignKey1(t *testing.T) {
 		if relation.Relationship.Kind != "has_one" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"UserRefer"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"ID"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -407,7 +407,7 @@ func TestHasOneOverrideForeignKey2(t *testing.T) {
 		if relation.Relationship.Kind != "has_one" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"UserID"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"Refer"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -567,7 +567,7 @@ func TestHasManyOverrideForeignKey1(t *testing.T) {
 		if relation.Relationship.Kind != "has_many" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"UserRefer"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"ID"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -589,7 +589,7 @@ func TestHasManyOverrideForeignKey2(t *testing.T) {
 		if relation.Relationship.Kind != "has_many" ||
 			!reflect.DeepEqual(relation.Relationship.ForeignFieldNames, []string{"UserID"}) ||
 			!reflect.DeepEqual(relation.Relationship.AssociationForeignFieldNames, []string{"Refer"}) {
-			t.Errorf("Override belongs to foreign key with tag")
+			t.Errorf("Override belongs to foreign.txt key with tag")
 		}
 	}
 }
@@ -812,7 +812,7 @@ func TestForeignKey(t *testing.T) {
 	for _, structField := range DB.NewScope(&User{}).GetStructFields() {
 		for _, foreignKey := range []string{"BillingAddressID", "ShippingAddressId", "CompanyID"} {
 			if structField.Name == foreignKey && !structField.IsForeignKey {
-				t.Errorf(fmt.Sprintf("%v should be foreign key", foreignKey))
+				t.Errorf(fmt.Sprintf("%v should be foreign.txt key", foreignKey))
 			}
 		}
 	}
@@ -820,7 +820,7 @@ func TestForeignKey(t *testing.T) {
 	for _, structField := range DB.NewScope(&Email{}).GetStructFields() {
 		for _, foreignKey := range []string{"UserId"} {
 			if structField.Name == foreignKey && !structField.IsForeignKey {
-				t.Errorf(fmt.Sprintf("%v should be foreign key", foreignKey))
+				t.Errorf(fmt.Sprintf("%v should be foreign.txt key", foreignKey))
 			}
 		}
 	}
@@ -828,7 +828,7 @@ func TestForeignKey(t *testing.T) {
 	for _, structField := range DB.NewScope(&Post{}).GetStructFields() {
 		for _, foreignKey := range []string{"CategoryId", "MainCategoryId"} {
 			if structField.Name == foreignKey && !structField.IsForeignKey {
-				t.Errorf(fmt.Sprintf("%v should be foreign key", foreignKey))
+				t.Errorf(fmt.Sprintf("%v should be foreign.txt key", foreignKey))
 			}
 		}
 	}
@@ -836,7 +836,7 @@ func TestForeignKey(t *testing.T) {
 	for _, structField := range DB.NewScope(&Comment{}).GetStructFields() {
 		for _, foreignKey := range []string{"PostId"} {
 			if structField.Name == foreignKey && !structField.IsForeignKey {
-				t.Errorf(fmt.Sprintf("%v should be foreign key", foreignKey))
+				t.Errorf(fmt.Sprintf("%v should be foreign.txt key", foreignKey))
 			}
 		}
 	}
@@ -861,7 +861,7 @@ func testForeignKey(t *testing.T, source interface{}, sourceFieldName string, ta
 	dest := fmt.Sprintf("%v(%v)", targetTableName, targetField.DBName)
 	err := DB.Model(source).AddForeignKey(modelField.DBName, dest, "CASCADE", "CASCADE").Error
 	if err != nil {
-		t.Fatalf(fmt.Sprintf("Failed to create foreign key: %v", err))
+		t.Fatalf(fmt.Sprintf("Failed to create foreign.txt key: %v", err))
 	}
 }
 

@@ -14,7 +14,7 @@ import (
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 	var err error
-	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/stream1.txt")
+	f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/2.txt")
 	//f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/stream.txt")
 	//f, err := os.Open("f:/Git/e94/src/background/newmovie/tools/2.txt")
 

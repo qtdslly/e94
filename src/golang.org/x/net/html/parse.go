@@ -1160,7 +1160,7 @@ func (p *parser) inBodyEndTagFormatting(tagAtom a.Atom) {
 }
 
 // inBodyEndTagOther performs the "any other end tag" algorithm for inBodyIM.
-// "Any other end tag" handling from 12.2.5.5 The rules for parsing tokens in foreign content
+// "Any other end tag" handling from 12.2.5.5 The rules for parsing tokens in foreign.txt content
 // https://html.spec.whatwg.org/multipage/syntax.html#parsing-main-inforeign
 func (p *parser) inBodyEndTagOther(tagAtom a.Atom) {
 	for i := len(p.oe) - 1; i >= 0; i-- {
@@ -1899,7 +1899,7 @@ func parseForeignContent(p *parser) bool {
 		p.addElement()
 		p.top().Namespace = namespace
 		if namespace != "" {
-			// Don't let the tokenizer go into raw text mode in foreign content
+			// Don't let the tokenizer go into raw text mode in foreign.txt content
 			// (e.g. in an SVG <title> tag).
 			p.tokenizer.NextIsNotRawText()
 		}
@@ -1994,7 +1994,7 @@ func (p *parser) parse() error {
 	// Iterate until EOF. Any other error will cause an early return.
 	var err error
 	for err != io.EOF {
-		// CDATA sections are allowed only in foreign content.
+		// CDATA sections are allowed only in foreign.txt content.
 		n := p.oe.top()
 		p.tokenizer.AllowCDATA(n != nil && n.Namespace != "")
 		// Read and parse the next token.

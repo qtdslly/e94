@@ -351,7 +351,7 @@ type GoTest struct {
 	Kind  *GoTest_KIND `protobuf:"varint,1,req,name=Kind,enum=testdata.GoTest_KIND" json:"Kind,omitempty"`
 	Table *string      `protobuf:"bytes,2,opt,name=Table" json:"Table,omitempty"`
 	Param *int32       `protobuf:"varint,3,opt,name=Param" json:"Param,omitempty"`
-	// Required, repeated and optional foreign fields.
+	// Required, repeated and optional foreign.txt fields.
 	RequiredField *GoTestField   `protobuf:"bytes,4,req,name=RequiredField" json:"RequiredField,omitempty"`
 	RepeatedField []*GoTestField `protobuf:"bytes,5,rep,name=RepeatedField" json:"RepeatedField,omitempty"`
 	OptionalField *GoTestField   `protobuf:"bytes,6,opt,name=OptionalField" json:"OptionalField,omitempty"`

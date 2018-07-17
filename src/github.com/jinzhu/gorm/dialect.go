@@ -25,7 +25,7 @@ type Dialect interface {
 
 	// HasIndex check has index or not
 	HasIndex(tableName string, indexName string) bool
-	// HasForeignKey check has foreign key or not
+	// HasForeignKey check has foreign.txt key or not
 	HasForeignKey(tableName string, foreignKeyName string) bool
 	// RemoveIndex remove index
 	RemoveIndex(tableName string, indexName string) error
@@ -41,7 +41,7 @@ type Dialect interface {
 	// LastInsertIdReturningSuffix most dbs support LastInsertId, but postgres needs to use `RETURNING`
 	LastInsertIDReturningSuffix(tableName, columnName string) string
 
-	// BuildForeignKeyName returns a foreign key name for the given table, field and reference
+	// BuildForeignKeyName returns a foreign.txt key name for the given table, field and reference
 	BuildForeignKeyName(tableName, field, dest string) string
 
 	// CurrentDatabase return current database name
