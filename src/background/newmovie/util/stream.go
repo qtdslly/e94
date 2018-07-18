@@ -17,7 +17,7 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 
 	tx := db.Begin()
 
-	u := *url
+	u := url
 	start := strings.Index(u,"m3u8")
 	m3u8 := ""
 	if start >= 0{
@@ -32,13 +32,13 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 
 	urlFound := false
 	var play model.PlayUrl
-	play.Url = *url
+	play.Url = url
 	if err := tx.Where("content_type = 4 and url = ?",play.Url).First(&play).Error ; err == gorm.ErrRecordNotFound{
 	}else if err == nil{
 		urlFound = true
 	}
 
-	sTitle := *title
+	sTitle := title
 	sTitle = strings.Replace(sTitle,"高清","",-1)
 	sTitle = strings.Replace(sTitle,"-","",-1)
 	sTitle = util.TrimChinese(sTitle)
@@ -61,7 +61,7 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 			return
 		}
 		play.Sort = sort
-		play.Title = *title
+		play.Title = title
 		if err = tx.Save(&play).Error ; err != nil{
 			logger.Error(err)
 			tx.Rollback()
@@ -76,7 +76,7 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 			}else if strings.Contains(stream.Title,"卫视"){
 				stream.Category = "卫视"
 			}else{
-				stream.Category = *category
+				stream.Category = category
 			}
 			stream.Pinyin = util.TitleToPinyin(stream.Title)
 
@@ -90,10 +90,10 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 			}
 		}
 
-		play.Url = *url
+		play.Url = url
 		play.ContentId = stream.Id
 		play.Provider = uint32(0)
-		play.Title = *title
+		play.Title = title
 		play.OnLine = constant.MediaStatusOnLine
 		play.Sort = sort
 		play.ContentType = uint8(constant.MediaTypeStream)
