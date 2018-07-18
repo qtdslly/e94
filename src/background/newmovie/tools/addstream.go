@@ -20,6 +20,7 @@ func main(){
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	title := flag.String("t", "", "stream title")
 	url := flag.String("u", "", "stream play url")
+	category := flag.String("c", "", "caegory")
 
 	flag.Parse()
 
@@ -101,7 +102,7 @@ func main(){
 			}else if strings.Contains(stream.Title,"卫视"){
 				stream.Category = "卫视"
 			}else{
-				stream.Category = "地方"
+				stream.Category = *category
 			}
 			stream.Pinyin = util.TitleToPinyin(stream.Title)
 

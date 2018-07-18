@@ -16,6 +16,7 @@ func TrimChinese(title string)(string){
 		return title
 	}
 	if strings.Contains(title,"证券资讯") || strings.Contains(title,"世界地理") ||strings.Contains(title,"书画") ||strings.Contains(title,"娱乐") ||strings.Contains(title,"怀旧剧场") || strings.Contains(title,"电视指南") ||strings.Contains(title,"第一剧场") || strings.Contains(title,"风云剧场") ||strings.Contains(title,"风云足球") ||strings.Contains(title,"风云音乐") ||strings.Contains(title,"高尔夫") {
+		title = strings.Trim(title,"-")
 		return title
 	}
 	//48-57 45 43 65-90 97-122
