@@ -69,6 +69,7 @@ func main(){
 			url = fields[1]
 			category = fields[2]
 		}else {
+			logger.Debug("ERR_LINE|",line)
 			continue
 		}
 
