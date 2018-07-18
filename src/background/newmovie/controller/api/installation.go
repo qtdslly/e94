@@ -24,7 +24,6 @@ import (
 */
 func InstallationHandler(c *gin.Context) {
 	type param struct {
-		InstallationId uint64  `json:"installation_id"`
 		DeviceId       string  `json:"device_id" binding:"required"`
 		MacAddress     string  `json:"mac_address" binding:"required"`
 		Imei           string  `json:"imei"`
@@ -51,10 +50,11 @@ func InstallationHandler(c *gin.Context) {
 
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var dbInstall model.Installation
-	if p.InstallationId != 0 {
-		db.Where("id=?", p.InstallationId).First(&dbInstall)
+	if installationId != 0 {
+		db.Where("id=?", installationId).First(&dbInstall)
 	}
 	if dbInstall.Id == 0 {
 		if err = db.Where("device_model = ? and device_id = ? AND mac_address = ?",p.Model, p.DeviceId, p.MacAddress).First(&dbInstall).Error; err != nil && err != gorm.ErrRecordNotFound {
@@ -146,17 +146,7 @@ func InstallationHandler(c *gin.Context) {
 		//}
 	}
 
-	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
-
-	upgrade, err := LoadUpgrade(version, db)
-	if err != nil {
-		logger.Error(err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
-	}
-
-
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall,"upgrade":upgrade})
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success), "data": dbInstall})
 }
 
 
@@ -190,4 +180,18 @@ func LoadUpgrade(version *model.Version, db *gorm.DB) (*apimodel.AppConfigUpgrad
 
 	return apiUpgrade, nil
 
+}
+
+
+func UpgradeHandler(c *gin.Context) {
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	version := c.MustGet(constant.ContextAppVersion).(*model.Version)
+	upgrade, err := LoadUpgrade(version, db)
+	if err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"err_msg":constant.TranslateErrCode(constant.Success),"upgrade":upgrade})
 }

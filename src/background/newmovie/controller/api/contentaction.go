@@ -11,7 +11,6 @@ import (
 
 func DiggListHandler(c *gin.Context) {
 	type param struct {
-		InstallationId   uint64 `form:"installation_id" binding:"required"`
 		ContentType uint8  `form:"content_type" binding:"required"`
 		Limit       int `form:"limit" binding:"required"`
 		Offset      int `form:"offset" binding:"exists"`
@@ -24,16 +23,17 @@ func DiggListHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var contents []model.ContentAction
-	if err := db.Limit(p.Limit).Offset(p.Offset).Where("installation_id = ? AND content_type = ? AND action = 1", p.InstallationId, p.ContentType).Find(&contents).Error; err != nil {
+	if err := db.Limit(p.Limit).Offset(p.Offset).Where("installation_id = ? AND content_type = ? AND action = 1", installationId, p.ContentType).Find(&contents).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
 	var count uint32
-	if err := db.Model(&model.ContentAction{}).Where("installation_id = ? AND content_type = ? AND action = 1", p.InstallationId, p.ContentType).Count(&count).Error; err != nil {
+	if err := db.Model(&model.ContentAction{}).Where("installation_id = ? AND content_type = ? AND action = 1", installationId, p.ContentType).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -67,7 +67,6 @@ func DiggListHandler(c *gin.Context) {
 func DiggHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId   uint64 `json:"installation_id"`
 		ContentType      uint8  `json:"content_type"`
 		ContentId        uint32 `json:"content_id"`
 		Disable          bool   `json:"disable"`
@@ -80,9 +79,10 @@ func DiggHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var action model.ContentAction
-	action.InstallationId = p.InstallationId
+	action.InstallationId = installationId
 	action.ContentType = p.ContentType
 	action.ContentId = p.ContentId
 	action.Action = uint8(1)

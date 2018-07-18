@@ -13,7 +13,6 @@ import (
 func UserWantHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId    uint64   `json:"installation_id"`
 		Title             string   `json:"title"`
 		Description       string   `json:"description"`
 		Email             string   `json:"email"`
@@ -27,12 +26,13 @@ func UserWantHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var want model.UserWant
 	want.Title = p.Title
 	want.Description = p.Description
 	want.Email = p.Email
-	want.InstallationId = p.InstallationId
+	want.InstallationId = installationId
 	if err := db.Save(&want).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
