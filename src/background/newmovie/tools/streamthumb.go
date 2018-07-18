@@ -49,6 +49,9 @@ func StreamThumb(db *gorm.DB){
 		return
 	}
 	for _ , stream := range streams{
+		if stream.Id == 1698{
+			continue
+		}
 		flag1 := false
 		var playUrls []model.PlayUrl
 		if err = db.Order("sort asc").Where("content_type = 4 and content_id = ?",stream.Id).Find(&playUrls).Error ; err != nil{
