@@ -303,6 +303,8 @@ func main(){
 					stream.Sort = 5610
 				}else if stream.Title == "新疆12"{
 					stream.Sort = 5611
+				}else{
+					stream.Sort = 5612
 				}
 			}else if strings.Contains(stream.Title,"乌鲁木齐"){
 				stream.Sort = 5620
