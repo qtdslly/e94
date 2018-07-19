@@ -10,7 +10,6 @@ import (
 	"background/newmovie/util"
 	"flag"
 	"fmt"
-	"strings"
 )
 
 func main(){
@@ -55,10 +54,8 @@ func StreamThumb(db *gorm.DB){
 			logger.Error(err)
 			return
 		}
-		thumb := ""
 		for _,playUrl := range playUrls{
-			thumb = util.CheckStream(playUrl.Url,config.GetStorageRoot() + "stream/" + fmt.Sprint(stream.Id) + ".jpg")
-			if thumb != ""{
+			if util.CheckStream(playUrl.Url,config.GetStorageRoot() + "stream/" + fmt.Sprint(stream.Id) + ".jpg"){
 				playUrl.OnLine = true
 				if err = db.Save(&playUrl).Error ; err != nil{
 					logger.Error(err)
@@ -73,9 +70,7 @@ func StreamThumb(db *gorm.DB){
 				}
 			}
 		}
-		if thumb != ""{
-			stream.Thumb = strings.Replace(thumb,config.GetStorageRoot(),"http://www.ezhantao.com/res/",-1)
-		}
+		stream.Thumb = "http://www.ezhantao.com/res/stream/" + fmt.Sprint(stream.Id) + ".jpg"
 		stream.OnLine = flag1
 		if err = db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
