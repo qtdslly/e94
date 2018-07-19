@@ -17,7 +17,7 @@ func main(){
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 
 	streamId1 := flag.Int("a", 0, "first stream id")
-	streamId2 := flag.Int("a", 0, "second stream id")
+	streamId2 := flag.Int("b", 0, "second stream id")
 
 	flag.Parse()
 
