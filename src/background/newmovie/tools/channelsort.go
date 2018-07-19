@@ -421,6 +421,8 @@ func main(){
 			stream.Sort = 10500
 		}else if strings.Contains(stream.Category,"风景"){
 			stream.Sort = 11000
+		}else if strings.Contains(stream.Category,"战旗"){
+			stream.Sort = 12000
 		}else if strings.Contains(stream.Category,"香港"){
 			stream.Sort = 13000
 		}else if strings.Contains(stream.Category,"澳门"){
@@ -473,7 +475,7 @@ func main(){
 			stream.Sort = 33000
 		}else{
 			logger.Debug("=================================",stream.Title)
-			stream.Sort = 0
+			stream.Sort = 34000
 		}
 		if err := db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
