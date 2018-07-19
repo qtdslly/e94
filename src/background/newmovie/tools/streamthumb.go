@@ -113,7 +113,7 @@ func CheckStreamUrl(id uint32,url string)string{
 			//if err != nil {
 			//	logger.Error("file remove Error!",err)
 			//}
-			return "/res/stream/" + fmt.Sprint(id) + ".jpg"
+			return "http://www.ezhantao.com:16882/res/stream/" + fmt.Sprint(id) + ".jpg"
 		}else{
 			return ""
 		}

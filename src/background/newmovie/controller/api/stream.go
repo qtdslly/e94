@@ -56,7 +56,7 @@ func StreamListHandler(c *gin.Context) {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Title = stream.Title
-		apiStream.Thumb = "http://www.ezhantao.com:16882" + stream.Thumb
+		apiStream.Thumb = stream.Thumb
 		apiStreams = append(apiStreams, &apiStream)
 	}
 
@@ -101,7 +101,7 @@ func StreamDetailHandler(c *gin.Context) {
 
 	var apiStream ApiStream
 	apiStream.Id = stream.Id
-	apiStream.Thumb = "http://www.ezhantao.com:16882" + stream.Thumb
+	apiStream.Thumb = stream.Thumb
 	apiStream.Title = stream.Title
 	var playUrls []model.PlayUrl
 	if err := db.Order("ready asc").Where("content_type = 4 and content_id = ?", stream.Id).Find(&playUrls).Error; err != nil {
@@ -171,7 +171,7 @@ func SearchHandler(c *gin.Context) {
 	for _, stream := range streams {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
-		apiStream.Thumb = "http://www.ezhantao.com:16882" + stream.Thumb
+		apiStream.Thumb = stream.Thumb
 		apiStream.Title = stream.Title
 		apiStream.ContentType = constant.MediaTypeStream
 		apiModels = append(apiModels, &apiStream)
