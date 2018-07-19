@@ -56,8 +56,11 @@ func WebVideoHandler(c *gin.Context) {
 		var err error
 		url,err = aes1.Encrypt([]byte(url))
 		if err != nil{
+			logger.Debug(apiUrl)
 			logger.Error(err)
-			return nil
+			c.AbortWithStatus(http.StatusInternalServerError)
+
+			return
 		}
 	}
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"data":url})
