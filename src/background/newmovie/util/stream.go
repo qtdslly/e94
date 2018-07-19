@@ -5,11 +5,15 @@ import (
 	"background/newmovie/model"
 	"background/common/util"
 
+	"os/exec"
+	"fmt"
+
 	"strings"
 	"background/common/constant"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
+	"time"
 )
 
 func StreamAdd(title,url,category string,db *gorm.DB){
@@ -108,3 +112,43 @@ func StreamAdd(title,url,category string,db *gorm.DB){
 	tx.Commit()
 }
 
+
+
+
+func CheckStream(url string,jpgName string)bool{
+	for i := 0 ; i < 3 ; i++{
+		if CheckStreamUrl(url,jpgName){
+			return true
+		}
+	}
+	return false
+}
+
+func CheckStreamUrl(url string,jpgName string)bool{
+	c2 := make(chan string, 1)
+	ffmpegAddr := "/usr/bin/ffmpeg"
+	go func() {
+		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 %s", ffmpegAddr, url,jpgName)
+		fmt.Println(cmdStr)
+		cmd := exec.Command("bash", "-c", cmdStr)
+
+		if err := cmd.Run(); err == nil {
+			c2 <- "success"
+		}else{
+			logger.Error(err)
+			c2 <- "error"
+		}
+	}()
+	select {
+	case res := <-c2:
+		if res == "success"{
+			return true
+		}else{
+			return false
+		}
+	case <-time.After(time.Second * 30):
+		return false
+	}
+
+	return false
+}

@@ -7,13 +7,10 @@ import (
 	//"background/common/util"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
-
+	"background/newmovie/util"
 	"flag"
 	"fmt"
-	"os/exec"
-	"time"
-	//"os"
-	//"strings"
+	"strings"
 )
 
 func main(){
@@ -60,7 +57,7 @@ func StreamThumb(db *gorm.DB){
 		}
 		thumb := ""
 		for _,playUrl := range playUrls{
-			thumb = CheckStreamUrl(stream.Id,playUrl.Url)
+			thumb = util.CheckStream(playUrl.Url,config.GetStorageRoot() + "stream/" + fmt.Sprint(stream.Id) + ".jpg")
 			if thumb != ""{
 				playUrl.OnLine = true
 				if err = db.Save(&playUrl).Error ; err != nil{
@@ -77,7 +74,7 @@ func StreamThumb(db *gorm.DB){
 			}
 		}
 		if thumb != ""{
-			stream.Thumb = thumb
+			stream.Thumb = strings.Replace(thumb,config.GetStorageRoot(),"http://www.ezhantao.com/res/",-1)
 		}
 		stream.OnLine = flag1
 		if err = db.Save(&stream).Error ; err != nil{
@@ -86,42 +83,3 @@ func StreamThumb(db *gorm.DB){
 		}
 	}
 }
-func CheckStreamUrl(id uint32,url string)string{
-	c2 := make(chan string, 1)
-	ffmpegAddr := "/usr/bin/ffmpeg"
-	//code := util.RandString(6)
-	//now := time.Now()
-	//fileName := fmt.Sprintf("%04d%02d%02d%02d%02d%02d",now.Year(),now.Month(),now.Day(),now.Hour(),now.Minute(),now.Second()) + code + ".jpg"
-
-	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 /root/data/storage/stream/%s", ffmpegAddr, url,fmt.Sprint(id) + ".jpg")
-		fmt.Println(cmdStr)
-		cmd := exec.Command("bash", "-c", cmdStr)
-
-		if err := cmd.Run(); err == nil {
-			c2 <- "success"
-		}else{
-			logger.Error(err)
-			c2 <- "error"
-		}
-	}()
-	select {
-	case res := <-c2:
-		if res == "success"{
-			//sourceFileName = strings.Replace(sourceFileName,"/res/stream/","",-1)
-			//err := os.Remove("/root/data/storage/stream/" + sourceFileName)
-			//if err != nil {
-			//	logger.Error("file remove Error!",err)
-			//}
-			return "http://www.ezhantao.com:16882/res/stream/" + fmt.Sprint(id) + ".jpg"
-		}else{
-			return ""
-		}
-	case <-time.After(time.Second * 15):
-		return ""
-	}
-
-	return ""
-}
-
-
