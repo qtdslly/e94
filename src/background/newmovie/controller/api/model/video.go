@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"background/common/constant"
 	"background/newmovie/service"
+	"background/common/aes1"
 )
 
 type Video struct {
@@ -68,6 +69,14 @@ func VideoFromDb(src model.Video,db *gorm.DB) *Video {
 			pUrl.Url = playUrl.Url
 			pUrl.IsPlay = false
 		}
+
+		var err error
+		pUrl.Url,err = aes1.Encrypt([]byte(pUrl.Url))
+		if err != nil{
+			logger.Error(err)
+			return nil
+		}
+
 		dst.Urls = append(dst.Urls,&pUrl)
 	}
 	return &dst

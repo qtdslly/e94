@@ -8,6 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/PuerkitoBio/goquery"
+	"background/common/aes1"
 )
 
 
@@ -51,6 +52,13 @@ func WebVideoHandler(c *gin.Context) {
 	url := base[strings.Index(base,"url=") + 4:]
 	if !strings.Contains(url,".m3u8") && !strings.Contains(url,".mp4") && !strings.Contains(url,".flv"){
 		url = ""
+	}else{
+		var err error
+		url,err = aes1.Encrypt([]byte(url))
+		if err != nil{
+			logger.Error(err)
+			return nil
+		}
 	}
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success,"data":url})
 }
