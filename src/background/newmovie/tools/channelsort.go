@@ -425,59 +425,61 @@ func main(){
 			stream.Sort = 11000
 		}else if strings.Contains(stream.Category,"战旗"){
 			stream.Sort = 12000
-		}else if strings.Contains(stream.Category,"香港"){
+		}else if strings.Contains(stream.Category,"熊猫"){
 			stream.Sort = 13000
-		}else if strings.Contains(stream.Category,"澳门"){
-			stream.Sort = 13300
-		}else if strings.Contains(stream.Category,"台湾"){
-			stream.Sort = 13600
-		}else if strings.Contains(stream.Category,"韩国"){
-			stream.Sort = 14600
-		}else if strings.Contains(stream.Category,"朝鲜"){
-			stream.Sort = 15000
-		}else if strings.Contains(stream.Category,"日本"){
-			stream.Sort = 16000
-		}else if strings.Contains(stream.Category,"新加坡"){
-			stream.Sort = 17000
-		}else if strings.Contains(stream.Category,"越南"){
-			stream.Sort = 17500
-		}else if strings.Contains(stream.Category,"泰国"){
-			stream.Sort = 18000
-		}else if strings.Contains(stream.Category,"马来西亚"){
-			stream.Sort = 19000
-		}else if strings.Contains(stream.Category,"美国"){
-			stream.Sort = 20000
-		}else if strings.Contains(stream.Category,"德国") {
-			stream.Sort = 21000
-		}else if strings.Contains(stream.Category,"法国"){
-			stream.Sort = 21500
-		}else if strings.Contains(stream.Category,"加拿大"){
-			stream.Sort = 22000
-		}else if strings.Contains(stream.Category,"俄罗斯"){
-			stream.Sort = 23000
-		}else if strings.Contains(stream.Category,"澳大利亚"){
-			stream.Sort = 24000
-		}else if strings.Contains(stream.Category,"沙特阿拉伯"){
-			stream.Sort = 25000
-		}else if strings.Contains(stream.Category,"印度"){
-			stream.Sort = 26000
-		}else if strings.Contains(stream.Category,"英国"){
-			stream.Sort = 27000
-		}else if strings.Contains(stream.Category,"卡塔尔"){
-			stream.Sort = 28000
-		}else if strings.Contains(stream.Category,"西班牙"){
-			stream.Sort = 29000
-		}else if strings.Contains(stream.Category,"希腊"){
+		}else if strings.Contains(stream.Category,"香港"){
 			stream.Sort = 30000
-		}else if strings.Contains(stream.Category,"意大利"){
-			stream.Sort = 31000
-		}else if strings.Contains(stream.Category,"欧洲"){
+		}else if strings.Contains(stream.Category,"澳门"){
+			stream.Sort = 30300
+		}else if strings.Contains(stream.Category,"台湾"){
+			stream.Sort = 30600
+		}else if strings.Contains(stream.Category,"韩国"){
+			stream.Sort = 31600
+		}else if strings.Contains(stream.Category,"朝鲜"){
 			stream.Sort = 32000
-		}else if strings.Contains(stream.Category,"其他外国频道"){
+		}else if strings.Contains(stream.Category,"日本"){
 			stream.Sort = 33000
+		}else if strings.Contains(stream.Category,"新加坡"){
+			stream.Sort = 34000
+		}else if strings.Contains(stream.Category,"越南"){
+			stream.Sort = 35000
+		}else if strings.Contains(stream.Category,"泰国"){
+			stream.Sort = 36000
+		}else if strings.Contains(stream.Category,"马来西亚"){
+			stream.Sort = 37000
+		}else if strings.Contains(stream.Category,"美国"){
+			stream.Sort = 38000
+		}else if strings.Contains(stream.Category,"德国") {
+			stream.Sort = 39000
+		}else if strings.Contains(stream.Category,"法国"){
+			stream.Sort = 40000
+		}else if strings.Contains(stream.Category,"加拿大"){
+			stream.Sort = 41000
+		}else if strings.Contains(stream.Category,"俄罗斯"){
+			stream.Sort = 42000
+		}else if strings.Contains(stream.Category,"澳大利亚"){
+			stream.Sort = 43000
+		}else if strings.Contains(stream.Category,"沙特阿拉伯"){
+			stream.Sort = 44000
+		}else if strings.Contains(stream.Category,"印度"){
+			stream.Sort = 45000
+		}else if strings.Contains(stream.Category,"英国"){
+			stream.Sort = 46000
+		}else if strings.Contains(stream.Category,"卡塔尔"){
+			stream.Sort = 47000
+		}else if strings.Contains(stream.Category,"西班牙"){
+			stream.Sort = 48000
+		}else if strings.Contains(stream.Category,"希腊"){
+			stream.Sort = 49000
+		}else if strings.Contains(stream.Category,"意大利"){
+			stream.Sort = 50000
+		}else if strings.Contains(stream.Category,"欧洲"){
+			stream.Sort = 51000
+		}else if strings.Contains(stream.Category,"其他外国频道"){
+			stream.Sort = 52000
 		}else{
 			logger.Debug("=================================",stream.Title)
-			stream.Sort = 34000
+			stream.Sort = 60000
 		}
 		if err := db.Save(&stream).Error ; err != nil{
 			logger.Error(err)
