@@ -10,13 +10,13 @@ import (
 
 
 func main() {
-	testFile := "/root/Git/e94/src/background/newmovie/tools/t.txt"
+	testFile := "/root/data/storage/live.apk"
 	log.Println(testFile)
 	file, inerr := os.Open(testFile)
 	if inerr == nil {
 		md5h := md5.New()
 		io.Copy(md5h, file)
-		fmt.Printf("%x", md5h.Sum([]byte(""))) //md5
+		fmt.Println("%x", md5h.Sum([]byte(""))) //md5
 	}else{
 		fmt.Println(inerr)
 	}
