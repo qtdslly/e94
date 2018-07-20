@@ -10,7 +10,7 @@ import (
 
 
 func main() {
-	testFile := "/root/data/storage/app-debug.apk"
+	testFile := "/root/data/storage/live.apk"
 	log.Println(testFile)
 	file, inerr := os.Open(testFile)
 	if inerr == nil {
