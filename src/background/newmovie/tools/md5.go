@@ -10,7 +10,7 @@ import (
 
 
 func main() {
-	testFile := "t.txt"
+	testFile := "/root/Git/e94/src/background/newmovie/tools/t.txt"
 	log.Println(testFile)
 	file, inerr := os.Open(testFile)
 	if inerr == nil {
