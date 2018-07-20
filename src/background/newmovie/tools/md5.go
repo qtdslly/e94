@@ -10,7 +10,7 @@ import (
 
 
 func main() {
-	testFile := "/root/data/storage/live.apk"
+	testFile := "/root/data/storage/app-debug.apk"
 	log.Println(testFile)
 	file, inerr := os.Open(testFile)
 	if inerr == nil {
@@ -21,3 +21,4 @@ func main() {
 		fmt.Println(inerr)
 	}
 }
+//67 174 86 56 168 141 206 30 171 164 65 219 90 107 53 124
