@@ -9,4 +9,5 @@ type AppConfigUpgrade struct {
 	CheckUpgrade   bool   `json:"check_upgrade"`
 	UpgradeTip     string `json:"upgrade_tip"`
 	UpgradeUrl     string `json:"upgrade_url"`
+	Md5Value       string `json:"md5_value"`
 }

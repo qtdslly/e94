@@ -14,6 +14,11 @@ import (
 	"strconv"
 	"fmt"
 	"math/rand"
+	"os"
+	"crypto/md5"
+	"io"
+	"strings"
+	"background/newmovie/config"
 )
 
 /*
@@ -177,6 +182,14 @@ func LoadUpgrade(version *model.Version, db *gorm.DB) (*apimodel.AppConfigUpgrad
 	apiUpgrade.CheckUpgrade = up.CheckUpgrade
 	apiUpgrade.UpgradeTip = up.UpgradeTip
 	apiUpgrade.UpgradeUrl = up.UpgradeUrl
+
+	fileName := strings.Replace(apiUpgrade.UpgradeUrl,"http://www.ezhantao.com:16882/res/",config.GetStorageRoot(),-1)
+	file, err := os.Open(fileName)
+	if err == nil {
+		md5h := md5.New()
+		io.Copy(md5h, file)
+		apiUpgrade.Md5Value = fmt.Sprintf("%x", md5h.Sum([]byte(""))) //md5
+	}
 
 	return apiUpgrade, nil
 
