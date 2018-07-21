@@ -34,6 +34,7 @@ func GuessListHandler(c *gin.Context) {
 	areaTitle := ""
 	logger.Debug(len(service.AREA))
 	for _,area := range service.AREA{
+		logger.Debug(stream.Title,"|",area)
 		if strings.Contains(stream.Title,area){
 			areaTitle = area
 			break
