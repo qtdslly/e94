@@ -31,10 +31,13 @@ func UserStreamAddHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
+	logger.Debug("installation_id:",installationId)
 	var userStream model.UserStream
 	userStream.Title = p.Title
 	userStream.Url = p.Url
 	userStream.InstallationId = installationId
+	logger.Debug("userStream.installation_id:",userStream.InstallationId)
+
 	if err = db.Where("installation_id = ? and url = ?",userStream.InstallationId,userStream.Url).First(&userStream).Error ; err ==nil{
 		c.JSON(http.StatusOK, gin.H{"err_code": constant.PlayurlExists, "err_msg": constant.TranslateErrCode(constant.PlayurlExists)})
 	}
