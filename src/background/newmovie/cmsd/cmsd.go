@@ -39,7 +39,7 @@ func main(){
 	}
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
-	area := flag.String("conf", "../config/area.data", "area file")
+	area := flag.String("area", "../config/area.data", "area file")
 
 	flag.Parse()
 
