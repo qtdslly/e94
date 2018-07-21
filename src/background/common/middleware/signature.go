@@ -208,6 +208,11 @@ func ParseParam(c *gin.Context) (map[string]interface{}, error) {
 	params["app_key"] = c.GetHeader("app_key")
 	params["app_version"] = c.GetHeader("app_version")
 	params["installation_id"] = c.GetHeader("installation_id")
+
+	logger.Debug("app_key:",params["app_key"])
+	logger.Debug("app_version:",params["app_version"])
+	logger.Debug("installation_id:",params["installation_id"])
+
 	if ctype := c.Request.Header.Get("Content-Type"); len(ctype) > 0 && strings.Contains(ctype, "application/json") {
 		resp, _ := ioutil.ReadAll(c.Request.Body)
 		buff := util.BuffReadWriter{}
