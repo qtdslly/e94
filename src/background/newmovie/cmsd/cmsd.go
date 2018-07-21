@@ -39,7 +39,6 @@ func main(){
 	}
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
-	area := flag.String("area", "../config/area.data", "area file")
 
 	flag.Parse()
 
@@ -82,7 +81,7 @@ func main(){
 
 	service.InitCache(cacheRedisAddr, cacheRedisPwd)
 
-	service.SetArea(*area)
+	service.SetArea(config.GetAreaData())
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())

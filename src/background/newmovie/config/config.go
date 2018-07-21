@@ -19,6 +19,7 @@ type config struct {
 	TmplRoot      string `json:"tmpl_root"`
 	StaticRoot    string `json:"static_root"`
 	CmsRoot       string `json:"cms_root"`
+	AreaData      string `json:"area_data"`
 
 }
 
@@ -36,6 +37,7 @@ func init() {
 	c.CmsRoot = "/root/Git/e94/src/background/newmovie/"
 	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
 	c.StaticRoot = "/root/data/storage/"
+	c.AreaData = "/root/bin/movie/config/area.data"
 }
 
 func LoadConfig(path string) error {
@@ -104,4 +106,7 @@ func GetStaticRoot() string {
 
 func GetCmsRoot() string {
 	return c.CmsRoot
+}
+func GetAreaData() string {
+	return c.AreaData
 }
