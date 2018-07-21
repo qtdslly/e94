@@ -38,6 +38,10 @@ func GuessListHandler(c *gin.Context) {
 			break
 		}
 	}
+
+	if areaTitle == ""{
+		areaTitle = stream.Title
+	}
 	
 	var streams []model.Stream
 	if err := db.Limit(6).Where("on_line = 1 and title like ?","%" + areaTitle + "%").Find(&streams).Error ; err != nil{

@@ -10,8 +10,8 @@ import (
 )
 var AREA []string
 
-func SetArea(){
-	f, err := os.Open("../config/area.data")
+func SetArea(file string){
+	f, err := os.Open(file)
 	if err != nil {
 		logger.Error(err)
 	}

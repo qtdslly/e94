@@ -39,6 +39,8 @@ func main(){
 	}
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
+	area := flag.String("conf", "../config/area.data", "area file")
+
 	flag.Parse()
 
 	err := config.LoadConfig(*configPath)
@@ -80,7 +82,7 @@ func main(){
 
 	service.InitCache(cacheRedisAddr, cacheRedisPwd)
 
-	service.SetArea()
+	service.SetArea(*area)
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
