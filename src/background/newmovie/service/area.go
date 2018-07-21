@@ -37,7 +37,9 @@ func SetArea(file string){
 		area = strings.Replace(area,"后旗","",-1)
 		area = strings.Replace(area,"旗","",-1)
 		area = strings.Replace(area,"州","",-1)
-
+		if area == ""{
+			continue
+		}
 		AREA = append(AREA,area)
 	}
 }
