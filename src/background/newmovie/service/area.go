@@ -16,8 +16,7 @@ func SetArea(file string){
 		logger.Error(err)
 	}
 	defer f.Close()
-
-
+	
 	rd := bufio.NewReader(f)
 	for {
 		line, err := rd.ReadString('\n')

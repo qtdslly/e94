@@ -32,19 +32,15 @@ func GuessListHandler(c *gin.Context) {
 	}
 
 	areaTitle := ""
-	logger.Debug(len(service.AREA))
 	for _,area := range service.AREA{
-		logger.Debug(stream.Title,"|",area)
 		if strings.Contains(stream.Title,area){
 			areaTitle = area
 			break
 		}
 	}
-	logger.Debug(areaTitle)
 	if areaTitle == ""{
 		areaTitle = stream.Title
 	}
-	logger.Debug(areaTitle)
 
 	var streams []model.Stream
 	if err := db.Limit(6).Where("id <> ? and on_line = 1 and title like ?",p.StreamId,"%" + areaTitle + "%").Find(&streams).Error ; err != nil{
