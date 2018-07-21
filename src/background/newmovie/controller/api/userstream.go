@@ -133,6 +133,7 @@ func UserStreamListHandler(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
+	logger.Debug("installation_id:",installationId)
 
 	var userStreams []model.UserStream
 	if err := db.Offset(p.Offset).Limit(p.Limit).Where("installation_id = ?", installationId).Find(&userStreams).Error; err != nil {
