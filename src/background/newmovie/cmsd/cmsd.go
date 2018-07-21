@@ -80,6 +80,7 @@ func main(){
 
 	service.InitCache(cacheRedisAddr, cacheRedisPwd)
 
+	service.SetArea()
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
@@ -105,6 +106,8 @@ func main(){
 
 		cms.POST("/digg", aapi.DiggHandler)
 		cms.GET("/digglist", aapi.DiggListHandler)
+
+		cms.GET("/guess", aapi.GuessListHandler)
 
 		cms.POST("/upload", aapi.FileUpload)
 

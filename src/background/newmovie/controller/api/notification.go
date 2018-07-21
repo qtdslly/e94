@@ -22,6 +22,7 @@ func NotifcationHandler(c *gin.Context) {
 
 	if err = c.Bind(&p); err != nil {
 		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
