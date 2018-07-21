@@ -117,7 +117,6 @@ func UserStreamDeleteHandler(c *gin.Context) {
 func UserStreamListHandler(c *gin.Context) {
 
 	type param struct {
-		InstallationId    uint64   `form:"installation_id"`
 		Limit             int      `form:"limit" binding:"required"`
 		Offset            int      `form:"offset" binding:"exists"`
 	}
@@ -130,9 +129,10 @@ func UserStreamListHandler(c *gin.Context) {
 	}
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var userStreams []model.UserStream
-	if err := db.Offset(p.Offset).Limit(p.Limit).Where("installation_id = ?", p.InstallationId).Find(&userStreams).Error; err != nil {
+	if err := db.Offset(p.Offset).Limit(p.Limit).Where("installation_id = ?", installationId).Find(&userStreams).Error; err != nil {
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
@@ -141,7 +141,7 @@ func UserStreamListHandler(c *gin.Context) {
 	}
 
 	var count uint32
-	if err := db.Model(&model.UserStream{}).Where("installation_id = ?", p.InstallationId).Count(&count).Error; err != nil {
+	if err := db.Model(&model.UserStream{}).Where("installation_id = ?", installationId).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
