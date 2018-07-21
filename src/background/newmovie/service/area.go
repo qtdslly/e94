@@ -26,8 +26,6 @@ func SetArea(file string){
 		}
 		line = strings.Replace(line, "\n", "", -1)
 
-		logger.Debug(line)
-
 		fields := strings.Split(line, "|")
 		area := fields[1]
 		area = strings.Replace(area,"区","",-1)
