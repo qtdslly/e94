@@ -40,7 +40,7 @@ func GuessListHandler(c *gin.Context) {
 	}
 	
 	var streams []model.Stream
-	if err := db.Limit(6).Where("title like %s","%" + areaTitle + "%").Find(&streams).Error ; err != nil{
+	if err := db.Limit(6).Where("on_line = 1 and title like ?","%" + areaTitle + "%").Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -48,7 +48,7 @@ func GuessListHandler(c *gin.Context) {
 	
 	var streams1 []model.Stream
 	if len(streams) < 6{
-		if err := db.Limit(6 - len(streams)).Where("category = ?",stream.Category).Find(&streams1).Error ; err != nil{
+		if err := db.Limit(6 - len(streams)).Where("on_line = 1 and category = ?",stream.Category).Find(&streams1).Error ; err != nil{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
