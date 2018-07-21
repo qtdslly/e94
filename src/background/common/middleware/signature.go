@@ -219,6 +219,9 @@ func ParseParam(c *gin.Context) (map[string]interface{}, error) {
 		buff.Write(resp)
 		c.Request.Body = &buff
 		if err = json.Unmarshal(resp, &params); err == nil {
+			params["app_key"] = c.GetHeader("app_key")
+			params["app_version"] = c.GetHeader("app_version")
+			params["installation_id"] = c.GetHeader("installation_id")
 			return params, err
 		} else {
 			logger.Error(err)
