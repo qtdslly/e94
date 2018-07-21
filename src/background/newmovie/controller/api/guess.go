@@ -51,7 +51,7 @@ func GuessListHandler(c *gin.Context) {
 	
 	var streams1 []model.Stream
 	if len(streams) < 6{
-		if err := db.Limit(6 - len(streams)).Where("id <> ? and on_line = 1 and category = ?",p.StreamId,stream.Category).Find(&streams1).Error ; err != nil{
+		if err := db.Limit(6).Where("id <> ? and on_line = 1 and category = ?",p.StreamId,stream.Category).Find(&streams1).Error ; err != nil{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
@@ -59,7 +59,16 @@ func GuessListHandler(c *gin.Context) {
 	}
 	
 	for _ , s := range streams1{
-		streams = append(streams,s)
+		found := false
+		for _,ss := range streams{
+			if ss.Id == s.Id{
+				found = true
+				break
+			}
+		}
+		if !found{
+			streams = append(streams,s)
+		}
 	}
 
 	type ApiStream struct {
