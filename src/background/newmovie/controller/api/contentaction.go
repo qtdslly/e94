@@ -52,7 +52,7 @@ func DiggListHandler(c *gin.Context) {
 		apiDigg.Id = content.Id
 		apiDigg.StreamId = content.ContentId
 		apiDigg.Title = content.Title
-		apiDigg.Thumb = "http://www.ezhantao.com:16882" + content.Thumb
+		apiDigg.Thumb = content.Thumb
 		apiDiggs = append(apiDiggs,&apiDigg)
 	}
 
