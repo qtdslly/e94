@@ -13,7 +13,7 @@ import (
 
 func GuessListHandler(c *gin.Context) {
 	type param struct {
-		StreamId uint8  `form:"stream_id" binding:"required"`
+		StreamId uint8  `form:"id" binding:"required"`
 	}
 
 	var p param
