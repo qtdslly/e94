@@ -18,7 +18,7 @@ func main(){
 		return
 	}
 
-	url := "http://www.miguvideo.com/wap/resource/pc/detail/miguplay.jsp?cid=615904669"
+	url := "http://www.miguvideo.com/wap/resource/pc/detail/miguplay.jsp?cid=608653476"
 	logger.Debug(url)
 	realUrl := script.GetMiguRealPlayUrl(constant.MediaTypeEpisode,url)
 	fmt.Println(realUrl)
