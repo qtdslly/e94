@@ -27,6 +27,7 @@ type Video struct {
 	Country        string           `gorm:"size:20" json:"country"`
 	Directors      string           `gorm:"size:255" json:"directors"`
 	Actors         string           `gorm:"size:255" json:"actors"`
+	Writer         string           `gorm:"size:255" json:"writer"`
 	Tags           string           `gorm:"size:255" json:"tags"`
 
 	CreatedAt      time.Time        `json:"created_at"`       // 创建时间，utc格式

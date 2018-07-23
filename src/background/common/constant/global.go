@@ -114,6 +114,7 @@ const (
 	ContentProviderPear     = 7
 	ContentProviderKuai     = 8
 	ContentProviderMigu     = 9
+	ContentProviderHanju    = 10
 
 	ContentProviderCntv     = 30
 	ContentProviderHuashu   = 31

@@ -71,15 +71,17 @@ func GetIqiyiRealPlayUrl(url string)(string){
 
 			resp, err := http.DefaultClient.Do(requ)
 			if err != nil {
-				logger.Debug("err")
+				logger.Error(err)
 				return ""
 			}
 
 			recv,err := ioutil.ReadAll(resp.Body)
 			if err != nil{
 				logger.Error(err)
+				return ""
 			}
 			reqParam.HtmlData = string(recv)
+			//logger.Debug(reqParam.HtmlData)
 		}
 
 		b, _ := json.Marshal(reqParam)
@@ -92,7 +94,7 @@ func GetIqiyiRealPlayUrl(url string)(string){
 			return ""
 		}
 		result = data.String()
-
+		//logger.Debug(result)
 		if err := json.Unmarshal([]byte(result), &resParam); err != nil {
 			logger.Error(err)
 			return ""
@@ -121,7 +123,6 @@ func GetiqiyiJsCode()(string){
 		"\n" +
 		"    json_data = JSON.parse(request);\n" +
 		"    var referer = json_data.url;\n" +
-		"\n" +
 		"    var agent = \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\";\n" +
 		"    fetch_url = {method: \"get\", header: {user_agent: agent,referer: referer}, body: \"\", url: \"\"};\n" +
 		"    result = {done: false, fetch_url: fetch_url, urls: [], call_back_data: {}};\n" +
@@ -137,53 +138,20 @@ func GetiqiyiJsCode()(string){
 		"        result.done = false;\n" +
 		"    }else if(json_data.times === 2){\n" +
 		"        try{\n" +
-		"            var re = \"tvId:[0-9]+\";\n" +
-		"            var data = json_data.html_data;\n" +
-		"            var tvid = data.match(re)[0];\n" +
-		"            if (tvid !== null && typeof(tvid) !== \"undefined\" && tvid !== \"\") {\n" +
-		"                tvid = tvid.split(\":\")[1];\n" +
-		"            }\n" +
-		"            if (tvid === null && typeof(tvid) === \"undefined\" && tvid === \"\") {\n" +
-		"                re = \"data-player-tvid=\\\"[0-9]+\\\"\";\n" +
-		"                tvid = data.match(re)[0];\n" +
-		"                if (tvid !== null && typeof(tvid) !== \"undefined\" && tvid !== \"\") {\n" +
-		"                    tvid = tvid.split(\"=\")[1];\n" +
-		"                    tvid = tvid.substr(1,tvid.length - 2);\n" +
-		"                }\n" +
-		"            }\n" +
 		"\n" +
-		"            var video_id;\n" +
-		"            if(json_data.html_data.indexOf(\"data-player-videoid=\") > -1){\n" +
-		"                re = \"data-player-videoid=\\\"[0-9a-zA-Z]+\\\"\";\n" +
-		"                video_id = data.match(re);\n" +
-		"\n" +
-		"                if (video_id !== null && typeof(video_id) !== \"undefined\" && video_id !== \"\") {\n" +
-		"                    video_id = video_id[0];\n" +
-		"                    video_id = video_id.split(\"=\")[1];\n" +
-		"                }\n" +
-		"            }else if(json_data.html_data.indexOf(\"data-videolist-vid=\") > -1){\n" +
-		"                re = 'data-player-videoid=\"([^\"]+)\"';\n" +
-		"                video_id = data.match(re)[0];\n" +
-		"\n" +
-		"                if (video_id !== null && typeof(video_id) !== \"undefined\" && video_id !== \"\") {\n" +
-		"                    video_id = video_id.split(\"=\")[1];\n" +
-		"                }\n" +
-		"            }else{\n" +
-		"                fetch_url.url = \"\";\n" +
-		"                result.done = true;\n" +
-		"                result.urls.splice(0,result.urls.length);\n" +
-		"                return JSON.stringify(result);\n" +
-		"            }\n" +
-		"\n" +
-		"            video_id = video_id.replace(\"\\\"\",\"\");\n" +
-		"            video_id = video_id.replace(\"\\\"\",\"\");\n" +
+		"            var start = json_data.html_data.indexOf(\":page-info=\");\n" +
+		"            var end = json_data.html_data.indexOf(\":video-info=\");\n" +
+		"            var info = json_data.html_data.slice(start+12,end-2);\n" +
+		"            var video_data = JSON.parse(info);\n" +
+		"            var tvid = video_data.tvId;\n" +
+		"            var vid = video_data.vid;\n" +
 		"            var src = \"76f90cbd92f94a2e925d83e8ccd22cb7\";\n" +
 		"            var key = \"d5fb4bd9d50c4be6948c97edd7254b0e\";\n" +
 		"            var t1 = parseInt(new Date().getTime() / 1000);\n" +
-		"            data = t1 + key + video_id ;\n" +
+		"            var data = t1 + key + vid ;\n" +
 		"            var sc = md5(data);\n" +
 		"\n" +
-		"            fetch_url.url = \"http://cache.m.iqiyi.com/tmts/\" + tvid + \"/\" + video_id + \"/?t=\" + t1 + \"&sc=\" + sc + \"&src=\" + src;\n" +
+		"            fetch_url.url = \"http://cache.m.iqiyi.com/tmts/\" + tvid + \"/\" + vid + \"/?t=\" + t1 + \"&sc=\" + sc + \"&src=\" + src;\n" +
 		"            result.done = false;\n" +
 		"        }catch (e){\n" +
 		"            result.error = e.toString();\n" +
@@ -232,5 +200,6 @@ func GetiqiyiJsCode()(string){
 		"    return JSON.stringify(result);\n" +
 		"}\n" +
 		"\n"
+
 	return jsCode
 }
