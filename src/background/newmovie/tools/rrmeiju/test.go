@@ -19,6 +19,5 @@ func main(){
 	url := "http://www.rrmeiju.com/bofang/475/1/1.html"
 	logger.Debug(url)
 	realUrl := script.GetRRmeijuRealPlayUrl(url)
-	logger.Debug("aaaaaaaaaaaaaaaaaaaaaaa")
 	logger.Debug(realUrl)
 }

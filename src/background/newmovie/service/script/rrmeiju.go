@@ -43,7 +43,6 @@ func GetRRmeijuRealPlayUrl(apiurl string)(string){
 	u, err := url.Parse(apiUrl1.String())
 
 	url1 := u.Host + u.Path
-	logger.Debug(url1)
 	requ, err := http.NewRequest("GET", url1,nil)
 
 	resp, err := http.DefaultClient.Do(requ)
@@ -62,11 +61,8 @@ func GetRRmeijuRealPlayUrl(apiurl string)(string){
 	redictUrl := GetRRmeijuValue("var redirecturl",data)
 	mainStr := GetRRmeijuValue("var main",data)
 	//mp4 := GetRRmeijuValue("mp4",data)
-	logger.Debug(redictUrl)
-	logger.Debug(mainStr)
 	realUrl := redictUrl + mainStr
 
-	logger.Debug(realUrl)
 	return realUrl
 }
 
