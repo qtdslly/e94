@@ -2,20 +2,20 @@ package main
 
 import (
 	"background/newmovie/config"
-	"background/common/util"
 	"background/common/logger"
-	"strings"
 	"fmt"
 	"github.com/tidwall/gjson"
 
 	"background/newmovie/model"
 	_ "github.com/go-sql-driver/mysql"
+	"background/common/constant"
+	"background/common/util"
 	"net/http"
 	"io/ioutil"
 	"github.com/jinzhu/gorm"
 	"flag"
-	"background/common/constant"
 	"strconv"
+	"strings"
 )
 
 func main(){
@@ -36,19 +36,22 @@ func main(){
 	db.LogMode(true)
 
 	model.InitModel(db)
+
+
 	i := 1
 	for {
-		url := "http://www.miguvideo.com/wap/resource/pc/data/filmLibraryData.jsp?type=1&searchType=1000&searchContentType=&searchYear=&searchArea=&searchLimit=1002601&pageSize=25&currentPage=" + fmt.Sprint(i) + "&order=2&searchShape=%E5%85%A8%E7%89%87"
-		GetMiguMovie(url,db)
+		//url := "http://www.miguvideo.com/wap/resource/pc/data/filmLibraryData.jsp?type=1&searchType=1000&searchContentType=&searchYear=&searchArea=&searchLimit=1002601&pageSize=25&currentPage=" + fmt.Sprint(i) + "&order=2&searchShape=%E5%85%A8%E7%89%87"
+		url := "http://www.miguvideo.com/wap/resource/pc/data/filmLibraryData.jsp?type=1&searchType=1001&searchContentType=&searchYear=&searchArea=&searchLimit=1002601%2C1002581&pageSize=25&currentPage=" + fmt.Sprint(i) + "&order=2&searchShape=%E8%BF%9E%E8%BD%BD"
+		GetMiguEpisode(url,db)
 		i = i + 1
-		if i == 632{
+		if i == 2{
 			break
 		}
 	}
 }
 
 
-func GetMiguMovie(url string,db *gorm.DB){
+func GetMiguEpisode(url string,db *gorm.DB){
 	requ, err := http.NewRequest("GET", url,nil)
 	requ.Header.Add("Host", "www.miguvideo.com")
 	requ.Header.Add("Referer", "http://www.miguvideo.com/wap/resource/pc/list/filmLibrary.jsp?typeName=%E7%94%B5%E5%BD%B1")
@@ -136,6 +139,9 @@ func GetMiguMovie(url string,db *gorm.DB){
 					return
 				}
 			}
+
+			apiUrl := "http://www.miguvideo.com/wap/resource/pc/detail/miguplay.jsp?cid=" + v.Get("cententId").String()
+
 
 			var episode model.Episode
 			episode.Title = video.Title
