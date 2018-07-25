@@ -63,6 +63,7 @@ func main(){
 				logger.Error(err)
 				return
 			}
+			continue
 		}
 
 		if strings.Contains(stream.Title,"电影") || strings.Contains(stream.Title,"影视") {
@@ -70,6 +71,10 @@ func main(){
 				logger.Error(err)
 				return
 			}
+		}
+
+		if stream.Category == "体育" || stream.Category == "电影"{
+			continue
 		}
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
