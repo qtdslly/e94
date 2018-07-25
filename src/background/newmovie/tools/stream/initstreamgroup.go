@@ -77,6 +77,16 @@ func main(){
 			continue
 		}
 
+		if stream.Category == "墨西哥" || stream.Category == "捷克" ||
+			stream.Category == "希腊" || stream.Category == "意大利" ||
+			stream.Category == "马来西亚" || stream.Category == "加拿大" ||
+			stream.Category == "澳大利亚" || stream.Category == "印度" ||
+			stream.Category == "日本" || stream.Category == "卡塔尔" ||
+			stream.Category == "英国" || stream.Category == "新西兰" ||
+			stream.Category == "印度尼西亚"{
+			stream.Category = "其他外国频道"
+		}
+
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
 			logger.Debug("NOT BIND : ",stream.Category,"|",stream.Id,"|" ,stream.Title)
