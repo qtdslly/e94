@@ -48,6 +48,7 @@ func main(){
 			group.Name = strings.Replace(group.Name,"@","QTDSLLY",-1)
 		}
 		groupMap[group.Name] = group.Id
+		logger.Debug(group.Name)
 	}
 
 	var streams []model.Stream
