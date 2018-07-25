@@ -73,7 +73,7 @@ func main(){
 			}
 		}
 
-		if stream.Category == "体育" || stream.Category == "电影"{
+		if stream.Category == "体育" || stream.Category == "电影" || stream.Category == "明星影视"{
 			continue
 		}
 
