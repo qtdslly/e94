@@ -1,4 +1,58 @@
+http://live.dltv.cn/8cuL6wa/w3685u0.m3u8
+国家地理,http://adtv.ercdn.net/adnatgeo/adnatgeo_720p.m3u8
+ELEVEN SPORTS,http://61.58.60.230:9000/live/102.m3u8
+韩国美女,http://edge2.everyon.tv/etv2sb/phd1377/playlist.m3u8
+韩国综艺,http://live.chosun.gscdn.com/live/_definst_/tvchosun1.stream/chunklist.m3u8
+旺台湾，http://61.58.60.230:9000/live/88.m3u8
+大爱，http://61.58.60.230:9000/live/10.m3u8
+韩国电视，rtmp://live.chosun.gscdn.com/live/tvchosun1.stream
+爱尔达体育1台，rtmp://kv3.tp33.net/sat/md011
+博斯网球,rtmp://kv3.tp33.net/sat/md021
+博斯运动，rtmp://kv3.tp33.net/sat/md031
+爱尔达体育2台,rtmp://kv3.tp33.net/sat/md041
+彩球台，rtmp://kv3.tp33.net/sat/hk011
+香港体育，rtmp://kv3.tp33.net/sat/hk021
+香港18台，rtmp://kv3.tp33.net/sat/hk041
+東森財經新聞, rtmp://kv3.tp33.net/sat/tv571
 
+./addstream -t '大爱电视台' -u 'http://61.58.60.230:9000/live/10.m3u8' -c '台湾'
+./addstream -t '旺台湾' -u 'http://61.58.60.230:9000/live/88.m3u8' -c '台湾'
+./addstream -t '香港18台' -u 'rtmp://kv3.tp33.net/sat/hk041' -c '香港'
+./addstream -t '彩球台' -u 'rtmp://kv3.tp33.net/sat/hk011' -c '香港'
+./addstream -t '香港体育' -u 'rtmp://kv3.tp33.net/sat/hk021' -c '香港'
+./addstream -t '博斯运动' -u 'rtmp://kv3.tp33.net/sat/md031' -c '台湾'
+./addstream -t '博斯运动2' -u 'rtmp://kv3.tp33.net/sat/md051' -c '台湾'
+./addstream -t '博斯网球' -u 'rtmp://kv3.tp33.net/sat/md021' -c '台湾'
+./addstream -t '爱尔达体育1台' -u 'rtmp://kv3.tp33.net/sat/md011' -c '台湾'
+./addstream -t '爱尔达体育2台' -u 'rtmp://kv3.tp33.net/sat/md041' -c '台湾'
+
+
+
+./addstream -t '靖天映画台' -u 'http://61.58.60.230:9000/live/244.m3u8' -c '台湾'
+./addstream -t '靖天国际台' -u 'http://61.58.60.230:9000/live/205.m3u8' -c '台湾'
+./addstream -t '靖天卡通台' -u 'http://61.58.60.230:9000/live/207.m3u8' -c '台湾'
+./addstream -t '靖洋卡通台' -u 'http://61.58.60.230:9000/live/206.m3u8' -c '台湾'
+./addstream -t '靖洋戲劇台' -u 'http://61.58.60.230:9000/live/203.m3u8' -c '台湾'
+./addstream -t '靖天育乐台' -u 'http://61.58.60.230:9000/live/204.m3u8' -c '台湾'
+./addstream -t '靖天资讯台' -u 'http://61.58.60.230:9000/live/202.m3u8' -c '台湾'
+
+
+
+SONY电影，http://mhms5.airtel.tv/PLTV/88888888/224/3221226280/03.m3u8
+TLC,http://mhms5.airtel.tv/PLTV/88888888/224/3221226279/03.m3u8
+SONY影院，http://mhms5.airtel.tv/PLTV/88888888/224/3221226446/03.m3u8
+动物星球,http://mhms5.airtel.tv/PLTV/88888888/224/3221226201/03.m3u8
+AXN,http://mhms9.airtel.tv/wh7f454c46tw4163224253_611767333/PLTV/88888888/224/3221226443/index.m3u8
+Discovery,http://mhms5.airtel.tv/PLTV/88888888/224/3221226205/03.m3u8
+SONY HD,http://mhms5.airtel.tv/PLTV/88888888/224/3221225875/03.m3u8
+
+一夜源：翡翠台，http://pullhls6.inke.cn/live/1532257744100047/playlist.m3u8
+
+
+周星驰，http://aldirect.hls.huya.com/huyalive/94525224-2460685313-10568562945082523648-2789274524-10057-A-0-1_1200.m3u8
+林正英，http://aldirect.hls.huya.com/huyalive/94525224-2460686034-10568566041753944064-2789274542-10057-A-0-1_1200.m3u8
+周润发，http://aldirect.hls.huya.com/huyalive/94525224-2460685774-10568564925062447104-2789253840-10057-A-0-1_1200.m3u8
+科幻大片，http://tx.hls.huya.com/huyalive/30765679-2504742278-10757786168918540288-3049003128-10057-A-0-1_1200.m3u8
 捷克人
 Barrandov FAMILY,http://82.202.90.242:9981/stream/channelid/1161064108
 Barrandov Plus, http://82.202.90.242:9981/stream/channelid/795576136

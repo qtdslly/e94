@@ -121,7 +121,7 @@ func GetStreamRation(url string)(uint32,uint32,int64,error){
 		}else{
 			return 0,0,0,errors.New("获取视频信息失败!!!")
 		}
-	case <-time.After(time.Second * 10):
+	case <-time.After(time.Second * 15):
 		return 0,0,0,errors.New("获取视频信息超过10秒，超时!!!")
 	}
 

@@ -129,6 +129,13 @@ func main(){
 			}
 		}
 
+		if strings.Contains(stream.Title, "黄河电视"){
+			if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupMap["甘肃"]).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
+		}
+
 	}
 }
 
