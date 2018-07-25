@@ -45,7 +45,7 @@ func main(){
 
 	for _,group := range resourceGroups{
 		if strings.Contains(group.Name,"@"){
-			group.Name = strings.Replace(group.Name,"@","QTDSLLY","-1")
+			group.Name = strings.Replace(group.Name,"@","QTDSLLY",-1)
 		}
 		groupMap[group.Name] = group.Id
 	}
@@ -58,7 +58,7 @@ func main(){
 
 	for _,stream := range streams{
 		if strings.Contains(stream.Category,"@"){
-			stream.Category = strings.Replace(stream.Category,"@","QTDSLLY","-1")
+			stream.Category = strings.Replace(stream.Category,"@","QTDSLLY",-1)
 		}
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
