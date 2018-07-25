@@ -43,6 +43,9 @@ func SetArea(file string){
 		if fields[1] == "海州区"{
 			area = "海州"
 		}
+		if fields[1] == "台州市"{
+			area = "台州"
+		}
 		if area == ""{
 			continue
 		}
