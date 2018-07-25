@@ -77,6 +77,9 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			return
 		}
 
+		if strings.Contains(videoType,"年"){
+			videoType = strings.Replace(videoType,"年","",-1)
+		}
 		mDoc := doc.Find(".vothercon").Eq(0).Text()
 		mDoc,_ = uutil.DecodeToGBK(mDoc)
 		ss := strings.Split(mDoc,"[")
@@ -155,6 +158,11 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		video.Description = description
 		video.Actors = actors
 		video.Writer = writer
+		video.Directors = directors
+		video.Category = "韩剧"
+		video.Language = "韩语"
+		video.Country = "韩国"
+
 		video.ThumbY = thumb_y
 		video.Pinyin = util.TitleToPinyin(video.Title)
 		video.OnLine = constant.MediaStatusOnLine
@@ -164,6 +172,11 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		num,_ = strconv.Atoi(totalEpisode)
 		total := uint32(num)
 		video.TotalEpisode = total
+
+		num,_ = strconv.Atoi(video)
+		year := uint32(num)
+		video.Year = year
+		video.Tags = "韩剧"
 
 		if err := db.Where("title = ? and category = '韩剧'",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
 			db.Create(&video)
