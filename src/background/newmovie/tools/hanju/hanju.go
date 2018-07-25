@@ -59,6 +59,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 	var directors ,writer,totalEpisode,description string
 	movieDoc.Each(func(i int, s *goquery.Selection) {
 
+
 		apiUrl1,_ := s.Find("a").Eq(0).Attr("href")
 		if !strings.Contains(apiUrl1,"http"){
 			apiUrl1 = "http://www.hanju.cc" + apiUrl1
@@ -69,6 +70,11 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			logger.Debug(apiUrl1)
 			logger.Error(err)
 			return
+		}
+
+		videoType := document.Find("#sdlist").Find(".sdlist").Eq(0).Find(".pleft").Eq(0).Find("a").Eq(2).Text()
+		if strings.Contains(videoType,"电影") || strings.Contains(videoType,"综艺"){
+			return 
 		}
 
 		mDoc := doc.Find(".vothercon").Eq(0).Text()
