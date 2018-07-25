@@ -8,6 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 
 	"flag"
+	"strings"
 )
 
 func main(){
@@ -43,6 +44,9 @@ func main(){
 	groupMap := make(map[string]uint32)
 
 	for _,group := range resourceGroups{
+		if strings.Contains(group.Name,"@"){
+			group.Name = strings.Replace(group.Name,"@","QTDSLLY","-1")
+		}
 		groupMap[group.Name] = group.Id
 	}
 
@@ -53,6 +57,9 @@ func main(){
 	}
 
 	for _,stream := range streams{
+		if strings.Contains(stream.Category,"@"){
+			stream.Category = strings.Replace(stream.Category,"@","QTDSLLY","-1")
+		}
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
 			logger.Debug("NOT BIND : ",stream.Id,"|" ,stream.Title)
