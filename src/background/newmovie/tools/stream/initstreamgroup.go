@@ -62,7 +62,7 @@ func main(){
 		}
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
-			logger.Debug("NOT BIND : ",stream.Id,"|" ,stream.Title)
+			logger.Debug("NOT BIND : ",stream.Category,"|",stream.Id,"|" ,stream.Title)
 			continue
 		}
 		if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupId).Error ; err != nil{
