@@ -93,7 +93,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 				writer = text
 				writer = strings.Replace(writer,"编 剧]: ","",-1)
 				if strings.Contains(writer,"（"){
-					writer = directors[:strings.Index(writer,"（")]
+					writer = writer[:strings.Index(writer,"（")]
 				}
 			}
 
