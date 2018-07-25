@@ -74,7 +74,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 
 		videoType := document.Find("#sdlist").Find(".sdlist").Eq(0).Find(".pleft").Eq(0).Find("a").Eq(2).Text()
 		if strings.Contains(videoType,"电影") || strings.Contains(videoType,"综艺"){
-			return 
+			return
 		}
 
 		mDoc := doc.Find(".vothercon").Eq(0).Text()
@@ -163,7 +163,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		video.CurrentEpisode = current
 		num,_ = strconv.Atoi(totalEpisode)
 		total := uint32(num)
-		video.CurrentEpisode = total
+		video.TotalEpisode = total
 
 		if err := db.Where("title = ? and category = '韩剧'",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
 			db.Create(&video)
