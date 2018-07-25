@@ -88,6 +88,8 @@ func main(){
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
 	cms := r.Group("cms")
+	cms.POST("/upload", ccms.FileUpload)
+
 	cms.Use(dbMiddleware,appVerifyMiddleware)
 	{
 		cms.POST("/install",aapi.InstallationHandler)
@@ -131,8 +133,6 @@ func main(){
 	{
 		r.GET("/login", ccms.AdminLoginHandler)
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
-
-		cms.POST("/upload", ccms.FileUpload)
 
 		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
