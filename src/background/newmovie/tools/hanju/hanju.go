@@ -173,7 +173,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		total := uint32(num)
 		video.TotalEpisode = total
 
-		num,_ = strconv.Atoi(video)
+		num,_ = strconv.Atoi(videoType)
 		year := uint32(num)
 		video.Year = year
 		video.Tags = "韩剧"
