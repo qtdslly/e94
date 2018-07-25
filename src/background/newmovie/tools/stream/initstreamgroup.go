@@ -79,38 +79,44 @@ func main(){
 
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
-			if stream.Category == "卫视"{
-				stream.Title = strings.Replace(stream.Title,"卫视","",-1)
-				stream.Title = strings.Replace(stream.Title,"藏语","",-1)
-
-				if stream.Title == "农林"{
-					stream.Title = "甘肃"
-				}else if stream.Title == "南方"{
-					stream.Title = "广东"
-				}else if stream.Title == "东方"{
-					stream.Title = "上海"
-				}else if stream.Title == "东南" ||stream.Title == "厦门" || stream.Title == "海峡"{
-					stream.Title = "福建"
-				}else if stream.Title == "兵团"{
-					stream.Title = "新疆"
-				}else if stream.Title == "安多"{
-					stream.Title = "青海"
-				}else if stream.Title == "延边"{
-					stream.Title = "吉林"
-				}else if stream.Title == "旅游"{
-					stream.Title = "海南"
-				}else if stream.Title == "山东教育"{
-					stream.Title = "山东"
-				}else if stream.Title == "康巴"{
-					stream.Title = "四川"
-				}
-			}
 			logger.Debug("NOT BIND : ",stream.Category,"|",stream.Id,"|" ,stream.Title)
 			continue
 		}
 		if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupId).Error ; err != nil{
 			logger.Error(err)
 			return
+		}
+
+		if stream.Category == "卫视"{
+			stream.Title = strings.Replace(stream.Title,"卫视","",-1)
+			stream.Title = strings.Replace(stream.Title,"藏语","",-1)
+
+			if stream.Title == "农林"{
+				stream.Title = "甘肃"
+			}else if stream.Title == "南方"{
+				stream.Title = "广东"
+			}else if stream.Title == "东方"{
+				stream.Title = "上海"
+			}else if stream.Title == "东南" ||stream.Title == "厦门" || stream.Title == "海峡"{
+				stream.Title = "福建"
+			}else if stream.Title == "兵团"{
+				stream.Title = "新疆"
+			}else if stream.Title == "安多"{
+				stream.Title = "青海"
+			}else if stream.Title == "延边"{
+				stream.Title = "吉林"
+			}else if stream.Title == "旅游"{
+				stream.Title = "海南"
+			}else if stream.Title == "山东教育"{
+				stream.Title = "山东"
+			}else if stream.Title == "康巴"{
+				stream.Title = "四川"
+			}
+
+			if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupMap[stream.Title]).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
 		}
 
 	}
