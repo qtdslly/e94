@@ -8,6 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 
 	"flag"
+	"strings"
 )
 
 func main(){
@@ -53,7 +54,23 @@ func main(){
 	}
 
 	for _,stream := range streams{
+		if strings.Contains(stream.Title,"体育") || strings.Contains(stream.Title,"运动") ||
+			strings.Contains(stream.Title,"足球") || strings.Contains(stream.Title,"篮球") ||
+			strings.Contains(stream.Title,"CCTV5") || strings.Contains(stream.Title,"乒羽") ||
+			strings.Contains(stream.Title,"垂钓") || strings.Contains(stream.Title,"钓鱼") ||
+			strings.Contains(stream.Title,"网球") || strings.Contains(stream.Title,"台球"){
+			if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupMap["体育"]).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
+		}
 
+		if strings.Contains(stream.Title,"电影") || strings.Contains(stream.Title,"影视") {
+			if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupMap["电影"]).Error ; err != nil{
+				logger.Error(err)
+				return
+			}
+		}
 		groupId, ok := groupMap[stream.Category]
 		if !ok{
 			logger.Debug("NOT BIND : ",stream.Category,"|",stream.Id,"|" ,stream.Title)
@@ -63,6 +80,7 @@ func main(){
 			logger.Error(err)
 			return
 		}
+
 	}
 }
 
