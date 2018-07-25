@@ -110,8 +110,6 @@ func main(){
 
 		cms.GET("/guess", aapi.GuessListHandler)
 
-		cms.POST("/upload", aapi.FileUpload)
-
 		cms.POST("/user/stream/add", aapi.UserStreamAddHandler)
 		cms.POST("/user/stream/update", aapi.UserStreamUpdateHandler)
 		cms.POST("/user/stream/delete", aapi.UserStreamDeleteHandler)
@@ -133,6 +131,8 @@ func main(){
 	{
 		r.GET("/login", ccms.AdminLoginHandler)
 		cms.POST("/admin/login", ccms.AdminLoginHandler)
+
+		cms.POST("/upload", ccms.FileUpload)
 
 		cms.POST("/video/save", ccms.MovieSaveHandler)
 		cms.POST("/script/save", ccms.ScriptSettingSaveHandler)
