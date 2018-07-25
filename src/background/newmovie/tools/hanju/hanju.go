@@ -84,7 +84,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			if strings.Contains(text,"导 演"){
 				directors = text
 				directors = strings.Replace(directors,"导 演]: ","",-1)
-				if strings.Index(directors,"（") > 0{
+				if strings.Contains(directors,"（") > 0{
 					directors = directors[:strings.Index(directors,"（")]
 				}
 			}
@@ -92,7 +92,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			if strings.Contains(text,"编 剧"){
 				writer = text
 				writer = strings.Replace(writer,"编 剧]: ","",-1)
-				if strings.Index(writer,"（") > 0{
+				if strings.Contains(writer,"（") > 0{
 					writer = directors[:strings.Index(writer,"（")]
 				}
 			}
