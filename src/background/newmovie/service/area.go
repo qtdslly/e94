@@ -31,6 +31,8 @@ func SetArea(file string){
 		if len(area) > 9{
 			area = strings.Replace(area,"县","",-1)
 		}
+		area = strings.Replace(area,"省","",-1)
+		area = strings.Replace(area,"特别行政区","",-1)
 		area = strings.Replace(area,"自治","",-1)
 		area = strings.Replace(area,"市","",-1)
 		area = strings.Replace(area,"前旗","",-1)
