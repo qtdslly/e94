@@ -7,6 +7,8 @@ import (
 	uutil "background/newmovie/util"
 
 	_ "github.com/go-sql-driver/mysql"
+	"strconv"
+	"strings"
 )
 
 func main(){
@@ -27,5 +29,10 @@ func GetHanJuInfo(url string){
 	videoType,_ = uutil.DecodeToGBK(videoType)
 
 	logger.Debug(videoType)
+	if strings.Contains(videoType,"年"){
+		videoType = strings.Replace(videoType,"年","",-1)
+	}
+	num,_ := strconv.Atoi(videoType)
+	logger.Debug(num)
 
 }

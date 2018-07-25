@@ -74,13 +74,16 @@ func GetHanJuInfo(url string,db *gorm.DB){
 
 		videoType := document.Find("#sdlist").Find(".sdlist").Eq(0).Find(".pleft").Eq(0).Find("a").Eq(2).Text()
 		videoType,_ = uutil.DecodeToGBK(videoType)
+
+		logger.Debug(videoType)
+		if strings.Contains(videoType,"年"){
+			videoType = strings.Replace(videoType,"年","",-1)
+		}
+
 		if strings.Contains(videoType,"电影") || strings.Contains(videoType,"综艺"){
 			return
 		}
 
-		if strings.Contains(videoType,"年"){
-			videoType = strings.Replace(videoType,"年","",-1)
-		}
 		mDoc := doc.Find(".vothercon").Eq(0).Text()
 		mDoc,_ = uutil.DecodeToGBK(mDoc)
 		ss := strings.Split(mDoc,"[")
