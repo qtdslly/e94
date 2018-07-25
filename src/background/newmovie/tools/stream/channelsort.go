@@ -31,7 +31,7 @@ func main(){
 	model.InitModel(db)
 
 	var streams []model.Stream
-	if err := db.Find(&streams).Error ; err != nil{
+	if err := db.Order("title asc").Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
