@@ -73,6 +73,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		}
 
 		videoType := document.Find("#sdlist").Find(".sdlist").Eq(0).Find(".pleft").Eq(0).Find("a").Eq(2).Text()
+		videoType,_ = uutil.DecodeToGBK(videoType)
 		if strings.Contains(videoType,"电影") || strings.Contains(videoType,"综艺"){
 			return
 		}
