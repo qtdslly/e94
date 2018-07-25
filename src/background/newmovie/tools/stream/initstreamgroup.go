@@ -66,7 +66,7 @@ func main(){
 			continue
 		}
 
-		if strings.Contains(stream.Title,"电影") || strings.Contains(stream.Title,"影视") {
+		if strings.Contains(stream.Title,"电影") || strings.Contains(stream.Title,"影视") || stream.Category == "明星影视"{
 			if err := db.Exec("insert into stream_group(stream_id,resource_group_id) values(?,?)",stream.Id,groupMap["电影"]).Error ; err != nil{
 				logger.Error(err)
 				return
