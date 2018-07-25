@@ -59,6 +59,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 	var directors ,writer,totalEpisode,description string
 	movieDoc.Each(func(i int, s *goquery.Selection) {
 
+
 		apiUrl1,_ := s.Find("a").Eq(0).Attr("href")
 		if !strings.Contains(apiUrl1,"http"){
 			apiUrl1 = "http://www.hanju.cc" + apiUrl1
@@ -71,6 +72,18 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			return
 		}
 
+		videoType := document.Find("#sdlist").Find(".sdlist").Eq(0).Find(".pleft").Eq(0).Find("a").Eq(2).Text()
+		videoType,_ = uutil.DecodeToGBK(videoType)
+
+		logger.Debug(videoType)
+		if strings.Contains(videoType,"年"){
+			videoType = strings.Replace(videoType,"年","",-1)
+		}
+
+		if strings.Contains(videoType,"电影") || strings.Contains(videoType,"综艺"){
+			return
+		}
+
 		mDoc := doc.Find(".vothercon").Eq(0).Text()
 		mDoc,_ = uutil.DecodeToGBK(mDoc)
 		ss := strings.Split(mDoc,"[")
@@ -78,7 +91,7 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			if strings.Contains(text,"导 演"){
 				directors = text
 				directors = strings.Replace(directors,"导 演]: ","",-1)
-				if strings.Index(directors,"（") > 0{
+				if strings.Contains(directors,"（"){
 					directors = directors[:strings.Index(directors,"（")]
 				}
 			}
@@ -86,8 +99,8 @@ func GetHanJuInfo(url string,db *gorm.DB){
 			if strings.Contains(text,"编 剧"){
 				writer = text
 				writer = strings.Replace(writer,"编 剧]: ","",-1)
-				if strings.Index(writer,"（") > 0{
-					writer = directors[:strings.Index(writer,"（")]
+				if strings.Contains(writer,"（"){
+					writer = writer[:strings.Index(writer,"（")]
 				}
 			}
 
@@ -149,6 +162,11 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		video.Description = description
 		video.Actors = actors
 		video.Writer = writer
+		video.Directors = directors
+		video.Category = "韩剧"
+		video.Language = "韩语"
+		video.Country = "韩国"
+
 		video.ThumbY = thumb_y
 		video.Pinyin = util.TitleToPinyin(video.Title)
 		video.OnLine = constant.MediaStatusOnLine
@@ -157,7 +175,12 @@ func GetHanJuInfo(url string,db *gorm.DB){
 		video.CurrentEpisode = current
 		num,_ = strconv.Atoi(totalEpisode)
 		total := uint32(num)
-		video.CurrentEpisode = total
+		video.TotalEpisode = total
+
+		num,_ = strconv.Atoi(videoType)
+		year := uint32(num)
+		video.Year = year
+		video.Tags = "韩剧"
 
 		if err := db.Where("title = ? and category = '韩剧'",video.Title).First(&video).Error ; err == gorm.ErrRecordNotFound{
 			db.Create(&video)

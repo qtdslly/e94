@@ -34,6 +34,7 @@ type Stream struct {
 	Thumb          string           `gorm:"size:255" json:"thumb" valid:"Str" name:"thumb" len:"0,255"`
 	PlayUrls       []*PlayUrl       `json:"play_urls"`
 	OnLine         bool             `json:"on_line"`
+	Disable        bool             `json:"disable"`
 	HasEpg         bool             `json:"has_epg"`
 	Category       string           `json:"category"`
 	EpgSyncedAt    *time.Time       `json:"epg_synced_at"`

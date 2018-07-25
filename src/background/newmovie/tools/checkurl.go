@@ -22,8 +22,8 @@ func main(){
 		//http://62.210.214.28/live?channelId=143&uid=171&deviceUser=seanmccarr&devicePass=120817
 		//url := "http://62.210.214.28/live?channelId=" + fmt.Sprint(i) + "&uid=171&deviceUser=seanmccarr&devicePass=120817"
 		//rtmp://edge1.everyon.tv:1935/etv1sb/phd563
-		url := "http://223.110.243.142/PLTV/2510088/224/3221227" + fmt.Sprintf("%03d",i) + "/1.m3u8"
-		if util.CheckStreamUrl(url){
+		url := "rtmp://125.219.44.135/live/ch" + fmt.Sprintf("%d",i)
+		if util.CheckStreamUrl(url,"/home/lyric/tmp/pic/" + fmt.Sprint(i) + ".jpg"){
 			fmt.Println("SUCCESS" + url)
 		}
 	}

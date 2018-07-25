@@ -32,14 +32,14 @@ func StreamListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []*model.Stream
-	if err = db.Order("stream.sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ? and stream.on_line = 1", p.ResourceGroupId).Find(&streams).Error; err != nil {
+	if err = db.Order("stream.sort asc").Offset(p.Offset).Limit(p.Limit).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ? and stream.on_line = 1 and stream.disable = 0", p.ResourceGroupId).Find(&streams).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
 	}
 
 	var count uint32
-	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.id = stream_group.stream_id and stream_group.resource_group_id = ?", p.ResourceGroupId).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Stream{}).Joins("inner join stream_group where stream.on_line = 1 and disable = 0 and stream.id = stream_group.stream_id and stream_group.resource_group_id = ?", p.ResourceGroupId).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -86,7 +86,7 @@ func StreamDetailHandler(c *gin.Context) {
 	installationId := c.MustGet(constant.ContextInstallationId).(uint64)
 
 	var stream model.Stream
-	if err = db.Where("id = ? and on_line = ?", p.Id, constant.MediaStatusOnLine).First(&stream).Error; err != nil {
+	if err = db.Where("id = ? and disable = 0 and on_line = ?", p.Id, constant.MediaStatusOnLine).First(&stream).Error; err != nil {
 		logger.Error("query video err!!!,", err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -147,7 +147,7 @@ func SearchHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var streams []model.Stream
-	if err = db.Offset(p.Offset).Limit(p.Limit).Order("sort asc").Where("title like ? and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Find(&streams).Error; err != nil {
+	if err = db.Offset(p.Offset).Limit(p.Limit).Order("sort asc").Where("title like ? and disable = 0 and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Find(&streams).Error; err != nil {
 		logger.Error("query video err!!!,", err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 	}
@@ -178,7 +178,7 @@ func SearchHandler(c *gin.Context) {
 	}
 
 	var count int
-	if err = db.Model(&model.Stream{}).Where("title like ? and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Count(&count).Error; err != nil {
+	if err = db.Model(&model.Stream{}).Where("title like ? and disable = 0 and on_line = ?", "%" + p.Title + "%", constant.MediaStatusOnLine).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return

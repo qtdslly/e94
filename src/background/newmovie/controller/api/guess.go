@@ -43,7 +43,7 @@ func GuessListHandler(c *gin.Context) {
 	}
 
 	var streams []model.Stream
-	if err := db.Limit(6).Where("id <> ? and on_line = 1 and title like ?",p.StreamId,"%" + areaTitle + "%").Find(&streams).Error ; err != nil{
+	if err := db.Order("rand()").Limit(6).Where("id <> ? and disable = 0 and on_line = 1 and title like ?",p.StreamId,"%" + areaTitle + "%").Find(&streams).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -51,7 +51,7 @@ func GuessListHandler(c *gin.Context) {
 	
 	var streams1 []model.Stream
 	if len(streams) < 6{
-		if err := db.Limit(6).Where("id <> ? and on_line = 1 and category = ?",p.StreamId,stream.Category).Find(&streams1).Error ; err != nil{
+		if err := db.Order("rand()").Limit(6).Where("id <> ? and disable = 0 and on_line = 1 and category = ?",p.StreamId,stream.Category).Find(&streams1).Error ; err != nil{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 			return
@@ -78,12 +78,15 @@ func GuessListHandler(c *gin.Context) {
 	}
 
 	var apiStreams []*ApiStream
-	for _, stream := range streams {
+	for k, stream := range streams {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Title = stream.Title
 		apiStream.Thumb = stream.Thumb
 		apiStreams = append(apiStreams, &apiStream)
+		if k == 5{
+			break
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"count":len(apiStreams),"has_more":false})

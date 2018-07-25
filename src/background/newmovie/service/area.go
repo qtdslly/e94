@@ -31,6 +31,8 @@ func SetArea(file string){
 		if len(area) > 9{
 			area = strings.Replace(area,"县","",-1)
 		}
+		area = strings.Replace(area,"省","",-1)
+		area = strings.Replace(area,"特别行政区","",-1)
 		area = strings.Replace(area,"自治","",-1)
 		area = strings.Replace(area,"市","",-1)
 		area = strings.Replace(area,"前旗","",-1)
@@ -40,6 +42,22 @@ func SetArea(file string){
 		area = strings.Replace(area,"州","",-1)
 		if fields[1] == "海州区"{
 			area = "海州"
+		}
+		if fields[1] == "台州市"{
+			area = "台州"
+		}
+		if fields[1] == "连州市"{
+			area = "连州"
+		}
+
+		if fields[1] == "市南区"{
+			area = "市南"
+		}
+		if fields[1] == "市北区"{
+			area = "市北"
+		}
+		if fields[1] == "城区"{
+			continue
 		}
 		if area == ""{
 			continue

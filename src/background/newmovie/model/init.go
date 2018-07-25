@@ -132,6 +132,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+	err = initTag(db)
+	if err != nil {
+		logger.Fatal("Init db tag failed, ", err)
+		return err
+	}
+
 	return err
 }
 
@@ -155,6 +161,7 @@ func rebuildModel(db *gorm.DB) {
 	dropUserWant(db)
 	dropApp(db)
 	dropVersion(db)
+	dropTag(db)
 
 	InitModel(db)
 }

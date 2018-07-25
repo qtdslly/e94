@@ -1,0 +1,89 @@
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch1' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/1.jpg
+SUCCESSrtmp://125.219.44.135/live/ch1
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch2' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/2.jpg
+SUCCESSrtmp://125.219.44.135/live/ch2
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch3' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/3.jpg
+SUCCESSrtmp://125.219.44.135/live/ch3
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch4' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/4.jpg
+SUCCESSrtmp://125.219.44.135/live/ch4
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch5' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/5.jpg
+SUCCESSrtmp://125.219.44.135/live/ch5
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch6' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/6.jpg
+SUCCESSrtmp://125.219.44.135/live/ch6
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch7' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/7.jpg
+SUCCESSrtmp://125.219.44.135/live/ch7
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch8' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/8.jpg
+SUCCESSrtmp://125.219.44.135/live/ch8
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch9' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/9.jpg
+SUCCESSrtmp://125.219.44.135/live/ch9
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch10' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/10.jpg
+SUCCESSrtmp://125.219.44.135/live/ch10
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch11' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/11.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch12' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/12.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch13' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/13.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch14' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/14.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch15' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/15.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch16' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/16.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch17' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/17.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch18' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/18.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch19' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/19.jpg
+2018-07-25 14:31:55.149 ERROR:10471:util/string.go:55: exit status 1
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch20' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/20.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch21' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/21.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch22' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/22.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch23' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/23.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch24' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/24.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch25' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/25.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch26' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/26.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch27' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/27.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch28' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/28.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch29' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/29.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch30' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/30.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch31' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/31.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch32' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/32.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch33' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/33.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch34' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/34.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch35' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/35.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch36' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/36.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch37' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/37.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch38' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/38.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch39' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/39.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch40' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/40.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch41' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/41.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch42' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/42.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch43' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/43.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch44' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/44.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch45' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/45.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch46' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/46.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch47' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/47.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch48' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/48.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch49' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/49.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch50' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/50.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch51' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/51.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch52' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/52.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch53' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/53.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch54' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/54.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch55' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/55.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch56' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/56.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch57' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/57.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch58' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/58.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch59' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/59.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch60' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/60.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch61' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/61.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch62' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/62.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch63' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/63.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch64' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/64.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch65' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/65.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch66' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/66.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch67' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/67.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch68' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/68.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch69' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/69.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch70' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/70.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch71' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/71.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch72' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/72.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch73' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/73.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch74' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/74.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch75' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/75.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch76' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/76.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch77' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/77.jpg
+/usr/bin/ffmpeg -i 'rtmp://125.219.44.135/live/ch78' -y -s 320x240 -vframes 1 /home/lyric/tmp/pic/78.jpg
