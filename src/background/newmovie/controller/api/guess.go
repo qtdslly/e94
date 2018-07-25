@@ -78,12 +78,15 @@ func GuessListHandler(c *gin.Context) {
 	}
 
 	var apiStreams []*ApiStream
-	for _, stream := range streams {
+	for k, stream := range streams {
 		var apiStream ApiStream
 		apiStream.Id = stream.Id
 		apiStream.Title = stream.Title
 		apiStream.Thumb = stream.Thumb
 		apiStreams = append(apiStreams, &apiStream)
+		if k == 5{
+			break
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiStreams,"count":len(apiStreams),"has_more":false})
