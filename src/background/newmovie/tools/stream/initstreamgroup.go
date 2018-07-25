@@ -8,7 +8,6 @@ import (
 	"github.com/jinzhu/gorm"
 
 	"flag"
-	"strings"
 )
 
 func main(){
