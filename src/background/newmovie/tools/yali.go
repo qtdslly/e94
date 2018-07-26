@@ -60,6 +60,6 @@ func main(){
 	}
 
 	for{
-		time.Sleep(time.Minute)
+		time.Sleep(time.Second)
 	}
 }
