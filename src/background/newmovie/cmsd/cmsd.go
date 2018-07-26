@@ -58,7 +58,7 @@ func main(){
 	}
 	db.DB().SetMaxIdleConns(20)
 	db.DB().SetMaxOpenConns(20)
-	
+
 	model.InitModel(db)
 
 	r := gin.New()
