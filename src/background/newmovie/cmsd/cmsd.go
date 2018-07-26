@@ -56,8 +56,9 @@ func main(){
 		logger.Fatal("Open db Failed!!!!", err)
 		return
 	}
-	db.DB().SetMaxIdleConns(10)
-
+	db.DB().SetMaxIdleConns(20)
+	db.DB().SetMaxOpenConns(20)
+	
 	model.InitModel(db)
 
 	r := gin.New()

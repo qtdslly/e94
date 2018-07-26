@@ -33,6 +33,8 @@ func GetHanJuInfo(url string){
 		videoType = strings.Replace(videoType,"年","",-1)
 	}
 	num,_ := strconv.Atoi(videoType)
-	logger.Debug(num)
+	year := uint32(num)
+
+	logger.Debug(year)
 
 }
