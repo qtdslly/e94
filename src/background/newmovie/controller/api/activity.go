@@ -27,7 +27,7 @@ func ActivityHandler(c *gin.Context) {
 }
 
 
-func LoadActivity(appId,version *model.Version, db *gorm.DB) (*apimodel.AppActivity, error) {
+func LoadActivity(appId uint32,version *model.Version, db *gorm.DB) (*apimodel.AppActivity, error) {
 	activity, err := cache.GetActivity(appId,version.Id,db)
 	if err != nil {
 		logger.Error(err)
