@@ -32,13 +32,13 @@ func GetActivity(appId,versionId uint32,db *gorm.DB) (*model.Activity, error) {
 	key := service.GetCacheKey("activity", 0, 0, 0, 0)
 	var acs *model.Activity
 	err := service.GetCacheObject(key, &acs, func() (interface{}, error) {
-		var activity *model.Activity
+		var activity model.Activity
 		if err := db.Where("enable=true and appId = ? and versionId = ?",appId,versionId).Order("created_at desc").First(&activity).Error; err != nil {
 			logger.Error(err)
 			return nil, err
 		}
 
-		return activity, nil
+		return &activity, nil
 	})
 	if err != nil {
 		logger.Error(err)
