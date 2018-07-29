@@ -11,3 +11,11 @@ type AppConfigUpgrade struct {
 	UpgradeUrl     string `json:"upgrade_url"`
 	Md5Value       string `json:"md5_value"`
 }
+
+type AppActivity struct {
+	Channel        uint32 `json:"channel"`
+	Account        string `json:"account"`
+	Title          string `json:"title"`
+	Description    string `json:"description"`
+	Thumb          string `json:"thumb"`
+}

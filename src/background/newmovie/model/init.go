@@ -138,6 +138,12 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+
+	err = initActivity(db)
+	if err != nil {
+		logger.Fatal("Init db activity failed, ", err)
+		return err
+	}
 	return err
 }
 
@@ -162,6 +168,7 @@ func rebuildModel(db *gorm.DB) {
 	dropApp(db)
 	dropVersion(db)
 	dropTag(db)
+	dropActivity(db)
 
 	InitModel(db)
 }

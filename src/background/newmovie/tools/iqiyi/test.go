@@ -17,7 +17,7 @@ func main(){
 		return
 	}
 
-	url := "http://www.iqiyi.com/v_19rrj6udbc.html#vfrm=2-4-0-1"
+	url := "https://www.iqiyi.com/v_19rrnmdr2s.html"
 	logger.Debug(url)
 	realUrl := script.GetIqiyiRealPlayUrl(url)
 	fmt.Println(realUrl)
