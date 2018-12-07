@@ -23,7 +23,7 @@ func TransPromptAll(db *gorm.DB){
 	}
 
 	for _ , transPrompt := range transPrompts{
-		go TransPromptByPromptInfo(transPrompt,db)
+		//go TransPromptByPromptInfo(transPrompt,db)
 		go RosePrompt(transPrompt,db)
 	}
 
@@ -48,7 +48,7 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt,db *gorm.DB){
 	var havePrompt bool = false
 	for{
 		if havePrompt{
-			break
+			time.Sleep(time.Minute * 5)
 		}
 		if err,realTimeStockInfo = service.GetRealTimeStockInfoByStockCode(jysCode,transPrompt.StockCode) ; err != nil{
 			logger.Error("获取股票实时信息失败，程序退出!!!")
@@ -58,6 +58,7 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt,db *gorm.DB){
 			break
 		}
 
+		//rose := (realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice) / realTimeStockInfo.YestdayClosePrice
 		var result bool
 		if(realTimeStockInfo.NowPrice <= transPrompt.PromptBuyPrice){
 			result = util.SendEmail("股票交易提示",
@@ -75,16 +76,21 @@ func TransPromptByPromptInfo(transPrompt model.TransPrompt,db *gorm.DB){
 					"<h4>设定的交易量为:" + fmt.Sprint(transPrompt.PromptSellCount) + "</h4></br>" +
 					"<h4>当前涨幅为:" + fmt.Sprint((((realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice) / realTimeStockInfo.YestdayClosePrice) * 100.00)) + "%" + "</h4></br:>" +
 					"<h1>请尽快交易!!!</h1></div>")
-		}else{
-			//logger.Debug("未到交易价格，暂不交易!!!!")
-		}
+		}//else if( rose > 0.02){
+		//	result = util.SendEmail("股票交易提示",
+		//		"<div'><h2>股票代码:" + transPrompt.StockCode + "  股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "</h2></br>" +
+		//			"<h4>当前涨幅:" + fmt.Sprintf("%.2f",rose * 100) + "</h4></br></div>" )
+		//}else if (rose < -0.02){
+		//	result = util.SendEmail("股票交易提示",
+		//		"<div'><h2>股票代码:" + transPrompt.StockCode + "  股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "</h2></br>" +
+		//		"<h4>当前跌:" + fmt.Sprintf("%.2f",rose * 100) + "</h4></br></div>")
+		//}
 		if result{
 			logger.Debug("邮件发送成功!!!")
 			havePrompt = true
 		}
 		time.Sleep(time.Second)
 	}
-
 }
 
 func RosePrompt(transPrompt model.TransPrompt,db *gorm.DB){
@@ -109,13 +115,13 @@ func RosePrompt(transPrompt model.TransPrompt,db *gorm.DB){
 		if realTimeStockInfo.NowPrice == 0.00{
 			break
 		}
-
-		if ( realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice ) / realTimeStockInfo.YestdayClosePrice > 0.03 ||
-			( realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice ) / realTimeStockInfo.YestdayClosePrice < -0.03{
+		rose := (realTimeStockInfo.NowPrice - realTimeStockInfo.YestdayClosePrice) / realTimeStockInfo.YestdayClosePrice
+		if rose > 0.03 || rose < -0.02{
 			util.SendEmail("股票涨跌幅提示",
 				"<div'><h2>股票代码:" + transPrompt.StockCode + "</h2></br>" +
 					"<h2>股票名称:" + util.GetNameByCode(transPrompt.StockCode,db) + "</h2></br>" +
 					"<h4>当前股票价格为:" + fmt.Sprint(realTimeStockInfo.NowPrice) + "</h4></br>" +
+					"<h4>当前股票涨幅为:" + fmt.Sprintf("%.2f",rose * 100) + "</h4></br>" +
 					"</div>")
 			havePrompt = true
 		}

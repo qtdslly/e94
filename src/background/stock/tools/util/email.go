@@ -9,7 +9,7 @@ func SendEmail(subject,content string)(bool){
 	m := gomail.NewMessage()
 	m.SetAddressHeader("From", "qtdslly@aliyun.com", "Lyric")  // 发件人
 	m.SetHeader("To",  // 收件人
-		m.FormatAddress("qtdslly@aliyun.com", "Lyric"),
+		m.FormatAddress("947883972@qq.com", "Lyric"),
 	)
 	m.SetHeader("Subject", subject)  // 主题
 	m.SetBody("text/html", content)  // 正文

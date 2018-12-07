@@ -39,36 +39,36 @@ func main() {
 	
 	model.InitModel(db)
 
+	go func(){
+		for{
+			var p = time.Now()
+			if (fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) >= "0930" && fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) <= "1130") ||
+				(fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) >= "1300" && fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) <= "1500"){
+				go task.TransPromptAll(db)
+			}
+			time.Sleep(time.Minute)
+		}
+	}()
+
 	//go func(){
 	//	for{
 	//		var p = time.Now()
-	//		if (fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) >= "0930" && fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) <= "1130") ||
-	//			(fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) >= "1300" && fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) <= "1500"){
-	//			go task.TransPromptAll(db)
+	//		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
+	//			go task.SyncAllRealTimeStockInfo(db)
 	//		}
-	//		time.Sleep(time.Minute)
+	//		time.Sleep(time.Hour * 3)
 	//	}
 	//}()
-
-	go func(){
-		for{
-			var p = time.Now()
-			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
-				go task.SyncAllRealTimeStockInfo(db)
-			}
-			time.Sleep(time.Hour * 3)
-		}
-	}()
-
-	go func(){
-		for{
-			var p = time.Now()
-			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
-				go task.GetTonghuashun(db)
-			}
-			time.Sleep(time.Hour)
-		}
-	}()
+	//
+	//go func(){
+	//	for{
+	//		var p = time.Now()
+	//		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) > "1500"{
+	//			go task.GetTonghuashun(db)
+	//		}
+	//		time.Sleep(time.Hour)
+	//	}
+	//}()
 
 	//task.GetLargeFallStockInfo(db)
 

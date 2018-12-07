@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Vali Admin</title>
+
+</head>
+<body class="sidebar-mini fixed  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div class="wrapper">
+    <!-- Navbar-->
+    <header class="main-header hidden-print"><a class="logo" href="/stock/index.html">ccpool</a>
+        <nav class="navbar navbar-static-top">
+            <a class="sidebar-toggle" href="/stock/index.html" data-toggle="offcanvas"></a>
+            <!-- Navbar Right Menu-->
+            <div class="navbar-custom-menu">
+                <ul class="top-nav">
+                    <!--Notification Menu-->
+                    <li class="dropdown notification-menu">
+                        <a class="dropdown-toggle" href="/stock/index.html" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="fa fa-bell-o fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="not-head">You have 4 new notifications.</li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">Lisa sent you a mail</span><span
+                                        class="text-muted block">2min ago</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i
+                                    class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">Server Not Working</span><span
+                                        class="text-muted block">2min ago</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i
+                                    class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">Transaction xyz complete</span><span
+                                        class="text-muted block">2min ago</span></div>
+                            </a></li>
+                            <li class="not-footer"><a
+                                    href="http://demo.cssmoban.com/cssthemes4/tpez_6_vf/dist/index.html#">See all
+                                notifications.</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Menu-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/stock/index.html" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu settings-menu">
+                            <li><a href="http://demo.cssmoban.com/cssthemes4/tpez_6_vf/dist/page-user.html"><i
+                                    class="fa fa-cog fa-lg"></i> Settings</a></li>
+                            <li><a href="http://demo.cssmoban.com/cssthemes4/tpez_6_vf/dist/page-user.html"><i
+                                    class="fa fa-user fa-lg"></i> Profile</a></li>
+                            <li><a href="http://demo.cssmoban.com/cssthemes4/tpez_6_vf/dist/page-login.html"><i
+                                    class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Side-Nav-->
+    <aside class="main-sidebar hidden-print">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 1284px;">
+            <section class="sidebar" style="overflow: hidden; width: auto; height: 1284px;">
+                <div class="user-panel">
+                    <div class="pull-left image"><img class="img-circle" src="images/48.jpg" alt="User Image"></div>
+                    <div class="pull-left info">
+                        <p>刘利洋</p>
+                        <p class="designation">超级管理员</p>
+                    </div>
+                </div>
+                <!-- Sidebar Menu-->
+                <ul class="sidebar-menu">
+                    <li class="active"><a href="/stock/index.html">
+                        <i class="fa fa-dashboard"></i><span>概况</span></a></li>
+                    <li class="active">
+                        <a href="/stock/user.html"><i class="fa fa-dashboard"></i><span>用户管理</span></a>
+                    </li>
+                </ul>
+            </section>
+            <div class="slimScrollBar"
+                 style="background: rgba(0, 0, 0, 0.8); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 1284px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+    </aside>
+    <div class="content-wrapper">
+        <div class="page-title">
+            <div>
+                <h1><i class="fa fa-dashboard"></i>用户管理</h1>
+                <p>此为重要信息，请谨慎操作</p>
+            </div>
+            <div>
+                <ul class="breadcrumb">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li><a href="/stock/index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="sampleTable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover table-bordered dataTable no-footer" id="sampleTable"
+                                           role="grid" aria-describedby="sampleTable_info">
+                                        <thead>
+                                        <tr role="row">
+                                            <th class="sorting_asc" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-sort="ascending"
+                                                aria-label="Name: activate to sort column descending"
+                                                style="width: 389px;">Name
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Position: activate to sort column ascending"
+                                                style="width: 618px;">Position
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending"
+                                                style="width: 282px;">Office
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Age: activate to sort column ascending"
+                                                style="width: 164px;">Age
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Start date: activate to sort column ascending"
+                                                style="width: 285px;">Start date
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending"
+                                                style="width: 240px;">Salary
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1">Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09</td>
+                                            <td>$1,200,000</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$132,000</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07</td>
+                                            <td>$206,850</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$372,000</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1">Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$163,500</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1">Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$106,450</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1">Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$145,600</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1">Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Javascripts-->
+            <script src="js/jquery-2.1.4.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/plugins/pace.min.js"></script>
+            <script src="js/main.js"></script>
+            <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+            <script type="text/javascript">$('#sampleTable').DataTable();</script>
+
+</body>
+</html>

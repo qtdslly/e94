@@ -9,21 +9,19 @@ import (
 	"github.com/gin-gonic/gin"
 	"background/common/logger"
 	"log"
-	"background/stock/model"
-	"background/stock/config"
+	"background/photo/model"
+	"background/photo/config"
 	"background/common/constant"
-	cc "background/stock/controller"
+	ccms "background/photo/controller/cms"
+
+	"background/common/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
-	"background/common/middleware"
-	//"io/ioutil"
-	//"strings"
 )
 
 func main(){
 	logger.SetLevel(config.GetLoggerLevel())
 
-	//check version
 	if len(os.Args) > 1 {
 		if os.Args[1] == "-version" {
 			fmt.Println(constant.Version)
@@ -35,6 +33,7 @@ func main(){
 	}
 
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
+
 	flag.Parse()
 
 	err := config.LoadConfig(*configPath)
@@ -51,7 +50,8 @@ func main(){
 		logger.Fatal("Open db Failed!!!!", err)
 		return
 	}
-	db.DB().SetMaxIdleConns(10)
+	db.DB().SetMaxIdleConns(20)
+	db.DB().SetMaxOpenConns(20)
 
 	model.InitModel(db)
 
@@ -65,38 +65,23 @@ func main(){
 	r.Use(gin.Recovery())
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
-	cms := r.Group("chart")
+	cms := r.Group("cms")
+	cms.POST("/upload", ccms.FileUpload)
+
 	cms.Use(dbMiddleware)
 	{
-		cms.GET("/stock/price", cc.StockPriceHandler)
-		cms.GET("/stock/list", cc.StockListHandler)
+
 	}
 
-	r.Static("/stock",  config.GetStaticRoot())
+	cms.Use(dbMiddleware)
+	{
 
-	r.Run(":16882")
+	}
+
+	r.Static("/html", config.GetStaticRoot())
+
+	r.Run(":8000")
 
 }
-//
-//func load(path string,r *gin.Engine){
-//	files, err := ioutil.ReadDir(path)
-//	if err != nil {
-//		logger.Error(err)
-//		return
-//	}
-//
-//	for _ ,file := range files{
-//		if file.Name() == "feeds" || file.Name() == "pic" || file.Name() == "js"{
-//			continue
-//		}
-//		if strings.Contains(file.Name(),".js"){
-//			continue
-//		}
-//		if file.IsDir(){
-//			load(path + "/" + file.Name(),r)
-//		}else{
-//			r.LoadHTMLGlob(path + "/" + file.Name())
-//		}
-//
-//	}
-//}
+
+

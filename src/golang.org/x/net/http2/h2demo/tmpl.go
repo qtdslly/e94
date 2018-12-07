@@ -19,7 +19,7 @@ var pushTmpl = template.Must(template.New("serverpush").Parse(`
 
   <title>HTTP/2 Server Push Demo</title>
 
-<link type="text/css" rel="stylesheet" href="/serverpush/static/style.css?{{.CacheBust}}">
+<link type="text/css" rel="stylesheet" href="/serverpush/static/login_style.css?{{.CacheBust}}">
 <script>
 window.initFuncs = [];
 </script>

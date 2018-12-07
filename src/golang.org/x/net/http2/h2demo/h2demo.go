@@ -279,7 +279,7 @@ var pushResources = map[string]http.Handler{
 	"/serverpush/static/jquery.min.js": fileServer("https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", 100*time.Millisecond),
 	"/serverpush/static/godocs.js":     fileServer("https://golang.org/lib/godoc/godocs.js", 100*time.Millisecond),
 	"/serverpush/static/playground.js": fileServer("https://golang.org/lib/godoc/playground.js", 100*time.Millisecond),
-	"/serverpush/static/style.css":     fileServer("https://golang.org/lib/godoc/style.css", 100*time.Millisecond),
+	"/serverpush/static/login_style.css":     fileServer("https://golang.org/lib/godoc/login_style.css", 100*time.Millisecond),
 }
 
 func newPushHandler() http.Handler {
