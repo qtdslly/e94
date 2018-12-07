@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/images/48.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/config/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/config/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/activity.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/contentaction.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/guess.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/installation.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/notification.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/opinion.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/page.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/script.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/stream.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/userstream.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/userwant.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/video.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/api/web.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/cms/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/cms/setting.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/cms/upload.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/controller/cms/video.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/html/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/middleware/app.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/model/init.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/model/page.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/model/video.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/photo/photod/photod.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/admincenter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/js/jquery-2.1.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/js/pace.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/html/stock/user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/taskd/a.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/config/config.go" afterPath="$PROJECT_DIR$/src/background/stock/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/config/config.json" afterPath="$PROJECT_DIR$/src/background/stock/config/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/stockd/stockd.go" afterPath="$PROJECT_DIR$/src/background/stock/stockd/stockd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/task/transprompt.go" afterPath="$PROJECT_DIR$/src/background/stock/task/transprompt.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/tools/util/email.go" afterPath="$PROJECT_DIR$/src/background/stock/tools/util/email.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/h2demo/h2demo.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/h2demo/h2demo.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/h2demo/tmpl.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/h2demo/tmpl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/photo/config/config.go" afterPath="$PROJECT_DIR$/src/background/photo/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/photo/config/config.json" afterPath="$PROJECT_DIR$/src/background/photo/config/config.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="667">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -79,8 +32,8 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="99" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="99" />
+            <state relative-caret-position="161">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -96,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/photo/html/list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="796">
@@ -273,11 +226,11 @@
         <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
         <option value="$PROJECT_DIR$/src/background/stock/task/transprompt.go" />
         <option value="$PROJECT_DIR$/src/background/stock/taskd/a.txt" />
-        <option value="$PROJECT_DIR$/src/background/photo/config/config.json" />
-        <option value="$PROJECT_DIR$/src/background/photo/config/config.go" />
         <option value="$PROJECT_DIR$/src/background/photo/model/init.go" />
         <option value="$PROJECT_DIR$/src/background/photo/photod/photod.go" />
         <option value="$PROJECT_DIR$/src/background/photo/html/list.html" />
+        <option value="$PROJECT_DIR$/src/background/photo/config/config.json" />
+        <option value="$PROJECT_DIR$/src/background/photo/config/config.go" />
       </list>
     </option>
   </component>
@@ -1007,12 +960,12 @@
       <workItem from="1540776375020" duration="167000" />
       <workItem from="1542467616763" duration="2246000" />
       <workItem from="1543386335170" duration="1241000" />
-      <workItem from="1544179263829" duration="587000" />
+      <workItem from="1544179263829" duration="788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64962000" />
+    <option name="totallyTimeSpent" value="65163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -1381,22 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="99" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/background/photo/model/init.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1419,6 +1356,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="796">
           <caret line="221" column="7" lean-forward="false" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding />
         </state>
       </provider>

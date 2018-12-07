@@ -27,7 +27,7 @@ func init() {
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
 	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/photo?charset=utf8&parseTime=True&loc=Local"
-	c.StaticRoot = "c:/work/code/e94/src/background/photo/html"
+	c.StaticRoot = "/opt/photo/html"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
