@@ -78,6 +78,7 @@ func main(){
 
 	}
 
+	logger.Debug(config.GetStaticRoot())
 	r.Static("/html", config.GetStaticRoot())
 
 	r.Run(":8000")
