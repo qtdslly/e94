@@ -27,7 +27,7 @@ func PhotoListHandler(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var photoes []model.Photo
-	if err := db.Offset(p.Offset).Limit(p.Limit).Where("state = ? and url like '%big%'", model.PhotoStateOnLine).Find(&photoes).Error; err != nil {
+	if err := db.Offset(p.Offset).Limit(p.Limit).Where("state = ? and url like '%small%'", model.PhotoStateOnLine).Find(&photoes).Error; err != nil {
 		if err != gorm.ErrRecordNotFound{
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
@@ -36,7 +36,7 @@ func PhotoListHandler(c *gin.Context) {
 	}
 
 	var count uint32
-	if err := db.Model(&model.Photo{}).Where("state = ? and url like '%big%'", model.PhotoStateOnLine).Count(&count).Error; err != nil {
+	if err := db.Model(&model.Photo{}).Where("state = ? and url like '%small%'", model.PhotoStateOnLine).Count(&count).Error; err != nil {
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
