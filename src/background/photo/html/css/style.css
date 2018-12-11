@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+html,*,body, div, ul,ol, li,h1,h2,h3,h4,h5,h6,p,span{margin:0;padding:0;}
+body{background-color:#ffffff;}
+img{vertical-align:middle;}
+em{font-style:normal;}
+a img, :link img, :visited img{border:0;text-decoration:none;}
+a:link, a:visited{text-decoration:none;color:#333333;}
+a:hover,a:focus{text-decoration:underline;color:#333333;text-decoration:none;}
+ul, ul li{list-style-type:none;}
+.clear{clear:both;}
+
+/*导航样式*/
+.top{width:100%; height:40px; background-color:#333333;position:relative;}
+.logo{position:absolute;left:0px; top:0px; padding:4px;}
+.logo img{width:80px; height:32px;}
+.Nav{position:absolute;z-index:0;right:0px; top:0px;}
+.Nav button{background-color: #333333;float: left; border:none;outline:none;}
+.Nav button img{width:38px; height:38px;}
+.rightNav li{display:inline-block; width: 96%;margin:2%;text-align: center;}
+.Navmi span{display:inline-block; color:#333333; width:96%; height:50px; margin-left:2%; line-height:50px; border-bottom: 1px solid #f5f5f5; text-align:center;}
+.Navmi span a{display:block;}
+.bgDiv{width:100%;height: 100%;background-color: #000;opacity: .5;position:fixed;display: none;z-index: 99;bottom: 0;}
+.rightNav{overflow:auto; width: 40%;max-width:400px; height: 100%;background-color: #ffffff;position: fixed;z-index: 999;top: 0;right: -40%;}
+
+
+.search{width:100%; padding-top:3%; height:32px; text-align:center;display:block;}
+.hot{width:26%;height:30px; line-height:30px; margin-right:2%; margin-left:1%; font-size:14px; border-radius:3px; border:1px solid #ff4272; color:#ff4272; text-align:center; float:left;}
+.hot a{display:block;color:#ff4272;}
+.soshuo{width:70%;height:30px; float:left;}
+.schinput{float:left;display:block;width:69%;height:30px;border:1px solid #bbbbbb;border-bottom-left-radius:3px;border-top-left-radius:3px;}
+.schinput input{outline:none;border:none;font-size:14px;height:30px;line-height:30px; width:100%;vertical-align: middle;}
+.schbut{float:left;display:block;background-color:#ff4272;width:29%;height:32px;line-height:32px;font-size:14px;text-align:center;border-bottom-right-radius:3px;border-top-right-radius:3px;}
+.schbut a{display:block;color:#ffffff;}
+
+
+.msearch{margin:10px auto 0px auto; width:96%; margin-left:2%; margin-right:2%; overflow:hidden;}
+.mschinput{float:left;display:block;width:70%;height:30px;border:1px solid #bbbbbb;}
+.mschinput input{outline:none;border:none;font-size:18px;height:30px;line-height:30px; width:100%;vertical-align: middle;}
+.mschbut{float:right;display:block;background-color:#ff4272;width:28%;height:32px;line-height:32px;font-size:18px;text-align:center;}
+.mschbut a{display:block;color:#ffffff;}
+.mhotkey{margin:3px auto 10px auto; width:96%; margin-left:2%; margin-right:2%; overflow:hidden;}
+.mhotkey span{float:left; padding:2px 6px; margin:4px 10px 4px 0px; border:1px solid #cccccc; font-size:14px; font-weight:bold; font-weight:normal;text-decoration:none;}
+
+
+/*首页最近更新样式*/
+.imbox{width:96%; margin-left:2%; margin-right:2%; margin-top:5%; text-align:center;}
+.imboxt{width:100%; height:auto; margin-bottom:10%;}
+.imboxtit{text-align:left;width:100%; display:inline-block; border-bottom:dashed #999999 1px; height:30px; line-height:30px;font-size:18px; font-weight:bold; color:#333333;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.imboxtxt{width:100%; text-align:left; font-size:12px; line-height:14px; height:14px; display:inline-block;overflow:hidden; margin-bottom:1%; color:#555555;}
+.imboximg img{width:100%; height:auto;}
+
+
+/*一级列表样式*/
+.libox{width:98%; margin-left:2%; overflow:hidden; text-align:center; margin-top:8%;}
+.liboxtit{width:50%; margin-top:1%; margin-bottom:2%; padding-left:5px; text-align:left; display:block; font-size:18px; font-weight:bold; border-left:solid #ff0000 5px;}
+.liboxtit h3{font-size:18px;}
+.libox ul{text-align:center;font-size:0;}
+.libox li{width:48%; display:block; float:left; margin-right:2%; margin-top:2%;}
+.libox img{width:100%; height:auto;}
+.liboximg{text-align:center;}
+.liboximg img{width:100%; height:auto;}
+.liboxtxt{overflow:hidden;display:inline-block;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight: normal;line-height:16px; height:32px; width:100%; padding:3px 0px 8px 0px; color:#555555; text-align:left;}
+.liboxtxt a{color:#555555;}
+
+/*二级列表样式*/
+.listbox{width:98%; margin-left:2%; overflow:hidden; text-align:center; margin-top:2%;}
+.listbox ul{text-align:center;font-size:0;}
+.listbox li{overflow:hidden;text-align:center;width:48%;display:block;float:left;margin-right:2%;margin-top:2%;}
+.listimg{text-align:center;}
+.listimg img{width:100%; height:auto;}
+.listtxt{overflow:hidden;display:inline-block;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight: normal;line-height:16px; height:32px; width:100%; padding:3px 0px 8px 0px; color:#555555; text-align:left;}
+.listtxt a{color:#555555;}
+
+/*内容样式*/
+.content{width:98%; margin-right:1%; margin-left:1%; text-align:center; margin-bottom:1%;}
+.mtit{margin-top:2%; border-bottom:dashed #999999 1px; text-align:left; line-height:30px; height:30px;}
+.mtit h1{font-size:16px; color:#333333;font-weight: normal;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.mcontent{width:100%; text-align:center;}
+.mcontent img{width:100%; height:auto;}
+.navbox{width:100%; line-height:18px; height:18px; display:inline-block;overflow:hidden; color:#777777; margin-top:2%; margin-bottom:2%;}
+.navleft{width:60%; text-align:left; float:left; font-size:12px; line-height:18px; color:#777777;}
+.navleft a{color:#777777;}
+.navright{width:40%; text-align:center; float:right; font-size:14px; line-height:18px; color:#777777;}
+.navright a{color:#777777;}
+.mhgg{width:100%; text-align:center; padding-top:1%;clear:both;}
+
+
+/*内页分页样式*/
+.wlinkpages{text-align:center; font-size:14px; margin-top:4%; margin-bottom:4%; width:100%; height:30px;}
+.wlinkpages span{margin:0px 6px;display:inline-block;font-weight:normal;border:1px solid #cccccc;}
+.pagemun{padding:5px 12px; color:#aaaaaa;}
+.wlinkpages a{display:block;padding:5px 12px;}
+.mbdm{text-align:center;width:96%;margin-right:2%; margin-left:2%;}
+
+.nexttop{width:100%; height:50px; font-size:18px; margin-top:1%; padding:0px 0px 5px 0px;}
+.nexttop a{color:#555555;}
+.nexttoppre{width:42%; margin-left:3%; margin-right:3%; padding-left:1%; padding-right:1%; float:left; text-align:center; line-height:50px; height:50px; background-color:#eeeeee;}
+.nexttoppre a{color:#555555; width:100%;}
+.nexttopnext{width:42%; margin-left:3%; margin-right:3%; padding-left:1%; padding-right:1%; float:left; text-align:center; line-height:50px; height:50px; background-color:#eeeeee;}
+.nexttopnext a{color:#555555; width:100%;}
+
+.sese{width:96%; text-align:center;margin-right:2%;margin-left:2%; margin-bottom:3%;}
+.sese li{display:inline-block;overflow:hidden;text-align:center;vertical-align:bottom;width:50%;}
+.seseimg{position:relative;text-align:center;}
+.seseimg img{width:100%; height:auto;}
+.sesetxt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight: normal;position:absolute;bottom:0px; left:0px;background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);line-height:14px; height:14px; width:100%; padding:2px 0px; color:#ffffff;}
+.zfbhb{width:100%; text-align:center; margin-bottom:1%;}
+.zfbhb img{width:100%; height:auto;}
+
+/*猜您喜欢*/
+.rltit{width:50%; margin-left:2%; margin-top:5%; margin-bottom:3%; padding-left:5px; text-align:left; display:block; font-size:18px; font-weight:bold; border-left:solid #ff0000 5px;}
+.sitemap{text-align:left; padding:100px 10px 10px 10px; width:980px; background-color:#ffffff; margin:auto; font-size:18px;}
+.sitemaph{text-align:left; font-size:14px; padding:10px; width:980px; height:600px; margin:auto; background-color:#ffffff;}
+.sitemaph h2{font-size:18px; padding:5px;}
+.sitemaph h2 a{color:#000000;}
+.sitemaph li{float:left; padding:10px 10px 10px 10px; width:300px; text-align:left;}
+.sitemaph li a:hover{ text-decoration:underline;}
+
+/*底部样式*/
+.footer{width:100%; font-size:12px; text-align:center; padding-top:10px; margin-top:40px; background-color:#333333; color:#cccccc;}
+.footer a{color:#cccccc;}

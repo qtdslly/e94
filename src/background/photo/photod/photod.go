@@ -12,7 +12,7 @@ import (
 	"background/photo/model"
 	"background/photo/config"
 	"background/common/constant"
-	ccms "background/photo/controller/cms"
+	"background/photo/controller/api"
 
 	"background/common/middleware"
 
@@ -66,15 +66,10 @@ func main(){
 	r.OPTIONS("*f", func(c *gin.Context) {})
 
 	cms := r.Group("cms")
-	cms.POST("/upload", ccms.FileUpload)
 
 	cms.Use(dbMiddleware)
 	{
-
-	}
-
-	cms.Use(dbMiddleware)
-	{
+		cms.GET("/photo/list", api.PhotoListHandler)
 
 	}
 
