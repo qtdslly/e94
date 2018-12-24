@@ -8,16 +8,17 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 )
+
 func AddUser(c *gin.Context) {
 
 	type param struct {
-		OpenId       string `form:"open_id" json:"open_id"`
-		Avtar       string `form:"avtar" json:"avtar"`
-		Nick       string `form:"nick" json:"nick"`
-		Country       string `form:"country" json:"country"`
-		Province       string `form:"open_id" json:"province"`
-		City       string `form:"open_id" json:"city"`
-		Language       string `form:"language" json:"language"`
+		OpenId   string `form:"open_id" json:"open_id"`
+		Avtar    string `form:"avtar" json:"avtar"`
+		Nick     string `form:"nick" json:"nick"`
+		Country  string `form:"country" json:"country"`
+		Province string `form:"province" json:"province"`
+		City     string `form:"city" json:"city"`
+		Language string `form:"language" json:"language"`
 	}
 
 	var p param
@@ -31,8 +32,8 @@ func AddUser(c *gin.Context) {
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
 	var user model.User
-	if err = db.Where("open_id = ?",p.OpenId).First(&user).Error ; err == gorm.ErrRecordNotFound{
-		if err = db.Create(&user).Error ; err != nil{
+	if err = db.Where("open_id = ?", p.OpenId).First(&user).Error; err == gorm.ErrRecordNotFound {
+		if err = db.Create(&user).Error; err != nil {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
 		}
