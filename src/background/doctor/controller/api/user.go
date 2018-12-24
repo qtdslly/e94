@@ -19,6 +19,7 @@ func AddUser(c *gin.Context) {
 		Province string `form:"province" json:"province"`
 		City     string `form:"city" json:"city"`
 		Language string `form:"language" json:"language"`
+		Gender   string `form:"gender" json:"gender"`
 	}
 
 	var p param
@@ -33,6 +34,19 @@ func AddUser(c *gin.Context) {
 
 	var user model.User
 	if err = db.Where("open_id = ?", p.OpenId).First(&user).Error; err == gorm.ErrRecordNotFound {
+		user.OpenId = p.OpenId
+		user.Avtar = p.Avtar
+		user.Nick = p.Nick
+		user.Country = p.Country
+		user.Province = p.Province
+		user.City = p.City
+		user.Language = p.Language
+		if p.Gender == 1{
+			p.Gender = "男"
+		}else{
+			p.Gender = "女"
+		}
+		user.Gender = p.Gender
 		if err = db.Create(&user).Error; err != nil {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
