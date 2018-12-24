@@ -41,7 +41,7 @@ func AddUser(c *gin.Context) {
 		user.Province = p.Province
 		user.City = p.City
 		user.Language = p.Language
-		if p.Gender == 1{
+		if p.Gender == "1"{
 			p.Gender = "男"
 		}else{
 			p.Gender = "女"
