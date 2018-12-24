@@ -32,11 +32,15 @@
 </div>
 <div class="clear"></div>
 
-<div class="listbox">
+<div class="listbox" id="photolist">
 
 </div>
 <div class="clear"></div>
-<div class="wlinkpages"><span><a href='http://m.ilemiss.com/sexy/index_2.html'>下一页</a></span><span><a href='http://m.ilemiss.com/sexy/index_94.html'>尾页</a></span></div>
+
+<input type="hidden" id="pageOffset" value=0 >
+<input type="hidden" id="photoCount" value=0 >
+
+<div class="wlinkpages"><span><a href='#' onclick="SwitchPage(0)">首页</a></span><span><a href='#' onclick="SwitchPage(1)">上一页</a></span><span><a href='#' onclick="SwitchPage(2)">下一页</a></span><span><a href='#' onclick="SwitchPage(3)">尾页</a></span></div>
 
 <div class="footer">
     <p><a href="http://m.ilemiss.com">手机网站</a> ┊ <a href="http://www.ilemiss.com">电脑网站</a> ┊ <script src="https://s19.cnzz.com/z_stat.php?id=1274646390&web_id=1274646390" language="JavaScript"></script></p>
@@ -47,36 +51,55 @@
 <script src="./js/nav.js"></script>
 
 <script type="text/javascript">
-    function initData(offset,limit) {
-        $.getJSON("/cms/photo/list?offset="+offset+"&limit="+limit, function (json) {
+    function initData() {
+        var offset = $("#pageOffset").val();
+        $.getJSON("/cms/photo/list?offset="+offset+"&limit=10", function (json) {
             if (json.err_code != 0) {
                 alert(json.err_msg);
                 return
             }
-            /*
-            * <ul>
-             <li>
-             <div class="listimg"><a href="/html/photo/1.jpg" target="_blank">
-             <img alt="老婆和果果" src="/html/photo/hss-1.jpg" /></a>
-             <span class="listtxt"><a href="#" target="_blank">老婆和果果</a><br/>浏览517次 发布于2018-12-04</span>
-             </div>
-             </li>
-
-
-             </ul>
-            * */
-
-            var html = "<ul>"
+            var html = "<ul>";
             for(var i = 0 ; i < json.data.length ; i++){
                 html += '<li>';
                 html += '<div class="listimg"><a href="/html/photo' + json.data[i].url + '" target="_blank">';
+                html += '<img alt="老婆和果果" src="/html/photo' + json.data[i].url + '" /></a>';
                 html += '<span class="listtxt"><a href="#" target="_blank">' + json.data[i].title + '</a></span>';
                 html += '</div>';
                 html += '</li>';
             }
-            html += "</ul>"
-            $(".listbox").html(html);
+            html += "</ul>";
+            $("#photolist").html(html);
+
+            $("#photoCount").val(json.count);
         });
+    }
+
+    initData();
+
+    function SwitchPage(obj) {
+        if(obj == 0){
+            $("#pageOffset").val(0);
+        }else if(obj == 2){
+            var offset = Number($("#pageOffset").val()) + 10;
+            if(offset >= Number($("#photoCount").val())){
+                $("#pageOffset").val(offset - 10);
+            }else{
+                $("#pageOffset").val(offset);
+            }
+        }else if(obj == 1){
+            var offset = Number($("#pageOffset").val()) - 10;
+            if(offset <= 0){
+                $("#pageOffset").val(0);
+            }else{
+                $("#pageOffset").val(offset);
+            }
+        }else{
+            var count = Number($("#photoCount").val());
+            var offset = Math.floor(count / 10) * 10;
+            $("#pageOffset").val(offset);
+        }
+
+        initData();
     }
 </script>
 </body>

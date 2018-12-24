@@ -70,7 +70,7 @@ func StreamThumb(db *gorm.DB){
 				}
 			}
 		}
-		stream.Thumb = "http://www.ezhantao.com/res/stream/" + fmt.Sprint(stream.Id) + ".jpg"
+		stream.Thumb = "http://www.ezhantao.com:16882/res/stream/" + fmt.Sprint(stream.Id) + ".jpg"
 		stream.OnLine = flag1
 		if err = db.Save(&stream).Error ; err != nil{
 			logger.Error(err)

@@ -10,7 +10,7 @@ import (
 	"bufio"
 	"io"
 	"strings"
-	"background/newmovie/model"
+	//"background/newmovie/model"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 
@@ -34,7 +34,7 @@ func main(){
 	db.LogMode(true)
 
 	//f, err := os.Open("/home/lyric/Git/e94/src/background/newmovie/tools/2.txt")
-	f, err := os.Open("/root/Git/e94/src/background/newmovie/tools/t.txt")
+	f, err := os.Open("C:/work/code/e94/src/background/newmovie/tools/2.txt")
 	//f, err := os.Open("f:/Git/e94/src/background/newmovie/tools/2.txt")
 
 	if err != nil {
@@ -53,22 +53,24 @@ func main(){
 
 		logger.Debug(line)
 
-		var title string
-		var url string
-		fields := strings.Split(line, "|")
-		if len(fields) == 2{
-			title = fields[0]
-			url = fields[1]
-		}else{
-			url = fields[0]
-		}
+		//var title string
+		//var url string
+		//fields := strings.Split(line, "|")
+		//if len(fields) == 2{
+		//	title = fields[0]
+		//	url = fields[1]
+		//}else{
+		//	url = fields[0]
+		//}
 
-		var playUrl model.PlayUrl
-		if err = db.Where("url = ?",url).First(&playUrl).Error ; err == nil{
-			continue
-		}
-		if util.CheckStream(url,"/root/data/tmp/" + fmt.Sprint(i) + ".jpg"){
-			fmt.Println(fmt.Sprint(i) + "|SUCCESS|" + title + "|" + url)
+		url := line
+
+		//var playUrl model.PlayUrl
+		//if err = db.Where("url = ?",url).First(&playUrl).Error ; err == nil{
+		//	continue
+		//}
+		if util.CheckStream(url,"c:/work/photo/red/" + fmt.Sprint(i) + ".jpg"){
+			fmt.Println(fmt.Sprint(i) + "|SUCCESS|" + "" + "|" + url)
 		}
 		i++
 	}

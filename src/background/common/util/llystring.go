@@ -3,7 +3,7 @@ package util
 import (
 	"strings"
 	"time"
-	"fmt"
+	//"fmt"
 	"os/exec"
 	"background/common/logger"
 )
@@ -43,11 +43,16 @@ func CheckStream(url string,jpgName string)bool{
 
 func CheckStreamUrl(url string,jpgName string)bool{
 	c2 := make(chan string, 1)
-	ffmpegAddr := "/usr/bin/ffmpeg"
+	//var ffmpegAddr string = "ffmpeg"
 	go func() {
-		cmdStr := fmt.Sprintf("%s -i '%s' -y -s 320x240 -vframes 1 %s", ffmpegAddr, url,jpgName)
-		fmt.Println(cmdStr)
-		cmd := exec.Command("bash", "-c", cmdStr)
+		//logger.Debug(ffmpegAddr)
+		logger.Debug(url)
+
+		var cmdStr string = "C:/ff/bin/ffmpeg -i " + url + " -y -s 320x240 -vframes 1 " + jpgName
+		//cmdStr := fmt.Sprintf("ffmpeg -i %s -y -s 320x240 -vframes 1 %s", url,jpgName)
+		logger.Debug(cmdStr)
+		time.Sleep(time.Second * 5)
+		cmd := exec.Command("bash", "-c", "C:/ff/bin/ffmpeg -i " + url + " -y -s 320x240 -vframes 1 " + jpgName)
 
 		if err := cmd.Run(); err == nil {
 			c2 <- "success"

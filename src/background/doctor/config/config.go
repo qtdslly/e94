@@ -30,12 +30,12 @@ func init() {
 	c.StorageRoot = "/root/data/storage/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/movie?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/doctor?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
-	c.CmsRoot = "/root/Git/e94/src/background/newmovie/"
-	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
+	c.CmsRoot = "/root/Git/e94/src/background/doctor/"
+	c.TmplRoot = "/root/Git/e94/src/background/doctor/tmpl/"
 	c.StaticRoot = "/root/data/storage/"
 	c.AreaData = "/root/bin/movie/config/area.data"
 }
