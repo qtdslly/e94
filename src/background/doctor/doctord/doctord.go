@@ -71,8 +71,6 @@ func main(){
 		r.GET("/comment/list",api.CommentList)
 
 		r.GET("/duty/list",api.DutyList)
-
-
 	}
 
 	r.Run(":15000")
