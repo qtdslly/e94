@@ -79,3 +79,38 @@ func CommentList(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiComments})
 }
+
+
+
+func CommentAdd(c *gin.Context) {
+	type param struct {
+		UserId     uint32 `form:"user_id" json:"user_id"`
+		DoctorId   uint32 `form:"doctor_id" json:"doctor_id"`
+		Content    string `form:"content" json:"content"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var comment model.Comment
+	comment.UserId = p.UserId
+	comment.DoctorId = p.DoctorId
+	comment.Content = p.Content
+	comment.State = model.CommentStateUnknow
+
+	if err = db.Create(&comment).Error ; err != nil{
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": comment})
+}
