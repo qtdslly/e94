@@ -28,6 +28,10 @@ func AddUser(c *gin.Context) {
 		return
 	}
 
+	if p.OpenId == ""{
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
 	var err error
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
@@ -50,6 +54,7 @@ func AddUser(c *gin.Context) {
 		if err = db.Create(&user).Error; err != nil {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
+			return 
 		}
 	}
 
