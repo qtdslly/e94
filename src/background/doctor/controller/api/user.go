@@ -54,7 +54,7 @@ func AddUser(c *gin.Context) {
 		if err = db.Create(&user).Error; err != nil {
 			logger.Error(err)
 			c.AbortWithStatus(http.StatusInternalServerError)
-			return 
+			return
 		}
 	}
 
