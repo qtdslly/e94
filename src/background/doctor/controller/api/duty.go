@@ -45,5 +45,50 @@ func DutyList(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": dutys})
+	type ApiDuty struct{
+		Id           uint32         `gorm:"primary_key" json:"id"`
+		DoctorId     uint32         `json:"doctor_id"`
+		Date         string         `json:"date"`
+		Morning      bool           `json:"morning"`
+		Afternoon    bool           `json:"afternoon"`
+		Night        bool           `json:"night"`
+		Week         string         `json:"week"`
+	}
+
+	flag := ""
+	var apiDutys []*ApiDuty
+	for _, duty := range dutys{
+		var apiDuty ApiDuty
+		apiDuty.Id = duty.Id
+		apiDuty.DoctorId = duty.DoctorId
+		apiDuty.Date = duty.Date
+		apiDuty.Morning = duty.Morning
+		apiDuty.Afternoon = duty.Afternoon
+		apiDuty.Night = duty.Night
+
+		n , _ := time.Parse("2006-01-02 15:04:05", apiDuty.Date + " 00:00:00")
+		logger.Debug(fmt.Sprintf("%04d-%02d-%02d %02d:%02d:%02d",n.Year(),n.Month(),n.Day(),n.Hour(),n.Minute(),n.Second()))
+		apiDuty.Week = n.Weekday().String()
+
+		if apiDuty.Week == "Monday"{
+			apiDuty.Week = flag + "周一"
+		}else if apiDuty.Week == "Tuesday"{
+			apiDuty.Week = flag + "周二"
+		}else if apiDuty.Week == "Wednesday"{
+			apiDuty.Week = flag + "周三"
+		}else if apiDuty.Week == "Thursday"{
+			apiDuty.Week = flag + "周四"
+		}else if apiDuty.Week == "Friday"{
+			apiDuty.Week = flag + "周五"
+		}else if apiDuty.Week == "Saturday"{
+			apiDuty.Week = flag + "周六"
+		}else if apiDuty.Week == "Sunday"{
+			apiDuty.Week = flag + "周日"
+			flag = "下"
+		}
+
+		apiDutys = append(apiDutys,&apiDuty)
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDutys})
 }
