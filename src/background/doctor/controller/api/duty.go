@@ -7,6 +7,8 @@ import (
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
+	"time"
+	"fmt"
 )
 
 func DutyList(c *gin.Context) {
@@ -31,9 +33,13 @@ func DutyList(c *gin.Context) {
 
 	db := c.MustGet(constant.ContextDb).(*gorm.DB)
 
+	now := time.Now()
+
+	date := fmt.Sprintf("%04d-%02d-%02d",now.Year(),now.Month(),now.Day())
+
 	var dutys []model.Duty
 
-	if err = db.Order("date desc").Limit(p.Limit).Where("doctor_id = ?",p.DoctorId).Find(&dutys).Error ; err != nil{
+	if err = db.Order("date asc").Limit(p.Limit).Where("doctor_id = ? and date >= ?",p.DoctorId,date).Find(&dutys).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
