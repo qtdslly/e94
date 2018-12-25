@@ -42,6 +42,7 @@ func CommentList(c *gin.Context) {
 	type ApiComment struct {
 		UserId   uint32 `json:"user_id"`
 		Nick     string `json:"nick"`
+		Avtar    string `json:"avtar"`
 		Content   string `json:"content"`
 		DoctorNick   string `json:"doctor_nick"`
 		Reply    string `json:"reply"`
@@ -68,6 +69,7 @@ func CommentList(c *gin.Context) {
 		apiComment.UserId = comment.UserId
 		apiComment.Content = comment.Content
 		apiComment.DoctorNick = doctor.Nick
+		apiComment.Avtar = user.Avtar
 		apiComment.Nick = user.Nick
 		apiComment.Reply = comment.Reply
 
