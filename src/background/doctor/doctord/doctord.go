@@ -69,6 +69,7 @@ func main(){
 		r.GET("/user/add",api.AddUser)
 
 		r.GET("/comment/list",api.CommentList)
+		r.GET("/comment/add",api.CommentAdd)
 
 		r.GET("/duty/list",api.DutyList)
 	}
