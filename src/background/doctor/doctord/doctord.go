@@ -72,6 +72,8 @@ func main(){
 		r.GET("/comment/add",api.CommentAdd)
 
 		r.GET("/duty/list",api.DutyList)
+		r.GET("/duty/add",api.DutyAdd)
+
 	}
 
 	r.Run(":15000")

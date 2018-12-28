@@ -92,3 +92,50 @@ func DutyList(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiDutys})
 }
+
+
+func DutyAdd(c *gin.Context) {
+
+	type param struct {
+		DoctorId   uint32 `form:"doctor_id" json:"doctor_id"`
+		Date       string `form:"date" json:"date"`
+		Morning    bool `form:"morning" json:"morning"`
+		Afternoon  bool `form:"afternoon" json:"afternoon"`
+		Night      bool `form:"night" json:"night"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	if p.DoctorId == 0{
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var duty model.Duty
+	duty.DoctorId = p.DoctorId
+	duty.Date = p.Date
+	if err = db.Where("doctor_id = ? and date = ?",duty.DoctorId,duty.Date).First(&duty).Error ; err == nil{
+		c.JSON(http.StatusOK, gin.H{"err_code": constant.Failure, "err_msg": "数据以存在"})
+		return
+	}
+
+	duty.Morning = p.Morning
+	duty.Afternoon = p.Afternoon
+	duty.Night = p.Night
+
+	if err = db.Create(&duty).Error ; err != nil{
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": duty})
+}
