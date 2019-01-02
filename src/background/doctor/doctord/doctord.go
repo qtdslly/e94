@@ -73,6 +73,7 @@ func main(){
 
 		r.GET("/duty/list",api.DutyList)
 		r.GET("/duty/add",api.DutyAdd)
+		r.GET("/duty/update",api.DutyUpdate)
 
 	}
 

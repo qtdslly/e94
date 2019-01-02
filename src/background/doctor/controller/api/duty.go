@@ -123,7 +123,7 @@ func DutyAdd(c *gin.Context) {
 	duty.DoctorId = p.DoctorId
 	duty.Date = p.Date
 	if err = db.Where("doctor_id = ? and date = ?",duty.DoctorId,duty.Date).First(&duty).Error ; err == nil{
-		c.JSON(http.StatusOK, gin.H{"err_code": constant.Failure, "err_msg": "数据以存在"})
+		c.JSON(http.StatusOK, gin.H{"err_code": constant.Failure, "err_msg": "数据已存在"})
 		return
 	}
 
@@ -132,6 +132,56 @@ func DutyAdd(c *gin.Context) {
 	duty.Night = p.Night
 
 	if err = db.Create(&duty).Error ; err != nil{
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": duty})
+}
+
+
+func DutyUpdate(c *gin.Context) {
+
+	type param struct {
+		DoctorId   uint32 `form:"doctor_id" json:"doctor_id"`
+		Date       string `form:"date" json:"date"`
+		Flag       string `form:"flag" json:"flag"`
+		Value      bool   `form:"value" json:"value"`
+	}
+
+	var p param
+	if err := c.Bind(&p); err != nil {
+		logger.Error(err)
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	if p.DoctorId == 0{
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+	var err error
+
+	db := c.MustGet(constant.ContextDb).(*gorm.DB)
+
+	var duty model.Duty
+	duty.DoctorId = p.DoctorId
+	duty.Date = p.Date
+	if err = db.Where("doctor_id = ? and date = ?",duty.DoctorId,duty.Date).First(&duty).Error ; err != nil{
+		c.AbortWithStatus(http.StatusInternalServerError)
+		return
+	}
+
+	if p.Flag == "上午"{
+		duty.Morning = p.Value
+	}else if p.Flag == "下午"{
+		duty.Afternoon = p.Value
+	}else if p.Flag == "晚上"{
+		duty.Night = p.Value
+	}
+
+	if err = db.Save(&duty).Error ; err != nil{
 		logger.Error(err)
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
