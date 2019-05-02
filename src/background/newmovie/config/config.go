@@ -20,6 +20,7 @@ type config struct {
 	StaticRoot    string `json:"static_root"`
 	CmsRoot       string `json:"cms_root"`
 	AreaData      string `json:"area_data"`
+	Domain        string `json:"domain"`
 
 }
 
@@ -34,10 +35,12 @@ func init() {
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
-	c.CmsRoot = "/root/Git/e94/src/background/newmovie/"
-	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
-	c.StaticRoot = "/root/data/storage/"
-	c.AreaData = "/root/bin/movie/config/area.data"
+	c.CmsRoot = "/root/Git/e94/src/background/cms/"
+	c.TmplRoot = "/root/Git/e94/src/background/cms/tmpl/"
+	c.StaticRoot = "C:/work/code/e94/src/background/cms/html/"
+	c.AreaData = "/root/bin/cms/config/area.data"
+	c.Domain = "http://localhost"
+
 }
 
 func LoadConfig(path string) error {
@@ -109,4 +112,9 @@ func GetCmsRoot() string {
 }
 func GetAreaData() string {
 	return c.AreaData
+}
+
+
+func GetDomain() string {
+	return c.Domain
 }

@@ -148,7 +148,7 @@ func main(){
 	//http.Handle("/pic/", http.StripPrefix("/pic/", h)) // 启动静态文件服务
 	//Header().Set("Expires", time.Now().Format("MON, 02 Jan 2006 15:04:05 GMT"))
 
-	r.Run(":16882")
+	r.Run(":80")
 
 }
 

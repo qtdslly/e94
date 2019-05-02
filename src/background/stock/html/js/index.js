@@ -15,7 +15,7 @@
       });
 
       $('.ui-header .ui-btn').click(function(){
-          location.href= 'index.html';
+          location.href= 'login.html';
       });
 
       $("#btn1").click(function(){

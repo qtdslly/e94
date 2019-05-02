@@ -1,0 +1,286 @@
+./addstream -t '美国中文电视' -u 'rtmp://media3.sinovision.net:1935/live/livestream' -c '美国'
+./addstream -t '美国中文电视' -u 'http://media3.sinovision.net:1935/live/livestream/playlist.m3u8' -c '美国'
+./addstream -t '美国中文电视' -u 'http://ec.sinovision.net/video/ts/lv.m3u8' -c '美国'
+
+
+./addstream -t '体彩开奖' -u 'rtmp://videocc.lottery.gov.cn/live/stream' -c '特色'
+
+
+
+./addstream -t '俄罗斯MTV' -u 'http://85.132.78.6:1935/live/muztv.stream/lihattv.m3u8' -c '俄罗斯'
+
+./addstream -t '马来西亚BERNAMA' -u 'http://stream2.1malaysiaiptv.com/mylive/smil:bernama2_all.smil/playlist.m3u8' -c '马来西亚'
+
+./addstream -t '英国天空新闻台' -u 'http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8' -c '英国'
+
+
+./addstream -t '法国24频道' -u 'http://f24hls-i.akamaihd.net/hls/live/221192/F24_FR_LO_HLS/master_900.m3u8' -c '法国'
+
+./addstream -t '泰国国家电视台' -u 'http://live.nationtv.tv/hls/ntv_th.m3u8' -c '泰国'
+
+./addstream -t '加拿大国家电视台中文频道' -u 'https://wowzaprodhd84-lh.akamaihd.net/i/4ae6355d_1@505999/master.m3u8' -c '加拿大'
+
+./addstream -t '澳大利亚天和电视台' -u 'http://rtvcdn.com.au:8082/TV_GG.m3u8' -c '澳大利亚'
+
+
+./addstream -t '东森新闻' -u 'http://zqzxl.live.maxtv.cn/live/dsxwhd/playlist.m3u8' -c '台湾'
+
+./addstream -t 'CGTN-国际' -u 'http://live.cgtn.com/manifest.m3u8' -c '央视'
+./addstream -t 'CGTN-法语' -u 'http://live.cgtn.com/cctv-f.m3u8' -c '央视'
+./addstream -t 'CGTN-记录' -u 'http://live.cgtn.com/cctv-d.m3u8' -c '央视'
+./addstream -t 'CGTN-俄语' -u 'http://live.cgtn.com/cctv-r.m3u8' -c '央视'
+./addstream -t 'CGTN-西语' -u 'http://live.cgtn.com/cctv-e.m3u8' -c '央视'
+./addstream -t 'CGTN-阿语' -u 'http://live.cgtn.com/cctv-a.m3u8' -c '央视'
+
+./addstream -t '美国HBO中文' -u 'http://iss06.ott.net.tw:8086/live/coship_DCTV2291445940028640_1200.m3u8' -c '美国'
+
+
+./addstream -t '成都新闻综合' -u 'http://web-play.pptv.com/web-m3u8-300356.m3u8' -c '四川'
+./addstream -t '成都影视文艺' -u 'http://web-play.pptv.com/web-m3u8-300474.m3u8' -c '四川'
+./addstream -t '成都少儿频道' -u 'http://web-play.pptv.com/web-m3u8-300476.m3u8' -c '四川'
+./addstream -t '韩国中央台' -u 'http://122.202.129.136:1935/live/ch5/playlist.m3u8' -c '韩国'
+./addstream -t '邮轮旅游' -u 'http://web-play.pptv.com/web-m3u8-300425.m3u8' -c '广东'
+./addstream -t '香港卫视4' -u 'http://web-play.pptv.com/web-m3u8-300366.m3u8' -c '香港'
+
+./addstream -t '凤凰卫视资讯台' -u 'http://223.110.243.142/PLTV/2510088/224/3221227163/1.m3u8' -c '香港'
+./addstream -t '皇家马德里fc足球台' -u 'http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hweben_1@300662/index_3_av-b.m3u8' -c '西班牙'
+
+./addstream -t '中华卫视神州台' -u 'http://pull.kapad.cn/live/livechtv/playlist.m3u8' -c '香港'
+
+
+
+./addstream -t 'CCTV风云剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227343/1.m3u8' -c '央视'
+
+./addstream -t 'CCTV电视指南' -u 'http://223.110.243.142/PLTV/2510088/224/3221227337/1.m3u8' -c '央视'
+./addstream -t 'CCTV怀旧剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227346/1.m3u8' -c '央视'
+./addstream -t 'CCTV高尔夫网球' -u 'http://223.110.243.142/PLTV/2510088/224/3221227347/1.m3u8' -c '央视'
+./addstream -t 'CCTV第一剧场' -u 'http://223.110.243.142/PLTV/2510088/224/3221227340/1.m3u8' -c '央视'
+./addstream -t 'CCTV风云足球' -u 'http://223.110.243.142/PLTV/2510088/224/3221227344/1.m3u8' -c '央视'
+
+./addstream -t '索尼台2' -u 'http://cshms3.airtel.tv/PLTV/88888888/224/3221225932/01.m3u8' -c '日本'
+
+./addstream -t '中国气象频道' -u 'http://223.99.186.132:6410/shandong_cabletv.live.zte.com/223.99.189.25:8089/00/SNM/CHANNEL00000609/index.m3u8' -c '央视'
+./addstream -t '中国气象频道' -u 'http://hls.weathertv.cn/tslslive/qCFIfHB/hls/live_sd.m3u8' -c '央视'
+./addstream -t '中国气象频道' -u 'http://223.110.245.157/ott.js.chinamobile.com/PLTV/3/224/3221227438/index.m3u8' -c '央视'
+./addstream -t 'CCTV5' -u 'http://cctv5.txty.5213.liveplay.myqcloud.com/live/cctv5_txty.m3u8' -c '央视'
+
+./addstream -t '卡塔尔半岛电视台' -u 'http://aljazeera-doc-apple-live.adaptive.level3.net/apple/aljazeera/hq-doc/800kStream.m3u8' -c '卡塔尔'
+./addstream -t '欧洲新闻' -u 'http://d2ce261d.ottv.biz/iptv/FB6ABTVVGZQY4R/969/index.m3u8' -c '欧洲'
+
+./addstream -t '海南藏语' -u 'http://live.hnzzzzzdst.com/channel1/sd/live.m3u8' -c '海南'
+./addstream -t '邵武综合' -u 'http://r.gslb.lecloud.com/live/hls/201606033000003fc13/desc.m3u8' -c '福建'
+./addstream -t '韩国-CBS' -u 'http://cbs-live.gscdn.com/cbs-live/cbs-live.stream/playlist.m3u8' -c '韩国'
+
+./addstream -t '江油新闻' -u 'http://vod.scjygd.com:1935/live/smil:xwzh_copy.smil/playlist.m3u8' -c '四川'
+
+./addstream -t '苏州新闻综合' -u 'http://livetv.2500city.com/live/sbs1hd/index.m3u8' -c '江苏'
+./addstream -t '武进新闻' -u 'http://live.wjyanghu.com/live/CH1.m3u8' -c '江苏'
+./addstream -t '武进生活' -u 'http://live.wjyanghu.com/live/CH2.m3u8' -c '江苏'
+
+./addstream -t '句容新闻综合' -u 'http://218.3.92.100:1937/live/jrxwzh/playlist.m3u8' -c '江苏'
+./addstream -t '句容新闻综合' -u 'http://218.3.92.100:1937/live/jrxwzh/chunklist_w1820374508.m3u8' -c '江苏'
+
+./addstream -t '句容生活综合' -u 'http://218.3.92.100:1937/live/shenghuo/playlist.m3u8' -c '江苏'
+./addstream -t '句容生活综合' -u 'http://218.3.92.100:1937/live/shenghuo/chunklist_w112905725.m3u8' -c '江苏'
+
+./addstream -t '句容影视频道' -u 'http://218.3.92.100:1937/live/yingshi/playlist.m3u8' -c '江苏'
+./addstream -t '句容影视频道' -u 'http://218.3.92.100:1937/live/yingshi/chunklist_w1047139501.m3u8' -c '江苏'
+
+./addstream -t '句容党建频道' -u 'http://218.3.92.100:1937/live/dangjian/playlist.m3u8' -c '江苏'
+./addstream -t '句容党建频道' -u 'http://218.3.92.100:1937/live/dangjian/chunklist_w374083748.m3u8' -c '江苏'
+
+
+./addstream -t '岳西综合' -u 'rtmp://58.243.4.22:1935/live/zonghe' -c '安徽'
+./addstream -t '岳西影视' -u 'rtmp://58.243.4.22:1935/live/yingshi' -c '安徽'
+./addstream -t '岳西图文' -u 'rtmp://58.243.4.22:1935/live/tuwen' -c '安徽'
+
+
+./addstream -t '萧县新闻综合' -u 'http://60.171.238.200:8199/live/XWZH.m3u8' -c '安徽'
+./addstream -t '萧县新闻综合' -u 'http://60.171.238.200:8199/live/XWZH_496.m3u8' -c '安徽'
+
+./addstream -t '萧县经济生活' -u 'http://60.171.238.200:8199/live/JJSH.m3u8' -c '安徽'
+./addstream -t '萧县经济生活' -u 'http://60.171.238.200:8199/live/JJSH_496.m3u8' -c '安徽'
+
+
+./addstream -t '萧县农业旅游' -u 'http://60.171.238.200:8199/live/NYZB.m3u8' -c '安徽'
+./addstream -t '萧县农业旅游' -u 'http://60.171.238.200:8199/live/NYZB_496.m3u8' -c '安徽'
+
+
+./addstream -t '六安新闻综合' -u 'http://live.china-latv.com/channel1/sd/live.m3u8' -c '安徽'
+./addstream -t '六安公共' -u 'http://live.china-latv.com/channel2/sd/live.m3u8' -c '安徽'
+
+./addstream -t '东至新闻综合' -u 'http://www.ahdztv.cn:1935/live/zonghe/playlist.m3u8' -c '安徽'
+./addstream -t '东至影视' -u 'http://www.ahdztv.cn:1935/live/yingshi/playlist.m3u8' -c '安徽'
+./addstream -t '东至文化资讯' -u 'http://www.ahdztv.cn:1935/live/wenhua/playlist.m3u8' -c '安徽'
+
+./addstream -t '滁州新闻综合' -u 'rtmp://183.167.193.45:1935/live/cztvzh' -c '安徽'
+./addstream -t '滁州公共频道' -u 'rtmp://183.167.193.45:1935/live/cztvgg' -c '安徽'
+./addstream -t '滁州科教频道' -u 'rtmp://183.167.193.45:1935/live/cztvkj' -c '安徽'
+
+
+./addstream -t '淮北新闻综合' -u 'http://live1.0561rtv.com:9600/live/live1/800K/tzwj_video.m3u8' -c '安徽'
+./addstream -t '淮北公共频道' -u 'http://live1.0561rtv.com:9600/live/live2/800K/tzwj_video.m3u8' -c '安徽'
+./addstream -t '淮北教育频道' -u 'http://live1.0561rtv.com:9600/live/live3/800K/tzwj_video.m3u8' -c '安徽'
+./addstream -t '淮北都市频道' -u 'http://live1.0561rtv.com:9600/live/live4/800K/tzwj_video.m3u8' -c '安徽'
+
+
+./addstream -t '武汉新闻综合' -u 'http://live.whtv.com.cn/live/2a532d70bcbe47e6aaccc74dea2655cc?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉科技生活' -u 'http://live.whtv.com.cn/live/0ee5047bf1ad44098321d1bf08965076?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉电视剧' -u 'http://live.whtv.com.cn/live/6b6f634dee044abfa3aa03644ca0e603?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉少儿' -u 'http://live.whtv.com.cn/live/c86318910a5a44fb98db68c5d9f1bd92?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉文体' -u 'http://live.whtv.com.cn/live/2bc9fa7307ca499a99dddf8f949fe294?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉经济' -u 'http://live.whtv.com.cn/live/30d6cf16a3ad4a288caf298fd9dbe82a?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '晴彩武汉' -u 'http://live.whtv.com.cn/live/33dad9b9db4b47bdb12ba1ff5514796a?fmt=h264_450k_flv' -c '湖北'
+./addstream -t '武汉教育' -u 'http://live.whtv.com.cn/live/854ba3e080f54651a87f4efa3bd2ffba?fmt=h264_450k_flv' -c '湖北'
+
+
+./addstream -t '孝昌新闻党建' -u 'rtmp://xiaochang.live.cjyun.org/video/s10128-xcxw' -c '湖北'
+./addstream -t '孝昌生活' -u 'rtmp://xiaochang.live.cjyun.org/video/s10128-xcsh' -c '湖北'
+
+
+./addstream -t '蕲春综合' -u 'http://qichun.live.cjyun.org/video/s10126-TC1T.m3u8' -c '湖北'
+./addstream -t '蕲春旅游养生' -u 'http://qichun.live.cjyun.org/video/s10126-TC2T.m3u8' -c '湖北'
+
+
+./addstream -t '罗田综合' -u 'http://luotian.live.cjyun.org/video/s10013-LTZH.m3u8' -c '湖北'
+./addstream -t '罗田旅游' -u 'http://luotian.live.cjyun.org/video/s10013-LTLY.m3u8' -c '湖北'
+
+
+./addstream -t '武穴综合' -u 'http://wuxue.live.cjyun.org/video/s10107-wxtv1/index.m3u8' -c '湖北'
+./addstream -t '咸丰新闻综合' -u 'http://xianfeng.source.cjyun.org/video/s10096-xftv1.m3u8' -c '湖北'
+./addstream -t '咸丰影视' -u 'http://xianfeng.source.cjyun.org/video/s10096-xftv2.m3u8' -c '湖北'
+
+./addstream -t '赤壁电视台1' -u 'http://hbcb.chinashadt.com:1936/live/tv1.stream/playlist.m3u8' -c '湖北'
+./addstream -t '赤壁电视台2' -u 'http://hbcb.chinashadt.com:1936/live/tv2.stream/playlist.m3u8' -c '湖北'
+
+
+./addstream -t '厦门海峡' -u 'http://cstv.live.wscdns.com/live/xiamen2/playlist.m3u8' -c '福建'
+./addstream -t '厦门影视' -u 'http://cstv.live.wscdns.com/live/xiamen4/playlist.m3u8' -c '福建'
+
+
+./addstream -t '泉州电视台1套' -u 'http://live.qztvxwgj.com/live/news.m3u8' -c '福建'
+./addstream -t '泉州电视台4套' -u 'http://live.qztvxwgj.com/live/mny.m3u8' -c '福建'
+
+
+./addstream -t '尤溪新闻综合' -u 'http://fjyx.chinashadt.com:1935/zhibo/cs.stream/playlist.m3u8' -c '福建'
+./addstream -t '尤溪城市生活' -u 'http://fjyx.chinashadt.com:1935/zhibo/cssh.stream/playlist.m3u8' -c '福建'
+
+
+./addstream -t '宁德电视台1套' -u 'http://220.161.247.82:8199/live/nd1_1128.m3u8' -c '福建'
+./addstream -t '宁德电视台2套' -u 'http://220.161.247.82:8199/live/nd2_1128.m3u8' -c '福建'
+
+
+./addstream -t '龙岩综合' -u 'http://stream.lytv.net.cn/2/sd/live.m3u8' -c '福建'
+./addstream -t '龙岩公共' -u 'http://stream.lytv.net.cn/1/sd/live.m3u8' -c '福建'
+
+
+./addstream -t '张掖新闻' -u 'http://202.100.86.157:8500/hls/c01.m3u8' -c '甘肃'
+./addstream -t '张掖公共' -u 'http://202.100.86.157:8500/hls/c02.m3u8' -c '甘肃'
+
+
+
+./addstream -t '烟台新闻综合' -u 'http://live1.av.jiaodong.net/channels/yttv/xnpd_yt1/flv:500k/live?1530777522930' -c '山东'
+./addstream -t '烟台公共' -u 'http://live1.av.jiaodong.net/channels/yttv/xnpd_yt2/flv:500k/live?1530777651119' -c '山东'
+
+
+./addstream -t '枣庄新闻综合' -u 'http://stream.zzgd.tv/1/sd/live.m3u8' -c '山东'
+./addstream -t '枣庄教育频道' -u 'http://stream.zzgd.tv/2/sd/live.m3u8' -c '山东'
+./addstream -t '枣庄公共频道' -u 'http://stream.zzgd.tv/3/sd/live.m3u8' -c '山东'
+
+./addstream -t '无棣综艺' -u 'http://sdwd.chinashadt.com:1935/live/wdzy.stream/playlist.m3u8' -c '山东'
+
+
+./addstream -t '福山综合' -u 'rtmp://live.jiaodong.net/tvfushan/tv_zonghe' -c '山东'
+./addstream -t '福山生活' -u 'rtmp://live.jiaodong.net/tvfushan/tv_shenghuo' -c '山东'
+./addstream -t '福山影视' -u 'rtmp://live.jiaodong.net/tvfushan/tv_yingshi' -c '山东'
+
+
+./addstream -t '章丘电视台1套' -u 'http://live.zhihuizq.com:1935/live/4_channel-0_output-0_live/playlist.m3u8' -c '山东'
+./addstream -t '章丘电视台2套' -u 'http://live.zhihuizq.com:1935/live/4_channel-1_output-0_live/playlist.m3u8' -c '山东'
+./addstream -t '章丘图文频道' -u 'http://live.zhihuizq.com:1935/live/4_channel-2_output-0_live/playlist.m3u8' -c '山东'
+
+
+./addstream -t '丽水新闻综合' -u 'http://video.lsol.com.cn/applive_lstv1/manifest.m3u8' -c '浙江'
+./addstream -t '丽水经济生活' -u 'http://video.lsol.com.cn/applive_lstv2/manifest.m3u8' -c '浙江'
+./addstream -t '丽水文化休闲' -u 'http://video.lsol.com.cn/applive_lstv3/manifest.m3u8' -c '浙江'
+
+
+./addstream -t '平阳新闻综合' -u 'http://113.214.24.158:8011/hls/srdekakt/index.m3u8' -c '浙江'
+./addstream -t '平阳娱乐生活' -u 'http://113.214.24.158:8011/hls/khqhvmec/index.m3u8' -c '浙江'
+
+
+
+./addstream -t '贵阳1套' -u 'http://hls.qguiyang.com/GYBTV1/800/f5dGzB.m3u8' -c '贵州'
+./addstream -t '贵阳2套' -u 'http://hls.qguiyang.com/GYBTV2/800/e5eGzB.m3u8' -c '贵州'
+./addstream -t '贵阳3套' -u 'http://hls.qguiyang.com/GYBTV3/800/d5fGzB.m3u8' -c '贵州'
+./addstream -t '贵阳4套' -u 'http://hls.qguiyang.com/GYBTV4/800/c5gGzB.m3u8' -c '贵州'
+./addstream -t '贵阳5套' -u 'http://hls.qguiyang.com/GYBTV5/800/b5hGzB.m3u8' -c '贵州'
+
+
+./addstream -t '内江综合' -u 'http://njzb.scnj.tv:8091/live/njtv1.m3u8' -c '四川'
+./addstream -t '内江公共' -u 'http://njzb.scnj.tv:8091/live/njtv2.m3u8' -c '四川'
+
+./addstream -t '沧县1套' -u 'http://hebcx.chinashadt.com:2036/live/10001.stream/playlist.m3u8' -c '河北'
+./addstream -t '沧县2套' -u 'http://hebcx.chinashadt.com:2036/live/10002.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '冀州新闻综合' -u 'http://hbjz.chinashadt.com:1936/live/stream:jz1.stream/playlist.m3u8' -c '河北'
+./addstream -t '冀州电视台' -u 'http://hbjz.chinashadt.com:1936/live/stream:jz2.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '东光电视台1套' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgtv1.stream/playlist.m3u8' -c '河北'
+./addstream -t '东光电视台2套' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgtv2.stream/playlist.m3u8' -c '河北'
+./addstream -t '东光综艺频道' -u 'http://hbdg.chinashadt.com:1936/live/stream:dgzy.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '无极新闻综合' -u 'http://hbwj.chinashadt.com:2235/live/di3.stream/playlist.m3u8' -c '河北'
+./addstream -t '无极生活教育' -u 'http://hbwj.chinashadt.com:2235/live/di2.stream/playlist.m3u8' -c '河北'
+
+
+./addstream -t '滦南新闻综合' -u 'http://tv.lnshw.com.cn:3100/hls/pegdvlxq/index.m3u8' -c '河北'
+./addstream -t '滦南影视娱乐' -u 'http://tv.lnshw.com.cn:3100/hls/hebmnzbs/index.m3u8' -c '河北'
+
+
+./addstream -t '黄骅电视台1套' -u 'http://hbhh.chinashadt.com:2111/live/hhtv.stream/playlist.m3u8' -c '河北'
+./addstream -t '黄骅电视台2套' -u 'http://hbhh.chinashadt.com:2111/live/hhtv2.stream/playlist.m3u8' -c '河北'
+./addstream -t '黄骅渤海新区' -u 'http://hbhh.chinashadt.com:2111/live/bhtv.stream/playlist.m3u8' -c '河北'
+
+
+
+./addstream -t '桂阳新闻综合' -u 'http://bofang.live.guiyangtv.all-tv.cn/guiyang/guiyang1/playlist.m3u8' -c '湖南'
+./addstream -t '桂阳经视' -u 'http://bofang.live.guiyangtv.all-tv.cn/guiyang/guiyang3/playlist.m3u8' -c '湖南'
+./addstream -t '娄底综合' -u 'http://mms.ldntv.cn:1935/live/_definst_/zonghe/playlist.m3u8' -c '湖南'
+./addstream -t '娄底公共' -u 'http://mms.ldntv.cn:1935/live/_definst_/gonggong/playlist.m3u8' -c '湖南'
+
+
+./addstream -t '邵阳新闻综合' -u 'http://ums.sytv.net.cn//live/TVxw2_11742/tzwj_video.m3u8' -c '湖南'
+./addstream -t '邵阳公共频道' -u 'http://ums.sytv.net.cn//live/TVzf2_11743/tzwj_video.m3u8' -c '湖南'
+
+
+
+检查成都新闻综合周五是不是能播
+http://www.radio366.com/tv/
+成都新闻综合|http://cdn1.cditv.cn/cdtv1/CDTV1.flv?wsSecret=edc0236dba798aa74518f4b4f15ebb6c&wsTime=5b3dd6c3
+甘洛电视台|http://livecdn.lsiptv.cn/ganluo/ganluoLIVE.flv/playlist.m3u8?wsSecret=5d679625bec3253cfb22a9900cfaa834&wsTime=5b3decd9
+
+
+./addstream -t '环宇新闻频道' -u 'http://enlen.vip/live/faint.php?id=543f39dcbe8f33ec180fc541' -c '台湾'
+./addstream -t 'TVBS新闻频台' -u 'http://enlen.vip/live/faint.php?id=569f54e6981e0c7f0a061223' -c '台湾'
+./addstream -t '民视新闻' -u 'http://enlen.vip/live/faint.php?id=56a747f6981e0c7f0a06129a' -c '台湾'
+./addstream -t 'TVBS' -u 'http://enlen.vip/live/faint.php?id=569f555c981e0c7f0a061224' -c '台湾'
+./addstream -t '环宇财经' -u 'http://enlen.vip/live/faint.php?id=543f3e273d32fc7b0e332287' -c '台湾'
+./addstream -t '东森亚洲新闻' -u 'http://enlen.vip/live/faint.php?id=543f3e663d32fc7b0e332289' -c '台湾'
+
+
+./addstream -t 'UnKnow1' -u 'http://iptv2017.ddns.net:8100/live/hamdi/1234/790.ts' -c '其他外国频道'
+./addstream -t 'UnKnow2' -u 'http://202.80.222.4/mnt/tmpfs/hls/001/001/ch15051810235326945512/index.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow3' -u 'http://210.210.155.35/session/1f4b9814-7ed5-11e8-aa50-c81f66f89318/uq2663/h/h03/02.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow4' -u 'http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow5' -u 'http://202.80.222.4/mnt/tmpfs/hls/001/001/ch15051810235326945512/index.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow6' -u 'https://cdn-livetv2.metube.id/hls/rcti.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow7' -u 'https://cdn-livetv2.metube.id/hls/globaltv.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow8' -u 'https://cdn-livetv2.metube.id/hls/globaltv.m3u8' -c '其他外国频道'
+./addstream -t 'UnKnow9' -u 'http://new.indostreamingtv.com/live/tv1/index.m3u8' -c '其他外国频道'
+
+
+- 本文出自 中 文 寻 星 论坛 ，原文地址：http://bbs.cnsat.net/thread-239987-1-1.html

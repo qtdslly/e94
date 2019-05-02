@@ -1,0 +1,128 @@
+http://live.dltv.cn/8cuL6wa/w3685u0.m3u8
+国家地理,http://adtv.ercdn.net/adnatgeo/adnatgeo_720p.m3u8
+ELEVEN SPORTS,http://61.58.60.230:9000/live/102.m3u8
+韩国美女,http://edge2.everyon.tv/etv2sb/phd1377/playlist.m3u8
+韩国综艺,http://live.chosun.gscdn.com/live/_definst_/tvchosun1.stream/chunklist.m3u8
+旺台湾，http://61.58.60.230:9000/live/88.m3u8
+大爱，http://61.58.60.230:9000/live/10.m3u8
+韩国电视，rtmp://live.chosun.gscdn.com/live/tvchosun1.stream
+爱尔达体育1台，rtmp://kv3.tp33.net/sat/md011
+博斯网球,rtmp://kv3.tp33.net/sat/md021
+博斯运动，rtmp://kv3.tp33.net/sat/md031
+爱尔达体育2台,rtmp://kv3.tp33.net/sat/md041
+彩球台，rtmp://kv3.tp33.net/sat/hk011
+香港体育，rtmp://kv3.tp33.net/sat/hk021
+香港18台，rtmp://kv3.tp33.net/sat/hk041
+東森財經新聞, rtmp://kv3.tp33.net/sat/tv571
+
+./addstream -t '大爱电视台' -u 'http://61.58.60.230:9000/live/10.m3u8' -c '台湾'
+./addstream -t '旺台湾' -u 'http://61.58.60.230:9000/live/88.m3u8' -c '台湾'
+./addstream -t '香港18台' -u 'rtmp://kv3.tp33.net/sat/hk041' -c '香港'
+./addstream -t '彩球台' -u 'rtmp://kv3.tp33.net/sat/hk011' -c '香港'
+./addstream -t '香港体育' -u 'rtmp://kv3.tp33.net/sat/hk021' -c '香港'
+./addstream -t '博斯运动' -u 'rtmp://kv3.tp33.net/sat/md031' -c '台湾'
+./addstream -t '博斯运动2' -u 'rtmp://kv3.tp33.net/sat/md051' -c '台湾'
+./addstream -t '博斯网球' -u 'rtmp://kv3.tp33.net/sat/md021' -c '台湾'
+./addstream -t '爱尔达体育1台' -u 'rtmp://kv3.tp33.net/sat/md011' -c '台湾'
+./addstream -t '爱尔达体育2台' -u 'rtmp://kv3.tp33.net/sat/md041' -c '台湾'
+
+
+
+./addstream -t '靖天映画台' -u 'http://61.58.60.230:9000/live/244.m3u8' -c '台湾'
+./addstream -t '靖天国际台' -u 'http://61.58.60.230:9000/live/205.m3u8' -c '台湾'
+./addstream -t '靖天卡通台' -u 'http://61.58.60.230:9000/live/207.m3u8' -c '台湾'
+./addstream -t '靖洋卡通台' -u 'http://61.58.60.230:9000/live/206.m3u8' -c '台湾'
+./addstream -t '靖洋戲劇台' -u 'http://61.58.60.230:9000/live/203.m3u8' -c '台湾'
+./addstream -t '靖天育乐台' -u 'http://61.58.60.230:9000/live/204.m3u8' -c '台湾'
+./addstream -t '靖天资讯台' -u 'http://61.58.60.230:9000/live/202.m3u8' -c '台湾'
+
+
+
+SONY电影，http://mhms5.airtel.tv/PLTV/88888888/224/3221226280/03.m3u8
+TLC,http://mhms5.airtel.tv/PLTV/88888888/224/3221226279/03.m3u8
+SONY影院，http://mhms5.airtel.tv/PLTV/88888888/224/3221226446/03.m3u8
+动物星球,http://mhms5.airtel.tv/PLTV/88888888/224/3221226201/03.m3u8
+AXN,http://mhms9.airtel.tv/wh7f454c46tw4163224253_611767333/PLTV/88888888/224/3221226443/index.m3u8
+Discovery,http://mhms5.airtel.tv/PLTV/88888888/224/3221226205/03.m3u8
+SONY HD,http://mhms5.airtel.tv/PLTV/88888888/224/3221225875/03.m3u8
+
+一夜源：翡翠台，http://pullhls6.inke.cn/live/1532257744100047/playlist.m3u8
+
+
+周星驰，http://aldirect.hls.huya.com/huyalive/94525224-2460685313-10568562945082523648-2789274524-10057-A-0-1_1200.m3u8
+林正英，http://aldirect.hls.huya.com/huyalive/94525224-2460686034-10568566041753944064-2789274542-10057-A-0-1_1200.m3u8
+周润发，http://aldirect.hls.huya.com/huyalive/94525224-2460685774-10568564925062447104-2789253840-10057-A-0-1_1200.m3u8
+科幻大片，http://tx.hls.huya.com/huyalive/30765679-2504742278-10757786168918540288-3049003128-10057-A-0-1_1200.m3u8
+捷克人
+Barrandov FAMILY,http://82.202.90.242:9981/stream/channelid/1161064108
+Barrandov Plus, http://82.202.90.242:9981/stream/channelid/795576136
+BARRANDOV TV,http://82.202.90.242:9981/stream/channelid/1630424023
+Cesky Impuls ,http://82.202.90.242:9981/stream/channelid/1065889846
+CRo D-DUR ,http://82.202.90.242:9981/stream/channelid/2094774069
+CRo DVOJKA ,http://82.202.90.242:9981/stream/channelid/422658750
+CRo JAZZ ,http://82.202.90.242:9981/stream/channelid/506083712
+CRo PLUS, http://82.202.90.242:9981/stream/channelid/1373890584
+CRo RADIO JUNIOR, http://82.202.90.242:9981/stream/channelid/1685043484
+CRo RADIO WAVE, http://82.202.90.242:9981/stream/channelid/1775253173
+CRo RADIOZURNAL, http://82.202.90.242:9981/stream/channelid/209774549
+CRo VLTAVA, http://82.202.90.242:9981/stream/channelid/1550513322
+CT 1, http://82.202.90.242:9981/stream/channelid/1128230685
+CT 2, http://82.202.90.242:9981/stream/channelid/1446031600
+CT 2, http://82.202.90.242:9981/stream/channelid/291163744
+CT 24, http://82.202.90.242:9981/stream/channelid/766901661
+CT :D/art, http://82.202.90.242:9981/stream/channelid/944061009
+TF1HD,http://130.185.248.18:53340/play/HD1
+
+
+墨西哥
+ADN 40 México, http://aztecalive-lh.akamaihd.net:80/i/0kus659k5_1@501884/index_3_av-b.m3u8
+ADN 40 México, http://aztecalive-lh.akamaihd.net:80/i/0kus659k5_1@501884/index_2_av-b.m3u8
+ADN 40 México ,http://aztecalive-lh.akamaihd.net:80/i/0kus659k5_1@501884/index_1_av-b.m3u8
+A G67 ,http://aztecahls2-lh.akamaihd.net:80/i/aztecahls2_1@455692/index_3_av-b.m3u8
+ADN 40 [Audio], http://aztecalive-lh.akamaihd.net:80/i/0kus659k5_1@501884/index_1_a-p.m3u8
+ADN 40 [Audio], http://aztecalive-lh.akamaihd.net:80/i/0kus659k5_1@501884/index_1_a-b.m3u8
+Efekto TV G67 ,http://grupomac-lh.akamaihd.net/i/004rss0k8_1@301782/master.m3u8
+Azteca 7 ,http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8
+Efekto TV ,http://grupomac-lh.akamaihd.net:80/i/004rss0k8_1@301782/master.m3u8
+Milenio TV ,http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8
+Milenio TV, http://brightcove03-f.akamaihd.net/milenio_centro_512k@101956
+GreenTV, http://grupomac-lh.akamaihd.net/i/0pin4uhat_1@301783/master.m3u8
+Satellite ,http://urtmpkal-f.akamaihd.net/i/0queot4rb_1@327205/master.m3u8
+AZTECA A ,http://aztecahls2-lh.akamaihd.net:80/i/aztecahls2_1@455692/index_1_av-p.m3u8
+MILENIO TV, http://bcoveliveios-i.akamaihd.net:80/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8
+EFECTO TV ,http://grupomac-lh.akamaihd.net/i/004rss0k8_1@301782/index_4_av-p.m3u8
+
+
+
+泰国源
+http://49.231.4.246:9981/stream/channelid/1084043645
+http://49.231.4.246:9981/stream/channelid/1305209214
+http://49.231.4.246:9981/stream/channelid/224134535
+http://49.231.4.246:9981/stream/channelid/1341455246
+http://49.231.4.246:9981/stream/channelid/980798688
+http://49.231.4.246:9981/stream/channelid/1306596631
+http://49.231.4.246:9981/stream/channelid/1315262419
+http://49.231.4.246:9981/stream/channelid/1070823468
+http://49.231.4.246:9981/stream/channelid/1149783332
+http://49.231.4.246:9981/stream/channelid/1467051335
+http://49.231.4.246:9981/stream/channelid/822036012
+http://49.231.4.246:9981/stream/channelid/1346550036
+http://49.231.4.246:9981/stream/channelid/627688982
+http://49.231.4.246:9981/stream/channelid/1670108655
+http://49.231.4.246:9981/stream/channelid/124747937
+http://49.231.4.246:9981/stream/channelid/1088245430
+http://49.231.4.246:9981/stream/channelid/1655136190
+http://49.231.4.246:9981/stream/channelid/195355497
+http://49.231.4.246:9981/stream/channelid/572686993
+http://49.231.4.246:9981/stream/channelid/1919703810
+http://49.231.4.246:9981/stream/channelid/1960259706
+http://49.231.4.246:9981/stream/channelid/1914207727
+http://49.231.4.246:9981/stream/channelid/1292883887
+http://49.231.4.246:9981/stream/channelid/1622654284
+http://49.231.4.246:9981/stream/channelid/1655955434
+http://49.231.4.246:9981/stream/channelid/1408187644
+http://49.231.4.246:9981/stream/channelid/548659959
+http://49.231.4.246:9981/stream/channelid/1045014223
+http://49.231.4.246:9981/stream/channelid/140013839
+http://49.231.4.246:9981/stream/channelid/525545405
+http://49.231.4.246:9981/stream/channelid/1600916942

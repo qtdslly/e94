@@ -27,12 +27,12 @@ func init() {
 	c.StorageRoot = "G:/data/shortvideo/kuai/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "root:hahawap@tcp(localhost:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/shortvideo?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
 	c.TmplRoot = "f:/Git/e94/src/background/stock/tmpl/"
-	c.StaticRoot = "/home/lyric/Git/e94/src/background/stock/static/"
+	c.StaticRoot = "C:/work/抖音/"
 }
 
 func LoadConfig(path string) error {

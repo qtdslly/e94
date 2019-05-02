@@ -9,6 +9,8 @@ import (
 	"time"
 
 	"github.com/mozillazg/go-pinyin"
+	"golang.org/x/text/encoding/simplifiedchinese"
+
 )
 
 func Atou(s string) uint {
@@ -253,4 +255,18 @@ func TitleToFullPinyin(title string) string {
 	}
 
 	return str
+}
+
+
+
+func DecodeToGBK(text string) (string, error) {
+
+	dst := make([]byte, len(text)*2)
+	tr := simplifiedchinese.GB18030.NewDecoder()
+	nDst, _, err := tr.Transform(dst, []byte(text), true)
+	if err != nil {
+		return text, err
+	}
+
+	return string(dst[:nDst]), nil
 }

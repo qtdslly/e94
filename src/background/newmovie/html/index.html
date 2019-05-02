@@ -1,166 +1,2177 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的生活</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script>var seatype="index"; var seaid=0;</script><script src="/js/seajump.js"></script>
+    <title>淘片网</title>
+    <meta name="keywords" content="手机看片,手机看电影,手机看电视,手机电影下载" />
+    <meta name="description" content="淘片电影网提供2019最新好看的热播电视剧和经典电影手机在线观看,手机看片,手机看电视,手机看电影,手机电影下载,就到播趣电影网手机电影网站!" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/iconfont.css" type="text/css" />
+    <link rel="stylesheet" href="./css/stui_block.css" type="text/css" />
+    <link rel="stylesheet" href="./css/stui_block_color.css" type="text/css" />
+    <link rel="stylesheet" href="./css/stui_default.css" type="text/css" />
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/stui_default.js"></script>
+    <script type="text/javascript" src="./js/stui_block.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/function.js"></script>
 
 </head>
 <body>
+<header class="stui-header__top clearfix" id="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="stui-header_bd clearfix">
+                <div class="stui-header__logo">
+                    <a class="logo" href="/"></a>
+                </div>
+                <div class="stui-header__side">
+                    <ul class="stui-header__user">
+                        <li>
+                            <a href="javascript:;"><i class="icon iconfont icon-clock"></i></a>
+                            <div class="dropdown history">
+                                <h5 class="margin-0 text-muted">
+                                    <a class="historyclean text-muted pull-right" href="">清空</a>
+                                    播放记录
+                                </h5>
+                                <ul class="clearfix" id="stui_history">
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="stui-header__search">
+                        <form name="formsearch" id="formsearch" action='/search.php' method="get" autocomplete="off">
+                            <input class="form-control" id="wd" placeholder="输入影片关键词..." name="searchword" type="text" id="keyword" required="">
+                            <input type="submit" id="searchbutton" value="" class="hide">
+                            <button class="submit" id="submit" onClick="$('#formsearch').submit();"><i class="icon iconfont icon-search"></i></button>
+                        </form>
+                        <div id="word" class="autocomplete-suggestions active hidden-xs" style="display: none;"></div>
+                    </div>
+                </div>
+                <ul class="stui-header__menu type-slide">
+                    <li><a href="/">首页</a></li>
 
-<div class="page-group">
-    <!-- 你的html代码 -->
-    <div class="page page-current">
-        <header class="bar bar-nav">
-            <a class="icon icon-me pull-left open-panel"></a>
-            <h1 class="title">我的生活</h1>
-        </header>
-        <nav class="bar bar-tab">
-            <a class="tab-item external active" href="#">
-                <span class="icon icon-home"></span>
-                <span class="tab-label">首页</span>
-            </a>
-            <a class="tab-item external" href="#">
-                <span class="icon icon-me"></span>
-                <span class="tab-label">我</span>
-            </a>
-            <a class="tab-item external" href="#">
-                <span class="icon icon-star"></span>
-                <span class="tab-label">收藏</span>
-            </a>
-            <a class="tab-item" href="#page-set">
-                <span class="icon icon-settings"></span>
-                <span class="tab-label">设置</span>
-            </a>
-        </nav>
-        <div class="content">
-            <!-- 这里是页面内容区 -->
-            <div class="page-index">
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>此处是内容...</p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>此处是内容...</p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>此处是内容...</p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
-                    </div>
-                </div>
+                    <li>
+                        <a href="/category/1.html">  电影</a>
+                    </li>
+
+                    <li>
+                        <a href="/category/2.html">  电视剧</a>
+                    </li>
+
+                    <li>
+                        <a href="/category/3.html">  综艺</a>
+                    </li>
+
+                    <li>
+                        <a href="/category/4.html">  动漫</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</header>
+<script type="text/javascript">
+    $(".stui-header__user li").click(function(){
+        $(this).find(".dropdown").toggle();
+        $(".stui-player__iframe").toggle();
+    });
+    if(stui.browser.useragent.mobile){
+        $(".stui-header__logo .logo").css("background","url(./img/logo_min.png) no-repeat");
+    }else{
+        $(".stui-header__logo .logo").css("background","url(./img/logo.png) no-repeat");
+    }
+</script>
 
+<div class="container">
+    <div class="row">
+        <div class="stui-pannel stui-pannel-bg clearfix">
+            <div class="stui-pannel-box">
+                <div class="stui-pannel_bd">
+                    <div class="carousel carousel_right col-pd clearfix">
 
-    <div class="page" id="page-set">
-        <header class="bar bar-nav">
-            <a class="icon icon-me pull-left open-panel"></a>
-            <h1 class="title">设置</h1>
-        </header>
-        <nav class="bar bar-tab">
-            <a class="tab-item external active" href="#">
-                <span class="icon icon-home"></span>
-                <span class="tab-label">首页</span>
-            </a>
-            <a class="tab-item external" href="#">
-                <span class="icon icon-me"></span>
-                <span class="tab-label">我</span>
-            </a>
-            <a class="tab-item external" href="#">
-                <span class="icon icon-star"></span>
-                <span class="tab-label">收藏</span>
-            </a>
-            <a class="tab-item" href="#page-set">
-                <span class="icon icon-settings"></span>
-                <span class="tab-label">设置</span>
-            </a>
-        </nav>
-        <div class="content">
-            <!-- 这里是页面内容区 -->
-            <div class="page-index">
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>这是设置页面...</p>
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3739.html" title="夜空中最闪亮的星"style="background: url(http://www.boqudy.com/uploads/allimg/190423/33bcdc5ff6052862.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">夜空中最闪亮的星</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>这是设置页面...</p>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1946.html" title="权力的游戏第八季[未删版]"style="background: url(http://www.boqudy.com/uploads/allimg/190423/1acbe436b157da3f.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">权力的游戏第八季[未删版]</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div style="background-image:url(//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">发表于 2015/01/15</p>
-                            <p>这是设置页面...</p>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3753.html" title="新白娘子传奇"style="background: url(http://www.boqudy.com/uploads/allimg/190423/ecc745c1984663f7.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">新白娘子传奇</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="link">赞</a>
-                        <a href="#" class="link">更多</a>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3695.html" title="都挺好"style="background: url(http://www.boqudy.com/uploads/allimg/190423/0a0d3c03b18a874d.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">都挺好</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13718.html" title="驯龙高手3"style="background: url(http://www.boqudy.com/uploads/allimg/190423/e5f48acab5760402.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">驯龙高手3</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12124.html" title="惊奇队长"style="background: url(http://www.boqudy.com/uploads/allimg/190423/331c862a501413a8.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">惊奇队长</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/11877.html" title="僵尸世界大战"style="background: url(http://www.boqudy.com/uploads/allimg/190423/66ead464e78fc9b5.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">僵尸世界大战</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/11050.html" title="调音师"style="background: url(http://www.boqudy.com/uploads/allimg/190423/9c837694e16fae77.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">调音师</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/10830.html" title="飞驰人生"style="background: url(http://www.boqudy.com/uploads/allimg/190423/0bd4f7cb933dd134.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">飞驰人生</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-5 col-xs-3 list">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/10798.html" title="绿皮书"style="background: url(http://www.boqudy.com/uploads/allimg/190423/6e52dd6d7ebc0e71.jpg) no-repeat; background-position:50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-center">绿皮书</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!-- 头部幻灯 -->
+        <div class="stui-pannel stui-pannel-bg clearfix">
+            <div class="stui-pannel-box">
+                <div class="stui-pannel_hd">
+                    <div class="stui-pannel__head active bottom-line clearfix">
+                        <h3 class="title">
+                            <img src="./img/icon_24.png"/>
+                            最近更新
+                        </h3>
+                        <ul class="nav nav-tabs pull-right">
 
+                            <li class="active"><a href="#home1" data-toggle="tab">电影</a></li>
+
+                            <li><a href="#home2" data-toggle="tab">电视剧</a></li>
+
+                            <li><a href="#home3" data-toggle="tab">综艺</a></li>
+
+                            <li><a href="#home4" data-toggle="tab">动漫</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content stui-pannel_bd">
+
+                    <ul id="home1" class="stui-vodlist tab-pane fade in active clearfix">
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14091.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/261505881605a9ee.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD1280高清中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14091.html" title="旅猫日记">旅猫日记</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">福士苍汰,高畑充希,广濑爱丽丝,大野拓朗</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14066.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/476ee61cb8605c64.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1280高清国语中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14066.html" title="寻找奥特曼">寻找奥特曼</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张磊,郝文婷</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14087.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/1e19a0a5ca7abee3.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD1280高清中英双字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14087.html" title="布莱顿惊魂">布莱顿惊魂</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">艾米莉·奥尔索斯,米兰达·贝利,马丁·斯潘尼尔斯,马特·皮特斯</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13911.html" style="background: url(http://www.boqudy.com/uploads/allimg/190424/379dd38f39f09819.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HDTC1280高清中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13911.html" title="复仇者联盟4：终局之战">复仇者联盟4：..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">布丽·拉尔森,小罗伯特·唐尼,克里斯·海姆斯沃斯,斯嘉丽·约翰逊</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14084.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/2748894bec69f79e.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14084.html" title="惊惧骤起">惊惧骤起</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">琼·克劳馥,杰克·帕兰斯,格洛丽亚·格雷厄姆</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14083.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/e99692d9c68d24df.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14083.html" title="决不撤退！">决不撤退！</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">弗兰克·洛夫乔伊,理查德·加尔森,安妮塔·露易丝</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14082.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/7e3d227a88d588ed.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14082.html" title="孔雀">孔雀</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张静初,冯瓅,吕聿来,黄梅莹</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14081.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/355f3bc463a61484.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14081.html" title="恐怖城堡的秘密">恐怖城堡的秘密</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Chancellor Miller,Nick Price,Cameron Monaghan</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14080.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/29ad70a9d38f7032.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14080.html" title="狂风飞絮">狂风飞絮</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">加里·库珀,芭芭拉·斯坦威克,露丝·罗曼,安东尼·奎恩</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14079.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/e09c96e15bfc4b6c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14079.html" title="恋爱三万英尺">恋爱三万英尺</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">方力申,谢君豪,黄又南,刘羽琦</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14078.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/c8c0176a60e1b1d1.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14078.html" title="蛮国战笳声">蛮国战笳声</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">约翰·韦恩,杰拉丹·佩姬,沃德·邦德</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14077.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/2c89009270f30105.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14077.html" title="美男记">美男记</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">吴建飞,黄小柔,翟子陌,杜海涛</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14076.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/812b49c0be8a86ee.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14076.html" title="孟父三迁之教">孟父三迁之教</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">赵宰贤,孙昌敏,苏怡贤,孙贤周</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14075.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/89a4a898ca3ac68f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14075.html" title="迷幻公园">迷幻公园</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">盖博·纳文斯,劳伦·麦克金妮,泰勒·摩森,丹尼尔·刘</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14074.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/b5a60bf3221705af.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14074.html" title="你和我">你和我</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Marion Cotillard,Julie Depardieu,Jonathan Zaccaï,Sergio Peris-Mencheta</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14073.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/afb74fa5a1e55413.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14073.html" title="热血街头">热血街头</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">李斯丹妮,柯有伦,王传君,陈乔希</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14072.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/94099a8ff856397f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14072.html" title="急速营救">急速营救</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Amrita Arora,Aashish Chaudhary,Sophiya Chaudhary</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14071.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/ef5168c8ad60b7ac.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14071.html" title="十一岁的夏天">十一岁的夏天</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Adam Arkin,Mark Humphrey,Valerie Mahaffey,Steven Grayhm</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14070.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/6cc4a14adf8714d0.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14070.html" title="双截棍">双截棍</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈天星,余杨菲</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14069.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/e4f9a9bd28fe8851.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14069.html" title="送死">送死</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Boy Pakorn Chatborirak,阿南达·爱华灵咸,Jenjira Jamniansri,Prinya Ngamwongwarn</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14068.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/01a0aa5b6e230740.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14068.html" title="台北飘雪">台北飘雪</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈柏霖,童瑶,杨祐宁,蔡淑臻</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14067.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/ae77b305744b7c56.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14067.html" title="大力士麦当娜">大力士麦当娜</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">柳德焕,草剪刚,金允石,白润植</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14064.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/a50d8b7af2808159.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1280高清国语中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14064.html" title="少女宿舍">少女宿舍</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈淋,曹越,田启文,姜皓文</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14063.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/79ea249b8166d525.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1280高清国语中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14063.html" title="劫数难逃">劫数难逃</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">姚雨鑫,刚小希,卢森堡,张玻溦</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/10943.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7d5db5ac89749355.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1280高清国语中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/10943.html" title="人间·喜剧">人间·喜剧</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">艾伦,王智,鲁诺,任达华</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14033.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/bb10a83b5035a665.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1280高清国语中字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14033.html" title="吓一秒恋人">吓一秒恋人</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">谢恺予,陈美茜</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14058.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/259adb7b4b5dc37b.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">HD1024高清中英双字版</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14058.html" title="黄金三镖客">黄金三镖客</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">克林特·伊斯特伍德,埃里·瓦拉赫,李·范·克里夫,阿尔多·久弗瑞</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14057.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/7fb1175e7630aaab.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14057.html" title="霹雳先锋">霹雳先锋</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">周星驰,李修贤,成奎安</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14056.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/45c7fa82f6af22e3.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14056.html" title="望夫成龙">望夫成龙</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">周星驰,吴君如,成奎安,关秀媚</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14055.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/a6ca5d3ea44e6564.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14055.html" title="烈火战车2：极速传说">烈火战车2：极..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">郑伊健,张柏芝,林熙蕾,谭耀文</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14054.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/07cf54dc3f2c608f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14054.html" title="新上海滩">新上海滩</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张国荣,刘德华,宁静,李蕙敏</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14053.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/e2442b8c5b8b9e1d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14053.html" title="王子与公主">王子与公主</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Arlette Mirapeu,Philippe Cheytion,Yves Barsacq</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14052.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/c085209868473e7a.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14052.html" title="暴劫梨花">暴劫梨花</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">朱迪·福斯特,凯莉·麦吉利斯,Bernie Coulson</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14051.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/cafa4e55f56b1a55.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14051.html" title="陆垚知马俐">陆垚知马俐</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">包贝尔,宋佳,朱亚文,焦俊艳</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14050.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/74ac37a773555292.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14050.html" title="近在咫尺的爱恋">近在咫尺的爱恋</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">彭于晏,郭采洁,明道,杨子姗</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14049.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/1048df63234ff756.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">BD高清</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14049.html" title="戴安娜·弗里兰:眼睛要旅行">戴安娜·弗里兰..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">劳伦·白考尔,马里莎·贝伦森,杜鲁门·卡波特,Nicky Vreeland</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul id="home2" class="stui-vodlist tab-pane fade in clearfix">
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14094.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/5fe8661defdd686d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到01集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14094.html" title="夏天啊，拜托了">夏天啊，拜托了</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">李英恩,金思权,李彩英,金惠钰</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14093.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/3d39b03b0a6d6d06.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到02集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14093.html" title="危机迷雾">危机迷雾</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">李艳,贾一平,孙玮,邵峰</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14092.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/754970a1bdbdd78c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到01集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14092.html" title="Smoking">Smoking</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">石桥凌,金子统昭,丸山智己,吉村界人</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14090.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/42d2b4ceb194c1ca.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到12集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14090.html" title="我只喜欢你">我只喜欢你</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">吴倩,张雨剑,赵志伟,马栗</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14086.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/b5f7c4b48b483add.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到13集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14086.html" title="沧海丝路">沧海丝路</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">姬他,张檬,张丰毅,左小青</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13990.html" style="background: url(http://www.boqudy.com/uploads/allimg/190427/8cc605135048a459.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到12集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13990.html" title="绽放吧百合">绽放吧百合</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">姚芊羽,李凤绪,李诚儒,赵丽娟</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3775.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/39b1e4469c44e91f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到20集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3775.html" title="你好，对方辩友">你好，对方辩友</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">潘宥诚,林昕宜,杰士鸣,焦娜</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3772.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/ebd5518d33c33c3e.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到29集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3772.html" title="女人当官2">女人当官2</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">闫学晶,英达,张大静,巩汉林</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3768.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7ec6c3622f2d73c2.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到31集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3768.html" title="趁我们还年轻">趁我们还年轻</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张云龙,乔欣,刘芮麟,黄梦莹</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3762.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/ca5917b8cb0c5673.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到34集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3762.html" title="如果可以这样爱">如果可以这样爱</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">佟大为,刘诗诗,保剑锋,孙之鸿</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3739.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/33bcdc5ff6052862.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到42集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3739.html" title="夜空中最闪亮的星">夜空中最闪亮的..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">黄子韬,吴倩,牛骏峰,曹曦月</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/2521.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/c1d703f060cf8405.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">30集全</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/2521.html" title="铁探粤语">铁探粤语</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">袁伟豪,惠英红,姜皓文,黄智贤</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/2520.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/18f5a5f10c30388b.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">30集全</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/2520.html" title="铁探国语">铁探国语</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">袁伟豪,惠英红,姜皓文,黄智贤</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/2310.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/253d7aaa6fd1347f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到566集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/2310.html" title="爱回家之开心速递">爱回家之开心速..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">刘丹,单立文,汤盈盈,吕慧仪,罗乐林,马贯东,苏韵姿,周嘉洛,陈浚霆,吴伟豪</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/2234.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/495dd395ec8c05d0.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到68集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/2234.html" title="龙王保佑">龙王保佑</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">在熙,李素妍,赵安,金炯民</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/2228.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/536ba24b006eb310.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到80集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/2228.html" title="左撇子妻子">左撇子妻子</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">李水京,金镇宇,河延珠,陈泰贤</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1921.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/99037916329b88cd.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到05集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1921.html" title="巴瑞第二季">巴瑞第二季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">比尔·哈德尔,斯蒂芬·鲁特,萨拉·古德伯格,亨利·温克勒</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1889.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/b234dc8e9c940250.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1889.html" title="致命标记第二季">致命标记第二季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">Lulu Antariksa,Katelyn Nacon,Nick Fink</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1860.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/397eb32cb466ca86.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到07集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1860.html" title="亿万第四季">亿万第四季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">戴米恩·路易斯,玛姬·丝弗,保罗·吉亚玛提,约翰·马尔科维奇</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1833.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/9b59e6b032cc8356.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到05集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1833.html" title="护法为民第二季">护法为民第二季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1409.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/08fa13ed3f130e68.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到19集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1409.html" title="超级少女第四季">超级少女第四季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">梅莉莎·班诺伊,Nicole Amber Maines,April Parker-Jones,Sasha Piltsin</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/498.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/441c054d25ba3440.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到02集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/498.html" title="集体降职">集体降职</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">福山雅治,香川照之,神木隆之介,中村安奈</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/497.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/33a0a6a50eb8b0d7.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到02集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/497.html" title="家政夫三田园3">家政夫三田园3</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">松冈昌宏,伊野尾慧,川荣李奈,余贵美子</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/469.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d883dd1c684151f4.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/469.html" title="夏空">夏空</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">广濑铃</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/462.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d5c778d7fbf5bab9.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到06集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/462.html" title="高岭与花">高岭与花</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">高杉真宙,竹内爱纱,户塚纯贵,远藤健慎</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/55.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/312efda7f8e11f7e.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到15集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/55.html" title="新铁石心肠">新铁石心肠</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14089.html" style="background: url(http://www.boqudy.com/uploads/allimg/190430/5d5eb11ed3de640c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">8集全</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14089.html" title="清明时节爱上我">清明时节爱上我</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">巴拉奇亚·鲁洛,欧帕瓦·吉沙晚迪,张翊昕,彩拿甘· 阿旁苏提南</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14088.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/5e5992ef074fad59.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到01集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14088.html" title="螺旋：町工场的奇迹">螺旋：町工场的..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">玉木宏,真岛秀和,贯地谷栞,国村隼</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/3770.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/4bacc53ae45e7837.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到26集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/3770.html" title="因法之名">因法之名</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">李幼斌,张丰毅,李小冉,石天琦</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1946.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1acbe436b157da3f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1946.html" title="权力的游戏第八季[未删版]">权力的游戏第八..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">艾米莉亚·克拉克,基特·哈灵顿,彼特·丁拉基,苏菲·特纳</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1943.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/9c9b1c13325a7c3d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1943.html" title="权力的游戏第八季">权力的游戏第八..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">艾米莉亚·克拉克,基特·哈灵顿,彼特·丁拉基,苏菲·特纳</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1913.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7399087f9ba76128.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1913.html" title="暗中第一季">暗中第一季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">帕芮·马费尔德,布鲁克·马卡姆,John Keston,Derek Webster</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/1317.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/5fe32ab16045134c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新至33集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/1317.html" title="飞天小女警 第三季">飞天小女警 第..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/496.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/9faea3fb87057d3b.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到02集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/496.html" title="腐女爱上Gay">腐女爱上Gay</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">金子大地,藤野凉子,小越勇辉,安藤玉惠</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14065.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/b24bd8c3274ff8a1.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到01集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14065.html" title="德州长子第二季">德州长子第二季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">皮尔斯·布鲁斯南,雅库布·洛弗兰德,亨利·加勒特,葆拉·努涅斯</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14036.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/f5dfabe7243601ce.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到09集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14036.html" title="街头美食第一季">街头美食第一季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul id="home3" class="stui-vodlist tab-pane fade in clearfix">
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12598.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/07675e87f074608a.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190429期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12598.html" title="鲁豫有约[2019]">鲁豫有约[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈鲁豫</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12621.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/22413f4a18db08eb.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12621.html" title="MIT台湾志[2019]">MIT台湾志[..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">姚以缇,陆廷威,杨士萱,张善杰</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12620.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/da0eb0784368be6a.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12620.html" title="超级红人榜[2019]">超级红人榜[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">于美人,蔡昌宪,许志豪</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12619.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d54ffaced24cfda4.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12619.html" title="饥饿游戏[2019]">饥饿游戏[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">孙协志,王仁甫,许孟哲</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12618.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/0b7daba80b3fcc9b.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12618.html" title="大陆寻奇[2019]">大陆寻奇[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">熊旅扬</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12602.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/50728fdc4ec21630.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12602.html" title="非你莫属[2019]">非你莫属[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张绍刚,黄健翔,涂磊,徐睿</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12617.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/64e7d97fbf85f755.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12617.html" title="综艺大集合[2019]">综艺大集合[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">胡瓜,贺一航,胡晴雯,许杰辉</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12615.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/5e1a286527b7ed29.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12615.html" title="天天向上[2019]">天天向上[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">upload/vod/2017-08-19/201708191503121459.jpg</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14062.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/6784a45984a3b826.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14062.html" title="百变达人">百变达人</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">潘玮柏,刘宇宁,侯佩岑,郦波</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12706.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/77da4da6ecca2f9e.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12706.html" title="我和我的经纪人">我和我的经纪人</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">朱亚文,张雨绮,白宇,春夏</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12603.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/4fed334167665a63.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190428期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12603.html" title="RunningMan[2019]">Running..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">刘在锡,河东勋,李光洙,金钟国</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14059.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/f62715f6a9d9c556.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">全集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14059.html" title="极限挑战第二季">极限挑战第二季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">黄渤,孙红雷,黄磊,罗志祥</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12704.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/705a3664014aec8c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12704.html" title="最强大脑之燃烧吧大脑第二季升级版">最强大脑之燃烧..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">蒋昌建,韩雪,郭采洁,戚薇</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14037.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/901080bc4e078bb4.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">全集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14037.html" title="极限挑战第一季">极限挑战第一季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">黄渤,孙红雷,黄磊,罗志祥</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12646.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d89330927fd50e22.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12646.html" title="台湾那么旺[2019]">台湾那么旺[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">胡瓜,白家绮</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12645.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/3481b9ac56dcaf31.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12645.html" title="超级夜总会[2019]">超级夜总会[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">澎恰恰/许效舜</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12644.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/2ede4d8c6ca5e8b1.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12644.html" title="天才冲冲冲[2019]">天才冲冲冲[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">吴宗宪,徐乃麟,曾国城,艾莉絲</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12643.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/2f90e10e3de75389.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12643.html" title="综艺3国智[2019]">综艺3国智[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">王少伟</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12642.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/78cdeab0c2579100.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12642.html" title="综艺玩很大[2019]">综艺玩很大[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">吴宗宪,林柏昇</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12714.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/74a4b841c433a6f0.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12714.html" title="创造营2019">创造营2019</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">迪丽热巴,郭富城,胡彦斌,苏有朋</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12710.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/37482fe5ba26b107.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12710.html" title="密室大逃脱">密室大逃脱</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">杨幂,邓伦,魏大勋,谢依霖</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12705.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/11e50ac88925d3f1.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12705.html" title="青春的花路">青春的花路</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">范丞丞,朱正廷,王子异,王琳凯</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12634.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1fba089837d32755.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12634.html" title="美凤有约[2019]">美凤有约[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈美凤</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12632.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/e115b5b81df6c096.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12632.html" title="麻辣天后传[2019]">麻辣天后传[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">利菁,刘雨柔,杨丽菁,赵正平</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12627.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/c669e7c410299c57.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12627.html" title="小明星大跟班[2019]">小明星大跟班[..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">吴宗宪,吴姗儒</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12626.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/e7a0bec3f0545260.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12626.html" title="娱乐百分百[2019]">娱乐百分百[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">徐熙媛,徐熙娣,罗志祥,黄鸿升</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12625.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/8ce25ba0345a3603.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12625.html" title="型男大主厨[2019]">型男大主厨[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">曾国城,陈乔恩,夏于乔,阿基师（本名郑衍基）</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12623.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/0dbc66ca726b9dbb.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12623.html" title="美食好简单[2019]">美食好简单[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">郁芳</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12622.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/87eabdbe07d5e7f4.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190426期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12622.html" title="女人我最大[2019]">女人我最大[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">蓝心湄</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12600.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7020af7781633391.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12600.html" title="非诚勿扰[2019]">非诚勿扰[20..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">孟非,黄菡,乐嘉,宁财神</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12559.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/12287a9cba8f2df2.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12559.html" title="坑王驾到第三季">坑王驾到第三季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">郭德纲</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14019.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/b03558d04b3a826d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14019.html" title="青春环游记">青春环游记</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">王凯,吴谨言,范丞丞,魏大勋</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12721.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/985439be401a5a04.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12721.html" title="开饭啦！唱作人">开饭啦！唱作人</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12702.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/ac88a7d3cd36a684.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12702.html" title="这！就是原创第一季">这！就是原创第..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">陈粒,萧敬腾,王嘉尔</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12689.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/739ed0997d03e8b0.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12689.html" title="中国新相亲第二季">中国新相亲第二..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">张国立,程雷,陈辰</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12611.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/2a956c5dff0dfa5d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">20190427期</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12611.html" title="快乐大本营[2019]">快乐大本营[2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">何炅,吴昕,杜海涛,谢娜</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul id="home4" class="stui-vodlist tab-pane fade in clearfix">
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13846.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d2cbba7a2b1c8b78.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到05集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13846.html" title="八月的棒球甜心">八月的棒球甜心</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">西田望见,近藤玲奈,南早纪,井上穗乃花</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13799.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/c206d77520a7b945.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到33集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13799.html" title="假面骑士：时王国语版">假面骑士：时王..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">奥野壮,押田岳,大幡诗绘理,渡边圭祐</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13673.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1836b6fb7d7205fd.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到16集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13673.html" title="多罗罗">多罗罗</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">铃木扩树,铃木梨央,佐佐木睦,内田直哉</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12755.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/86fd80c1c901d2ed.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到56集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12755.html" title="智龙迷城">智龙迷城</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13844.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/e6e786a077851719.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13844.html" title="消灭都市">消灭都市</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">花泽香菜,杉田智和,中村悠一,新垣樽助</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13312.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7317b05a14f81884.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到104集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13312.html" title="火影忍者-博人传-次世代继承者">火影忍者-博人..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">三瓶由布子,菊池心,木岛隆一,小野贤章,阿部敦,早见沙织</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14085.html" style="background: url(http://www.boqudy.com/uploads/allimg/190429/e83a36549dd38389.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到01集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14085.html" title="进击的巨人第三季Part.2">进击的巨人第三..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">梶裕贵,石川由依,井上麻里奈,神谷浩史</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13953.html" style="background: url(http://www.boqudy.com/uploads/allimg/190426/9c493ff6135ff606.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13953.html" title="万界仙踪第2季">万界仙踪第2季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">钟巍,弓与蛇</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13821.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/8afd04aa300529f1.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到06集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13821.html" title="降妖贱师">降妖贱师</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13629.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/60b6d081a48af4ee.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到24集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13629.html" title="斗罗大陆2绝世唐门荣耀篇动态漫画">斗罗大陆2绝世..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13571.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1e4fa4d24d9bf896.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到33集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13571.html" title="假面骑士：时王">假面骑士：时王</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">奥野壮,押田岳,大幡诗绘理,渡边圭祐</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13868.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/f7348c0580ba973f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13868.html" title="斗破苍穹特别篇2">斗破苍穹特别篇..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">冯骏骅,谢添天</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13845.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/8d0b774348de2b89.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13845.html" title="深夜的超自然公务员">深夜的超自然公..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">福山润,前野智昭,入野自由,游佐浩二</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13843.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/f862598164deadff.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到05集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13843.html" title="拾又之国">拾又之国</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">河西健吾,市道真央,山村响,森川智之</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13867.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/3edb82f7949fe6d8.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13867.html" title="我们无法一起学习">我们无法一起学..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">逢坂良太,白石晴香,富田美优,铃代纱弓</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13840.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/a3b6a12f5bc6d2bd.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13840.html" title="一弦定音！">一弦定音！</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内田雄马,榎木淳弥,种崎敦美,细谷佳正</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13839.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/a076495b3e81f3de.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13839.html" title="鬼灭之刃">鬼灭之刃</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">花江夏树,鬼头明里,下野纮,松冈祯丞</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13576.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/fc971ece48304b9c.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到27集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13576.html" title="闪电十一人猎户座的刻印">闪电十一人猎户..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">村濑步,神谷浩史,福山润,竹内顺子</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13869.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1f01f026dad03052.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13869.html" title="超可动女孩1/6">超可动女孩1/..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">羽多野涉,木下铃奈,千本木彩花,市道真央</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13842.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/113ef284d729e3f5.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13842.html" title="女子高中生">女子高中生</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">立花理香,岭内知美,久保由利香</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13841.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/88801f35411ec514.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13841.html" title="信长老师的年幼妻子">信长老师的年幼..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">酒井广大,上原明里,小泽亚李,结崎木乃美</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13548.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/fea87b145bbfd58e.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到29集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13548.html" title="妖精的尾巴 最终季">妖精的尾巴 最..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">柿原彻也,平野绫,钉宫理惠,中村悠一</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13336.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/cb109d8fb72f9cd4.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新至882集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13336.html" title="海贼王">海贼王</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs"> 田中真弓 / 冈村明美 / 中井和哉 / 平田广明 / 山口胜平</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12834.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/da5f9b2213d64fb9.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到55集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12834.html" title="美妙频道">美妙频道</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">林鼓子,久保田未梦,厚木那奈美,芹泽优,若井友希</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12779.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d9b39236ea2d4f68.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到53集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12779.html" title="鬼太郎第六季">鬼太郎第六季</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">泽城美雪,野泽雅子,古川登志夫,庄司宇芽香</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14031.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/fbecc229a9f3583f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">13集全</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14031.html" title="在地下城寻求邂逅是否搞错了什么">在地下城寻求邂..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">松冈祯丞,水濑祈,大西沙织,内田真礼</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/14021.html" style="background: url(http://www.boqudy.com/uploads/allimg/190428/71b692a82cf50381.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到02集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/14021.html" title="驸马不要啊第2季">驸马不要啊第2..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13858.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/ff0f1dfbfa7d60fe.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到03集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13858.html" title="南无阿弥陀佛！-莲台 UTENA-">南无阿弥陀佛！..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">水中雅章,前野智昭,柿原彻也,小林裕介</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13122.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/aab17d432284df11.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新至第952集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13122.html" title="名侦探柯南">名侦探柯南</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/12928.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/3e3e0ed3cbded4cf.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到99集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/12928.html" title="游戏王VRAINS">游戏王VRAI..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">石毛翔弥,櫻井孝宏,木村 昴,武内駿輔,濱野大輝,中島由貴,山本匠馬,鎌倉有那,沢城千春</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13837.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/d8cf338cb244bd0f.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13837.html" title="孤独地躲在墙角画圈圈">孤独地躲在墙角..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">森下千咲,田中美海,鬼头明里,黑濑优子</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13836.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/0483dc842cdf0246.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13836.html" title="川柳少女">川柳少女</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">花泽香菜,畠中祐,矢作纱友里,逢田梨香子</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13835.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/1d14ff03f2f9e960.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13835.html" title="青酱不能学习">青酱不能学习</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">和气杏未,寺岛惇太,津田健次郎,木村珠莉</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13834.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/7a9d66efcfffe008.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到04集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13834.html" title="水果篮子2019">水果篮子201..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">石见舞菜香,岛崎信长,内田雄马,中村悠一</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13812.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/e55c15f60ded37e0.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到47集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13812.html" title="天价宠妻：总裁夫人休想逃">天价宠妻：总裁..</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-md-6 col-sm-4 col-xs-3">
+                            <div class="stui-vodlist__box">
+                                <a class="stui-vodlist__thumb" href="/show/13783.html" style="background: url(http://www.boqudy.com/uploads/allimg/190423/5f475efd4f3dd14d.jpg) no-repeat; background-position: 50% 50%; background-size: cover;">
+                                    <span class="play hidden-xs"></span>
+                                    <span class="pic-text text-right">更新到12集</span>
+                                </a>
+                                <div class="stui-vodlist__detail">
+                                    <h4 class="title text-overflow"><a href="/show/13783.html" title="弦色清音">弦色清音</a></h4>
+                                    <p class="text text-overflow text-muted hidden-xs">内详</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div><!-- 分类列表 -->
+        <div class="stui-pannel stui-pannel-bg hidden-sm hidden-xs clearfix">
+            <div class="stui-pannel-box">
+                <div class="stui-pannel_hd">
+                    <div class="stui-pannel__head clearfix">
+                        <h3 class="title">
+                            <img src="./img/icon_26.png"/>
+                            友情链接
+                        </h3>
+                    </div>
+                </div>
+                <div class="stui-pannel_bd clearfix">
+                    <div class="col-xs-1">
+                        <ul class="stui-link__text clearfix">
+
+                            <li><a class="text-muted" href="http://www.boqudy.com" title="播趣电影网" target="_blank">播趣电影网</a></li>
+
+                            <li><a class="text-muted" href="http://www.boqudy.com" title="手机看片" target="_blank">手机看片</a></li>
+
+                            <li><a class="text-muted" href="http://www.boqudy.com" title="手机看电影" target="_blank">手机看电影</a></li>
+
+                            <li><a class="text-muted" href="http://www.boqudy.com" title="手机看电视" target="_blank">手机看电视</a></li>
+
+                            <li><a class="text-muted" href="http://www.boqudy.com" title="手机电影下载" target="_blank">手机电影下载</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 友情链接 -->
+    </div>
 </div>
-
-<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
-<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
-
+<div class="container">
+    <div class="row">
+        <div class="stui-foot clearfix">
+            <div class="col-pd text-center hidden-xs">
+                播趣电影网提供的手机看电影和手机看电视资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传。
+            </div>
+            <p class="text-center hidden-xs">
+                若本站收录的手机看片节目无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢合作！
+            </p>
+            <p class="text-center hidden-sm hidden-xs">
+                <img src="/statics/img/mail.png" alt="联系我们"/>
+            </p>
+            <p class="text-muted text-center visible-xs">Copyright ©2019 播趣电影网 http://www.boqudy.com All Rights Reserved ·</p>
+        </div>
+    </div>
+</div>
+<ul class="stui-extra clearfix">
+    <li>
+        <a class="backtop" href="javascript:scroll(0,0)" style="display: none;"><i class="icon iconfont icon-less"></i></a>
+    </li>
+    <li class="hidden-xs">
+        <a class="copylink" href="javascript:;"><i class="icon iconfont icon-share"></i></a>
+    </li>
+    <li class="visible-xs">
+        <a class="open-share" href="javascript:;"><i class="icon iconfont icon-share"></i></a>
+    </li>
+    <li class="hidden-xs">
+        <span><i class="icon iconfont icon-qrcode"></i></span>
+        <div class="sideslip">
+            <div class="col-pd">
+                <p id="qrcode"></p>
+                <p class="text-center font-12">扫码用手机访问</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <a href="/gbook.php"><i class="icon iconfont icon-comments"></i></a>
+    </li>
+</ul>
+<div class="hide"><script type="text/javascript" src="https://s23.cnzz.com/z_stat.php?id=1277339280&web_id=1277339280"></script></div>
 </body>
 </html>
