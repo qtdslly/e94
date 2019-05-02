@@ -1,7 +1,7 @@
 package apimodel
 
 import (
-	"background/newmovie/model"
+	"background/cms/model"
 	"background/common/aes1"
 	"background/common/logger"
 )

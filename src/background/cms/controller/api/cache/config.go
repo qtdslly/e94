@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"background/newmovie/model"
-	"background/newmovie/service"
+	"background/cms/model"
+	"background/cms/service"
 	"background/common/logger"
 
 	"github.com/jinzhu/gorm"

@@ -1,9 +1,9 @@
 package api
 
 import (
-	"background/newmovie/model"
-	"background/newmovie/controller/api/cache"
-	apimodel "background/newmovie/controller/api/model"
+	"background/cms/model"
+	"background/cms/controller/api/cache"
+	apimodel "background/cms/controller/api/model"
 	"background/common/constant"
 	"background/common/logger"
 	"net/http"
@@ -18,7 +18,7 @@ import (
 	"crypto/md5"
 	"io"
 	"strings"
-	"background/newmovie/config"
+	"background/cms/config"
 )
 
 /*

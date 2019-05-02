@@ -1,11 +1,11 @@
 package apimodel
 
 import (
-	"background/newmovie/model"
+	"background/cms/model"
 	"background/common/logger"
 	"github.com/jinzhu/gorm"
 	"background/common/constant"
-	"background/newmovie/service"
+	"background/cms/service"
 	"background/common/aes1"
 )
 

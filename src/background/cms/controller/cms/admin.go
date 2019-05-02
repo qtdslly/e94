@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"background/common/logger"
 	"background/common/constant"
-	"background/newmovie/model"
+	"background/cms/model"
 	"background/common/util"
 	"errors"
 	"net/http"

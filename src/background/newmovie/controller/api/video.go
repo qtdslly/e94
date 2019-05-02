@@ -2,12 +2,12 @@ package api
 
 import (
 	"net/http"
-	"background/cms/model"
+	"background/newmovie/model"
 	"background/common/constant"
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	apimodel "background/cms/controller/api/model"
+	apimodel "background/newmovie/controller/api/model"
 )
 
 
@@ -212,62 +212,3 @@ func VideoTopSearchHandler(c *gin.Context) {
 }
 
 
-
-func VideoTopHandler(c *gin.Context) {
-
-	type param struct {
-		Limit       int `form:"limit" binding:"required"`
-		Offset      int `form:"offset" binding:"exists"`
-	}
-
-	var p param
-	if err := c.Bind(&p); err != nil {
-		logger.Error(err)
-		return
-	}
-
-	var err error
-
-	db := c.MustGet(constant.ContextDb).(*gorm.DB)
-
-	var tops []model.Top
-	if err = db.Order("publish_date desc").Offset(p.Offset).Where("state = 1").Limit(p.Limit).Find(&tops).Error ; err != nil{
-		logger.Error("query movie err!!!,",err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-	}
-
-	var videos []model.Video
-
-
-
-	var hasMore bool = true
-	if len(videos) != p.Limit{
-		hasMore = false
-	}
-
-	var count uint32
-	if err = db.Model(&model.Video{}).Where("on_line = ?",constant.MediaStatusOnLine).Count(&count).Error; err != nil {
-		logger.Error(err)
-		c.AbortWithStatus(http.StatusInternalServerError)
-		return
-	}
-
-	type ApiVideo struct {
-		Id	uint32 `json:"id"`
-		Title	string `json:"title"`
-		Score	float64 `json:"score"`
-		ThumbY	string `json:"thumb_y"`
-	}
-
-	var apiVideos []*ApiVideo
-	for _,video := range videos{
-		var apiVideo ApiVideo
-		apiVideo.Id = video.Id
-		apiVideo.Title = video.Title
-		apiVideo.Score = video.Score
-		apiVideo.ThumbY = video.ThumbY
-		apiVideos = append(apiVideos,&apiVideo)
-	}
-
-	c.JSON(http.StatusOK, gin.H{"err_code": constant.Success, "data": apiVideos,"count":count,"has_more":hasMore})
-}

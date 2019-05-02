@@ -1,7 +1,7 @@
 package api
 
 import (
-	"background/newmovie/model"
+	"background/cms/model"
 	"background/common/constant"
 	"background/common/logger"
 	"net/http"

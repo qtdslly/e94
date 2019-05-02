@@ -6,8 +6,8 @@ import (
 	"github.com/jinzhu/gorm"
 	"background/common/logger"
 	"background/common/constant"
-	"background/newmovie/model"
-	"background/newmovie/service"
+	"background/cms/model"
+	"background/cms/service"
 	"strings"
 )
 

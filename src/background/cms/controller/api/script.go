@@ -3,7 +3,7 @@ package api
 import (
 	"background/common/constant"
 	"background/common/logger"
-	"background/newmovie/model"
+	"background/cms/model"
 	"net/http"
 	//"time"
 

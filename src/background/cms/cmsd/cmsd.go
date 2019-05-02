@@ -9,20 +9,20 @@ import (
 	"github.com/gin-gonic/gin"
 	"background/common/logger"
 	"log"
-	"background/newmovie/model"
-	"background/newmovie/config"
+	"background/cms/model"
+	"background/cms/config"
 	"background/common/constant"
-	aapi "background/newmovie/controller/api"
-	ccms "background/newmovie/controller/cms"
+	aapi "background/cms/controller/api"
+	ccms "background/cms/controller/cms"
 	//"background/common/cache"
-	"background/newmovie/service"
+	"background/cms/service"
 
 	"background/common/middleware"
 	//cmid "background/newmovie/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
-	"background/shortvideo/setting"
 	"net/http"
+	"background/shortvideo/setting"
 )
 
 func main(){

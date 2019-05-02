@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 
-	"background/newmovie/model"
+	"background/cms/model"
 )
 
 

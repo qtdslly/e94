@@ -3,13 +3,13 @@ package api
 import (
 	"fmt"
 	"net/http"
-	"background/newmovie/service"
-	"background/newmovie/model"
+	"background/cms/service"
+	"background/cms/model"
 	"background/common/constant"
 	"background/common/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	apimodel "background/newmovie/controller/api/model"
+	apimodel "background/cms/controller/api/model"
 	"background/common/util"
 )
 

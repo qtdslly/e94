@@ -1,14 +1,14 @@
 package api
 
 import (
-	"background/newmovie/controller/api/cache"
-	"background/newmovie/model"
+	"background/cms/controller/api/cache"
+	"background/cms/model"
 	"background/common/logger"
 	"background/common/constant"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"net/http"
-	"background/newmovie/controller/api/model"
+	"background/cms/controller/api/model"
 )
 
 func ActivityHandler(c *gin.Context) {

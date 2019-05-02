@@ -2,7 +2,7 @@ package api
 
 import (
 	"background/common/logger"
-	"background/newmovie/model"
+	"background/cms/model"
 	"background/common/constant"
 	"net/http"
 	"github.com/gin-gonic/gin"
