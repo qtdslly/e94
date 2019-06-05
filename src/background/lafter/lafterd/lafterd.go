@@ -16,7 +16,6 @@ import (
 	mid "background/lafter/middleware"
 	"background/lafter/controller/api"
 
-
 	"background/common/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -60,6 +59,8 @@ func main(){
 
 	model.InitModel(db)
 
+	logger.Debug(config.GetStaticRoot())
+
 	r := gin.New()
 
 	gin.SetMode(gin.DebugMode)
@@ -84,10 +85,7 @@ func main(){
 
 	r.Use(dbMiddleware)
 	{
-		r.POST("/login", api.AdminLoginHandler)
-
 		r.GET("/lafter", api.LafterHandler)
-
 	}
 
 	gg.Use(dbMiddleware,mid.AdminVerifyHandler)
@@ -96,7 +94,7 @@ func main(){
 
 	r.Static("/html", config.GetStaticRoot())
 
-	r.Run(":8000")
+	r.Run(":8080")
 
 }
 

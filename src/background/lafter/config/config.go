@@ -38,7 +38,7 @@ func init() {
 	c.CmsRoot = "/root/Git/e94/src/background/lafter/"
 	c.TmplRoot = "/root/Git/e94/src/background/lafter/tmpl/"
 	c.StaticRoot = "C:/work/code/e94/src/background/lafter/html"
-	c.Domain = "http://localhost:8000"
+	c.Domain = "http://www.ezhantao.com:8080"
 
 }
 

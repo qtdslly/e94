@@ -4,9 +4,9 @@
     "storage_root": "/home/lyric/data/stock/",
     "db_name": "mysql",
     "db_source": "root:hahawap@tcp(47.106.111.101:3306)/lafter?charset=utf8&parseTime=True&loc=Local",
-    "logger_level": 0,
+    "logger_level": 1,
     "enable_orm_log": true,
     "enable_http_log": true,
     "static_root": "/root/Git/e94/src/background/lafter/config",
-    "domain":"http://www.ezhantao.com"
+    "domain":"http://www.ezhantao.com:8080"
 }
