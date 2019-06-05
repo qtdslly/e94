@@ -2,279 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/48.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/images/head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/badfile_noWorkbookRels.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/badfile_noWorksheets.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/empty_rows.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/empty_rows_in_the_rest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/googleDocsTest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/inlineStrings.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/large_sheet_large_sharedstrings_dimension_tag.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/large_sheet_no_shared_strings_no_dimension_tag.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/macExcelTest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/macNumbersTest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/max_sheet_name_length.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/merged_cells.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/noStylesAndSharedStringsTest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/original.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testFileToSlice.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testcelltypes.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testchartsheet.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testfile.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testrels.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/wpsBlankLineTest.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/episode.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/playurl.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/a.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/admincenter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/b.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/color.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/color1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/contract.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/colpick.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/custom-styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/define.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/summernote.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/hsea.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/iscroll4-custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/my.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/stock_common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/wd.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/editor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/editor1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/episode/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/episode/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/colpick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/hsea.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/initConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/mainPanel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/pace.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/summernote-zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/summernote.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/webcommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/zepto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/msgboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/notice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/paramset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/playurl/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/playurl/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/print.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/public/player.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/question.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/sonuser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock_bak.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/user1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/usermachine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/userwallet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/worklist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/middleware/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/config/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/config/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/cms/tools/collection/yongjiuzy.cc.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/config/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/config/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/DPlayer.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/mobiscroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/DPlayer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/hls.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery-1.11.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery-2.1.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery.mobile-1.4.5.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/mobiscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/login1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/stock/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/middleware/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/admintoken.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/init.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/DPlayer.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/jquery.mobile-1.4.5.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/mobiscroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/DPlayer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/hls.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery-1.11.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery-2.1.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.mobile-1.4.5.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jwplayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/mobiscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/login1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/public/player.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/public/player1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/stock/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/stock/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/middleware/admin.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/api/print.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/config/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/config/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/call.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/css/wd.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-1.11.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-2.1.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-migrate-1.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery.jqprint-0.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/tools/test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/wdkq/wdkqd.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/AUTHORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/CODE_OF_CONDUCT.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/README.org" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/cell.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/cell_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/col.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/col_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/common_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/compatibility_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/date.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/date_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/doc.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/example_read_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/file.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/file_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/format_code.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/format_code_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/fuzzy_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/hsl.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/lib.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/lib_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/read.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/read_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/reftable.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/reftable_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/row.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/row_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/sheet.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/sheet_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_file.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_file_builder.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/style.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/style_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/templates.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/theme.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/theme_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/write.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/write_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlContentTypes.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlContentTypes_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlSharedStrings.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlSharedStrings_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlStyle.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlStyle_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlTheme.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorkbook.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorkbook_test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorksheet.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorksheet_test.go" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/iconfont.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_block.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_block_color.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/icon_24.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/icon_26.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load_f.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load_w.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/logo_min.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/share_other.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/share_weixin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/stui_block.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/stui_default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/video.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" afterPath="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/controller/api/video.go" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/video.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/H-ui.admin.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/H-ui.admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/WdatePicker.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/WdatePicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/all.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery-2.1.4.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/layer.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/layer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/login.html" afterPath="$PROJECT_DIR$/src/background/ams/html/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/video/add.html" afterPath="$PROJECT_DIR$/src/background/ams/html/video/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/video/list.html" afterPath="$PROJECT_DIR$/src/background/ams/html/video/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/cmsd/cmsd.go" afterPath="$PROJECT_DIR$/src/background/cms/cmsd/cmsd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/controller/api/video.go" afterPath="$PROJECT_DIR$/src/background/cms/controller/api/video.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/controller/cms/admin.go" afterPath="$PROJECT_DIR$/src/background/cms/controller/cms/admin.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/html/index.html" afterPath="$PROJECT_DIR$/src/background/cms/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/html/player.html" afterPath="$PROJECT_DIR$/src/background/cms/html/player.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/common/constant/global.go" afterPath="$PROJECT_DIR$/src/background/common/constant/global.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.go" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.json" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/model/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/model/content.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/controller/cms/admin.go" afterPath="$PROJECT_DIR$/src/background/newmovie/controller/cms/admin.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/config/config.go" afterPath="$PROJECT_DIR$/src/background/others/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/tools/domain.go" afterPath="$PROJECT_DIR$/src/background/others/tools/domain.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/html/js/index.js" afterPath="$PROJECT_DIR$/src/background/stock/html/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/verification_code/config/config.go" afterPath="$PROJECT_DIR$/src/background/verification_code/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/gin-gonic/gin/gin_test.go" afterPath="$PROJECT_DIR$/src/github.com/gin-gonic/gin/gin_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -293,8 +21,8 @@
       <file leaf-file-name="lafterd.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
               <folding>
                 <element signature="e#14#407#0" expanded="true" />
               </folding>
@@ -305,8 +33,8 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -367,8 +95,8 @@
       <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="68" />
+            <state relative-caret-position="2450">
+              <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1400,12 +1128,12 @@
       <workItem from="1559182916991" duration="6088000" />
       <workItem from="1559265157236" duration="9269000" />
       <workItem from="1559613278398" duration="9726000" />
-      <workItem from="1559696375106" duration="9350000" />
+      <workItem from="1559696375106" duration="10254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324406000" />
+    <option name="totallyTimeSpent" value="325310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
@@ -1854,8 +1582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="265">
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
           <folding>
             <element signature="e#14#407#0" expanded="true" />
           </folding>
@@ -1864,16 +1592,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="68" />
+        <state relative-caret-position="2450">
+          <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
       </provider>
