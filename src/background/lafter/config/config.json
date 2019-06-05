@@ -7,6 +7,6 @@
     "logger_level": 1,
     "enable_orm_log": true,
     "enable_http_log": true,
-    "static_root": "/root/Git/e94/src/background/lafter/config",
+    "static_root": "/root/Git/e94/src/background/lafter/html",
     "domain":"http://www.ezhantao.com:8080"
 }
