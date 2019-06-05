@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机app通用模板蓝色系用户登录页面</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<section class="aui-flexView">
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:;" class="aui-navBar-item">
+            <i class="icon icon-return"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title"></span>
+        </div>
+        <a href="javascript:;" class="aui-navBar-item" >
+            <i class="icon icon-sys"></i>
+        </a>
+    </header>
+    <section class="aui-scrollView">
+        <div class="aui-sign-head">
+            <img src="css/images/head.png" alt="">
+
+        </div>
+        <div class="aui-sign-form">
+            <form action="">
+                <div class="aui-flex">
+                    <i class="icon icon-phone"></i>
+                    <div class="aui-flex-box">
+                        <input type="text" id="phone1" autocomplete="off" placeholder="输入手机号码">
+
+                    </div>
+                </div>
+                <div class="aui-flex">
+                    <i class="icon icon-code"></i>
+                    <div class="aui-flex-box">
+                        <input type="text"  id="code1" autocomplete="off" placeholder="输入验证码">
+
+                    </div>
+                    <div class="aui-code">
+                        <input id="btnSendCode1" type="button" class="btn btn-default" value="获取验证码" onClick="sendMessage1()" />
+                    </div>
+                </div>
+                <button class="aui-sign-login" onClick="binding()">立即登录</button>
+                <div class="aui-flex aui-flex-clear">
+                    <div class="aui-flex-box">
+                        <a href="javascript:;">手机注册</a>
+                    </div>
+                    <div class="aui-links">
+                        <a href="javascript:;">忘记密码</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</section>
+</body>
+<script type="text/javascript" src="http://www.17sucai.com/preview/1527619/2019-05-27/Sign/js/jquery.min.js"></script>
+<script type="text/javascript">
+    var phoneReg = /(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/;
+    var count = 60;
+    var InterValObj1;
+    var curCount1;
+    function sendMessage1() {
+        curCount1 = count;
+        var phone = $.trim($('#phone1').val());
+        if (!phoneReg.test(phone)) {
+            alert(" 请输入有效的手机号码");
+            return false;
+        }
+
+        $("#btnSendCode1").attr("disabled", "true");
+        $("#btnSendCode1").val( + curCount1 + "秒再获取");
+        InterValObj1 = window.setInterval(SetRemainTime1, 1000);
+
+    }
+    function SetRemainTime1() {
+        if (curCount1 == 0) {
+            window.clearInterval(InterValObj1);
+            $("#btnSendCode1").removeAttr("disabled");
+            $("#btnSendCode1").val("重新发送");
+        }
+        else {
+            curCount1--;
+            $("#btnSendCode1").val( + curCount1 + "秒再获取");
+        }
+    }
+
+    function binding(){
+        alert('请输入手机号码')
+    }
+</script>
+</html>

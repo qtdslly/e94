@@ -122,7 +122,7 @@ func TestStaticTable(t *testing.T) {
           | 2     | :method                     | GET           |
           | 3     | :method                     | POST          |
           | 4     | :path                       | /             |
-          | 5     | :path                       | /index.html   |
+          | 5     | :path                       | /list.html   |
           | 6     | :scheme                     | http          |
           | 7     | :scheme                     | https         |
           | 8     | :status                     | 200           |

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <title>武汉大学口腔医院</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/wd.css">
+
+    <script src="./js/jquery-1.11.3.js"></script>
+
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.jqprint-0.3.js"></script>
+
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="./js/jquery.cookie.js"></script>
+
+    <script>
+        window.console = window.console || function (t) {
+            };
+    </script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+<body translate="no">
+<div class="row" style="height:50px;">
+    <p style="font-size:25px;">武汉大学口腔医院中心门诊</p>
+</div>
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="amt_no1" type="text" placeholder="预交金收据号" value="012000178704"
+               onblur="set_amt_no()"/><label for="amt_no1">收据号</label>
+    </span>
+    <span style="float: left;margin-left:70px;">
+        <input class="basic-slide" id="date1" type="text" placeholder="日期"/><label for="date1">日期</label>
+    </span>
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="name1" type="text" placeholder="病人姓名" value="刘利洋"/><label for="name1">姓名</label>
+    </span>
+    <span style="float: left; margin-left:70px;">
+        <select class="basic-slide" id="sex1" style="padding:7px;">
+            <option>男</option>
+            <option>女</option>
+        </select>
+        <label for="sex1">性别</label>
+    </span>
+
+    <span style="float: right;">
+        <input class="basic-slide" id="phone1" type="text" placeholder="电话" value="17607036257"/><label
+            for="phone1">电话</label>
+    </span>
+</div>
+
+<div class="row">
+
+    <span style="float: left;">
+        <input class="basic-slide" id="birthday1" type="text" placeholder="出生日期" value="1991-04-13" style="padding: 10px 0 10px 35px;"/>
+        <label for="birthday1">出生日期</label>
+    </span>
+    <span style="float: left;margin-left:70px;">
+        <input class="basic-slide" id="doctor1" type="text" placeholder="接诊医生" value="刘利洋" style="padding: 10px 0 10px 35px;"/><label
+            for="doctor1">接诊医生</label>
+    </span>
+    <span style="float: right;">
+        <input class="basic-slide" id="gh_amt1" type="text" placeholder="挂号费" value="6.50"
+               style="padding: 10px 0 10px 35px;"/><label for="gh_amt1">挂号费</label>
+    </span>
+</div>
+
+
+<div class="row">
+
+    <span style="float: left;">
+        <input class="basic-slide" id="xy_amt1" type="text" placeholder="西药费" value="8.50"
+               style="padding: 10px 0 10px 85px;"/><label for="xy_amt1">西药费</label>
+    </span>
+
+    <span style="float: left;margin-left:70px;">
+        <input class="basic-slide" id="fs_amt1" type="text" placeholder="放射费" value="400.00"
+               style="padding: 10px 0 10px 35px;"/><label for="fs_amt1">放射费</label>
+    </span>
+    <span style="float: right;">
+        <input class="basic-slide" id="zl_amt1" type="text" placeholder="治疗费" value="1000.00"
+               style="padding: 10px 0 10px 85px;"/><label for="zl_amt1">治疗费</label>
+    </span>
+
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="total_amt1" type="text" placeholder="总费用" value="1415.00" onblur="get_total()"
+               style="padding: 10px 0 10px 25px;"/><label for="total_amt1">总费用</label>
+    </span>
+    <span style="float: left;margin-left:70px;">
+        <input class="basic-slide" id="ss_amt1" type="text" placeholder="实收" value="2000.00" onblur="get_zll()"/><label for="ss_amt1">实收</label>
+    </span>
+
+    <span style="float: right;">
+        <input class="basic-slide" id="zll_amt1" type="text" placeholder="找零" value="585.00"/><label for="zll_amt1">找零</label>
+    </span>
+</div>
+
+
+
+<div class="row">
+    <span style="float: left;">
+        <input class="btn" id="print" type="button" value="打印" onclick="jprint()"/>
+    </span>
+</div>
+
+<div id="printArea" hidden>
+
+
+    <div id="nurse_note">
+        <div style="width: 100%;">
+            <span style="float: left;font-size:15px;">门诊</span>
+            <span id="amt_no2" style="float: right">55555</span><span style="float: right;font-size:15px;">收据号：</span>
+        </div>
+        <div style="width:100%;text-align: center;margin-top:10px;overflow: hidden;">
+            <p style="width: 100%;letter-spacing:8px;font-size:20px;">武汉大学口腔医院中心门诊</p>
+        </div>
+
+        <table border="1" cellspacing="0" cellpadding="0" style="width:100%;">
+            <tr>
+                <td colspan="5">
+                    <span style="margin-left:20px;float: left">姓名：</span>
+                    <span id="name2" style="float: left">刘利洋</span>
+                    <span style="float: left;margin-left:180px;">性别：</span>
+                    <span id="sex2" style="float: left;">男</span>
+                    <span id="birthday2" style="float: right;margin-right:50px;">1991-04-13</span>
+                    <span style="float: right;">出生日期：</span>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <span style="margin-left:20px;">电话</span>
+                    <span id="phone2">17607036257</span>
+                    <span style="margin-left: 313px; ">接诊医生：</span>
+                    <span id="doctor2">刘利洋</span>
+            </tr>
+            <tr style="text-align: center;">
+                <td>日&nbsp;&nbsp;&nbsp;&nbsp;期</td>
+                <td>挂号费</td>
+                <td>西药费</td>
+                <td>放射费</td>
+                <td>治疗费</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td id="date2">2019-05-01</td>
+                <td id="gh_amt2">6.5</td>
+                <td id="xy_amt2">8</td>
+                <td id="fs_amt2">365</td>
+                <td id="zl_amt2">1000</td>
+            </tr>
+            <tr>
+                <td colspan="2"><span style="margin-left:20px;">合计：</span><span id="total_amt2">1736.5</span></td>
+                <td colspan="2"><span style="margin-left:20px;">实收：</span><span id="ss_amt2">2000</span></td>
+                <td><span style="margin-left:20px;">找零：</span><span id="zll_amt2">620.5</span></td>
+            </tr>
+        </table>
+        <div style="width:100%;height:60px;">
+            <div>注明:</div>
+            <div style="float: left;margin-left:10px;">
+                <p>当月工作日内凭此单据换取发票。</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width:100%;height:1px; border-bottom:0.5px dotted #ccc;margin:250px 0 40px 0;"></div>
+    <div id="patient_note">
+        <div style="width: 100%;">
+            <span style="float: left;font-size:15px;">门诊</span>
+            <span id="amt_no3" style="float: right">55555</span><span style="float: right;font-size:15px;">收据号：</span>
+        </div>
+        <div style="width:100%;text-align: center;margin-top:10px;overflow: hidden;">
+            <p style="width: 100%;letter-spacing:8px;font-size:20px;">武汉大学口腔医院中心门诊</p>
+        </div>
+
+        <table border="1" cellspacing="0" cellpadding="0" style="width:100%;">
+            <tr>
+                <td colspan="5">
+                    <span style="margin-left:20px;float: left">姓名：</span>
+                    <span id="name3" style="float: left">刘利洋</span>
+                    <span style="float: left;margin-left:180px;">性别：</span>
+                    <span id="sex3" style="float: left;">男</span>
+                    <span id="birthday3" style="float: right;margin-right:50px;">1991-04-13</span>
+                    <span style="float: right;">出生日期：</span>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <span style="margin-left:20px;">电话</span>
+                    <span id="phone3">17607036257</span>
+                    <span style="margin-left: 313px; ">接诊医生：</span>
+                    <span id="doctor3">刘利洋</span>
+            </tr>
+            <tr style="text-align: center;">
+                <td>日&nbsp;&nbsp;&nbsp;&nbsp;期</td>
+                <td>挂号费</td>
+                <td>西药费</td>
+                <td>放射费</td>
+                <td>治疗费</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td id="date3">2019-05-01</td>
+                <td id="gh_amt3">6.5</td>
+                <td id="xy_amt3">8</td>
+                <td id="fs_amt3">365</td>
+                <td id="zl_amt3">1000</td>
+            </tr>
+            <tr>
+                <td colspan="2"><span style="margin-left:20px;">合计：</span><span id="total_amt3">1736.5</span></td>
+                <td colspan="2"><span style="margin-left:20px;">实收：</span><span id="ss_amt3">2000</span></td>
+                <td><span style="margin-left:20px;">找零：</span><span id="zll_amt3">620.5</span></td>
+            </tr>
+        </table>
+        <div style="width:100%;height:60px;">
+            <div>注明:</div>
+            <div style="float: left;margin-left:10px;">
+                <p>当月工作日内凭此单据换取发票。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="./js/css_reload.js"></script>-->
+
+</body>
+<script type="text/javascript">
+    Date.prototype.Format = function (fmt) {
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "H+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+
+    $(document).ready(function () {
+        var currtime = new Date().Format("yyyy-MM-dd");
+        $("#date1").val(currtime);
+
+        set_amt_no();
+    });
+
+    function get_total(){
+        var gh_amt = Number($("#gh_amt1").val());
+        var xy_amt = Number($("#xy_amt1").val());
+        var fs_amt = Number($("#fs_amt1").val());
+        var zl_amt = Number($("#zl_amt1").val());
+        var total = gh_amt + xy_amt + fs_amt + zl_amt;
+        $("#total_amt1").val(total.toFixed(2));
+    }
+
+    function get_zll() {
+        var ss_amt = Number($("#ss_amt1").val());
+        var total = Number($("#total_amt1").val());
+        var zll_amt = ss_amt - total;
+        $("#zll_amt1").val(zll_amt.toFixed(2));
+    }
+
+    function pad2(num, n) {
+        if ((num + "").length >= n) return num;
+        return pad2("0" + num, n);
+    }
+
+    function set_amt_no() {
+        var currtime = new Date().Format("yyyyMMdd");
+        if($.cookie("amt_no_"+currtime) == "" || $.cookie("amt_no_"+currtime) == null){
+            $.cookie("amt_no_"+currtime, 1, { expires: 1 });
+        }
+
+        var num = Number($.cookie("amt_no_"+currtime));
+        var amt_no = currtime + pad2(num,3);
+
+        $("#amt_no1").val(amt_no);
+    }
+
+    function check_amt() {
+        var gh_amt = $("#gh_amt1").val();
+        var xy_amt = $("#xy_amt1").val();
+        var fs_amt = $("#fs_amt1").val();
+        var zl_amt = $("#zl_amt1").val();
+        if(gh_amt == ""){
+            gh_amt = "0.0";
+            $("#gh_amt1").val(gh_amt);
+        }
+        if(xy_amt == ""){
+            gh_amt = "0.0";
+            $("#xy_amt1").val(xy_amt);
+        }
+        if(fs_amt == ""){
+            fs_amt = "0.0";
+            $("#fs_amt1").val(fs_amt);
+        }
+        if(zl_amt == ""){
+            zl_amt = "0.0";
+            $("#zl_amt1").val(zl_amt);
+        }
+        if(is_amt(gh_amt) == false){
+            alert("挂号费非法");
+            return false;
+        }else if(is_amt(xy_amt) == false){
+            alert("西药费非法");
+            return false;
+        }else if(is_amt(fs_amt) == false){
+            alert("放射费非法");
+            return false;
+        }else if(is_amt(zl_amt) == false){
+            alert("治疗费非法");
+            return false;
+        }
+        return true;
+    }
+
+    function jprint() {
+
+        if(check_amt() == false){
+            return
+        }
+
+        get_total();
+        get_zll();
+
+        $("#yl").hide();
+        $("#printArea").show();
+        $("#name2").text($("#name1").val());
+        $("#sex2").text($("#sex1").val());
+        $("#phone2").text($("#phone1").val());
+        $("#birthday2").text($("#birthday1").val());
+        $("#doctor2").text($("#doctor1").val());
+
+        $("#date2").text($("#date1").val());
+        $("#amt_no2").text($("#amt_no1").val());
+        $("#gh_amt2").text(Number($("#gh_amt1").val()).toFixed(2));
+        $("#xy_amt2").text(Number($("#xy_amt1").val()).toFixed(2));
+        $("#fs_amt2").text(Number($("#fs_amt1").val()).toFixed(2));
+        $("#zl_amt2").text(Number($("#zl_amt1").val()).toFixed(2));
+        $("#total_amt2").text(Number($("#total_amt1").val()).toFixed(2));
+        $("#ss_amt2").text(Number($("#ss_amt1").val()).toFixed(2));
+        $("#zll_amt2").text(Number($("#zll_amt1").val()).toFixed(2));
+
+
+        $("#name3").text($("#name1").val());
+        $("#sex3").text($("#sex1").val());
+        $("#phone3").text($("#phone1").val());
+        $("#birthday3").text($("#birthday1").val());
+        $("#doctor3").text($("#doctor1").val());
+        $("#date3").text($("#date1").val());
+        $("#amt_no3").text($("#amt_no1").val());
+        $("#gh_amt3").text(Number($("#gh_amt1").val()).toFixed(2));
+        $("#xy_amt3").text(Number($("#xy_amt1").val()).toFixed(2));
+        $("#fs_amt3").text(Number($("#fs_amt1").val()).toFixed(2));
+        $("#zl_amt3").text(Number($("#zl_amt1").val()).toFixed(2));
+        $("#total_amt3").text(Number($("#total_amt1").val()).toFixed(2));
+        $("#ss_amt3").text(Number($("#ss_amt1").val()).toFixed(2));
+        $("#zll_amt3").text(Number($("#zll_amt1").val()).toFixed(2));
+
+        $("#printArea").jqprint();
+
+        var currtime = new Date().Format("yyyy-MM-dd HH:mm:ss");
+
+        $.ajax({
+            //提交数据的类型 POST GET
+            type:"POST",
+            //提交的网址
+            url:"/save",
+            //提交的数据
+            data:{name:$("#name1").val(),sex:$("#sex1").val(),phone:$("#phone1").val(),birthday:$("#birthday1").val(),doctor:$("#doctor1").val(),
+                time:currtime,gh_amt:$("#gh_amt1").val(),xy_amt:$("#xy_amt1").val(),fs_amt:$("#fs_amt1").val(),zl_amt:$("#zl_amt1").val(),
+                total_amt:$("#total_amt1").val(),ss_amt:$("#ss_amt1").val(),zll_amt:$("#zll_amt1").val(),
+                amt_no :$("#amt_no1").val()},
+            //返回数据的格式
+            datatype: "json",//"xml", "html", "script", "json", "jsonp", "text".
+            //在请求之前调用的函数
+            beforeSend:function(){},
+            //成功返回之后调用的函数
+            success:function(json){
+                if(json.err_code != 0){
+                    alert(json.err_msg);
+                }
+            }   ,
+            //调用执行后调用的函数
+            complete: function(XMLHttpRequest, textStatus){
+
+            },
+            //调用出错执行的函数
+            error: function(){
+                //请求出错处理
+            }
+        });
+
+        $("#yl").show();
+        $("#printArea").hide();
+
+        var currdate = new Date().Format("yyyyMMdd");
+        var num = Number($.cookie("amt_no_"+currdate)) + 1;
+        $.cookie("amt_no_"+currdate, num, { expires: 1 });
+
+        var amt_no = currdate + pad2(num,3);
+        $("#amt_no1").val(amt_no);
+
+    }
+
+
+    function is_amt(amt){
+        var str=/^(([1-9]\d*)|\d)(\.\d{1,2})?$/;
+        if(str.test(amt)==false){
+            return false;
+        }
+        return true;
+    }
+
+
+</script>
+</html>

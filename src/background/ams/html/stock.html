@@ -1,0 +1,746 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <!--<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <script type="text/javascript" src="js/initConfig.js"></script>
+
+    <title></title>
+</head>
+<body>
+<div class="page page-current" id="market_mainPanel"
+     data-pageTitle="行情-市场" data-pageLevel="1"  data-script='js/mainPanel.js' data-urlParam="true">
+    <section class="main fixed" data-page="home">
+        <header class="header">
+            <div class="header_inner">
+                <!-- <a href="javascript:void(0);" class="icon_home"></a> -->
+                <div class="ui button-group border rounded">
+                    <a href="javascript:void(0);" class="ui button block">自选股</a>
+                    <a href="javascript:void(0);" class="ui button block current">行情</a>
+                </div>
+                <a href="javascript:void(0);" class="icon_search" style="right: 0.44rem;"></a>
+                <a href="javascript:void(0);" class="icon_refresh"></a>
+                <a href="javascript:void(0);" class="icon_nav"></a>
+            </div>
+
+            <div class="header_nav">
+                <div class="new_tab" id="wrapper_SHIscroll">
+                    <div>
+                        <ul class="ui tab-nav" id="container_SHIscroll" style="display:none;">
+                            <li id="0" class="current"><a href="javascript:void(0);"><span>沪深</span></a></li>
+                            <!-- <li id="1"><a href="javascript:void(0);"><span>港股通</span></a></li>
+                            <li id="10"><a href="javascript:void(0);"><span>港股</span></a></li> -->
+                            <li id="6"><a href="javascript:void(0);"><span>新股</span></a></li>
+                            <li id="8"><a href="javascript:void(0);"><span>债券</span></a></li>
+                            <!-- <li id="9"><a href="javascript:void(0);"><span>基金</span></a></li>-->
+                            <!-- <li id="11"><a href="javascript:void(0);"><span>股转</span></a></li> -->
+                            <li id="12"><a href="javascript:void(0);"><span>指数</span></a></li>
+                            <!-- <li id="4"><a href="javascript:void(0);"><span>全球</span></a></li>
+                            <li id="13"><a href="javascript:void(0);"><span>更多</span></a></li> -->
+                            <!--<li id="2"><a href="javascript:void(0);"><span>期权</span></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="content">
+            <div class="home_main">
+                <div id="container_VIscroll">
+                    <div class="visc_wrapper" id="wrapper_VIscroll">
+                        <div class="visc_scroller">
+                            <div class="visc_pullDown" style="display: none;">
+                                <span class="visc_pullDownIcon"></span>
+                                <div class="visc_pullDownDiv">
+                                    <span class="visc_pullDownLabel">下拉刷新</span> <br /> 时间更新于： <span
+                                        class="visc_pullDownTime"></span>
+                                </div>
+                            </div>
+                            <div id="wrapper_HIscroll">
+                                <div id="scroller_HIscroll">
+                                    <!-- 沪深 -->
+                                    <ul class="ui tab-content">
+                                        <li>
+                                            <div class="home_index">
+                                                <div id="0" class="fund_box no_margin">
+                                                    <div id="wrapper_HS_HIscroll">
+                                                        <ul id="scroller_HS_HIscroll">
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>上证指数</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>深圳成指</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>创业板指</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>沪深300</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>中小板指</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);"><h5>上证50</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="num_li" id="tag_HS_HIscroll">
+                                                        <em class="first current"></em>
+                                                        <em></em>
+                                                    </div>
+                                                </div>
+                                                <!-- <div id="newCalendar" class="sharcaled clearfix">
+                                                    <a href="javascript:void(0);">
+                                                        <i></i>
+                                                        <span>新股日历</span><em></em>
+                                                    </a>
+                                                    <a href="javascript:void(0);">
+                                                        <i></i>
+                                                        <span>龙虎榜</span>追踪主力异动
+                                                    </a>
+                                                </div> -->
+                                                <!-- <div id="newCalendar" class="second_nav clearfix">
+                                                    <a href="javascript:void(0);">
+                                                        <i></i>
+                                                        <p>新股申购<em style="display:none;"></em></p>
+                                                    </a>
+                                                    <a href="javascript:void(0);">
+                                                        <i></i>
+                                                        <p>龙虎榜</p>
+                                                    </a>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="home_box home_plate" id="0">
+                                                <div class="title">
+                                                    <h3>领涨板块</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <ul class="hot">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="1">
+                                                <div class="title">
+                                                    <h3>领涨股</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+
+                                            </div>
+                                            <div class="home_box home_rank" id="2">
+                                                <div class="title">
+                                                    <h3>领跌股</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="5">
+                                                <div class="title hide">
+                                                    <h3>资金流入</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner" style="display: none;">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="6">
+                                                <div class="title hide">
+                                                    <h3>资金流出</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner" style="display: none;">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="7">
+                                                <div class="title hide">
+                                                    <h3>换手率</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner" style="display: none;">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- 港股 通-->
+                                    <!-- 					<ul class="ui tab-content" style="display: none;">
+                                                            <li>
+                                                                <div class="fund_box_hk" style="display: none;">
+                                                                    <div class="ui layout">
+                                                                        <div class="row-1">
+                                                                            <h5>港股通(沪)</h5>
+                                                                            <ul>
+                                                                                <li><strong>--</strong><p>当日可用额度</p></li>
+                                                                                <li><strong>--</strong><p>资金流入</p></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="row-1">
+                                                                            <h5>港股通(深)</h5>
+                                                                            <ul>
+                                                                                <li><strong>--</strong><p>当日可用额度</p></li>
+                                                                                <li><strong>--</strong><p>资金流入</p></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="home_box home_rank" id="8">
+                                                                    <div class="title">
+                                                                        <h3>港股通(沪)</h3><a href="javascript:void(0);" class="more"></a>
+                                                                    </div>
+                                                                    <div class="inner">
+                                                                        <div class="fund_table"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="home_box home_rank" id="9">
+                                                                    <div class="title">
+                                                                        <h3>港股通(深)</h3><a href="javascript:void(0);" class="more"></a>
+                                                                    </div>
+                                                                    <div class="inner">
+                                                                        <div class="fund_table"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="top_box mt10" id="8">
+                                                                    <div class="title">
+                                                                        <h5 class="no">港股通</h5>
+                                                                        <a href="javascript:void(0);" class="more">更多</a>
+                                                                    </div>
+                                                                    <div class="fund_table pl10">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                         -->
+                                    <!-- 港股 -->
+                                    <!-- 			<ul class="ui tab-content" style="display: none;">
+                                                    <li>
+                                                        <div id="1" class="fund_box">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><h5>恒生指数</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><h5>国企指数</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><h5>红筹指数</h5>
+                                                                    <strong>--</strong>
+                                                                    <p><span class="lt">--</span><span class="rt">--</span></p></a>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                        <div class="home_box home_plate" id="90">
+                                                            <div class="title">
+                                                                <h3>领涨板块</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner">
+                                                                <ul class="hot">
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="home_box home_rank" id="22">
+                                                            <div class="title">
+                                                                <h3>主板涨幅榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="home_box home_rank" id="23">
+                                                            <div class="title">
+                                                                <h3>主板跌幅榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="home_box home_rank" id="24">
+                                                            <div class="title hide">
+                                                                <h3>主板成交额榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="home_box home_rank" id="25">
+                                                            <div class="title hide">
+                                                                <h3>创业板涨幅榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="home_box home_rank" id="26">
+                                                            <div class="title hide">
+                                                                <h3>创业板跌幅榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="home_box home_rank" id="27">
+                                                            <div class="title hide">
+                                                                <h3>创业板成交额榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="home_box home_rank" id="28">
+                                                            <div class="title hide">
+                                                                <h3>认股证成交额榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="home_box home_rank" id="29">
+                                                            <div class="title hide">
+                                                                <h3>牛熊证成交额榜</h3>
+                                                                <a href="javascript:void(0);" class="more"></a>
+                                                            </div>
+                                                            <div class="inner" style="display: none;">
+                                                                <div class="fund_table"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                 -->
+                                    <!-- 新股 -->
+                                    <ul class="ui tab-content" style="display: none;">
+                                        <li>
+                                            <div id="newCalendar" class="home_box home_rank" style="display:none;">
+                                                <div class="title calendarText">
+                                                    <h3 class="no">新股日历</h3>
+                                                    <span style="position: absolute; right: 0.5rem; top: 0;text-align: right; line-height: 0.32rem;"></span>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="21">
+                                                <div class="title">
+                                                    <h3 class="no">新股行情</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- 债券 -->
+                                    <ul class="ui tab-content" style="display: none;">
+                                        <li>
+                                            <div class="home_box home_rank" id="4">
+                                                <div class="title">
+                                                    <h3 class="no">国债</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="41">
+                                                <div class="title">
+                                                    <h3 class="no">企债</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="42">
+                                                <div class="title">
+                                                    <h3 class="no">可转债</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="43">
+                                                <div class="title">
+                                                    <h3 class="no">回购</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- 基金
+                                    <ul class="ui tab-content" style="display: none;">
+                                        <li>
+                                            <div class="home_box home_rank" id="3">
+                                                <div class="title">
+                                                    <h3 class="no">封闭型</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="31">
+                                                <div class="title">
+                                                    <h3 class="no">交易型</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="32">
+                                                <div class="title">
+                                                    <h3 class="no">ETF</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="33">
+                                                <div class="title">
+                                                    <h3 class="no">LOF</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>-->
+
+                                    <!-- 股转 -->
+                                    <!--<ul class="ui tab-content" style="display: none;">
+                                        <li>
+                                            <div class="home_box home_rank" id="50">
+                                                <div class="title">
+                                                    <h3 class="no">协议转让</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="51">
+                                                <div class="title">
+                                                    <h3 class="no">做市转让</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="52">
+                                                <div class="title">
+                                                    <h3 class="no">两网及退市</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <div class="home_box home_rank" id="53">
+                                                <div class="title">
+                                                    <h3 class="no">其它转让</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>-->
+
+                                    <!-- 指数 -->
+                                    <ul class="ui tab-content" style="display: none;">
+                                        <li>
+                                            <div class="home_box home_rank" id="60">
+                                                <div class="title">
+                                                    <h3 class="no">沪深指数</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                            <!--
+                                            <div class="home_box home_rank" id="62">
+                                                <div class="title">
+                                                    <h3 class="no">三板指数</h3>
+                                                    <a href="javascript:void(0);" class="more"></a>
+                                                </div>
+                                                <div class="inner">
+                                                    <div class="fund_table"></div>
+                                                </div>
+                                            </div>
+                                             -->
+                                        </li>
+                                    </ul>
+
+                                    <!-- 全球 -->
+                                    <!-- 								<ul class="ui tab-content" style="display: none;">
+                                                                        <li>
+                                                                            <div class="home_box home_state" id="91">
+                                                                                <div class="title">
+                                                                                    <h3>重要指数</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                <div class="fund_table">
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="93">
+                                                                                <div class="title">
+                                                                                    <h3>亚洲市场</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="92">
+                                                                                <div class="title">
+                                                                                    <h3>欧洲市场</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                <div class="fund_table">
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="94">
+                                                                                <div class="title">
+                                                                                    <h3>美洲市场</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="100">
+                                                                                <div class="title">
+                                                                                    <h3>非洲市场</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="101">
+                                                                                <div class="title">
+                                                                                    <h3>澳洲市场</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="96">
+                                                                                <div class="title">
+                                                                                    <h3>热门汇率</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                            <div class="home_box home_state" id="97">
+                                                                                <div class="title">
+                                                                                    <h3>人民币中间价</h3>
+                                                                                    <a href="javascript:void(0);" class="more"></a>
+                                                                                </div>
+                                                                                    <div class="fund_table"></div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                     -->
+                                    <!-- 其他 -->
+                                    <!-- 								<ul class="ui tab-content" style="display: none;">
+                                                                        <div class="more_market">
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>沪深市场</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                        <li><a href="javascript:void(0);" stockType="0:9">沪深A股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="9">上证A股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="0">深证A股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="10">上证B股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="1">深证B股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="7:15">指数</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="2">中小板块</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="18">创业板</a></li>
+                                                                                        <li><a href="javascript:void(0);"  id="21">次新股</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="65">上证退市</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="66">上证风险</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="64">深证退市</a></li>
+                                                                                        <li><a href="javascript:void(0);" bkType="1">行业板块</a></li>
+                                                                                        <li><a href="javascript:void(0);" bkType="2">概念板块</a></li>
+                                                                                        <li><a href="javascript:void(0);" bkType="3">地域板块</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="11:12:20">上证基金</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="3:4:19">深证基金</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="19">LOF基金</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="3:11">ETF基金</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">分级基金</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="14:25:26:27:30">上证债券</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="6:21:22:23:24">深证债券</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="27">上证转债</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="23">深证转债</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="30">上证回购</a></li>
+                                                                                        <li><a href="javascript:void(0);" stocktype="24">深证回购</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="114">国债逆回购</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>新三板</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                        <li><a href="javascript:void(0);" otctype="1">三板指数</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="10">挂牌股票</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="2">创新层</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="3">基础层</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="4">优先股</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="5">集合竞价</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="6">做市转让</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="7">首次挂牌</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="8">增发</a></li>
+                                                                                        <li><a href="javascript:void(0);" otctype="9">两网及退市</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>港股</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                        <li><a href="javascript:void(0);" id="8">港股通(沪)</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="9">港股通(深)</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="22">港股主板</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="25">港股创业板</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="113">港股指数</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="28">认股证</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="29">牛熊证</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="112">债券</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="111">信托基金</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>全球指数</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                        <li><a href="javascript:void(0);" id="121">重要指数</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="123">亚洲市场</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="122">欧洲市场</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="124">美洲市场</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="127">非洲市场</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="126">澳洲市场</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>外汇</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                        <li><a href="javascript:void(0);" id="9">所有汇率</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="102">热门汇率</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="98">基本汇率</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="103">人民币中间价</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="99">交叉盘汇率</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="part">
+                                                                                <div class="more_title">
+                                                                                    <h5>期权期货</h5>
+                                                                                </div>
+                                                                                <div class="more_list">
+                                                                                    <ul class="clearfix">
+                                                                                           <li><a href="javascript:void(0);" id="13">股票期权</a></li>
+                                                                                        <li><a href="javascript:void(0);" id="">商品期权</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">上期所</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">郑商所</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">大商所</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">股指期货</a></li>
+                                                                                        <li><a href="javascript:void(0);" stockType="">国债期货</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </ul>
+                                     -->							</div>
+                            </div>
+                            <div class="visc_pullUp" style="display: none;">
+                                <span class="visc_pullUpIcon"></span>
+                                <div class="visc_pullUpDiv">
+                                    <span class="visc_pullUpLabel">上拉加载下一页</span> <br /> 时间更新于： <span
+                                        class="visc_pullUpTime"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="ft_nav" style="display: none;">
+                <ul>
+                    <li style="display: none;"><a href="javascript:void(0);"><i></i><p>首页</p></a></li>
+                    <li class="current"><a href="javascript:void(0);"><i></i><p>行情</p></a></li>
+                    <li id="trade" style="display: none;"><a href="javascript:void(0);"><i></i><p>交易</p></a></li>
+                    <li style="display: none;"><a href="javascript:void(0);"><i></i><p>消息</p></a></li>
+                    <li style="display: none;"><a href="javascript:void(0);"><i></i><p>我</p></a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+</div>
+<script>
+    (function(a){var c=a.document,d=c.documentElement,width=(window.innerWidth>0)?window.innerWidth:screen.width;height=(window.innerHeight>0)?window.innerHeight:screen.height;b=(a=a.devicePixelRatio)?1/a:1;if(height<480){a=1;b=1};e=navigator.userAgent.toLowerCase().indexOf("android")!==-1&&parseFloat(navigator.userAgent.toLowerCase().slice(navigator.userAgent.toLowerCase().indexOf("android")+8))<4,f=(e)?"target-densitydpi=device-dpi":"width=device-width";console.log(b);c.querySelector('meta[name="viewport"]').setAttribute("content",""+f+",initial-scale="+b+",maximum-scale="+b+",minimum-scale="+b+",user-scalable=0");d.getBoundingClientRect();d.style.fontSize=100*a+"px"})(window);
+</script>
+</body>
+</html>

@@ -2,8 +2,279 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/photo/config/config.go" afterPath="$PROJECT_DIR$/src/background/photo/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/photo/config/config.json" afterPath="$PROJECT_DIR$/src/background/photo/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/images/up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/images/head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/badfile_noWorkbookRels.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/badfile_noWorksheets.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/empty_rows.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/empty_rows_in_the_rest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/googleDocsTest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/inlineStrings.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/large_sheet_large_sharedstrings_dimension_tag.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/large_sheet_no_shared_strings_no_dimension_tag.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/macExcelTest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/macNumbersTest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/max_sheet_name_length.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/merged_cells.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/noStylesAndSharedStringsTest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/original.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testFileToSlice.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testcelltypes.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testchartsheet.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testfile.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/testrels.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/testdocs/wpsBlankLineTest.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/episode.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/playurl.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/admincenter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/b.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/color1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/contract.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/colpick.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/custom-styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/define.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/font/summernote.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/editor/summernote.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/hsea.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/iscroll4-custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/stock_common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/css/wd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/editor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/editor1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/episode/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/episode/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/colpick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/dataTables.bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/hsea.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/initConfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.metisMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/mainPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/pace.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/prototype.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/summernote-zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/summernote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/webcommon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/js/zepto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/msgboard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/notice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/paramset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/playurl/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/playurl/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/print.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/public/player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/question.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/sonuser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/stock_bak.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/user1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/usermachine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/userwallet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/html/worklist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ams/middleware/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/config/config.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ccs/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/cms/tools/collection/yongjiuzy.cc.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/config/config.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/DPlayer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/css/mobiscroll.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/DPlayer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/hls.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery-1.11.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery-2.1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/jquery.mobile-1.4.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/js/mobiscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/login1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/html/stock/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/middleware/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/admintoken.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/init.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/DPlayer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/jquery.mobile-1.4.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/css/mobiscroll.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/DPlayer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/hls.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery-1.11.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery-2.1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jquery.mobile-1.4.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/jwplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/js/mobiscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/login1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/public/player.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/public/player1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/stock/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/html/stock/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/lafter/middleware/admin.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/api/print.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/config/config.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/call.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/css/wd.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-1.11.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-2.1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery-migrate-1.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/html/js/jquery.jqprint-0.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/tools/test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/wdkq/wdkqd.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/CODE_OF_CONDUCT.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/README.org" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/cell.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/cell_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/col.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/col_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/common_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/compatibility_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/date.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/date_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/doc.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/example_read_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/file.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/file_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/format_code.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/format_code_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/fuzzy_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/hsl.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/lib.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/lib_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/read.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/read_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/reftable.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/reftable_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/row.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/row_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/sheet.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/sheet_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_file.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_file_builder.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/stream_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/style.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/style_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/templates.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/theme.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/theme_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/write.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/write_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlContentTypes.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlContentTypes_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlSharedStrings.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlSharedStrings_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlStyle.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlStyle_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlTheme.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorkbook.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorkbook_test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorksheet.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/tealeg/xlsx/xmlWorksheet_test.go" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_block.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_block_color.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/css/stui_default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/icon_24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/icon_26.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load_f.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/load_w.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/logo_min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/share_other.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/img/share_weixin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/stui_block.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/js/stui_default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/background/cms/html/video.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" afterPath="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/controller/api/video.go" afterPath="$PROJECT_DIR$/src/background/ams/controller/api/video.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/H-ui.admin.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/H-ui.admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/WdatePicker.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/WdatePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/all.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery-2.1.4.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.dataTables.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/js/layer.js" afterPath="$PROJECT_DIR$/src/background/ams/html/js/layer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/login.html" afterPath="$PROJECT_DIR$/src/background/ams/html/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/video/add.html" afterPath="$PROJECT_DIR$/src/background/ams/html/video/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ams/html/video/list.html" afterPath="$PROJECT_DIR$/src/background/ams/html/video/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/cmsd/cmsd.go" afterPath="$PROJECT_DIR$/src/background/cms/cmsd/cmsd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/controller/api/video.go" afterPath="$PROJECT_DIR$/src/background/cms/controller/api/video.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/controller/cms/admin.go" afterPath="$PROJECT_DIR$/src/background/cms/controller/cms/admin.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/html/index.html" afterPath="$PROJECT_DIR$/src/background/cms/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/cms/html/player.html" afterPath="$PROJECT_DIR$/src/background/cms/html/player.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/common/constant/global.go" afterPath="$PROJECT_DIR$/src/background/common/constant/global.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.go" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.json" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/model/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/model/content.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/newmovie/controller/cms/admin.go" afterPath="$PROJECT_DIR$/src/background/newmovie/controller/cms/admin.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/config/config.go" afterPath="$PROJECT_DIR$/src/background/others/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/tools/domain.go" afterPath="$PROJECT_DIR$/src/background/others/tools/domain.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/html/js/index.js" afterPath="$PROJECT_DIR$/src/background/stock/html/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/verification_code/config/config.go" afterPath="$PROJECT_DIR$/src/background/verification_code/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/gin-gonic/gin/gin_test.go" afterPath="$PROJECT_DIR$/src/github.com/gin-gonic/gin/gin_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/encode_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/hpack_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/http2/hpack/tables_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" afterPath="$PROJECT_DIR$/src/golang.org/x/net/webdav/if_test.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,105 +290,95 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.go">
+      <file leaf-file-name="lafterd.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmsd.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/newmovie/cmsd/cmsd.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photod.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/photo/photod/photod.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+            <state relative-caret-position="541">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
-                <element signature="e#14#359#0" expanded="true" />
+                <element signature="e#14#407#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lafter.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding>
+                <element signature="e#12#151#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="amsd.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/ams/amsd/amsd.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/ams/html/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/photo/html/list.html">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/html/stock/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="221" column="7" lean-forward="false" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
+            <state relative-caret-position="437">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/photo/model/init.go">
+      <file leaf-file-name="content.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/model/content.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transprompt.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/stock/task/transprompt.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2024">
-              <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+            <state relative-caret-position="322">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jys.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/stock/tools/util/jys.go">
+      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="378">
+              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="realtimestock.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/stock/task/realtimestock.go">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/lafter/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1495">
-              <caret line="72" column="69" lean-forward="false" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tonghuashun.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/stock/task/tonghuashun.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -128,6 +389,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="Go File" />
         <option value="HTML File" />
       </list>
@@ -135,40 +398,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SUCCESS</find>
-      <find>tp33</find>
-      <find>skydvn</find>
-      <find>10</find>
-      <find>青海</find>
-      <find>山西</find>
-      <find>ws_w</find>
-      <find>envivo_x/SD/cctv15</find>
-      <find>14186</find>
-      <find>vtv2</find>
-      <find>&lt;a href=&quot;</find>
-      <find>清华大学</find>
-      <find>channel99</find>
-      <find>澳视体育</find>
-      <find>随州都市</find>
-      <find>,</find>
-      <find>Join</find>
-      <find>欧洲足球</find>
-      <find>LOL</find>
-      <find>eax94435</find>
-      <find>Success</find>
-      <find>.sidebar-toggler</find>
-      <find>toggler</find>
-      <find>img</find>
-      <find>Vali Admin_files</find>
-      <find>Dashboard</find>
-      <find>fa-dashboard</find>
-      <find>fontawesome-webfont.woff2?v=4.7.0</find>
-      <find>FFMPEG</find>
+      <find>chinese</find>
+      <find>SINA_REALTIME_STOCK_URL</find>
       <find>Chinese</find>
+      <find>/uploads/</find>
+      <find>header__logo</find>
+      <find>BW</find>
+      <find>bw</find>
+      <find>welcome</find>
+      <find>WdatePicker</find>
+      <find>ccccccccccc</find>
+      <find>getparam</find>
+      <find>layer</find>
+      <find>H-ui.admin.js</find>
+      <find>skin.css</find>
+      <find>WdatePicker.css</find>
+      <find>layer.css</find>
+      <find>800</find>
+      <find>basic-slide</find>
+      <find>label</find>
+      <find>215</find>
+      <find>245</find>
+      <find>EXCEL</find>
+      <find>amt2</find>
+      <find>play.html</find>
+      <find>gif</find>
+      <find>images/ajax-loader.gif</find>
+      <find>$.ajax</find>
+      <find>asyn</find>
+      <find>getBaiDuDomainApiInfo</find>
+      <find>getStatus</find>
     </findStrings>
     <replaceStrings>
       <replace>|</replace>
       <replace>js</replace>
+      <replace>http://www.boqudy.com/uploads/</replace>
+      <replace>255</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -182,57 +447,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/re.txt" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/resourcegroup.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/channelsort.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/model/video.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/page.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/playurl.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/add1.sh" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/model/playurl.go" />
-        <option value="$PROJECT_DIR$/src/background/common/constant/typ.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/stream.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/updateratio.go" />
-        <option value="$PROJECT_DIR$/src/background/common/util/fileinfo.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/testurl.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/user.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/stream.txt" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/readme.txt" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/streamthumb.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/tools/addstream.txt" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/userstream.go" />
-        <option value="$PROJECT_DIR$/src/background/common/constant/errcode.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/video.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/userstream.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/upload.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/file.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/useropinion.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/installation.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/controller/api/opinion.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/cmsd/cmsd.go" />
-        <option value="$PROJECT_DIR$/doc/newmovie/api-userstream.md" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/video/add1.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/episode/add.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/video/add.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/js/all.js" />
+        <option value="$PROJECT_DIR$/src/background/ams/controller/api/playurl.go" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/episode/list.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/controller/api/video.go" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/video/list.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/js/jquery.hDialog.min.js" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/playurl/add.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/public/play.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/controller/api/episode.go" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/public/player.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/html/playurl/list.html" />
+        <option value="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" />
+        <option value="$PROJECT_DIR$/src/background/cms/html/index.html" />
+        <option value="$PROJECT_DIR$/src/background/cms/tools/collection/yongjiuzy.cc.go" />
+        <option value="$PROJECT_DIR$/src/background/cms/html/player.html" />
+        <option value="$PROJECT_DIR$/src/background/wdkq/html/css/wd.css" />
+        <option value="$PROJECT_DIR$/src/background/wdkq/html/index.html" />
+        <option value="$PROJECT_DIR$/src/background/wdkq/html/call.html" />
+        <option value="$PROJECT_DIR$/src/background/wdkq/tools/test.go" />
+        <option value="$PROJECT_DIR$/src/background/stock1/tools/shareholder.go" />
         <option value="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/config/config.json" />
-        <option value="$PROJECT_DIR$/src/background/stock/tools/util/email.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/stockd/stockd.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/index.html" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/css/style.css" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/css/default.css" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/usercenter.html" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/admincenter.html" />
-        <option value="$PROJECT_DIR$/src/background/stock/html/stock/user.html" />
-        <option value="$PROJECT_DIR$/src/background/wechart/service/iqiyi.go" />
-        <option value="$PROJECT_DIR$/src/background/newmovie/model/init.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/task/transprompt.go" />
-        <option value="$PROJECT_DIR$/src/background/stock/taskd/a.txt" />
-        <option value="$PROJECT_DIR$/src/background/photo/model/init.go" />
-        <option value="$PROJECT_DIR$/src/background/photo/html/list.html" />
-        <option value="$PROJECT_DIR$/src/background/photo/photod/photod.go" />
-        <option value="$PROJECT_DIR$/src/background/photo/config/config.json" />
-        <option value="$PROJECT_DIR$/src/background/photo/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/ccs/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go" />
+        <option value="$PROJECT_DIR$/src/background/ccs/html/index.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/model/admin.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/login.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/login1.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/model/init.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/public/player.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/public/player1.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/stock/list.html" />
+        <option value="$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html" />
+        <option value="$PROJECT_DIR$/src/background/others/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/others/tools/domain.go" />
+        <option value="$PROJECT_DIR$/src/background/lafter/model/content.go" />
+        <option value="$PROJECT_DIR$/src/background/lafter/html.html" />
+        <option value="$PROJECT_DIR$/src/background/lafter/html/html.html" />
+        <option value="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
+        <option value="$PROJECT_DIR$/src/background/lafter/html/index.html" />
+        <option value="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
+        <option value="$PROJECT_DIR$/src/background/lafter/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/lafter/config/config.json" />
       </list>
     </option>
   </component>
@@ -242,11 +507,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="2576" />
     <option name="height" value="1416" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -264,6 +533,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +542,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="e94" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,106 +585,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,7 +654,89 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="douban" />
+              <option name="myItemId" value="lafter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e94" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lafter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,7 +757,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,52 +776,53 @@
     <property name="configurable.Project.libraries.is.expanded" value="true" />
     <property name="configurable.Module.libraries.is.expanded" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\work\code\e94\src\background\photo" />
-      <recent name="C:\work\code\e94\src\background\photo\config" />
-      <recent name="C:\work\code\e94\src\background\stock\html\stock\fonts" />
-      <recent name="C:\work\code\e94\src\background\stock\html\stock\js" />
-      <recent name="C:\work\code\e94\src\background\stock\html\stock" />
+      <recent name="C:\work\code\e94\src\background\lafter\html\js" />
+      <recent name="C:\work\code\e94\src\background\lafter" />
+      <recent name="C:\work\code\e94\src\background\lafter\lafterd" />
+      <recent name="C:\work\code\e94\src\background\guoguo\html\js" />
+      <recent name="C:\work\code\e94\src\background\guoguo\html\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\code\e94\src\background\guoguo\html\css\images" />
+      <recent name="C:\work\code\e94\src\background\ams\html\episode" />
       <recent name="C:\work\code\e94\src\background\stock\html\stock\css" />
       <recent name="C:\work\code\e94\src\background\stock\html\stock\images" />
       <recent name="F:\Git\e94\src\background\newmovie\controller\api" />
-      <recent name="$PROJECT_DIR$/src/background/stock/task" />
-      <recent name="$PROJECT_DIR$/src/background/stock/tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run photod.go">
+  <component name="RunManager" selected="Go Single File.go run lafterd.go">
+    <configuration default="false" name="go run guoguod.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="e94" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run shareholder.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="e94" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/background/stock1/tools/shareholder.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run domain.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="e94" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/background/others/tools/domain.go" />
+      <method />
+    </configuration>
     <configuration default="false" name="go run taskd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="e94" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
+      <filePath value="$PROJECT_DIR$/src/background/lafter/taskd/taskd.go" />
       <method />
     </configuration>
-    <configuration default="false" name="go run stockd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+    <configuration default="false" name="go run lafterd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="e94" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/stock/stockd/stockd.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run cmsd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="e94" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/wechart/cmsd/cmsd.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run getplayurl.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="e94" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/newmovie/tools/getplayurl.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run photod.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="e94" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/photo/photod/photod.go" />
+      <filePath value="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -727,6 +989,43 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="erlFlags" value="" />
+      <option name="moduleAndFunction" value="" />
+      <option name="params" value="" />
+      <option name="useTestCodePath" value="false" />
+      <option name="workDirectory" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="ErlangUnitRunConfigurationType" factoryName="Erlang Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="workDirectory" />
+      <module />
+      <option name="functionNames">
+        <set />
+      </option>
+      <option name="kind" value="MODULE" />
+      <option name="moduleNames">
+        <set />
+      </option>
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -899,6 +1198,19 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="RebarEunitRunConfigurationType" factoryName="Erlang Rebar Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="command" value="eunit" />
+      <option name="skipDependencies" value="true" />
+      <module />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -964,24 +1276,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run stockd.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run cmsd.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run getplayurl.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run photod.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run guoguod.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run shareholder.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run lafterd.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run photod.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run getplayurl.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run cmsd.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run stockd.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run lafterd.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run guoguod.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run shareholder.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1014,15 +1329,86 @@
       <workItem from="1540776375020" duration="167000" />
       <workItem from="1542467616763" duration="2246000" />
       <workItem from="1543386335170" duration="1241000" />
-      <workItem from="1544179263829" duration="1595000" />
+      <workItem from="1544179263829" duration="2286000" />
+      <workItem from="1544510924129" duration="2148000" />
+      <workItem from="1544513116901" duration="8169000" />
+      <workItem from="1544591244490" duration="4116000" />
+      <workItem from="1544667628092" duration="738000" />
+      <workItem from="1544685946557" duration="1400000" />
+      <workItem from="1544687374557" duration="1149000" />
+      <workItem from="1544754698971" duration="11000" />
+      <workItem from="1545114715926" duration="1022000" />
+      <workItem from="1545621263794" duration="4084000" />
+      <workItem from="1545704477670" duration="9610000" />
+      <workItem from="1545725199319" duration="1826000" />
+      <workItem from="1545787202767" duration="690000" />
+      <workItem from="1545989549019" duration="1347000" />
+      <workItem from="1546392793957" duration="6564000" />
+      <workItem from="1546479790088" duration="90000" />
+      <workItem from="1547543580263" duration="606000" />
+      <workItem from="1551403743508" duration="1723000" />
+      <workItem from="1551468849231" duration="89000" />
+      <workItem from="1551767887284" duration="1421000" />
+      <workItem from="1551834463791" duration="859000" />
+      <workItem from="1553048062760" duration="2007000" />
+      <workItem from="1554717253803" duration="416000" />
+      <workItem from="1554791723905" duration="20000" />
+      <workItem from="1554791977150" duration="661000" />
+      <workItem from="1554801604190" duration="1540000" />
+      <workItem from="1554859342644" duration="107000" />
+      <workItem from="1554863940654" duration="597000" />
+      <workItem from="1554886456231" duration="599000" />
+      <workItem from="1554946741732" duration="164000" />
+      <workItem from="1554946932052" duration="617000" />
+      <workItem from="1555405294594" duration="1152000" />
+      <workItem from="1555480596640" duration="2533000" />
+      <workItem from="1555642745148" duration="16693000" />
+      <workItem from="1555843614234" duration="4839000" />
+      <workItem from="1555895564973" duration="6993000" />
+      <workItem from="1555988991702" duration="29000" />
+      <workItem from="1556002974030" duration="288000" />
+      <workItem from="1556159754039" duration="39000" />
+      <workItem from="1556239688534" duration="5611000" />
+      <workItem from="1556526007137" duration="1179000" />
+      <workItem from="1556590697943" duration="17436000" />
+      <workItem from="1556629210910" duration="4278000" />
+      <workItem from="1556762718107" duration="3830000" />
+      <workItem from="1556789326957" duration="13000" />
+      <workItem from="1557126491337" duration="10373000" />
+      <workItem from="1557193717189" duration="24524000" />
+      <workItem from="1557220806002" duration="2516000" />
+      <workItem from="1557232807381" duration="3869000" />
+      <workItem from="1557278026509" duration="90000" />
+      <workItem from="1557278774515" duration="490000" />
+      <workItem from="1557279939809" duration="16000" />
+      <workItem from="1557295007557" duration="224000" />
+      <workItem from="1557295419538" duration="14141000" />
+      <workItem from="1557364772248" duration="12607000" />
+      <workItem from="1557450204102" duration="9858000" />
+      <workItem from="1557652696004" duration="1243000" />
+      <workItem from="1557711628409" duration="3498000" />
+      <workItem from="1557730109325" duration="789000" />
+      <workItem from="1557910832577" duration="1966000" />
+      <workItem from="1557970358042" duration="604000" />
+      <workItem from="1557989098051" duration="2833000" />
+      <workItem from="1558336320944" duration="2859000" />
+      <workItem from="1558403604459" duration="1754000" />
+      <workItem from="1558922173747" duration="9109000" />
+      <workItem from="1559024401131" duration="623000" />
+      <workItem from="1559135661320" duration="13000" />
+      <workItem from="1559179688767" duration="10000" />
+      <workItem from="1559182916991" duration="6088000" />
+      <workItem from="1559265157236" duration="9269000" />
+      <workItem from="1559613278398" duration="9726000" />
+      <workItem from="1559696375106" duration="9350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65970000" />
+    <option name="totallyTimeSpent" value="324406000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1031,22 +1417,23 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2519501" sideWeight="0.50158983" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29563183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37597504" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20904836" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23131956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12957075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1055,7 +1442,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30187207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28159127" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1066,7 +1453,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1075,273 +1462,271 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/images/sidebar-toggler.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/css/default.css" />
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/index.html">
+    <entry file="file://$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="874">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/admincenter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199026">
-          <caret line="6317" column="9" lean-forward="false" selection-start-line="6317" selection-start-column="9" selection-end-line="6317" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/css/login_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="193" column="26" lean-forward="false" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/admincenter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/html/stock/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="101" column="14" lean-forward="false" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/service/iqiyi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/tools/tt.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/mobiscroll.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/tools/a.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery-2.1.4.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/service/wx.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/middleware/admin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-989">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/service/wxcheck.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2697">
+          <caret line="2" column="130492" lean-forward="true" selection-start-line="2" selection-start-column="130492" selection-end-line="2" selection-end-column="130492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ams/html/msgboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="321" column="11" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="321" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/common/middleware/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/login1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/admin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/service/youku.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery-1.11.3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/check.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/DPlayer.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/model/wx.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/DPlayer.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bw/src/github.com/robertkrimen/otto/file/file.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/public/player1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="529">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/getplayurl.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="759">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/api/web.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        <state relative-caret-position="230">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#151#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/notice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/stock/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock1/tools/shareholder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock1/tools/stocklist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/others/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/others/model/domain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/others/tools/domain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7613">
-          <caret line="351" column="30" lean-forward="false" selection-start-line="351" selection-start-column="30" selection-end-line="351" selection-end-column="30" />
+        <state relative-caret-position="233">
+          <caret line="343" column="38" lean-forward="false" selection-start-line="343" selection-start-column="38" selection-end-line="343" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/public/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="90" column="19" lean-forward="true" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/streamthumb.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/util/stream.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/youku/getyouku.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/common/util/fileinfo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/migu/migumovie.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="78" column="45" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="78" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/wechart/cmsd/cmsd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/model/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3082">
-          <caret line="137" column="26" lean-forward="false" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/Cartoon/tools/a.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/getivi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
-          <caret line="119" column="9" lean-forward="false" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/util/string.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/shortvideo/setting/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/shortvideo/setting/library.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/taskd/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="46">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/service/realtimestock.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/taskd/taskd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="239">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/tools/util/jys.go">
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/config/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="322">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/task/realtimestock.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/admin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1495">
-          <caret line="72" column="69" lean-forward="false" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="69" />
+        <state relative-caret-position="-414">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/task/tonghuashun.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/middleware/admin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1349,23 +1734,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/task/transprompt.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
+        <state relative-caret-position="92">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock/taskd/taskd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/controller/api/cache/config.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/js/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1373,62 +1750,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/middleware/app.go">
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/api/contentaction.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/model/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/html/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="221" column="7" lean-forward="false" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
+        <state relative-caret-position="-529">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/newmovie/cmsd/cmsd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="112" column="49" lean-forward="false" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/photod/photod.go">
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/js/jquery.cookie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="80" column="43" lean-forward="false" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/stock/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ams/html/user1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11751">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#359#0" expanded="true" />
+            <marker date="1547712051972" expanded="true" signature="24363:24380" ph="..." />
+            <marker date="1547712051972" expanded="true" signature="24450:24467" ph="..." />
+            <marker date="1547712051972" expanded="true" signature="24538:24555" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.json">
+    <entry file="file://$PROJECT_DIR$/src/background/ams/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="384">
+          <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/photo/config/config.go">
+    <entry file="file://$PROJECT_DIR$/src/background/ams/controller/api/video.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="138">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ams/amsd/amsd.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/model/content.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#12#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

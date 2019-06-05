@@ -28,7 +28,7 @@ func AdminLoginHandler(c *gin.Context) {
 	}
 
 	if c.Params == nil{
-		c.HTML(http.StatusOK, "login.html", gin.H{
+		c.HTML(http.StatusOK, "list.html", gin.H{
 		})
 	}
 	var p param

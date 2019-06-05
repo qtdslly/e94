@@ -62,6 +62,7 @@ func GetDominByRule(db *gorm.DB){
 }
 
 func GetDominByCharType(charType string,zui string,db *gorm.DB){
+	logger.Debug(charType,zui)
 	chars := "a b c d e f g h i j k l m n o p q r s t u v w x y z"
 	cs := strings.Split(chars," ")
 	if charType == "A"{
@@ -255,6 +256,7 @@ func getDominByPinYin(word,pinyin string,db *gorm.DB)(bool){
 
 
 func getBaiDuDomin(word,url string,db *gorm.DB)(bool){
+	logger.Debug("=============================url:",url)
 	var domain model.Domain
 	domain.Url = url
 	if err := db.Where("url = ?",domain.Url).First(&domain).Error ; err == nil{

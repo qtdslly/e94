@@ -83,10 +83,7 @@
 
         $.getJSON("/ams/login?account="+account+"&password="+password ,function(json) {
             if(json.err_code == 0){
-                alert("aaaaaaaaaaaaaa");
-                alert(json.token);
                 $.cookie('token',json.token);
-                alert("bbbbbbbbbbbbbbbbbbbbb")
                 location.href = "http://" + window.location.host + "/html/video/movie.html";
             }else{
                 alert("用户名或密码错误");

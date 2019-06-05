@@ -15,14 +15,14 @@ import (
 	aapi "background/cms/controller/api"
 	ccms "background/cms/controller/cms"
 	//"background/common/cache"
-	"background/cms/service"
+	//"background/cms/service"
 
 	"background/common/middleware"
 	//cmid "background/newmovie/middleware"
 
 	_ "github.com/go-sql-driver/mysql"
 	"net/http"
-	"background/shortvideo/setting"
+	//"background/shortvideo/setting"
 )
 
 func main(){
@@ -66,11 +66,11 @@ func main(){
 
 	gin.SetMode(gin.DebugMode)
 
-	cacheRedisAddr, cacheRedisPwd, err := setting.GetCacheRedis(db)
-	if err != nil {
-		logger.Fatal(err)
-		return
-	}
+	//cacheRedisAddr, cacheRedisPwd, err := setting.GetCacheRedis(db)
+	//if err != nil {
+	//	logger.Fatal(err)
+	//	return
+	//}
 
 	//if err := cache.RedisTest(cacheRedisAddr, cacheRedisPwd); err != nil {
 	//	logger.Fatal(err)
@@ -81,9 +81,9 @@ func main(){
 	//appVerifyMiddleware := cmid.AppVerifyHandler(model.AppTypeApp)
 	//signatureMiddleware := middleware.SignatureVerifyHandler(false) // config.IsProductionEnv())
 
-	service.InitCache(cacheRedisAddr, cacheRedisPwd)
-
-	service.SetArea(config.GetAreaData())
+	//service.InitCache(cacheRedisAddr, cacheRedisPwd)
+	//
+	//service.SetArea(config.GetAreaData())
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
@@ -93,7 +93,7 @@ func main(){
 	cms.POST("/upload", ccms.FileUpload)
 
 	r.GET("/", func(c *gin.Context) {
-		url := config.GetDomain() + "/html/login.html"
+		url := config.GetDomain() + "/html/index.html"
 
 		logger.Debug(url)
 		c.Redirect(http.StatusPermanentRedirect, url)

@@ -39,7 +39,7 @@ func init() {
 	c.TmplRoot = "/root/Git/e94/src/background/newmovie/tmpl/"
 	c.StaticRoot = "/root/data/storage/"
 	c.FontsDir = "/root/Git/e94/src/background/verification_code/fonts"
-	c.IndexHtml = "/root/Git/e94/src/background/verification_code/tpl/login.html"
+	c.IndexHtml = "/root/Git/e94/src/background/verification_code/tpl/list.html"
 
 }
 

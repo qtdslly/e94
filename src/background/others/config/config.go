@@ -25,7 +25,7 @@ func init() {
 	c.StorageRoot = "/home/seaguest/Downloads/storage/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "imsuser:imspass@tcp(localhost:3306)/fun?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/fun?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true

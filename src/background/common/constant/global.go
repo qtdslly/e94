@@ -116,6 +116,9 @@ const (
 	ContentProviderMigu     = 9
 	ContentProviderHanju    = 10
 
+	ContentProviderSoNiMei    = 30 //http://www.sonimei.cn  搜你妹
+
+
 	ContentProviderCntv     = 30
 	ContentProviderHuashu   = 31
 	ContentProviderIvibupt  = 32   //北京邮电大学

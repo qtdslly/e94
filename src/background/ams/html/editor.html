@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link href="css/editor/summernote.css" rel="stylesheet"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/summernote.js"></script>
+    <script src="js/summernote-zh-CN.js"></script>
+
+    <style>
+        .m{ width: 800px; margin-left: auto; margin-right: auto; }
+    </style>
+    <script>
+        $(function(){
+            $('.summernote').summernote({
+                height: 200,
+                tabsize: 2,
+                lang: 'zh-CN'
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="m">
+    <div class="summernote">summernote 1</div>
+</div>
+</body>
+</html>

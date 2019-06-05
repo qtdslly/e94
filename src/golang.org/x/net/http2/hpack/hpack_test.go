@@ -167,7 +167,7 @@ func TestDecodeC3_NoHuffman(t *testing.T) {
 			[]HeaderField{
 				pair(":method", "GET"),
 				pair(":scheme", "https"),
-				pair(":path", "/index.html"),
+				pair(":path", "/list.html"),
 				pair(":authority", "www.example.com"),
 				pair("custom-key", "custom-value"),
 			},
@@ -215,7 +215,7 @@ func TestDecodeC4_Huffman(t *testing.T) {
 			[]HeaderField{
 				pair(":method", "GET"),
 				pair(":scheme", "https"),
-				pair(":path", "/index.html"),
+				pair(":path", "/list.html"),
 				pair(":authority", "www.example.com"),
 				pair("custom-key", "custom-value"),
 			},

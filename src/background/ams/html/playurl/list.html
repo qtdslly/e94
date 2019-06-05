@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/define.css">
+
+    <title>ccpool</title>
+
+
+</head>
+<body class="sidebar-mini fixed  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div class="wrapper">
+    <!-- Navbar-->
+    <header class="main-header hidden-print"><a class="logo" href="/html/index.html" style="margin-top:0px;font-size:40px;text-align:center;">ccpool</a>
+        <nav class="navbar navbar-static-top">
+            <a class="sidebar-toggle" href="/html/index.html" data-toggle="offcanvas"></a>
+            <!-- Navbar Right Menu-->
+            <div class="navbar-custom-menu">
+                <ul class="top-nav">
+                    <!--Notification Menu-->
+                    <li class="dropdown notification-menu">
+                        <a class="dropdown-toggle" href="/html/index.html" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="fa fa-bell-o fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="not-head">你有4个消息待查看</li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">有尚未审批的工单待处理</span><span
+                                        class="text-muted block">2分钟前</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i
+                                    class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">你的密码是初始密码，请速修改</span><span
+                                        class="text-muted block">1天前</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i
+                                    class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">有合约即将到期，请联系客户续约</span><span
+                                        class="text-muted block">5天前</span></div>
+                            </a></li>
+                            <li class="not-footer"><a href="#">查看所有提醒</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Menu-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/html/index.html" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu settings-menu">
+                            <li><a href="#"><i
+                                    class="fa fa-cog fa-lg"></i> 设置</a></li>
+                            <li><a href="#"><i
+                                    class="fa fa-user fa-lg"></i>配置</a></li>
+                            <li><a href="/html/index.html"><i
+                                    class="fa fa-sign-out fa-lg"></i>退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Side-Nav-->
+    <aside class="main-sidebar hidden-print">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 1284px;">
+            <section class="sidebar" style="overflow: hidden; width: auto; height: 1284px;">
+                <div class="user-panel">
+                    <div class="pull-left image"><img class="img-circle" src="../images/48.jpg" alt="User Image"></div>
+                    <div class="pull-left info">
+                        <p id="userName"></p>
+                        <p class="designation">超级管理员</p>
+                    </div>
+                </div>
+                <!-- Sidebar Menu-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="#" onclick="jump(0)"><i class="fa fa-dashboard"></i><span>点播视频管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(10)"><i class="fa fa-dashboard"></i><span>工单管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(6)"><i class="fa fa-dashboard"></i><span>参数设置</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(7)"><i class="fa fa-dashboard"></i><span>公告管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(8)"><i class="fa fa-dashboard"></i><span>常见问题管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(9)"><i class="fa fa-dashboard"></i><span>留言管理</span></a>
+                    </li>
+                </ul>
+            </section>
+            <div class="slimScrollBar"
+                 style="background: rgba(0, 0, 0, 0.8); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 1284px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+    </aside>
+
+    <div class="content-wrapper" id="playurl_page">
+        <div class="page-title" style="margin:-25px -20px;">
+            <div>
+                <h1><i class="fa fa-dashboard"></i><span id="spanJump"><a href="#" onclick="jump(1)">播放地址管理</a></span></h1>
+            </div>
+            <div>
+                <ul class="breadcrumb">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li><a href="/html/index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="margin:30px -35px;" id="playurl_manager">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <a onclick="AddPlayUrl()" class="btn btn-primary icon-btn mr-10" href="javascript:;" style="margin-bottom:15px;float:right;"><i class="fa fa-file"></i>新增地址</a>
+                    </div>
+                    <div class="card-body">
+                        <div id="playurl_manager_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover table-bordered dataTable no-footer" id="playurl_manager_table"
+                                           role="grid" aria-describedby="sampleTable_info">
+                                        <thead >
+                                        <tr role="row">
+                                            <th class="sorting_asc" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-sort="ascending"
+                                                aria-label="id: activate to sort column descending">ID
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">标题
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Position: activate to sort column ascending">剧集类型
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending">剧集ID
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Age: activate to sort column ascending">提供者
+                                            </th>
+                                            <th hidden class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Start date: activate to sort column ascending">播放地址
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Start date: activate to sort column ascending">爬取网址
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">清晰度
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">是否上线
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">排序
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="playurl_manager_table_tbody">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Javascripts-->
+<script src="../js/jquery.min.js"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/pace.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/prototype.js"></script>
+<script src="../js/webcommon.js"></script>
+<script src="../js/all.js"></script>
+
+<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../js/dataTables.bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    function getParam(paramName) {
+        paramValue = "", isFound = !1;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+            while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+        }
+        return paramValue == "" && (paramValue = null), paramValue
+    }
+
+
+    function PlayUrlPageInit(){
+        var userName = $.cookie("admin_name");
+        $("#userName").text(userName);
+
+        var token = getParam("Authorization");
+        var content_id = getParam("content_id");
+        var content_type = getParam("content_type");
+
+        $.getJSON("/ams/admin/playurl/list?Authorization="+token+"&content_type="+content_type+"&content_id="+content_id, function(json) {
+            if(json.err_code == 0) {
+                var tbody = "";
+                for (var i = 0; i < json.data.length; i++) {
+                    tbody += "<tr role='row' class='odd'>";
+                    tbody += "<td>" + json.data[i].id + "</td>";
+                    tbody += "<td>" + json.data[i].title + "</td>";
+                    tbody += "<td>" + json.data[i].content_type + "</td>";
+                    tbody += "<td>" + json.data[i].content_id + "</td>";
+                    tbody += "<td hidden>" + json.data[i].provider + "</td>";
+                    tbody += "<td>" + json.data[i].url + "</td>";
+                    tbody += "<td>" + json.data[i].page_url + "</td>";
+                    tbody += "<td>" + json.data[i].quality + "</td>";
+                    tbody += "<td>" + json.data[i].on_line + "</td>";
+                    tbody += "<td>" + json.data[i].sort + "</td>";
+
+                    tbody += "<td><a href='#' onclick='DeletePlayUrl("+json.data[i].id +")'>删除</a><a href='#' style='margin-left:10px;' onclick='UpdateEpisode(" + json.data[i].id +")'>修改</a><a href='#' onclick='Play(\"" + json.data[i].url + "\")' style='margin-left:10px;'>播放</a></td>";
+                    tbody += "</tr>";
+                }
+
+                $("#playurl_manager_table_tbody").html(tbody);
+
+                var table = $('#playurl_manager_table').dataTable({
+                    "bStateSave": false,//状态保存
+                    "bPaginate": true, //翻页功能
+                    "bLengthChange": true, //改变每页显示数据数量
+                    "bFilter": true, //过滤功能
+                    "bSort": true, //排序功能
+                    "paging": true,
+                    "retrieve": true,
+                    "bInfo": true,//页脚信息
+                    "bAutoWidth": true,//自动宽度
+                    "iDisplayLength" : 25,// 每页显示行数
+                    "aaSorting" : [[1, "asc"]], //默认的排序方式，第2列，升序排列
+                    "oLanguage": {
+                        "sLengthMenu": "每页显示 _MENU_ 条记录",
+                        "sZeroRecords": "对不起，查询不到任何相关数据",
+                        "sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录",
+                        "sInfoEmtpy": "找不到相关数据",
+                        "sInfoFiltered": "数据表中共为 _MAX_ 条记录)",
+                        "sProcessing": "正在加载中...",
+                        "sSearch": "搜索",
+                        "sUrl": "", //多语言配置文件，可将oLanguage的设置放在一个txt文件中，例：Javascript/datatable/dtCH.txt
+                        "oPaginate": {
+                            "sFirst":    "第一页",
+                            "sPrevious": " 上一页 ",
+                            "sNext":     " 下一页 ",
+                            "sLast":     " 最后一页 "
+                        }
+                    }
+                });
+
+                table.search("").draw();
+
+
+            }else{
+                toastr.warning("获取用户列表失败!!!");
+            }
+        });
+    }
+
+    PlayUrlPageInit();
+
+    function AddPlayUrl(){
+        var token = getParam("Authorization");
+        var content_type = getParam("content_type");
+        var content_id = getParam("content_id");
+
+        location.href = "http://" + window.location.host + "/html/playurl/add.html?" + "Authorization=" + token + "&content_type="+content_type+"&content_id="+content_id;
+    }
+
+
+    function Play(url) {
+        window.open("http://" + window.location.host + "/html/public/player.html?url="+url);
+    }
+
+    function DeletePlayUrl(playUrlId) {
+        var token = getParam("Authorization");
+
+        $.getJSON("/ams/admin/playurl/delete?Authorization="+token+"&id="+playUrlId, function(json) {
+            if(json.err_code == 0) {
+                alert("删除成功");
+                PlayUrlPageInit();
+            }else{
+                toastr.warning("删除失败!!!");
+            }
+        });
+    }
+
+
+
+</script>
+
+</body>
+</html>

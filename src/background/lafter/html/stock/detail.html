@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+</head>
+<body>
+
+<div data-role="page" id="pageStockList" data-theme="b">
+    <div data-role="header" data-position="fixed">
+        <h1 id="title"></h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <label for="code">代码:</label>
+        <input type="text" name="code" id="code" data-clear-btn="true">
+        <label for="name">名称:</label>
+        <input type="text" name="name" id="name" data-clear-btn="true">
+        <label for="buy_price">买入价:</label>
+        <input type="text" name="buy_price" id="buy_price" data-clear-btn="true">
+        <label for="sell_price">卖出价:</label>
+        <input type="text" name="sell_price" id="sell_price" data-clear-btn="true">
+        <label for="buy_price">买入量:</label>
+        <input type="text" name="buy_count" id="buy_count" data-clear-btn="true">
+        <label for="sell_count">卖出量:</label>
+        <input type="text" name="sell_count" id="sell_count" data-clear-btn="true">
+
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>状态:</legend>
+            <label for="online">在线</label>
+            <input type="radio" name="line" id="online" value="在线">
+
+            <label for="offline">离线</label>
+            <input type="radio" name="line" id="offline" value="离线">
+        </fieldset>
+
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>是否高频:</legend>
+            <label for="frequency">是</label>
+            <input type="radio" name="freq" id="frequency" value="是">
+
+            <label for="unfrequency">否</label>
+            <input type="radio" name="freq" id="unfrequency" value="否" checked>
+        </fieldset>
+
+        <input type="button" name="sub" value="提 交" class="ui-btn-right" />
+
+    </div>
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#anylink">申请</a></li>
+                <li><a href="#anylink">查询</a></li>
+                <li><a href="#anylink">列表</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/all.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var code = getParam("code");
+        $.getJSON("/stock/notice/detail?code="+code, function (json) {
+            if(json.err_code == 0) {
+                $("#title").text(json.notice.name);
+                $("#code").val(json.notice.code);
+                $("#name").val(json.notice.name);
+                $("#buy_price").val(json.notice.buy_price);
+                $("#sell_price").val(json.notice.sell_price);
+                $("#buy_count").val(json.notice.buy_count);
+                $("#sell_count").val(json.notice.sell_count);
+
+                if(json.notice.state === true){
+                    $("#online").attr("checked",true).checkboxradio("refresh");
+                }else{
+                    $("#offline").attr("checked",true).checkboxradio("refresh");
+                }
+
+
+            }
+        });
+    });
+
+
+</script>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工单申请</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="../js/jquery-1.11.3.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageStockList" data-theme="b">
+    <div data-role="header" data-position="fixed">
+        <h1>股票列表</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <ul data-role="listview" id="stock_list">
+        </ul>
+    </div>
+
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#anylink">申请</a></li>
+                <li><a href="#anylink">查询</a></li>
+                <li><a href="#anylink">列表</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $.ajaxSettings.async = false;
+
+    $.getJSON("/stock/notice/list", function (json) {
+        if(json.err_code == 0) {
+            var htmlStr = "";
+            for(var i = 0 ; i < json.stocks.length; i++){
+                htmlStr += '<li><a data-ajax="false" href="/html/stock/detail.html?code=' + json.stocks[i].code + '">' + json.stocks[i].name + '</a></li>';
+            }
+            $("#stock_list").html(htmlStr);
+        }
+    });
+
+</script>
+</body>
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+</html>

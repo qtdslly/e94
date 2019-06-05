@@ -172,10 +172,10 @@ func TestCreateEngine(t *testing.T) {
 // 	assert.Empty(t, r.Files)
 // 	assert.Equal(t, "*.testtmpl", r.Glob)
 //
-// 	router.LoadHTMLFiles("index.html.testtmpl", "login.html.testtmpl")
+// 	router.LoadHTMLFiles("list.html.testtmpl", "list.html.testtmpl")
 // 	r = router.HTMLRender.(render.HTMLDebug)
 // 	assert.Empty(t, r.Glob)
-// 	assert.Equal(t, []string{"index.html", "login.html"}, r.Files)
+// 	assert.Equal(t, []string{"list.html", "list.html"}, r.Files)
 // 	SetMode(TestMode)
 // }
 

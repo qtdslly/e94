@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/define.css">
+
+    <link href="css/editor/summernote.css" rel="stylesheet"/>
+
+    <title>ccpool</title>
+
+</head>
+<body class="sidebar-mini fixed  pace-done">
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+         style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<div class="wrapper">
+    <!-- Navbar-->
+    <header class="main-header hidden-print"><a class="logo" href="/html/index.html" style="margin-top:0px;font-size:40px;text-align:center;">ccpool</a>
+        <nav class="navbar navbar-static-top">
+            <a class="sidebar-toggle" href="/html/index.html" data-toggle="offcanvas"></a>
+            <!-- Navbar Right Menu-->
+            <div class="navbar-custom-menu">
+                <ul class="top-nav">
+                    <!--Notification Menu-->
+                    <li class="dropdown notification-menu">
+                        <a class="dropdown-toggle" href="/html/index.html" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="fa fa-bell-o fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="not-head">你有4个消息待查看</li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i
+                                    class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">有尚未审批的工单待处理</span><span
+                                        class="text-muted block">2分钟前</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i
+                                    class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">你的密码是初始密码，请速修改</span><span
+                                        class="text-muted block">1天前</span></div>
+                            </a></li>
+                            <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span
+                                    class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i
+                                    class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                                <div class="media-body"><span class="block">有合约即将到期，请联系客户续约</span><span
+                                        class="text-muted block">5天前</span></div>
+                            </a></li>
+                            <li class="not-footer"><a href="#">查看所有提醒</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Menu-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/html/index.html" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu settings-menu">
+                            <li><a href="#"><i
+                                    class="fa fa-cog fa-lg"></i> 设置</a></li>
+                            <li><a href="#"><i
+                                    class="fa fa-user fa-lg"></i>配置</a></li>
+                            <li><a href="/html/index.html"><i
+                                    class="fa fa-sign-out fa-lg"></i>退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Side-Nav-->
+    <aside class="main-sidebar hidden-print">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 1284px;">
+            <section class="sidebar" style="overflow: hidden; width: auto; height: 1284px;">
+                <div class="user-panel">
+                    <div class="pull-left image"><img class="img-circle" src="images/48.jpg" alt="User Image"></div>
+                    <div class="pull-left info">
+                        <p id="userName"></p>
+                        <p class="designation">超级管理员</p>
+                    </div>
+                </div>
+                <!-- Sidebar Menu-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="#" onclick="jump(1)"><i class="fa fa-dashboard"></i><span>用户管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(5)"><i class="fa fa-dashboard"></i><span>合约管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(10)"><i class="fa fa-dashboard"></i><span>工单管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(6)"><i class="fa fa-dashboard"></i><span>参数设置</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(7)"><i class="fa fa-dashboard"></i><span>公告管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(8)"><i class="fa fa-dashboard"></i><span>常见问题管理</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="#" onclick="jump(9)"><i class="fa fa-dashboard"></i><span>留言管理</span></a>
+                    </li>
+                </ul>
+            </section>
+            <div class="slimScrollBar"
+                 style="background: rgba(0, 0, 0, 0.8); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 1284px;"></div>
+            <div class="slimScrollRail"
+                 style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+    </aside>
+
+    <div class="content-wrapper" id="notice_page">
+        <div class="page-title" style="margin:-25px -20px;">
+            <div>
+                <h1><i class="fa fa-dashboard"></i><span><a href="#">公告管理</a></span></h1>
+            </div>
+            <div>
+                <ul class="breadcrumb">
+                    <li><i class="fa fa-home fa-lg"></i></li>
+                    <li><a href="/html/index.html">概况</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="margin:30px -35px;" id="notice_manager">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <a id="btnAddNoticeDialog" class="btn btn-primary icon-btn mr-10" href="javascript:;" style="margin-bottom:15px;float:right;"><i class="fa fa-file"></i>新增公告</a>
+                    </div>
+                    <div class="card-body">
+                        <div id="notice_manager_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover table-bordered dataTable no-footer" id="notice_manager_table"
+                                           role="grid" aria-describedby="sampleTable_info">
+                                        <thead >
+                                        <tr role="row">
+                                            <th class="sorting_asc" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-sort="ascending"
+                                                aria-label="id: activate to sort column descending">ID
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending">标题
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending">简介
+                                            </th>
+                                            <th hidden class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending">内容
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Office: activate to sort column ascending">状态
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Age: activate to sort column ascending">分类
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Start date: activate to sort column ascending">权重
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Start date: activate to sort column ascending">创建时间
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1"
+                                                colspan="1" aria-label="Salary: activate to sort column ascending">操作
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="notice_manager_table_tbody">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- Javascripts-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/prototype.js"></script>
+<script src="js/webcommon.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+
+
+<script src="js/summernote.js"></script>
+<script src="js/summernote-zh-CN.js"></script>
+
+<div id="dialogBg"></div>
+<div id="dialog" class="animated">
+    <img class="dialogIco" width="50" height="50" src="images/ico.png" alt="" />
+    <div class="dialogTop">
+        <a href="javascript:;" class="claseDialogBtn">关闭</a>
+    </div>
+    <form action="" method="post" id="notice_add_form">
+        <ul style="margin-left:80px;">
+            <li style="margin-top:20px;">
+                <span style="color:red;">* </span><span style="color:#000000;">标题：</span><input type="text" name="name" id="notice_add_title" required value="" class="ipt"/>
+                <span style="color:red;margin-left:200px;">* </span><span style="color:#000000;">权重：</span><input type="text" name="name" id="notice_add_weight" required value="" class="ipt" />
+            </li>
+
+            <li style="margin-top:20px;">
+                <span style="color:red;">* </span><span style="color:#000000;">分类：</span>
+                <label for="radio_important" class="radio">
+                    <span class="radio-bg"></span>
+                    <input type="radio" name="radio_important" id="radio_important" value="重要公告" onchange="NoticeTypeChange(1)"/> 重要公告
+                    <span class="radio-on"></span>
+                </label>
+                <label for="radio_ordinary" class="radio">
+                    <span class="radio-bg"></span>
+                    <input type="radio" name="radio_ordinary" checked id="radio_ordinary" value="普通公告" onchange="NoticeTypeChange(2)"/> 普通公告
+                    <span class="radio-on"></span>
+                </label>
+
+
+                <span style="color:red;margin-left:267px;">* </span><span style="color:#000000;">状态：</span>
+                <label for="radio_notice_publish" class="radio">
+                    <span class="radio-bg"></span>
+                    <input type="radio" name="radio_notice_publish" checked id="radio_notice_publish" value="已发布" onchange="NoticeStateChange(1)"/> 已发布
+                    <span class="radio-on"></span>
+                </label>
+                <label for="radio_notice_saved" class="radio">
+                    <span class="radio-bg"></span>
+                    <input type="radio" name="radio_notice_saved" id="radio_notice_saved" value="已保存" onchange="NoticeStateChange(2)"/> 已保存
+                    <span class="radio-on"></span>
+                </label>
+                <label for="radio_notice_deleted" class="radio">
+                    <span class="radio-bg"></span>
+                    <input type="radio" name="radio_notice_deleted" id="radio_notice_deleted" value="已保存" onchange="NoticeStateChange(3)"/> 已删除
+                    <span class="radio-on"></span>
+                </label>
+            </li>
+
+            <li style="margin-top:20px;">
+                <span style="color:red;">* </span><span style="color:#000000;">简介：</span>
+                <textarea rows="5" cols="230" id="notice_add_brief" style="margin-right:80px;border:1px solid #ccc;border-radius: 0.3em;"> </textarea>
+            </li>
+
+            <li style="margin-top:20px;">
+                <span style="color:red;">* </span><span style="color:#000000;">内容：</span>
+                <div style="width: 1635px; ">
+                    <div class="summernote" id="notice_add_content" style=""></div>
+                </div>
+            </li>
+            <li style="margin-top:20px;"><input type="button" value="确认提交" class="submitBtn" id="btnNotice"/></li>
+        </ul>
+    </form>
+</div>
+
+<input type="hidden" id="hidNoticeFlag" value=0 />
+
+<script type="text/javascript">
+    $('.summernote').summernote({
+        height: 420,
+        tabsize: 2,
+        disableDragAndDrop: false,
+        lang: 'zh-CN'
+    });
+
+    function getParam(paramName) {
+        paramValue = "", isFound = !1;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+            while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+        }
+        return paramValue == "" && (paramValue = null), paramValue
+    }
+
+    var w,h;
+    function getSrceenWH(){
+        w = $(window).width();
+        h = $(window).height();
+        $('#dialogBg').width(w).height(h);
+    }
+
+    window.onresize = function(){
+        getSrceenWH();
+    }
+    $(window).resize();
+
+    getSrceenWH();
+
+    function NoticeTypeChange(obj){
+        if(obj == 1){//重要公告
+            $("#radio_important").attr("checked","checked");
+            $("#radio_ordinary").removeAttr("checked");
+        }else if(obj == 2){//一般公告
+            $("#radio_ordinary").attr("checked","checked");
+            $("#radio_important").removeAttr("checked");
+        }
+    }
+
+    function NoticeStateChange(obj){
+        if(obj == 1){
+            $("#radio_notice_publish").attr("checked","checked");
+            $("#radio_notice_saved").removeAttr("checked");
+            $("#radio_notice_deleted").removeAttr("checked");
+        }else if(obj == 2){
+            $("#radio_notice_saved").attr("checked","checked");
+            $("#radio_notice_publish").removeAttr("checked");
+            $("#radio_notice_deleted").removeAttr("checked");
+        }else if(obj == 3){
+            $("#radio_notice_deleted").attr("checked","checked");
+            $("#radio_notice_publish").removeAttr("checked");
+            $("#radio_notice_saved").removeAttr("checked");
+        }
+    }
+
+    function closeDialog(){
+        $('#dialogBg').fadeOut(100,function(){
+            $('#dialog').addClass('bounceOutUp').fadeOut();
+        });
+    }
+
+    $("#dialog").css("position","absolute");
+    $("#dialog").css("left","50%");
+    $("#dialog").css("top","50%");
+    $("#dialog").css("width","1800px");
+    $("#dialog").css("height","900px");
+    $("#dialog").css("margin","-450px 0 0 -900px");
+    $(".ipt").css("width","250px");
+
+    function NoticeDialog(id){
+        $("#notice_add_form").show();
+
+
+        $('#dialogBg').fadeIn(100);
+        $('#dialog').removeAttr('class').addClass('animated bounceIn').fadeIn();
+
+        $("#hidNoticeFlag").val(0);
+
+        if(id > 0){
+            $("#hidNoticeFlag").val(id);
+            var token = getParam("Authorization");
+
+            $.getJSON("/ams/notice?Authorization="+token+"&id="+id, function(json) {
+                if(json.err_code == 0) {
+                    $("#notice_add_title").val(json.data.title);
+                    $("#notice_add_brief").val(json.data.brief);
+                    $("#notice_add_weight").val(json.data.weight);
+
+                    $("#notice_add_content").summernote("code",json.data.content)
+
+                    var state = json.data.state;
+                    if(state == 1){
+                        NoticeStateChange(1);
+                    }else if(state == 2){
+                        NoticeStateChange(2);
+                    }else if(state == 3){
+                        NoticeStateChange(3);
+                    }
+
+                    var category = json.data.category;
+                    if(category == 1){
+                        NoticeTypeChange(1);
+                    }else{
+                        NoticeTypeChange(2);
+                    }
+                }else{
+                    toastr.warning("获取公告列表失败!!!");
+                }
+            });
+        }
+    }
+
+    $('#btnAddNoticeDialog').click(function(){
+        NoticeDialog(0)
+    });
+
+    //关闭弹窗
+    $('.claseDialogBtn').click(function(){
+        closeDialog();
+    });
+
+    function replaceAll(str,a1,a2){
+        if(str.indexOf(a1) < 0){
+            return str;
+        }
+        var re = new RegExp(a1,"g"); //定义正则表达式
+        var Newstr = str.replace(re, a2); //第一个参数是正则表达式。
+        return Newstr;
+    }
+
+    $("#btnNotice").click(function () {
+        var token = getParam("Authorization");
+
+        var title = $("#notice_add_title").val();
+        var weight = $("#notice_add_weight").val();
+        var type  = 0;
+        if($("#radio_important").is(":checked")){
+            type = 1;
+        }else if($("#radio_ordinary").is(":checked")){
+            type = 2;
+        }
+
+        var state  = 0;
+        if($("#radio_notice_publish").is(":checked")){
+            state = 1;
+        }else if($("#radio_notice_saved").is(":checked")){
+            state = 2;
+        }else if($("#radio_notice_deleted").is(":checked")){
+            state = 3;
+        }
+
+        var brief = $("#notice_add_brief").val();
+        var content = $("#notice_add_content").summernote("code");
+
+
+        if(title.length == 0 || weight.length == 0 || type == 0 || state == 0 || brief.length == 0 || content.length == 0){
+            alert("必填项不能为空");
+            return
+        }
+
+        brief = replaceAll(brief,"\"","&quot;");
+
+        brief = replaceAll(brief,"\'","&acute;");
+        brief = replaceAll(brief,"\\t","&nbsp;&nbsp;&nbsp;&nbsp;");
+
+        content = replaceAll(content,"\"","&quot;");
+
+        content = replaceAll(content,"\'","&acute;");
+        content = replaceAll(content,"\\t","&nbsp;&nbsp;&nbsp;&nbsp;");
+
+        var url = "";
+        var id = $("#hidNoticeFlag").val();
+        if(id == 0){
+            url = "/ams/notice/add";
+        }else{
+            url = "/ams/notice/update";
+        }
+        var data = "{\"Authorization\":\"" + token + "\",\"id\":" + id + ",\"title\":\"" + title + "\",\"weight\":" + weight + ",\"type\":" + type + ",\"state\":" + state + ",\"brief\":\"" + brief + "\",\"content\":\"" + content + "\"}";
+
+        $.ajax({
+            url:url,
+            contentType:"application/json",
+            dataType:"json",
+            type:"POST",
+            data:data,
+            success:function(json){
+                if(json.err_code == 0) {
+                    if($("#hidNoticeFlag").val() == 0){
+                        alert("新增公告成功")
+                    }else{
+                        alert("修改公告成功")
+                    }
+
+                    $('#dialogBg').fadeOut(100,function(){
+                        $('#dialog').addClass('bounceOutUp').fadeOut();
+                    });
+                }else{
+                    if($("#hidNoticeFlag").val() == 0){
+                        toastr.warning("新增公告失败!!!");
+                    }else{
+                        toastr.warning("修改公告失败!!!");
+                    }
+
+                    $('#dialogBg').fadeOut(100,function(){
+                        $('#dialog').addClass('bounceOutUp').fadeOut();
+                    });
+                }
+            }
+        });
+    });
+
+    function NoticePageInit(){
+        var userName = $.cookie("admin_name");
+        $("#userName").text(userName);
+        var token = getParam("Authorization");
+
+        $.getJSON("/ams/notice/list?Authorization="+token, function(json) {
+            if(json.err_code == 0) {
+                var tbody = "";
+                for (var i = 0; i < json.data.length; i++) {
+
+                    var state = "";
+
+                    if(json.data[i].state == 1){
+                        state = "已发布";
+                    }else if(json.data[i].state == 2){
+                        state = "已保存";
+                    }else if(json.data[i].state == 3){
+                        state = "已封存";
+                    }
+
+                    var category = "";
+                    if(json.data[i].category == 1){
+                        category = "重要公告";
+                    }else{
+                        category = "一般公告";
+                    }
+
+                    tbody += "<tr role='row' class='odd'>";
+                    tbody += "<td>" + json.data[i].id + "</td>";
+                    tbody += "<td>" + json.data[i].title + "</td>";
+                    tbody += "<td>" + json.data[i].brief + "</td>";
+                    tbody += "<td hidden>" + json.data[i].content + "</td>";
+                    tbody += "<td>" + state + "</td>";
+                    tbody += "<td>" + category + "</td>";
+                    tbody += "<td>" + json.data[i].weight + "</td>";
+                    tbody += "<td>" + json.data[i].created_at + "</td>";
+                    tbody += "<td><a href='#' onclick='NoticeDialog(" + json.data[i].id + ")'>编辑</a></td>";
+                    tbody += "</tr>";
+                }
+
+                $("#notice_manager_table_tbody").html(tbody);
+
+                var table = $('#notice_manager_table').dataTable({
+                    "bStateSave": false,//状态保存
+                    "bPaginate": true, //翻页功能
+                    "bLengthChange": true, //改变每页显示数据数量
+                    "bFilter": true, //过滤功能
+                    "bSort": true, //排序功能
+                    "bInfo": true,//页脚信息
+                    "paging": true,
+                    "retrieve": true,
+                    "bAutoWidth": true,//自动宽度
+                    "iDisplayLength" : 25,// 每页显示行数
+                    "aaSorting" : [[1, "asc"]], //默认的排序方式，第2列，升序排列
+                    "oLanguage": {
+                        "sLengthMenu": "每页显示 _MENU_ 条记录",
+                        "sZeroRecords": "对不起，查询不到任何相关数据",
+                        "sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录",
+                        "sInfoEmtpy": "找不到相关数据",
+                        "sInfoFiltered": "数据表中共为 _MAX_ 条记录)",
+                        "sProcessing": "正在加载中...",
+                        "sSearch": "搜索",
+                        "sUrl": "", //多语言配置文件，可将oLanguage的设置放在一个txt文件中，例：Javascript/datatable/dtCH.txt
+                        "oPaginate": {
+                            "sFirst":    "第一页",
+                            "sPrevious": " 上一页 ",
+                            "sNext":     " 下一页 ",
+                            "sLast":     " 最后一页 "
+                        }
+                    }
+                });
+
+                table.search("").draw();
+
+
+            }else{
+                toastr.warning("获取公告列表失败!!!");
+            }
+        });
+    }
+
+    NoticePageInit();
+
+    function jump(obj,id){
+        var token = getParam("Authorization");
+
+        if(obj == 1){
+            location.href = "http://" + window.location.host + "/html/user1.html?" + "Authorization=" + token;
+        }else if(obj == 2){
+            location.href = "http://" + window.location.host + "/html/userwallet.html?" + "Authorization=" + token + "&user_id="+id;
+        }else if(obj == 3){
+            location.href = "http://" + window.location.host + "/html/sonuser.html?" + "Authorization=" + token + "&parent_id="+id;
+        }else if(obj == 4){
+            location.href = "http://" + window.location.host + "/html/usermachine.html?" + "Authorization=" + token + "&user_id="+id;
+        }else if(obj == 5){
+            location.href = "http://" + window.location.host + "/html/contract.html?" + "Authorization=" + token;
+        }else if(obj == 6){
+            location.href = "http://" + window.location.host + "/html/paramset.html?" + "Authorization=" + token;
+        }else if(obj == 7){
+            location.href = "http://" + window.location.host + "/html/notice.html?" + "Authorization=" + token;
+        }else if(obj == 8){
+            location.href = "http://" + window.location.host + "/html/question.html?" + "Authorization=" + token;
+        }else if(obj == 9){
+            location.href = "http://" + window.location.host + "/html/msgboard.html?" + "Authorization=" + token;
+        }else if(obj == 10){
+            location.href = "http://" + window.location.host + "/html/worklist.html?" + "Authorization=" + token;
+        }
+    }
+
+</script>
+
+</body>
+</html>

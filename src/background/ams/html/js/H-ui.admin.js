@@ -43,10 +43,13 @@ function getskincookie(){
 	if(v==null||v==""){
 		v="default";
 	}
-	if(hrefStr!=undefined){
-		var hrefRes=hrefStr.substring(0,hrefStr.lastIndexOf('skin/'))+'skin/'+v+'/skin.css';
-		$("#skin").attr("href",hrefRes);
-	}
+	// if(hrefStr!=undefined){
+	// 	var hrefRes=hrefStr.substring(0,hrefStr.lastIndexOf('skin/'))+'skin/'+v+'/skin.css';
+	// 	$("#skin").attr("href",hrefRes);
+	// }
+
+    $("#skin").attr("href","../css/skin.css");
+
 }
 /*菜单导航*/
 function Hui_admin_tab(obj){
@@ -311,7 +314,7 @@ $(function(){
 		var v = $(this).attr("data-val");
 		$.cookie("Huiskin", v);
 		var hrefStr=$("#skin").attr("href");
-		var hrefRes=hrefStr.substring(0,hrefStr.lastIndexOf('skin/'))+'skin/'+v+'/skin.css';
-		$(window.frames.document).contents().find("#skin").attr("href",hrefRes);
+		// var hrefRes=hrefStr.substring(0,hrefStr.lastIndexOf('skin/'))+'skin/'+v+'/skin.css';
+		$(window.frames.document).contents().find("#skin").attr("href","../css/skin.css");
 	});
 }); 

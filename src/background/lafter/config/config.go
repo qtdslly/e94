@@ -16,19 +16,30 @@ type config struct {
 	LoggerLevel   uint8  `json:"logger_level"`
 	EnableOrmLog  bool   `json:"enable_orm_log"`
 	EnableHttpLog bool   `json:"enable_http_log"`
+	TmplRoot      string `json:"tmpl_root"`
+	StaticRoot    string `json:"static_root"`
+	CmsRoot       string `json:"cms_root"`
+	AreaData      string `json:"area_data"`
+	Domain        string `json:"domain"`
+
 }
 
 var c config
 
 func init() {
 	c.ProductionEnv = false
-	c.StorageRoot = "/home/lyric/data/stock/"
+	c.StorageRoot = "/root/data/storage/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "root:hahawap@tcp(localhost:3306)/lafter?charset=utf8&parseTime=True&loc=Local"
-	c.LoggerLevel = 0
+	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/lafter?charset=utf8&parseTime=True&loc=Local"
+	c.LoggerLevel = 1
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
+	c.CmsRoot = "/root/Git/e94/src/background/lafter/"
+	c.TmplRoot = "/root/Git/e94/src/background/lafter/tmpl/"
+	c.StaticRoot = "C:/work/code/e94/src/background/lafter/html"
+	c.Domain = "http://localhost:8000"
+
 }
 
 func LoadConfig(path string) error {
@@ -85,4 +96,23 @@ func GetStorageRoot() string {
 
 func GetStorageTmp() string {
 	return c.StorageTmp
+}
+
+func GetTmplRoot() string {
+	return c.TmplRoot
+}
+
+func GetStaticRoot() string {
+	return c.StaticRoot
+}
+
+func GetCmsRoot() string {
+	return c.CmsRoot
+}
+func GetAreaData() string {
+	return c.AreaData
+}
+
+func GetDomain() string {
+	return c.Domain
 }

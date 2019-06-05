@@ -15,7 +15,7 @@ import (
 	//"background/common/cache"
 	api "background/ams/controller/api"
 
-	amsmid "ams/middleware"
+	amsmid "background/ams/middleware"
 
 
 	"background/common/middleware"
@@ -76,7 +76,7 @@ func main(){
 	ams := r.Group("ams")
 
 	r.GET("/", func(c *gin.Context) {
-		url := config.GetDomain() + "/html/login.html"
+		url := config.GetDomain() + "/html/index.html"
 
 		logger.Debug(url)
 		c.Redirect(http.StatusPermanentRedirect, url)
@@ -87,13 +87,21 @@ func main(){
 	{
 		ams.GET("/login", api.AdminLoginHandler)
 
-
 	}
 
 	ams.Use(dbMiddleware,amsmid.AdminVerifyHandler)
 	{
 		ams.GET("/admin/video/list", api.VideoListHandler)
+		ams.POST("/admin/video/add", api.VideoAddHandler)
+		ams.POST("/admin/video/delete", api.VideoDeleteHandler)
 
+		ams.GET("/admin/episode/list", api.EpisodeListHandler)
+		ams.POST("/admin/episode/add", api.EpisodeAddHandler)
+		ams.POST("/admin/episode/delete", api.EpisodeDeleteHandler)
+
+		ams.GET("/admin/playurl/list", api.PlayUrlListHandler)
+		ams.POST("/admin/playurl/add", api.PlayUrlAddHandler)
+		ams.GET("/admin/playurl/delete",api.PlayUrlDeleteHandler)
 	}
 
 	r.Static("/html", config.GetStaticRoot())

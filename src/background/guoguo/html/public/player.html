@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport"
+          name="viewport">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+
+    <title>在线播放</title>
+    <style type="text/css">
+        body, html, .dplayer {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            color: #aaa;
+            background-color: #000
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        #dplayer, #poster {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center center
+        }
+
+        #poster {
+            z-index: 998;
+            background-color: #000
+        }
+
+        #poster .play-btn, .play-icon {
+            position: absolute;
+            width: 54px;
+            height: 54px;
+            left: 50%;
+            top: 50%;
+            z-index: 980;
+            margin-left: -27px;
+            margin-top: -27px
+        }
+
+        #poster .play-btn img, .play-icon img {
+            width: 54px;
+            height: 54px;
+            z-index: 990
+        }
+
+        .play-icon {
+            display: none
+        }</style>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/hls.min.js"></script>
+    <script src="../js/DPlayer.min.js"></script>
+    <link href="../css/DPlayer.min.css" rel="stylesheet">
+
+    <script src="../js/all.js"></script>
+
+</head>
+<body>
+<div id="shows">
+    <div id="poster" style="display: none;">
+        <div class="play-btn">
+            <img src="../img/start.png">
+        </div>
+    </div>
+    <div class="play-icon" style="display: none;">
+        <img src="../img/start.png">
+    </div>
+</div>
+<div id="dplayer"></div>
+<script type="text/javascript">
+    var url = getParam("url");
+
+    const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        lang: 'zh-cn',
+        autoplay: true,
+        loop: true,
+        video: {
+            url: url,
+            type: 'hls',
+            pic: '../img/start.gif'
+        }
+    });
+    dp.on('loadstart', function () {
+        $('.play-icon').css('display', 'block')
+    });
+    dp.on('playing', function () {
+        $('.play-icon').css('display', 'none')
+    });
+    dp.on('pause', function () {
+        $('.play-icon').css('display', 'block')
+    });
+    dp.on('play', function () {
+        $('.play-icon').css('display', 'none')
+    });
+    $('.play-icon').click(function () {
+        dp.play()
+    })
+    $('#poster').click(function () {
+        $('#poster').css('display', 'none')
+        dp.play()
+    })
+
+</script>
+<div style="display:none">
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-131417157-1'); </script>
+</div>
+</body>
+</html>

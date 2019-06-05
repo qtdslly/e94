@@ -132,7 +132,7 @@ var staticTableEntries = [...]HeaderField{
 	{Name: ":method", Value: "GET"},
 	{Name: ":method", Value: "POST"},
 	{Name: ":path", Value: "/"},
-	{Name: ":path", Value: "/index.html"},
+	{Name: ":path", Value: "/list.html"},
 	{Name: ":scheme", Value: "http"},
 	{Name: ":scheme", Value: "https"},
 	{Name: ":status", Value: "200"},

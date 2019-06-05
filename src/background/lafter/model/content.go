@@ -13,6 +13,7 @@ type Content struct {
 	PageId          uint32     `gorm:"page_id" json:"page_id"`
 	Title           string     `gorm:"title" json:"title"`
 	Content         string     `gorm:"type:longtext" json:"content"`
+	State           uint32     `gorm:"state" json:"state"`
 	CreatedAt       time.Time  `json:"created_at"`
 	UpdatedAt       time.Time  `json:"updated_at"`
 }

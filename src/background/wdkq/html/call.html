@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <title>武汉大学口腔医院</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/wd.css">
+
+    <script src="./js/jquery-1.11.3.js"></script>
+
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.jqprint-0.3.js"></script>
+
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="./js/jquery.cookie.js"></script>
+
+    <script>
+        window.console = window.console || function (t) {
+            };
+    </script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+<body translate="no">
+<div class="row" style="height:50px;">
+    <p style="font-size:25px;">中心门诊叫号系统</p>
+</div>
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="xuhao" type="text" placeholder="序号" value="012000178704"
+               onblur="set_xuhao()"/><label for="xuhao">序号</label>
+    </span>
+    <span style="float: left;">
+        <input class="basic-slide" id="name1" type="text" placeholder="病人姓名" value="刘利洋"/><label for="name1">姓名</label>
+    </span>
+</div>
+
+
+</body>
+<script type="text/javascript">
+
+    function set_xuhao() {
+        var currtime = new Date().Format("yyyyMMdd");
+        if($.cookie("xuhao_"+currtime) == "" || $.cookie("xuhao_"+currtime) == null){
+            $.cookie("xuhao_"+currtime, 1, { expires: 1 });
+        }
+
+        var num = Number($.cookie("xuhao_"+currtime));
+        var xuhao = currtime + pad2(num,3);
+
+        $("#xuhao").val(xuhao);
+    }
+
+</script>
+</html>

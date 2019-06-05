@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缴费单</title>
+
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.jqprint-0.3.js"></script>
+
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: PingFangSC-Regular, sans-serif;
+        }
+        table{
+            border:1px solid #f00;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            font-size:15px;
+            margin-top:5px;
+            padding :2px;
+        }
+        tr{
+            border-width:0px;
+        }
+        td{
+            border:1px solid black;
+        }
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid #ccc;
+            padding: 2px;
+            font-size: 1.2em;
+            color: #444;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="yl" style="position: relative;width: 1200px;left:50%;margin:100px 0 0 -600px;  text-align: left;background-color: #ccc;">
+    <div style="width:100%;text-align: center;font-size:25px;">武汉大学口腔医院</div>
+    <div style="width: 100%;">
+        <span style="float: left;font-size:15px;">预交金收据号：<input type="text" id="amt_number" value="0558594969"/></span>
+    </div>
+    <div style="width: 100%;text-align: center;margin-top:20px;">
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">武汉大学口腔医院</p>
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">门诊预交金凭据</p>
+    </div>
+
+    <table>
+            <tr>
+                <td colspan="5">病人ID：100637989  <span style="margin-left:150px;">姓名：</span><input type="text" name="name" value="赵明" style="border-width:0px;" id="name1"/>
+                <span style="float: right;margin-right:50px;">性别：<select style="border-width:0px;"><option>男</option><option>女</option></select></span>
+            </tr>
+            <tr style="text-align: center;">
+                <td>日期</td>
+                <td>交退方式</td>
+                <td>支付方式</td>
+                <td>金额</td>
+                <td>收款员</td>
+            </tr>
+            <tr>
+                <td id="date1">2019-05-01</td>
+                <td>收预交金</td>
+                <td>银联</td>
+                <td id="amt1"><input type="text" value="355.5"/>355.5</td>
+                <td id="person1">3287</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="number1">号码：0</td>
+                <td colspan="3" id="company1">单位：中交城乡建设规划设计研究院有限公司</td>
+            </tr>
+            <tr>
+                <td colspan="3">当前预交金金额：0</td>
+                <td colspan="2">退款签名：</td>
+            </tr>
+        </table>
+        <div style="width:100%;height:120px;">
+            <div style="width:8px;height:100%;float:left;">注明</div>
+            <div style="width:8px;height:100%;float:left;">:</div>
+            <div style="float: left;margin-left:10px;">
+                <p>1、请妥善保管此凭证，结算，退款时将收回，遗失不补。</p>
+                <p>按原支付方式退款。</p>
+                <p>2、此凭据不做报销凭据，仅限门诊结账时使用。</p>
+            </div>
+        </div>
+
+</div>
+
+
+<input type="button" onclick=" jprint()" value="打印"/>
+
+
+
+<div id="printArea" style="position: relative;width: 700px;left:50%;margin:0 0 0 -350px;  text-align: left;">
+    <div style="width: 100%;">
+        <span style="float: left;font-size:15px;">门诊</span>
+        <span style="float: right;font-size:15px;">预交金收据号：012000178704</span>
+    </div>
+    <div style="width: 100%;text-align: center;margin-top:20px;">
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">武汉大学口腔医院</p>
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">门诊预交金凭据</p>
+    </div>
+
+    <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="5">病人ID：100637989  <span style="margin-left:150px;">姓名：</span><input type="text" name="name" value="赵明" id="name2" style="border-width:0px;"/>
+                <span style="float: right;margin-right:50px;">性别：<span>男</span></span>
+        </tr>
+        <tr style="text-align: center;">
+            <td>日期</td>
+            <td>交退方式</td>
+            <td>支付方式</td>
+            <td>金额</td>
+            <td>收款员</td>
+        </tr>
+        <tr>
+            <td id="date2">2019-05-01</td>
+            <td>收预交金</td>
+            <td>银联</td>
+            <td id="amt2">355.5</td>
+            <td id="person2">3287</td>
+        </tr>
+        <tr>
+            <td colspan="2" id="number2">号码：0</td>
+            <td colspan="3" id="company2">单位：中交城乡建设规划设计研究院有限公司</td>
+        </tr>
+        <tr>
+            <td colspan="3">当前预交金金额：0</td>
+            <td colspan="2">退款签名：</td>
+        </tr>
+    </table>
+    <div style="width:100%;height:120px;">
+        <div style="width:8px;height:100%;float:left;">注明</div>
+        <div style="width:8px;height:100%;float:left;">:</div>
+        <div style="float: left;margin-left:10px;">
+            <p>1、请妥善保管此凭证，结算，退款时将收回，遗失不补。</p>
+            <p>按原支付方式退款。</p>
+            <p>2、此凭据不做报销凭据，仅限门诊结账时使用。</p>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function jprint(){
+        $("#yl").hide();
+        $("#printArea").show();
+        $("#printArea").jqprint();
+        $("#yl").show();
+        $("#printArea").hide();
+    }
+
+    Date.prototype.Format = function (fmt) {
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "H+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+    var currtime = new Date().Format("yyyy-MM-dd");
+
+    $("#date1").text(currtime);
+    $("#date2").text(currtime);
+
+</script>
+</body>
+</html>

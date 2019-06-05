@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"/>
+    <link rel="mask-icon" type=""
+          href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+          color="#111"/>
+    <title>武汉大学口腔医院</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/wd.css">
+
+    <script src="./js/jquery-1.11.3.js"></script>
+
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.jqprint-0.3.js"></script>
+
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        window.console = window.console || function (t) {
+            };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+<body translate="no">
+<div class="row" style="height:50px;">
+    <p style="font-size:25px;">武汉大学口腔医院</p>
+</div>
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="amt_no1" type="text" placeholder="预交金收据号" value="012000178704"
+               onblur="set_amt_no()"/><label for="amt_no1">收据号</label>
+    </span>
+    <span style="float: right;">
+        <input class="basic-slide" id="date1" type="text" placeholder="日期"/><label for="date1">日期</label>
+    </span>
+</div>
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="patient_no1" type="text" placeholder="病人ID" value="100637989"/><label
+            for="patient_no1">病人ID</label>
+    </span>
+    <span style="float: right;">
+        <select class="basic-slide" id="sky1" style="padding:7px;">
+            <option>何姗姗/3287</option>
+            <option>何姗姗2</option>
+        </select>
+        <label for="sky1">收款员</label>
+    </span>
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="name1" type="text" placeholder="病人姓名" value="刘利洋"/><label for="name1">姓名</label>
+    </span>
+    <span style="float: right;">
+        <select class="basic-slide" id="sex1" style="padding:7px;">
+            <option>男</option>
+            <option>女</option>
+        </select>
+        <label for="sex1">性别</label>
+    </span>
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <select class="basic-slide" id="jtfs1" style="padding:7px 0 7px 35px;">
+            <option>收预交金</option>
+        </select>
+        <label for="jtfs1">交退方式</label>
+    </span>
+    <span style="float: right;">
+        <select class="basic-slide" id="zffs1" style="padding:7px 0 7px 35px;">
+            <option style="text-align: right;">现金</option>
+            <option style="text-align: right;">银联</option>
+            <option style="text-align: right;">支付宝</option>
+            <option style="text-align: right;">微信</option>
+        </select>
+        <label for="zffs1">支付方式</label>
+    </span>
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="amt1" type="text" placeholder="缴费金额" value="400.38"
+               style="padding: 10px 0 10px 35px;"/><label for="amt1">缴费金额</label>
+    </span>
+    <span style="float: right;">
+        <input class="basic-slide" id="curr_amt1" type="text" placeholder="当前预交金金额" value="400.50"
+               style="padding: 10px 0 10px 85px;"/><label for="curr_amt1">当前预交金金额</label>
+    </span>
+</div>
+
+<div class="row">
+    <span style="float: left;">
+        <input class="basic-slide" id="company1" type="text" placeholder="单位" value="中交城乡建设规划设计研究院有限公司"
+               style="padding: 10px 0 10px 10px;width:720px;"/><label for="company1">单位</label>
+    </span>
+</div>
+<div class="row">
+    <span style="float: left;">
+        <input class="btn" id="print" type="button" value="打印" onclick="jprint()"/>
+    </span>
+</div>
+
+<div id="printArea" hidden>
+    <div style="width: 100%;">
+        <span style="float: left;font-size:15px;">门诊</span>
+        <span id="amt_no2" style="float: right">55555</span><span style="float: right;font-size:15px;">预交金收据号：</span>
+    </div>
+    <div style="width:100%;text-align: center;margin-top:10px;overflow: hidden;">
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">武汉大学口腔医院</p>
+        <p style="width: 100%;letter-spacing:8px;font-size:20px;">门诊预交金凭据</p>
+    </div>
+
+    <table border="1" cellspacing="0" cellpadding="0" style="width:100%;">
+        <tr>
+            <td colspan="5">
+                <span style="margin-left:20px;">病人ID：</span>
+                <span id="patient_no2"></span>
+                <span style="margin-left:180px;">姓名：</span>
+                <span id="name2"/>
+                <span style="float: right;margin-right:50px;">性别：</span>
+                <span id="sex2">男</span>
+        </tr>
+        <tr style="text-align: center;">
+            <td>日期</td>
+            <td>交退方式</td>
+            <td>支付方式</td>
+            <td>金额</td>
+            <td>收款员</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td id="date2">2019-05-01</td>
+            <td id="jtfs2">收预交金</td>
+            <td id="zffs2">银联</td>
+            <td id="amt2">355.5</td>
+            <td id="sky2">3287</td>
+        </tr>
+        <tr>
+            <td colspan="2"><span style="margin-left:20px;">号码：</span><span id="number2"></span></td>
+            <td colspan="3"><span style="margin-left:20px;">单位：</span><span id="company2">中交城乡建设规划设计研究院有限公司</span></td>
+        </tr>
+        <tr>
+            <td colspan="3"><span style="margin-left:20px;">当前预交金金额：</span><span id="curr_amt2"></span></td>
+            <td colspan="2"><span style="margin-left:20px;">退款签名：</span></td>
+        </tr>
+    </table>
+    <div style="width:100%;height:120px;">
+        <div>注明:</div>
+        <div style="float: left;margin-left:10px;">
+            <p>1、请妥善保管此凭证，结算，退款时将收回，遗失不补,按原支付方式退款。</p>
+            <p>2、此凭据不做报销凭据，仅限门诊结账时使用。</p>
+        </div>
+    </div>
+
+</div>
+
+<!--<script src="./js/css_reload.js"></script>-->
+
+</body>
+<script type="text/javascript">
+    Date.prototype.Format = function (fmt) {
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "H+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+
+    $(document).ready(function () {
+        var currtime = new Date().Format("yyyy-MM-dd");
+        $("#date1").val(currtime);
+    });
+
+    function set_amt_no() {
+        var currtime = new Date().Format("yyyyMMddHHmmss");
+        $("#amt_no1").val(currtime);
+        $("#amt_no2").text(currtime);
+
+    }
+
+    function jprint() {
+        $("#yl").hide();
+        $("#printArea").show();
+        $("#name2").text($("#name1").val());
+        $("#sex2").text($("#sex1").val());
+        $("#patient_no2").text($("#patient_no1").val());
+        $("#amt2").text($("#amt1").val());
+        $("#curr_amt2").text($("#curr_amt1").val());
+        $("#date2").text($("#date1").val());
+        $("#zffs2").text($("#zffs1").val());
+        $("#jtfs2").text($("#jtfs1").val());
+        $("#company2").text($("#company1").val());
+        $("#sky2").text($("#sky1").val().split("/")[1]);
+
+        $("#printArea").jqprint();
+
+        $("#yl").show();
+        $("#printArea").hide();
+    }
+
+</script>
+</html>
