@@ -16,7 +16,7 @@
 
 <div data-role="page" id="pageStockList" data-theme="b">
     <div data-role="header" data-position="fixed">
-        <h1>股票列表</h1>
+        <h1 id="title"></h1>
     </div>
 
     <div data-role="main" class="ui-content" id="content">
@@ -33,6 +33,7 @@
         }
         $.getJSON("/lafter?offset="+offset+"&direct="+dir, function (json) {
             if(json.err_code == 0) {
+                $("#title").text(json.content.title);
                 var htmlStr = "";
                 htmlStr += '<div>' + json.content.content + '</div>';
                 $("#content").html(htmlStr);
