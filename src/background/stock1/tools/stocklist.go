@@ -17,6 +17,7 @@ import (
 	"github.com/tidwall/gjson"
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
+  "time"
 )
 
 func main(){
@@ -49,6 +50,8 @@ func main(){
 
 func GetStockList(db *gorm.DB)(error){
 
+  p := time.Now()
+  date := fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
 	var page int64 = 0
 	for{
 		url := "http://quotes.money.163.com/hs/service/diyrank.php?host=http://quotes.money.163.com/hs/service/diyrank.php&page=" + fmt.Sprintf("%d",page) + "&query=STYPE:EQA&fields=NO,SYMBOL,NAME,PRICE,PERCENT,UPDOWN,FIVE_MINUTE,OPEN,YESTCLOSE,HIGH,LOW,VOLUME,TURNOVER,HS,LB,WB,ZF,PE,MCAP,TCAP,MFSUM,MFRATIO.MFRATIO2,MFRATIO.MFRATIO10,SNAME,CODE,ANNOUNMT,UVSNEWS&sort=PERCENT&order=desc&count=24&type=query"
@@ -75,12 +78,12 @@ func GetStockList(db *gorm.DB)(error){
 		if list.Exists() {
 			items := list.Array()
 
-			updated := false
 			for _, item := range items {
 				var stock model.Stock
 				code := item.Get("SYMBOL").String()
-				if err := db.Where("code = ?",code).First(&stock).Error ; err == nil{
-					updated = true
+				if err := db.Where("code = ?",code).First(&stock).Error ; err != nil{
+          logger.Error(err)
+          return err
 				}
 
 				stock.Code = item.Get("SYMBOL").String()
@@ -107,19 +110,12 @@ func GetStockList(db *gorm.DB)(error){
 				stock.Zf = item.Get("ZF").String()
 				stock.NetProfit = item.Get("MFRATIO.MFRATIO2").String()
 				stock.TotalRevenue = item.Get("MFRATIO.MFRATIO10").String()
+        stock.Date = date
 
-				if updated{
-					if err := db.Save(&stock).Error ; err != nil{
-						logger.Error(err)
-						return err
-					}
-				}else{
-					if err := db.Create(&stock).Error ; err != nil{
-						logger.Error(err)
-						return err
-					}
-				}
-
+        if err := db.Create(&stock).Error ; err != nil{
+          logger.Error(err)
+          return err
+        }
 			}
 		}
 
