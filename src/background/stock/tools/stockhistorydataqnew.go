@@ -41,7 +41,7 @@ func main(){
 	times := 0
 	for{
 		times++
-		files, err := ioutil.ReadDir(config.GetStorageRoot() + "TransData/HistoryDataNew")
+		files, err := ioutil.ReadDir(config.GetStorageRoot() + "wangyi")
 		if err != nil {
 			logger.Error(err)
 			return
@@ -55,7 +55,7 @@ func main(){
 			k++
 
 			if IsHaveDone(f.Name(),db) {
-				MoveFile(config.GetStorageRoot() + "TransData/HistoryDataNew/" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
+				MoveFile(config.GetStorageRoot() + "wangyi/" + f.Name(), config.GetStorageRoot() + "TransData/havedone/" + f.Name())
 				continue
 			}
 			for{
