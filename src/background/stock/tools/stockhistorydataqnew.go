@@ -113,10 +113,10 @@ func MoveFile(srcFileName, destFileName string) {
 
 func IsHaveDone(name string,db *gorm.DB) (bool){
 	code := name[0:6]
-	year := name[7:11] + "%"
+	//year := name[7:11] + "%"
 
 	var Count int
-	if err := db.Where("code = ? and date like ?",code,year).Table("stock_history_data_q").Count(&Count).Error ; err !=nil{
+	if err := db.Where("code = ?",code).Table("stock_history_data_q").Count(&Count).Error ; err !=nil{
 		logger.Error(err)
 		return false
 	}
