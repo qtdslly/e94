@@ -2,8 +2,6 @@ package model
 
 import (
 	"github.com/jinzhu/gorm"
-	//"time"
-  "time"
 )
 
 type StockHistoryDataQ struct {
