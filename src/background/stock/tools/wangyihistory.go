@@ -53,7 +53,7 @@ func main(){
 	for _,stock := range stocks{
 		url := "http://quotes.money.163.com/service/chddata.html?code=1" + stock.Code
 		start := stock.ToMarketDate
-    start = strings.Replace(start,"-",-"",-1)
+    start = strings.Replace(start,"-","",-1)
 		if len(start) != 8{
 			logger.Debug("股票代码:",stock.Code," 股票名称:",stock.Name," 数据获取失败")
 			continue
