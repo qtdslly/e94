@@ -131,7 +131,7 @@ func IsHaveDone(name string,db *gorm.DB) (bool){
 
 
 func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB)(error){
-	file, err := os.Open(config.GetStorageRoot() + "TransData/HistoryDataNew/" + fileName)
+	file, err := os.Open(config.GetStorageRoot() + "wangyi/" + fileName)
 	if err != nil {
 		logger.Error("File Name : ",fileName, " error : ", err)
 		return err
