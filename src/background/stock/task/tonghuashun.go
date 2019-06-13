@@ -1,7 +1,8 @@
 package task
 
 import (
-	"fmt"
+  "time"
+  "fmt"
 
 	"background/stock/model"
 	"background/common/logger"
@@ -9,48 +10,64 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
-	"time"
 )
 func GetTonghuashun(db *gorm.DB){
-	var err error
+  logger.Debug("开始抓取同花顺股票数据")
+
+  var err error
 
 	var p = time.Now()
+  today := fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
+
+  dd, _ := time.ParseDuration("24h")
+  to := p.Add(dd)
+  tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
+
+  var stocks []model.StockBasic
+  if err = db.Order("code asc").Where("date = ?",today).Find(&stocks).Error ; err != nil{
+    logger.Error(err)
+    return
+  }
+
 	var task model.StockTask
-	if err := db.Where("`key` = 'tonghuashun'").First(&task).Error ; err != nil{
+	if err := db.Where("`key` = 'tonghuashun_control'").First(&task).Error ; err != nil{
 		logger.Error(err)
 		return
 	}
 
-	today := fmt.Sprintf("%04d-%02d-%02d",p.Year(),p.Month(),p.Day())
 	if task.Date > today{
 		logger.Debug("今日数据已抓取")
 		return
-	}
+	}else{
+    for _,stock := range stocks{
+      apiths.GetControlInfo(stock.Code,db)
+    }
 
-	var stocks []model.StockList
-	if err = db.Order("code asc").Find(&stocks).Error ; err != nil{
-		logger.Error(err)
-		return
-	}
-	//for _,stock := range stocks{
-	//	apiths.GetComprehensive(stock.Code,db)
-	//}
+    if err := db.Model(model.StockTask{}).Where("`key` = 'tonghuashun_control'").Update("date", tomorry).Error; err != nil {
+      logger.Error(err)
+      return
+    }
+  }
 
-	for _,stock := range stocks{
-		if apiths.GetControlInfo(stock.Code,db) != nil{
-			logger.Error(err)
-			return
-		}
-	}
+  var task1 model.StockTask
+  if err := db.Where("`key` = 'tonghuashun_comprehensive'").First(&task1).Error ; err != nil{
+    logger.Error(err)
+    return
+  }
 
-	time.Sleep(time.Second * 100)
+  if task1.Date > today{
+    logger.Debug("今日数据已抓取")
+    return
+  }else{
+    for _,stock := range stocks{
+      apiths.GetComprehensive(stock.Code,db)
+    }
+    if err := db.Model(model.StockTask{}).Where("`key` = 'tonghuashun_comprehensive'").Update("date", tomorry).Error; err != nil {
+      logger.Error(err)
+      return
+    }
+  }
 
-	now := time.Now()
-	dd, _ := time.ParseDuration("24h")
-	to := now.Add(dd)
-	tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
-	if err := db.Model(model.StockTask{}).Where("`key` = 'tonghuashun'").Update("date", tomorry).Error; err != nil {
-		logger.Error(err)
-		return
-	}
+
+
 }

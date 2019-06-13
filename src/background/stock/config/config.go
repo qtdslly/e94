@@ -27,7 +27,7 @@ func init() {
 	c.StorageRoot = "/root/data/storage/"
 	c.LogRoot = "../log/"
 	c.DBName = "mysql"
-	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/lyric?charset=utf8&parseTime=True&loc=Local"
+	c.DBSource = "root:hahawap@tcp(47.106.111.101:3306)/stock?charset=utf8&parseTime=True&loc=Local"
 	c.LoggerLevel = 0
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true

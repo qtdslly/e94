@@ -74,6 +74,32 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
+  err = initTonghuashunSstd(db)
+  if err != nil {
+    logger.Fatal("Init db tonghuashun_sstd failed, ", err)
+    return err
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  //网易股票
+  err = initWangYiStock(db)
+  if err != nil {
+    logger.Fatal("Init db wangyi_stock failed, ", err)
+    return err
+  }
+
+  err = initStockBasic(db)
+  if err != nil {
+    logger.Fatal("Init db stock_basic failed, ", err)
+    return err
+  }
+
+  err = initBaiduZncp(db)
+  if err != nil {
+    logger.Fatal("Init db baidu_zncp failed, ", err)
+    return err
+  }
+
 	return err
 }
 
@@ -90,6 +116,12 @@ func rebuildModel(db *gorm.DB) {
 	dropTonghuashunSuggestion(db)
 	dropTonghuashunMainForceControl(db)
 	dropStockTask(db)
+  dropTonghuashunSstd(db)
 
-	InitModel(db)
+
+  dropWangYiStock(db)
+  dropStockBasic(db)
+  dropBaiduZncp(db)
+
+  InitModel(db)
 }

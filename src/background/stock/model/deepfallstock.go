@@ -3,6 +3,7 @@ package model
 import (
 	"github.com/jinzhu/gorm"
 	//"time"
+  "time"
 )
 
 type DeepFallStock struct {
@@ -14,6 +15,9 @@ type DeepFallStock struct {
 	LowPriceDate           string     `gorm:"low_price_date" json:"low_price_date"`  //最低价日期
 	NowPrice               float64    `gorm:"now_price" json:"now_price"`    //当前价
 	Date                   string     `gorm:"date" json:"date"`              //当前日期
+
+  CreatedAt    time.Time `json:"created_at"`
+  UpdatedAt    time.Time `json:"updated_at"`
 }
 
 func (DeepFallStock) TableName() string {

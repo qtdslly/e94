@@ -1,23 +1,22 @@
 package main
 
 import (
+  "flag"
+  "log"
+  "time"
+
 	"background/stock/config"
 	"background/stock/model"
-	"background/stock/task"
+  "background/stock/task"
+
 	"background/common/logger"
-	"flag"
-	"log"
-	"time"
+
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
-	//"fmt"
-	"fmt"
 )
 
 func main() {
-
-
 	configPath := flag.String("conf", "../config/config.json", "Config file path")
 	flag.Parse()
 
@@ -36,8 +35,22 @@ func main() {
 	}
 
 	db.LogMode(true)
-	
+
 	model.InitModel(db)
+
+  go func(){
+    for{
+      var p = time.Now()
+      if p.Hour() == 17 {
+        task.GetWangyiStockList(db)
+        task.GetBasicInfo(db)
+        task.GetTonghuashun(db)
+        task.Zncp(db)
+      }
+      time.Sleep(time.Hour * 1)
+    }
+  }()
+
 
 	//go func(){
 	//	for{
@@ -60,15 +73,15 @@ func main() {
 	//	}
 	//}()
 	//
-	go func(){
-		for{
-			var p = time.Now()
-			if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) < "1500"{
-				go task.GetTonghuashun(db)
-			}
-			time.Sleep(time.Hour)
-		}
-	}()
+	//go func(){
+	//	for{
+	//		var p = time.Now()
+	//		if fmt.Sprintf("%02d%02d",p.Hour(),p.Minute()) < "1500"{
+	//			go task.GetTonghuashun(db)
+	//		}
+	//		time.Sleep(time.Hour)
+	//	}
+	//}()
 
 	//task.GetLargeFallStockInfo(db)
 

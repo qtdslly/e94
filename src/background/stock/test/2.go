@@ -22,4 +22,7 @@ func main(){
 	sDate := ss[0:4] + "-" + ss[4:6] + "-" + ss[6:8]
 
 	fmt.Print(sDate)
+
+  name := fmt.Sprintf("%s","\u51a0\u519c\u80a1\u4efd")
+  fmt.Println(name)
 }

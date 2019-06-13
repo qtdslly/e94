@@ -3,6 +3,7 @@ package model
 import (
 	"github.com/jinzhu/gorm"
 	//"time"
+  "time"
 )
 
 type RealTimeStock struct {
@@ -40,6 +41,10 @@ type RealTimeStock struct {
 	SellPrice5  float64  `gorm:"sell_price5" json:"sell_price5"`     //买一报价
 	DealDate    string  `gorm:"deal_date:10" json:"deal_date"`     //交易日期
 	DealTime    string  `gorm:"deal_time:30" json:"deal_time"`     //交易时间
+
+
+  CreatedAt    time.Time `json:"created_at"`
+  UpdatedAt    time.Time `json:"updated_at"`
 }
 
 func (RealTimeStock) TableName() string {

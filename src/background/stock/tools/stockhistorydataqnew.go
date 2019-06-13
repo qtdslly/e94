@@ -116,7 +116,7 @@ func IsHaveDone(name string,db *gorm.DB) (bool){
 	year := name[7:11] + "%"
 
 	var Count int
-	if err := db.Where("code = ? and date like ?",code,year).Table("stock_history_data_q_new").Count(&Count).Error ; err !=nil{
+	if err := db.Where("code = ? and date like ?",code,year).Table("stock_history_data_q").Count(&Count).Error ; err !=nil{
 		logger.Error(err)
 		return false
 	}
@@ -154,12 +154,12 @@ func GetHistoryDataQNewFromExcel(fileName string,db *gorm.DB)(error){
 		if k == 1{
 			continue
 		}
-		sql := "insert into stock_history_data_q_new(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "','"
+		sql := "insert into stock_history_data_q(`code`,`date`,`open`,`high`,`close`,`low`,`volume`,`amount`) select '" + stockCode + "','"
 		for i := 0; i < len(record); i++ {
 			sql = sql + record[i] + "','"
 		}
 		sql = sql[0:len(sql) - 2]
-		sql = sql + " from dual where not exists (select 1 from stock_history_data_q_new where `code` = '" + stockCode + "' and `date` = '" + record[0] + "');"
+		sql = sql + " from dual where not exists (select 1 from stock_history_data_q where `code` = '" + stockCode + "' and `date` = '" + record[0] + "');"
 
 		if err = db.Exec(sql).Error ; err != nil{
 			logger.Error(err)

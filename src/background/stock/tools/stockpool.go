@@ -3,8 +3,7 @@ package main
 import (
 	"background/stock/config"
 	"background/stock/model"
-	"background/stock/task"
-	"background/stock/tools/util"
+	cc "background/stock/common"
 	"background/common/logger"
 	"flag"
 	"log"
@@ -59,7 +58,7 @@ func main() {
 			return
 		}
 
-		jysCode := util.GetJysCodeByStockCode(deepFallStock.Code)
+		jysCode := cc.GetJysCodeByStockCode(deepFallStock.Code)
 		var realStock *model.RealTimeStock
 		if err,realStock = service.GetRealTimeStockInfoByStockCode(jysCode,deepFallStock.Code) ; err != nil{
 			logger.Error(err)

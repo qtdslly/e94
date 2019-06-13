@@ -8,7 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"background/common/logger"
 	"background/stock/strategy"
-	"background/stock/tools/util"
+	cc "background/stock/common"
 	"background/stock/service"
 	"sync"
 )
@@ -62,7 +62,7 @@ func GetLargeFallStockInfoByCode(stockCode string,db *gorm.DB){
 	nowDate := fmt.Sprintf("%04d-%02d-%02d",time.Now().Year(),time.Now().Month(),time.Now().Day())
 
 	stockNDaysPreInfo := strategy.GetStockInfoByDatePre(stockCode,nowDate,200,db)
-	jysCode := util.GetJysCodeByStockCode(stockCode)
+	jysCode := cc.GetJysCodeByStockCode(stockCode)
 	var stockNowInfo *model.RealTimeStock
 	if err,stockNowInfo = service.GetRealTimeStockInfoByStockCode(jysCode,stockCode) ; err != nil{
 		logger.Error(err)
