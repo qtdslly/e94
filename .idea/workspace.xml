@@ -2,209 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/first.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/first.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/four.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/four.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/jc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/second.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/second.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/third.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/third.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/zero.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/common/util/amt.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/common/util/email.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/cmsd/cmsd.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/common/constant/global.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/config/config.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/config/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/taobao/basic.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/check.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/play.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/wechart.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery-1.11.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.zclip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/p-pull-refresh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/js/slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/downloadurl.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/init.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/page.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/video.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/service/base.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/service/wechart.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/QQList.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/a.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/aaaa.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/dytt8.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/getPwdByTitle.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/getUserBySendEmail.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/haoquanlist.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/quan.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/quan1.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/search.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/tt.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/util/sign.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/others/task/domain.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/spider/test.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_cyfx.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/tools/wencai_cyfx.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/tools/1" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/Make.protobuf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance_proto/conformance.pb.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance_proto/conformance.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/golden_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/test.pb.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/test.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_base.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_extra.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_user.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/grpc.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp.pb.go.golden" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp2.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp3.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go.golden" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/proto3.proto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/regen.sh" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_sstd.go" afterPath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_jsxt.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" afterPath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/index.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/public/player2.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/public/player3.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/study/1.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/study/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" afterPath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/config/config.go" afterPath="$PROJECT_DIR$/src/background/ionic/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/config/config.json" afterPath="$PROJECT_DIR$/src/background/ionic/config/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/controller/api/stock.go" afterPath="$PROJECT_DIR$/src/background/ionic/controller/api/stock.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/detail.html" afterPath="$PROJECT_DIR$/src/background/ionic/html/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/index.html" afterPath="$PROJECT_DIR$/src/background/ionic/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/js/app.js" afterPath="$PROJECT_DIR$/src/background/ionic/html/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/ionicd/ionicd.go" afterPath="$PROJECT_DIR$/src/background/ionic/ionicd/ionicd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.go" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/html/index.html" afterPath="$PROJECT_DIR$/src/background/lafter/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/html/test.html" afterPath="$PROJECT_DIR$/src/background/lafter/html/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" afterPath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/model/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/model/content.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/task/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/task/content.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/task/lafter.go" afterPath="$PROJECT_DIR$/src/background/lafter/task/lafter.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/model/domain.go" afterPath="$PROJECT_DIR$/src/background/others/model/domain.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/others/taskd/taskd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/tools/domain.go" afterPath="$PROJECT_DIR$/src/background/others/tools/domain.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/email.go" afterPath="$PROJECT_DIR$/src/background/stock/common/email.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/wangyi.go" afterPath="$PROJECT_DIR$/src/background/stock/common/wangyi.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/wencai.go" afterPath="$PROJECT_DIR$/src/background/stock/common/wencai.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/model/init.go" afterPath="$PROJECT_DIR$/src/background/stock/model/init.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/task/baidu.go" afterPath="$PROJECT_DIR$/src/background/stock/task/baidu.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/task/tonghuashun.go" afterPath="$PROJECT_DIR$/src/background/stock/task/tonghuashun.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/tools/wencai_sstd.go" afterPath="$PROJECT_DIR$/src/background/stock/tools/wencai_sstd.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock1/tools/stocklist.go" afterPath="$PROJECT_DIR$/src/background/stock1/tools/stocklist.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go" afterPath="$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go" afterPath="$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/service/wxcheck.go" afterPath="$PROJECT_DIR$/src/background/wechart/service/wxcheck.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/.gitignore" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/.travis.yml" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/AUTHORS" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/AUTHORS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/CONTRIBUTORS" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/CONTRIBUTORS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/LICENSE" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/Makefile" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/README.md" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/all_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/all_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/any_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/any_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/lib.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/lib.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/map_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/map_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_reflect.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_reflect.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_unsafe.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_unsafe.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/properties.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/properties.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size2_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size2_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/doc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/doc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/generator.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/generator.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/name_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/name_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/grpc/grpc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/grpc/grpc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/link_grpc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/link_grpc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/main.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.golden" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.golden" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/main_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/main_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi1.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi1.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi2.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi2.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi3.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi3.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/doc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/doc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp_test.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.pb.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/task/domain.go" afterPath="$PROJECT_DIR$/src/background/others/task/domain.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -242,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="domain.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="domain.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/background/others/task/domain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3697">
-              <caret line="164" column="12" lean-forward="true" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+            <state relative-caret-position="448">
+              <caret line="164" column="7" lean-forward="false" selection-start-line="164" selection-start-column="7" selection-end-line="164" selection-end-column="7" />
               <folding>
                 <element signature="e#15#364#0" expanded="true" />
               </folding>
@@ -254,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="taskd.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="taskd.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/background/others/taskd/taskd.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+            <state relative-caret-position="704">
+              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding>
                 <element signature="e#14#222#0" expanded="true" />
               </folding>
@@ -395,8 +193,8 @@
         <option value="$PROJECT_DIR$/src/background/wdkq/tools/1" />
         <option value="$PROJECT_DIR$/src/background/others/tools/domain.go" />
         <option value="$PROJECT_DIR$/src/background/others/model/domain.go" />
-        <option value="$PROJECT_DIR$/src/background/others/task/domain.go" />
         <option value="$PROJECT_DIR$/src/background/others/taskd/taskd.go" />
+        <option value="$PROJECT_DIR$/src/background/others/task/domain.go" />
       </list>
     </option>
   </component>
@@ -1261,12 +1059,12 @@
       <workItem from="1562293184027" duration="2517000" />
       <workItem from="1562374546913" duration="183000" />
       <workItem from="1562374889871" duration="8000" />
-      <workItem from="1562916822892" duration="5322000" />
+      <workItem from="1562916822892" duration="6001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="564674000" />
+    <option name="totallyTimeSpent" value="565353000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1690,22 +1488,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/others/task/domain.go">
+    <entry file="file://$PROJECT_DIR$/src/background/others/taskd/taskd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3697">
-          <caret line="164" column="12" lean-forward="true" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
+        <state relative-caret-position="704">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding>
-            <element signature="e#15#364#0" expanded="true" />
+            <element signature="e#14#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/others/taskd/taskd.go">
+    <entry file="file://$PROJECT_DIR$/src/background/others/task/domain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        <state relative-caret-position="448">
+          <caret line="164" column="7" lean-forward="false" selection-start-line="164" selection-start-column="7" selection-end-line="164" selection-end-column="7" />
           <folding>
-            <element signature="e#14#222#0" expanded="true" />
+            <element signature="e#15#364#0" expanded="true" />
           </folding>
         </state>
       </provider>

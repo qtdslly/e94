@@ -153,15 +153,16 @@ func GetBaiDuDomin(db *gorm.DB){
       return
     }
 
-    if domain.Status != 0{
-      return
-    }
-
     status := getStatus(domain.Url)
 
     err,registerDate,expirationDate,registrarUrl,reseller,registrantCity,registrantProvince,email,phone,registrant,sponsoring,country,street := getDomainDetail(domain.Url)
     if err != nil{
       logger.Error(err)
+      domain.IsGet = true
+      if err := db.Save(&domain).Error ; err != nil{
+        logger.Error(err)
+        return
+      }
       return
     }
 
