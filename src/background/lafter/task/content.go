@@ -158,7 +158,11 @@ func GetJokejiContent(pageUrl *model.PageUrl,document *goquery.Document,db *gorm
 
 	contentId := "#text110"
 	doc := document.Find(contentId)
-	text := doc.Text()
+	text,err := doc.Html()
+	if err != nil{
+		logger.Error(err)
+		return
+	}
 	title := document.Find(".main").Find(".left").Find(".left_up").Find("h1").Eq(0).Text()
 	if len(text) != 0{
 
@@ -178,9 +182,13 @@ func GetJokejiContent(pageUrl *model.PageUrl,document *goquery.Document,db *gorm
 		title = titles[len(titles) - 1]
 
 		var content model.Content
+		if err := db.Where("title = ? and content = ?",title,text).First(&content).Error ; err == nil{
+			return
+		}
+
 		content.Title = title
-		content.Content = text
 		content.PageId = pageUrl.Id
+		content.Content = text
 		content.CreatedAt = time.Now()
 		content.UpdatedAt = time.Now()
 		if err := db.Save(&content).Error ; err != nil{

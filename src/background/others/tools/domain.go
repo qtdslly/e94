@@ -47,11 +47,119 @@ func main(){
 
 	//fileName := "/root/Git/e94/src/background/others/tools/words.txt"
 	//GetDominByFileWord(fileName,db)
-	GetDominByRule(db)
+
+  zuis := []string{".com",".cn",".cc"}
+  chars := "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+  cs := strings.Split(chars," ")
+
+  GetOneLength(zuis,cs,db)
+  GetTwoLength(zuis,cs,db)
+  GetThreeLength(zuis,cs,db)
+
+  GetFourLength(zuis,cs,db)
+  GetFiveLength(zuis,cs,db)
+  GetSixLength(zuis,cs,db)
+
 }
 
+
+func GetOneLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,zui := range zuis {
+        url = c + zui
+        CreateDomain(url, db)
+      }
+    }
+}
+
+
+func GetTwoLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,c1 := range cs{
+        for _,zui := range zuis {
+          url = c + c1 + zui
+          CreateDomain(url, db)
+        }
+      }
+    }
+}
+
+func GetThreeLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,c1 := range cs{
+        for _,c2 := range cs{
+          for _,zui := range zuis {
+
+            url = c + c1 + c2 + zui
+            CreateDomain(url, db)
+          }
+        }
+      }
+    }
+}
+
+
+func GetFourLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,c1 := range cs{
+        for _,c2 := range cs{
+          for _,c3 := range cs{
+            for _,zui := range zuis {
+
+              url = c + c1 + c2 + c3 + zui
+              CreateDomain(url, db)
+            }
+          }
+        }
+      }
+    }
+}
+
+func GetFiveLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,c1 := range cs{
+        for _,c2 := range cs{
+          for _,c3 := range cs{
+            for _,c4 := range cs{
+              for _,zui := range zuis {
+
+                url = c + c1 + c2 + c3 + c4 + zui
+                CreateDomain(url, db)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+func GetSixLength(zuis,cs []string ,db *gorm.DB){
+  var url string = ""
+    for _,c := range cs{
+      for _,c1 := range cs{
+        for _,c2 := range cs{
+          for _,c3 := range cs{
+            for _,c4 := range cs{
+              for _,c5 := range cs{
+                for _,zui := range zuis {
+                  url = c + c1 + c2 + c3 + c4 + c5 + zui
+                  CreateDomain(url, db)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 func GetDominByRule(db *gorm.DB){
-	zuis := []string{".com",".cn",".net",".cc"}
+	zuis := []string{".com",".cn",".cc"}
 	charTypes := []string{"A","AA","AAA","AAAA","AAAAA","AAAAAA","AAAAAAA","AB","ABC","ABCD","AAAAB","AAABB","AABBB","ABBBB","ABABA","ABABB","ABAAA","ABBBB","AAAAB","AAABBB","ABABAB"}
 
 	for _,zui := range zuis{
@@ -61,6 +169,16 @@ func GetDominByRule(db *gorm.DB){
 	}
 }
 
+func CreateDomain(url string,db *gorm.DB){
+  var domain model.Domain
+  domain.Url = url
+  domain.IsGet = false
+  if err := db.Create(&domain).Error ; err != nil{
+    logger.Error(err)
+    return
+  }
+}
+
 func GetDominByCharType(charType string,zui string,db *gorm.DB){
 	logger.Debug(charType,zui)
 	chars := "a b c d e f g h i j k l m n o p q r s t u v w x y z"
@@ -68,43 +186,43 @@ func GetDominByCharType(charType string,zui string,db *gorm.DB){
 	if charType == "A"{
 		for _, ss := range cs{
 			url := ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AA"{
 		for _,ss := range cs{
 			url := ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AAA"{
 		for _,ss := range cs{
 			url := ss + ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AAAA"{
 		for _,ss := range cs{
 			url := ss + ss + ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AAAAA"{
 		for _,ss := range cs{
 			url := ss + ss + ss + ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AAAAAA"{
 		for _,ss := range cs{
 			url := ss + ss + ss + ss + ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AAAAAAA"{
 		for _,ss := range cs{
 			url := ss + ss + ss + ss + ss + ss + ss + zui
-			getBaiDuDomin("",url,db)
+      CreateDomain(url,db)
 		}
 	}else if charType == "AB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABC"{
@@ -112,7 +230,7 @@ func GetDominByCharType(charType string,zui string,db *gorm.DB){
 			for _,mm := range cs{
 				for _,nn := range cs{
 					url := ss + mm + nn + zui
-					getBaiDuDomin("",url,db)
+          CreateDomain(url,db)
 				}
 			}
 		}
@@ -122,7 +240,7 @@ func GetDominByCharType(charType string,zui string,db *gorm.DB){
 				for _,nn := range cs{
 					for _, kk := range cs{
 						url := ss + mm + nn + kk + zui
-						getBaiDuDomin("",url,db)
+            CreateDomain(url,db)
 					}
 				}
 			}
@@ -131,77 +249,77 @@ func GetDominByCharType(charType string,zui string,db *gorm.DB){
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + ss + ss + ss + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "AAABB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + ss + ss + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "AABBB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + ss + mm + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABBBB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + mm + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABABA"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + ss + mm + ss + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABABB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + ss + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABAAA"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + ss + ss + ss + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABBBB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + mm + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "AAAAB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + ss + ss + ss + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "AAABBB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + ss + ss + mm + mm + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}else if charType == "ABABAB"{
 		for _,ss := range cs{
 			for _,mm := range cs{
 				url := ss + mm + ss + mm + ss + mm + zui
-				getBaiDuDomin("",url,db)
+        CreateDomain(url,db)
 			}
 		}
 	}
@@ -475,7 +593,7 @@ func getBaiDuDomainApiInfo(apiType int,url string)(string){
 	logger.Debug(string(recv))
 
 	if strings.Contains(string(recv),"查询过于频繁，请稍后再试"){
-		time.Sleep(time.Minute * 15)
+		time.Sleep(time.Hour * 24)
 	}
 	return string(recv)
 }

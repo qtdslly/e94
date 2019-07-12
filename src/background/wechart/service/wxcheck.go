@@ -25,7 +25,6 @@ func Check(timeStamp int64,nonce,signature string)bool{
 	return false
 }
 
-
 func AccessToken()string{
 	apiUrl := "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx508e9e50a737c414&secret=58ab0927aeea25867c88d61530b985e7"
 

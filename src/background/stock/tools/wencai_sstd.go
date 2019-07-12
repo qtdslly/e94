@@ -35,8 +35,9 @@ func main() {
 
   model.InitModel(db)
 
-  cc.Sstd(db)
-
+  cc.GetSstd(db)
+  //cc.GetDbfz(db)
+  cc.GetCCImrxh(db)
 }
 
 

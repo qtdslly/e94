@@ -33,7 +33,7 @@ func Zncp(db *gorm.DB)error{
   }
 
   var stocks []model.StockBasic
-  if err := db.Order("code asc").Where("date = ?",today).Find(&stocks).Error ; err != nil{
+  if err := db.Order("code asc").Find(&stocks).Error ; err != nil{
     logger.Error(err)
     return err
   }

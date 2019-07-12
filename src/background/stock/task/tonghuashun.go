@@ -24,7 +24,7 @@ func GetTonghuashun(db *gorm.DB){
   tomorry := fmt.Sprintf("%04d-%02d-%02d",to.Year(),to.Month(),to.Day())
 
   var stocks []model.StockBasic
-  if err = db.Order("code asc").Where("date = ?",today).Find(&stocks).Error ; err != nil{
+  if err = db.Order("code asc").Find(&stocks).Error ; err != nil{
     logger.Error(err)
     return
   }

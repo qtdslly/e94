@@ -74,9 +74,15 @@ func InitModel(db *gorm.DB) error {
 		return err
 	}
 
-  err = initTonghuashunSstd(db)
+  err = initTonghuashunJsxt(db)
   if err != nil {
-    logger.Fatal("Init db tonghuashun_sstd failed, ", err)
+    logger.Fatal("Init db tonghuashun_jsxt failed, ", err)
+    return err
+  }
+
+  err = initTonghuashunCyfx(db)
+  if err != nil {
+    logger.Fatal("Init db tonghuashun_cyfx failed, ", err)
     return err
   }
 
@@ -116,7 +122,8 @@ func rebuildModel(db *gorm.DB) {
 	dropTonghuashunSuggestion(db)
 	dropTonghuashunMainForceControl(db)
 	dropStockTask(db)
-  dropTonghuashunSstd(db)
+  dropTonghuashunJsxt(db)
+  dropTonghuashunCyfx(db)
 
 
   dropWangYiStock(db)

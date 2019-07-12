@@ -24,7 +24,7 @@ func GetWangyiStockBasic(jys ,code string,db *gorm.DB) error{
   }
 
   if update && p.Weekday().String() != "Friday"{
-    return "非周五不更新"
+    return errors.New("非周五不更新")
   }
 
   url := fmt.Sprintf("http://quotes.money.163.com/%s%s.html",jys,code)

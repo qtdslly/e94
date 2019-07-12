@@ -1,16 +1,16 @@
 package api
 
 import (
-	apimodel "background/wechart/controller/api/model"
-	"background/wechart/service"
-	"background/common/logger"
-	"github.com/gin-gonic/gin"
-	"net/http"
-	"encoding/xml"
+  apimodel "background/wechart/controller/api/model"
+  "background/wechart/service"
+  "background/common/logger"
+  "github.com/gin-gonic/gin"
+  "net/http"
+  "encoding/xml"
 )
 
 func WeChartHandler(c *gin.Context) {
-	/*
+  /*
 	参数	描述
 	ToUserName	开发者微信号
 	FromUserName	发送方帐号（一个OpenID）
@@ -19,45 +19,43 @@ func WeChartHandler(c *gin.Context) {
 	Content	文本消息内容
 	MsgId	消息id，64位整型
 	*/
-	type param struct {
-		ToUserName   string `xml:"ToUserName"`
-		FromUserName string `xml:"FromUserName"`
-		CreateTime   int64 `xml:"CreateTime"`
-		MsgType      string `xml:"MsgType"`
-		Content      string `xml:"Content"`
-		MsgId        int64 `xml:"MsgId"`
-		Event        string `xml:"Event"`
+  type param struct {
+    ToUserName   string `xml:"ToUserName"`
+    FromUserName string `xml:"FromUserName"`
+    CreateTime   int64 `xml:"CreateTime"`
+    MsgType      string `xml:"MsgType"`
+    Content      string `xml:"Content"`
+    MsgId        int64 `xml:"MsgId"`
+    Event        string `xml:"Event"`
+  }
 
-	}
+  var p param
+  if err := c.Bind(&p); err != nil {
+    logger.Error(err)
+    return
+  }
 
-	var p param
-	if err := c.Bind(&p); err != nil {
-		logger.Error(err)
-		return
-	}
+  logger.Debug(p.ToUserName)
+  logger.Debug(p.FromUserName)
+  logger.Debug(p.CreateTime)
+  logger.Debug(p.MsgType)
+  logger.Debug(p.Content)
+  logger.Debug(p.MsgId)
+  logger.Debug(p.Event)
 
-	logger.Debug(p.ToUserName)
-	logger.Debug(p.FromUserName)
-	logger.Debug(p.CreateTime)
-	logger.Debug(p.MsgType)
-	logger.Debug(p.Content)
-	logger.Debug(p.MsgId)
-	logger.Debug(p.Event)
+  var data []byte
+  if p.MsgType == "text" {
+    var video *apimodel.Video
+    video = service.SearchVideo(p.Content)
+    if video != nil {
+      news := apimodel.VideoToNews(p.FromUserName, p.ToUserName, video)
+      data, _ = xml.MarshalIndent(news, "", "  ")
+    }
+  } else if p.MsgType == "event" {
+      wx := apimodel.EventContent(p.Event, p.FromUserName, p.ToUserName)
+      data, _ = xml.MarshalIndent(wx, "", "  ")
+  }
 
-
-	var data []byte
-	if p.MsgType == "text"{
-		var video *apimodel.Video
-		video = service.SearchVideo(p.Content)
-		if video != nil{
-			news := apimodel.VideoToNews(p.FromUserName,p.ToUserName,video)
-			data, _ = xml.MarshalIndent(news, "", "  ")
-		}
-	}else if p.MsgType == "event"{
-		wx := apimodel.EventContent(p.Event,p.FromUserName,p.ToUserName)
-		data, _ = xml.MarshalIndent(wx, "", "  ")
-	}
-
-	c.String(http.StatusOK,string(data))
+  c.String(http.StatusOK, string(data))
 
 }

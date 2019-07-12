@@ -5,139 +5,274 @@
     <title>果果笑话</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script src="./js/jquery.mobile-1.4.5.min.js"></script>
 
     <script src="./js/jquery-1.11.3.js"></script>
     <script src="./js/jquery.cookie.js"></script>
-    <script src="./js/iscroll.js"></script>
+    <script src="./js/touche.js"></script>
+    <script src="./js/p-pull-refresh.js"></script>
 
+    <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <style>
+
+        /**
+         * @authors petrus.law (you@example.org)
+         * @date    2015-07-20 15:06:33
+         * @version 基础样式
+         */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 321px) and (max-width: 375px) {
+            html {
+                font-size: 11px
+            }
+        }
+
+        @media screen and (min-width: 376px) and (max-width: 414px) {
+            html {
+                font-size: 12px
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 639px) {
+            html {
+                font-size: 15px
+            }
+        }
+
+        @media screen and (min-width: 640px) and (max-width: 719px) {
+            html {
+                font-size: 20px
+            }
+        }
+
+        @media screen and (min-width: 720px) and (max-width: 749px) {
+            html {
+                font-size: 22.5px
+            }
+        }
+
+        @media screen and (min-width: 750px) and (max-width: 799px) {
+            html {
+                font-size: 23.5px
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            html {
+                font-size: 25px
+            }
+        }
+
+        .container {
+            overflow: hidden;
+            min-height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .loading-warp {
+            display: table;
+            width: 100%;
+            margin-top: -5.8rem;
+        }
+
+        .loading-warp .box {
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .loading-warp .box img {
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            margin: 0 auto;
+        }
+
+        .loading-warp .box .text {
+            display: block;
+            text-align: center;
+            font-size: 0.5rem;
+            line-height: 0.5rem;
+            opacity: 0.7;
+            margin-top: 1.4rem;
+        }
+
+        p {
+            padding: 5px 5px;
+        }
+    </style>
 </head>
 <body>
 
 <div data-role="page" id="pageLafter" data-theme="b">
     <div data-role="header" data-position="fixed">
-        <h1 id="title"></h1>
+        <h1 id="title" style="color:#2ad;font-size: 25px;"></h1>
     </div>
 
-    <div data-role="main" class="ui-content" id="content">
+    <div data-role="main" class="container" id="container">
+        <div class="loading-warp">
+            <div class="box">
+                <div>
+                    <img src="./img/loading.gif"/>
+                    <span class="text">下拉开始刷新</span>
+                </div>
+            </div>
+        </div>
+        <div class="ui-content" id="content" style="color:#2ad;font-size: 20px;">
+        </div>
+    </div>
+
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="javascript:;" onclick="zan()" class="ui-btn ui-icon-heart ui-btn-icon-top">点赞</a></li>
+                <li><a href="javascript:;" onclick="wxShow()" class="ui-btn ui-icon-action ui-btn-icon-top">转发</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- 二维码弹出层 -->
+<div class="wx-qrcode-wrapper">
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <div class="wx-qrcode">
+        <h4>微信分享
+            <!-- 关闭图标 -->
+            <a href="javascript:;" class="icon-close2" onclick="wxHide()">
+                <img src="images/static_img/icon-close2.png" alt="">
+            </a>
+        </h4>
+        <!-- 生成的二维码容器 -->
+        <div id="qrcode"></div>
     </div>
 </div>
 
 <script type="text/javascript">
-    function getLafter(dir){
-        var offset = $.cookie("offset");
+    var offset = $.cookie("offset");
 
-        if(offset == "" || offset == null){
-            $.cookie("offset","0");
-            offset = 0;
-        }
-        $.getJSON("/lafter?offset="+offset+"&direct="+dir, function (json) {
-            if(json.err_code == 0) {
-                $("#title").text(json.content.title);
-                var htmlStr = "";
-                htmlStr += '<div>' + json.content.content + '</div>';
-                $("#content").html(htmlStr);
-                offset = json.content.id;
-                $.cookie("offset",offset + "");
+    if (offset == "" || offset == null) {
+        $.cookie("offset", 0);
+        offset = 0;
+    }
+
+    function getLafter() {
+
+        $.ajax({
+            url: "/lafter",
+            dataType: "json",
+            type: "POST",
+            data: {offset: offset, direct: "asc"},
+            success: function (json) {
+                if (json.err_code == 0) {
+                    $("#title").text(json.content.title);
+                    var htmlStr = "";
+                    htmlStr += '<div>' + json.content.content + '</div>';
+                    $("#content").html(htmlStr);
+                    offset = json.content.id;
+                    $.cookie("offset", offset);
+                }
             }
         });
     }
 
-    getLafter("asc")
+    getLafter();
 
-    $(document).on("pagecreate","#pageLafter",function(){
-        $("#content").on("swipeleft",function(){
-            getLafter("asc");
-        });
+    var $statu = $('.loading-warp .text');
 
-        $("#content").on("swiperight",function(){
-            getLafter("desc");
-        });
+    var pullRefresh = $('.container').pPullRefresh({
+        $el: $('.container'),
+        $loadingEl: $('.loading-warp'),
+        sendData: function () {
+            var off = $.cookie("offset");
+            return {offset: off, direct: "asc"}
+        },
+        autoHide: true,
+        url: '/lafter',
+        callbacks: {
+            pullStart: function () {
+                $(".loading-warp").show();
+                $statu.text('松开开始刷新');
+            },
+            start: function () {
+                $statu.text('数据刷新中···');
+            },
+            success: function (json) {
+                $statu.text('数据刷新成功！');
+
+                if (json.err_code == 0) {
+                    $("#title").text(json.content.title);
+                    var htmlStr = "";
+                    htmlStr += '<div>' + json.content.content + '</div>';
+                    $("#content").html(htmlStr);
+                    offset = json.content.id;
+                    $.cookie("offset", offset);
+
+                }
+            },
+            end: function () {
+                $statu.text('下拉刷新结束');
+                $(".loading-warp").hide();
+            },
+            error: function () {
+                $statu.text('找不到请求地址,数据刷新失败');
+            }
+        }
     });
 
+    /* 生成二维码 */
+    $("#qrcode").qrcode({
+        text: "https://github.com/jeromeetienne/jquery-qrcode", //设置二维码内容
+        render: "canvas", //设置渲染方式
+        width: 200, //设置宽度,默认生成的二维码大小是 256×256
+        height: 200, //设置高度
+        typeNumber: -1, //计算模式
+        background: "#ffffff", //背景颜色
+        foreground: "#000000" //前景颜色
+    });
 
-
-
-    var myScroll,
-        pullDownEl, pullDownOffset,
-        pullUpEl, pullUpOffset,
-        generatedCount = 0;
-
-    /**
-     * 下拉刷新 （自定义实现此方法）
-     * myScroll.refresh();  // 数据加载完成后，调用界面更新方法
-     */
-    function pullDownAction () {
-        setTimeout(function () { // <-- Simulate network congestion, remove setTimeout from production!
-            getLafter("asc");
-
-            myScroll.refresh();  //数据加载完成后，调用界面更新方法 Remember to refresh when contents are loaded (ie: on ajax completion)
-        }, 1000); // <-- Simulate network congestion, remove setTimeout from production!
+    /* 点微信图标，触发二维码弹出层显示 */
+    function wxShow() {
+        alert("cccccccccccccccccc")
+        $('.wx-qrcode-wrapper').show()
     }
 
+    /* 关闭二维码弹出层 */
+    function wxHide() {
+        $('.wx-qrcode-wrapper').hide()
+    }
 
-    /**
-     * 初始化iScroll控件
-     */
-    function loaded() {
-        pullDownEl = document.getElementById('pullDown');
-        pullDownOffset = pullDownEl.offsetHeight;
-        pullUpEl = document.getElementById('pullUp');
-        pullUpOffset = pullUpEl.offsetHeight;
-
-        myScroll = new iScroll('wrapper', {
-            scrollbarClass: 'myScrollbar', /* 重要样式 */
-            useTransition: false, /* 此属性不知用意，本人从true改为false */
-            topOffset: pullDownOffset,
-            onRefresh: function () {
-                if (pullDownEl.className.match('loading')) {
-                    pullDownEl.className = '';
-                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
-                } else if (pullUpEl.className.match('loading')) {
-                    pullUpEl.className = '';
-                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
-                }
-            },
-            onScrollMove: function () {
-                if (this.y > 5 && !pullDownEl.className.match('flip')) {
-                    pullDownEl.className = 'flip';
-                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
-                    this.minScrollY = 0;
-                } else if (this.y < 5 && pullDownEl.className.match('flip')) {
-                    pullDownEl.className = '';
-                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
-                    this.minScrollY = -pullDownOffset;
-                } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
-                    pullUpEl.className = 'flip';
-                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
-                    this.maxScrollY = this.maxScrollY;
-                } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
-                    pullUpEl.className = '';
-                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
-                    this.maxScrollY = pullUpOffset;
-                }
-            },
-            onScrollEnd: function () {
-                if (pullDownEl.className.match('flip')) {
-                    pullDownEl.className = 'loading';
-                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '加载中...';
-                    pullDownAction(); // Execute custom function (ajax call?)
-                } else if (pullUpEl.className.match('flip')) {
-                    pullUpEl.className = 'loading';
-                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';
-                    pullUpAction(); // Execute custom function (ajax call?)
+    function zan() {
+        var id = $.cookie("offset");
+        $.ajax({
+            url: "/lafter/zan",
+            dataType: "json",
+            type: "POST",
+            data: {id:id},
+            success: function (json) {
+                if (json.err_code == 0) {
+                    alert("点赞成功");
                 }
             }
         });
-
-        setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
     }
-
-    //初始化绑定iScroll控件
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-    document.addEventListener('DOMContentLoaded', loaded, false);
 </script>
 </body>
 </html>

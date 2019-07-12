@@ -2,7 +2,209 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ed73ab-e86a-4320-bd89-2f3404be6bd5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.json" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/first.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/first.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/four.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/four.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/jc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/second.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/second.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/third.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/third.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/images/zero.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/ZeroClipboard.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/common/util/amt.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/common/util/email.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/cmsd/cmsd.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/common/constant/global.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/config/config.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/config/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/taobao/basic.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/check.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/play.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/wechart.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery-1.11.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.zclip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html/js/p-pull-refresh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/html1/js/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/downloadurl.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/init.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/page.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/model/video.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/service/base.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/service/wechart.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/QQList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/a.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/aaaa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/dytt8.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/getPwdByTitle.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/getUserBySendEmail.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/haoquanlist.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/quan.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/quan1.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/search.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/tools/tt.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/ezhantao/util/sign.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/others/task/domain.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/spider/test.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_cyfx.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/stock/tools/wencai_cyfx.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/background/wdkq/tools/1" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/Make.protobuf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance_proto/conformance.pb.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/_conformance/conformance_proto/conformance.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/golden_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/test.pb.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/testdata/test.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_base.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_extra.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_user.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/grpc.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp.pb.go.golden" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp2.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/imp3.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go.golden" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/proto3.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/regen.sh" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_sstd.go" afterPath="$PROJECT_DIR$/src/background/stock/model/tonghuashun_jsxt.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" afterPath="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" afterPath="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/index.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/public/player2.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/public/player3.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/public/player3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/html/study/1.html" afterPath="$PROJECT_DIR$/src/background/guoguo/html/study/1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" afterPath="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/config/config.go" afterPath="$PROJECT_DIR$/src/background/ionic/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/config/config.json" afterPath="$PROJECT_DIR$/src/background/ionic/config/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/controller/api/stock.go" afterPath="$PROJECT_DIR$/src/background/ionic/controller/api/stock.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/detail.html" afterPath="$PROJECT_DIR$/src/background/ionic/html/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/index.html" afterPath="$PROJECT_DIR$/src/background/ionic/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/html/js/app.js" afterPath="$PROJECT_DIR$/src/background/ionic/html/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/ionic/ionicd/ionicd.go" afterPath="$PROJECT_DIR$/src/background/ionic/ionicd/ionicd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/config/config.go" afterPath="$PROJECT_DIR$/src/background/lafter/config/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" afterPath="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/html/index.html" afterPath="$PROJECT_DIR$/src/background/lafter/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/html/test.html" afterPath="$PROJECT_DIR$/src/background/lafter/html/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" afterPath="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/model/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/model/content.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/task/content.go" afterPath="$PROJECT_DIR$/src/background/lafter/task/content.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/lafter/task/lafter.go" afterPath="$PROJECT_DIR$/src/background/lafter/task/lafter.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/model/domain.go" afterPath="$PROJECT_DIR$/src/background/others/model/domain.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/others/taskd/taskd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/others/tools/domain.go" afterPath="$PROJECT_DIR$/src/background/others/tools/domain.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/email.go" afterPath="$PROJECT_DIR$/src/background/stock/common/email.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/wangyi.go" afterPath="$PROJECT_DIR$/src/background/stock/common/wangyi.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/common/wencai.go" afterPath="$PROJECT_DIR$/src/background/stock/common/wencai.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/model/init.go" afterPath="$PROJECT_DIR$/src/background/stock/model/init.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/task/baidu.go" afterPath="$PROJECT_DIR$/src/background/stock/task/baidu.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/task/tonghuashun.go" afterPath="$PROJECT_DIR$/src/background/stock/task/tonghuashun.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" afterPath="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock/tools/wencai_sstd.go" afterPath="$PROJECT_DIR$/src/background/stock/tools/wencai_sstd.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/stock1/tools/stocklist.go" afterPath="$PROJECT_DIR$/src/background/stock1/tools/stocklist.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go" afterPath="$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go" afterPath="$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/background/wechart/service/wxcheck.go" afterPath="$PROJECT_DIR$/src/background/wechart/service/wxcheck.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/.gitignore" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/.travis.yml" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/AUTHORS" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/CONTRIBUTORS" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/CONTRIBUTORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/LICENSE" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/Makefile" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/README.md" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/descriptor/descriptor_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/more_test_objects.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/jsonpb/jsonpb_test_proto/test_objects.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/all_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/all_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/any_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/any_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/clone_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/decode_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/encode_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/equal_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/extensions_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/lib.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/lib.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/map_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/map_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/message_set_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_reflect.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_reflect.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_unsafe.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/pointer_unsafe.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/properties.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/properties.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_proto/proto3.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/proto3_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size2_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size2_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/size_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_parser_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/proto/text_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/doc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/doc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/generator.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/generator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/name_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/generator/name_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/grpc/grpc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/grpc/grpc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/link_grpc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/link_grpc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/main.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/main.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.golden" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.pb.golden" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/plugin/plugin.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/extension_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/main_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/main_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi1.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi1.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi2.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi2.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi3.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/multi/multi3.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/protoc-gen-go/testdata/my_test/test.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any/any.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/any_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/doc.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/doc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration/duration.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/duration_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/empty/empty.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/struct/struct.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp_test.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/timestamp_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.pb.go" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.pb.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.proto" afterPath="$PROJECT_DIR$/src/github.com/golang/protobuf/ptypes/wrappers/wrappers.proto" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,96 +220,60 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lafterd.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
+      <file leaf-file-name="domain.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/others/tools/domain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+            <state relative-caret-position="462">
+              <caret line="451" column="30" lean-forward="true" selection-start-line="451" selection-start-column="30" selection-end-line="451" selection-end-column="30" />
               <folding>
-                <element signature="e#14#407#0" expanded="true" />
+                <element signature="e#14#385#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
+      <file leaf-file-name="global.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/common/constant/global.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="636">
+              <caret line="130" column="2" lean-forward="false" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lafter.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go">
+      <file leaf-file-name="domain.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/others/task/domain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="3697">
+              <caret line="164" column="12" lean-forward="true" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
               <folding>
-                <element signature="e#12#151#0" expanded="true" />
+                <element signature="e#15#364#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="amsd.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/ams/amsd/amsd.go">
+      <file leaf-file-name="taskd.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/background/others/taskd/taskd.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="773">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#222#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/ams/html/login.html">
+      <file leaf-file-name="domain.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/background/others/model/domain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/html/stock/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/model/content.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2450">
-              <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/background/lafter/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="161">
+              <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding>
+                <marker date="1562918728609" expanded="true" signature="81:1420" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,52 +283,57 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>chinese</find>
-      <find>SINA_REALTIME_STOCK_URL</find>
-      <find>Chinese</find>
-      <find>/uploads/</find>
-      <find>header__logo</find>
-      <find>BW</find>
-      <find>bw</find>
-      <find>welcome</find>
-      <find>WdatePicker</find>
-      <find>ccccccccccc</find>
-      <find>getparam</find>
-      <find>layer</find>
-      <find>H-ui.admin.js</find>
-      <find>skin.css</find>
-      <find>WdatePicker.css</find>
-      <find>layer.css</find>
-      <find>800</find>
-      <find>basic-slide</find>
-      <find>label</find>
-      <find>215</find>
-      <find>245</find>
-      <find>EXCEL</find>
       <find>amt2</find>
       <find>play.html</find>
       <find>gif</find>
       <find>images/ajax-loader.gif</find>
       <find>$.ajax</find>
       <find>asyn</find>
-      <find>getBaiDuDomainApiInfo</find>
       <find>getStatus</find>
+      <find>.js</find>
+      <find>jwplayer-7.6.0</find>
+      <find>getBaiDuDomainApiInfo</find>
+      <find>mahonia</find>
+      <find>wechart</find>
+      <find>TAOBAO_API_GOODS_GET1</find>
+      <find>阿里妈妈推广券信息查询</find>
+      <find>images/</find>
+      <find>http://www.17sucai.com/preview/1527619/2019-06-22/Mall/</find>
+      <find>aui-ate-list</find>
+      <find>aui-search-box</find>
+      <find>Load</find>
+      <find>SendEmain</find>
+      <find>Email</find>
+      <find>未知</find>
+      <find>男</find>
+      <find>女</find>
+      <find>2044420483</find>
+      <find>957942932</find>
+      <find>ffmpeg</find>
+      <find>DecodeToGBK</find>
+      <find>getSt</find>
+      <find>sleep</find>
     </findStrings>
     <replaceStrings>
       <replace>|</replace>
       <replace>js</replace>
       <replace>http://www.boqudy.com/uploads/</replace>
       <replace>255</replace>
+      <replace>http://www.17sucai.com/preview/1527619/2019-06-22/Mall/images/</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\work\code\e94\src\background\newmovie</dir>
+      <dir>C:\work\code\e94\src\background\newmovie\tools</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,57 +346,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/background/ams/html/video/add1.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/episode/add.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/video/add.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/js/all.js" />
-        <option value="$PROJECT_DIR$/src/background/ams/controller/api/playurl.go" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/episode/list.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/controller/api/video.go" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/video/list.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/js/jquery.hDialog.min.js" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/playurl/add.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/public/play.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/controller/api/episode.go" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/public/player.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/html/playurl/list.html" />
-        <option value="$PROJECT_DIR$/src/background/ams/amsd/amsd.go" />
-        <option value="$PROJECT_DIR$/src/background/cms/html/index.html" />
-        <option value="$PROJECT_DIR$/src/background/cms/tools/collection/yongjiuzy.cc.go" />
-        <option value="$PROJECT_DIR$/src/background/cms/html/player.html" />
-        <option value="$PROJECT_DIR$/src/background/wdkq/html/css/wd.css" />
-        <option value="$PROJECT_DIR$/src/background/wdkq/html/index.html" />
-        <option value="$PROJECT_DIR$/src/background/wdkq/html/call.html" />
-        <option value="$PROJECT_DIR$/src/background/wdkq/tools/test.go" />
-        <option value="$PROJECT_DIR$/src/background/stock1/tools/shareholder.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/config/config.json" />
+        <option value="$PROJECT_DIR$/src/background/stock/tools/stockhistorydataqnew.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/common/wangyi.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/task/tonghuashun.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/task/baidu.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/model/tonghuashun_cyfx.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/tools/wencai_cyfx.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/model/tonghuashun_sstd.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/model/init.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/tools/wencai_sstd.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/common/wencai.go" />
+        <option value="$PROJECT_DIR$/src/background/spider/test.go" />
+        <option value="$PROJECT_DIR$/src/background/wechart/service/wxcheck.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/util/sign.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/common/constant.go" />
+        <option value="$PROJECT_DIR$/src/background/common/util/amt.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/quan1.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/test.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/search.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/js/slider.js" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/common/constant/global.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.zclip.js" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/service/base.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/css/index.css" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/js/pullToRefresh.js" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/config/config.json" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/js/index.js" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/quan.go" />
+        <option value="$PROJECT_DIR$/src/background/wechart/service/wx.go" />
+        <option value="$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/wechart.go" />
+        <option value="$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go" />
+        <option value="$PROJECT_DIR$/src/background/stock/common/email.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/service/wechart.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/getPwdByTitle.go" />
+        <option value="$PROJECT_DIR$/src/background/common/util/email.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/haoquanlist.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/cmsd/cmsd.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/controller/api/taobao/basic.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/html/index.html" />
         <option value="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
-        <option value="$PROJECT_DIR$/src/background/ccs/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go" />
-        <option value="$PROJECT_DIR$/src/background/ccs/html/index.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/model/admin.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/login.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/login1.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/model/init.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/model/notice.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/public/player.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/public/player1.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/stock/list.html" />
-        <option value="$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html" />
-        <option value="$PROJECT_DIR$/src/background/others/config/config.go" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/QQList.txt" />
+        <option value="$PROJECT_DIR$/src/background/ezhantao/tools/getUserBySendEmail.go" />
+        <option value="$PROJECT_DIR$/src/background/wdkq/tools/1" />
         <option value="$PROJECT_DIR$/src/background/others/tools/domain.go" />
-        <option value="$PROJECT_DIR$/src/background/lafter/model/content.go" />
-        <option value="$PROJECT_DIR$/src/background/lafter/html.html" />
-        <option value="$PROJECT_DIR$/src/background/lafter/html/html.html" />
-        <option value="$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go" />
-        <option value="$PROJECT_DIR$/src/background/lafter/html/index.html" />
-        <option value="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
-        <option value="$PROJECT_DIR$/src/background/lafter/config/config.go" />
-        <option value="$PROJECT_DIR$/src/background/lafter/config/config.json" />
+        <option value="$PROJECT_DIR$/src/background/others/model/domain.go" />
+        <option value="$PROJECT_DIR$/src/background/others/task/domain.go" />
+        <option value="$PROJECT_DIR$/src/background/others/taskd/taskd.go" />
       </list>
     </option>
   </component>
@@ -241,6 +412,22 @@
     <option name="y" value="-8" />
     <option name="width" value="2576" />
     <option name="height" value="1416" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -260,8 +447,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,7 +521,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newmovie" />
+              <option name="myItemId" value="others" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,33 +547,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newmovie" />
+              <option name="myItemId" value="others" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cmsd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafter" />
+              <option name="myItemId" value="taskd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,81 +573,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lafter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lafter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e94" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="others" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,8 +583,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider$1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bw" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HAML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="do.not.ask.to.change.module.type" value="e94" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -497,42 +592,50 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="configurable.Global.libraries.is.expanded" value="true" />
     <property name="configurable.Project.libraries.is.expanded" value="true" />
     <property name="configurable.Module.libraries.is.expanded" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\work\code\e94\src\background\lafter\html\js" />
-      <recent name="C:\work\code\e94\src\background\lafter" />
-      <recent name="C:\work\code\e94\src\background\lafter\lafterd" />
-      <recent name="C:\work\code\e94\src\background\guoguo\html\js" />
-      <recent name="C:\work\code\e94\src\background\guoguo\html\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\work\code\e94\src\background\guoguo\html\css\images" />
-      <recent name="C:\work\code\e94\src\background\ams\html\episode" />
-      <recent name="C:\work\code\e94\src\background\stock\html\stock\css" />
-      <recent name="C:\work\code\e94\src\background\stock\html\stock\images" />
-      <recent name="F:\Git\e94\src\background\newmovie\controller\api" />
+      <recent name="C:\work\code\e94\src\background\ezhantao\controller\api\wechart" />
+      <recent name="C:\work\code\e94\src\background\stock\common" />
+      <recent name="C:\work\code\e94\src\background\stock\task" />
+      <recent name="C:\work\code\e94\src\background\stock\model" />
+      <recent name="C:\work\code\e94\src\background\guoguo\html\public\jwplayer-7.6.0\v\7.6.0" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\code\e94\src\background\ezhantao\html\images" />
+      <recent name="C:\work\code\e94\src\background\common\util" />
+      <recent name="C:\work\code\e94\src\background\ezhantao\html\js" />
+      <recent name="C:\work\code\e94\src\background\ezhantao" />
+      <recent name="C:\work\code\e94\src\background\stock\model\wangyi" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run lafterd.go">
-    <configuration default="false" name="go run guoguod.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+  <component name="RunManager" selected="Go Single File.go run taskd.go">
+    <configuration default="false" name="go run getUserBySendEmail.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="e94" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go" />
+      <filePath value="$PROJECT_DIR$/src/background/ezhantao/tools/getUserBySendEmail.go" />
       <method />
     </configuration>
-    <configuration default="false" name="go run shareholder.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+    <configuration default="false" name="Build taskd.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="e94" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/stock1/tools/shareholder.go" />
+      <filePath value="$PROJECT_DIR$/src/background/stock/taskd/taskd.go" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run haoquanlist.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="e94" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/background/ezhantao/tools/haoquanlist.go" />
       <method />
     </configuration>
     <configuration default="false" name="go run domain.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
@@ -544,13 +647,7 @@
     <configuration default="false" name="go run taskd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="e94" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/lafter/taskd/taskd.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run lafterd.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="e94" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go" />
+      <filePath value="$PROJECT_DIR$/src/background/others/taskd/taskd.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1004,19 +1101,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run guoguod.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run shareholder.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run lafterd.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run getUserBySendEmail.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Application.Build taskd.go and run" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run haoquanlist.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run lafterd.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run guoguod.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run shareholder.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run taskd.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run domain.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run getUserBySendEmail.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Application.Build taskd.go and run" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run haoquanlist.go" />
       </list>
     </recent_temporary>
   </component>
@@ -1128,40 +1225,84 @@
       <workItem from="1559182916991" duration="6088000" />
       <workItem from="1559265157236" duration="9269000" />
       <workItem from="1559613278398" duration="9726000" />
-      <workItem from="1559696375106" duration="10254000" />
+      <workItem from="1559696375106" duration="16129000" />
+      <workItem from="1559782665429" duration="5260000" />
+      <workItem from="1559787231881" duration="12000" />
+      <workItem from="1559788142698" duration="13481000" />
+      <workItem from="1559839864082" duration="16000" />
+      <workItem from="1560150900843" duration="2159000" />
+      <workItem from="1560221365836" duration="5533000" />
+      <workItem from="1560303770322" duration="68000" />
+      <workItem from="1560304125702" duration="23221000" />
+      <workItem from="1560342424936" duration="1016000" />
+      <workItem from="1560388949244" duration="23421000" />
+      <workItem from="1560429906113" duration="3963000" />
+      <workItem from="1560475126625" duration="91000" />
+      <workItem from="1560505330797" duration="1216000" />
+      <workItem from="1560514274775" duration="30000" />
+      <workItem from="1560524307362" duration="6332000" />
+      <workItem from="1560770952218" duration="11576000" />
+      <workItem from="1560909359015" duration="1547000" />
+      <workItem from="1560911428245" duration="6672000" />
+      <workItem from="1561021688984" duration="1889000" />
+      <workItem from="1561085198943" duration="2300000" />
+      <workItem from="1561342141613" duration="3873000" />
+      <workItem from="1561425328625" duration="6102000" />
+      <workItem from="1561530886994" duration="10915000" />
+      <workItem from="1561549800330" duration="7446000" />
+      <workItem from="1561598331934" duration="23331000" />
+      <workItem from="1561687451651" duration="27125000" />
+      <workItem from="1561948479328" duration="14868000" />
+      <workItem from="1561970316229" duration="842000" />
+      <workItem from="1562030943008" duration="97000" />
+      <workItem from="1562033557207" duration="12197000" />
+      <workItem from="1562116855261" duration="8847000" />
+      <workItem from="1562161258546" duration="13000" />
+      <workItem from="1562293184027" duration="2517000" />
+      <workItem from="1562374546913" duration="183000" />
+      <workItem from="1562374889871" duration="8000" />
+      <workItem from="1562916822892" duration="5322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325310000" />
+    <option name="totallyTimeSpent" value="564674000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2519501" sideWeight="0.50158983" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5023847" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299532" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37597504" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28159127" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20904836" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12957075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15222576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1170,7 +1311,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28159127" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26287052" sideWeight="0.49761525" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5715835" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1181,7 +1323,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1190,419 +1332,381 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/background/ccs/ccsd/ccsd.go">
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/js/jquery.zclip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="141" column="4" lean-forward="false" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/mobiscroll.css">
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/common/constant/global.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="783" column="15" lean-forward="false" selection-start-line="783" selection-start-column="1" selection-end-line="783" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html1/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="587" column="25" lean-forward="true" selection-start-line="587" selection-start-column="25" selection-end-line="587" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/js/p-pull-refresh.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery-2.1.4.min.js">
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/js/iscroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/css/pullToRefresh.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/js/pullToRefresh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="125" column="42" lean-forward="false" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/quan1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/search.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/tt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="517" column="0" lean-forward="true" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wechart/service/wx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/quan.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wechart/cmsd/cmsd.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/model/wx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/wechart.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="54" column="28" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wechart/controller/api/model/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="88" column="21" lean-forward="false" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock/strategy/lowbuyhighsell.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock/common/email.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/controller/api/wechart/wechart.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/common/util/amt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/service/wechart.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/checkurl1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="49" column="3" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="49" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock/task/wangyi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/stock/common/wangyi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/getPwdByTitle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/haoquanlist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/service/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/cmsd/cmsd.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="84" column="43" lean-forward="false" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/controller/api/taobao/basic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/middleware/admin.go">
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="644">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/jquery.mobile-1.4.5.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2697">
-          <caret line="2" column="130492" lean-forward="true" selection-start-line="2" selection-start-column="130492" selection-end-line="2" selection-end-column="130492" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/ams/html/msgboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="321" column="11" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="321" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/common/middleware/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/login1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/admin.go">
+    <entry file="file://$PROJECT_DIR$/src/background/stock/taskd/taskd.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery-1.11.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/DPlayer.min.js">
+    <entry file="file://$PROJECT_DIR$/src/background/common/util/email.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/css/DPlayer.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/public/player1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/controller/api/admin.go">
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/QQList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/ezhantao/tools/getUserBySendEmail.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background/wdkq/tools/test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/controller/api/stock.go">
+    <entry file="file://$PROJECT_DIR$/src/background/cms/tools/a.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#12#151#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/model/notice.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="1064">
+          <caret line="88" column="62" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/stock/list.html">
+    <entry file="file://$PROJECT_DIR$/src/background/wdkq/tools/1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock1/tools/shareholder.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/stock/detail.html">
+    <entry file="file://$PROJECT_DIR$/../bw/src/github.com/jinzhu/gorm/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/guoguod/guoguod.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#407#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/stock1/tools/stocklist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="242">
+          <caret line="413" column="13" lean-forward="false" selection-start-line="413" selection-start-column="13" selection-end-line="413" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/others/config/config.go">
+    <entry file="file://$PROJECT_DIR$/src/background/common/constant/global.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/others/model/domain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="636">
+          <caret line="130" column="2" lean-forward="false" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/background/others/tools/domain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="343" column="38" lean-forward="false" selection-start-line="343" selection-start-column="38" selection-end-line="343" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/html/public/player.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="90" column="19" lean-forward="true" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/tools/streamthumb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/taskd/taskd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="36" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/admin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/middleware/admin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/controller/api/contentaction.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/newmovie/cmsd/cmsd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="112" column="49" lean-forward="false" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/stock/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/ams/html/user1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11751">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="451" column="30" lean-forward="true" selection-start-line="451" selection-start-column="30" selection-end-line="451" selection-end-column="30" />
           <folding>
-            <marker date="1547712051972" expanded="true" signature="24363:24380" ph="..." />
-            <marker date="1547712051972" expanded="true" signature="24450:24467" ph="..." />
-            <marker date="1547712051972" expanded="true" signature="24538:24555" ph="..." />
+            <element signature="e#14#385#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/ams/html/login.html">
+    <entry file="file://$PROJECT_DIR$/src/background/others/model/domain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/ams/controller/api/video.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/ams/amsd/amsd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="93" column="56" lean-forward="true" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/model/content.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/controller/api/lafter.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="161">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="e#12#151#0" expanded="true" />
+            <marker date="1562918728609" expanded="true" signature="81:1420" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/guoguo/config/config.json">
+    <entry file="file://$PROJECT_DIR$/src/background/others/task/domain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/lafterd/lafterd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        <state relative-caret-position="3697">
+          <caret line="164" column="12" lean-forward="true" selection-start-line="164" selection-start-column="12" selection-end-line="164" selection-end-column="12" />
           <folding>
-            <element signature="e#14#407#0" expanded="true" />
+            <element signature="e#15#364#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.go">
+    <entry file="file://$PROJECT_DIR$/src/background/others/taskd/taskd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2450">
-          <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background/lafter/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="773">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#222#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1646,7 +1750,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 27, P preview Platform</last-edited>
+          <last-edited>Go 1.9.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1663,7 +1767,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

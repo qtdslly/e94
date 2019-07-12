@@ -59,7 +59,7 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 
 			return
 		}
-
+		logger.Debug(query.Html())
 		bd := query.Find("a")
 		bd.Each(func(i int, s *goquery.Selection) {
 			url,found := s.Attr("href")
@@ -74,18 +74,13 @@ func GetPageUrl(provider model.Provider,db *gorm.DB){
 				url, _ = DecodeToGBK(url)
 
 				var pageUrl model.PageUrl
-				if err = db.Where("url = ?",url).First(&pageUrl).Error ; err != nil{
-					if err != gorm.ErrRecordNotFound{
-						logger.Error(err)
-						return
-					}
-
+				if err = db.Where("url = ?",url).First(&pageUrl).Error ; err == gorm.ErrRecordNotFound{
 					pageUrl.PageStatus = 0
 					pageUrl.ProviderId = provider.Id
 					pageUrl.Url = url
 					pageUrl.CreatedAt = time.Now()
 					pageUrl.UpdatedAt = time.Now()
-					if err = db.Save(&pageUrl).Error ; err != nil{
+					if err = db.Create(&pageUrl).Error ; err != nil{
 						logger.Error(err)
 						return
 					}

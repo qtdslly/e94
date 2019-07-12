@@ -10,6 +10,8 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/go-sql-driver/mysql"
+  "background/others/task"
+  "time"
 )
 
 func main() {
@@ -36,4 +38,10 @@ func main() {
 
 	model.InitModel(db)
 
+  go task.GetUrl(db)
+  go task.GetBaiDuDomin(db)
+
+  for{
+    time.Sleep(time.Minute * 10)
+  }
 }

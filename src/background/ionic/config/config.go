@@ -35,9 +35,9 @@ func init() {
 	c.LoggerLevel = 1
 	c.EnableOrmLog = true
 	c.EnableHttpLog = true
-	c.CmsRoot = "/root/Git/e94/src/background/guoguo/"
-	c.TmplRoot = "/root/Git/e94/src/background/guoguo/tmpl/"
-	c.StaticRoot = "C:/work/code/e94/src/background/guoguo/html"
+	c.CmsRoot = "/root/Git/e94/src/background/ionic/"
+	c.TmplRoot = "/root/Git/e94/src/background/ionic/tmpl/"
+	c.StaticRoot = "C:/work/code/e94/src/background/ionic/html"
 	c.Domain = "http://localhost:80"
 
 }

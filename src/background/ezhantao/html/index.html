@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>e站淘</title>
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="css/index.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="css/flavr.css" type="text/css"/>
+</head>
+<body>
+<section class="aui-flexView">
+  <header class="aui-navBar aui-navBar-fixed">
+    <div class="aui-center">
+      <div class="aui-search-box">
+        <i class="icon icon-search"></i>
+        <input type="text" data-type="search" placeholder="冰洗洗衣机每满千减百">
+      </div>
+    </div>
+    <a href="javascript:;" class="aui-navBar-item">
+      <i class="icon icon-news"></i>
+    </a>
+  </header>
+
+
+  <section class="aui-scrollView">
+    <div class="aui-ate-head">
+      <div class="aui-ad-img">
+        <img src="images/banner.png" alt="">
+      </div>
+      <div class="aui-flex aui-flex-one">
+        <a href="javascript:;" onclick="GetGoodsList(1,'爆款')" class="aui-flex-box active">爆款</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'美妆')" class="aui-flex-box">美妆</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'美食')" class="aui-flex-box">美食</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'女装')" class="aui-flex-box">女神</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'家具')" class="aui-flex-box">家具</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'男装')" class="aui-flex-box">男装</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'鞋')" class="aui-flex-box">鞋</a>
+        <a href="javascript:;" onclick="GetGoodsList(1,'书')" class="aui-flex-box">书</a>
+
+      </div>
+
+    </div>
+
+    <div class="aui-ate-list" id="goods_list">
+    </div>
+
+  </section>
+</section>
+</body>
+
+<input type="hidden" id="hidCategory" value="爆款"/>
+<input type="hidden" id="hidPage" value="1"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/flavr.min.js"></script>
+
+<!--<script src="js/iscroll.js"></script>-->
+<!--<script src="js/pullToRefresh.js"></script>-->
+<script>
+  GetGoodsList(1, "女装");
+
+  $(window).scroll(function () {
+
+    var scrollTop = $(this).scrollTop();    //滚动条距离顶部的高度
+    var scrollHeight = $(document).height();   //当前页面的总高度
+    var clientHeight = $(this).height();    //当前可视的页面高度
+    // console.log("top:"+scrollTop+",doc:"+scrollHeight+",client:"+clientHeight);
+    if (scrollTop + clientHeight >= scrollHeight) {   //距离顶部+当前高度 >=文档总高度 即代表滑动到底部
+      //滚动条到达底部
+      //滚动条到达顶部
+      //滚动条距离顶部的高度小于等于0 TODO
+      var page = Number($("#hidPage").val()) + 1;
+      var category = $("#hidCategory").val();
+
+      GetGoodsList(page, category);
+      $("#hidPage").val(page + "");
+    } else if (scrollTop <= 0) {
+
+    }
+  });
+
+</script>
+
+</html>

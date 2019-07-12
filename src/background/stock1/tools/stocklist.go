@@ -80,12 +80,6 @@ func GetStockList(db *gorm.DB)(error){
 
 			for _, item := range items {
 				var stock model.Stock
-				code := item.Get("SYMBOL").String()
-				if err := db.Where("code = ?",code).First(&stock).Error ; err != nil{
-          logger.Error(err)
-          return err
-				}
-
 				stock.Code = item.Get("SYMBOL").String()
 				stock.Jys = item.Get("CODE").String()[0:1]
 				stock.FiveMinute = item.Get("FIVE_MINUTE").String()

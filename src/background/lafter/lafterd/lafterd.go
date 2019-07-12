@@ -85,7 +85,9 @@ func main(){
 
 	r.Use(dbMiddleware)
 	{
-		r.GET("/lafter", api.LafterHandler)
+		r.POST("/lafter", api.LafterHandler)
+		r.POST("/lafter/zan", api.ZanHandler)
+
 	}
 
 	gg.Use(dbMiddleware,mid.AdminVerifyHandler)

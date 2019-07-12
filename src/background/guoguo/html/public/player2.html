@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <title>直播频道 - 校园直播-IPTV</title>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jwplayer.js" charset="utf-8"></script>
 </head>
+
+<style>
+    *{
+        margin: 0;
+        outline: 0 none;
+        padding: 0;
+    }
+    body,html,center{
+        height:100%;
+    }
+</style>
+
 <body>
-$END$
+<center>
+    <div class="main" id="player">
+        正在加载播放器...若长时间无响应，说明播放器不支持您当前使用的浏览器。请尝试更换其他浏览器观看。
+    </div>
+</center>
 </body>
 </html>
+
+<script type="text/javascript">
+    $(function(){
+        var streamurl = "http://iptv.pdsu.edu.cn/hls/zjhd.m3u8";
+        var playerInstance = jwplayer("player");
+        jwplayer.key="vXr5GP+It4nbLRbYpK/2/S3mcRv/Vlbo38C88w==";
+        playerInstance.setup({
+            file: streamurl,
+            autostart: true,
+            live: true,
+            //primary: "html5",
+            primary: "flash",
+            displaytitle: false,
+            volume: 75,
+            height:"100%",
+            width:"100%",
+        });
+    });
+</script>

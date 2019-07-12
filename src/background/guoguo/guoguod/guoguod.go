@@ -97,7 +97,7 @@ func main(){
 
 	r.Static("/html", config.GetStaticRoot())
 
-	r.Run(":80")
+	r.Run(":8080")
 
 }
 

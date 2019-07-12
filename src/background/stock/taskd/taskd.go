@@ -41,7 +41,7 @@ func main() {
   go func(){
     for{
       var p = time.Now()
-      if p.Hour() == 17 {
+      if p.Hour() == 15 {
         task.GetWangyiStockList(db)
         task.GetBasicInfo(db)
         task.GetTonghuashun(db)

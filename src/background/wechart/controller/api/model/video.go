@@ -86,10 +86,10 @@ func EventContent(eventType ,toUserName,fromUserName string) *WxMessage {
 	wm.ToUserName = toUserName
 	wm.FromUserName = fromUserName
 	wm.CreateTime = time.Now().Unix()
-	if eventType == "subscribe"{
+  wm.MsgType = "text"
+  if eventType == "subscribe"{
 		wm.Content = "欢迎关注云视视频，云视视频观看最新最全的视频信息,院线大片/VIP视频统统免费看！！！ 直接输入您想看的视频发送即可"
 	}else {
-		wm.MsgType = "text"
 		wm.Content = "谢谢你曾经的关注与支持，我们会继续努力做到更好，期待您的再次关注！！！"
 	}
 	return &wm

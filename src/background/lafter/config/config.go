@@ -37,8 +37,10 @@ func init() {
 	c.EnableHttpLog = true
 	c.CmsRoot = "/root/Git/e94/src/background/lafter/"
 	c.TmplRoot = "/root/Git/e94/src/background/lafter/tmpl/"
-	c.StaticRoot = "/root/Git/e94/src/background/lafter/html"
-	c.Domain = "http://www.ezhantao.com:8080"
+	//c.StaticRoot = "/root/Git/e94/src/background/lafter/html"
+	c.StaticRoot = "C:/work/code/e94/src/background/lafter/html"
+	//c.Domain = "http://www.ezhantao.com:8080"
+	c.Domain = "http://localhost:8080"
 
 }
 

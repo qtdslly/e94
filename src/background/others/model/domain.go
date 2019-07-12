@@ -9,7 +9,7 @@ import (
 type Domain struct {
 	Id                 uint32     `gorm:"primary_key" json:"id"`
 	Url                string     `gorm:"size:255" json:"url"`
-	Status             uint32     `json:"status"`
+	Status             uint32     `gorm:"status" json:"status"`
 	ExpirationDate     string     `gorm:"size:10" json:"expiration_ate"`
 	RegisterDate       string     `gorm:"size:10" json:"register_ate"`
 	Reseller           string     `gorm:"size:255" json:"reseller"`
@@ -24,6 +24,8 @@ type Domain struct {
 	RegistrarUrl       string     `gorm:"size:255" json:"registrar_url"`
 
 	Chinese            string     `gorm:"size:100" json:"chinese"`
+  IsGet              bool       `gorm:"is_get" json:"is_get"`  //是否抓取数据
+  Mode               string     `gorm:"mode" json:"mode"`
 
 	CreatedAt          time.Time  `json:"created_at"`
 	UpdatedAt          time.Time  `json:"updated_at"`

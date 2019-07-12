@@ -14,6 +14,8 @@ type Content struct {
 	Title           string     `gorm:"title" json:"title"`
 	Content         string     `gorm:"type:longtext" json:"content"`
 	State           uint32     `gorm:"state" json:"state"`
+	Zan             uint32     `gorm:"zan" json:"zan"`
+
 	CreatedAt       time.Time  `json:"created_at"`
 	UpdatedAt       time.Time  `json:"updated_at"`
 }
